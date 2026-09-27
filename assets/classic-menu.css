@@ -1,4 +1,9 @@
 /* Scoped disclosure controls; the original Classic reading theme stays intact. */
+[data-theme="classic"] .classic-nav-home{display:flex;align-items:center;gap:6px;border-bottom:1px dotted #a2b5bf}
+[data-theme="classic"] .classic-nav-home>a{flex:1;min-width:0;border:0}
+[data-theme="classic"] .classic-collapse-all{flex:0 0 auto;padding:5px 6px;min-height:30px;border:1px solid #9aafbb;background:transparent;color:#254e79;font:12px/1.3 system-ui;cursor:pointer;border-radius:2px}
+[data-theme="classic"] .classic-collapse-all:hover{background:#fff7df}
+[data-theme="classic"] .classic-collapse-all:focus-visible{outline:3px solid #a93131;outline-offset:3px}
 [data-theme="classic"] .classic-nav-group-heading{display:flex;align-items:center;gap:6px;margin:20px 0 4px}
 [data-theme="classic"] .classic-nav-group-heading h2{flex:1;min-width:0;margin:0;padding:0}
 [data-theme="classic"] .classic-nav-group-heading h2 a{border:0;color:#873834;font-weight:700;padding:5px 9px}

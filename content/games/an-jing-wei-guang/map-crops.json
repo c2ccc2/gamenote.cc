@@ -1,0 +1,5 @@
+[
+  {"id":"the-bog","source":"/games/an-jing-wei-guang/images/p2/frame-0765.webp","bounds":[100,185,480,260],"time":"12:45","part":2,"titleZh":"沼泽","titleEn":"The Bog"},
+  {"id":"graven-valley","source":"/games/an-jing-wei-guang/images/p4/frame-0290.webp","bounds":[240,95,225,185],"time":"04:50","part":4,"titleZh":"墓谷","titleEn":"Graven Valley"},
+  {"id":"the-docks","source":"/games/an-jing-wei-guang/images/p6/frame-0790.webp","bounds":[0,65,525,360],"time":"13:10","part":6,"titleZh":"码头","titleEn":"The Docks"}
+]

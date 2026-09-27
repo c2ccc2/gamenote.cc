@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "node scripts/build-updates.cjs && node scripts/build-classic.cjs && node scripts/build-locales.cjs && node scripts/build-navigation.cjs && node scripts/build-analytics.cjs",
+    "build": "node scripts/build-updates.cjs && node scripts/build-classic.cjs && node scripts/build-locales.cjs && node scripts/build-navigation.cjs && node scripts/build-editorial.cjs && node scripts/build-analytics.cjs",
     "postbuild": "node scripts/build-search.cjs",
     "lint": "node scripts/check-syntax.cjs && node scripts/audit-links.cjs",
-    "typecheck": "node scripts/verify-classic.cjs && node scripts/verify-analytics.cjs"
+    "typecheck": "node scripts/verify-classic.cjs && node scripts/verify-analytics.cjs && node scripts/verify-editorial.cjs"
   },
   "devDependencies": {
     "cheerio": "1.1.2",

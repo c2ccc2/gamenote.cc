@@ -10,6 +10,8 @@ const displayZh=require('../content/games/an-jing-wei-guang/labels-zh.json');
 const {readerText}=require('./lib/classic-reader-copy.cjs');
 const worldMap=require('./lib/classic-world-map.cjs');
 worldMap.buildWorldMaps(data,root);
+const mapCrops=require('./lib/classic-map-crops.cjs');
+mapCrops.buildMapCrops(data,root);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const href=v=>{if(!/^(\/|https:\/\/|#)/.test(v)||v.startsWith('//'))throw Error('Invalid URL '+v);return esc(v)};
 const link=(t,u)=>`<a href="${href(u)}">${esc(t)}</a>`;
@@ -76,7 +78,7 @@ function page(route,title,description,body,{parent,previous,next,status='draft',
  if(entity){status=entity.contentStatus;noindex=noindex||!canPublish(entity)}
  const url=base+route,full=`${title} — 黯井微光攻略 | GAME NOTE CLASSIC`;
  const groupRoutes=['systems/','walkthrough/','maps/','bosses/','abilities/','collectibles/','quests/','challenges/','achievements/','updates/'];
- const nav=`<a href="${base}"${route?'':' aria-current="page"'}>专题首页</a>`+groups.map(([t,items],index)=>{
+ const nav=`<div class="classic-nav-home"><a href="${base}"${route?'':' aria-current="page"'}>专题首页</a><button class="classic-collapse-all" type="button" aria-controls="${groups.map((_,i)=>'classic-group-'+i).join(' ')}" aria-label="收起所有二级菜单">全部收起</button></div>`+groups.map(([t,items],index)=>{
   const target=base+groupRoutes[index],id='classic-group-'+index;
   return `<section class="classic-nav-group"><div class="classic-nav-group-heading"><h2><a href="${href(target)}"${url===target?' aria-current="page"':''}>${esc(t)}</a></h2><button class="classic-group-toggle" type="button" aria-expanded="true" aria-controls="${id}" aria-label="收起栏目">−</button></div><div id="${id}" class="classic-nav-group-items">`+items.map(([label,u])=>`<a href="${href(base+u)}"${base+u===url?' aria-current="page"':''}>${esc(label)}</a>`).join('')+'</div></section>';
  }).join('');
@@ -102,7 +104,7 @@ function facts(e,{map=false}={}){
   const notes=regionalMapNotes.find(n=>n.id===e.id);
   const scene=notes?.image?e.images.find(i=>i.src===notes.image):null;
   if(notes?.image&&!approvedImage(scene))throw Error('Unapproved map landmark image '+e.id);
-  return (maps.length?heading('局部地图参考')+maps.map(imageBlock).join(''):'')+
+  return (mapCrops.markup(e)||(maps.length?heading('局部地图参考')+maps.map(imageBlock).join(''):''))+
    (scene?heading('场景识别参考')+imageBlock(scene):'')+
    (notes?heading('地图定位与地标')+table('区域定位资料',['地标 / 节点','识别方式','地图阅读提示'],notes.rows):'<p>该区域的地图位置资料尚待补充。</p>');
  }
@@ -142,7 +144,7 @@ for(const e of areas){
  page('maps/'+e.slug+'/',name(e)+' · 地图',e.nameEn+' 已确认区域节点；截图不等同于完整地图。',facts(e,{map:true})+'<details class="classic-map-structure"><summary>查看区域结构示意</summary>'+worldMap.markup(e)+'</details>'+heading('相关攻略')+list([['世界结构示意图',base+'maps/world/'],['区域流程',base+'walkthrough/'+e.slug+'/'],['区域地图目录',base+'maps/']]),{parent:['区域地图','maps'],entity:e});
 }
 page('maps/','地图目录','Well Dweller 区域地图参考目录。','<p>地图章节提供局部地图与地标定位；完整路线步骤仍在流程攻略中阅读。</p>'+list([['世界结构示意图',base+'maps/world/']])+heading('已补充区域')+table('可用地图资料',['区域','现有内容'],areas.filter(a=>regionalMapNotes.some(n=>n.id===a.id)).map(a=>[linkedName(a,'maps'),a.images.some(i=>approvedImage(i)&&/地图|区域图/.test(i.caption))?'局部地图与地标定位':'地标定位与区域结构视图']))+heading('后续区域')+catalogue(areas.filter(a=>!regionalMapNotes.some(n=>n.id===a.id)),'maps'));
-page('maps/world/','世界地图 · 区域结构示意','Well Dweller 原创区域结构示意与区域地图入口。',worldMap.markup()+heading('区域地图入口')+catalogue(areas,'maps')+'<p>'+link('区域资料参考：Gamer Guides',worldMap.graph.referenceUrl)+'</p>',{parent:['地图','maps']});
+page('maps/world/','世界地图 · 区域结构示意','Well Dweller 原创区域结构示意与区域地图入口。',heading('可查看的局部地图')+list(mapCrops.crops.map(c=>[c.titleZh,base+'maps/'+c.id+'/']))+worldMap.markup()+heading('区域地图入口')+catalogue(areas,'maps')+'<p>'+link('区域资料参考：Gamer Guides',worldMap.graph.referenceUrl)+'</p>',{parent:['地图','maps']});
 for(const [slug,title] of [['hidden-paths','隐藏通道'],['breakable-walls','可破坏墙壁'],['locked-doors','反锁门']])page('maps/'+slug+'/',title,title+' 资料持续整理中。','<p class="classic-subtitle">尚无已确认的地图资料。</p>',{parent:['地图','maps'],noindex:true});
 page('bosses/','Boss / encounter 目录','Well Dweller 首领与遭遇目录。',catalogue(bosses,'bosses'));
 for(const e of bosses)page('bosses/'+e.slug+'/',name(e),e.nameEn+' 已确认的遭遇资料。',facts(e)+(e.aliases?'<p class="classic-subtitle">名称存在来源差异：'+esc(e.aliases.join(' / '))+'</p>':'')+heading('相关攻略')+list([...(publicValue(e,'area')&&refs.has(publicValue(e,'area'))?[refs.get(publicValue(e,'area'))]:[]),['Boss 目录',base+'bosses/']]),{parent:['Boss / encounter','bosses'],entity:e});

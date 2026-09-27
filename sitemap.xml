@@ -1,274 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://gamenote.cc/</loc></url>
-  <url><loc>https://gamenote.cc/games/</loc></url>
-  <url><loc>https://gamenote.cc/notes/</loc></url>
-  
-  
-  <url><loc>https://gamenote.cc/updates/</loc></url>
   <url><loc>https://gamenote.cc/about/</loc></url>
-  <url><loc>https://gamenote.cc/search/</loc></url>
-  <url><loc>https://gamenote.cc/notes/why-organize-game-guides-again/</loc></url>
-  <url><loc>https://gamenote.cc/notes/why-an-jing-wei-guang-looks-like-an-old-guide-site/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/updates/well-dweller-v1-database/</loc></url>
-<url><loc>https://gamenote.cc/updates/well-dweller-guide-scaffolding/</loc></url>
-<url><loc>https://gamenote.cc/updates/classic-content-generation/</loc></url>
-<url><loc>https://gamenote.cc/updates/classic-framework/</loc></url>
-<url><loc>https://gamenote.cc/updates/islets-boss-notes/</loc></url>
-<url><loc>https://gamenote.cc/updates/ender-lilies-pages-deployment/</loc></url>
-<url><loc>https://gamenote.cc/updates/gamenote-archive-structure/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/well-dweller-v1-database/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/well-dweller-guide-scaffolding/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/classic-content-generation/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/classic-framework/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/islets-boss-notes/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/ender-lilies-pages-deployment/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/gamenote-archive-structure/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/updates/well-dweller-guide-reading-update/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/well-dweller-guide-reading-update/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
+  <url><loc>https://gamenote.cc/en/</loc></url>
+  <url><loc>https://gamenote.cc/en/about/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/climb/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/endless-climb/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/hover/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/slingshot/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/soar/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/tent-travel/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/torpedo/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/wall-sling/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/water-vessel/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/wind-ride/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/50-slots/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/a-warm-fire/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/above-the-kingdom/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/amateur-collector/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/at-the-dollmakers-house/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/bouncing-bottles/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/buggy-business/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/complete-flock/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/dark-garden/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/digging-deep/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/double-trouble/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/down-the-drain/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/endgame/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/expert-collector/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/first-purchase/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/flying-high/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/fully-stocked/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/halfway-there/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/hide-and-seek/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/in-the-workshop/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/into-the-deep/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/kings-hat/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/late-night-guest/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/littlest-bird/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/lonely-soul/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/on-fire/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/once-upon-a-time/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/pyromaniac/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/sharp-and-shiny/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/snatched-up/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/song-of-stars/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/splendid-feast/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/stitched-back-together/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/stormy-night/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/taking-a-break/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/ten-slots/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/the-first-born-daughter/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/the-tattered-doll/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/together-at-last/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/veteran-collector/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/warming-up/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/forest-king/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/gravedigger/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/shrine-of-the-seven-sons/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/silver-doll/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/starsinger/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-groundskeeper/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-lady-of-the-drains/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-swarm/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/golden-gate-key/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/the-queens-coin/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/spirits/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/story-pages/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/trinket-slots/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/trinkets/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/desiccated-castle/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/graven-valley/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/night-garden/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-bog/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-deep/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-docks/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-drains/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-well/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/world/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/quests/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/systems/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/updates/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/desiccated-castle/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/graven-valley/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/night-garden/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-bog/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-deep/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-docks/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-drains/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-well/</loc></url>
+  <url><loc>https://gamenote.cc/en/notes/</loc></url>
+  <url><loc>https://gamenote.cc/en/notes/why-an-jing-wei-guang-looks-like-an-old-guide-site/</loc></url>
+  <url><loc>https://gamenote.cc/en/notes/why-organize-game-guides-again/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/classic-content-generation/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/classic-framework/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/ender-lilies-pages-deployment/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/gamenote-archive-structure/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/islets-boss-notes/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/well-dweller-guide-reading-update/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/well-dweller-guide-scaffolding/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/well-dweller-v1-database/</loc></url>
+  <url><loc>https://gamenote.cc/games/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-well/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-well/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/night-garden/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/night-garden/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/hunters-cabin/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/hunters-cabin/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-bog/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-bog/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-drains/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-drains/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/graven-valley/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/graven-valley/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-docks/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-docks/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-deep/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-deep/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/desiccated-castle/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/desiccated-castle/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/world/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/climb/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/endless-climb/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/hover/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/slingshot/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/soar/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/tent-travel/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/torpedo/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/wall-sling/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/water-vessel/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/wind-ride/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/50-slots/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/a-warm-fire/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/above-the-kingdom/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/amateur-collector/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/at-the-dollmakers-house/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/bouncing-bottles/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/buggy-business/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/complete-flock/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/dark-garden/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/digging-deep/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/double-trouble/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/down-the-drain/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/endgame/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/expert-collector/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/first-purchase/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/flying-high/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/fully-stocked/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/halfway-there/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/hide-and-seek/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/in-the-workshop/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/into-the-deep/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/kings-hat/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/late-night-guest/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/littlest-bird/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/lonely-soul/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/on-fire/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/once-upon-a-time/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/pyromaniac/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/sharp-and-shiny/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/snatched-up/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/song-of-stars/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/splendid-feast/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/stitched-back-together/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/stormy-night/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/taking-a-break/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/ten-slots/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/the-first-born-daughter/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/the-tattered-doll/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/together-at-last/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/veteran-collector/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/warming-up/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-groundskeeper/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-swarm/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-lady-of-the-drains/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/shrine-of-the-seven-sons/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/starsinger/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/forest-king/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/gravedigger/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/shrine-of-the-seven-sons/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/silver-doll/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-queen/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/slingshot/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/climb/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/tent-travel/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/wind-ride/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/hover/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/water-vessel/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/torpedo/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/endless-climb/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/wall-sling/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/abilities/soar/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/spirits/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/story-pages/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/trinkets/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/trinket-slots/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/golden-gate-key/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/the-queens-coin/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/quests/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/once-upon-a-time/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/dark-garden/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/amateur-collector/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/lonely-soul/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/snatched-up/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/first-purchase/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/a-warm-fire/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/ten-slots/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/buggy-business/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/warming-up/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/down-the-drain/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/littlest-bird/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/veteran-collector/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/in-the-workshop/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/hide-and-seek/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/pyromaniac/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/taking-a-break/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/into-the-deep/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/stormy-night/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/double-trouble/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/song-of-stars/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/on-fire/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/kings-hat/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/splendid-feast/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/50-slots/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/halfway-there/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/at-the-dollmakers-house/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/stitched-back-together/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/digging-deep/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/late-night-guest/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/above-the-kingdom/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/sharp-and-shiny/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/endgame/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/complete-flock/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/the-tattered-doll/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/expert-collector/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/the-first-born-daughter/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/flying-high/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/together-at-last/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/fully-stocked/</loc></url>
-  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/bouncing-bottles/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/starsinger/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-groundskeeper/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-lady-of-the-drains/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-swarm/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/golden-gate-key/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/the-queens-coin/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/spirits/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/story-pages/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/trinket-slots/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/trinkets/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/desiccated-castle/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/graven-valley/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/night-garden/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-bog/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-deep/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-docks/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-drains/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-well/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/world/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/quests/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/systems/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/</loc></url>
-<url><loc>https://gamenote.cc/en/games/</loc></url>
-<url><loc>https://gamenote.cc/en/notes/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/about/</loc></url>
-<url><loc>https://gamenote.cc/en/search/</loc></url>
-<url><loc>https://gamenote.cc/en/notes/why-organize-game-guides-again/</loc></url>
-<url><loc>https://gamenote.cc/en/notes/why-an-jing-wei-guang-looks-like-an-old-guide-site/</loc></url>
-
-
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/climb/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/endless-climb/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/hover/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/slingshot/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/soar/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/tent-travel/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/torpedo/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/wall-sling/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/water-vessel/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/wind-ride/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/50-slots/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/a-warm-fire/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/above-the-kingdom/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/amateur-collector/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/at-the-dollmakers-house/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/bouncing-bottles/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/buggy-business/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/complete-flock/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/dark-garden/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/digging-deep/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/double-trouble/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/down-the-drain/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/endgame/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/expert-collector/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/first-purchase/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/flying-high/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/fully-stocked/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/halfway-there/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/hide-and-seek/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/in-the-workshop/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/into-the-deep/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/kings-hat/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/late-night-guest/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/littlest-bird/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/lonely-soul/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/on-fire/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/once-upon-a-time/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/pyromaniac/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/sharp-and-shiny/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/snatched-up/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/song-of-stars/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/splendid-feast/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/stitched-back-together/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/stormy-night/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/taking-a-break/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/ten-slots/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/the-first-born-daughter/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/the-tattered-doll/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/together-at-last/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/veteran-collector/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/warming-up/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/forest-king/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/gravedigger/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/shrine-of-the-seven-sons/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/silver-doll/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/starsinger/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-groundskeeper/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-lady-of-the-drains/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-queen/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-swarm/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/golden-gate-key/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/the-queens-coin/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/spirits/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/story-pages/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/trinket-slots/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/trinkets/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/desiccated-castle/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/graven-valley/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/hunters-cabin/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/night-garden/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-bog/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-deep/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-docks/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-drains/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-well/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/world/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/quests/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/systems/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/desiccated-castle/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/graven-valley/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/hunters-cabin/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/night-garden/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-bog/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-deep/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-docks/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-drains/</loc></url>
-<url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-well/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/desiccated-castle/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/graven-valley/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/night-garden/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-bog/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-deep/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-docks/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-drains/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-well/</loc></url>
+  <url><loc>https://gamenote.cc/notes/</loc></url>
+  <url><loc>https://gamenote.cc/notes/why-an-jing-wei-guang-looks-like-an-old-guide-site/</loc></url>
+  <url><loc>https://gamenote.cc/notes/why-organize-game-guides-again/</loc></url>
+  <url><loc>https://gamenote.cc/updates/</loc></url>
+  <url><loc>https://gamenote.cc/updates/classic-content-generation/</loc></url>
+  <url><loc>https://gamenote.cc/updates/classic-framework/</loc></url>
+  <url><loc>https://gamenote.cc/updates/ender-lilies-pages-deployment/</loc></url>
+  <url><loc>https://gamenote.cc/updates/gamenote-archive-structure/</loc></url>
+  <url><loc>https://gamenote.cc/updates/islets-boss-notes/</loc></url>
+  <url><loc>https://gamenote.cc/updates/well-dweller-guide-reading-update/</loc></url>
+  <url><loc>https://gamenote.cc/updates/well-dweller-guide-scaffolding/</loc></url>
+  <url><loc>https://gamenote.cc/updates/well-dweller-v1-database/</loc></url>
 </urlset>
