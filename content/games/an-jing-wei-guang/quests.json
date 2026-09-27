@@ -1,0 +1,542 @@
+[
+  {
+    "id": "graven-valley-rescue",
+    "slug": "graven-valley-rescue",
+    "nameEn": "Graven Valley Rescue",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "startNpc": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "steps": {
+        "value": [],
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "prerequisite": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "repair-the-elevator",
+    "slug": "repair-the-elevator",
+    "nameEn": "Repair the Elevator",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "startNpc": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "steps": {
+        "value": [],
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "prerequisite": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "missing-sailors",
+    "slug": "missing-sailors",
+    "nameEn": "Missing Sailors",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "startNpc": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "steps": {
+        "value": [],
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "prerequisite": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "a-ride-to-the-party",
+    "slug": "a-ride-to-the-party",
+    "nameEn": "A Ride to the Party",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "startNpc": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "steps": {
+        "value": [],
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "prerequisite": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "the-castle-gate",
+    "slug": "the-castle-gate",
+    "nameEn": "The Castle Gate",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "startNpc": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "steps": {
+        "value": [],
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "prerequisite": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "the-queens-chamber",
+    "slug": "the-queens-chamber",
+    "nameEn": "The Queen's Chamber",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "startNpc": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "steps": {
+        "value": [],
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "prerequisite": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  }
+]

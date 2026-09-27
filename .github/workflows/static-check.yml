@@ -1,0 +1,23 @@
+name: Static site checks
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm run lint
+      - run: npm run typecheck
+      - name: Verify generated bundle is tracked for branch deployment
+        run: git ls-files --error-unmatch pagefind/pagefind.js pagefind/pagefind-entry.json

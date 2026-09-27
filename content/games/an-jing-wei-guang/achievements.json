@@ -1,0 +1,1018 @@
+[
+  {
+    "id": "dark-garden",
+    "slug": "dark-garden",
+    "nameEn": "Dark Garden",
+    "nameZh": null,
+    "description": "Defeat the Groundskeeper",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "snatched-up",
+    "slug": "snatched-up",
+    "nameEn": "Snatched Up",
+    "nameZh": null,
+    "description": "Meet the Hunter",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "a-warm-fire",
+    "slug": "a-warm-fire",
+    "nameEn": "A Warm Fire",
+    "nameZh": null,
+    "description": "Go camping with Ilda",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "buggy-business",
+    "slug": "buggy-business",
+    "nameEn": "Buggy Business",
+    "nameZh": null,
+    "description": "Defeat the Swarm",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "down-the-drain",
+    "slug": "down-the-drain",
+    "nameEn": "Down the Drain",
+    "nameZh": null,
+    "description": "Defeat the Lady of the Drains",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "littlest-bird",
+    "slug": "littlest-bird",
+    "nameEn": "Littlest Bird",
+    "nameZh": null,
+    "description": "Collect Egbert",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "hide-and-seek",
+    "slug": "hide-and-seek",
+    "nameEn": "Hide and Seek",
+    "nameZh": null,
+    "description": "Evade the Queen",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "into-the-deep",
+    "slug": "into-the-deep",
+    "nameEn": "Into the Deep",
+    "nameZh": null,
+    "description": "Gain access to a water vessel",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "once-upon-a-time",
+    "slug": "once-upon-a-time",
+    "nameEn": "Once Upon a Time...",
+    "nameZh": null,
+    "description": "Collect a story page",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "the-first-born-daughter",
+    "slug": "the-first-born-daughter",
+    "nameEn": "The First-Born Daughter",
+    "nameZh": null,
+    "description": "Collect all pages for \"The Witch’s Bargain\"",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "the-tattered-doll",
+    "slug": "the-tattered-doll",
+    "nameEn": "The Tattered Doll",
+    "nameZh": null,
+    "description": "Collect all pages for \"The Dollmaker’s House\"",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "above-the-kingdom",
+    "slug": "above-the-kingdom",
+    "nameEn": "Above the Kingdom",
+    "nameZh": null,
+    "description": "Collect all pages for \"The Lookout Tower\"",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "taking-a-break",
+    "slug": "taking-a-break",
+    "nameEn": "Taking a Break",
+    "nameZh": null,
+    "description": "Visit the spa",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "flying-high",
+    "slug": "flying-high",
+    "nameEn": "Flying High",
+    "nameZh": null,
+    "description": "Learn to soar",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "together-at-last",
+    "slug": "together-at-last",
+    "nameEn": "Together at Last",
+    "nameZh": null,
+    "description": "Reunite the flock",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "pyromaniac",
+    "slug": "pyromaniac",
+    "nameEn": "Pyromaniac",
+    "nameZh": null,
+    "description": "Throw 100 flaming vessels",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "bouncing-bottles",
+    "slug": "bouncing-bottles",
+    "nameEn": "Bouncing Bottles",
+    "nameZh": null,
+    "description": "Juggle a flaming vessel 10 times without it breaking",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "补全不破裂条件，避免缺失连续操作要求。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "fully-stocked",
+    "slug": "fully-stocked",
+    "nameEn": "Fully Stocked",
+    "nameZh": null,
+    "description": "Upgrade all of your trinkets to the maximum amount",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "warming-up",
+    "slug": "warming-up",
+    "nameEn": "Warming Up",
+    "nameZh": null,
+    "description": "Kill 100 enemies",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "on-fire",
+    "slug": "on-fire",
+    "nameEn": "On Fire",
+    "nameZh": null,
+    "description": "Kill 500 enemies",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "ten-slots",
+    "slug": "ten-slots",
+    "nameEn": "Ten Slots",
+    "nameZh": null,
+    "description": "Collect 10 trinket slots",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "50-slots",
+    "slug": "50-slots",
+    "nameEn": "50 Slots",
+    "nameZh": null,
+    "description": "Collect 50 trinket slots",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "V1 写作 Fifty Slots；按 Steam 原文修正为 50 Slots。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "guide": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  }
+]

@@ -1,0 +1,10 @@
+# GitHub Pages branch builds must never publish research/source data.
+exclude:
+  - _research
+  - content
+  - scripts
+  - node_modules
+  - package.json
+  - package-lock.json
+include:
+  - pagefind

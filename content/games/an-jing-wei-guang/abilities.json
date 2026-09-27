@@ -1,0 +1,614 @@
+[
+  {
+    "id": "slingshot",
+    "slug": "slingshot",
+    "nameEn": "Slingshot",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "type": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "类型为编辑分类，未核验的保持空值。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "acquisition": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "climb",
+    "slug": "climb",
+    "nameEn": "Climb",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "type": {
+        "value": "movement",
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "类型为编辑分类，未核验的保持空值。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "acquisition": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "tent-travel",
+    "slug": "tent-travel",
+    "nameEn": "Tent Travel",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "type": {
+        "value": "travel",
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "类型为编辑分类，未核验的保持空值。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "acquisition": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "wind-ride",
+    "slug": "wind-ride",
+    "nameEn": "Wind Ride",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "type": {
+        "value": "movement",
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "类型为编辑分类，未核验的保持空值。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "acquisition": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "hover",
+    "slug": "hover",
+    "nameEn": "Hover",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "type": {
+        "value": "movement",
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "类型为编辑分类，未核验的保持空值。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "acquisition": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "water-vessel",
+    "slug": "water-vessel",
+    "nameEn": "Water Vessel",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "官方成就描述确认名称/存在性；获取方式仍未公开。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "type": {
+        "value": "vehicle",
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "类型为编辑分类，未核验的保持空值。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "acquisition": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "torpedo",
+    "slug": "torpedo",
+    "nameEn": "Torpedo",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "type": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "类型为编辑分类，未核验的保持空值。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "acquisition": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "endless-climb",
+    "slug": "endless-climb",
+    "nameEn": "Endless Climb",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "type": {
+        "value": "movement",
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "类型为编辑分类，未核验的保持空值。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "acquisition": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "wall-sling",
+    "slug": "wall-sling",
+    "nameEn": "Wall Sling",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "type": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "类型为编辑分类，未核验的保持空值。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "acquisition": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "soar",
+    "slug": "soar",
+    "nameEn": "Soar",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "官方成就描述确认名称/存在性；获取方式仍未公开。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "type": {
+        "value": "movement",
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "类型为编辑分类，未核验的保持空值。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "acquisition": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  }
+]

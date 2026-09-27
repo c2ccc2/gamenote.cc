@@ -1,0 +1,380 @@
+[
+  {
+    "id": "golden-gate-key",
+    "slug": "golden-gate-key",
+    "nameEn": "Golden Gate Key",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "function": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "elevator-parts",
+    "slug": "elevator-parts",
+    "nameEn": "Elevator Parts",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "function": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "looter-parts",
+    "slug": "looter-parts",
+    "nameEn": "Looter Parts",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "function": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "golden-feathers",
+    "slug": "golden-feathers",
+    "nameEn": "Golden Feathers",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "function": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "ildas-siblings",
+    "slug": "ildas-siblings",
+    "nameEn": "Ilda's Siblings",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "function": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "spirit-fragments",
+    "slug": "spirit-fragments",
+    "nameEn": "Spirit Fragments",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "function": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "the-queens-coin",
+    "slug": "the-queens-coin",
+    "nameEn": "The Queen's Coin",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "function": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "mysterious-markings",
+    "slug": "mysterious-markings",
+    "nameEn": "Mysterious Markings",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "function": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "festival-hat",
+    "slug": "festival-hat",
+    "nameEn": "Festival Hat",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "function": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  }
+]

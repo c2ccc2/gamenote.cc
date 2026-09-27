@@ -1,0 +1,602 @@
+[
+  {
+    "id": "time-trial-night-garden",
+    "slug": "time-trial-night-garden",
+    "nameEn": "Night Garden",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "route": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    },
+    "type": "time-trial",
+    "areaId": "night-garden"
+  },
+  {
+    "id": "time-trial-desiccated-castle",
+    "slug": "time-trial-desiccated-castle",
+    "nameEn": "Desiccated Castle",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "route": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    },
+    "type": "time-trial",
+    "areaId": "desiccated-castle"
+  },
+  {
+    "id": "time-trial-midnight-drench",
+    "slug": "time-trial-midnight-drench",
+    "nameEn": "Midnight Drench",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "route": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    },
+    "type": "time-trial",
+    "areaId": "midnight-drench"
+  },
+  {
+    "id": "time-trial-hunters-cabin",
+    "slug": "time-trial-hunters-cabin",
+    "nameEn": "Hunter's Cabin",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "route": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    },
+    "type": "time-trial",
+    "areaId": "hunters-cabin"
+  },
+  {
+    "id": "time-trial-autumn-forest",
+    "slug": "time-trial-autumn-forest",
+    "nameEn": "Autumn Forest",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "route": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    },
+    "type": "time-trial",
+    "areaId": "autumn-forest"
+  },
+  {
+    "id": "time-trial-the-docks",
+    "slug": "time-trial-the-docks",
+    "nameEn": "The Docks",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "route": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    },
+    "type": "time-trial",
+    "areaId": "the-docks"
+  },
+  {
+    "id": "time-trial-the-bog",
+    "slug": "time-trial-the-bog",
+    "nameEn": "The Bog",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "route": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    },
+    "type": "time-trial",
+    "areaId": "the-bog"
+  },
+  {
+    "id": "time-trial-dollmakers-house",
+    "slug": "time-trial-dollmakers-house",
+    "nameEn": "Dollmaker's House",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "route": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    },
+    "type": "time-trial",
+    "areaId": "dollmakers-house"
+  },
+  {
+    "id": "time-trial-graven-valley",
+    "slug": "time-trial-graven-valley",
+    "nameEn": "Graven Valley",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "route": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    },
+    "type": "time-trial",
+    "areaId": "graven-valley"
+  },
+  {
+    "id": "time-trial-the-drains",
+    "slug": "time-trial-the-drains",
+    "nameEn": "The Drains",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "reward": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "route": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      }
+    },
+    "type": "time-trial",
+    "areaId": "the-drains"
+  }
+]

@@ -1,0 +1,391 @@
+[
+  {
+    "id": "spirits",
+    "slug": "spirits",
+    "nameEn": "Spirits",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "story-pages",
+    "slug": "story-pages",
+    "nameEn": "Story Pages",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "count": {
+        "value": 23,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "社区资料约 23 个位置，不能作为最终总数。"
+        ],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "trinkets",
+    "slug": "trinkets",
+    "nameEn": "Trinkets",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "count": {
+        "value": 32,
+        "confidence": "A",
+        "verificationStatus": "source-confirmed",
+        "publishStatus": "published",
+        "sources": [
+          {
+            "name": "Steam 官方成就列表",
+            "url": "https://steamcommunity.com/stats/3699590/achievements",
+            "type": "official",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "Steam 成就 Expert Collector 的条件确认 32；数量按当前记录展示。"
+        ],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "trinket-slots",
+    "slug": "trinket-slots",
+    "nameEn": "Trinket Slots",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "workshop-tokens",
+    "slug": "workshop-tokens",
+    "nameEn": "Workshop Tokens",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "golden-feathers",
+    "slug": "golden-feathers",
+    "nameEn": "Golden Feathers",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "count": {
+        "value": 7,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "V1 单一编辑记录，非最终总数。"
+        ],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "elevator-parts",
+    "slug": "elevator-parts",
+    "nameEn": "Elevator Parts",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "count": {
+        "value": 3,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "V1 单一编辑记录，非最终总数。"
+        ],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "looter-parts",
+    "slug": "looter-parts",
+    "nameEn": "Looter Parts",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "count": {
+        "value": 4,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "V1 单一编辑记录，非最终总数。"
+        ],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "spirit-fragments",
+    "slug": "spirit-fragments",
+    "nameEn": "Spirit Fragments",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "count": {
+        "value": 5,
+        "confidence": "C",
+        "verificationStatus": "unverified",
+        "publishStatus": "draft",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "V1 单一编辑记录，非最终总数。"
+        ],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "key-items",
+    "slug": "key-items",
+    "nameEn": "Key Items",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "quest-items",
+    "slug": "quest-items",
+    "nameEn": "Quest Items",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  }
+]

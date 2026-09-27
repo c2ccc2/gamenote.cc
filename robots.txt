@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /_research/
+Disallow: /content/
+Disallow: /scripts/
+Sitemap: https://gamenote.cc/sitemap.xml

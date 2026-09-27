@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-27",
+  "files": {
+    "game": "game.json",
+    "areas": "areas.json",
+    "bosses": "bosses.json",
+    "abilities": "abilities.json",
+    "collectibles": "collectibles.json",
+    "keyItems": "keyItems.json",
+    "quests": "quests.json",
+    "achievements": "achievements.json",
+    "challenges": "challenges.json"
+  }
+}

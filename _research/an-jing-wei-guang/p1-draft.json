@@ -1,0 +1,716 @@
+{
+  "publishStatus": "research",
+  "archivedAt": "2026-09-27",
+  "reason": "V1 分层：路线、打法和第三方截图只作为 V2 待核验参考。",
+  "data": {
+    "updatedAt": "2026-09-26",
+    "walkthrough": [
+      {
+        "slug": "chapter-01",
+        "title": "P1：夜之庭园／猎人小屋",
+        "description": "从井底进入夜之庭园，挑战园丁，探索猎人小屋并回访起点。依据 P1 录像整理的首版图文流程。",
+        "order": 1,
+        "status": "in-progress",
+        "areas": [
+          "井底起点",
+          "夜之庭园",
+          "猎人小屋"
+        ],
+        "relatedMap": [
+          "area-map"
+        ],
+        "relatedBoss": [
+          "boss-01"
+        ],
+        "blocks": [
+          {
+            "type": "notice",
+            "text": "※ 本页为参考视频整理稿，不是 GAME NOTE 独立游玩的实测记录。时间码对应 P1，本轮仅核对关键帧与烧录字幕；路线分支、全部拾取及版本差异仍需复核。"
+          },
+          {
+            "type": "heading",
+            "text": "一、离开井底，进入庭园",
+            "id": "start"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/start.webp",
+            "alt": "起点位于大型头骨内部。完成对话后，从右侧出口离开；先按平台高度逐层跳跃，不要把起点上层当成必经路线。",
+            "caption": "参考录像 P1 · 03:20 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "left",
+            "text": "起点位于大型头骨内部。完成对话后，从右侧出口离开；先按平台高度逐层跳跃，不要把起点上层当成必经路线。"
+          },
+          {
+            "type": "paragraph",
+            "text": "录像约 03:44 出现「夜之庭园」区域名。前段会经过紫色障碍和高处亮点，录像先保留这些点位，继续寻找能走通的路线。"
+          },
+          {
+            "type": "notice",
+            "text": "◆ 回访点：记下当前无法处理的紫色障碍及高处拾取；“暂时拿不到”不等于错过，不在这里推定永久可错过条件。"
+          },
+          {
+            "type": "heading",
+            "text": "二、帐篷存档与基础探索",
+            "id": "first-save"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/save.webp",
+            "alt": "沿庭园通路来到紫色帽形帐篷前，交互菜单可以保存游戏并进入营帐。先保存，再继续探索后面的敌人和平台。",
+            "caption": "参考录像 P1 · 04:40 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "right",
+            "text": "沿庭园通路来到紫色帽形帐篷前，交互菜单可以保存游戏并进入营帐。先保存，再继续探索后面的敌人和平台。"
+          },
+          {
+            "type": "paragraph",
+            "text": "前段录像展示了跳跃、冲刺式位移和普通攻击。这里以观察敌人动作、清理落脚平台为主；不要为了追击而跳进平台下方的尖刺。键位以你的实际设置为准。"
+          },
+          {
+            "type": "heading",
+            "text": "三、利用泡泡越过落差",
+            "id": "bubbles"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/bubble.webp",
+            "alt": "庭园多个房间有透明泡泡，可用于跨越落差。以目标平台为落点，录像中在途中离开泡泡并落向高处平台；先检查上方尖刺，再决定何时跳出。",
+            "caption": "参考录像 P1 · 09:18 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "left",
+            "text": "庭园多个房间有透明泡泡，可用于跨越落差。以目标平台为落点，录像中在途中离开泡泡并落向高处平台；先检查上方尖刺，再决定何时跳出。"
+          },
+          {
+            "type": "paragraph",
+            "text": "更早的约 06:45 片段也出现泡泡教学。这类装置既参与主线移动，也用于收集路线；本页不根据单帧推断其所有操作组合。"
+          },
+          {
+            "type": "heading",
+            "text": "四、取得油瓶与饰物点",
+            "id": "garden-pickups"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/oil.webp",
+            "alt": "约 08:50—09:05，带吊锅的房间完成战斗后出现油瓶教学。界面确认油瓶与火柴重新点燃、恢复生命及暂时攻击强化有关，且可在存盘点补充。",
+            "caption": "参考录像 P1 · 09:05 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "left",
+            "text": "约 08:50—09:05，带吊锅的房间完成战斗后出现油瓶教学。界面确认油瓶与火柴重新点燃、恢复生命及暂时攻击强化有关，且可在存盘点补充。"
+          },
+          {
+            "type": "paragraph",
+            "text": "录像内字幕提示：油瓶不是直接点按就完成的普通回复；需要观察光标与白色判定区。不要把它作为无风险的瞬间回血，尤其是在 Boss 连续攻击时。"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/slot.webp",
+            "alt": "取得油瓶后，回到泡泡与阶梯平台的房间。这里可见心形标记的罐子，以及右侧高台上的发光拾取；录像出现「已获得饰物点」提示。此处记录的是装备槽位资源，不误记为猎人的吊坠。",
+            "caption": "参考录像 P1 · 09:28 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "right",
+            "text": "取得油瓶后，回到泡泡与阶梯平台的房间。这里可见心形标记的罐子，以及右侧高台上的发光拾取；录像出现「已获得饰物点」提示。此处记录的是装备槽位资源，不误记为猎人的吊坠。"
+          },
+          {
+            "type": "heading",
+            "text": "五、挑战园丁",
+            "id": "gardener"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/gardener.webp",
+            "alt": "录像约 10:40 开始显示首领「园丁」。先认清空中缓慢落下的粉色弹幕与地面突刺；移动到弹幕间隙，再在攻击停顿时靠近输出。",
+            "caption": "参考录像 P1 · 10:45 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "left",
+            "text": "录像约 10:40 开始显示首领「园丁」。先认清空中缓慢落下的粉色弹幕与地面突刺；移动到弹幕间隙，再在攻击停顿时靠近输出。"
+          },
+          {
+            "type": "paragraph",
+            "text": "后半段出现围绕首领的花瓣形弹幕，不能沿用前半段靠近中心的站位。保持侧面距离、等弹幕通过，再靠近；地面连续突刺时优先脱离原位置。具体无敌帧、伤害数值与招式周期尚未测定。"
+          },
+          {
+            "type": "notice",
+            "text": "→ 详细招式观察见园丁 Boss 页面。这里记录录像中的一种通过方式，不保证无伤或适用于所有版本。"
+          },
+          {
+            "type": "heading",
+            "text": "六、猎人小屋与新攻击教学",
+            "id": "hunters-cabin"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/scavenger.webp",
+            "alt": "园丁战后进入猎人小屋。室内瓶子旁可见「拾荒者」，完成对话后录像演示了投掷焰瓶及空中击打引爆。先在这处较安全的平台上熟悉操作，再去尖刺和笼子房间。",
+            "caption": "参考录像 P1 · 13:35 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "right",
+            "text": "园丁战后进入猎人小屋。室内瓶子旁可见「拾荒者」，完成对话后录像演示了投掷焰瓶及空中击打引爆。先在这处较安全的平台上熟悉操作，再去尖刺和笼子房间。"
+          },
+          {
+            "type": "paragraph",
+            "text": "约 13:56 的界面提示使用 B 投掷焰瓶，并在空中击打它。这个字母只对应录像的手柄设置，不代表键盘或其他绑定。这里采用「焰瓶投掷」作为描述性名称，正式技能名待菜单复核。"
+          },
+          {
+            "type": "paragraph",
+            "text": "约 14:20—14:30，录像在悬挂平台附近取得一张书页。本页先记录点位，不凭模糊缩略图确定书页标题。"
+          },
+          {
+            "type": "heading",
+            "text": "七、悬笼路线与猎人的吊坠",
+            "id": "hunter-pendant"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/cages.webp",
+            "alt": "在小屋内沿移动平台和悬笼前进。约 15:25—15:35，录像经中间泡泡上升后转向左侧出口；后续房间沿悬笼跨过底部尖刺。跳出泡泡前先确定左右方向与下一处落点。",
+            "caption": "参考录像 P1 · 15:40 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "left",
+            "text": "在小屋内沿移动平台和悬笼前进。约 15:25—15:35，录像经中间泡泡上升后转向左侧出口；后续房间沿悬笼跨过底部尖刺。跳出泡泡前先确定左右方向与下一处落点。"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/pendant.webp",
+            "alt": "从悬笼房间上方绕行后，约 16:04 出现「猎人的吊坠」获取界面。其界面说明与治疗判定时间有关；不是生命上限提升，也不要将解说中的体感变化写成固定倍率。",
+            "caption": "参考录像 P1 · 16:04 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "right",
+            "text": "从悬笼房间上方绕行后，约 16:04 出现「猎人的吊坠」获取界面。其界面说明与治疗判定时间有关；不是生命上限提升，也不要将解说中的体感变化写成固定倍率。"
+          },
+          {
+            "type": "paragraph",
+            "text": "约 17:45 的装备界面显示此饰物占用 4 个槽位。录像中的可用槽位数量只是当前存档状态，不作为全游戏初始值或上限。"
+          },
+          {
+            "type": "heading",
+            "text": "八、继续探索小屋，返回起点",
+            "id": "return"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/local-map.webp",
+            "alt": "小屋后段出现鸟巢式入口、猎人所在房间和地图界面。录像随后绕过尖刺与悬笼，返回庭园。截图只展示此存档已探索的局部地图，不是全区域地图。",
+            "caption": "参考录像 P1 · 19:32 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "left",
+            "text": "小屋后段出现鸟巢式入口、猎人所在房间和地图界面。录像随后绕过尖刺与悬笼，返回庭园。截图只展示此存档已探索的局部地图，不是全区域地图。"
+          },
+          {
+            "type": "paragraph",
+            "text": "约 20:15 有受墙体包围的发光图标，但本轮不能仅靠单帧确认其正式名称或拾取完成情况；该点位列为后续复核。拾荒者商店画面也只证明商品存在，不代表必须立即购买。"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/revisit.webp",
+            "alt": "返回庭园后，录像重新接近先前保留的紫色障碍。新攻击获得后再检查这些回访点；不要在攻略前段要求玩家使用尚未学习的动作。",
+            "caption": "参考录像 P1 · 24:40 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "right",
+            "text": "返回庭园后，录像重新接近先前保留的紫色障碍。新攻击获得后再检查这些回访点；不要在攻略前段要求玩家使用尚未学习的动作。"
+          },
+          {
+            "type": "paragraph",
+            "text": "末段约 25:30 回到头骨起点，随后经竖向通道与水道继续下行。下一段参考录像为 P2「沼泽」，其入口衔接与完整路线尚未核对。"
+          },
+          {
+            "type": "notice",
+            "text": "→ 下一步：先保存、确认油瓶与已装备饰物，再进入 P2 待整理章节。"
+          }
+        ],
+        "sourceId": "p1-night-garden-hunters-cabin",
+        "objective": "完成庭园前段探索与园丁战，在猎人小屋学习新攻击，返回起点继续下行。",
+        "bossSummary": "园丁",
+        "collectibleSummary": "油瓶、饰物点、猎人的吊坠；书页与其他拾取待进一步对照。",
+        "cautions": "首次遇到的紫色障碍和高处拾取不必强行获取；本页不是全收集证明。",
+        "relatedNotes": [
+          "why-an-jing-wei-guang-looks-like-an-old-guide-site"
+        ],
+        "collectibleBlocks": [
+          {
+            "type": "table",
+            "title": "P1 已核对的收集记录",
+            "headers": [
+              "记录",
+              "录像时间",
+              "确认范围"
+            ],
+            "rows": [
+              [
+                "油瓶",
+                "约 08:50—09:05",
+                "教学界面与获得节点"
+              ],
+              [
+                "饰物点",
+                "约 09:24—09:28",
+                "获得提示；心形罐子与右侧亮点需区分"
+              ],
+              [
+                "书页",
+                "约 14:20—14:30",
+                "拾取点位；名称待复核"
+              ],
+              [
+                "猎人的吊坠",
+                "约 16:04 / 17:45",
+                "获取名称、说明及装备槽位 4"
+              ]
+            ]
+          },
+          {
+            "type": "notice",
+            "text": "※ 本清单只列已核对片段。生命恢复罐子、商店商品、发光图标及尚未核实的分支，不计入已完成收集。"
+          }
+        ]
+      },
+      {
+        "slug": "chapter-02",
+        "title": "P2：沼泽",
+        "description": "已收到 P2「沼泽」录像；内容尚未解析。区域名称暂沿用文件名。",
+        "order": 2,
+        "status": "draft",
+        "sourceId": "p2",
+        "blocks": []
+      },
+      {
+        "slug": "chapter-03",
+        "title": "P3：排水道",
+        "description": "已收到 P3「排水道」录像；内容尚未解析。区域名称暂沿用文件名。",
+        "order": 3,
+        "status": "draft",
+        "sourceId": "p3",
+        "blocks": []
+      },
+      {
+        "slug": "chapter-04",
+        "title": "P4：墓谷",
+        "description": "已收到 P4「墓谷」录像；内容尚未解析。区域名称暂沿用文件名。",
+        "order": 4,
+        "status": "draft",
+        "sourceId": "p4",
+        "blocks": []
+      },
+      {
+        "slug": "chapter-05",
+        "title": "P5：荒堡",
+        "description": "已收到 P5「荒堡」录像；内容尚未解析。区域名称暂沿用文件名。",
+        "order": 5,
+        "status": "draft",
+        "sourceId": "p5",
+        "blocks": []
+      },
+      {
+        "slug": "chapter-06",
+        "title": "P6：码头",
+        "description": "已收到 P6「码头」录像；内容尚未解析。区域名称暂沿用文件名。",
+        "order": 6,
+        "status": "draft",
+        "sourceId": "p6",
+        "blocks": []
+      },
+      {
+        "slug": "chapter-07",
+        "title": "P7：深渊",
+        "description": "已收到 P7「深渊」录像；内容尚未解析。区域名称暂沿用文件名。",
+        "order": 7,
+        "status": "draft",
+        "sourceId": "p7",
+        "blocks": []
+      },
+      {
+        "slug": "final",
+        "title": "最终区域",
+        "description": "结局与最终区域尚未解析，不将 P7 深渊直接认定为最终区域。",
+        "order": 8,
+        "status": "draft",
+        "blocks": []
+      }
+    ],
+    "bosses": [
+      {
+        "slug": "boss-01",
+        "name": "园丁",
+        "area": "夜之庭园",
+        "difficultyNote": "初段首领；实际难度取决于操作与装备，未测定数值。",
+        "recommendedAbility": "普通攻击与躲避位移；可提前取得油瓶。",
+        "reward": "录像显示战后可以继续进入猎人小屋；独立掉落奖励待确认。",
+        "guideStatus": "in-progress",
+        "blocks": [
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/gardener.webp",
+            "alt": "园丁登场与早期弹幕。",
+            "caption": "参考录像 P1 · 10:45 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "left",
+            "text": "园丁登场与早期弹幕。"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/gardener-ring.webp",
+            "alt": "环绕弹幕接近首领中心，建议先退到侧面观察空隙。",
+            "caption": "参考录像 P1 · 11:15 · 好吃的香草雪球",
+            "width": 852,
+            "height": 480,
+            "align": "right",
+            "text": "环绕弹幕接近首领中心，建议先退到侧面观察空隙。"
+          },
+          {
+            "type": "notice",
+            "text": "※ 不从录像中的成功躲避推定所有攻击都能无伤穿越。"
+          }
+        ],
+        "description": "根据 P1 录像整理园丁的落弹、地面突刺与花瓣弹幕观察。",
+        "sourceId": "p1-night-garden-hunters-cabin",
+        "prerequisite": "按 P1 庭园路线推进，在附近帐篷存档，再进入首领场景。",
+        "attacks": "可见空中粉色落弹、地面突刺，以及后半段环绕身体的花瓣形弹幕。",
+        "strategy": "先避开落弹并观察地面；只在安全停顿靠近输出。出现环绕弹幕后保持侧面距离，不沿用前半段站位。",
+        "notices": "这是一段通关示范，不是全招式统计。无敌帧、触发血量、精确伤害与周期待实测。",
+        "relatedWalkthrough": "chapter-01"
+      },
+      {
+        "slug": "boss-02",
+        "name": "Boss 02",
+        "guideStatus": "draft",
+        "blocks": []
+      },
+      {
+        "slug": "boss-03",
+        "name": "Boss 03",
+        "guideStatus": "draft",
+        "blocks": []
+      },
+      {
+        "slug": "boss-04",
+        "name": "Boss 04",
+        "guideStatus": "draft",
+        "blocks": []
+      }
+    ],
+    "maps": [
+      {
+        "slug": "area-map",
+        "title": "夜之庭园／猎人小屋：录像内局部地图",
+        "area": "夜之庭园、猎人小屋",
+        "image": {
+          "src": "/games/an-jing-wei-guang/images/p1/local-map.webp",
+          "alt": "P1 19:32 的庭园已探索地图，右侧仅可见部分小屋地图",
+          "caption": "P1 · 19:32 · 原游戏局部地图，未补绘未探索房间",
+          "width": 852,
+          "height": 480
+        },
+        "description": "P1 录像中已探索的局部地图与流程地标，不是 100% 完整地图。",
+        "importantLocations": [
+          "头骨起点",
+          "帽形帐篷",
+          "园丁战场",
+          "拾荒者所在平台",
+          "悬笼尖刺房间"
+        ],
+        "relatedWalkthrough": [
+          "chapter-01"
+        ],
+        "updatedAt": "2026-09-26",
+        "blocks": [
+          {
+            "type": "notice",
+            "text": "※ 本图只保留录像当时显示的地图范围。颜色、图标含义尚未全部核实，不推定收集完成度。"
+          },
+          {
+            "type": "table",
+            "title": "按流程辨认的地标",
+            "headers": [
+              "阶段",
+              "地标",
+              "对应片段"
+            ],
+            "rows": [
+              [
+                "庭园前段",
+                "帽形帐篷与存档菜单",
+                "约 04:40"
+              ],
+              [
+                "庭园收集",
+                "吊锅房间与泡泡平台",
+                "约 08:50—09:30"
+              ],
+              [
+                "首领",
+                "园丁战场",
+                "约 10:40—12:00"
+              ],
+              [
+                "小屋",
+                "瓶子旁拾荒者",
+                "约 12:35—14:00"
+              ],
+              [
+                "小屋收集",
+                "尖刺与悬笼",
+                "约 15:25—16:04"
+              ]
+            ]
+          }
+        ],
+        "status": "in-progress",
+        "sourceId": "p1-night-garden-hunters-cabin"
+      },
+      {
+        "slug": "hidden-area",
+        "title": "隐藏区域",
+        "area": "待确认",
+        "image": null,
+        "description": "地图整理中。",
+        "importantLocations": [],
+        "relatedWalkthrough": [],
+        "updatedAt": "2026-09-26",
+        "blocks": []
+      }
+    ],
+    "abilities": [
+      {
+        "name": "油瓶",
+        "use": "重新点燃火柴；教学界面显示与恢复生命、暂时攻击强化有关。",
+        "location": "P1 庭园吊锅战斗后的教学节点，约 08:50—09:05。",
+        "condition": "推进至对应教学；使用时观察光标判定区。",
+        "relatedArea": "夜之庭园"
+      },
+      {
+        "name": "焰瓶投掷（描述性名称）",
+        "use": "投掷后在空中击打焰瓶引爆；录像显示可用于战斗及回访障碍。",
+        "location": "P1 小屋拾荒者教学，约 13:35—14:00。",
+        "condition": "完成该处对话与教学；录像手柄提示为 B。",
+        "relatedArea": "猎人小屋"
+      }
+    ],
+    "collectibles": [
+      {
+        "name": "饰物点",
+        "category": "装备槽位资源",
+        "area": "夜之庭园",
+        "location": "泡泡与阶梯平台房间，约 09:24—09:28；右侧亮点与心形罐子需区分。",
+        "requirement": "利用泡泡与高处平台接近发光拾取。",
+        "missable": "未确认",
+        "relatedGuide": "chapter-01"
+      },
+      {
+        "name": "猎人的吊坠",
+        "category": "饰物",
+        "area": "猎人小屋",
+        "location": "悬笼与尖刺房间上方绕行后的平台，约 16:04。",
+        "requirement": "沿悬笼、泡泡和上层通路抵达；装备占用 4 槽。",
+        "missable": "未确认",
+        "relatedGuide": "chapter-01"
+      }
+    ],
+    "sources": [
+      {
+        "id": "p1-night-garden-hunters-cabin",
+        "author": "好吃的香草雪球",
+        "authorUrl": "https://space.bilibili.com/3804625/",
+        "title": "【黯井微光】100%地毯式全收集全成就全流程攻略解说",
+        "part": "P1 · 夜之庭园／猎人小屋",
+        "fileName": "P1-夜之庭园 猎人小屋.mp4",
+        "durationSeconds": 1655.867,
+        "videoUrl": null,
+        "reviewStatus": "keyframes-reviewed",
+        "method": "根据原始关键帧、游戏界面文字及画面内解说字幕整理，未进行完整音频转写。截图保留作者水印；未逐秒核对全部路线。"
+      },
+      {
+        "id": "p2",
+        "author": "好吃的香草雪球",
+        "authorUrl": "https://space.bilibili.com/3804625/",
+        "part": "P2 · 沼泽",
+        "fileName": "P2-沼泽.mp4",
+        "durationSeconds": 1252.233,
+        "videoUrl": null,
+        "reviewStatus": "pending"
+      },
+      {
+        "id": "p3",
+        "author": "好吃的香草雪球",
+        "authorUrl": "https://space.bilibili.com/3804625/",
+        "part": "P3 · 排水道",
+        "fileName": "P3-排水道.mp4",
+        "durationSeconds": 1291.669,
+        "videoUrl": null,
+        "reviewStatus": "pending"
+      },
+      {
+        "id": "p4",
+        "author": "好吃的香草雪球",
+        "authorUrl": "https://space.bilibili.com/3804625/",
+        "part": "P4 · 墓谷",
+        "fileName": "P4-墓谷.mp4",
+        "durationSeconds": 1254.208,
+        "videoUrl": null,
+        "reviewStatus": "pending"
+      },
+      {
+        "id": "p5",
+        "author": "好吃的香草雪球",
+        "authorUrl": "https://space.bilibili.com/3804625/",
+        "part": "P5 · 荒堡",
+        "fileName": "P5-荒堡.mp4",
+        "durationSeconds": 1106.837,
+        "videoUrl": null,
+        "reviewStatus": "pending"
+      },
+      {
+        "id": "p6",
+        "author": "好吃的香草雪球",
+        "authorUrl": "https://space.bilibili.com/3804625/",
+        "part": "P6 · 码头",
+        "fileName": "P6-码头.mp4",
+        "durationSeconds": 1170.837,
+        "videoUrl": null,
+        "reviewStatus": "pending"
+      },
+      {
+        "id": "p7",
+        "author": "好吃的香草雪球",
+        "authorUrl": "https://space.bilibili.com/3804625/",
+        "part": "P7 · 深渊",
+        "fileName": "P7-深渊.mp4",
+        "durationSeconds": 695.68,
+        "videoUrl": null,
+        "reviewStatus": "pending"
+      }
+    ],
+    "abilityBlocks": [
+      {
+        "type": "image",
+        "src": "/games/an-jing-wei-guang/images/p1/oil.webp",
+        "alt": "油瓶游戏教学界面。",
+        "caption": "参考录像 P1 · 09:05 · 好吃的香草雪球",
+        "width": 852,
+        "height": 480,
+        "align": "left",
+        "text": "油瓶游戏教学界面。"
+      },
+      {
+        "type": "image",
+        "src": "/games/an-jing-wei-guang/images/p1/scavenger.webp",
+        "alt": "在拾荒者所在平台学习焰瓶相关攻击。",
+        "caption": "参考录像 P1 · 13:35 · 好吃的香草雪球",
+        "width": 852,
+        "height": 480,
+        "align": "right",
+        "text": "在拾荒者所在平台学习焰瓶相关攻击。"
+      },
+      {
+        "type": "notice",
+        "text": "※ 本轮没有核对全部能力菜单；“焰瓶投掷”仅为描述性标签。"
+      }
+    ],
+    "collectibleBlocks": [
+      {
+        "type": "image",
+        "src": "/games/an-jing-wei-guang/images/p1/pendant.webp",
+        "alt": "猎人的吊坠获取界面。",
+        "caption": "参考录像 P1 · 16:04 · 好吃的香草雪球",
+        "width": 852,
+        "height": 480,
+        "align": "left",
+        "text": "猎人的吊坠获取界面。"
+      },
+      {
+        "type": "notice",
+        "text": "◆ 小屋书页的名称和受墙体包围图标的获取情况待核对，暂不登记为已确认物品。"
+      }
+    ],
+    "systems": {
+      "intro": [
+        {
+          "type": "paragraph",
+          "text": "本页只整理 P1 实际出现的教学和界面，不作为全系统手册。"
+        }
+      ],
+      "controls": [
+        {
+          "type": "paragraph",
+          "text": "交互处可见 Y 提示；小屋焰瓶教学可见 B 提示。以上只对应参考录像的手柄绑定，键盘和自定义键位以游戏设置为准。"
+        },
+        {
+          "type": "paragraph",
+          "text": "前段使用跳跃、普通攻击及冲刺式位移；泡泡帮助跨越房间落差。具体键位与无敌帧未全面核对。"
+        }
+      ],
+      "combat": [
+        {
+          "type": "paragraph",
+          "text": "小屋教学展示投掷焰瓶后在空中击打，引发爆炸。园丁战有落弹、地面突刺与环绕弹幕，先让出危险区域，再寻找输出停顿。"
+        }
+      ],
+      "growth": [
+        {
+          "type": "paragraph",
+          "text": "录像显示取得饰物点，并在饰物界面消耗槽位装备猎人的吊坠。吊坠占用 4 槽；可用槽位数量不等同于角色初始值。"
+        }
+      ],
+      "resources": [
+        {
+          "type": "paragraph",
+          "text": "油瓶教学确认重新点燃火柴时与生命恢复、暂时攻击强化有关。存盘点可补充油瓶；使用时有判定过程，不宜在连续受击中盲目尝试。"
+        },
+        {
+          "type": "image",
+          "src": "/games/an-jing-wei-guang/images/p1/oil.webp",
+          "alt": "油瓶的游戏内教学说明。",
+          "caption": "参考录像 P1 · 09:05 · 好吃的香草雪球",
+          "width": 852,
+          "height": 480,
+          "align": "left",
+          "text": "油瓶的游戏内教学说明。"
+        }
+      ],
+      "save": [
+        {
+          "type": "paragraph",
+          "text": "紫色帽形帐篷前的菜单提供保存游戏与进入营帐。本轮没有完整确认传送网络或解锁条件。"
+        },
+        {
+          "type": "image",
+          "src": "/games/an-jing-wei-guang/images/p1/save.webp",
+          "alt": "帽形帐篷前的保存入口。",
+          "caption": "参考录像 P1 · 04:40 · 好吃的香草雪球",
+          "width": 852,
+          "height": 480,
+          "align": "left",
+          "text": "帽形帐篷前的保存入口。"
+        }
+      ],
+      "other": [
+        {
+          "type": "paragraph",
+          "text": "录像打开过书页与地图界面。小屋部分书页和图标的名称尚未读清，不据缩略图补写名称。"
+        }
+      ],
+      "faq": [
+        {
+          "type": "paragraph",
+          "text": "为什么首次进入庭园时不清理所有点位？P1 保留了紫色障碍与高处拾取，并在小屋取得新攻击后回访；完整能力条件仍需后续验证。"
+        },
+        {
+          "type": "paragraph",
+          "text": "这份攻略是否已达 100%？没有。视频标题是作者对系列的描述，本轮只核对 P1 关键画面，不表示全收集已验证。"
+        }
+      ]
+    }
+  }
+}

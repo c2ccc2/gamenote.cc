@@ -1,0 +1,500 @@
+[
+  {
+    "id": "the-groundskeeper",
+    "slug": "the-groundskeeper",
+    "nameEn": "The Groundskeeper",
+    "nameZh": "园丁",
+    "description": "名称已在 Steam 官方成就描述中核对；详细攻略整理中。",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "好吃的香草雪球 · P1 游戏画面",
+        "url": "https://space.bilibili.com/3804625/",
+        "type": "video",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "官方成就可以确认名称，不用于推定具体区域、招式或奖励。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [
+      {
+        "platform": "bilibili",
+        "url": null,
+        "videoId": null,
+        "localFile": "P1-夜之庭园 猎人小屋.mp4",
+        "timestampStart": "00:10:36",
+        "timestampEnd": "00:10:48",
+        "notes": "首领名称的游戏 UI；招式与打法仍属 research。",
+        "verifiedItems": [
+          "the-groundskeeper.nameZh"
+        ]
+      }
+    ],
+    "images": [],
+    "fields": {
+      "area": {
+        "value": "Night Garden",
+        "confidence": "B",
+        "verificationStatus": "video-confirmed",
+        "publishStatus": "published",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          },
+          {
+            "name": "好吃的香草雪球 · P1 游戏画面",
+            "url": "https://space.bilibili.com/3804625/",
+            "type": "video",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27"
+      },
+      "attacks": {
+        "value": "可见空中粉色落弹、地面突刺，以及后半段环绕身体的花瓣形弹幕。",
+        "confidence": "C",
+        "verificationStatus": "video-confirmed",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "好吃的香草雪球 · P1 游戏画面",
+            "url": "https://space.bilibili.com/3804625/",
+            "type": "video",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "关键帧初稿尚未逐段充分核验，不作为正式攻略。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "strategy": {
+        "value": "先避开落弹并观察地面；只在安全停顿靠近输出。出现环绕弹幕后保持侧面距离，不沿用前半段站位。",
+        "confidence": "C",
+        "verificationStatus": "video-confirmed",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "好吃的香草雪球 · P1 游戏画面",
+            "url": "https://space.bilibili.com/3804625/",
+            "type": "video",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "关键帧初稿尚未逐段充分核验，不作为正式攻略。"
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "reward": {
+        "value": "录像显示战后可以继续进入猎人小屋；独立掉落奖励待确认。",
+        "confidence": "C",
+        "verificationStatus": "video-confirmed",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "好吃的香草雪球 · P1 游戏画面",
+            "url": "https://space.bilibili.com/3804625/",
+            "type": "video",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "关键帧初稿尚未逐段充分核验，不作为正式攻略。"
+        ],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "the-swarm",
+    "slug": "the-swarm",
+    "nameEn": "The Swarm",
+    "nameZh": null,
+    "description": "名称已在 Steam 官方成就描述中核对；详细攻略整理中。",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "官方成就可以确认名称，不用于推定具体区域、招式或奖励。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "the-lady-of-the-drains",
+    "slug": "the-lady-of-the-drains",
+    "nameEn": "The Lady of the Drains",
+    "nameZh": null,
+    "description": "名称已在 Steam 官方成就描述中核对；详细攻略整理中。",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "官方成就可以确认名称，不用于推定具体区域、招式或奖励。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "lida-the-terrible",
+    "slug": "lida-the-terrible",
+    "nameEn": "Lida the Terrible",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "shrine-of-the-seven-sons",
+    "slug": "shrine-of-the-seven-sons",
+    "nameEn": "Shrine of the Seven Sons",
+    "nameZh": null,
+    "description": "名称已在 Steam 官方成就描述中核对；详细攻略整理中。",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "官方成就可以确认名称，不用于推定具体区域、招式或奖励。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "starsinger",
+    "slug": "starsinger",
+    "nameEn": "Starsinger",
+    "nameZh": null,
+    "description": "名称已在 Steam 官方成就描述中核对；详细攻略整理中。",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "官方成就可以确认名称，不用于推定具体区域、招式或奖励。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "forest-king",
+    "slug": "forest-king",
+    "nameEn": "Forest King",
+    "nameZh": null,
+    "description": "名称已在 Steam 官方成就描述中核对；详细攻略整理中。",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "官方成就可以确认名称，不用于推定具体区域、招式或奖励。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "creature-from-the-deep",
+    "slug": "creature-from-the-deep",
+    "nameEn": "Creature from the Deep",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "the-colony",
+    "slug": "the-colony",
+    "nameEn": "The Colony",
+    "nameZh": null,
+    "description": "详细资料整理中。",
+    "confidence": "C",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "名称来自 V1 编辑清单，尚未完成逐条视频或实机核验。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {
+      "area": {
+        "value": null,
+        "confidence": "D",
+        "verificationStatus": "unverified",
+        "publishStatus": "research",
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "The Colony 区域归属待核验。"
+        ],
+        "updatedAt": "2026-09-27"
+      }
+    }
+  },
+  {
+    "id": "dollmaker",
+    "slug": "dollmaker",
+    "nameEn": "Dollmaker's Mirror / The Dollmaker",
+    "nameZh": null,
+    "description": "名称待进一步核验。",
+    "confidence": "D",
+    "verificationStatus": "unverified",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "不同来源名称不一致，不自行确定最终名称。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {},
+    "aliases": [
+      "Dollmaker's Mirror",
+      "The Dollmaker"
+    ]
+  },
+  {
+    "id": "gravedigger",
+    "slug": "gravedigger",
+    "nameEn": "Gravedigger",
+    "nameZh": null,
+    "description": "名称已在 Steam 官方成就描述中核对；详细攻略整理中。",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "官方成就可以确认名称，不用于推定具体区域、招式或奖励。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "silver-doll",
+    "slug": "silver-doll",
+    "nameEn": "Silver Doll",
+    "nameZh": null,
+    "description": "名称已在 Steam 官方成就描述中核对；详细攻略整理中。",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "官方成就可以确认名称，不用于推定具体区域、招式或奖励。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  },
+  {
+    "id": "the-queen",
+    "slug": "the-queen",
+    "nameEn": "The Queen",
+    "nameZh": null,
+    "description": "名称已在 Steam 官方成就描述中核对；详细攻略整理中。",
+    "confidence": "A",
+    "verificationStatus": "source-confirmed",
+    "publishStatus": "published",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "Steam 官方成就列表",
+        "url": "https://steamcommunity.com/stats/3699590/achievements",
+        "type": "official",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "官方成就可以确认名称，不用于推定具体区域、招式或奖励。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [],
+    "images": [],
+    "fields": {}
+  }
+]
