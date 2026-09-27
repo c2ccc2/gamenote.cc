@@ -37,7 +37,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "route": {
         "value": null,
@@ -53,11 +55,50 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Night Garden",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
     },
     "type": "time-trial",
-    "areaId": "night-garden"
+    "areaId": "night-garden",
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "time-trial-desiccated-castle",
@@ -97,7 +138,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "route": {
         "value": null,
@@ -113,11 +156,50 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Desiccated Castle",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
     },
     "type": "time-trial",
-    "areaId": "desiccated-castle"
+    "areaId": "desiccated-castle",
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "time-trial-midnight-drench",
@@ -157,7 +239,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "route": {
         "value": null,
@@ -173,11 +257,50 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Midnight Drench",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
     },
     "type": "time-trial",
-    "areaId": "midnight-drench"
+    "areaId": "midnight-drench",
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "time-trial-hunters-cabin",
@@ -217,7 +340,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "route": {
         "value": null,
@@ -233,11 +358,50 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Hunter's Cabin",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
     },
     "type": "time-trial",
-    "areaId": "hunters-cabin"
+    "areaId": "hunters-cabin",
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "time-trial-autumn-forest",
@@ -277,7 +441,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "route": {
         "value": null,
@@ -293,11 +459,50 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Autumn Forest",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
     },
     "type": "time-trial",
-    "areaId": "autumn-forest"
+    "areaId": "autumn-forest",
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "time-trial-the-docks",
@@ -337,7 +542,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "route": {
         "value": null,
@@ -353,11 +560,50 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "The Docks",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
     },
     "type": "time-trial",
-    "areaId": "the-docks"
+    "areaId": "the-docks",
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "time-trial-the-bog",
@@ -397,7 +643,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "route": {
         "value": null,
@@ -413,11 +661,50 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "The Bog",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
     },
     "type": "time-trial",
-    "areaId": "the-bog"
+    "areaId": "the-bog",
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "time-trial-dollmakers-house",
@@ -457,7 +744,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "route": {
         "value": null,
@@ -473,11 +762,50 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Dollmaker's House",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
     },
     "type": "time-trial",
-    "areaId": "dollmakers-house"
+    "areaId": "dollmakers-house",
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "time-trial-graven-valley",
@@ -517,7 +845,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "route": {
         "value": null,
@@ -533,11 +863,50 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Graven Valley",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
     },
     "type": "time-trial",
-    "areaId": "graven-valley"
+    "areaId": "graven-valley",
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "time-trial-the-drains",
@@ -577,7 +946,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "route": {
         "value": null,
@@ -593,10 +964,49 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "The Drains",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
     },
     "type": "time-trial",
-    "areaId": "the-drains"
+    "areaId": "the-drains",
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   }
 ]

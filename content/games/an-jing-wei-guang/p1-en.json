@@ -1,0 +1,43 @@
+{
+ "the-well":[
+ "1. Leave the skull and enter the garden",
+ "At 03:20 in P1, the starting point lies inside a large skull, with an exit on the right. Follow the recorded route out of the skull and toward Night Garden.",
+ "The Night Garden region title appears around 03:44. This section follows the order actually shown in the recording rather than presenting it as the final route through the entire game.",
+ "2. Return to the start and continue downward",
+ "Around 25:30–27:15 at the end of P1, the route returns to the starting area and passes through a downward water channel. This section ends there. P2 is titled The Bog, but the entrance connection between the recordings has not been verified."
+ ],
+ "night-garden":[
+ "1. Early garden exploration and the save point",
+ "The P1 review records saving and opening the tent menu around 04:40. This confirms an early garden save node, not the full travel network or the conditions for unlocking tents.",
+ "2. Oil-bottle instructions and bubble platforms",
+ "Around 08:50–09:05, the recording enters the oil-bottle tutorial. The interface explains relighting the match, temporarily strengthening attacks and replenishing oil bottles at save points. Exact numerical effects have not been measured.",
+ "Around 09:18, bubbles and higher platforms appear. They form part of garden exploration, but a single frame does not establish every input sequence or the shortest route.",
+ "Around 09:28, a message confirms a trinket-slot pickup. This is not the Hunter's Pendant obtained later in the cabin. The heart-shaped container and higher glowing object in the same room should not be treated as the same item.",
+ "3. Encounter the Groundskeeper",
+ "The Groundskeeper's Chinese name appears around 10:45. This encounter belongs to the Night Garden route and follows the oil-bottle tutorial.",
+ "The 11:15 frame shows pink petal-shaped projectiles around the Groundskeeper. This records a clearly observed attack scene rather than a complete move list.",
+ "After the combat-ending sequence around 12:00, the recording continues into the Hunter's Cabin segment. This establishes the subsequent route, not an unreadable separate drop reward.",
+ "4. Later exploration: the cabin and Looter",
+ "At 13:35 in the cabin segment, the dialogue identifies Looter. This encounter provides a reference point for the subsequent flaming-vessel tutorial.",
+ "The 13:35–14:00 review includes throwing a flaming vessel, striking it in the air and detonating it. These notes describe the observed action without equating it to Slingshot or another formal ability name not checked in the menu.",
+ "The B prompt reflects the creator's controller binding at that moment, not a keyboard or custom-binding instruction.",
+ "5. The hanging cages and Hunter's Pendant",
+ "The segment around 15:40 shows hanging cages, bubbles and spikes in the cabin route. These are recorded landmarks, not a guarantee of every shortcut or a prescribed jump direction for each platform.",
+ "Around 16:04, the acquisition panel identifies the Hunter's Pendant and describes a longer healing timing window. This confirms the displayed item and function, not a health-cap increase or a fixed healing multiplier.",
+ "6. The local map and return to the garden",
+ "At 19:32, the recording opens the map. It represents the explored portion of that save, not a complete map of Night Garden and the cabin. Its colours do not establish all-collectibles completion.",
+ "Around 24:40, after the cabin tutorial, the route returns near a purple obstacle in the garden. Keep this revisit after the tutorial rather than placing an unlearned action earlier; the obstacle solution itself remains unconfirmed."
+ ],
+ "hunters-cabin":[
+ "5. Looter and the flaming-vessel tutorial",
+ "At 13:35 in the cabin segment, the dialogue identifies Looter. This encounter provides a reference point for the subsequent flaming-vessel tutorial.",
+ "The 13:35–14:00 review includes throwing a flaming vessel, striking it in the air and detonating it. These notes describe the observed action without equating it to Slingshot or another formal ability name not checked in the menu.",
+ "The B prompt reflects the creator's controller binding at that moment, not a keyboard or custom-binding instruction.",
+ "6. Hanging cages and Hunter's Pendant",
+ "The segment around 15:40 shows hanging cages, bubbles and spikes in the cabin route. These are recorded landmarks, not a guarantee of every shortcut or a prescribed jump direction for each platform.",
+ "Around 16:04, the acquisition panel identifies the Hunter's Pendant and describes a longer healing timing window. This confirms the displayed item and function, not a health-cap increase or a fixed healing multiplier.",
+ "7. The local map and revisit",
+ "At 19:32, the recording opens the map. It represents the explored portion of that save, not a complete map of Night Garden and the cabin. Its colours do not establish all-collectibles completion.",
+ "Around 24:40, after the cabin tutorial, the route returns near a purple obstacle in the garden. Keep this revisit after the tutorial rather than placing an unlearned action earlier; the obstacle solution itself remains unconfirmed."
+ ]
+}

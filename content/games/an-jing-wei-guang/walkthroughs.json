@@ -1,0 +1,981 @@
+[
+  {
+    "id": "p1-walkthrough",
+    "slug": "chapter-01",
+    "nameEn": "P1：夜之庭园／猎人小屋",
+    "nameZh": "",
+    "description": "P1 正文已分配到 The Well 与夜之庭园，旧章节地址保留为阅读入口。",
+    "confidence": "C",
+    "verificationStatus": "video-confirmed",
+    "publishStatus": "draft",
+    "sources": [
+      {
+        "name": "用户提供的 V1 编辑资料清单",
+        "url": null,
+        "type": "guide",
+        "accessedAt": "2026-09-27"
+      },
+      {
+        "name": "好吃的香草雪球 · 用户提供的 P1 游戏画面",
+        "url": "https://space.bilibili.com/3804625/",
+        "type": "video",
+        "accessedAt": "2026-09-27"
+      }
+    ],
+    "notes": [
+      "从原 P1 稿按证据逐段恢复，原稿保留未改；不是自主实测或完整全收集证明。"
+    ],
+    "updatedAt": "2026-09-27",
+    "videoSources": [
+      {
+        "platform": "bilibili",
+        "url": null,
+        "videoId": null,
+        "localFile": "P1-夜之庭园 猎人小屋.mp4",
+        "timestampStart": "00:03:20",
+        "timestampEnd": "00:03:20",
+        "notes": "依据现有 P1 关键帧及核对记录；原视频链接尚未提供。",
+        "verifiedItems": [
+          "the-well.overview"
+        ]
+      },
+      {
+        "platform": "bilibili",
+        "url": null,
+        "videoId": null,
+        "localFile": "P1-夜之庭园 猎人小屋.mp4",
+        "timestampStart": "00:03:20",
+        "timestampEnd": "00:03:44",
+        "notes": "依据现有 P1 关键帧及核对记录；原视频链接尚未提供。",
+        "verifiedItems": [
+          "the-well.nextAreas"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "src": "/games/an-jing-wei-guang/images/p1/start.webp",
+        "type": "video-frame",
+        "platform": "bilibili",
+        "videoId": null,
+        "timestamp": "00:03:20",
+        "caption": "P1 起点的头骨内部画面",
+        "source": "好吃的香草雪球 · P1 用户提供录像",
+        "verificationStatus": "video-confirmed",
+        "confidence": "C",
+        "verified": true,
+        "publish": true,
+        "publicationApproved": true,
+        "notes": [
+          "画面已复核；转载依据为用户提供的免授权说明。"
+        ],
+        "width": 852,
+        "height": 480,
+        "rightsBasis": "用户于 2026-09-27 确认所提供的原视频及内容允许免授权转载；保留作者水印和署名。"
+      },
+      {
+        "src": "/games/an-jing-wei-guang/images/p1/oil.webp",
+        "type": "video-frame",
+        "platform": "bilibili",
+        "videoId": null,
+        "timestamp": "00:09:05",
+        "caption": "油瓶教学说明",
+        "source": "好吃的香草雪球 · P1 用户提供录像",
+        "verificationStatus": "video-confirmed",
+        "confidence": "C",
+        "verified": true,
+        "publish": true,
+        "publicationApproved": true,
+        "notes": [
+          "画面已复核；转载依据为用户提供的免授权说明。"
+        ],
+        "width": 852,
+        "height": 480,
+        "rightsBasis": "用户于 2026-09-27 确认所提供的原视频及内容允许免授权转载；保留作者水印和署名。"
+      },
+      {
+        "src": "/games/an-jing-wei-guang/images/p1/scavenger.webp",
+        "type": "video-frame",
+        "platform": "bilibili",
+        "videoId": null,
+        "timestamp": "00:13:35",
+        "caption": "拾荒者对话画面",
+        "source": "好吃的香草雪球 · P1 用户提供录像",
+        "verificationStatus": "video-confirmed",
+        "confidence": "C",
+        "verified": true,
+        "publish": true,
+        "publicationApproved": true,
+        "notes": [
+          "画面已复核；转载依据为用户提供的免授权说明。"
+        ],
+        "width": 852,
+        "height": 480,
+        "rightsBasis": "用户于 2026-09-27 确认所提供的原视频及内容允许免授权转载；保留作者水印和署名。"
+      },
+      {
+        "src": "/games/an-jing-wei-guang/images/p1/pendant.webp",
+        "type": "video-frame",
+        "platform": "bilibili",
+        "videoId": null,
+        "timestamp": "00:16:04",
+        "caption": "猎人的吊坠获取界面",
+        "source": "好吃的香草雪球 · P1 用户提供录像",
+        "verificationStatus": "video-confirmed",
+        "confidence": "C",
+        "verified": true,
+        "publish": true,
+        "publicationApproved": true,
+        "notes": [
+          "画面已复核；转载依据为用户提供的免授权说明。"
+        ],
+        "width": 852,
+        "height": 480,
+        "rightsBasis": "用户于 2026-09-27 确认所提供的原视频及内容允许免授权转载；保留作者水印和署名。"
+      },
+      {
+        "src": "/games/an-jing-wei-guang/images/p1/gardener.webp",
+        "type": "video-frame",
+        "platform": "bilibili",
+        "videoId": null,
+        "timestamp": "00:10:45",
+        "caption": "园丁登场画面",
+        "source": "好吃的香草雪球 · P1 用户提供录像",
+        "verificationStatus": "video-confirmed",
+        "confidence": "C",
+        "verified": true,
+        "publish": true,
+        "publicationApproved": true,
+        "notes": [
+          "画面已复核；转载依据为用户提供的免授权说明。"
+        ],
+        "width": 852,
+        "height": 480,
+        "rightsBasis": "用户于 2026-09-27 确认所提供的原视频及内容允许免授权转载；保留作者水印和署名。"
+      },
+      {
+        "src": "/games/an-jing-wei-guang/images/p1/gardener-ring.webp",
+        "type": "video-frame",
+        "platform": "bilibili",
+        "videoId": null,
+        "timestamp": "00:11:15",
+        "caption": "园丁战斗中的粉色花瓣形弹幕",
+        "source": "好吃的香草雪球 · P1 用户提供录像",
+        "verificationStatus": "video-confirmed",
+        "confidence": "C",
+        "verified": true,
+        "publish": true,
+        "publicationApproved": true,
+        "notes": [
+          "画面已复核；转载依据为用户提供的免授权说明。"
+        ],
+        "width": 852,
+        "height": 480,
+        "rightsBasis": "用户于 2026-09-27 确认所提供的原视频及内容允许免授权转载；保留作者水印和署名。"
+      }
+    ],
+    "fields": {
+      "nameEn": {
+        "value": "P1：夜之庭园／猎人小屋",
+        "publish": true,
+        "confidence": "C",
+        "verificationStatus": "video-confirmed",
+        "sources": [
+          {
+            "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+            "url": "https://space.bilibili.com/3804625/",
+            "type": "video",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "videoSources": [
+          {
+            "platform": "bilibili",
+            "url": null,
+            "videoId": null,
+            "localFile": "P1-夜之庭园 猎人小屋.mp4",
+            "timestampStart": "00:03:20",
+            "timestampEnd": "00:27:15",
+            "verifiedItems": [
+              "p1-walkthrough.nameEn"
+            ]
+          }
+        ],
+        "updatedAt": "2026-09-27"
+      },
+      "guide": {
+        "value": [
+          {
+            "type": "heading",
+            "text": "一、从头骨起点进入庭园",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:03:20",
+                "timestampEnd": "00:03:44",
+                "verifiedItems": [
+                  "the-well.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/start.webp",
+            "text": "P1 03:20 的起点位于大型头骨内部，右侧有出口。沿录像的推进方向离开起点，随后进入夜之庭园。",
+            "align": "left",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:03:20",
+                "timestampEnd": "00:03:44",
+                "verifiedItems": [
+                  "the-well.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "paragraph",
+            "text": "约 03:44，画面出现「夜之庭园」区域标题。本节以这段录像中实际出现的先后关系组织路线，不把它扩展为全游戏最终流程。",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:03:20",
+                "timestampEnd": "00:03:44",
+                "verifiedItems": [
+                  "the-well.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "heading",
+            "text": "一、庭园前段与保存节点",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:04:40",
+                "timestampEnd": "00:04:40",
+                "verifiedItems": [
+                  "night-garden.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "paragraph",
+            "text": "P1 的核对记录在约 04:40 记录了帐篷前的保存游戏与进入营帐菜单。这里先记为庭园前段的保存节点，不据此推断传送网络或营帐解锁条件。",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:04:40",
+                "timestampEnd": "00:04:40",
+                "verifiedItems": [
+                  "night-garden.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "heading",
+            "text": "二、油瓶教学与泡泡平台",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:08:50",
+                "timestampEnd": "00:09:28",
+                "verifiedItems": [
+                  "night-garden.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/oil.webp",
+            "text": "约 08:50—09:05，录像进入油瓶教学。界面说明可重新点燃火柴、暂时强化攻击，并在存盘点补充油瓶；具体判定数值没有测定。",
+            "align": "left",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:08:50",
+                "timestampEnd": "00:09:28",
+                "verifiedItems": [
+                  "night-garden.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "paragraph",
+            "text": "随后约 09:18 的片段出现泡泡与高处平台。录像核对记录显示这些平台参与庭园探索，但不能从单帧写出全部操作组合或最短路线。",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:08:50",
+                "timestampEnd": "00:09:28",
+                "verifiedItems": [
+                  "night-garden.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "paragraph",
+            "text": "约 09:28 出现「已获得饰物点」提示。这里记录的是饰物点，不是后来在小屋取得的猎人的吊坠；同一房间的心形罐子和高处亮点也不能混作同一种物品。",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:08:50",
+                "timestampEnd": "00:09:28",
+                "verifiedItems": [
+                  "night-garden.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "heading",
+            "text": "三、遭遇园丁",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:10:45",
+                "timestampEnd": "00:12:00",
+                "verifiedItems": [
+                  "night-garden.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/gardener.webp",
+            "text": "约 10:45，首领名称「园丁」出现在画面中。这个遭遇位于夜之庭园流程，排在油瓶教学之后。",
+            "align": "right",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:10:45",
+                "timestampEnd": "00:12:00",
+                "verifiedItems": [
+                  "night-garden.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/gardener-ring.webp",
+            "text": "11:15 的画面可见园丁周围的粉色花瓣状弹幕。本页只描述明确观察到的攻击画面，不将这张截图当作完整招式表。",
+            "align": "left",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:10:45",
+                "timestampEnd": "00:12:00",
+                "verifiedItems": [
+                  "night-garden.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "paragraph",
+            "text": "约 12:00 的战斗结束片段之后，录像继续推进到猎人小屋。这里确认的是后续流程关系；没有看清的独立掉落奖励不补写。",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:10:45",
+                "timestampEnd": "00:12:00",
+                "verifiedItems": [
+                  "night-garden.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "heading",
+            "text": "四、后续探索：猎人小屋与拾荒者",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:13:35",
+                "timestampEnd": "00:14:00",
+                "verifiedItems": [
+                  "hunters-cabin.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/scavenger.webp",
+            "text": "进入小屋段落后，13:35 的游戏画面中可见名为「拾荒者」的 NPC。该处是后续焰瓶教学的对照节点。",
+            "align": "right",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:13:35",
+                "timestampEnd": "00:14:00",
+                "verifiedItems": [
+                  "hunters-cabin.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "paragraph",
+            "text": "13:35—14:00 的核对记录包含投掷焰瓶、在空中击打并引爆的教学。本文用「焰瓶投掷」描述画面中的动作，不把它直接等同于 Slingshot 或其他尚未对照菜单的正式能力名。",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:13:35",
+                "timestampEnd": "00:14:00",
+                "verifiedItems": [
+                  "hunters-cabin.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "paragraph",
+            "text": "录像中的 B 提示对应作者当时的手柄绑定，不能直接作为键盘或自定义按键指南。",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:13:35",
+                "timestampEnd": "00:14:00",
+                "verifiedItems": [
+                  "hunters-cabin.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "heading",
+            "text": "五、小屋悬笼段落与猎人的吊坠",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:15:40",
+                "timestampEnd": "00:16:04",
+                "verifiedItems": [
+                  "hunters-cabin.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "paragraph",
+            "text": "约 15:40 的核对记录显示悬笼、泡泡和尖刺构成的小屋探索片段。这里只保留已记录的路线地标，不据此保证所有捷径或每个平台的跳跃方向。",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:15:40",
+                "timestampEnd": "00:16:04",
+                "verifiedItems": [
+                  "hunters-cabin.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "image",
+            "src": "/games/an-jing-wei-guang/images/p1/pendant.webp",
+            "text": "约 16:04，画面出现「猎人的吊坠」获取界面，说明为延长治疗判定时间。这确认了物品名称和界面功能，不代表生命上限提升或固定治疗倍率。",
+            "align": "left",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:15:40",
+                "timestampEnd": "00:16:04",
+                "verifiedItems": [
+                  "hunters-cabin.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "heading",
+            "text": "六、局部地图与回访庭园",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:19:32",
+                "timestampEnd": "00:24:40",
+                "verifiedItems": [
+                  "hunters-cabin.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "paragraph",
+            "text": "19:32，录像打开地图界面。它只能说明当时存档已探索的局部范围，不是夜之庭园与小屋的完整地图，也不能据颜色推断全收集完成度。",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:19:32",
+                "timestampEnd": "00:24:40",
+                "verifiedItems": [
+                  "hunters-cabin.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "paragraph",
+            "text": "约 24:40，录像在小屋教学之后回到庭园的紫色障碍附近。保留这个回访顺序，不把尚未学习的动作安排在前段，也暂不写成已确认的障碍解法。",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:19:32",
+                "timestampEnd": "00:24:40",
+                "verifiedItems": [
+                  "hunters-cabin.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "heading",
+            "text": "二、回到起点，继续下行",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:25:30",
+                "timestampEnd": "00:27:15",
+                "verifiedItems": [
+                  "the-well.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          },
+          {
+            "type": "paragraph",
+            "text": "P1 末段约 25:30—27:15 返回起点并经过下行水道。本页至此结束；后续 P2 文件标为「沼泽」，但两段录像的入口衔接尚未核对，因此不直接宣布这里已经进入沼泽。",
+            "publish": true,
+            "confidence": "C",
+            "verificationStatus": "video-confirmed",
+            "sources": [
+              {
+                "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+                "url": "https://space.bilibili.com/3804625/",
+                "type": "video",
+                "accessedAt": "2026-09-27"
+              }
+            ],
+            "videoSources": [
+              {
+                "platform": "bilibili",
+                "url": null,
+                "videoId": null,
+                "localFile": "P1-夜之庭园 猎人小屋.mp4",
+                "timestampStart": "00:25:30",
+                "timestampEnd": "00:27:15",
+                "verifiedItems": [
+                  "the-well.guide"
+                ]
+              }
+            ],
+            "updatedAt": "2026-09-27"
+          }
+        ],
+        "publish": false,
+        "confidence": "C",
+        "verificationStatus": "video-confirmed",
+        "sources": [
+          {
+            "name": "好吃的香草雪球 · 用户提供的 P1 录像及关键帧核对记录",
+            "url": "https://space.bilibili.com/3804625/",
+            "type": "video",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "videoSources": [
+          {
+            "platform": "bilibili",
+            "url": null,
+            "videoId": null,
+            "localFile": "P1-夜之庭园 猎人小屋.mp4",
+            "timestampStart": "00:03:20",
+            "timestampEnd": "00:27:15",
+            "verifiedItems": [
+              "p1-walkthrough.guide"
+            ]
+          }
+        ],
+        "updatedAt": "2026-09-27"
+      }
+    },
+    "directoryVisible": false,
+    "publish": true,
+    "contentStatus": "partial",
+    "readingRoutes": [
+      "the-well",
+      "night-garden"
+    ]
+  }
+]

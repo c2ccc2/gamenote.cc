@@ -37,7 +37,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "steps": {
         "value": [],
@@ -53,7 +55,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "reward": {
         "value": null,
@@ -69,7 +73,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "prerequisite": {
         "value": null,
@@ -85,9 +91,48 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Graven Valley Rescue",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "repair-the-elevator",
@@ -127,7 +172,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "steps": {
         "value": [],
@@ -143,7 +190,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "reward": {
         "value": null,
@@ -159,7 +208,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "prerequisite": {
         "value": null,
@@ -175,9 +226,48 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Repair the Elevator",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "missing-sailors",
@@ -217,7 +307,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "steps": {
         "value": [],
@@ -233,7 +325,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "reward": {
         "value": null,
@@ -249,7 +343,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "prerequisite": {
         "value": null,
@@ -265,9 +361,48 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Missing Sailors",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "a-ride-to-the-party",
@@ -307,7 +442,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "steps": {
         "value": [],
@@ -323,7 +460,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "reward": {
         "value": null,
@@ -339,7 +478,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "prerequisite": {
         "value": null,
@@ -355,9 +496,48 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "A Ride to the Party",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "the-castle-gate",
@@ -397,7 +577,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "steps": {
         "value": [],
@@ -413,7 +595,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "reward": {
         "value": null,
@@ -429,7 +613,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "prerequisite": {
         "value": null,
@@ -445,9 +631,48 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "The Castle Gate",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "the-queens-chamber",
@@ -487,7 +712,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "steps": {
         "value": [],
@@ -503,7 +730,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "reward": {
         "value": null,
@@ -519,7 +748,9 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
       },
       "prerequisite": {
         "value": null,
@@ -535,8 +766,47 @@
           }
         ],
         "notes": [],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "The Queen's Chamber",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   }
 ]

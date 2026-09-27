@@ -53,6 +53,12 @@ window.GAMENOTE_CONTENT = {
     }
   ],
   updates: [
+    { slug: 'well-dweller-guide-reading-update', date: '2026-09-27', game: 'an-jing-wei-guang', title: '《黯井微光》攻略结构与阅读体验更新', type: 'Site', relatedUrl: '/games/an-jing-wei-guang/', description: '区域图文流程、中英文页面与栏目导航完成一轮整理，系统说明独立补充，阅读体验同步优化。', details: [
+      { title: '区域流程与地图分工', text: '将探索步骤、拾取和战斗记录统一到对应区域的流程攻略，地图页保留地图参考及流程入口；既有正文和截图保留。', url: '/games/an-jing-wei-guang/walkthrough/' },
+      { title: '中英文与目录导航', text: '专题页面可切换到同一章节的中文或英文版本；栏目名称进入总目录，右侧按钮独立展开或收起子项，桌面端也可收起整个目录。', url: '/games/an-jing-wei-guang/' },
+      { title: '图文阅读体验', text: '正文移除录像时间与编辑过程说明，截图支持弹窗查看，并保留新开图片的方式和作者署名。', url: '/games/an-jing-wei-guang/walkthrough/night-garden/' },
+      { title: '能力分类与系统说明', text: '能力目录分为移动 / 核心能力、推进 / 功能解锁。系统说明独立介绍存档、油瓶、饰物升级、地图标记和商店，不再重复能力列表。', url: '/games/an-jing-wei-guang/systems/' }
+    ] },
     { slug: 'well-dweller-v1-database', date: '2026-09-27', game: 'an-jing-wei-guang', title: '《黯井微光》第一版资料库建立', type: 'Site', relatedUrl: '/games/an-jing-wei-guang/', description: '已建立区域、Boss、能力、收集、任务和成就资料框架，详细攻略将继续通过视频与实机核验补充。' },
     { slug: 'well-dweller-guide-scaffolding', date: '2026-09-26', game: 'an-jing-wei-guang', title: '章节、Boss 与地图页面骨架建立', type: 'Site', relatedUrl: '/games/an-jing-wei-guang/walkthrough/', description: '建立五个章节、四个 Boss 与地图详情模板，正文待实测。' },
     { slug: 'classic-content-generation', date: '2026-09-26', game: 'an-jing-wei-guang', title: 'Classic 内容数据与静态生成机制建立', type: 'Site', relatedUrl: '/games/an-jing-wei-guang/updates/', description: '统一目录、分页与图文组件，保留经典专题阅读布局。' },

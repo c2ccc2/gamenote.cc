@@ -22,7 +22,77 @@
     "updatedAt": "2026-09-27",
     "videoSources": [],
     "images": [],
-    "fields": {}
+    "fields": {
+      "nameEn": {
+        "value": "Spirits",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "relatedGuides": {
+        "value": [
+          {
+            "label": "孤独灵魂 / Solo Spirit",
+            "url": "/games/an-jing-wei-guang/achievements/lonely-soul/"
+          },
+          {
+            "label": "已到半程 / Halfway There",
+            "url": "/games/an-jing-wei-guang/achievements/halfway-there/"
+          },
+          {
+            "label": "完整鸟群 / Full Flock",
+            "url": "/games/an-jing-wei-guang/achievements/complete-flock/"
+          }
+        ],
+        "publish": true,
+        "confidence": "A",
+        "verificationStatus": "official-confirmed",
+        "sources": [
+          {
+            "name": "Steam 官方中英文成就条件（用户已提供截图）",
+            "url": "https://steamcommunity.com/stats/3699590/achievements/?l=schinese",
+            "type": "official",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "仅关联成就条件，不据阈值推定全游戏物品总数或具体获取位置。"
+        ],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      }
+    },
+    "directoryVisible": true,
+    "publish": true,
+    "contentStatus": "partial"
   },
   {
     "id": "story-pages",
@@ -64,9 +134,84 @@
         "notes": [
           "社区资料约 23 个位置，不能作为最终总数。"
         ],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Story Pages",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "relatedGuides": {
+        "value": [
+          {
+            "label": "很久很久以前…… / Once Upon a Time...",
+            "url": "/games/an-jing-wei-guang/achievements/once-upon-a-time/"
+          },
+          {
+            "label": "长女 / The First-Born Daughter",
+            "url": "/games/an-jing-wei-guang/achievements/the-first-born-daughter/"
+          },
+          {
+            "label": "破旧玩偶 / The Tattered Doll",
+            "url": "/games/an-jing-wei-guang/achievements/the-tattered-doll/"
+          },
+          {
+            "label": "王国之上 / Above the Kingdom",
+            "url": "/games/an-jing-wei-guang/achievements/above-the-kingdom/"
+          }
+        ],
+        "publish": true,
+        "confidence": "A",
+        "verificationStatus": "official-confirmed",
+        "sources": [
+          {
+            "name": "Steam 官方中英文成就条件（用户已提供截图）",
+            "url": "https://steamcommunity.com/stats/3699590/achievements/?l=schinese",
+            "type": "official",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "仅关联成就条件，不据阈值推定全游戏物品总数或具体获取位置。"
+        ],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": true,
+    "contentStatus": "partial"
   },
   {
     "id": "trinkets",
@@ -95,7 +240,7 @@
       "count": {
         "value": 32,
         "confidence": "A",
-        "verificationStatus": "source-confirmed",
+        "verificationStatus": "official-confirmed",
         "publishStatus": "published",
         "sources": [
           {
@@ -108,9 +253,91 @@
         "notes": [
           "Steam 成就 Expert Collector 的条件确认 32；数量按当前记录展示。"
         ],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": true
+      },
+      "nameEn": {
+        "value": "Trinkets",
+        "confidence": "A",
+        "verificationStatus": "official-confirmed",
+        "publishStatus": "published",
+        "sources": [
+          {
+            "name": "Steam 官方成就列表",
+            "url": "https://steamcommunity.com/stats/3699590/achievements",
+            "type": "official",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "Steam 成就 Expert Collector 的条件确认 32；数量按当前记录展示。"
+        ],
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": true
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "relatedGuides": {
+        "value": [
+          {
+            "label": "业余收藏家 / Hobby Collector",
+            "url": "/games/an-jing-wei-guang/achievements/amateur-collector/"
+          },
+          {
+            "label": "资深收藏家 / Experienced Collector",
+            "url": "/games/an-jing-wei-guang/achievements/veteran-collector/"
+          },
+          {
+            "label": "专家收藏家 / Expert Collector",
+            "url": "/games/an-jing-wei-guang/achievements/expert-collector/"
+          },
+          {
+            "label": "在工坊中 / In the Workshop",
+            "url": "/games/an-jing-wei-guang/achievements/in-the-workshop/"
+          },
+          {
+            "label": "满额备货 / Fully Stocked",
+            "url": "/games/an-jing-wei-guang/achievements/fully-stocked/"
+          }
+        ],
+        "publish": true,
+        "confidence": "A",
+        "verificationStatus": "official-confirmed",
+        "sources": [
+          {
+            "name": "Steam 官方中英文成就条件（用户已提供截图）",
+            "url": "https://steamcommunity.com/stats/3699590/achievements/?l=schinese",
+            "type": "official",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "仅关联成就条件，不据阈值推定全游戏物品总数或具体获取位置。"
+        ],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": true,
+    "contentStatus": "partial"
   },
   {
     "id": "trinket-slots",
@@ -135,7 +362,73 @@
     "updatedAt": "2026-09-27",
     "videoSources": [],
     "images": [],
-    "fields": {}
+    "fields": {
+      "nameEn": {
+        "value": "Trinket Slots",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "relatedGuides": {
+        "value": [
+          {
+            "label": "十个槽位 / Ten Slots",
+            "url": "/games/an-jing-wei-guang/achievements/ten-slots/"
+          },
+          {
+            "label": "五十个槽位 / 50 Slots",
+            "url": "/games/an-jing-wei-guang/achievements/50-slots/"
+          }
+        ],
+        "publish": true,
+        "confidence": "A",
+        "verificationStatus": "official-confirmed",
+        "sources": [
+          {
+            "name": "Steam 官方中英文成就条件（用户已提供截图）",
+            "url": "https://steamcommunity.com/stats/3699590/achievements/?l=schinese",
+            "type": "official",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [
+          "仅关联成就条件，不据阈值推定全游戏物品总数或具体获取位置。"
+        ],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      }
+    },
+    "directoryVisible": true,
+    "publish": true,
+    "contentStatus": "partial"
   },
   {
     "id": "workshop-tokens",
@@ -160,7 +453,45 @@
     "updatedAt": "2026-09-27",
     "videoSources": [],
     "images": [],
-    "fields": {}
+    "fields": {
+      "nameEn": {
+        "value": "Workshop Tokens",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "golden-feathers",
@@ -202,9 +533,48 @@
         "notes": [
           "V1 单一编辑记录，非最终总数。"
         ],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Golden Feathers",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "elevator-parts",
@@ -246,9 +616,48 @@
         "notes": [
           "V1 单一编辑记录，非最终总数。"
         ],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Elevator Parts",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "looter-parts",
@@ -290,9 +699,48 @@
         "notes": [
           "V1 单一编辑记录，非最终总数。"
         ],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Looter Parts",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "spirit-fragments",
@@ -334,9 +782,48 @@
         "notes": [
           "V1 单一编辑记录，非最终总数。"
         ],
-        "updatedAt": "2026-09-27"
+        "updatedAt": "2026-09-27",
+        "videoSources": [],
+        "publish": false
+      },
+      "nameEn": {
+        "value": "Spirit Fragments",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
       }
-    }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "key-items",
@@ -361,7 +848,45 @@
     "updatedAt": "2026-09-27",
     "videoSources": [],
     "images": [],
-    "fields": {}
+    "fields": {
+      "nameEn": {
+        "value": "Key Items",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   },
   {
     "id": "quest-items",
@@ -386,6 +911,44 @@
     "updatedAt": "2026-09-27",
     "videoSources": [],
     "images": [],
-    "fields": {}
+    "fields": {
+      "nameEn": {
+        "value": "Quest Items",
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      },
+      "nameZh": {
+        "value": null,
+        "confidence": "C",
+        "verificationStatus": "source-confirmed",
+        "publish": false,
+        "sources": [
+          {
+            "name": "用户提供的 V1 编辑资料清单",
+            "url": null,
+            "type": "guide",
+            "accessedAt": "2026-09-27"
+          }
+        ],
+        "notes": [],
+        "updatedAt": "2026-09-27",
+        "videoSources": []
+      }
+    },
+    "directoryVisible": true,
+    "publish": false,
+    "contentStatus": "empty"
   }
 ]

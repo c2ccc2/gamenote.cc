@@ -28,7 +28,7 @@ async function main(){
    }
    if(term==='Groundskeeper')assert.ok(links.includes('/games/an-jing-wei-guang/bosses/the-groundskeeper/'));
    if(term==='Trinkets')assert.ok(links.includes('/games/an-jing-wei-guang/collectibles/trinkets/'));
-   for(const url of allLinks){const html=fs.readFileSync(path.join(root,url,'index.html'),'utf8');assert.ok(html.includes('data-pagefind-body'),'Excluded page in results: '+url);assert.ok(!url.includes('_research'));assert.ok(!url.includes('/bosses/the-colony/'));assert.ok(!url.includes('/walkthrough/the-well/'))}
+   for(const url of allLinks){const html=fs.readFileSync(path.join(root,url,'index.html'),'utf8');assert.ok(html.includes('data-pagefind-body'),'Excluded page in results: '+url);assert.ok(!url.includes('_research'));assert.ok(!url.includes('/bosses/the-colony/'))}
    report.push({term,state,displayed:links.length});
   }
   await page.goto(origin+'/search/');assert.match(await page.locator('[data-search-status]').textContent(),/输入关键词/);
@@ -37,7 +37,7 @@ async function main(){
   await page.goto(origin+'/en/search/?q=Groundskeeper');await page.waitForSelector('.search-result');
   for(const width of [375,390,430]){
    await page.setViewportSize({width,height:900});
-   for(const url of ['/search/?q=黯井微光','/notes/','/notes/why-an-jing-wei-guang-looks-like-an-old-guide-site/','/games/','/updates/','/about/','/games/an-jing-wei-guang/bosses/the-groundskeeper/']){
+   for(const url of ['/search/?q=黯井微光','/notes/','/notes/why-an-jing-wei-guang-looks-like-an-old-guide-site/','/games/','/updates/','/about/','/games/an-jing-wei-guang/bosses/the-groundskeeper/','/games/an-jing-wei-guang/walkthrough/chapter-01/','/games/an-jing-wei-guang/walkthrough/night-garden/']){
     await page.goto(origin+url);if(url.startsWith('/search/'))await page.waitForSelector('.search-result');
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Overflow '+width+' '+url);
     assert.equal(await page.locator('.site-breadcrumb,.classic-crumb').count(),1);
@@ -58,6 +58,7 @@ async function main(){
   await page.goto(origin+'/games/');if(!await page.locator('.site-header a[href="/search/"]').isVisible())await page.locator('.menu-toggle').click();await page.locator('.site-header a[href="/search/"]').click();assert.ok(page.url().endsWith('/search/'));
   await page.goto(origin+'/search/?q=黯井微光');await page.waitForSelector('.search-result');
   fs.mkdirSync(path.join(root,'.navigation-test'),{recursive:true});
+  for(const width of [1440,390]){await page.setViewportSize({width,height:900});await page.goto(origin+'/games/an-jing-wei-guang/walkthrough/night-garden/');await page.locator('.classic-main > article img').last().scrollIntoViewIfNeeded();await page.waitForFunction(()=>[...document.querySelectorAll('.classic-main > article img')].every(i=>i.complete&&i.naturalWidth===852));assert.equal(await page.locator('.classic-main > article img').count(),5);assert.equal(await page.locator('.classic-banner').count(),0);await page.screenshot({path:path.join(root,'.navigation-test','p1-'+width+'.png'),fullPage:true})}
   await page.screenshot({path:process.env.SCREENSHOT_PATH||path.join(root,'.navigation-test','search-mobile.png'),fullPage:true});
   assert.deepEqual(errors,[]);console.log(JSON.stringify({searches:report,mobileWidths:[375,390,430],runtimeErrors:errors},null,2));
  }finally{await browser?.close();await new Promise(resolve=>server.close(resolve))}

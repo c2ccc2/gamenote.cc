@@ -1,0 +1,8 @@
+.image-viewer{box-sizing:border-box;width:min(1100px,96vw);max-width:96vw;max-height:94dvh;border:1px solid #9aafbb;padding:52px 16px 16px;background:#fffefb;color:#293238;overflow:auto}
+.image-viewer::backdrop{background:rgba(15,24,29,.82)}
+.image-viewer figure{margin:0;text-align:center}
+.image-viewer img{display:block;max-width:100%;max-height:calc(90dvh - 110px);width:auto;height:auto;margin:auto;object-fit:contain}
+.image-viewer figcaption{font:13px/1.6 system-ui,sans-serif;margin-top:12px;overflow-wrap:anywhere}
+.image-viewer-close{position:absolute;right:12px;top:10px;min-height:36px;padding:5px 12px;border:1px solid #9aafbb;background:#f0f5f7;color:#254e79;cursor:pointer;font:600 14px/1.5 system-ui,sans-serif}
+.image-viewer-close:focus-visible{outline:3px solid #a93131;outline-offset:2px}
+.image-viewer-open{overflow:hidden}

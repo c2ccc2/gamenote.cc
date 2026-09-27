@@ -1,0 +1,50 @@
+[
+ {"id":"the-well","image":"/games/an-jing-wei-guang/images/p1/start.webp","rows":[
+  ["头骨内部","起点位于大型头骨内部，右侧有出口。","出口通向前期庭园流程。"],
+  ["下行水道","后续回到起点时可以沿水道向下探索。","与起步段分开看，避免把回访路线当成初次出口。"]
+ ],"rowsEn":[["Inside the skull","The starting room lies inside a large skull, with an exit on the right.","This exit leads into the early garden route."],["Descending water channel","A later revisit follows a water channel downward.","Distinguish the revisit from the initial departure."]]},
+ {"id":"night-garden","rows":[
+  ["前段帐篷","庭园前段有可以保存游戏的帐篷。","以帐篷作为回查支路和补给的参照。"],
+  ["泡泡与高台","泡泡附近存在高处平台及上下层路线。","对照地图的高低层，不把看到的亮点混作同一种收集物。"],
+  ["园丁所在路段","前期油瓶教学之后会遭遇园丁。","后续流程转向猎人小屋；箭头表示流程衔接，不是精确出口坐标。"]
+ ],"rowsEn":[["Early tent","A save tent is available in the early garden.","Use it as a reference for supplies and branch revisits."],["Bubbles and raised platforms","Bubble rooms have higher platforms and routes on multiple levels.","Compare elevations on the map and distinguish the different pickups."],["Groundskeeper segment","The encounter follows the early oil-bottle tutorial.","The subsequent route heads toward Hunter's Cabin; diagram arrows are not exact exit coordinates."]]},
+ {"id":"hunters-cabin","rows":[
+  ["拾荒者所在路段","小屋内可与拾荒者交谈。","对话附近接续焰瓶教学，适合用作剧情定位点。"],
+  ["悬笼与泡泡","探索路段中有悬笼、泡泡和尖刺。","区分安全落脚点和刺面，不把所有可见高台都当成安全平台。"],
+  ["吊坠与庭园回访","小屋探索可取得猎人的吊坠，后续会回到庭园。","回访紫色障碍附近时重新核对当前已获得的操作能力。"]
+ ],"rowsEn":[["Looter segment","Looter can be encountered in the cabin.","The nearby flaming-vessel tutorial provides a story landmark."],["Cages and bubbles","The route includes hanging cages, bubbles and spikes.","Separate safe footholds from spike surfaces."],["Pendant and garden revisit","The cabin route includes the Hunter's Pendant and a later garden revisit.","Check your available actions when returning to the purple obstacle."]]},
+ {"id":"the-bog","rows":[
+  ["浅黄色房间群","局部地图中浅黄色房间形成上下分支和横向回环。","先辨认当前人物标记，再核对已探索的通道。"],
+  ["紫色帐篷标记","地图画面可见多个紫色节点；录像也有帐篷存档提示。","用已经到过的帐篷定位回程，不据截图推断完整帐篷数量。"],
+  ["竖井与高处支路","探索路上有入口竖井和需要攀升的支路。","普通攀爬受耐力限制，应辨认可站立的平台。"],
+  ["伊尔达与营地","巨大车轮背景的平台和篝火营地均出现伊尔达。","这是同一 NPC 的不同到访节点。"]
+ ],"rowsEn":[["Pale-yellow rooms","The partial map shows vertical branches and horizontal loops.","Locate the player marker before comparing explored passages."],["Purple tent markers","Several purple nodes appear; save-tent scenes are also recorded.","Use visited tents for orientation, not to infer the total tent count."],["Shafts and higher branches","The route includes an entrance shaft and climbing branches.","Ordinary Climb uses stamina; identify solid resting platforms."],["Ilda and the campsite","Ilda appears by a large wheel backdrop and later at a campfire.","These are different visits to the same NPC."]]},
+ {"id":"the-drains","image":"/games/an-jing-wei-guang/images/p3/frame-0220.webp","rows":[
+  ["入口水道","管道、水流与纵向落差构成入口地形，侧边有小平台。","检查侧边凹槽，不把入口竖井理解为只能直落到底。"],
+  ["气流竖井","窄平台位于竖向气流中，底部及边缘有尖刺。","使用气流移动前确认相关能力；按中继平台分辨层次。"],
+  ["柳儿与紫色帐篷","柳儿出现在带蜡烛的横向平台，另有紫色帐篷补给节点。","分别作为人物定位和补给定位，不据此补写任务完成状态。"]
+ ],"rowsEn":[["Entrance waterway","Pipes and water frame a vertical descent with small side platforms.","Check side recesses rather than assuming a direct drop to the bottom."],["Updraft shaft","Narrow platforms sit in an updraft above and beside spikes.","Check the required ability and use intermediate platforms to identify levels."],["Willow and the purple tent","Willow appears on a candle-lit platform; a purple tent provides supplies.","Use these as character and supply landmarks without assuming quest completion."]]},
+ {"id":"graven-valley","rows":[
+  ["浅色分叉与左侧红色区域","局部地图右端为当前人物位置，左侧还显示其他颜色的房间。","按区域颜色与已走过的房间区分章节，不把整张画面都算作墓谷。"],
+  ["吊钟与虚线平台","吊钟附近有透明或虚线标出的平台，周围可见尖刺。","机关变化前后应分别核对；虚线不代表当前可站立地面。"],
+  ["王冠舞台与吊笼","木制舞台有王冠装饰，附近有吊笼与角色对话。","舞台会再次回访，场景状态可能发生变化。"],
+  ["反锁连接的回访","回访段落来到反锁通道另一侧，斜板和平台连接地形。","区分已开启捷径与初次到访状态。"]
+ ],"rowsEn":[["Pale branches and red rooms to the left","The player marker is on the right; differently coloured rooms appear to the left.","Separate regions by colour and explored rooms, not by the whole screenshot."],["Bell and outlined platforms","The bell area includes transparent or outlined platforms and spikes.","Check mechanism state; an outline is not necessarily a usable foothold."],["Crowned stage and cages","A crowned wooden stage has nearby cages and dialogue scenes.","The stage is revisited and its state can change."],["Locked connection revisit","A later visit reaches the other side of a locked passage with sloping boards.","Distinguish opened shortcuts from the first-visit state."]]},
+ {"id":"desiccated-castle","image":"/games/an-jing-wei-guang/images/p5/frame-0880.webp","rows":[
+  ["紫色帐篷","城堡内部的紫色帐篷有明确存档提示。","以此定位支路回程和补给。"],
+  ["链条与高处书页","链条机关房间左上方可见书页，部分墙面和平台带刺。","辨认安全高台和刺面；书页所属故事需以书页菜单确认。"],
+  ["月亮背景的上下层","上层独立平台有尖刺，下层存在连续地面。","下层出口与高处支路分开检查，避免把可见上层当作安全落脚点。"]
+ ],"rowsEn":[["Purple tent","A save confirmation appears at the castle's purple tent.","Use it to orient branch returns and supply stops."],["Chains and a high page","A page is visible at the upper left of a chain-mechanism room with spikes.","Identify safe platforms; confirm the storybook through its menu."],["Levels against a moon backdrop","Raised platforms have spikes while the lower level has continuous ground.","Check lower exits separately from higher branches."]]},
+ {"id":"the-docks","rows":[
+  ["浅紫色房间群","局部地图显示多条上下分叉，人物标记位于右侧。","按当前房间回查邻接支路；黑色部分不代表已经清空。"],
+  ["紫色帐篷","木台上的帐篷有存档提示；深渊探索前也有回到帐篷的段落。","用已经到过的帐篷确定补给和回访位置。"],
+  ["巴吉的圆窗房间","房间内有圆窗与救生圈，初次和回访都能见到巴吉。","作为船员线索的定位点，不自动等同于载具已经开放。"],
+  ["吊网与反锁连接","高空通道交错分布吊网和刺球，回程涉及反锁连接。","捷径开启前后的回程不同，注意当前通道状态。"]
+ ],"rowsEn":[["Pale-purple rooms","The partial map shows vertical branches and a player marker on the right.","Review adjacent branches; black areas are not evidence of completion."],["Purple tent","A tent on a wooden platform confirms saving; it is revisited before the Deep segment.","Use visited tents to identify supply and return points."],["Barge's round-window room","A round window and life ring identify Barge's room on both visits.","This crew-related landmark does not by itself confirm vessel access."],["Nets and locked connections","High passages contain nets and spiked balls; the return involves a locked connection.","Check whether the shortcut has been opened."]]},
+ {"id":"the-deep","image":"/games/an-jing-wei-guang/images/p7/frame-0465.webp","rows":[
+  ["水下载具通道","窄洞、台阶和上下水道构成载具探索地形。","依据小地图的连通关系辨认出口，照明之外不一定可通行。"],
+  ["尖刺侧道","一处被尖刺包围的侧道显示饰物点获取提示。","可以确定槽位拾取存在，不能由单个点推算区域总数。"],
+  ["巨大头骨背景","载具经过大型头骨左侧的横向通道。","将头骨作为场景定位地标，而非新的区域名称。"],
+  ["陆地战斗与篝火","后续有徒步战斗和巴吉、船员同场的篝火对话。","水下与陆上操作场景要区分；对话聚集不代表成就自动完成。"]
+ ],"rowsEn":[["Vessel passages","Narrow caves, steps and vertical waterways form the vessel route.","Use the minimap connections; unlit space is not necessarily passable."],["Spiked side passage","A spiked branch shows a trinket-slot pickup message.","This confirms one pickup, not the region's total."],["Large skull backdrop","The vessel passes horizontally along the left of a large skull.","Use the skull as a landmark, not a new region name."],["Land fight and campfire","Later scenes include an on-foot fight and a campfire with Barge and the crew.","Distinguish land and vessel sections; the gathering is not an achievement confirmation."]]}
+]

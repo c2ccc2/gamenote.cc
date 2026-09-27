@@ -1,0 +1,25 @@
+{
+ "version":1,
+ "kind":"regional-route-schematic",
+ "width":1040,
+ "height":1000,
+ "referenceUrl":"https://www.gamerguides.com/well-dweller/maps/the-kingdom",
+ "nodes":[
+  {"id":"the-well","x":70,"y":130},
+  {"id":"night-garden","x":390,"y":130},
+  {"id":"hunters-cabin","x":710,"y":130},
+  {"id":"the-bog","x":50,"y":390},
+  {"id":"the-drains","x":300,"y":390},
+  {"id":"graven-valley","x":550,"y":390},
+  {"id":"desiccated-castle","x":800,"y":390},
+  {"id":"midnight-drench","x":50,"y":530},
+  {"id":"lookout-tower","x":300,"y":530},
+  {"id":"autumn-forest","x":550,"y":530},
+  {"id":"the-docks","x":800,"y":530},
+  {"id":"the-deep","x":50,"y":670},
+  {"id":"dollmakers-house","x":300,"y":670},
+  {"id":"webdrench-inn","x":550,"y":670},
+  {"id":"burial-vault","x":800,"y":670},
+  {"id":"queens-castle","x":50,"y":810}
+ ]
+}

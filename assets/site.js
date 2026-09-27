@@ -7,14 +7,7 @@
   const paired = zhPath === '/' || /^\/(games|notes|updates|about|search)\/$/.test(zhPath) || /^\/(notes|updates)\/[^/]+\/$/.test(zhPath);
   const languageUrl = (en ? zhPath : '/en' + (paired ? zhPath : '/')) + location.search + location.hash;
   const sectionNames = {Walkthrough:'图文流程',Maps:'地图',Bosses:'Boss 攻略',Abilities:'能力',Collectibles:'收集',Systems:'系统',Spirits:'灵魂',Relics:'遗物'};
-  if (!document.querySelector('script[src*="googletagmanager.com/gtm.js"]')) {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-    const gtm = document.createElement('script');
-    gtm.async = true;
-    gtm.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-W5W5PT67';
-    document.head.append(gtm);
-  }
+  // GTM is injected once by build-analytics.cjs for both main-site and Classic pages.
   const gameById = id => content.games.find(game => game.id === id);
   const formatDate = value => {
     if (!en) return value.replaceAll('-', '/');
@@ -37,7 +30,7 @@
     const title = en ? game.title : game.titleZh;
     const status = game.status === 'Complete' ? tr('已完成','Complete') : tr('整理中','In Progress');
     const cover = game.cover ? `<img src="${game.cover}" alt="${title} ${tr('游戏宣传图','game artwork')}" loading="lazy">` : `<div class="game-cover game-cover--type"><span>GAME NOTE${game.theme === 'classic' ? ' CLASSIC' : ''}</span><strong>${title}</strong><small>${tr('攻略整理中','GUIDE IN PROGRESS')}</small></div>`;
-    return `<article class="game-card"><a class="game-cover-link" href="${game.guideUrl}">${cover}</a><div class="game-copy"><div class="card-topline"><span class="status ${game.status === 'Complete' ? 'status--complete' : ''}">${status}</span></div><h3><a href="${game.guideUrl}">${title}</a></h3><p>${game.description}</p><div class="section-tags">${game.sections.map(s => `<span>${en?s:sectionNames[s]||s}</span>`).join('')}</div><a class="text-link" href="${game.guideUrl}">${tr('打开攻略档案','Open guide (Chinese)')} <b>→</b></a></div></article>`;
+    return `<article class="game-card"><a class="game-cover-link" href="${game.guideUrl}">${cover}</a><div class="game-copy"><div class="card-topline"><span class="status ${game.status === 'Complete' ? 'status--complete' : ''}">${status}</span></div><h3><a href="${game.guideUrl}">${title}</a></h3><p>${game.description}</p><div class="section-tags">${game.sections.map(s => `<span>${en?s:sectionNames[s]||s}</span>`).join('')}</div><a class="text-link" href="${game.guideUrl}">${tr('打开攻略档案','Open guide')} <b>→</b></a></div></article>`;
   }
   function noteCard(note) {
     const game = note.game && gameById(note.game);

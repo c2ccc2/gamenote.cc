@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "updatedAt": "2026-09-27",
   "files": {
     "game": "game.json",
@@ -10,6 +10,7 @@
     "keyItems": "keyItems.json",
     "quests": "quests.json",
     "achievements": "achievements.json",
-    "challenges": "challenges.json"
+    "challenges": "challenges.json",
+    "walkthroughs": "walkthroughs.json"
   }
 }

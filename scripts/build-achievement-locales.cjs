@@ -1,0 +1,23 @@
+const fs=require('node:fs'),path=require('node:path'),cheerio=require('cheerio');
+const {loadClassicData,publicValue}=require('./lib/classic-data.cjs');
+const root=path.resolve(__dirname,'..'),base='/games/an-jing-wei-guang/achievements/',origin='https://gamenote.cc';
+const records=loadClassicData(root).achievements,english=records.filter(e=>e.nameEn&&e.descriptionEn);
+const escape=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const link=(title,url)=>`<a href="${url}">${escape(title)}</a>`;
+const urls=[];
+function emit(slug,title,description,body){
+ const route=base+slug,zhFile=path.join(root,route,'index.html'),zh=cheerio.load(fs.readFileSync(zhFile,'utf8'));
+ zh('link[hreflang]').remove();
+ const alternate=`<link rel="alternate" hreflang="zh-CN" href="${origin+route}"><link rel="alternate" hreflang="en" href="${origin+'/en'+route}"><link rel="alternate" hreflang="x-default" href="${origin+route}">`;
+ zh('head').append(alternate);zh('[data-achievement-language]').remove();zh('.classic-main > header').append(`<p class="classic-subtitle" data-achievement-language>${link('中文',route)} · ${link('English','/en'+route)}</p>`);fs.writeFileSync(zhFile,zh.html()+'\n');
+ const dom=cheerio.load(zh.html());dom('html').attr('lang','en');dom('title').text(title+' — Well Dweller | GAME NOTE CLASSIC');dom('meta[name=description],meta[property="og:description"]').attr('content',description);dom('meta[property="og:title"]').attr('content',title+' — Well Dweller | GAME NOTE CLASSIC');dom('link[rel=canonical]').attr('href',origin+'/en'+route);dom('meta[property="og:url"]').attr('content',origin+'/en'+route);
+ dom('.classic-skip').text('Skip to content');dom('.classic-main > header h1').text(title);dom('.classic-main > header > .classic-subtitle').first().text('Official achievement text · Guide details in progress');dom('.classic-main > header > .classic-subtitle').eq(1).text('GAME NOTE CLASSIC · Well Dweller');
+ dom('.classic-sidebar summary').text('Guide directory');dom('.classic-sidebar nav').attr('aria-label','Guide directory').html(link('GAME NOTE','/en/')+'<h2>Well Dweller</h2>'+link('Guide home (Chinese)','/games/an-jing-wei-guang/')+'<h2>Achievements</h2>'+link('Achievement index','/en'+base)+english.map(e=>link(e.nameEn,'/en'+base+e.slug+'/')).join(''));
+ dom('.classic-main > article').html(body);dom('#related-notes').remove();dom('.classic-pager').attr('aria-label','Article navigation').html(link('Achievement index','/en'+base)+' · '+link('中文版',route));dom('.classic-footer').html(link('Back to GAME NOTE','/en/')+' · Official text does not imply a complete unlock guide.');
+ dom('.classic-main > header [data-achievement-language]').html(link('中文',route)+' · '+link('English','/en'+route));
+ const dest=path.join(root,'en',route,'index.html');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,dom.html()+'\n');urls.push('/en'+route);
+}
+emit('','Achievements','Official English achievement names and descriptions for Well Dweller.',`<p>Well Dweller has 41 Steam achievements. Official English text is currently preserved for ${english.length} entries. The Chinese index includes all 41 entries from the supplied Steam screenshots.</p><div class="classic-table-wrap" tabindex="0" role="region" aria-label="Official English achievements"><table class="classic-table"><caption>Official English achievements</caption><thead><tr><th scope="col">Achievement</th><th scope="col">Official description</th></tr></thead><tbody>${english.map(e=>`<tr><td>${link(e.nameEn,'/en'+base+e.slug+'/')}</td><td>${escape(e.descriptionEn)}</td></tr>`).join('')}</tbody></table></div><p>${link('All 41 achievements — Chinese index',base)}</p><p>${link('Steam English achievement list','https://steamcommunity.com/stats/3699590/achievements/?l=english')}</p>`);
+for(const e of english)emit(e.slug+'/',e.nameEn,e.descriptionEn,`<p>${escape(e.descriptionEn)}</p><h2 class="classic-heading">Official Chinese text</h2><p>${escape(publicValue(e,'nameZh'))}：${escape(publicValue(e,'description'))}</p><p>${link('Steam English achievement list','https://steamcommunity.com/stats/3699590/achievements/?l=english')}</p>`);
+const sitemap=path.join(root,'sitemap.xml');let xml=fs.readFileSync(sitemap,'utf8').replace(/\s*<url><loc>https:\/\/gamenote.cc\/en\/games\/an-jing-wei-guang\/achievements\/[^<]*<\/loc><\/url>/g,'');xml=xml.replace('</urlset>',urls.map(url=>`<url><loc>${origin+url}</loc></url>`).join('\n')+'\n</urlset>');fs.writeFileSync(sitemap,xml);
+console.log('Generated '+urls.length+' English achievement pages; all existing English names, descriptions and slugs retained.');

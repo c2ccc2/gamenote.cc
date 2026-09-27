@@ -5,7 +5,7 @@
   "nameZh": "黯井微光",
   "description": "《黯井微光》（Well Dweller）是一款黑暗童话风格的手绘银河城动作冒险游戏。玩家将操控手持火柴的小鸟 Glimmer，在探索、战斗与解谜中获得新能力、打开更多区域，并逐步深入被女王统治的王国。",
   "confidence": "A",
-  "verificationStatus": "source-confirmed",
+  "verificationStatus": "official-confirmed",
   "publishStatus": "published",
   "sources": [
     {
@@ -29,14 +29,19 @@
       "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3699590/0bfee39e2d0df55c079b7125f37467c45cc1053f/header_schinese.jpg?t=1790314621",
       "timestamp": null,
       "verified": true,
-      "publishStatus": "published"
+      "publishStatus": "published",
+      "verificationStatus": "official-confirmed",
+      "publish": true,
+      "confidence": "A",
+      "platform": null,
+      "videoId": null
     }
   ],
   "fields": {
     "developer": {
       "value": "Kyle Thompson",
       "confidence": "A",
-      "verificationStatus": "source-confirmed",
+      "verificationStatus": "official-confirmed",
       "publishStatus": "published",
       "sources": [
         {
@@ -47,7 +52,9 @@
         }
       ],
       "notes": [],
-      "updatedAt": "2026-09-27"
+      "updatedAt": "2026-09-27",
+      "videoSources": [],
+      "publish": true
     },
     "publishers": {
       "value": [
@@ -56,7 +63,7 @@
         "Doyoyo Games"
       ],
       "confidence": "A",
-      "verificationStatus": "source-confirmed",
+      "verificationStatus": "official-confirmed",
       "publishStatus": "published",
       "sources": [
         {
@@ -67,12 +74,14 @@
         }
       ],
       "notes": [],
-      "updatedAt": "2026-09-27"
+      "updatedAt": "2026-09-27",
+      "videoSources": [],
+      "publish": true
     },
     "releaseDate": {
       "value": "2026-09-22",
       "confidence": "A",
-      "verificationStatus": "source-confirmed",
+      "verificationStatus": "official-confirmed",
       "publishStatus": "published",
       "sources": [
         {
@@ -83,7 +92,9 @@
         }
       ],
       "notes": [],
-      "updatedAt": "2026-09-27"
+      "updatedAt": "2026-09-27",
+      "videoSources": [],
+      "publish": true
     },
     "genres": {
       "value": [
@@ -95,7 +106,7 @@
         "2D Platformer"
       ],
       "confidence": "A",
-      "verificationStatus": "source-confirmed",
+      "verificationStatus": "official-confirmed",
       "publishStatus": "published",
       "sources": [
         {
@@ -106,12 +117,14 @@
         }
       ],
       "notes": [],
-      "updatedAt": "2026-09-27"
+      "updatedAt": "2026-09-27",
+      "videoSources": [],
+      "publish": true
     },
     "protagonist": {
       "value": "Glimmer",
       "confidence": "A",
-      "verificationStatus": "source-confirmed",
+      "verificationStatus": "official-confirmed",
       "publishStatus": "published",
       "sources": [
         {
@@ -122,12 +135,14 @@
         }
       ],
       "notes": [],
-      "updatedAt": "2026-09-27"
+      "updatedAt": "2026-09-27",
+      "videoSources": [],
+      "publish": true
     },
     "simplifiedChinese": {
       "value": true,
       "confidence": "A",
-      "verificationStatus": "source-confirmed",
+      "verificationStatus": "official-confirmed",
       "publishStatus": "published",
       "sources": [
         {
@@ -138,12 +153,14 @@
         }
       ],
       "notes": [],
-      "updatedAt": "2026-09-27"
+      "updatedAt": "2026-09-27",
+      "videoSources": [],
+      "publish": true
     },
     "steamAchievements": {
       "value": 41,
       "confidence": "A",
-      "verificationStatus": "source-confirmed",
+      "verificationStatus": "official-confirmed",
       "publishStatus": "published",
       "sources": [
         {
@@ -154,7 +171,135 @@
         }
       ],
       "notes": [],
-      "updatedAt": "2026-09-27"
+      "updatedAt": "2026-09-27",
+      "videoSources": [],
+      "publish": true
+    },
+    "nameEn": {
+      "value": "Well Dweller",
+      "confidence": "A",
+      "verificationStatus": "official-confirmed",
+      "publish": true,
+      "sources": [
+        {
+          "name": "Steam 官方商店（中文）",
+          "url": "https://store.steampowered.com/app/3699590/Well_Dweller/?l=schinese",
+          "type": "official",
+          "accessedAt": "2026-09-27"
+        }
+      ],
+      "notes": [],
+      "updatedAt": "2026-09-27",
+      "videoSources": []
+    },
+    "nameZh": {
+      "value": "黯井微光",
+      "confidence": "A",
+      "verificationStatus": "official-confirmed",
+      "publish": true,
+      "sources": [
+        {
+          "name": "Steam 官方商店（中文）",
+          "url": "https://store.steampowered.com/app/3699590/Well_Dweller/?l=schinese",
+          "type": "official",
+          "accessedAt": "2026-09-27"
+        }
+      ],
+      "notes": [],
+      "updatedAt": "2026-09-27",
+      "videoSources": []
+    },
+    "description": {
+      "value": "《黯井微光》（Well Dweller）是一款黑暗童话风格的手绘银河城动作冒险游戏。玩家将操控手持火柴的小鸟 Glimmer，在探索、战斗与解谜中获得新能力、打开更多区域，并逐步深入被女王统治的王国。",
+      "confidence": "A",
+      "verificationStatus": "official-confirmed",
+      "publish": true,
+      "sources": [
+        {
+          "name": "Steam 官方商店（中文）",
+          "url": "https://store.steampowered.com/app/3699590/Well_Dweller/?l=schinese",
+          "type": "official",
+          "accessedAt": "2026-09-27"
+        }
+      ],
+      "notes": [],
+      "updatedAt": "2026-09-27",
+      "videoSources": []
+    },
+    "earlyRoute": {
+      "value": [
+        "the-well",
+        "night-garden",
+        "hunters-cabin"
+      ],
+      "confidence": "C",
+      "verificationStatus": "video-confirmed",
+      "publish": true,
+      "sources": [
+        {
+          "name": "好吃的香草雪球 · 用户提供的 P1 游戏画面",
+          "url": "https://space.bilibili.com/3804625/",
+          "type": "video",
+          "accessedAt": "2026-09-27"
+        }
+      ],
+      "notes": [
+        "仅表示 P1 已核对片段的早期关系。"
+      ],
+      "updatedAt": "2026-09-27",
+      "videoSources": [
+        {
+          "platform": "bilibili",
+          "url": null,
+          "videoId": null,
+          "localFile": "P1-夜之庭园 猎人小屋.mp4",
+          "timestampStart": "00:03:20",
+          "timestampEnd": "00:13:35",
+          "notes": "依据现有 P1 关键帧及核对记录；原视频链接尚未提供。",
+          "verifiedItems": [
+            "game.earlyRoute"
+          ]
+        }
+      ]
+    },
+    "officialCategories": {
+      "value": [
+        "动作",
+        "冒险",
+        "独立",
+        "角色扮演"
+      ],
+      "publish": true,
+      "confidence": "A",
+      "verificationStatus": "official-confirmed",
+      "sources": [
+        {
+          "name": "Steam 官方商店（中文）",
+          "url": "https://store.steampowered.com/app/3699590/Well_Dweller/?l=schinese",
+          "type": "official",
+          "accessedAt": "2026-09-27"
+        }
+      ],
+      "notes": [],
+      "updatedAt": "2026-09-27",
+      "videoSources": []
+    },
+    "storeUrl": {
+      "value": "https://store.steampowered.com/app/3699590/Well_Dweller/?l=schinese",
+      "publish": true,
+      "confidence": "A",
+      "verificationStatus": "official-confirmed",
+      "sources": [
+        {
+          "name": "Steam 官方商店（中文）",
+          "url": "https://store.steampowered.com/app/3699590/Well_Dweller/?l=schinese",
+          "type": "official",
+          "accessedAt": "2026-09-27"
+        }
+      ],
+      "notes": [],
+      "updatedAt": "2026-09-27",
+      "videoSources": []
     }
   },
   "earlyRoute": {
@@ -184,5 +329,8 @@
       "仅作早期参考关系，不将整个区域目录排成最终流程。"
     ],
     "updatedAt": "2026-09-27"
-  }
+  },
+  "directoryVisible": true,
+  "publish": true,
+  "contentStatus": "partial"
 }

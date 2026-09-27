@@ -23,7 +23,7 @@ Updates 每条记录包含稳定 slug 和 relatedUrl；url 自动生成独立详
 
 assets/routes.js 是共用 URL / Breadcrumb / BreadcrumbList 实现。Notes 的 url 在统一 metadata 中由 slug 计算，列表、相关文章、Related Game 和分类入口通过 metadata 更新。scripts/build-navigation.cjs 将它们写入最终 HTML；首页没有 Breadcrumb。
 
-索引只读取 HTML 中标记 data-pagefind-body 的正文。Header、Footer、Sidebar、相关链接不参与正文索引。research 实体不生成索引页面，draft-only 详情页没有正文索引标记；有独立已发布事实的条目可索引该公开事实，例如 Trinkets 的已核验数量。目录页仍可检索。404、旧地址兼容页和搜索页不索引。绝不将研究 JSON 作为搜索数据。
+索引只读取 HTML 中标记 data-pagefind-body 的正文。Header、Footer、Sidebar、相关链接不参与正文索引。research 实体不生成索引页面，publish=false 或无有意义已确认事实的详情页不索引；partial 页面通过与正文相同的 canPublish 规则索引，不等待完整攻略。目录页仍可检索。404、旧地址兼容页和搜索页不索引。绝不将研究 JSON 作为搜索数据。
 
 单个 zh-CN 索引包含已发布中英文页面，避免英文搜索页搜不到中文 Classic 专题；结果显示页面原有语言，不自动翻译。Pagefind 负责全文搜索，无 Fuse 或外部 API。元数据含 title、type、game、category。搜索页面读取 q 参数，回车/按钮提交，15 条分页加载；空词和无结果有明确提示。
 

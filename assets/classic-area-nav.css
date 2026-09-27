@@ -1,0 +1,12 @@
+/* Quiet, print-like chapter navigation; scoped to GAME NOTE CLASSIC. */
+[data-theme="classic"] .classic-area-nav{margin:38px 0 0;padding:20px 0 4px;border-top:3px double #a7b5b9}
+[data-theme="classic"] .classic-area-nav>h2{margin:0 0 16px;color:#873834;font:700 17px/1.5 Georgia,'SimSun',serif;letter-spacing:2px}
+[data-theme="classic"] .classic-area-nav-columns{display:flex;flex-wrap:wrap;gap:18px}
+[data-theme="classic"] .classic-area-nav-group{flex:1 1 240px;min-width:0;padding:15px 18px;background:#f0f5f7;border-left:3px solid #577fa1}
+[data-theme="classic"] .classic-area-nav-group h3{margin:0 0 8px;font-size:13px;line-height:1.6;font-weight:600;color:#65727a}
+[data-theme="classic"] .classic-area-nav-group h3 span{margin-right:5px;color:#873834}
+[data-theme="classic"] .classic-area-nav-group ul{list-style:none;padding:0;margin:0}
+[data-theme="classic"] .classic-area-nav-group li+li{margin-top:7px}
+[data-theme="classic"] .classic-area-nav-group a{display:block;padding:3px 0;min-height:36px;font-size:16px;font-weight:600;line-height:1.7;overflow-wrap:anywhere;text-decoration:none}
+[data-theme="classic"] .classic-area-nav-group a:hover{text-decoration:underline}
+@media(max-width:760px){[data-theme="classic"] .classic-area-nav{margin-top:28px}[data-theme="classic"] .classic-area-nav-columns{flex-direction:column;gap:12px}[data-theme="classic"] .classic-area-nav-group{flex:auto;padding:12px 15px}[data-theme="classic"] .classic-area-nav-group a{min-height:44px;display:flex;align-items:center}}
