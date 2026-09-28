@@ -1,0 +1,47 @@
+{
+  "source": "https://game-checklists.com/well-dweller/spirits-checklist/",
+  "night-garden": [
+    ["起始帐篷向上、向左，再沿竖井向下；循泡泡到挑战房，完成战斗后找到鸟形石像。", "From the start tent, go up, left and down the shaft. Follow the bubbles to the challenge room and clear it."],
+    ["下方帐篷左上方的平台；用弹弓到达鸟形石像。", "Use Slingshot to reach the bird statue just left and above the bottom tent."],
+    ["上方帐篷出发，经瞭望塔边缘向左，再下行开门；位置在井底入口正上方，需要悬浮。", "From the top tent, travel left through the edge of Lookout Tower, descend and open the gate above the Well entrance. Hover is required."]
+  ],
+  "hunters-cabin": [
+    ["从小屋中部向右三间房，向上三间房；完成计时挑战后到达，需悬浮。", "From the cabin center, travel three rooms right and three rooms up. Complete the time trial; Hover is required."]
+  ],
+  "the-bog": [
+    ["从左侧帐篷向右、向下、向左，完成计时挑战。", "From the left tent, go right, down and left, then complete the time trial."],
+    ["从上方帐篷向左两间、向上两间，完成敌人挑战；需悬浮。", "From the top tent, travel two rooms left and two rooms up, then clear the enemy challenge. Hover is required."]
+  ],
+  "the-drains": [
+    ["从中部帐篷向右，借乘风气流上升至左侧平台。", "From the center tent, go right and ride the updraft to the platform on the left. Wind Ride is required."]
+  ],
+  "graven-valley": [
+    ["从墓谷帐篷向右三间房再下行；上部偏左有隐藏墙，穿过后抵达。", "From the valley tent, go three rooms right and then down. Cross the illusory wall toward the upper-left side."]
+  ],
+  "midnight-drench": [
+    ["从荒堡中部帐篷向左三间、向下两间，再向左两间。", "From the castle center tent, go three rooms left, two down and two left."],
+    ["从本区上方帐篷向右两间，靠近蛛雨旅店的计时挑战石像；完成挑战。", "From the top tent, go two rooms right toward Webdrench Inn and complete the time trial."]
+  ],
+  "desiccated-castle": [
+    ["从上方帐篷向右并向上；鸟灵下方有隐藏墙，在正下方利用弹弓平台上升。", "From the top tent, go right and up. Find the illusory wall below the statue and use a Slingshot platform to rise."]
+  ],
+  "lookout-tower": [
+    ["从下方帐篷向下、向右，进入泡泡挑战房。", "From the bottom tent, go down and right into the bubble challenge room."],
+    ["从下方帐篷向左并上行三间，到尖刺分岔后一直向右；需要三次飞行时间提升。", "From the bottom tent, go left and up three rooms to the spiked fork, then continue right. Three flight-time increases are required."]
+  ],
+  "autumn-forest": [
+    ["从左侧帐篷向右两间，经摩天轮向上两间，再向左完成计时挑战。", "From the left tent, go two rooms right, two up by the ferris wheel, then left to the time trial."],
+    ["从右侧帐篷向下、向左，解开蘑菇房机关；下一房间需利用弹弓平台与蘑菇反弹。", "From the right tent, go down and left through the mushroom puzzle; use a Slingshot platform and mushrooms in the next room."]
+  ],
+  "the-docks": [
+    ["从左下帐篷向右、右上、再向右；中央隐藏墙可向下进入。", "From the lower-left tent, go right, up-right and right. Drop through the hidden wall near the center."],
+    ["从右侧帐篷向上三间房，在左端平台寻找。", "From the right tent, go up three rooms and check the platform at the left end."]
+  ],
+  "dollmakers-house": [
+    ["位于玩偶师之家上方帐篷的正上方。", "Directly above the top tent in Dollmaker's House."]
+  ],
+  "burial-vault": [
+    ["从右侧帐篷向左两间，再走右上出口；在移动墙上放置弹弓平台后向上。", "From the right tent, go left twice and take the upper-right exit. Use a Slingshot platform on the moving wall."],
+    ["从右侧帐篷向左、向下、向左、向上、向右；把弹弓平台置于尖刺之间并向上弹。", "From the right tent, go left, down, left, up and right. Place a Slingshot platform among the spikes and launch upward."]
+  ]
+}

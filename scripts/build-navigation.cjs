@@ -14,6 +14,8 @@ for(const file of pages){
  const url='/'+path.relative(root,file).replaceAll('\\','/').replace(/index\.html$/,''),en=url.startsWith('/en/'),current=url.replace(/^\/en\//,'/'),prefix=en?'/en/':'/',shared=en?english:zh;
  let $=cheerio.load(fs.readFileSync(file,'utf8'));const classic=$('body').hasClass('classic');
  $('link[href="/assets/image-viewer.css"],script[src="/assets/image-viewer.js"]').remove();
+ // Rebuilding a page must not retain whitespace left by the removed viewer script.
+ if(current==='/'||current==='/en/')$('body').contents().filter((_,node)=>node.type==='text'&&/^\s+$/.test(node.data||'')).last().remove();
  $('head').append('<link rel="stylesheet" href="/assets/image-viewer.css">');$('body').append('<script src="/assets/image-viewer.js" defer></script>');
  $('article img,main figure img').each((_,node)=>{const img=$(node);if(!img.closest('a').length&&/^\//.test(img.attr('src')||''))img.wrap(`<a href="${escape(img.attr('src'))}" target="_blank" rel="noopener noreferrer"></a>`)});
  $('a[href]').each((_,node)=>{const a=$(node);if(a.find('img').length&&/\.(webp|png|jpe?g|gif|avif|svg)(?:[?#]|$)/i.test(a.attr('href')))a.attr({target:'_blank',rel:'noopener noreferrer'})});
@@ -67,7 +69,8 @@ for(const file of pages){
   for(const [key,value] of Object.entries(metadata))$('head').append(`<meta data-search-meta data-pagefind-meta="${key}[content]" content="${escape(value)}">`);
  }
  $('.classic-sidebar,.classic-banner,#related-notes,[data-site-header],[data-site-footer]').attr('data-pagefind-ignore','all');
- fs.writeFileSync(file,$.html()+'\n');
+ const html=$.html();
+ fs.writeFileSync(file,(current==='/'||current==='/en/'?html.replace(/(?:\r?\n[ \t]*){3,}(?=<script src="\/assets\/image-viewer\.js")/g,'\n'):html)+'\n');
 }
 const sitemap=path.join(root,'sitemap.xml');let xml=fs.readFileSync(sitemap,'utf8');for(const note of zh.notes.filter(note=>note.listed===false))for(const url of [note.url,'/en'+note.url])xml=xml.replace('<url><loc>'+origin+url+'</loc></url>','');fs.writeFileSync(sitemap,xml);
 console.log(`Unified navigation on ${pages.length} pages; ${indexed} pages allowed into Pagefind.`);

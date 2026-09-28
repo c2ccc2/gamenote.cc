@@ -3,6 +3,7 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),chee
 const {loadClassicData,confirmed}=require('./lib/classic-data.cjs');
 const root=path.resolve(__dirname,'..'),origin='https://gamenote.cc',base='/games/an-jing-wei-guang/',today='2026-09-27';
 const data=loadClassicData(root),summaries=require('../content/games/an-jing-wei-guang/region-summaries.json');
+const spiritLocations=require('../content/games/an-jing-wei-guang/spirits-by-area.json');
 const sharedContext={window:{GAMENOTE_ROUTES:require('../assets/routes.js')}};
 vm.runInNewContext(fs.readFileSync(path.join(root,'assets/content.js'),'utf8'),sharedContext);
 const shared=sharedContext.window.GAMENOTE_CONTENT;
@@ -51,7 +52,38 @@ for(const file of files){
    const bossIds=[...new Set([...(summary.bosses||[]),...(confirmed(record.fields.bosses)?record.fields.bosses.value:[])])];
    const bossRow=bossIds.length?'<dt>Boss</dt><dd>'+bossIds.map(id=>{const e=data.bosses.find(e=>e.id===id);if(!e)throw Error('Unknown regional boss '+id);return `<a href="${prefix+base+'bosses/'+e.slug+'/'}">${esc(en?e.nameEn:e.nameZh||require('../content/games/an-jing-wei-guang/labels-zh.json')[e.nameEn]||e.nameEn)}</a>`}).join(' · ')+'</dd>':'';
    const npcRows=encounters.filter(([label])=>label==='NPC').map(([,html])=>'<dt>NPC</dt><dd>'+html+'</dd>').join('')+(record.id==='the-bog'?`<dt>NPC</dt><dd>${en?'Ilda — roadside and campfire conversations.':'伊尔达 · 途中与营地篝火旁的两处对话。'}</dd>`:record.id==='desiccated-castle'?`<dt>NPC</dt><dd>${en?'Looter — dialogue along the castle route.':'拾荒者 · 荒堡路线中的对话节点。'}</dd>`:'');
-   article.prepend(`<section data-editorial class="classic-region-summary"><h2 class="classic-heading">${en?'Area at a Glance':'本区域要点'}</h2><dl>${[['goal','推进目标','Goal'],['ability','能力 / 使用限制','Ability / Limits'],['revisit','回头探索','Return Visits']].map(([key,zh,english])=>`<dt>${en?english:zh}</dt><dd>${esc(summary[key][en?1:0])}</dd>`).join('')}${npcRows}${bossRow}</dl><p>${links.filter(([, ,u])=>!u.includes('/bosses/')).map(([zh,english,u])=>`<a href="${prefix+u}">${esc(en?english:zh)}</a>`).join(' · ')}</p></section>`);
+   const birds=spiritLocations[record.id]||[];
+   const birdRow=`<dt>${en?'Bird spirits':'鸟灵'}</dt><dd>${birds.length}${birds.length?` · <a href="#area-spirits">${en?'See locations':'查看位置'}</a>`:''}</dd>`;
+   article.prepend(`<section data-editorial class="classic-region-summary"><h2 class="classic-heading">${en?'Area at a Glance':'本区域要点'}</h2><dl>${[['goal','推进目标','Goal'],['ability','能力 / 使用限制','Ability / Limits'],['revisit','回头探索','Return Visits']].map(([key,zh,english])=>`<dt>${en?english:zh}</dt><dd>${esc(summary[key][en?1:0])}</dd>`).join('')}${birdRow}${npcRows}${bossRow}</dl><p>${links.filter(([, ,u])=>!u.includes('/bosses/')).map(([zh,english,u])=>`<a href="${prefix+u}">${esc(en?english:zh)}</a>`).join(' · ')}</p></section>`);
+   if(birds.length){
+    const positions=`<section data-editorial class="classic-spirit-route" id="area-spirits"><h2 class="classic-heading">${en?'Bird spirit locations':'鸟灵位置'}</h2><ol>${birds.map((pair,index)=>`<li><strong>${en?'Bird spirit':'鸟灵'} ${index+1}</strong>：${esc(pair[en?1:0])}</li>`).join('')}</ol><p class="article-meta">${en?'Location reference':'位置参考'}：<a href="${spiritLocations.source}" target="_blank" rel="noopener noreferrer">Well Dweller · All Spirits Checklist</a></p></section>`;
+    article.children('h2').filter((_,node)=>/^(?:相关攻略|Related guides)$/i.test($(node).text().trim())).first().before(positions);
+   }
+   if(record.id==='the-well'){
+    article.find('h2').filter((_,node)=>$(node).text().includes(en?'Return to':'回到起点')).first().attr('id','well-return');
+    article.find('.classic-region-summary').after(`<nav data-editorial class="classic-route-outline" aria-label="${en?'Well route':'井底路线'}"><h2 class="classic-heading">${en?'Route at a Glance':'路线速览'}</h2><ol><li><a href="#well-start">${en?'Leave the skull':'离开头骨起点'}</a></li><li><a href="#well-return">${en?'Return to the Well':'返回井底继续下行'}</a></li></ol></nav>`);
+    article.find('h2').filter((_,node)=>$(node).text().includes(en?'skull':'头骨起点')).first().attr('id','well-start');
+   }
+   if(record.id==='night-garden'){
+    article.find('.classic-region-summary').after(`<nav data-editorial class="classic-route-outline" aria-label="${en?'Night Garden route':'夜之庭园路线'}"><h2 class="classic-heading">${en?'Route at a Glance':'路线速览'}</h2><ol><li><a href="#garden-early">${en?'Tent and supplies':'帐篷与补给'}</a></li><li><a href="#garden-groundskeeper">${en?'Groundskeeper':'园丁战'}</a></li><li><a href="#area-spirits">${en?'Bird spirit locations':'鸟灵位置'}</a></li></ol></nav>`);
+    const headings=article.children('h2');headings.filter((_,node)=>/庭园前段|early garden|early route/i.test($(node).text())).first().attr('id','garden-early');
+    headings.filter((_,node)=>/遭遇园丁|Groundskeeper/i.test($(node).text())).first().attr('id','garden-groundskeeper');
+   }
+   if(record.id==='the-bog'){
+    const stops=[
+     {frame:'0065',id:'bog-entrance',zh:'入口竖井与下层支路',en:'Entrance shaft and lower branches'},
+     {frame:'0690',id:'bog-camp',zh:'伊尔达营地与回程地图',en:'Ilda’s camp and return map'},
+     {frame:'1015',id:'bog-encounter',zh:'虫群战斗',en:'The Swarm encounter'},
+     {frame:'1130',id:'bog-climb',zh:'攀爬教学与高处回访',en:'Climb and high-branch revisit'}
+    ];
+    for(const stop of stops){
+     const image=article.find(`img[src="${base}images/p2/frame-${stop.frame}.webp"]`).first();
+     const heading=image.closest('.classic-image-block').prev('h2');
+     if(!heading.length)throw Error('Missing Bog route heading for frame '+stop.frame);
+     heading.attr('id',stop.id);
+    }
+    article.find('.classic-region-summary').after(`<nav data-editorial class="classic-route-outline" aria-label="${en?'Bog route':'沼泽路线'}"><h2 class="classic-heading">${en?'Route at a Glance':'路线速览'}</h2><ol>${stops.map(stop=>`<li><a href="#${stop.id}">${esc(en?stop.en:stop.zh)}</a></li>`).join('')}</ol></nav>`);
+   }
   }
   if(record&&['walkthrough','maps'].includes(parts[0])){
    const mapNotes=require('../content/games/an-jing-wei-guang/regional-map-notes.json').find(n=>n.id===record.id);

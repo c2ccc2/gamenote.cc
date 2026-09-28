@@ -139,8 +139,9 @@ page('','黯井微光 / Well Dweller','黯井微光 Well Dweller：游戏资料�
 page('walkthrough/','流程攻略目录','Well Dweller 区域流程攻略目录。',
  catalogue(areas.slice(0,14),'walkthrough')+heading('其他区域','other')+catalogue(areas.slice(14),'walkthrough'));
 for(const e of data.walkthroughs)page('walkthrough/'+e.slug+'/',name(e),e.description,notice('P1 图文正文已按阅读段落分到以下两个区域页，内容没有删除。小屋片段在夜之庭园页中明确标为后续探索，不改变其区域归属。')+list(e.readingRoutes.map(slug=>[name(areas.find(a=>a.slug===slug)),base+'walkthrough/'+slug+'/'])),{parent:['流程攻略','walkthrough'],noindex:true});
-for(const e of areas){
- page('walkthrough/'+e.slug+'/',name(e),e.nameEn+' 已确认区域资料与流程记录。',facts(e)+heading('相关攻略')+list([['区域地图',base+'maps/'+e.slug+'/'],['流程目录',base+'walkthrough/']]),{parent:['流程攻略','walkthrough'],entity:e});
+for(const [index,e] of areas.entries()){
+ const adjacent=area=>area&&{title:name(area),route:'walkthrough/'+area.slug+'/'};
+ page('walkthrough/'+e.slug+'/',name(e),e.nameEn+' 已确认区域资料与流程记录。',facts(e)+heading('相关攻略')+list([['区域地图',base+'maps/'+e.slug+'/'],['流程目录',base+'walkthrough/']]),{parent:['流程攻略','walkthrough'],previous:adjacent(areas[index-1]),next:adjacent(areas[index+1]),entity:e});
  page('maps/'+e.slug+'/',name(e)+' · 地图',e.nameEn+' 已确认区域节点；截图不等同于完整地图。',facts(e,{map:true})+'<details class="classic-map-structure"><summary>查看区域结构示意</summary>'+worldMap.markup(e)+'</details>'+heading('相关攻略')+list([['世界结构示意图',base+'maps/world/'],['区域流程',base+'walkthrough/'+e.slug+'/'],['区域地图目录',base+'maps/']]),{parent:['区域地图','maps'],entity:e});
 }
 page('maps/','地图目录','Well Dweller 区域地图参考目录。','<p>地图章节提供局部地图与地标定位；完整路线步骤仍在流程攻略中阅读。</p>'+list([['世界结构示意图',base+'maps/world/']])+heading('已补充区域')+table('可用地图资料',['区域','现有内容'],areas.filter(a=>regionalMapNotes.some(n=>n.id===a.id)).map(a=>[linkedName(a,'maps'),a.images.some(i=>approvedImage(i)&&/地图|区域图/.test(i.caption))?'局部地图与地标定位':'地标定位与区域结构视图']))+heading('后续区域')+catalogue(areas.filter(a=>!regionalMapNotes.some(n=>n.id===a.id)),'maps'));

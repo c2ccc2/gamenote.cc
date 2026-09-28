@@ -2,6 +2,15 @@
 .classic .classic-region-summary { margin: 1.25rem 0 2rem; padding: .25rem 0 1rem; border-bottom: 1px dotted #9aaaba; }
 .classic .classic-region-summary dt { margin-top: .65rem; font-weight: 700; color: #31566d; }
 .classic .classic-region-summary dd { margin: .15rem 0 0; }
+.classic .classic-route-outline { margin: 0 0 1.75rem; padding: .25rem 0 1rem; border-bottom: 1px dotted #9aaaba; }
+.classic .classic-route-outline h2 { margin-bottom: .5rem; }
+.classic .classic-route-outline ol { margin: 0; padding-left: 1.6rem; columns: 2; column-gap: 2rem; }
+.classic .classic-route-outline li { margin: .3rem 0; break-inside: avoid; }
+.classic .classic-route-outline a { text-underline-offset: .2em; }
+.classic .classic-route-outline ~ h2[id] { scroll-margin-top: 1rem; }
+.classic .classic-spirit-route { margin: 2rem 0; padding: 1rem 0; border-top: 1px dotted #9aaaba; border-bottom: 1px dotted #9aaaba; scroll-margin-top: 1rem; }
+.classic .classic-spirit-route ol { padding-left: 1.6rem; }
+.classic .classic-spirit-route li { margin: .65rem 0; }
 .article-references { margin-top: 2rem; padding-top: .75rem; border-top: 1px solid #bcc6cc; }
 .article-references ul { padding-left: 1.4rem; }
 .article-references li { margin: .4rem 0; overflow-wrap: anywhere; }
@@ -10,4 +19,4 @@
 .classic .classic-regional-crop figure { display: block; width: min(100%, 640px); margin: 1.5rem auto; }
 .classic .classic-regional-crop img { width: 100%; height: auto; display: block; }
 .classic .classic-regional-crop figcaption { font-size: .8rem; color: #52606a; margin-top: .75rem; text-align: left; }
-@media (max-width: 640px) { .classic .classic-region-summary { margin: 1rem 0 1.5rem; } }
+@media (max-width: 640px) { .classic .classic-region-summary { margin: 1rem 0 1.5rem; } .classic .classic-route-outline ol { columns: 1; } }

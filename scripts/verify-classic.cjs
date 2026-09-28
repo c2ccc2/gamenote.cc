@@ -86,6 +86,14 @@ for(const prefix of ['', 'en/'])for(const dir of ['walkthrough','bosses','maps',
 }
 for(const text of ['拾荒者','猎人的吊坠','园丁','局部地图'])assert.ok(garden('.classic-main > article').text().includes(text),'Lost P1 content: '+text);
 assert.ok(well('.classic-main > article').text().includes('继续下行'));
+for(const prefix of ['', 'en/'])for(const [index,area] of data.areas.entries()){
+ const $=cheerio.load(fs.readFileSync(path.join(root,prefix+'games/an-jing-wei-guang/walkthrough',area.slug,'index.html'),'utf8'));
+ const links=$('.classic-pager a').toArray().map(node=>$(node).attr('href'));
+ const expected=neighbor=>neighbor&&'/'+prefix+'games/an-jing-wei-guang/walkthrough/'+neighbor.slug+'/';
+ if(index>0)assert.ok(links.includes(expected(data.areas[index-1])),'Missing previous walkthrough: '+area.slug);
+ if(index<data.areas.length-1)assert.ok(links.includes(expected(data.areas[index+1])),'Missing next walkthrough: '+area.slug);
+ assert.ok(links.includes('/'+prefix+'games/an-jing-wei-guang/walkthrough/'),'Missing walkthrough directory: '+area.slug);
+}
 for(const section of ['walkthrough','maps']){
  const html=cheerio.load(fs.readFileSync(path.join(root,'games/an-jing-wei-guang',section,'night-garden/index.html'),'utf8'));
  assert.equal(html('.classic-main > article > :last-child').attr('class'),'classic-area-nav','Region connections belong after the article');

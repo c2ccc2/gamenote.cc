@@ -17,12 +17,24 @@ for(const crop of require('../content/games/an-jing-wei-guang/map-crops.json'))f
 }
 for(const prefix of ['', 'en/']){
  const en=!!prefix,queen=read(prefix+base+'bosses/the-queen/');
+ const well=read(prefix+base+'walkthrough/the-well/'),garden=read(prefix+base+'walkthrough/night-garden/');
+ assert.equal(garden('#garden-spirits').length,1);
+ assert.equal(garden('.classic-spirit-route li').length,2);
+ assert.ok(well('a[href="/'+prefix+base+'walkthrough/night-garden/#garden-spirits"]').length);
+ for(const page of [well,garden]){
+  const copy=page('.classic-main > article').text();
+  assert.doesNotMatch(copy,en?/return (?:them|the spirit) to (?:the|a) nest/i:/找到之后还要归还|回到巢穴归还|仅找到鸟灵还不等于已经归还/);
+ }
  assert.match(queen('meta[name=robots]').attr('content'),/noindex/);assert.ok(!urls.includes(origin+'/'+prefix+base+'bosses/the-queen/'));
  assert.ok(queen('.classic-main > article').text().length>150);assert.equal(queen('.article-references').length,1);
  assert.ok(queen('a[href="/'+prefix+base+'achievements/endgame/"]').length);
  for(const [id,summary] of Object.entries(summaries)){
   const $=read(prefix+base+'walkthrough/'+id+'/');
   assert.equal($('.classic-region-summary').length,1);assert.ok($('.classic-region-summary dt').length>=3);
+  if(id==='the-bog'){
+   const links=$('.classic-route-outline a').toArray();assert.equal(links.length,4);
+   for(const node of links){const target=$(node).attr('href');assert.ok(target.startsWith('#'));assert.equal($('.classic-main > article > h2'+target).length,1,'Bog route anchor must resolve: '+target)}
+  }
   assert.equal($('.classic-nav-home .classic-collapse-all').length,1);
   assert.equal($('.classic-collapse-all').text(),en?'Collapse all':'全部收起');
   assert.equal($('.classic-collapse-all').attr('aria-controls').split(' ').length,$('.classic-group-toggle').length);
