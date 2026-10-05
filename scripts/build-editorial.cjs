@@ -15,7 +15,7 @@ for(let part=2;part<=7;part++){
 }
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const all=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?all(path.join(dir,e.name)):e.name.endsWith('.html')?[path.join(dir,e.name)]:[]);
-const files=[path.join(root,'index.html'),...['games','notes','updates','about','en','search'].flatMap(d=>all(path.join(root,d)))];
+const files=[path.join(root,'index.html'),...['catalog','games','notes','updates','about','en','search'].flatMap(d=>all(path.join(root,d)))];
 function clean(text,en){
  if(en){
   return text.split(/(?<=[.!?])\s+(?=[A-Z])/).filter(s=>!/has not been confirmed|not yet verified|not established|not been established|remain(?:s)? unconfirmed|left unconfirmed|not clearly read|not inferred|not assigned names|not presented as an ending|not proof|does not establish|does not confirm|does not show|does not imply|does not mean|not a completion frame|not a boss-defeat scene|not a fixed phase rule|not a completed rescue|not completion or a reward|not a complete attack cycle|only the pickup node|naming difference remains|correspondence with the Chinese video|Without a completion message|Without an item panel|One confirmed pickup|This confirms one pickup|formal name is unconfirmed|not readable in this frame|do not mistake visual descriptions|rather than assigning it|episode title|solely because of the video title|not proof that a new named region/i.test(s))

@@ -1,0 +1,245 @@
+{
+  "super-metroid": {
+    "summary": "Samus returns to Zebes, gaining abilities that open new routes through its interconnected world.",
+    "review": "Super Metroid lets the world do much of the talking. A sealed door or unreachable ledge becomes a reason to keep exploring; its controls show their age, but its spatial design remains compelling.",
+    "fit": "Players who enjoy reading maps, remembering branches and revisiting old paths with new abilities.",
+    "caution": "Some controls and hidden passages have little modern guidance.",
+    "hours": "about 7–12 hours",
+    "replayStatus": "No traditional NG+",
+    "replay": "A compact route and completion-time goals invite repeat runs."
+  },
+  "metroid-dread": {
+    "summary": "Samus explores planet ZDR while evading E.M.M.I. pursuers and unlocking new routes.",
+    "review": "Responsive movement and E.M.M.I. chases give Dread a strong forward pull. It suits players who want a brisker action rhythm, though the pursuit sequences can feel intense.",
+    "fit": "Players who like precise combat, fast movement and a clear sense of progress.",
+    "caution": "Chases and bosses may take repeated attempts.",
+    "hours": "about 8–12 hours",
+    "replayStatus": "Higher difficulties",
+    "replay": "Harder modes and completion-time goals reward more efficient routes."
+  },
+  "castlevania-symphony-of-the-night": {
+    "summary": "Explore Dracula's castle as Alucard, using equipment, spells and transformations to uncover its secrets.",
+    "review": "The castle rewards patient digging: gear, transformations and hidden rooms keep yielding discoveries. Combat balance is often forgiving; the exploratory mood is the stronger draw.",
+    "fit": "Players drawn to castle atmosphere, equipment collecting and gradual map discovery.",
+    "caution": "The older interface and some concealed routes demand patience.",
+    "hours": "about 8–15 hours",
+    "replayStatus": "Extra ways to play",
+    "replay": "Hidden outcomes and optional play styles add reasons to revisit the castle."
+  },
+  "castlevania-aria-of-sorrow": {
+    "summary": "Soma explores a mysterious castle and gains abilities by collecting enemy souls.",
+    "review": "The soul system makes even ordinary enemies interesting: each may offer a new ability. Its compact length makes it an approachable entry to exploration-focused Castlevania.",
+    "fit": "Players who like collecting abilities and testing combinations in a focused adventure.",
+    "caution": "Some souls depend on random drops.",
+    "hours": "about 6–10 hours",
+    "replayStatus": "Extra character mode",
+    "replay": "Different endings and an additional character mode offer a fresh route."
+  },
+  "bloodstained-ritual-of-the-night": {
+    "summary": "Explore a demon-filled castle as Miriam, opening routes with equipment and shard abilities.",
+    "review": "Bloodstained offers a broad mix of gear, shards and castle exploration. There is plenty to experiment with, though collecting materials and managing menus take time.",
+    "fit": "Players who enjoy builds, equipment and a large castle to explore.",
+    "caution": "Its many systems may feel busy if you want pure platform action.",
+    "hours": "about 12–20 hours",
+    "replayStatus": "Extra modes",
+    "replay": "Optional modes, collection goals and different ability builds support repeat play."
+  },
+  "castlevania-belmonts-curse": {
+    "summary": "An upcoming 2D Castlevania adventure starring Rose Belmont, set after Dracula's Curse.",
+    "review": "The game has not launched yet, so this catalog does not offer a hands-on verdict.",
+    "fit": "Players interested in a new 2D Castlevania can follow its release and later coverage.",
+    "caution": "Play time, difficulty and replay features remain unverified.",
+    "hours": "pending release",
+    "replayStatus": "Unconfirmed",
+    "replay": "Replay features will be checked after release."
+  },
+  "hollow-knight": {
+    "summary": "Descend into Hallownest, explore its connected regions and uncover new ways to move.",
+    "review": "Hollow Knight makes exploration its own reward. A wrong turn can reveal a character, a secret or an entirely new place, while its hand-drawn world stays with you. The sparse guidance and demanding bosses are part of the experience.",
+    "fit": "Players who enjoy finding their own route, revisiting maps and learning boss patterns.",
+    "caution": "You will get lost, and some platforming and boss encounters need practice.",
+    "hours": "about 25 hours",
+    "replayStatus": "No traditional NG+",
+    "replay": "Different endings and challenge content offer reasons to return without ability-carryover NG+."
+  },
+  "hollow-knight-silksong": {
+    "summary": "Explore a new kingdom as Hornet in the follow-up to Hollow Knight.",
+    "review": "Hornet moves and fights with a more assertive rhythm than the Knight. Discovery still drives the journey, but action demands more attention from the start.",
+    "fit": "Players comfortable with demanding exploration and boss practice.",
+    "caution": "The first game's combat habits do not transfer directly.",
+    "hours": "about 25–40 hours",
+    "replayStatus": "Extra challenge mode",
+    "replay": "Additional challenges and completion goals reward route and combat mastery."
+  },
+  "ori-and-the-blind-forest": {
+    "summary": "Guide Ori through Nibel, learning movement abilities to cross the forest.",
+    "review": "Ori's fluid movement, art and music carry the adventure. Platforming takes center stage, and its escape sequences can be the hardest moments.",
+    "fit": "Players who enjoy expressive platforming and an emotional audiovisual journey.",
+    "caution": "Timed escapes may require repeated practice.",
+    "hours": "about 8–12 hours",
+    "replayStatus": "No traditional NG+",
+    "replay": "Collectibles and cleaner routes are the main reasons to replay."
+  },
+  "ori-and-the-will-of-the-wisps": {
+    "summary": "Explore a wider world with Ori through platforming, combat, puzzles and new abilities.",
+    "review": "The sequel keeps Ori's flowing traversal while expanding combat and side activities. It offers more choices, at the cost of a busier set of systems.",
+    "fit": "Players who want platforming, exploration and richer combat together.",
+    "caution": "Some challenges still demand precise movement.",
+    "hours": "about 12–18 hours",
+    "replayStatus": "No traditional NG+",
+    "replay": "Collections, side activities and challenges extend the journey."
+  },
+  "islets": {
+    "summary": "Travel between separated islands as Iko and reconnect a gradually opening world.",
+    "review": "Islets keeps exploration light and welcoming. Connecting its islands changes the map as you play, making it a good choice for discovery without prolonged difficulty spikes.",
+    "fit": "Players who want approachable exploration and a relatively short adventure.",
+    "caution": "It may feel slight if you want deep builds or severe combat challenges.",
+    "hours": "about 6–10 hours",
+    "replayStatus": "No dedicated NG+",
+    "replay": "Return for collectibles or try a quicker route."
+  },
+  "crypt-custodian": {
+    "summary": "Explore the afterlife as Pluto the cat, solving puzzles and gaining new abilities.",
+    "review": "Its top-down perspective gives revisiting the map a different feel. Broom combat and a playful afterlife setting preserve the approachable character of Kyle Thompson's games.",
+    "fit": "Players who like top-down exploration, light puzzles and characterful stories.",
+    "caution": "Expect a different perspective from traditional side-scrolling platformers.",
+    "hours": "about 8–14 hours",
+    "replayStatus": "Unconfirmed",
+    "replay": "Map completion and collectibles are clearer reasons to return than a dedicated second run."
+  },
+  "ender-lilies": {
+    "summary": "Explore a world ruined by the Rain of Death and fight with the spirits you purify.",
+    "review": "Dark visuals and music establish a powerful mood, while spirit skills keep combat flexible. Exploration and bosses both ask for patience.",
+    "fit": "Players who enjoy dark fantasy, skill combinations and boss challenges.",
+    "caution": "Some bosses and routes may be frustrating.",
+    "hours": "about 15–25 hours",
+    "replayStatus": "Further collection",
+    "replay": "Endings, collections and skill builds add depth without requiring a fresh run."
+  },
+  "ender-magnolia": {
+    "summary": "Explore a smoke-stricken land with Lilac and her artificial companions, decades after Ender Lilies.",
+    "review": "The follow-up retains companion abilities and a somber world while making movement and combat more immediate.",
+    "fit": "Players seeking companion skills, boss fights and a readable growth path.",
+    "caution": "Combat still has a learning curve, and the story connects to its predecessor.",
+    "hours": "about 15–25 hours",
+    "replayStatus": "Unconfirmed",
+    "replay": "Collections and skill combinations extend play; dedicated replay mechanics need checking."
+  },
+  "afterimage": {
+    "summary": "Explore the hand-drawn world of Engardin with varied weapons and abilities.",
+    "review": "Afterimage stands out for its scale: regions, weapons and branching choices give long-term explorers plenty to do. The map and systems can feel dense early on.",
+    "fit": "Players who enjoy large maps, weapon choices and a long progression arc.",
+    "caution": "Navigation and system knowledge take time to build.",
+    "hours": "about 25–40 hours",
+    "replayStatus": "Additional content",
+    "replay": "Alternate endings and later content provide reasons to continue."
+  },
+  "deaths-door": {
+    "summary": "Play a soul-reaping crow through connected worlds, dungeons, puzzles and boss fights.",
+    "review": "Death's Door combines top-down combat, lean puzzles and dry humor with a steady pace. Its routes are more focused than a typical metroidvania.",
+    "fit": "Players who want a concise top-down action adventure.",
+    "caution": "Combat gives limited room for error, and some collectibles require revisits.",
+    "hours": "about 8–14 hours",
+    "replayStatus": "No traditional NG+",
+    "replay": "Post-game exploration and hidden content are the main reasons to return."
+  },
+  "tunic": {
+    "summary": "Explore an unfamiliar world as a small fox, learning its rules from scattered manual pages.",
+    "review": "TUNIC's central pleasure is understanding. Each manual page can change how you see the world; players who want explicit instructions may find it opaque.",
+    "fit": "Players who enjoy interpreting clues and discovering hidden rules.",
+    "caution": "Later knowledge puzzles are demanding, and combat is not always gentle.",
+    "hours": "about 12–20 hours",
+    "replayStatus": "New Game+",
+    "replay": "A New Game+ exists, though pursuing secrets in the first save may be more rewarding."
+  },
+  "metroid-fusion": {
+    "summary": "Investigate the X parasite aboard a space station while evading the dangerous SA-X.",
+    "review": "The station and SA-X make Fusion tenser than some other Metroid games. Its directed route favors narrative momentum over open-ended wandering.",
+    "fit": "Players who like compact sci-fi suspense and clear stages of progress.",
+    "caution": "Exploration is more constrained, and chases create pressure.",
+    "hours": "about 5–8 hours",
+    "replayStatus": "No traditional NG+",
+    "replay": "Clear time and collection rate offer goals for repeat runs."
+  },
+  "castlevania-dawn-of-sorrow": {
+    "summary": "Soma returns in the sequel to Aria of Sorrow, collecting souls as he explores another castle.",
+    "review": "Dawn of Sorrow expands on soul collection and equipment growth. Finding new powers remains satisfying, though the grind becomes more visible.",
+    "fit": "Players who like soul builds, castle exploration and character growth.",
+    "caution": "Some souls take repeated attempts; the original uses touch controls.",
+    "hours": "about 8–14 hours",
+    "replayStatus": "Extra character mode",
+    "replay": "An additional character mode and collection goals change repeat runs."
+  },
+  "blasphemous": {
+    "summary": "Travel through Cvstodia as the Penitent One, fighting and uncovering relics and secrets.",
+    "review": "Religious imagery and heavy pixel art give Blasphemous a distinct identity. Combat rewards caution, while its story asks you to assemble clues yourself.",
+    "fit": "Players drawn to striking art, secrets and punishing fights.",
+    "caution": "Violent religious imagery and difficult combat are central to its tone.",
+    "hours": "about 12–20 hours",
+    "replayStatus": "Replay challenges",
+    "replay": "Additional challenges and endings provide reasons for another run."
+  },
+  "blasphemous-2": {
+    "summary": "The Penitent One wakes in a new world, exploring with multiple weapons and abilities.",
+    "review": "The sequel binds weapon choice more closely to opening paths, making progress through its map especially tangible. Its intense visual and combat style remains.",
+    "fit": "Players who want weapon variety and ability-gated exploration.",
+    "caution": "Bosses and platform challenges still require practice.",
+    "hours": "about 12–20 hours",
+    "replayStatus": "Unconfirmed",
+    "replay": "Return for collections and endings; check the version played for replay updates."
+  },
+  "nine-sols": {
+    "summary": "Explore New Kunlun in a Taoist science-fiction adventure built around parries and counterattacks.",
+    "review": "Nine Sols puts parry timing at the center of combat. Learning that rhythm makes major duels rewarding, but the action threshold is high.",
+    "fit": "Players who enjoy practicing parries and hard-won boss victories.",
+    "caution": "Repeatedly learning attack timing is part of the main path.",
+    "hours": "about 20–30 hours",
+    "replayStatus": "Unconfirmed",
+    "replay": "Other challenge goals exist; dedicated replay mechanics need version-specific checking."
+  },
+  "animal-well": {
+    "summary": "Search a layered well for items and clues, experimenting with hidden uses and puzzles.",
+    "review": "Animal Well treats curiosity as a core skill. Items often do more than they first appear to, rewarding observation rather than a checklist.",
+    "fit": "Players who like sparse hints, hidden systems and testing ideas.",
+    "caution": "Its deepest secrets can be extremely obscure.",
+    "hours": "about 5–10 hours",
+    "replayStatus": "No traditional NG+",
+    "replay": "Its depth lies mostly in solving more puzzles after the first ending."
+  },
+  "souldiers": {
+    "summary": "Choose a class and explore Terragaya in a long pixel-art action RPG adventure.",
+    "review": "Pixel art, class choice and RPG growth are the main draw. Its length favors players willing to work through demanding fights and repeated exploration.",
+    "fit": "Players who like class differences and lengthy pixel-art adventures.",
+    "caution": "Both combat and platforming can become barriers.",
+    "hours": "about 20–35 hours",
+    "replayStatus": "Different classes",
+    "replay": "Class choice encourages a new run; carryover rules need checking."
+  },
+  "another-crabs-treasure": {
+    "summary": "Help Kril search an underwater kingdom for his lost shell, using found objects as armor.",
+    "review": "A bright underwater world and playful writing frame its soulslike combat. New shells are both defensive choices and a source of discovery; the cute look does not remove the challenge.",
+    "fit": "Players curious about soulslike combat who enjoy humor and colorful worlds.",
+    "caution": "Bosses still require pattern learning, and some areas test your jumps.",
+    "hours": "about 15–25 hours",
+    "replayStatus": "No traditional NG+",
+    "replay": "Return for exploration and collectibles; the main story does not demand another run."
+  },
+  "ai-limit": {
+    "summary": "Explore a ruined future city as the regenerated mech Arisa, searching for the truth of its collapse.",
+    "review": "AI LIMIT builds a clear science-fiction identity around its ruined city and protagonist. Regional exploration and weapon combat reward learning its rhythm.",
+    "fit": "Players who enjoy post-apocalyptic science fiction and soulslike exploration.",
+    "caution": "Bosses and resource management can be demanding.",
+    "hours": "about 20–35 hours",
+    "replayStatus": "Unconfirmed",
+    "replay": "Other weapons and routes invite experimentation; carryover rules need checking."
+  },
+  "an-jing-wei-guang": {
+    "summary": "Guide a matchstick-carrying bird through a dark fairy-tale kingdom.",
+    "review": "The bird and matchstick create a memorable fairy-tale image, continuing Kyle Thompson's hand-drawn style. This site's guide remains in progress; the verdict will grow with verified play notes.",
+    "fit": "Players drawn to hand-drawn worlds, new movement abilities and character stories.",
+    "caution": "Detailed route and difficulty notes are still being verified.",
+    "hours": "awaiting verification",
+    "replayStatus": "Unconfirmed",
+    "replay": "Replay features await hands-on verification."
+  }
+}

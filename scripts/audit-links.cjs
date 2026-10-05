@@ -1,7 +1,7 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),cheerio=require('cheerio');
 const root=path.resolve(__dirname,'..');let count=0,pages=0;
 function files(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?files(path.join(dir,entry.name)):entry.name.endsWith('.html')?[path.join(dir,entry.name)]:[])}
-for(const file of [path.join(root,'index.html'),...['games','notes','updates','about','search','en'].flatMap(dir=>files(path.join(root,dir)))]){
+for(const file of [path.join(root,'index.html'),...['catalog','games','notes','updates','about','search','en'].flatMap(dir=>files(path.join(root,dir)))]){
  const $=cheerio.load(fs.readFileSync(file,'utf8'));pages++;
  $('a[href],link[href],script[src],img[src],form[action]').each((_,node)=>{
   const value=$(node).attr('href')||$(node).attr('src')||$(node).attr('action');assert.ok(value&&value!=='#'&&!/^javascript:/i.test(value),'Empty/unsafe link in '+file);

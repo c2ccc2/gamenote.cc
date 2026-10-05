@@ -18,7 +18,7 @@ for(const route of routes){
  let en=zh.replace('lang="zh-CN"','lang="en"').replaceAll('认真探索、记录并整理过的游戏，都收录在这里。','An archive of games carefully explored, documented and understood.');
  for(const [from,to] of Object.entries(translations.text).sort((a,b)=>b[0].length-a[0].length))en=en.split(from).join(to);
  en=en.replace(/https:\/\/gamenote\.cc\/(?!en\/)/g,origin+'/en/');
- en=en.replace(/(?:href|action)="\/(games|notes|updates|about|search)\//g,m=>m.replace('="/','="/en/'));
+ en=en.replace(/(?:href|action)="\/(catalog|games|notes|updates|about|search)\//g,m=>m.replace('="/','="/en/'));
  en=en.replace('href="styles.css"','href="/styles.css"').replace('<script src="/assets/site.js">','<script src="/assets/content.en.js"></script><script src="/assets/site.js">');
  const et=en.match(/<title>(.*?)<\/title>/s)[1],ed=en.match(/name="description" content="([^"]*)"/)[1];en=seo(en,'/en/'+route,et,ed);
  const dest=path.join(root,'en',route,'index.html');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,en);
