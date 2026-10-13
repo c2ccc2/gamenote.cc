@@ -1,0 +1,1598 @@
+{
+  "updatedAt": "2026-10-13",
+  "sources": {
+    "route": {
+      "name": "Gamer Guides — Recommended Progress Route",
+      "url": "https://www.gamerguides.com/well-dweller/routes/recommended-progress-route-and-full-game-walkthrough",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "flight": {
+      "name": "Gamer Social Club — Lookout Tower Flight Upgrades",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-feather-locations-to-extend-your-flight-time-in-the-lookout-tower-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "starsinger": {
+      "name": "Gamer Social Club — Starsinger",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-starsinger-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "forest": {
+      "name": "Gamer Social Club — Forest King",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-forest-king-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "shrine": {
+      "name": "Gamer Social Club — Shrine of the Seven Sons",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-shrine-of-the-seven-sons-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "grave": {
+      "name": "Gamer Social Club — Gravedigger",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-gravedigger-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "full": {
+      "name": "Gamer Social Club — Collectibles and Achievement Walkthrough",
+      "url": "https://gamersocialclub.ca/2026/09/22/well-dweller-100-collectibles-achievement-trophy-walkthrough/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "inn": {
+      "name": "Gamer Social Club — Escape Webdrench Inn",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-late-night-guest-achievement-trophy-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "pages": {
+      "name": "Gamer Social Club — Story Pages",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-all-story-page-locations-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "spirits": {
+      "name": "Gamer Social Club — Spirit Returns",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-all-spirit-locations-for-the-full-flock-achievement-trophy-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "looter": {
+      "name": "Gamer Social Club — Golden Key and Looter Parts",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-the-golden-key-and-unlocking-the-stitched-up-achievement-trophy/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "elevator": {
+      "name": "Gamer Social Club — Elevator Parts",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-find-the-elevator-parts-in-the-drains/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "ending": {
+      "name": "Gamer Social Club — Together at Last",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-together-at-last-achievement-trophy/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "trials": {
+      "name": "Gamer Social Club — Time Trials",
+      "url": "https://gamersocialclub.ca/2026/09/22/well-dweller-all-time-trials-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "map": {
+      "name": "Gamer Guides — The Kingdom",
+      "url": "https://www.gamerguides.com/well-dweller/maps/the-kingdom",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "lida": {
+      "name": "Gamer Social Club — Lida the Terrible",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-lida-the-terrible-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "creature": {
+      "name": "Gamer Social Club — Creature from the Deep",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-creature-from-the-deep-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "colony": {
+      "name": "Gamer Social Club — The Colony",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-colony-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "silver": {
+      "name": "Gamer Social Club — Silver Doll",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-silver-doll-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "queen": {
+      "name": "Gamer Social Club — The Queen",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-queen-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "swarm": {
+      "name": "Gamer Social Club — The Swarm",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-swarm-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "lady": {
+      "name": "Gamer Social Club — Lady of the Drains",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-lady-of-the-drains-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "siblings": {
+      "name": "Gamer Social Club — Ilda's Siblings",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-find-ildas-siblings-in-the-queens-castle/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "workshop": {
+      "name": "Gamer Social Club — Workshop Tokens",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-all-workshop-token-locations-for-the-fully-stocked-achievement-trophy-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "hat": {
+      "name": "Gamer Social Club — The King's Cap",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-kings-cap-achievement-trophy/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "orb-puzzles": {
+      "name": "Gamer Social Club — Autumn Forest Orb and Pillar Puzzles",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-autumn-forest-all-orb-pillar-puzzle-solutions/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "gate-stones": {
+      "name": "Gamer Social Club — Gate Stones in The Docks",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-find-the-gate-stones-in-the-docks/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "beginner": {
+      "name": "Gamer Social Club — Beginner Guide",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-beginners-guide/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "bouncing": {
+      "name": "Gamer Social Club — Bouncing Bottles",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-bouncing-bottles-achievement-trophy/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "hide": {
+      "name": "Gamer Social Club — Hide and Seek",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-hide-and-seek-achievement-trophy/",
+      "type": "guide",
+      "accessedAt": "2026-10-13"
+    },
+    "community-route": {
+      "name": "GabeAndTheGoat — Timestamped 100% Walkthrough",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3806257027",
+      "type": "steam-community",
+      "accessedAt": "2026-10-13"
+    }
+  },
+  "entries": [
+    {
+      "group": "areas",
+      "id": "lookout-tower",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "route",
+            "flight"
+          ],
+          "zh": [
+            "参考入口：从夜之庭园东北侧向上，再向西到瞭望塔。",
+            "羽毛泡泡提供临时飞行。塔内三次飞行时长升级集中在中央帐篷左上、远侧左上及右上；先检查这些方向，再继续登顶。",
+            "塔顶为星歌者遭遇，战后检查相邻房间的金色羽毛。"
+          ],
+          "en": [
+            "Reference approach: climb out of northeastern Night Garden, then head west to the tower.",
+            "Feather bubbles grant temporary flight. Three duration upgrades lie above-left of the central tent, farther northwest and in the upper-right section; check those routes before ascending.",
+            "Starsinger awaits at the top. Check the adjacent room for a Golden Feather afterwards."
+          ]
+        },
+        "referenceOrientation": {
+          "sources": [
+            "flight"
+          ],
+          "zh": [
+            "以中央帐篷作为回访基点；飞行时长升级和金色羽毛是不同项目。"
+          ],
+          "en": [
+            "Use the central tent as a return point. Flight-duration upgrades and Golden Feathers are separate items."
+          ]
+        }
+      }
+    },
+    {
+      "group": "areas",
+      "id": "autumn-forest",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "route",
+            "forest",
+            "pages"
+          ],
+          "zh": [
+            "西侧入口的参考路线涉及两处拉杆，其中一处需回访猎人小屋上方。",
+            "森林深处为森林之王遭遇；战后继续向右查看金色羽毛。",
+            "同一羽毛房间内，Ilda 右侧隐藏通道有故事书页；先确认攀爬路线。"
+          ],
+          "en": [
+            "The western approach uses two levers, including one above Hunter's Cabin.",
+            "The Forest King encounter lies deeper in the forest; check to the right afterwards for a Golden Feather.",
+            "A story page is hidden right of Ilda in the feather room; check the climbing route."
+          ]
+        },
+        "referenceOrientation": {
+          "sources": [
+            "forest"
+          ],
+          "zh": [
+            "区域位于地图上方，呈橙色；森林之王场地是主要推进地标。"
+          ],
+          "en": [
+            "The orange region sits near the top of the map; the Forest King arena is a main landmark."
+          ]
+        },
+        "referencePuzzle": {
+          "sources": [
+            "orb-puzzles"
+          ],
+          "zh": [
+            "机关规则：同一轮让石球碰到全部石柱；落地、撞墙或离开画面会重置。",
+            "第一处：向左或右击球，让它在两根石柱间反弹。",
+            "第二处：先向右击球，登上右侧平台后把球打向左墙石柱；等球返回时向上击中顶柱。",
+            "第三处：先向左击球，借中央蘑菇跳起，把下落的球打向右侧弹性物的左上部。",
+            "第四处：先向左击球，及时登上高台再次向左打，再到左侧顶端蘑菇旁接球送入石柱。",
+            "玩偶头支路：向左击球后尽快攀爬到房间上部，球经过石柱下方时向上击打。"
+          ],
+          "en": [
+            "Hit every pillar in one attempt; floor, wall or off-screen contact resets the orb.",
+            "First: send the orb sideways between both pillars.",
+            "Second: hit right, climb right, redirect left, then strike upward on its return.",
+            "Third: hit left, bounce on the middle mushroom and redirect toward the upper-left of the right bumper.",
+            "Fourth: hit left, climb and redirect left again; intercept beside the upper-left mushroom.",
+            "Doll’s Head branch: hit left, climb quickly and strike upward beneath the pillar."
+          ]
+        }
+      }
+    },
+    {
+      "group": "areas",
+      "id": "dollmakers-house",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "route",
+            "pages"
+          ],
+          "zh": [
+            "一条推荐路线从沼泽西端使用无限攀爬进入本区。",
+            "向房屋下层推进，完成玩偶师遭遇后检查西侧的 Magda 与墙壁弹射能力。",
+            "本区故事书页包含需要悬停、攀爬或弹射的回访位置。"
+          ],
+          "en": [
+            "One recommended approach enters from western Bog using Endless Climb.",
+            "Progress into the lower house; after the Dollmaker encounter, check west for Magda and Wall Sling.",
+            "Some story-page routes need Hover, Climb or Slingshot on a return visit."
+          ]
+        },
+        "referenceOrientation": {
+          "sources": [
+            "route"
+          ],
+          "zh": [
+            "从下层遭遇位置向西衔接新能力。"
+          ],
+          "en": [
+            "The new-ability route continues west of the lower encounter."
+          ]
+        }
+      }
+    },
+    {
+      "group": "areas",
+      "id": "burial-vault",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "route",
+            "grave"
+          ],
+          "zh": [
+            "参考路线使用墙壁弹射，从午夜雨境进入墓室。",
+            "向西推进至掘墓者；战后向左护送蜗牛到聚会处，继续领取金色羽毛。"
+          ],
+          "en": [
+            "The reference route enters from Midnight Drench using Wall Sling.",
+            "Continue west to Gravedigger, then escort the snail left to the party and Golden Feather."
+          ]
+        },
+        "referenceOrientation": {
+          "sources": [
+            "grave"
+          ],
+          "zh": [
+            "掘墓者与聚会方向位于本区西侧。"
+          ],
+          "en": [
+            "The boss and party route are on the western side."
+          ]
+        }
+      }
+    },
+    {
+      "group": "areas",
+      "id": "midnight-drench",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "shrine",
+            "inn"
+          ],
+          "zh": [
+            "七子神龛位于本区。胜利后向左检查金色羽毛。",
+            "从旅店追逐成功逃出后会回到午夜雨境。"
+          ],
+          "en": [
+            "Shrine of the Seven Sons is here; check left after victory for a Golden Feather.",
+            "Escaping the Innkeeper returns you to Midnight Drench."
+          ]
+        },
+        "referenceOrientation": {
+          "sources": [
+            "shrine"
+          ],
+          "zh": [
+            "地图上的深蓝色区域；可用七子神龛场地定位金色羽毛路线。"
+          ],
+          "en": [
+            "The dark-blue region; use the Shrine arena to orient the feather route."
+          ]
+        }
+      }
+    },
+    {
+      "group": "areas",
+      "id": "webdrench-inn",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "inn"
+          ],
+          "zh": [
+            "追逐主要向左推进。依次处理可破坏障碍、落地砸开的地板和需要敲钟切换的平台。",
+            "留意蛛网球的借力点；按画面中的交互提示操作。",
+            "最后长距离滑出后回到午夜雨境，并取得金色羽毛。"
+          ],
+          "en": [
+            "The chase runs mainly left. Handle breakable barriers, smashable floors and bell-switched platforms.",
+            "Watch for web-ball launch points and follow the on-screen interaction prompt.",
+            "The final long slide exits into Midnight Drench and awards a Golden Feather."
+          ]
+        },
+        "referenceOrientation": {
+          "sources": [
+            "inn"
+          ],
+          "zh": [
+            "紫色区域；底部通道与向左追逐出口是主要地标。"
+          ],
+          "en": [
+            "A purple region; the lower passage and leftward chase exit are key landmarks."
+          ]
+        }
+      }
+    },
+    {
+      "group": "areas",
+      "id": "queens-castle",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "full",
+            "pages"
+          ],
+          "zh": [
+            "集齐七根金色羽毛后，从沼泽进入城堡。",
+            "寻找 Ilda 的三对兄弟姐妹；其中一对由银色玩偶守护。",
+            "完成女王战后仍可回访补收集。"
+          ],
+          "en": [
+            "With seven Golden Feathers, enter the castle from the Bog.",
+            "Find Ilda's three sibling pairs; Silver Doll guards one pair.",
+            "Exploration and collection remain available after the Queen fight."
+          ]
+        },
+        "referenceOrientation": {
+          "sources": [
+            "full"
+          ],
+          "zh": [
+            "皇家紫色区域；先按兄弟姐妹任务推进到女王。"
+          ],
+          "en": [
+            "The royal-purple region; follow the sibling objective towards the Queen."
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "starsinger",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "starsinger"
+          ],
+          "zh": [
+            "黑羽圈出现时用滑行穿过空隙；处理弹幕时仍要留意砸地起手。",
+            "后半段攻击更密集，保持移动，并在安全间隙使用火焰容器。"
+          ],
+          "en": [
+            "Slide through gaps in feather rings and watch for ground slams while reading projectiles.",
+            "Later patterns intensify; keep moving and use Flaming Vessels in safe openings."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "starsinger"
+          ],
+          "zh": [
+            "lookout-tower"
+          ],
+          "en": [
+            "lookout-tower"
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "forest-king",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "forest"
+          ],
+          "zh": [
+            "场地狭窄，主要危险来自环境；向上叶片出现时利用侧墙与悬停。",
+            "落石产生尖刺时，可借石块避开地面。战后继续向右检查羽毛。"
+          ],
+          "en": [
+            "In the narrow arena, use side walls and Hover against rising leaves.",
+            "Use fallen rocks to avoid floor spikes, then check right for the feather after the fight."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "forest"
+          ],
+          "zh": [
+            "autumn-forest"
+          ],
+          "en": [
+            "autumn-forest"
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "shrine-of-the-seven-sons",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "shrine"
+          ],
+          "zh": [
+            "中央光束与地面电流可结合侧墙攀爬、悬停处理。",
+            "弹跳电球会追踪位置；粉色光柱预告地面骨臂，尽早离开预告位置。"
+          ],
+          "en": [
+            "Combine side-wall climbing and Hover against central beams and floor electricity.",
+            "Keep moving from tracking electric balls; leave pink warning columns before bone arms emerge."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "shrine"
+          ],
+          "zh": [
+            "midnight-drench"
+          ],
+          "en": [
+            "midnight-drench"
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "gravedigger",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "grave"
+          ],
+          "zh": [
+            "砸铲后的地面骨刺持续较久，优先悬停避开。",
+            "骨球会飞出再返回，第一次避开后仍要留回旋空间。"
+          ],
+          "en": [
+            "Hover over persistent floor spikes after shovel slams.",
+            "Bone balls return after travelling outward; leave space to evade the return path."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "grave"
+          ],
+          "zh": [
+            "burial-vault"
+          ],
+          "en": [
+            "burial-vault"
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "dollmaker",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "full"
+          ],
+          "zh": [
+            "多镜下落时找眼睛朝上的镜子，移动到其下方安全区。",
+            "分身阶段同时控制两侧角色，先关注攻击所在半屏，再处理另一侧弹幕。"
+          ],
+          "en": [
+            "During falling mirrors, shelter beneath the mirror with the upward-looking eye.",
+            "When split into mirrored characters, prioritise the attacked half before handling the other side's projectiles."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "full"
+          ],
+          "zh": [
+            "dollmakers-house"
+          ],
+          "en": [
+            "dollmakers-house"
+          ]
+        }
+      }
+    },
+    {
+      "group": "collectibles",
+      "id": "story-pages",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "pages"
+          ],
+          "zh": [
+            "共 23 页，分为《女巫的交易》9 页、《玩偶师》8 页、《瞭望塔》6 页。",
+            "菜单 Pages 分页可核对分组；女王战后可以继续补齐。"
+          ],
+          "en": [
+            "23 pages form three books: The Witch's Bargain (9), The Dollmaker (8) and The Lookout Tower (6).",
+            "Check the Pages menu by book; collection remains possible after the Queen fight."
+          ]
+        }
+      }
+    },
+    {
+      "group": "collectibles",
+      "id": "spirits",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "spirits"
+          ],
+          "zh": [
+            "攻击鸟形雕像释放灵魂，带回夜之庭园的灵魂标记处。",
+            "地图标记分别显示发现与归还数量；完成 20 次归还对应 Full Flock。"
+          ],
+          "en": [
+            "Strike bird statues to release spirits and return them at the Night Garden spirit marker.",
+            "The marker distinguishes found and returned counts; 20 returns complete Full Flock."
+          ]
+        }
+      }
+    },
+    {
+      "group": "collectibles",
+      "id": "looter-parts",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "looter"
+          ],
+          "zh": [
+            "与 Whisper 对话取得金钥匙后检查金门：腿在墓谷、手臂在干涸城堡、躯干在排水道、头在沼泽。",
+            "四部分集齐后返回任务位置，修复 Looter 并领取金色羽毛。"
+          ],
+          "en": [
+            "After Whisper gives the key, check Golden Gates: legs in Graven Valley, arms in Desiccated Castle, torso in the Drains and head in the Bog.",
+            "Return all four parts to repair Looter and receive a Golden Feather."
+          ]
+        }
+      }
+    },
+    {
+      "group": "collectibles",
+      "id": "elevator-parts",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "elevator"
+          ],
+          "zh": [
+            "先取得风乘。三处部件位于排水道右上、左下及中央帐篷上方的风道路线。",
+            "集齐后回中央帐篷旁电梯，操作拉杆继续推进。"
+          ],
+          "en": [
+            "Get Wind Ride first. Search the upper-right, lower-left and wind-tunnel route above the central tent.",
+            "Return all three parts to the elevator beside the central tent and use its lever."
+          ]
+        }
+      }
+    },
+    {
+      "group": "collectibles",
+      "id": "spirit-fragments",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "ending"
+          ],
+          "zh": [
+            "通关后的五个碎片区域：玩偶师之家、夜之庭园、秋日森林、码头、干涸城堡。",
+            "取得 Soar 与神秘地图后，留意目标下方朝上的灵魂鸟提示。",
+            "码头碎片需要下落挑战收集 100 个闪光物；失败可依屏幕提示重试。"
+          ],
+          "en": [
+            "Five postgame fragment regions: Dollmaker's House, Night Garden, Autumn Forest, the Docks and Desiccated Castle.",
+            "With Soar and the mysterious map, look below targets for upward-pointing spirit birds.",
+            "The Docks fragment requires 100 pickups in a falling challenge; retry using the displayed prompt."
+          ]
+        }
+      }
+    },
+    {
+      "group": "collectibles",
+      "id": "golden-feathers",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "map",
+            "full"
+          ],
+          "zh": [
+            "金色羽毛共七根，用于开放女王城堡入口。",
+            "瞭望塔的三次飞行时长升级不是金色羽毛。"
+          ],
+          "en": [
+            "Seven Golden Feathers open the Queen's Castle entrance.",
+            "The tower's three flight-duration upgrades are separate items."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "map"
+          ],
+          "zh": [
+            "lookout-tower",
+            "autumn-forest",
+            "midnight-drench",
+            "burial-vault",
+            "webdrench-inn"
+          ],
+          "en": [
+            "lookout-tower",
+            "autumn-forest",
+            "midnight-drench",
+            "burial-vault",
+            "webdrench-inn"
+          ]
+        },
+        "relatedCollectibles": {
+          "sources": [
+            "looter"
+          ],
+          "zh": [
+            "looter-parts"
+          ],
+          "en": [
+            "looter-parts"
+          ]
+        }
+      }
+    },
+    {
+      "group": "quests",
+      "id": "repair-the-elevator",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "elevator"
+          ],
+          "zh": [
+            "取得风乘，寻找排水道三处部件，再回中央帐篷旁电梯。"
+          ],
+          "en": [
+            "Acquire Wind Ride, find the three Drains parts and return to the central-tent elevator."
+          ]
+        },
+        "relatedCollectibles": {
+          "sources": [
+            "elevator"
+          ],
+          "zh": [
+            "elevator-parts"
+          ],
+          "en": [
+            "elevator-parts"
+          ]
+        }
+      }
+    },
+    {
+      "group": "quests",
+      "id": "a-ride-to-the-party",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "grave"
+          ],
+          "zh": [
+            "击败掘墓者后向左护送蜗牛，抵达聚会并检查金色羽毛奖励。"
+          ],
+          "en": [
+            "After Gravedigger, escort the snail left to the party and check the Golden Feather reward."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "grave"
+          ],
+          "zh": [
+            "burial-vault"
+          ],
+          "en": [
+            "burial-vault"
+          ]
+        }
+      }
+    },
+    {
+      "group": "quests",
+      "id": "the-castle-gate",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "full"
+          ],
+          "zh": [
+            "收齐七根金色羽毛后，回沼泽的城堡入口。"
+          ],
+          "en": [
+            "Return to the Bog castle entrance with all seven Golden Feathers."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "full"
+          ],
+          "zh": [
+            "queens-castle"
+          ],
+          "en": [
+            "queens-castle"
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "lida-the-terrible",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "lida"
+          ],
+          "zh": [
+            "取得处刑门票后进入遭遇。追踪刀刃出现时留意滑行冷却。",
+            "后半段场地收窄，观察三把下落刀刃之间的空隙；战后左侧寻找 Egbert。"
+          ],
+          "en": [
+            "Enter after obtaining the execution ticket; track homing blades and your slide cooldown.",
+            "As the arena narrows, use gaps between falling cleavers. Find Egbert to the left afterwards."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "lida"
+          ],
+          "zh": [
+            "graven-valley"
+          ],
+          "en": [
+            "graven-valley"
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "creature-from-the-deep",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "creature"
+          ],
+          "zh": [
+            "位于码头，需在使用水下载具前处理。",
+            "留意横向冲刺与地面冲击波；用悬停避开地面危险，落地前检查下一轮攻击。"
+          ],
+          "en": [
+            "The encounter is in the Docks, before Water Vessel access.",
+            "Watch lateral charges and floor shockwaves; Hover above ground hazards and read the next attack before landing."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "creature"
+          ],
+          "zh": [
+            "the-docks"
+          ],
+          "en": [
+            "the-docks"
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "the-colony",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "colony"
+          ],
+          "zh": [
+            "驾驶水下载具从码头进入深渊。前段需同时注意弹幕与地面冲击波。",
+            "后半段变形后出现追踪尖刺，保持移动。胜利后查看 Thistle 与 Thimble。"
+          ],
+          "en": [
+            "Reach the Depths by Water Vessel from the Docks. Read both projectiles and floor shockwaves early.",
+            "The later form adds tracking spikes; keep moving. Check for Thistle and Thimble after victory."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "colony"
+          ],
+          "zh": [
+            "the-deep"
+          ],
+          "en": [
+            "the-deep"
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "silver-doll",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "silver"
+          ],
+          "zh": [
+            "落地会带来尖刺或碎片，先避开落点。",
+            "滚轮从两侧向中央逼近时结合悬停、滑行或侧墙躲避；战后检查右侧兄弟姐妹。"
+          ],
+          "en": [
+            "Avoid landing points that produce spikes or shards.",
+            "Combine Hover, slides or a side wall against wheels converging from both sides; check right for the siblings afterwards."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "silver"
+          ],
+          "zh": [
+            "queens-castle"
+          ],
+          "en": [
+            "queens-castle"
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "the-queen",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "queen"
+          ],
+          "zh": [
+            "前段用悬停处理地刺，并为滑行冷却留出余量。",
+            "后半段地面变危险时转移到升起的平台，结合悬停和火柴借力躲避下落障碍。"
+          ],
+          "en": [
+            "Hover over early floor spikes and allow for the slide cooldown.",
+            "When the floor becomes hazardous, move to raised platforms; combine Hover and matchstick jumps against falling obstacles."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "queen"
+          ],
+          "zh": [
+            "queens-castle"
+          ],
+          "en": [
+            "queens-castle"
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "the-swarm",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "swarm"
+          ],
+          "zh": [
+            "虫群在上方时向上攻击；侧面虫墙出现时借泡泡越过。",
+            "出现头骨后可攻击头骨，但需额外躲避砸地产生的冲击波。"
+          ],
+          "en": [
+            "Attack upward when the swarm is overhead; use bubbles to clear insect walls.",
+            "Once the skull appears, attack it while avoiding its added ground-slam shockwave."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "swarm"
+          ],
+          "zh": [
+            "the-bog"
+          ],
+          "en": [
+            "the-bog"
+          ]
+        }
+      }
+    },
+    {
+      "group": "bosses",
+      "id": "the-lady-of-the-drains",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "lady"
+          ],
+          "zh": [
+            "三处电梯部件齐全后，从中央帐篷旁电梯进入。敌人在上方时向上攻击，先处理生成的小怪。",
+            "敌人消失、场地滚动时专注躲避下方尖球，留意滑行冷却。"
+          ],
+          "en": [
+            "Enter via the central-tent elevator with all three parts. Attack upward and clear summoned enemies first.",
+            "When the boss disappears and the arena scrolls, focus on lower spike balls and your slide cooldown."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "lady"
+          ],
+          "zh": [
+            "the-drains"
+          ],
+          "en": [
+            "the-drains"
+          ]
+        }
+      }
+    },
+    {
+      "group": "quests",
+      "id": "graven-valley-rescue",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "lida"
+          ],
+          "zh": [
+            "取得门票并完成利达遭遇后，检查左侧房间中的 Egbert。"
+          ],
+          "en": [
+            "After the ticket and Lida encounter, check the left-hand room for Egbert."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "lida"
+          ],
+          "zh": [
+            "graven-valley"
+          ],
+          "en": [
+            "graven-valley"
+          ]
+        }
+      }
+    },
+    {
+      "group": "quests",
+      "id": "missing-sailors",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "colony"
+          ],
+          "zh": [
+            "深入深渊并击败群落后，查看获救的 Thistle 与 Thimble。"
+          ],
+          "en": [
+            "After the Colony in the Depths, check the rescued Thistle and Thimble."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "colony"
+          ],
+          "zh": [
+            "the-deep"
+          ],
+          "en": [
+            "the-deep"
+          ]
+        }
+      }
+    },
+    {
+      "group": "quests",
+      "id": "the-queens-chamber",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "siblings"
+          ],
+          "zh": [
+            "寻找三对被囚的兄弟姐妹；靠近所在房间后出现目标标记。",
+            "银色玩偶右侧有一对。全数解救后按地图提示返回，继续前往女王。"
+          ],
+          "en": [
+            "Find three captive sibling pairs; markers appear when you approach their rooms.",
+            "One pair is right of Silver Doll. After all rescues, follow the map's return objective towards the Queen."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "siblings"
+          ],
+          "zh": [
+            "queens-castle"
+          ],
+          "en": [
+            "queens-castle"
+          ]
+        }
+      }
+    },
+    {
+      "group": "keyItems",
+      "id": "ildas-siblings",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "siblings"
+          ],
+          "zh": [
+            "女王城堡内共有三对；解救后按目标提示回到 Ilda，衔接女王路线。"
+          ],
+          "en": [
+            "Three pairs in Queen's Castle; after rescue, follow the objective back to Ilda for the Queen route."
+          ]
+        }
+      }
+    },
+    {
+      "group": "keyItems",
+      "id": "mysterious-markings",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "ending"
+          ],
+          "zh": [
+            "取得 Soar 后，从能力巢穴沿长竖井上行寻找神秘地图，可显示五处碎片目标。"
+          ],
+          "en": [
+            "With Soar, ascend the long shaft above its nest to the mysterious map and its five fragment targets."
+          ]
+        }
+      }
+    },
+    {
+      "group": "collectibles",
+      "id": "workshop-tokens",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "workshop"
+          ],
+          "zh": [
+            "资料清单记录 27 枚。工坊代币配合货币，用于帐篷工坊升级可升级饰物。",
+            "图标为带锤子的铜色五边形；先核对饰物是否已达到最高等级。"
+          ],
+          "en": [
+            "The reference checklist records 27 tokens. Spend tokens and currency at the tent workshop on upgradeable trinkets.",
+            "Look for bronze pentagons with a hammer; check each trinket's upgrade level."
+          ]
+        }
+      }
+    },
+    {
+      "group": "collectibles",
+      "id": "key-items",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "map"
+          ],
+          "zh": [
+            "按用途查找钥匙、部件、金色羽毛和剧情标记；下方目录可进入各物品页。"
+          ],
+          "en": [
+            "Browse keys, parts, Golden Feathers and story markers by purpose; open each item from the directory below."
+          ]
+        }
+      }
+    },
+    {
+      "group": "collectibles",
+      "id": "quest-items",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "looter",
+            "elevator",
+            "siblings"
+          ],
+          "zh": [
+            "按任务用途检查物品：电梯维修、Looter 修复，以及城堡救援。"
+          ],
+          "en": [
+            "Check items by objective: elevator repair, Looter restoration and castle rescues."
+          ]
+        },
+        "relatedCollectibles": {
+          "sources": [
+            "looter",
+            "elevator",
+            "siblings"
+          ],
+          "zh": [
+            "elevator-parts",
+            "looter-parts",
+            "ildas-siblings"
+          ],
+          "en": [
+            "elevator-parts",
+            "looter-parts",
+            "ildas-siblings"
+          ]
+        }
+      }
+    },
+    {
+      "group": "keyItems",
+      "id": "festival-hat",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "hat"
+          ],
+          "zh": [
+            "秋日森林的木车商贩出售节庆帽，资料价格为 10 货币；购买对应 The King's Cap 成就。",
+            "商贩位于球与立柱谜题之后的一间房。"
+          ],
+          "en": [
+            "A cart merchant in Autumn Forest sells a festive hat for 10 currency in the reference guide; buying it completes The King's Cap.",
+            "Look in the room following an orb-and-pillar puzzle."
+          ]
+        },
+        "relatedAreas": {
+          "sources": [
+            "hat"
+          ],
+          "zh": [
+            "autumn-forest"
+          ],
+          "en": [
+            "autumn-forest"
+          ]
+        }
+      }
+    },
+    {
+      "group": "challenges",
+      "id": "time-trial-night-garden",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "trials"
+          ],
+          "zh": [
+            "能力：弹射、攀爬。奖励：饰物槽。"
+          ],
+          "en": [
+            "Slingshot and Climb. Reward: trinket slot."
+          ]
+        }
+      }
+    },
+    {
+      "group": "challenges",
+      "id": "time-trial-desiccated-castle",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "trials"
+          ],
+          "zh": [
+            "能力：攀爬。向上竞速，奖励：饰物槽。"
+          ],
+          "en": [
+            "Climb; race upward. Reward: trinket slot."
+          ]
+        }
+      }
+    },
+    {
+      "group": "challenges",
+      "id": "time-trial-midnight-drench",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "trials"
+          ],
+          "zh": [
+            "能力：攀爬、悬停。奖励：灵魂。"
+          ],
+          "en": [
+            "Climb and Hover. Reward: spirit."
+          ]
+        }
+      }
+    },
+    {
+      "group": "challenges",
+      "id": "time-trial-hunters-cabin",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "trials"
+          ],
+          "zh": [
+            "能力：攀爬、悬停、弹射。奖励：灵魂。"
+          ],
+          "en": [
+            "Climb, Hover and Slingshot. Reward: spirit."
+          ]
+        }
+      }
+    },
+    {
+      "group": "challenges",
+      "id": "time-trial-autumn-forest",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "trials"
+          ],
+          "zh": [
+            "能力：悬停、攀爬。避开旋转尖刺与下落平台，奖励：灵魂。"
+          ],
+          "en": [
+            "Hover and Climb; dodge rotating spikes on falling platforms. Reward: spirit."
+          ]
+        }
+      }
+    },
+    {
+      "group": "challenges",
+      "id": "time-trial-the-docks",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "trials"
+          ],
+          "zh": [
+            "挑战内无需额外能力，以快速下落为主。奖励：饰物槽。"
+          ],
+          "en": [
+            "No extra ability within the trial; descend quickly. Reward: trinket slot."
+          ]
+        }
+      }
+    },
+    {
+      "group": "challenges",
+      "id": "time-trial-the-bog",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "trials"
+          ],
+          "zh": [
+            "挑战内无需额外能力，使用跑跳与滑行。奖励：灵魂。"
+          ],
+          "en": [
+            "Run, jump and slide without extra abilities. Reward: spirit."
+          ]
+        }
+      }
+    },
+    {
+      "group": "challenges",
+      "id": "time-trial-dollmakers-house",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "trials"
+          ],
+          "zh": [
+            "借泡泡快速移动，挑战内无需额外能力。奖励：工坊代币。"
+          ],
+          "en": [
+            "Use bubbles; no extra ability within the trial. Reward: workshop token."
+          ]
+        }
+      }
+    },
+    {
+      "group": "challenges",
+      "id": "time-trial-graven-valley",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "trials"
+          ],
+          "zh": [
+            "挑战使用弹射，奖励路线另需无限攀爬。奖励：饰物槽。"
+          ],
+          "en": [
+            "Slingshot for the trial; Endless Climb afterwards. Reward: trinket slot."
+          ]
+        }
+      }
+    },
+    {
+      "group": "challenges",
+      "id": "time-trial-the-drains",
+      "fields": {
+        "referenceRoute": {
+          "sources": [
+            "trials"
+          ],
+          "zh": [
+            "能力：无限攀爬、悬停。奖励：鱼钩饰物。"
+          ],
+          "en": [
+            "Endless Climb and Hover. Reward: Fish Hook trinket."
+          ]
+        }
+      }
+    },
+    {
+      "group": "areas",
+      "id": "the-docks",
+      "fields": {
+        "referencePuzzle": {
+          "sources": [
+            "gate-stones"
+          ],
+          "zh": [
+            "门石共三块。以帐篷为起点，先向右进入上方支路找第一块。",
+            "返回下层并继续向右到底，检查第二块；随后再下行，经右侧路线向上找第三块。",
+            "集齐后按地图新增的目标标记返回大门；门石不是金色羽毛。"
+          ],
+          "en": [
+            "Three Gate Stones are needed. From the tent, head right and up for the first.",
+            "Descend and go far right for the second; then descend again and climb through the right-hand route for the third.",
+            "After collecting all three, follow the new gate objective marker; these are not Golden Feathers."
+          ]
+        }
+      }
+    },
+    {
+      "group": "collectibles",
+      "id": "trinkets",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "beginner"
+          ],
+          "zh": [
+            "饰物来自地图探索与 Looter 商店，共 32 件；装备前核对效果与占用槽数。",
+            "探索时可考虑玻璃眼，便于发现隐藏通道；风化硬币能提高敌人掉落的货币。"
+          ],
+          "en": [
+            "There are 32 trinkets from exploration and Looter’s shop; check effects and slot costs before equipping.",
+            "Glass Eye helps reveal hidden passages; Weathered Coin increases enemy currency drops."
+          ]
+        }
+      }
+    },
+    {
+      "group": "collectibles",
+      "id": "trinket-slots",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "beginner"
+          ],
+          "zh": [
+            "饰物槽用于扩展装备容量，不等于饰物数量。地图、灵魂归还奖励和商店都能提供槽位。",
+            "商店可重复购买许多槽位，不宜把攻略列出的收集编号当作容量上限。"
+          ],
+          "en": [
+            "Slots increase equipment capacity rather than trinket count. They come from exploration, spirit-return rewards and the shop.",
+            "The shop sells many slots; a walkthrough’s numbered pickups do not establish a capacity limit."
+          ]
+        }
+      }
+    },
+    {
+      "group": "achievements",
+      "id": "bouncing-bottles",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "bouncing"
+          ],
+          "zh": [
+            "先在 Looter 商店购买并装备瓶盖饰物，再找帐篷附近的平坦空间练习。",
+            "向上抛瓶，保持在瓶子下方，用火柴连续向上击打十次；失败后回帐篷补充再试。"
+          ],
+          "en": [
+            "Buy and equip Bottle Cap, then practise on flat ground near a tent.",
+            "Throw upward and stay underneath, hitting upward ten times; refill at the tent between attempts."
+          ]
+        }
+      }
+    },
+    {
+      "group": "achievements",
+      "id": "hide-and-seek",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "hide"
+          ],
+          "zh": [
+            "发生在干涸城堡的女王搜寻段落。避开探照光束，利用房间遮挡分段移动。",
+            "被发现会回到检查点；通过整段并触发 Looter 被抓的剧情后解锁。"
+          ],
+          "en": [
+            "This occurs during the Queen’s search in Desiccated Castle. Avoid the searchlight and move between cover.",
+            "Detection returns you to a checkpoint; finish the sequence and Looter’s capture scene to unlock it."
+          ]
+        }
+      }
+    },
+    {
+      "group": "achievements",
+      "id": "expert-collector",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "full",
+            "community-route"
+          ],
+          "zh": [
+            "目标为收齐 32 件饰物，商店出售的饰物也计入。",
+            "收尾时检查旅店的虫翅与余烬瓶，以及归还灵魂获得的饰物。"
+          ],
+          "en": [
+            "Collect all 32 trinkets, including those sold in the shop.",
+            "For cleanup, check Insect Wing and Ember Vial in the inn, plus spirit-return trinket rewards."
+          ]
+        }
+      }
+    },
+    {
+      "group": "achievements",
+      "id": "fully-stocked",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "full"
+          ],
+          "zh": [
+            "条件是把所有可升级饰物升到最高级，不是单纯收齐工坊代币。",
+            "逐件检查工坊菜单，预留货币和代币；没有升级选项的饰物无需额外处理。"
+          ],
+          "en": [
+            "Max out every upgradeable trinket; collecting Workshop Tokens alone is insufficient.",
+            "Check each workshop entry and reserve currency and tokens; trinkets without upgrades need no further work."
+          ]
+        }
+      }
+    },
+    {
+      "group": "achievements",
+      "id": "together-at-last",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "ending"
+          ],
+          "zh": [
+            "先击败女王，取得腾空能力与神秘地图，再完成五个灵魂碎片目标。",
+            "同时确认 20 个灵魂已经归还，最后回夜之庭园的灵魂归还处触发团聚。"
+          ],
+          "en": [
+            "Defeat the Queen, obtain Soar and the mysterious map, then collect all five Spirit Fragments.",
+            "Also return all 20 spirits, then revisit the Night Garden spirit-return point for the reunion."
+          ]
+        }
+      }
+    },
+    {
+      "group": "keyItems",
+      "id": "the-queens-coin",
+      "fields": {
+        "referenceChecklist": {
+          "sources": [
+            "community-route"
+          ],
+          "zh": [
+            "通关后检查女王硬币。社区流程在第十集开头记录获取，并说明可降低工坊价格。",
+            "尚未完成饰物升级时，先核对当前菜单价格再安排收尾购买。"
+          ],
+          "en": [
+            "Check for the Queen’s Coin after the main ending. Episode 10 records it near the start and notes reduced workshop prices.",
+            "If upgrades remain, check the current menu prices before planning cleanup purchases."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 // Final public-page pass: reader copy, provenance, article metadata and a fresh sitemap.
+const writeFile = require('./lib/write-file.cjs');
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),cheerio=require('cheerio');
 const {loadClassicData,confirmed}=require('./lib/classic-data.cjs');
 const root=path.resolve(__dirname,'..'),origin='https://gamenote.cc',base='/games/an-jing-wei-guang/',today='2026-09-27';
@@ -15,7 +16,7 @@ for(let part=2;part<=7;part++){
 }
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const all=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?all(path.join(dir,e.name)):e.name.endsWith('.html')?[path.join(dir,e.name)]:[]);
-const files=[path.join(root,'index.html'),...['catalog','games','notes','updates','about','en','search'].flatMap(d=>all(path.join(root,d)))];
+const files=[path.join(root,'index.html'),...['catalog','news','games','notes','updates','about','en','search'].flatMap(d=>all(path.join(root,d)))];
 function clean(text,en){
  if(en){
   return text.split(/(?<=[.!?])\s+(?=[A-Z])/).filter(s=>!/has not been confirmed|not yet verified|not established|not been established|remain(?:s)? unconfirmed|left unconfirmed|not clearly read|not inferred|not assigned names|not presented as an ending|not proof|does not establish|does not confirm|does not show|does not imply|does not mean|not a completion frame|not a boss-defeat scene|not a fixed phase rule|not a completed rescue|not completion or a reward|not a complete attack cycle|only the pickup node|naming difference remains|correspondence with the Chinese video|Without a completion message|Without an item panel|One confirmed pickup|This confirms one pickup|formal name is unconfirmed|not readable in this frame|do not mistake visual descriptions|rather than assigning it|episode title|solely because of the video title|not proof that a new named region/i.test(s))
@@ -35,7 +36,7 @@ const indexable=[];
 for(const file of files){
  const url='/'+path.relative(root,file).replaceAll('\\','/').replace(/index\.html$/,''),en=url.startsWith('/en/'),current=url.replace(/^\/en\//,'/'),prefix=en?'/en':'',classic=current.startsWith(base);
  const $=cheerio.load(fs.readFileSync(file,'utf8')),article=classic?$('.classic-main > article'):$('.article');
- const parts=classic?current.slice(base.length).split('/').filter(Boolean):[],record=classic?({walkthrough:data.areas,maps:data.areas,bosses:data.bosses,abilities:data.abilities,achievements:data.achievements,collectibles:parts[1]==='key-items'?data.keyItems:data.collectibles,quests:data.quests}[parts[0]]||[]).find(e=>e.slug===(parts[2]||parts[1])):null;
+ const parts=classic?current.slice(base.length).split('/').filter(Boolean):[],record=classic?({walkthrough:data.areas,maps:data.areas,bosses:data.bosses,abilities:data.abilities,achievements:data.achievements,collectibles:parts[1]==='key-items'&&parts[2]?data.keyItems:data.collectibles,quests:data.quests,challenges:data.challenges}[parts[0]]||[]).find(e=>e.slug===(parts[2]||parts[1])):null;
  $('[data-editorial],script[data-article-schema],script[data-site-schema]').remove();
  $('link[href="/assets/editorial.css"]').remove();$('head').append('<link rel="stylesheet" href="/assets/editorial.css">');
  if(classic){
@@ -44,6 +45,10 @@ for(const file of files){
   const encounters=[];
   if(parts[0]==='walkthrough'){
    article.children('h2').each((_,n)=>{const heading=$(n),label=heading.text().trim();if(!['NPC','Boss','Boss / encounter'].includes(label))return;const body=heading.next('p');if(body.length)encounters.push([label,body.html()]);body.remove();heading.remove()});
+   if(!encounters.some(([label])=>label==='NPC')&&confirmed(record?.fields.npcs)){
+    const englishNames=new Map(Object.entries(require('../content/games/an-jing-wei-guang/labels-zh.json')).map(([english,chinese])=>[chinese,english]));
+    encounters.push(['NPC',record.fields.npcs.value.map(value=>esc(en?englishNames.get(value)||value:value)).join(' · ')]);
+   }
    article.find('.classic-image-block').removeClass('reverse').addClass('center classic-walkthrough-image');
   }
   const summary=summaries[record?.id];
@@ -93,8 +98,9 @@ for(const file of files){
   if(parts[0]==='bosses'&&parts[1]==='the-queen'){
    const achievements=data.achievements.filter(e=>['hide-and-seek','endgame'].includes(e.id));
    article.prepend(`<section data-editorial><h2 class="classic-heading">${en?'The Queen and Related Achievements':'女王与相关成就'}</h2><p>${en?'The Queen appears in two distinct Steam achievement descriptions: evading her and battling her. These are different objectives; the battle achievement description says “Battle the Queen”, not “Defeat the Queen”.':'Steam 成就包含两个与女王有关的目标：躲避女王和与女王战斗。两者不是同一个目标；“终局”的说明是“与女王战斗”，不是“击败女王”。'}</p><ul>${achievements.map(e=>`<li><a href="${prefix+base+'achievements/'+e.slug+'/'}">${esc(en?e.nameEn:e.nameZh)}</a>：${esc(en?e.descriptionEn:e.description)}</li>`).join('')}</ul><h2 class="classic-heading">${en?'Before the Encounter':'遭遇前准备'}</h2><p>${en?'Before continuing, review your available healing, supplies and equipped trinkets. Keep the ability and achievement indexes available when checking your remaining objectives.':'继续探索前，可先检查治疗、补给和已装备的饰物，并通过能力与成就目录核对自己的推进目标。'}</p><p class="classic-notice">${en?'Reference material in progress · Arena routes, attack patterns and detailed tactics will be added here.':'资料持续整理中 · 场地路线、招式与详细打法将在本页继续补充。'}</p></section>`);
-   // A useful factual introduction is not a finished boss guide: keep the draft out of indexing.
-   $('meta[name=robots]').remove();$('head').append('<meta name="robots" content="noindex,follow">');$('[data-pagefind-body]').removeAttr('data-pagefind-body');
+   if(!confirmed(record?.fields.referenceStrategy)){
+    $('meta[name=robots]').remove();$('head').append('<meta name="robots" content="noindex,follow">');$('[data-pagefind-body]').removeAttr('data-pagefind-body');
+   }else article.children('section[data-editorial]').first().find('.classic-notice').remove();
    $('meta[name=description],meta[property="og:description"]').attr('content',en?'The Queen: evasion and battle achievements, preparation notes and an ongoing boss-guide draft.':'女王：躲避与战斗成就、遭遇前准备和持续整理中的首领攻略。');
   }
  }
@@ -118,7 +124,8 @@ for(const file of files){
    const block=`<section data-editorial class="article-references"><h2${classic?' class="classic-heading"':''}>${en?'References':'参考链接'}</h2><ul>${sources.map(([label,u])=>`<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(en&&u.includes('space.bilibili.com')?'Original video creator: 好吃的香草雪球 — Bilibili profile':en&&u.includes('steamcommunity.com')?'Steam — official achievement list':en&&/[\u3400-\u9fff]/.test(label)?'Reference — '+new URL(u).hostname:label)}</a></li>`).join('')}</ul></section>`;
    const nav=article.children('.classic-area-nav').first();if(nav.length)nav.before(block);else article.append(block);
   }
-  const modified=`<p data-editorial class="${classic?'classic-subtitle':'article-meta'}">${en?'Guide editor: GAME NOTE':'攻略整理：GAME NOTE'} · ${en?'Updated':'更新于'} <time datetime="${today}">${today}</time></p>`;
+  const modifiedAt=classic?(record?.updatedAt||data.updatedAt):today;
+  const modified=`<p data-editorial class="${classic?'classic-subtitle':'article-meta'}">${en?'Guide editor: GAME NOTE':'攻略整理：GAME NOTE'} · ${en?'Updated':'更新于'} <time datetime="${modifiedAt}">${modifiedAt}</time></p>`;
   const header=classic?$('.classic-main > header'):article.children('header').first();
   if(classic&&header.length){
    // Keep one visible byline; progress notices belong beside unfinished content.
@@ -127,7 +134,7 @@ for(const file of files){
   }else if(header.length)header.append(modified);else article.prepend(modified);
   const isDetail=classic?(parts.length>1||parts[0]==='systems'):current.startsWith('/notes/')&&current!=='/notes/';
   if(isDetail){
-   const schema={'@context':'https://schema.org','@type':current.startsWith('/notes/')?'BlogPosting':'Article','@id':origin+url+'#article',headline:$('h1').first().text(),description:$('meta[name=description]').attr('content'),inLanguage:en?'en':'zh-CN',dateModified:today,author:{'@type':'Organization',name:'GAME NOTE',url:origin+(en?'/en/about/':'/about/')},publisher:{'@type':'Organization',name:'GAME NOTE',url:origin},mainEntityOfPage:origin+url};
+   const schema={'@context':'https://schema.org','@type':current.startsWith('/notes/')?'BlogPosting':'Article','@id':origin+url+'#article',headline:$('h1').first().text(),description:$('meta[name=description]').attr('content'),inLanguage:en?'en':'zh-CN',dateModified:modifiedAt,author:{'@type':'Organization',name:'GAME NOTE',url:origin+(en?'/en/about/':'/about/')},publisher:{'@type':'Organization',name:'GAME NOTE',url:origin},mainEntityOfPage:origin+url};
    const published=article.find('header time').first().attr('datetime');if(published&&published!==today)schema.datePublished=published;
    const img=article.find('img').first().attr('src');if(img)schema.image=new URL(img,origin).href;
    $('head').append(`<script type="application/ld+json" data-article-schema>${JSON.stringify(schema).replaceAll('<','\\u003c')}</script>`);
@@ -135,8 +142,8 @@ for(const file of files){
  }
  if(current==='/')$('head').append(`<script type="application/ld+json" data-site-schema>${JSON.stringify({'@context':'https://schema.org','@type':'WebSite',name:'GAME NOTE',url:origin+url,inLanguage:en?'en':'zh-CN',publisher:{'@type':'Organization',name:'GAME NOTE',url:origin}})}</script>`);
  const canonical=$('link[rel=canonical]').attr('href');if(!/noindex/i.test($('meta[name=robots]').attr('content')||'')&&canonical===origin+url&&current!=='/search/')indexable.push(origin+url);
- fs.writeFileSync(file,$.html()+'\n');
+ writeFile(file,$.html()+'\n');
 }
 const urls=[...new Set(indexable)].sort();
-fs.writeFileSync(path.join(root,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(u=>`  <url><loc>${esc(u)}</loc></url>`).join('\n')+'\n</urlset>\n');
+writeFile(path.join(root,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(u=>`  <url><loc>${esc(u)}</loc></url>`).join('\n')+'\n</urlset>\n');
 console.log(`Editorial metadata and source lists applied; fresh sitemap contains ${urls.length} unique URLs.`);

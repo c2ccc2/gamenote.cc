@@ -1,4 +1,5 @@
 // One shared GTM container on every public HTML page, independent of its theme.
+const writeFile = require('./lib/write-file.cjs');
 const fs=require('node:fs'),path=require('node:path'),cheerio=require('cheerio');
 const root=path.resolve(__dirname,'..'),container='GTM-W5W5PT67';
 const excluded=new Set(['.git','.github','node_modules','content','scripts','_research','pagefind']);
@@ -11,6 +12,6 @@ for(const file of files){
  $('noscript').each((_,node)=>{if(($(node).html()||'').includes(container))$(node).remove()});
  $('head').prepend(`<script data-gamenote-gtm="${container}">${bootstrap}</script>`);
  $('body').prepend(`<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${container}" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>`);
- fs.writeFileSync(file,$.html()+'\n');
+ writeFile(file,$.html()+'\n');
 }
 console.log(`Unified ${container} on ${files.length} public HTML pages.`);

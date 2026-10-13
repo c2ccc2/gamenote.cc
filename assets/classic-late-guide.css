@@ -1,0 +1,15 @@
+[data-theme="classic"] .classic-late-route{margin:30px 0;border-top:3px double #a7b5b9}
+[data-theme="classic"] .classic-late-overview{display:grid;grid-template-columns:100px minmax(0,1fr);gap:8px 15px;padding:17px 20px;border:1px solid #cbd8dc;background:#f0f5f7;font-size:15px}
+[data-theme="classic"] .classic-late-overview dt{color:#873834;font-weight:700}
+[data-theme="classic"] .classic-late-overview dd{margin:0}
+[data-theme="classic"] .classic-route-diagram{margin:22px 0;overflow-x:auto}
+[data-theme="classic"] .classic-route-diagram img{display:block;width:100%;min-width:660px;height:auto}
+[data-theme="classic"] .classic-route-diagram figcaption{font-size:12px;color:#69777b;margin:6px 0}
+[data-theme="classic"] .classic-late-steps{padding-left:28px;margin:25px 0}
+[data-theme="classic"] .classic-late-steps li{padding:10px 0 17px 8px;border-bottom:1px dotted #aebcc1;scroll-margin-top:25px}
+[data-theme="classic"] .classic-late-steps li::marker{font-weight:700;color:#a93131}
+[data-theme="classic"] .classic-late-steps h3{font:700 19px/1.5 Georgia,'SimSun',serif;color:#a93131;margin:0 0 6px}
+[data-theme="classic"] .classic-late-steps p{font-size:16px;line-height:1.85;margin:0}
+[data-theme="classic"] .classic-late-related{display:flex;flex-wrap:wrap;gap:8px;margin:23px 0}
+[data-theme="classic"] .classic-late-related a{padding:7px 11px;border:1px solid #cbd8dc;background:#f8fbfb;font-size:14px;text-decoration:none}
+@media(max-width:760px){[data-theme="classic"] .classic-late-overview{grid-template-columns:1fr;gap:5px;padding:15px}[data-theme="classic"] .classic-late-overview dd{margin-bottom:9px}}

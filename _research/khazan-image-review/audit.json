@@ -1,0 +1,17 @@
+{
+  "checked": "2026-10-13",
+  "files": 868,
+  "jpg": 800,
+  "gif": 67,
+  "webp": 1,
+  "corrupt": 0,
+  "duplicateFiles": 15,
+  "localMarkdownReferences": 738,
+  "missingReferences": [],
+  "remainingPlaceholders": 149,
+  "failedTextPages": 104,
+  "gifFrameRange": [
+    23,
+    101
+  ]
+}

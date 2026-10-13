@@ -48,11 +48,40 @@ function loadClassicData(root){
    if(!sourceIds.length)continue;
    if(record.fields[key])throw Error('Reference field collision '+key);
    const sources=sourceIds.map(id=>{if(!reference.sources[id])throw Error('Unknown reference source');return reference.sources[id]});
-   record.fields[key]={value:text,confidence:'B',verificationStatus:'source-confirmed',publish:true,sources,notes:[],updatedAt:'2026-09-27',videoSources:[]};
+   record.fields[key]={value:text,confidence:'B',verificationStatus:'source-confirmed',publish:true,sources,notes:[],updatedAt:item.updatedAt||'2026-09-27',videoSources:[]};
   }
-  record.publish=true;if(record.contentStatus==='empty')record.contentStatus='partial';
+  record.publish=true;if(record.contentStatus==='empty')record.contentStatus='partial';if(item.updatedAt)record.updatedAt=item.updatedAt;
   validateEntity(record,'ability-reference.'+item.id);
  }
+ const refresh=JSON.parse(fs.readFileSync(path.join(dir,'reference-refresh.json'),'utf8'));
+ const refreshIds=new Set();
+ for(const item of refresh.entries){
+  const identity=item.group+'.'+item.id;if(refreshIds.has(identity))throw Error('Duplicate refresh entry '+identity);refreshIds.add(identity);
+  const record=data[item.group]?.find(e=>e.id===item.id);if(!record)throw Error('Unknown refresh entry '+identity);
+  const targets=[record];
+  if(item.group==='collectibles'){const keyItem=data.keyItems.find(e=>e.id===item.id);if(keyItem)targets.push(keyItem)}
+  for(const target of targets){
+   for(const [key,field] of Object.entries(item.fields)){
+    if(target.fields[key])throw Error('Refresh field collision '+identity+'.'+key);
+    if(!Array.isArray(field.zh)||!field.zh.length||!Array.isArray(field.en)||field.zh.length!==field.en.length||!field.sources?.length)throw Error('Invalid bilingual refresh field '+identity+'.'+key);
+    const sources=field.sources.map(id=>{if(!refresh.sources[id])throw Error('Unknown refresh source '+id);return refresh.sources[id]});
+    target.fields[key]={value:field.zh,confidence:'B',verificationStatus:'source-confirmed',publish:true,sources,notes:['Original summary of attributed reference material.'],updatedAt:refresh.updatedAt,videoSources:[]};
+    target.sources=[...new Map([...target.sources,...sources].map(source=>[source.url||source.name,source])).values()];
+   }
+   target.publish=true;target.contentStatus=target.contentStatus==='empty'?'partial':target.contentStatus;target.updatedAt=refresh.updatedAt;
+   const summary=item.fields.referenceRoute||item.fields.referenceChecklist;if(summary)target.description=summary.zh[0];
+   validateEntity(target,'reference-refresh.'+identity);
+  }
+ }
+ const late=JSON.parse(fs.readFileSync(path.join(dir,'late-walkthrough.json'),'utf8'));
+ for(const area of late.areas){
+  const record=data.areas.find(record=>record.id===area.id);if(!record)throw Error('Unknown late route '+area.id);
+  for(const locale of ['zh','en']){const text=area[locale];if(!text?.goal||!text.before||text.nodes?.length!==4||!text.steps?.length||!text.check?.length)throw Error('Incomplete late route '+area.id+' '+locale)}
+  const sources=area.sources.map(id=>{if(!late.sources[id])throw Error('Missing late route source '+id);return late.sources[id]});
+  record.fields.referenceDetailedRoute={value:[area.zh.goal,area.zh.before,...area.zh.steps.map(step=>step.text)],confidence:'B',verificationStatus:'source-confirmed',publish:true,sources,notes:['Original route instructions; diagrams show progression, not room geometry.'],updatedAt:late.updatedAt,videoSources:[]};
+  record.updatedAt=late.updatedAt;validateEntity(record,'late-walkthrough.'+area.id);
+ }
+ data.updatedAt=refresh.updatedAt;
  for(const c of data.challenges)if(!data.areas.some(a=>a.id===c.areaId))throw Error('Unknown challenge area');return data;
 }
 module.exports={loadClassicData,visible,confirmed,reliable,publicValue,approvedImage,hasVerifiedContent,canPublish,validateEntity,verificationStatuses,contentStatuses};

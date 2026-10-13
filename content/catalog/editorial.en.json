@@ -241,5 +241,131 @@
     "hours": "awaiting verification",
     "replayStatus": "Unconfirmed",
     "replay": "Replay features await hands-on verification."
+  },
+  "the-first-berserker-khazan": {
+    "summary": "Play as the exiled general Khazan in a demanding action RPG built around defense, stamina and boss fights.",
+    "review": "Khazan puts combat rhythm first: read an enemy's movement, manage stamina and look for a safe opening to counterattack. Our independent guide is in progress, and route and collectible notes will expand after verification.",
+    "fit": "Players who enjoy demanding action and learning boss patterns through repeated attempts.",
+    "caution": "Mistakes in combat can be costly; detailed routes and collectibles are still being documented.",
+    "hours": "awaiting verification",
+    "replayStatus": "Unconfirmed",
+    "replay": "Carryover and extra content in subsequent runs await hands-on verification."
+  },
+  "silver-pines": {
+    "summary": "Investigate a disappearance in an American town, solve puzzles and manage ammunition, medicine and inventory space while choosing whether to fight or evade.",
+    "review": "Not hands-on reviewed. Based on the official description: Investigate a disappearance in an American town, solve puzzles and manage ammunition, medicine and inventory space while choosing whether to fight or evade.",
+    "fit": "Players who prefer horror, investigation and resource decisions over constant fast combat.",
+    "caution": "This is a description-based overview; actual quality, difficulty and release plans require current official information.",
+    "hours": "To be verified",
+    "replay": "Replay design remains to be verified.",
+    "replayStatus": "To be confirmed"
+  },
+  "a-sisters-journey": {
+    "summary": "Violet searches for Rena using guns, dodges and precise jumps, collecting weapon upgrades and abilities across a pixel-art world.",
+    "review": "Not hands-on reviewed. Based on the official description: Violet searches for Rena using guns, dodges and precise jumps, collecting weapon upgrades and abilities across a pixel-art world.",
+    "fit": "Players who enjoy shooting and demanding platforming; the developer also describes an assist mode.",
+    "caution": "This is a description-based overview; actual quality, difficulty and release plans require current official information.",
+    "hours": "To be verified",
+    "replay": "Replay design remains to be verified.",
+    "replayStatus": "To be confirmed"
+  },
+  "sinweaver": {
+    "summary": "Progress through handcrafted boss stages and an explorable overworld, using melee combat, Sin magic and abilities to escape hell.",
+    "review": "Not hands-on reviewed. Based on the official description: Progress through handcrafted boss stages and an explorable overworld, using melee combat, Sin magic and abilities to escape hell.",
+    "fit": "Players seeking exploration alongside combat and a more clearly segmented stage structure.",
+    "caution": "This is a description-based overview; actual quality, difficulty and release plans require current official information.",
+    "hours": "To be verified",
+    "replay": "Replay design remains to be verified.",
+    "replayStatus": "To be confirmed"
+  },
+  "maseylia-echoes-of-the-past": {
+    "summary": "Explore an interconnected 3D world with double jumps, air dashes and grappling abilities that open paths and shape mobile combat.",
+    "review": "Not hands-on reviewed. Based on the official description: Explore an interconnected 3D world with double jumps, air dashes and grappling abilities that open paths and shape mobile combat.",
+    "fit": "Players who want ability-based revisits in three dimensions and enjoy vertical exploration.",
+    "caution": "This is a description-based overview; actual quality, difficulty and release plans require current official information.",
+    "hours": "To be verified",
+    "replay": "Replay design remains to be verified.",
+    "replayStatus": "To be confirmed"
+  },
+  "lucid": {
+    "summary": "Oenn gains Crystal Arts in a crystal-punk world, expanding movement and combat with crystal weapons for platform puzzles and bosses.",
+    "review": "Not hands-on reviewed. Based on the official description: Oenn gains Crystal Arts in a crystal-punk world, expanding movement and combat with crystal weapons for platform puzzles and bosses.",
+    "fit": "Players focused on fluid controls, airborne movement and ability combinations.",
+    "caution": "This is a description-based overview; actual quality, difficulty and release plans require current official information.",
+    "hours": "To be verified",
+    "replay": "Replay design remains to be verified.",
+    "replayStatus": "To be confirmed"
+  },
+  "demon-still-alive": {
+    "summary": "Explore a demonic nightmare, upgrade abilities and combine fire, ice, platform movement and combat against enemies.",
+    "review": "Not hands-on reviewed. Based on the official description: Explore a demonic nightmare, upgrade abilities and combine fire, ice, platform movement and combat against enemies.",
+    "fit": "Players drawn to demons, direct combat and elemental abilities.",
+    "caution": "This is a description-based overview; actual quality, difficulty and release plans require current official information.",
+    "hours": "To be verified",
+    "replay": "Replay design remains to be verified.",
+    "replayStatus": "To be confirmed"
+  },
+  "mira-and-the-legend-of-the-djinns": {
+    "summary": "Treasure hunter Yuba and the amnesiac Djinn Mira explore ruins, deserts and mountains using weapons and elemental combat to uncover the past.",
+    "review": "Not hands-on reviewed. Based on the official description: Treasure hunter Yuba and the amnesiac Djinn Mira explore ruins, deserts and mountains using weapons and elemental combat to uncover the past.",
+    "fit": "Players interested in North African influences, Djinn magic and pixel-art exploration.",
+    "caution": "This is a description-based overview; actual quality, difficulty and release plans require current official information.",
+    "hours": "To be verified",
+    "replay": "Replay design remains to be verified.",
+    "replayStatus": "To be confirmed"
+  },
+  "altered-alma": {
+    "summary": "Explore and fight in Neo Barcelona, upgrade a spaceship, recruit crew and build relationships that influence abilities and playstyle.",
+    "review": "Not hands-on reviewed. Based on the official description: Explore and fight in Neo Barcelona, upgrade a spaceship, recruit crew and build relationships that influence abilities and playstyle.",
+    "fit": "Players who want a city setting with relationships and base progression alongside combat.",
+    "caution": "This is a description-based overview; actual quality, difficulty and release plans require current official information.",
+    "hours": "To be verified",
+    "replay": "Replay design remains to be verified.",
+    "replayStatus": "To be confirmed"
+  },
+  "aggelos-2": {
+    "summary": "Explore, solve puzzles and fight across opposing light and dark realms with fast action and precise platforming.",
+    "review": "Not hands-on reviewed. Based on the official description: Explore, solve puzzles and fight across opposing light and dark realms with fast action and precise platforming.",
+    "fit": "Players who enjoy retro pixel art, demanding movement and world-switching mechanics.",
+    "caution": "This is a description-based overview; actual quality, difficulty and release plans require current official information.",
+    "hours": "To be verified",
+    "replay": "Replay design remains to be verified.",
+    "replayStatus": "To be confirmed"
+  },
+  "grime": {
+    "summary": "Explore a surreal organic world, absorb enemy attacks and traits with a black hole, and combine living weapons with ability progression in timing-focused combat.",
+    "review": "Not hands-on reviewed. The official description makes absorption and parrying central to both combat and character builds. Organic environments and living weapons give it a distinctive identity; it may suit players who enjoy learning enemy patterns and exploring patiently.",
+    "fit": "Fans of surreal art, Souls-like combat, parry counters and ability-gated exploration.",
+    "caution": "Contains body horror and transforming anatomy. Combat emphasizes timing; suitability depends on personal preferences.",
+    "hours": "To be verified",
+    "replayStatus": "NG+ supported",
+    "replay": "The official store confirms New Game Plus with altered enemy and boss challenges, a secret boss, and continued weapon and trait progression."
+  },
+  "castlevania-grimoire-of-souls": {
+    "summary": "Play as Alucard, Simon and other series heroes through side-scrolling stages with character skills and equipment progression. Primarily a mobile title; the Apple Arcade version ended service on September 3, 2026.",
+    "review": "Not hands-on reviewed. Distinct combat styles and skills for familiar Castlevania characters are its main appeal in the official description. This catalog records it as a stage-based mobile entry in the series.",
+    "fit": "Fans of Alucard, Simon and the history of Castlevania’s mobile games.",
+    "caution": "The Apple Arcade version has ended service; this is a historical catalog entry. The two-character video scene may be from an earlier version and does not establish multiplayer support in later versions.",
+    "hours": "Not applicable / stage-based content",
+    "replayStatus": "Traditional NG+ unconfirmed",
+    "replay": "Built around stage challenges and equipment progression. Traditional New Game Plus is not confirmed by the referenced official material. Service has ended."
+  },
+  "aggelos": {
+    "summary": "Explore the Kingdom of Lumen in a retro pixel-art action RPG, gaining elemental powers through forests, caves and temples to open new paths with swordplay and magic.",
+    "review": "Not hands-on reviewed. The official description combines retro pixel art, swordplay and elemental powers with nonlinear exploration. It may appeal to players who enjoy Wonder Boy-style action adventures.",
+    "fit": "Fans of retro pixel art, dungeon exploration and returning to earlier areas with new abilities.",
+    "caution": "This assessment is based on official gameplay descriptions. Controls, actual difficulty and first-playthrough length remain to be verified.",
+    "hours": "To be verified",
+    "replayStatus": "To be confirmed",
+    "replay": "Traditional New Game Plus is not confirmed by the referenced store material."
+  },
+  "astlibra-revision": {
+    "summary": "Journey through time and fate with Karon, a talking bird companion. Explore chapter-based worlds, fight side-scrolling battles and develop your character through equipment mastery and skill combinations.",
+    "review": "Not hands-on reviewed. Official descriptions link chapter-based storytelling, side-scrolling combat and character builds. Equipment mastery and skill combinations provide room to adjust playstyles; it may suit action RPG players who enjoy story progression and character growth.",
+    "fit": "Fans of chapter-based stories, equipment progression, skill combinations and side-scrolling combat.",
+    "caution": "Multiple difficulty options are available; actual difficulty remains to be verified. A chapter-by-chapter guide is advisable to avoid spoilers in its time-and-fate narrative.",
+    "hours": "To be verified",
+    "replayStatus": "Post-game content available",
+    "replay": "The official description confirms a Postscript after the Final Chapter with additional story, adventure and systems. This is not confirmation of traditional New Game Plus."
   }
 }

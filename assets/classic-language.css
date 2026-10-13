@@ -1,5 +1,14 @@
 [data-theme="classic"] .classic-main>header{position:relative}
-[data-theme="classic"] .classic-language-switch{display:flex;justify-content:flex-end;gap:7px;font:13px/1.6 system-ui,sans-serif;margin:0 0 12px;white-space:nowrap}
-[data-theme="classic"] .classic-language-switch a{padding:5px 2px;text-decoration:none}
-[data-theme="classic"] .classic-language-switch [aria-current]{padding:5px 2px;border-bottom:2px solid #a93131;color:#873834;font-weight:700}
+[data-theme="classic"] .classic-language-switch{display:flex;justify-content:flex-end;margin:0 0 12px;font:13px/1.6 system-ui,sans-serif}
+[data-theme="classic"] .language-menu{position:relative;flex-shrink:0;white-space:nowrap}
+[data-theme="classic"] .language-menu summary{display:flex;align-items:center;gap:6px;list-style:none;padding:7px 9px;border:1px solid transparent;border-radius:8px;color:#182739;font-weight:700;cursor:pointer}
+[data-theme="classic"] .language-menu summary::-webkit-details-marker{display:none}
+[data-theme="classic"] .language-menu summary:hover,[data-theme="classic"] .language-menu[open] summary{background:#f1f0ec;border-color:#e1ded6}
+[data-theme="classic"] .language-menu summary:focus-visible{outline:3px solid #5067c9;outline-offset:2px}
+[data-theme="classic"] .language-menu .language-chevron{display:inline-block;width:7px;height:7px;margin-left:2px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+[data-theme="classic"] .language-menu-options{position:absolute;z-index:20;right:0;top:calc(100% + 7px);min-width:145px;padding:5px;background:#fff;border:1px solid #e1ded6;border-radius:10px;box-shadow:0 12px 28px #17204324}
+[data-theme="classic"] .language-menu-options a{display:block;padding:8px 11px;border-radius:6px;color:#182739;font-weight:600;text-decoration:none}
+[data-theme="classic"] .language-menu-options a:hover{background:#f4f2ec;color:#182739;text-decoration:none}
+[data-theme="classic"] .language-menu-options a[aria-current]{color:#f36f70}
 @media(max-width:760px){[data-theme="classic"] .classic-language-switch{margin-bottom:5px}}
+@media(max-width:680px){[data-theme="classic"] .language-menu{font-size:12px}[data-theme="classic"] .language-menu summary{padding:6px 5px}[data-theme="classic"] .language-menu-options{min-width:130px}}

@@ -1,4 +1,5 @@
 // V1 publication: templates only consume public/draft entities and independently approved fields.
+const writeFile = require('./lib/write-file.cjs');
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const {loadClassicData,visible,confirmed,publicValue,approvedImage,canPublish}=require('./lib/classic-data.cjs');
 const routes=require('../assets/routes.js');
@@ -8,6 +9,8 @@ vm.runInNewContext(fs.readFileSync(path.join(root,'assets/content.js'),'utf8'),c
 const shared=ctx.window.GAMENOTE_CONTENT;
 const displayZh=require('../content/games/an-jing-wei-guang/labels-zh.json');
 const {readerText}=require('./lib/classic-reader-copy.cjs');
+const lateGuide=require('./lib/classic-late-guide.cjs');
+lateGuide.buildRouteDiagrams(root);
 const worldMap=require('./lib/classic-world-map.cjs');
 worldMap.buildWorldMaps(data,root);
 const mapCrops=require('./lib/classic-map-crops.cjs');
@@ -83,12 +86,12 @@ function page(route,title,description,body,{parent,previous,next,status='draft',
   return `<section class="classic-nav-group"><div class="classic-nav-group-heading"><h2><a href="${href(target)}"${url===target?' aria-current="page"':''}>${esc(t)}</a></h2><button class="classic-group-toggle" type="button" aria-expanded="true" aria-controls="${id}" aria-label="收起栏目">−</button></div><div id="${id}" class="classic-nav-group-items">`+items.map(([label,u])=>`<a href="${href(base+u)}"${base+u===url?' aria-current="page"':''}>${esc(label)}</a>`).join('')+'</div></section>';
  }).join('');
  const crumbs=[{label:'GAME NOTE',href:'/'},{label:'Games',href:'/games/'},{label:'黯井微光',href:base,current:!route},...(parent?[{label:parent[0],href:base+parent[1]+'/'}]:[]),...(route?[{label:title,href:url,current:true}]:[])];
- const html=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(full)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="https://gamenote.cc${url}"><meta property="og:title" content="${esc(full)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="https://gamenote.cc${url}"><meta property="og:type" content="article">${noindex?'<meta name="robots" content="noindex,follow">':''}<link rel="stylesheet" href="/assets/classic.css"><link rel="stylesheet" href="/assets/classic-area-nav.css"><link rel="stylesheet" href="/assets/classic-menu.css"><link rel="stylesheet" href="/assets/classic-map.css"><script src="/assets/classic.js" defer></script><script type="application/ld+json" data-breadcrumb-schema>${routes.schema(crumbs)}</script></head><body class="classic" data-theme="classic"><a class="classic-skip" href="#main">跳到正文</a><div class="classic-shell"><aside class="classic-sidebar"><a class="classic-brand" href="/">GAME NOTE CLASSIC</a><details open><summary>攻略目录</summary><nav class="classic-nav" aria-label="攻略目录">${nav}</nav></details></aside><main class="classic-main" id="main">${routes.breadcrumb(crumbs,'classic')}<header><h1>${esc(title)}</h1><p class="classic-subtitle">${esc(states[status]||states.draft)} · 更新于 ${esc(updatedAt)}</p>${!route?'<div class="classic-banner"><div><small>GAME NOTE CLASSIC · 图文攻略专题</small><strong>黯井微光</strong></div><span>攻略整理中</span></div>':'<p class="classic-subtitle">GAME NOTE CLASSIC · 黯井微光</p>'}</header><article>${body}${areaNavigation(entity,route)}</article><nav class="classic-pager" aria-label="文章分页">${previous?link('← '+previous.title,base+previous.route):'<span>暂无上一页</span>'}${link('目录',base+(parent?parent[1]+'/':''))}${next?link(next.title+' →',base+next.route):'<span>暂无下一页</span>'}</nav><footer class="classic-footer">${link('返回 GAME NOTE','/')} · 本专题持续整理；未核实内容不作为游戏结论。</footer></main></div></body></html>`;
- const file=path.join(root,'games/an-jing-wei-guang',route,'index.html');fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,html+'\n');if(!noindex)pages.push(url);
+ const html=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(full)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="https://gamenote.cc${url}"><meta property="og:title" content="${esc(full)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="https://gamenote.cc${url}"><meta property="og:type" content="article">${noindex?'<meta name="robots" content="noindex,follow">':''}<link rel="stylesheet" href="/assets/classic.css"><link rel="stylesheet" href="/assets/classic-area-nav.css"><link rel="stylesheet" href="/assets/classic-menu.css"><link rel="stylesheet" href="/assets/classic-map.css">${entity?.fields.referenceDetailedRoute?'<link rel="stylesheet" href="/assets/classic-late-guide.css">':''}<script src="/assets/classic.js" defer></script><script type="application/ld+json" data-breadcrumb-schema>${routes.schema(crumbs)}</script></head><body class="classic" data-theme="classic"><a class="classic-skip" href="#main">跳到正文</a><div class="classic-shell"><aside class="classic-sidebar"><a class="classic-brand" href="/">GAME NOTE CLASSIC</a><details open><summary>攻略目录</summary><nav class="classic-nav" aria-label="攻略目录">${nav}</nav></details></aside><main class="classic-main" id="main">${routes.breadcrumb(crumbs,'classic')}<header><h1>${esc(title)}</h1><p class="classic-subtitle">${esc(states[status]||states.draft)} · 更新于 ${esc(updatedAt)}</p>${!route?'<div class="classic-banner"><div><small>GAME NOTE CLASSIC · 图文攻略专题</small><strong>黯井微光</strong></div><span>攻略整理中</span></div>':'<p class="classic-subtitle">GAME NOTE CLASSIC · 黯井微光</p>'}</header><article>${body}${areaNavigation(entity,route)}</article><nav class="classic-pager" aria-label="文章分页">${previous?link('← '+previous.title,base+previous.route):'<span>暂无上一页</span>'}${link('目录',base+(parent?parent[1]+'/':''))}${next?link(next.title+' →',base+next.route):'<span>暂无下一页</span>'}</nav><footer class="classic-footer">${link('返回 GAME NOTE','/')} · 本专题持续整理；未核实内容不作为游戏结论。</footer></main></div></body></html>`;
+ const file=path.join(root,'games/an-jing-wei-guang',route,'index.html');fs.mkdirSync(path.dirname(file),{recursive:true});writeFile(file,html+'\n');if(!noindex)pages.push(url);
 }
 const game=data.game;
 
-const fieldTitles={referenceEffect:'参考作用',referenceAcquisition:'参考获取方式',overview:'区域概览',previousAreas:'前一区域',nextAreas:'后续区域',bosses:'Boss',abilities:'能力',npcs:'NPC',collectibles:'收集记录',importantLocations:'重要节点',routeNotes:'★ 录像流程记录',area:'出现区域',encounterOrder:'★ 遭遇信息',location:'位置',attacks:'已观察的攻击画面',attackPatterns:'已观察的攻击方式',strategy:'推荐打法',reward:'奖励',afterBattle:'战后路线',type:'类型',obtainedAt:'获取节点',requirements:'条件',function:'实际功能',unlocks:'开放路线',acquisition:'获取方式',relatedAreas:'相关区域',relatedCollectibles:'相关收集',category:'分类',abilityRequired:'所需能力',count:'当前资料记录',startNpc:'起始 NPC',steps:'任务步骤',prerequisite:'前置条件',relatedGuides:'相关攻略',relatedGuide:'相关攻略',earlyRoute:'P1 早期推进关系'};
+const fieldTitles={referenceRoute:'参考推进路线',referenceStrategy:'参考战斗要点',referenceChecklist:'收集核对要点',referenceOrientation:'参考区域定位',referenceEffect:'参考作用',referenceAcquisition:'参考获取方式',overview:'区域概览',previousAreas:'前一区域',nextAreas:'后续区域',bosses:'Boss',abilities:'能力',npcs:'NPC',collectibles:'收集记录',importantLocations:'重要节点',routeNotes:'★ 录像流程记录',area:'出现区域',encounterOrder:'★ 遭遇信息',location:'位置',attacks:'已观察的攻击画面',attackPatterns:'已观察的攻击方式',strategy:'推荐打法',reward:'奖励',afterBattle:'战后路线',type:'类型',obtainedAt:'获取节点',requirements:'条件',function:'实际功能',unlocks:'开放路线',acquisition:'获取方式',relatedAreas:'相关区域',relatedCollectibles:'相关收集',category:'分类',abilityRequired:'所需能力',count:'当前资料记录',startNpc:'起始 NPC',steps:'任务步骤',prerequisite:'前置条件',relatedGuides:'相关攻略',relatedGuide:'相关攻略',earlyRoute:'P1 早期推进关系'};
 const relationFields=new Set(['previousAreas','nextAreas','bosses','abilities','collectibles','area','relatedAreas','relatedCollectibles','relatedGuides','relatedGuide','earlyRoute']);
 const refs=new Map();for(const [section,records] of [['walkthrough',areas],['bosses',bosses],['abilities',abilities],['collectibles',collectibles],['quests',quests],['collectibles/key-items',keyItems],['achievements',achievements]])for(const e of records)refs.set(e.id,[name(e),base+section+'/'+e.slug+'/']);
 function valueText(value,key){
@@ -97,6 +100,7 @@ function valueText(value,key){
  if(relationFields.has(key)&&refs.has(value)){const [label,url]=refs.get(value);return link(label,url)}
  return esc(readerText(value));
 }
+fieldTitles.referencePuzzle='机关解法';
 function facts(e,{map=false}={}){
  if(!canPublish(e))return '<p class="classic-subtitle">当前保留名称目录；相关事实仍在核验。</p>';
  if(map){
@@ -106,15 +110,17 @@ function facts(e,{map=false}={}){
   if(notes?.image&&!approvedImage(scene))throw Error('Unapproved map landmark image '+e.id);
   return (mapCrops.markup(e)||(maps.length?heading('局部地图参考')+maps.map(imageBlock).join(''):''))+
    (scene?heading('场景识别参考')+imageBlock(scene):'')+
-   (notes?heading('地图定位与地标')+table('区域定位资料',['地标 / 节点','识别方式','地图阅读提示'],notes.rows):'<p>该区域的地图位置资料尚待补充。</p>');
+   (notes?heading('地图定位与地标')+table('区域定位资料',['地标 / 节点','识别方式','地图阅读提示'],notes.rows):confirmed(e.fields.referenceOrientation)?heading('参考区域定位')+'<p>'+valueText(e.fields.referenceOrientation.value,'referenceOrientation')+'</p>':'<p>该区域的地图位置资料尚待补充。</p>');
  }
  let out=(map?'<p class="classic-subtitle">以下为已确认的区域节点与录像画面，不等同于完整地图。</p>':'')+(publicValue(e,'description')?'<p>'+esc(publicValue(e,'description'))+'</p>':'');
  const guideImages=new Set(['guide','mapGuide'].flatMap(key=>confirmed(e.fields[key])?e.fields[key].value.filter(b=>confirmed({...b,value:b.text||b.src})).map(b=>b.src):[]));
  out+=e.images.filter(i=>!guideImages.has(i.src)).map(imageBlock).join('');
  for(const [key,field] of Object.entries(e.fields)){
-  if(!confirmed(field)||['nameEn','nameZh','description','descriptionEn','guide','mapGuide','previousAreas','nextAreas'].includes(key))continue;
-  out+=heading(fieldTitles[key]||key)+'<p>'+valueText(field.value,key)+'</p>';
+  if(e.fields.referenceDetailedRoute&&['referenceRoute','referenceOrientation'].includes(key))continue;
+  if(!confirmed(field)||['nameEn','nameZh','description','descriptionEn','guide','mapGuide','previousAreas','nextAreas','referenceDetailedRoute'].includes(key))continue;
+  out+=heading(fieldTitles[key]||key)+(['referenceRoute','referenceStrategy','referenceChecklist'].includes(key)?'<ul class="classic-links">'+field.value.map(item=>'<li>'+valueText(item,key)+'</li>').join('')+'</ul>':'<p>'+valueText(field.value,key)+'</p>');
  }
+ out+=lateGuide.markup(e);
  out+=safeGuide(e);
  out+=safeGuide(e,'mapGuide');
  if(!canPublish(e))out+='<p class="classic-subtitle">当前保留名称目录；相关事实仍在核验。</p>';
@@ -131,10 +137,10 @@ page('','黯井微光 / Well Dweller','黯井微光 Well Dweller：游戏资料�
  ])+game.images.map(imageBlock).join('')+
  '<p>'+link('Steam 官方商店',game.sources[0].url)+'</p>'+
  heading('专题入口')+list([['区域与流程目录',base+'walkthrough/'],['地图目录',base+'maps/'],['Boss 目录',base+'bosses/'],['能力 / 系统',base+'abilities/'],['收集分类',base+'collectibles/'],['任务目录',base+'quests/'],['计时挑战',base+'challenges/'],['41 项成就',base+'achievements/']])+
- heading('资料整理状态')+table('V1 目录',['栏目','当前状态'],[
- ['区域',areas.length+' 个名称条目；不代表最终流程顺序'],['Boss / encounter',bosses.length+' 个条目；招式与打法待核验'],
+ heading('资料整理状态')+table('攻略整理进度',['栏目','当前状态'],[
+ ['区域',areas.filter(canPublish).length+' 个区域已有路线或参考节点'],['Boss / encounter',bosses.filter(e=>confirmed(e.fields.referenceStrategy)||confirmed(e.fields.attacks)).length+' 场遭遇已有战斗要点'],
  ['能力 / 系统',abilities.length+' 个条目；获取方式整理中'],['收集',collectibles.length+' 类；具体位置待核验'],
- ['任务',quests.length+' 个名称；步骤持续核验'],['成就',achievements.length+' 条已整理 / '+publicValue(game,'steamAchievements')+' 项 Steam 成就']
+ ['任务',quests.filter(canPublish).length+' 条任务已有推进提示'],['成就',achievements.length+' 条已整理 / '+publicValue(game,'steamAchievements')+' 项 Steam 成就']
  ])+notice('本站当前是可持续核验的资料专题，不是已完成的全收集攻略。')+heading('最近更新')+updateList(5),{status:'in-progress'});
 page('walkthrough/','流程攻略目录','Well Dweller 区域流程攻略目录。',
  catalogue(areas.slice(0,14),'walkthrough')+heading('其他区域','other')+catalogue(areas.slice(14),'walkthrough'));
@@ -169,13 +175,14 @@ for(const e of achievements)page('achievements/'+e.slug+'/',name(e),publicValue(
 page('challenges/','挑战目录','Well Dweller Time Trials 与解谜资料入口。',list([['计时挑战',base+'challenges/time-trials/'],['谜题解法',base+'challenges/puzzle-solutions/']]));
 page('challenges/time-trials/','计时挑战','Well Dweller 计时挑战目录。',catalogue(challenges,'challenges/time-trials'));
 for(const e of challenges)page('challenges/time-trials/'+e.slug+'/',name(e)+' · Time Trial','已确认计时挑战资料。',facts(e),{parent:['计时挑战','challenges/time-trials'],entity:e});
-page('challenges/puzzle-solutions/','谜题解法','Well Dweller 谜题资料。','<p class="classic-subtitle">尚无已确认的解法。</p>',{parent:['挑战','challenges'],noindex:true});
+const puzzleAreas=areas.filter(e=>confirmed(e.fields.referencePuzzle));
+page('challenges/puzzle-solutions/','谜题解法','Well Dweller 谜题资料。',puzzleAreas.map(e=>heading(name(e),e.id)+e.fields.referencePuzzle.value.map(text=>'<p>'+esc(text)+'</p>').join('')+list([[name(e),base+'walkthrough/'+e.slug+'/']])+heading('参考资料')+list(e.fields.referencePuzzle.sources.map(source=>[source.name,source.url]))).join(''),{parent:['挑战','challenges'],noindex:!puzzleAreas.length});
 page('systems/','系统说明','Well Dweller 游戏基础资料与系统目录。',
  heading('游戏简介','intro')+'<p>'+esc(game.description)+'</p><p>'+link('Steam 官方商店',publicValue(game,'storeUrl'))+'</p>'+table('游戏基础资料',['项目','资料'],[['开发者',publicValue(game,'developer')],['发行商',publicValue(game,'publishers',[]).join(' / ')],['发售日',publicValue(game,'releaseDate')],['官方类型',publicValue(game,'officialCategories',[]).join(' / ')]])+
  heading('系统目录')+list(systemsReference.map(section=>[section.title,base+'systems/#'+section.id]))+
  systemsReference.map(section=>heading(section.title,section.id)+'<p>'+esc(section.text)+'</p><p>'+link(section.relatedLabel,base+section.related)+' · '+link('参考资料',section.source)+'</p>').join('')+
  heading('相关目录')+list([['能力与获取方式',base+'abilities/'],['收集目录',base+'collectibles/']]));
-page('secrets/','隐藏内容','Well Dweller 隐藏与结局资料。',heading('结局条件','endings')+'<p class="classic-subtitle">尚无已确认的结局路线。</p>',{noindex:true});
+page('secrets/','隐藏内容','Well Dweller 通关后的能力与灵魂碎片探索入口。',heading('通关后的探索','endings')+'<p>完成女王路线后，可继续回访收集。先检查腾空能力与神秘地图，再按灵魂碎片资料确认探索目标。</p>'+list([['女王',base+'bosses/the-queen/'],['腾空',base+'abilities/soar/'],['神秘标记',base+'collectibles/key-items/mysterious-markings/'],['灵魂碎片',base+'collectibles/spirit-fragments/'],['灵魂',base+'collectibles/spirits/']])+'<p>'+link('通关后参考','https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-together-at-last-achievement-trophy/')+'</p>');
 page('updates/','更新记录','Well Dweller 攻略整理的真实更新记录。',updateList(updates.length),{status:'in-progress'});
 // Keep previously linked addresses usable without publishing archived research content.
 const aliases={'walkthrough/chapter-01/':'walkthrough/','walkthrough/chapter-02/':'walkthrough/the-bog/','walkthrough/chapter-03/':'walkthrough/the-drains/','walkthrough/chapter-04/':'walkthrough/graven-valley/','walkthrough/chapter-05/':'walkthrough/','walkthrough/chapter-06/':'walkthrough/the-docks/','walkthrough/chapter-07/':'walkthrough/the-deep/','walkthrough/final/':'walkthrough/','bosses/boss-01/':'bosses/the-groundskeeper/','bosses/boss-02/':'bosses/','bosses/boss-03/':'bosses/','bosses/boss-04/':'bosses/','maps/area-map/':'maps/','maps/hidden-area/':'maps/hidden-paths/'};
@@ -187,8 +194,8 @@ for(const url of oldPages)if(!pages.includes(url)&&!aliases[url.slice(base.lengt
  const route=url.slice(base.length);if(!url.startsWith(base)||route.includes('..')||!/^[-a-z0-9/]+$/.test(route))throw Error('Unsafe stale route');
  page(route,'资料暂未公开','此条目正在核验。',pending('资料')+list([['返回目录',base]]),{noindex:true});
 }
-fs.mkdirSync(path.dirname(manifestPath),{recursive:true});fs.writeFileSync(manifestPath,JSON.stringify(pages,null,2)+'\n');
+fs.mkdirSync(path.dirname(manifestPath),{recursive:true});writeFile(manifestPath,JSON.stringify(pages,null,2)+'\n');
 const sitemapPath=path.join(root,'sitemap.xml');let sitemap=fs.readFileSync(sitemapPath,'utf8').replace(/\s*<url><loc>https:\/\/gamenote\.cc\/games\/an-jing-wei-guang\/[^<]*<\/loc><\/url>/g,'');
-sitemap=sitemap.replace('</urlset>',pages.map(u=>`  <url><loc>https://gamenote.cc${u}</loc></url>`).join('\n')+'\n</urlset>');fs.writeFileSync(sitemapPath,sitemap);
+sitemap=sitemap.replace('</urlset>',pages.map(u=>`  <url><loc>https://gamenote.cc${u}</loc></url>`).join('\n')+'\n</urlset>');writeFile(sitemapPath,sitemap);
 console.log(`Generated ${pages.length} pages; verified facts published independently.`);
 

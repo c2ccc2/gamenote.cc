@@ -1,0 +1,3073 @@
+[
+  {
+    "slug": "banished-hero",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "被流放的英雄",
+      "summary": "雪地开场、基础战斗与雪魈王。",
+      "lead": "沿雪地推进到雪魈王，先看关键节点，再按需要查看战斗和拾取提示。逐项收集位置仍待实机核验。",
+      "atGlance": [
+        {
+          "label": "推进目标",
+          "value": "穿过开场雪地，击败雪魈王"
+        },
+        {
+          "label": "路线节点",
+          "value": "剑形存档点 → 战斗教学 → 推车捷径 → 首领"
+        },
+        {
+          "label": "已核对的剧情物品",
+          "value": "押送令；完整收集清单待实机核验"
+        },
+        {
+          "label": "阅读状态",
+          "value": "路线摘要与参考配图；尚非全收集攻略"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "关键推进节点",
+          "type": "steps",
+          "items": [
+            "雪崩后的开场沿通路前进，找到剑形存档点。取得刀斧后，用前几场战斗熟悉轻重攻击、防御、锁定和精力消耗。",
+            "面对普通敌人时保留一部分精力。守住一轮攻击，再用短连击反击；路上留意剧情物品“押送令”。",
+            "继续穿过雪地。重新看到此前的存档点时，检查高处的推车机关，开启返回存档点的捷径。",
+            "进入雪魈王战前整理装备和恢复道具。击败首领后，剧情将带领卡赞进入下一段任务。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "路线配图",
+          "src": "/games/the-first-berserker-khazan/images/banished-hero-1.jpg",
+          "alt": "雪地开场的基础操作与精力条。",
+          "caption": "雪地开场的基础操作与精力条。",
+          "source": "https://www.3dmgame.com/gl/3964895.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 1 页"
+        },
+        {
+          "heading": "路上容易忽略的事",
+          "type": "bullets",
+          "items": [
+            "开场取得武器后先练习防御与精力管理：挡住攻击也会消耗精力，连续反击前要留出退开的余量。",
+            "击败前段敌人后检查剧情物品“押送令”。这是一条已核对的拾取提示，不代表本章收集项目已经列全。",
+            "在高处打开推车捷径后，可先返回存档点整理装备，再进入首领战。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "沿途探索配图",
+          "src": "/games/the-first-berserker-khazan/images/banished-hero-2.jpg",
+          "alt": "雪地中的路线与落差，可结合推进步骤查看。",
+          "caption": "雪地中的路线与落差，可结合推进步骤查看。",
+          "source": "https://www.3dmgame.com/gl/3964895_7.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 7 页"
+        },
+        {
+          "heading": "雪魈王战斗要点",
+          "type": "bullets",
+          "items": [
+            "与首领保持能看清起手动作的距离。它向前冲锋时侧向闪避，较长的连击结束后再上前反击。",
+            "战斗后半段留意落冰和正面冰锥。先躲开攻击，再趁空档输出，并留精力给下一次防御或闪避。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "任务后段配图",
+          "src": "/games/the-first-berserker-khazan/images/banished-hero-3.jpg",
+          "alt": "雪魈王战后的雪地场景。",
+          "caption": "雪魈王战后的雪地场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_9.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 9 页"
+        },
+        {
+          "heading": "进入下一章前",
+          "type": "paragraphs",
+          "items": [
+            "击败雪魈王后跟随剧情继续推进，下一章“试炼雪山”已有路线与收集提示，可从目录继续阅读。"
+          ],
+          "id": "section-4"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "完成“壶爱好者”支线后回开场 Crash Site，打破存档点前的小罐。"
+          ]
+        }
+      ],
+      "note": "这是本站重新编写的路线速览，细节和收集位置仍需进一步实机核验。"
+    },
+    "en": {
+      "title": "The Banished Hero",
+      "summary": "The opening snowfield, combat basics and the Snow Yeti King.",
+      "lead": "Follow the snowy opening to the Snow Yeti King. Check the route first, then jump to combat and pickup notes as needed. Collectible locations still need hands-on verification.",
+      "atGlance": [
+        {
+          "label": "Objective",
+          "value": "Cross the opening snowfield and defeat the Snow Yeti King"
+        },
+        {
+          "label": "Route",
+          "value": "Sword checkpoint → combat tutorial → cart shortcut → boss"
+        },
+        {
+          "label": "Story item checked",
+          "value": "Transport order; full collectible list still unverified"
+        },
+        {
+          "label": "Guide status",
+          "value": "Original route summary, not a complete collectible guide"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Key progression points",
+          "type": "steps",
+          "items": [
+            "Follow the opening path after the avalanche and activate the sword-shaped checkpoint. Once you receive the paired blades, use the first encounters to learn attacks, guarding, target lock and stamina use.",
+            "Keep some stamina in reserve against ordinary enemies. Defend through their attack sequence, answer with a short combo and watch for the transport order story item.",
+            "Continue through the snowfield. When the earlier checkpoint comes back into view, examine the cart above it to open a return shortcut.",
+            "Check your equipment and recovery items before the Snow Yeti King. The story moves into the next mission after the fight."
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "Route illustration",
+          "src": "/games/the-first-berserker-khazan/images/banished-hero-1.jpg",
+          "alt": "Basic controls and stamina in the opening snowfield.",
+          "caption": "Basic controls and stamina in the opening snowfield.",
+          "source": "https://www.3dmgame.com/gl/3964895.html",
+          "sourceLabel": "3DM Guide Team · original page 1"
+        },
+        {
+          "heading": "Things to watch for",
+          "type": "bullets",
+          "items": [
+            "Practice guarding and stamina management after getting your first weapon. Blocking also costs stamina, so leave enough to move away after a counterattack.",
+            "Check for the transport order story item after the early encounter. This is one checked pickup, not a complete list for the mission.",
+            "After opening the cart shortcut, you can return to the checkpoint to review your equipment before the boss."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "Exploration illustration",
+          "src": "/games/the-first-berserker-khazan/images/banished-hero-2.jpg",
+          "alt": "Snowfield traversal and elevation changes.",
+          "caption": "Snowfield traversal and elevation changes.",
+          "source": "https://www.3dmgame.com/gl/3964895_7.html",
+          "sourceLabel": "3DM Guide Team · original page 7"
+        },
+        {
+          "heading": "Snow Yeti King: battle notes",
+          "type": "bullets",
+          "items": [
+            "Stay far enough away to read the wind-up. Dodge sideways when it charges, and counter after a longer attack string ends.",
+            "Later in the fight, watch for falling ice and a frontal ice attack. Evade first, then strike while reserving stamina for another guard or dodge."
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "Before the next mission",
+          "type": "paragraphs",
+          "items": [
+            "Follow the story after Yetuga. Trials of the Frozen Mountain now has route and collectible notes; continue through the mission directory."
+          ],
+          "id": "section-4"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "Later mission illustration",
+          "src": "/games/the-first-berserker-khazan/images/banished-hero-3.jpg",
+          "alt": "The snowfield after the Snow Yeti King encounter.",
+          "caption": "The snowfield after the Snow Yeti King encounter.",
+          "source": "https://www.3dmgame.com/gl/3964895_9.html",
+          "sourceLabel": "3DM Guide Team · original page 9"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "After Jar Enthusiasts, return to Crash Site and break the small jar ahead of the Nexus."
+          ]
+        }
+      ],
+      "note": "This newly written route summary still needs further hands-on verification, especially for collectibles."
+    }
+  },
+  {
+    "slug": "snow-mountain-trial",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "试炼雪山",
+      "summary": "雪原、冻湖与冰峡谷的试炼，三块鬼石及刀锋幻影。",
+      "lead": "以存档点和收集地标串联雪山路线，完成试炼后挑战刀锋幻影。地名以英文对照辅助查找；本页为文字路线，图片后续补充。",
+      "atGlance": [
+        {
+          "label": "推进目标",
+          "value": "完成雪山试炼，击败刀锋幻影"
+        },
+        {
+          "label": "路线节点",
+          "value": "试炼雪原 → 冻湖 → 冰峡谷 → 首领场地"
+        },
+        {
+          "label": "收集核对",
+          "value": "三块鬼石；罐子精灵需要完成后续前置再回访"
+        },
+        {
+          "label": "人物与后续",
+          "value": "刀锋幻影；战后进入裂隙并前往第三章"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "雪山推进路线",
+          "type": "steps",
+          "items": [
+            "从区域传送入口选择本章，激活试炼雪原（Snowfield of Trials）存档点；先分配获得的技能点。",
+            "沿山路完成武器与战斗教学，学会投枪后，用它处理远处目标；经过冻湖（Frozen Lake）时检查洞穴支路。",
+            "继续到冰峡谷（Ice Canyon），穿过木桥并攀登塔楼；整理恢复道具后沿剩余山路进入刀锋幻影场地。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "路线配图",
+          "src": "/games/the-first-berserker-khazan/images/snow-mountain-trial-1.jpg",
+          "alt": "雪山试炼中的岔路与推进方向。",
+          "caption": "雪山试炼中的岔路与推进方向。",
+          "source": "https://www.3dmgame.com/gl/3964895_10.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 10 页"
+        },
+        {
+          "heading": "鬼石与回访提示",
+          "type": "bullets",
+          "items": [
+            "第一块：试炼雪原的狼群区域，绕到木制瞭望塔或木结构后方。",
+            "第二块：冻湖分岔处，野猪所在路线旁的左侧洞穴深处。",
+            "第三块：冰峡谷连续攀爬两段梯子后的悬崖，位于存档点上方支路。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "沿途探索配图",
+          "src": "/games/the-first-berserker-khazan/images/snow-mountain-trial-2.jpg",
+          "alt": "雪山沿途的探索场景。",
+          "caption": "雪山沿途的探索场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_13.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 13 页"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "完成“壶爱好者”支线后回 Ice Canyon，检查存档点附近的小罐。"
+          ]
+        },
+        {
+          "heading": "刀锋幻影战斗要点",
+          "type": "bullets",
+          "items": [
+            "先辨认武器：巨剑连击、双持快攻与长枪攻击的节奏不同，不要在第一击结束时就抢攻。",
+            "长枪投掷后可能接瞬移砸击，锤击会在前方形成红色尖刺；躲开之后仍要观察后续动作。",
+            "第二阶段增加爪击并更频繁瞬移；看到爆发攻击提示时使用教学中的反击操作，以自己的键位设置为准。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "任务后段配图",
+          "src": "/games/the-first-berserker-khazan/images/snow-mountain-trial-3.jpg",
+          "alt": "布雷德相关战斗画面。",
+          "caption": "布雷德相关战斗画面。",
+          "source": "https://www.3dmgame.com/gl/3964895_19.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 19 页"
+        },
+        {
+          "heading": "进入裂隙前",
+          "type": "paragraphs",
+          "items": [
+            "击败刀锋幻影后跟随剧情进入裂隙（The Crevice），完成对话并查看传送目的地，再开始“被遗忘的神庙”。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "依据公开攻略整理的原创文字路线；尚非逐房间图文全收集。"
+    },
+    "en": {
+      "title": "Trials of the Frozen Mountain",
+      "summary": "Snowfield, Frozen Lake and Ice Canyon trials, three Soulstones and Blade Phantom.",
+      "lead": "Follow checkpoint landmarks through Stormpass. This text route covers progression and collectible checks; screenshots will follow.",
+      "atGlance": [
+        {
+          "label": "Objective",
+          "value": "Complete the trials and defeat Blade Phantom"
+        },
+        {
+          "label": "Route",
+          "value": "Snowfield of Trials → Frozen Lake → Ice Canyon → boss"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Three Soulstones; return for the Jarling after its prerequisite"
+        },
+        {
+          "label": "Next destination",
+          "value": "The Crevice, then Forgotten Temple"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Mountain route",
+          "type": "steps",
+          "items": [
+            "Select the mission at the region portal, activate Snowfield of Trials and assign the new skill point.",
+            "Complete the weapon and combat tutorials. After learning Javelin, use it for distant targets; check the cave branch at Frozen Lake.",
+            "Continue through Ice Canyon, cross the wooden bridge and climb the tower. Prepare recovery items before following the final mountain path to Blade Phantom."
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "Route illustration",
+          "src": "/games/the-first-berserker-khazan/images/snow-mountain-trial-1.jpg",
+          "alt": "A route marker during the mountain trials.",
+          "caption": "A route marker during the mountain trials.",
+          "source": "https://www.3dmgame.com/gl/3964895_10.html",
+          "sourceLabel": "3DM Guide Team · original page 10"
+        },
+        {
+          "heading": "Soulstones return notes",
+          "type": "bullets",
+          "items": [
+            "First: behind the wooden watchtower or structure in the wolf-filled snowfield.",
+            "Second: inside the left cave near the Frozen Lake fork and boar route.",
+            "Third: on the cliff after two ladder climbs in Ice Canyon, above the Nexus branch.",
+            "It does not appear on the first visit."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "Exploration illustration",
+          "src": "/games/the-first-berserker-khazan/images/snow-mountain-trial-2.jpg",
+          "alt": "Exploration along the snowy mountain route.",
+          "caption": "Exploration along the snowy mountain route.",
+          "source": "https://www.3dmgame.com/gl/3964895_13.html",
+          "sourceLabel": "3DM Guide Team · original page 13"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "After Jar Enthusiasts, return to Ice Canyon and check the jar near the Nexus."
+          ]
+        },
+        {
+          "heading": "Blade Phantom: battle notes",
+          "type": "bullets",
+          "items": [
+            "Read the weapon: greatsword strings, rapid dual-wield attacks and spear moves have different rhythms. Avoid punishing the first hit.",
+            "A spear throw can lead into a teleporting slam; hammer attacks create red spikes ahead. Watch for follow-ups after evading.",
+            "Phase two adds claw attacks and more teleports. Use the taught Counterattack for Burst Attack warnings, following your configured controls."
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "Later mission illustration",
+          "src": "/games/the-first-berserker-khazan/images/snow-mountain-trial-3.jpg",
+          "alt": "A scene related to the Blade Phantom encounter.",
+          "caption": "A scene related to the Blade Phantom encounter.",
+          "source": "https://www.3dmgame.com/gl/3964895_19.html",
+          "sourceLabel": "3DM Guide Team · original page 19"
+        },
+        {
+          "heading": "Before entering The Crevice",
+          "type": "paragraphs",
+          "items": [
+            "After victory, follow the story to The Crevice, finish the dialogue and select Forgotten Temple as the next destination."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Original notes based on public guides; not a room-by-room illustrated completion guide."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "Al Gest — Stormpass collectibles",
+        "url": "https://al-gest.com/khazen/khazan-stage-002/"
+      },
+      {
+        "name": "The Escapist — Blade Phantom",
+        "url": "https://www.escapistmagazine.com/the-first-berserker-khazan-how-to-beat-the-blade-phantom/"
+      },
+      {
+        "name": "Steam Community — 100% Achievement Guide",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "forgotten-temple",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "被遗忘的神庙",
+      "summary": "神庙入口、地下旋转机关、三块鬼石与 Viper。",
+      "lead": "从遗迹入口深入地下，停止旋转机关并打开首领大门。按地标核对支路，精确房间截图留待补充。",
+      "atGlance": [
+        {
+          "label": "推进目标",
+          "value": "停止三处机关，返回神庙之心挑战 Viper"
+        },
+        {
+          "label": "路线节点",
+          "value": "入口 → 地下 Daphrona → 深处机关 → 电梯 → 首领"
+        },
+        {
+          "label": "收集核对",
+          "value": "三块鬼石；入口支路的生命典籍与冥界能量升级"
+        },
+        {
+          "label": "人物与服务",
+          "value": "吟游诗人商人、Daphrona；罐子精灵需后续回访"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "从遗迹进入神庙",
+          "type": "steps",
+          "items": [
+            "激活入口存档点。初段岔路右侧检查生命典籍，返回后沿左路推进，注意高处弓箭手。",
+            "开门进入神庙，楼梯右侧检查支路；入口附近有吟游诗人商人和冥界能量升级。",
+            "首领大门暂时关闭，先操作附近拉杆，再沿路线乘电梯进入地下，与 Daphrona 对话。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "路线配图",
+          "src": "/games/the-first-berserker-khazan/images/forgotten-temple-1.jpg",
+          "alt": "神庙入口附近的探索场景。",
+          "caption": "神庙入口附近的探索场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_22.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 22 页"
+        },
+        {
+          "heading": "停止地下旋转机关",
+          "type": "steps",
+          "items": [
+            "调整石像，使其朝向与同列石像一致；升起平台后通过梯子到达控制装置，停止第一部分。",
+            "继续到深处处理敌人，再完成第二组石像机关；检查显露的鬼石并操作第二处装置。",
+            "沿下行路线到最后一处装置，停止全部旋转机构；返回电梯，击败沿途强敌，上行拉杆开门并在首领前休整。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "沿途探索配图",
+          "src": "/games/the-first-berserker-khazan/images/forgotten-temple-2.jpg",
+          "alt": "神庙内部的廊道与推进路线。",
+          "caption": "神庙内部的廊道与推进路线。",
+          "source": "https://www.3dmgame.com/gl/3964895_29.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 29 页"
+        },
+        {
+          "heading": "沿途收集与人物",
+          "type": "bullets",
+          "items": [
+            "鬼石一：进入神庙前的分岔左侧，打破木障碍后检查。",
+            "鬼石二：神庙入口楼梯前的右侧支路，处理两名敌人后查看角落。",
+            "鬼石三：深处第二组石像机关完成后显露，用投枪击碎。",
+            "Daphrona 提供鬼石解放服务；本章先完成对话，具体强化选项见菜单。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "Viper 战斗要点",
+          "type": "bullets",
+          "items": [
+            "第一阶段长枪有延迟起手，等攻击真正到来再防御；投掷武器后仍可能接突进。",
+            "枪尖发光并后撤蓄势时留意抓取，拉开距离，不要用普通防御硬接。",
+            "第二阶段匕首较快、拳击较慢，分开判断节奏；看到手掌拍地时准备躲开随后投石。",
+            "困难时可检查场地前白色召唤点，使用对应的循环 Lacrima 召唤助战灵体。"
+          ],
+          "id": "section-4"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "任务后段配图",
+          "src": "/games/the-first-berserker-khazan/images/forgotten-temple-3.jpg",
+          "alt": "蝰蛇相关战斗画面。",
+          "caption": "蝰蛇相关战斗画面。",
+          "source": "https://www.3dmgame.com/gl/3964895_31.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 31 页"
+        },
+        {
+          "heading": "战后与下一任务",
+          "type": "paragraphs",
+          "items": [
+            "击败 Viper 后完成剧情与据点对话，再前往“复仇序章”。第四章已整理，可从章节导航继续阅读；"
+          ],
+          "id": "section-5"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "完成前置后回神庙深处，经过第二处旋转陷阱，检查下行楼梯左侧小罐。"
+          ]
+        }
+      ],
+      "note": "公开资料核对后的文字攻略；操作名称和地名请结合当前游戏语言，尚未补充实机截图。"
+    },
+    "en": {
+      "title": "Forgotten Temple",
+      "summary": "Temple entrance, rotating underground mechanisms, three Soulstones and Viper.",
+      "lead": "Descend into the temple, stop its mechanisms and open the boss gate. Use landmarks for branch checks; precise room screenshots will follow.",
+      "atGlance": [
+        {
+          "label": "Objective",
+          "value": "Stop three mechanisms and reach Viper"
+        },
+        {
+          "label": "Route",
+          "value": "Entrance → Daphrona → depths → elevator → boss"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Three Soulstones; Vitality Tome and Netherworld Energy upgrade near the entrance"
+        },
+        {
+          "label": "Characters",
+          "value": "Bard merchant and Daphrona; Jarling requires a later return"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Entering the temple",
+          "type": "steps",
+          "items": [
+            "Activate the first Nexus. Check the initial right branch for a Vitality Tome, then return left and watch the archer above.",
+            "Enter the temple and inspect the branch right of the stairs. The entrance area includes the Bard merchant and a Netherworld Energy upgrade.",
+            "The boss gate is locked. Operate the nearby lever, descend by elevator and speak to Daphrona."
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "Route illustration",
+          "src": "/games/the-first-berserker-khazan/images/forgotten-temple-1.jpg",
+          "alt": "Exploration near the temple entrance.",
+          "caption": "Exploration near the temple entrance.",
+          "source": "https://www.3dmgame.com/gl/3964895_22.html",
+          "sourceLabel": "3DM Guide Team · original page 22"
+        },
+        {
+          "heading": "Stopping the rotating mechanisms",
+          "type": "steps",
+          "items": [
+            "Align statues with others in their row. Use the raised platform and ladder to reach the first control device.",
+            "Continue deeper, clear enemies and solve the second statue puzzle. Check the exposed Soulstone and operate the second device.",
+            "Descend to the final device, stop the machinery, then return by elevator. Defeat the tough enemy, open the gate with the upper lever and rest before Viper."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "Exploration illustration",
+          "src": "/games/the-first-berserker-khazan/images/forgotten-temple-2.jpg",
+          "alt": "An interior passage through the temple.",
+          "caption": "An interior passage through the temple.",
+          "source": "https://www.3dmgame.com/gl/3964895_29.html",
+          "sourceLabel": "3DM Guide Team · original page 29"
+        },
+        {
+          "heading": "Collectibles and characters",
+          "type": "bullets",
+          "items": [
+            "Soulstone one: behind breakable wooden barriers left of the pre-temple fork.",
+            "Soulstone two: the corner of the right branch before the entrance stairs, past two enemies.",
+            "Soulstone three: exposed by the second statue puzzle; break it with Javelin.",
+            "Daphrona offers Soulstone unleashing. Finish her dialogue and check the available upgrades.",
+            "After Jar Enthusiasts, return from Depths of the Forgotten Temple, pass the second rotating trap and check the small jar left of the descending stairs."
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "Viper: battle notes",
+          "type": "bullets",
+          "items": [
+            "Phase-one spear attacks have delayed starts. Guard when the strike arrives; a weapon throw can lead into a rush.",
+            "Watch for a glowing spear tip and a drawn-back stance before the grab. Move away rather than relying on normal guarding.",
+            "Phase two mixes fast dagger strikes with slower punches. A palm slammed into the ground warns of a following rock throw.",
+            "If needed, check the white summon point before the arena and spend the corresponding Circular Lacrima to summon a Spirit of Advocacy."
+          ],
+          "id": "section-4"
+        },
+        {
+          "heading": "After the battle",
+          "type": "paragraphs",
+          "items": [
+            "Complete the story and hub dialogue after Viper, then continue to First Act of Revenge through the mission navigation. Return for the Jarling after completing its later prerequisite."
+          ],
+          "id": "section-5"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "Later mission illustration",
+          "src": "/games/the-first-berserker-khazan/images/forgotten-temple-3.jpg",
+          "alt": "A scene related to the Viper encounter.",
+          "caption": "A scene related to the Viper encounter.",
+          "source": "https://www.3dmgame.com/gl/3964895_31.html",
+          "sourceLabel": "3DM Guide Team · original page 31"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "After the prerequisite, return to the temple depths and check left of the descending stairs beyond the second rotating trap."
+          ]
+        }
+      ],
+      "note": "Text guide checked against public references; match names to your game language. Gameplay screenshots remain to be added."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "Esport Voice — Forgotten Temple",
+        "url": "https://esportvoice.com/2025/03/29/forgotten-temple-guide-the-first-berserker-khazan/"
+      },
+      {
+        "name": "GamesFuze — Viper",
+        "url": "https://gamesfuze.com/guides/how-to-beat-viper-boss-in-the-first-berserker-khazan/"
+      },
+      {
+        "name": "Steam Community — 100% Achievement Guide",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "revenge-prelude",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "复仇序章",
+      "summary": "沿村落、码头与中央仓库推进，核对三块鬼石并挑战 Volbaino。",
+      "lead": "沿村落、码头与中央仓库推进，核对三块鬼石并挑战 Volbaino。",
+      "atGlance": [
+        {
+          "label": "推进目标",
+          "value": "穿过 Phraugh 村落，击败 Volbaino"
+        },
+        {
+          "label": "路线节点",
+          "value": "山丘小屋 → 村落码头 → 中央仓库入口 → 首领"
+        },
+        {
+          "label": "收集与回访",
+          "value": "三块鬼石、撤离令；罐子精灵需完成支线后回访"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "村落与仓库路线",
+          "type": "steps",
+          "items": [
+            "从山丘小屋（Cabin on the Hill）沿主路下行，抵达洞口前先观察地面的吞噬者，避免被抓后抛下悬崖。",
+            "继续到村落码头（Phraugh Village Dock），打开捷径附近大门，再向中央仓库推进。",
+            "从中央仓库入口下落进入村庄支路，探索梯子建筑和强敌房间；返回主线，打开首领通路。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "路线配图",
+          "src": "/games/the-first-berserker-khazan/images/revenge-prelude-1.jpg",
+          "alt": "复仇序章沿途的洞窟场景。",
+          "caption": "复仇序章沿途的洞窟场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_32.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 32 页"
+        },
+        {
+          "heading": "鬼石与剧情档案",
+          "type": "bullets",
+          "items": [
+            "鬼石一：山丘小屋下行洞穴内，贴右墙到梯子并登顶。",
+            "鬼石二：码头捷径附近的大门打开后，立即查看左侧。",
+            "鬼石三：梯子建筑强敌房间内，入口正对的木楼梯上方；房间左侧还可检查灰狼卷轴。",
+            "撤离令：中央仓库入口下落后，进入唯一开门的建筑，登梯后从对面落下，查看建筑出口。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "沿途探索配图",
+          "src": "/games/the-first-berserker-khazan/images/revenge-prelude-2.jpg",
+          "alt": "营地周边的推进路线。",
+          "caption": "营地周边的推进路线。",
+          "source": "https://www.3dmgame.com/gl/3964895_35.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 35 页"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "完成“壶爱好者”支线后，从中央仓库入口下落，立即向右检查小罐。"
+          ]
+        },
+        {
+          "heading": "Volbaino 战斗要点",
+          "type": "bullets",
+          "items": [
+            "战前检查封火项链与火焰净化药水；长连击结束后再短打反击，保留精力。",
+            "武器插地后会接锤击冲击波，先拉开距离；后半场留意拔出武器后的残留火焰。",
+            "看到准备点燃下层场地的动作，利用梯子到上层避火；不要站在投出的尖刺与首领之间。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "任务后段配图",
+          "src": "/games/the-first-berserker-khazan/images/revenge-prelude-3.jpg",
+          "alt": "任务后段的室内通道。",
+          "caption": "任务后段的室内通道。",
+          "source": "https://www.3dmgame.com/gl/3964895_38.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 38 页"
+        },
+        {
+          "heading": "战后支线与回访提示",
+          "type": "paragraphs",
+          "items": [
+            "返回裂隙与 Duimuk 对话，查看“壶爱好者”支线。完成后回中央仓库入口，下落后向右检查小壶，再衔接第五章。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "依据公开资料整理的文字路线；图片待补充，地名可按英文对照查找。"
+    },
+    "en": {
+      "title": "First Act of Revenge",
+      "summary": "Follow the village, dock and storehouse route, check three Soulstones and defeat Volbaino.",
+      "lead": "Follow the village, dock and storehouse route, check three Soulstones and defeat Volbaino.",
+      "atGlance": [
+        {
+          "label": "Objective",
+          "value": "Cross Phraugh Village and defeat Volbaino"
+        },
+        {
+          "label": "Route",
+          "value": "Cabin on the Hill → Phraugh Village Dock → Central Storehouse Entrance → boss"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Three Soulstones and Evacuation Order; Jarling requires a later return"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Village and storehouse route",
+          "type": "steps",
+          "items": [
+            "Descend from Cabin on the Hill. Watch the buried Crypt Devourer outside the cave: its grab can throw you off the cliff.",
+            "Continue to Phraugh Village Dock, open the large door near its shortcut and advance toward the storehouse.",
+            "Drop into the village branch from Central Storehouse Entrance, inspect the ladder building and elite room, then return to open the boss approach."
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "Route illustration",
+          "src": "/games/the-first-berserker-khazan/images/revenge-prelude-1.jpg",
+          "alt": "A cavern along the Revenge Prelude route.",
+          "caption": "A cavern along the Revenge Prelude route.",
+          "source": "https://www.3dmgame.com/gl/3964895_32.html",
+          "sourceLabel": "3DM Guide Team · original page 32"
+        },
+        {
+          "heading": "Soulstones and story records",
+          "type": "bullets",
+          "items": [
+            "First Soulstone: follow the cave’s right wall to a ladder and climb it.",
+            "Second: immediately left after opening the large door near the dock shortcut.",
+            "Third: above the wooden stairs opposite the elite-room entrance; check its left side for the Ashen Wolf Scroll.",
+            "Evacuation Order: enter the open building after the storehouse drop, climb its ladder, drop opposite and check the exit."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "Exploration illustration",
+          "src": "/games/the-first-berserker-khazan/images/revenge-prelude-2.jpg",
+          "alt": "Traversal around the camp.",
+          "caption": "Traversal around the camp.",
+          "source": "https://www.3dmgame.com/gl/3964895_35.html",
+          "sourceLabel": "3DM Guide Team · original page 35"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "After Jar Enthusiasts, drop from Central Storehouse Entrance and check the jar immediately right."
+          ]
+        },
+        {
+          "heading": "Volbaino: battle notes",
+          "type": "bullets",
+          "items": [
+            "Check Necklace of Sealed Fire and Fire Cleansing Potions before the fight. Punish completed strings with short attacks and reserve stamina.",
+            "A planted spike can lead to a hammer shockwave: move away. Later, pulling the weapon free leaves persistent fire.",
+            "Use the ladder to escape lower-floor ignition. Avoid standing between the boss and a thrown spike."
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "Later mission illustration",
+          "src": "/games/the-first-berserker-khazan/images/revenge-prelude-3.jpg",
+          "alt": "An interior passage late in the mission.",
+          "caption": "An interior passage late in the mission.",
+          "source": "https://www.3dmgame.com/gl/3964895_38.html",
+          "sourceLabel": "3DM Guide Team · original page 38"
+        },
+        {
+          "heading": "After the battle return notes",
+          "type": "paragraphs",
+          "items": [
+            "Back in The Crevice, speak to Duimuk about Jar Enthusiasts. After completing it, return to Central Storehouse Entrance, drop down and check the small pot on the right before continuing to mission five."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Text route checked against public guides; screenshots remain to be added. Use the English landmarks to locate checkpoints."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Charnak collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-charnak-mountain-range-collectible-locations/"
+      },
+      {
+        "name": "Patch Crazy — Volbaino",
+        "url": "https://patchcrazy.co.uk/volbaino-boss-fight-guide-the-first-berserker-khazan/"
+      },
+      {
+        "name": "Steam Community — Achievement route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "suspicious-stench",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "可疑的恶臭",
+      "summary": "穿过坍塌矿山与毒池，核对三块鬼石，准备解毒并挑战 Aratra。",
+      "lead": "穿过坍塌矿山与毒池，核对三块鬼石，准备解毒并挑战 Aratra。",
+      "atGlance": [
+        {
+          "label": "推进目标",
+          "value": "沿 Skoffa 洞穴到 Aratra 场地"
+        },
+        {
+          "label": "路线节点",
+          "value": "坍塌矿山 → 瘴气深处 → 洞穴底部 → 首领"
+        },
+        {
+          "label": "人物与收集",
+          "value": "吟游诗人、工匠许可、三块鬼石与罐子精灵"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "矿山与毒池路线",
+          "type": "steps",
+          "items": [
+            "先激活坍塌矿山（Collapsed Mine）存档点，推进并打开返回捷径；经过瀑布时停下检查远处鬼石。",
+            "继续穿过蜘蛛卵附近的大房间，抵达瘴气深处（Poisoned Depths）；与吟游诗人对话并准备解毒道具。",
+            "沿毒池岩石与斜坡到洞穴底部（Bottom of the Cave），利用干地恢复，再进入首领场地。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "路线配图",
+          "src": "/games/the-first-berserker-khazan/images/suspicious-stench-1.jpg",
+          "alt": "建筑附近的通路，原图保留路线标记。",
+          "caption": "建筑附近的通路，原图保留路线标记。",
+          "source": "https://www.3dmgame.com/gl/3964895_39.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 39 页"
+        },
+        {
+          "heading": "收集核对位置",
+          "type": "bullets",
+          "items": [
+            "鬼石一：矿山捷径后的瀑布，站在木平台边缘用投枪击碎瀑布后岩石上的鬼石。",
+            "鬼石二：瘴气深处下坡底部右侧裂缝，通往毒池里的小岩台。",
+            "鬼石三：从洞穴底部回头进第二处毒池，沿右墙查看岩石后方。",
+            "工匠许可位于后段岩台支路，附近可找到吟游诗人。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "沿途探索配图",
+          "src": "/games/the-first-berserker-khazan/images/suspicious-stench-2.jpg",
+          "alt": "洞窟中的敌人与探索场景。",
+          "caption": "洞窟中的敌人与探索场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_41.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 41 页"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "大型蜘蛛卵所在房间左侧的小罐。"
+          ]
+        },
+        {
+          "heading": "Aratra 战前准备与打法",
+          "type": "bullets",
+          "items": [
+            "携带解毒道具与抗毒饰品。进入首领战前探索桶形爆炸物支路，可破坏小蜘蛛洞口以减少增援。",
+            "分别锁定前肢或腹部：破坏前肢减少相关攻击，破坏腹部可暂时压制毒攻击；首领退回洞穴后会恢复。",
+            "首领爬墙退走时可用投枪打背部；爆发连击有延迟，不要过早反击，蛛网后还可能接抓取。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "任务后段配图",
+          "src": "/games/the-first-berserker-khazan/images/suspicious-stench-3.jpg",
+          "alt": "任务首领相关战斗画面。",
+          "caption": "任务首领相关战斗画面。",
+          "source": "https://www.3dmgame.com/gl/3964895_46.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 46 页"
+        },
+        {
+          "heading": "战后与铁匠服务",
+          "type": "paragraphs",
+          "items": [
+            "击败 Aratra 后回据点查看“铁匠传家宝”支线，取回锤子以开放相关服务。第六章已整理，可从章节导航继续。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "依据公开资料整理的文字路线；图片待补充，地名可按英文对照查找。"
+    },
+    "en": {
+      "title": "Strange Stench",
+      "summary": "Cross the collapsed mine and poison pools, check three Soulstones and prepare for Aratra.",
+      "lead": "Cross the collapsed mine and poison pools, check three Soulstones and prepare for Aratra.",
+      "atGlance": [
+        {
+          "label": "Objective",
+          "value": "Reach Aratra through Skoffa Cave"
+        },
+        {
+          "label": "Route",
+          "value": "Collapsed Mine → Poisoned Depths → Bottom of the Cave → boss"
+        },
+        {
+          "label": "Characters and collectibles",
+          "value": "Bard, Blacksmith Union Permit, three Soulstones and a Jarling"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Mine and poison-pool route",
+          "type": "steps",
+          "items": [
+            "Activate Collapsed Mine and open its return shortcut. Check the distant Soulstone at the waterfall.",
+            "Continue past the large spider-egg chamber to Poisoned Depths. Speak to the Bard and prepare poison-cleansing items.",
+            "Follow rock islands and ramps to Bottom of the Cave, recover on dry ground and approach the boss."
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "Route illustration",
+          "src": "/games/the-first-berserker-khazan/images/suspicious-stench-1.jpg",
+          "alt": "A passage by a building, with original route markings retained.",
+          "caption": "A passage by a building, with original route markings retained.",
+          "source": "https://www.3dmgame.com/gl/3964895_39.html",
+          "sourceLabel": "3DM Guide Team · original page 39"
+        },
+        {
+          "heading": "Collectible landmarks",
+          "type": "bullets",
+          "items": [
+            "First Soulstone: use Javelin from the wooden platform edge on the crystal behind the waterfall.",
+            "Second: take the right crevice at the bottom of the Poisoned Depths ramp to the small rock island.",
+            "Third: turn back from Bottom of the Cave into the second poison pool and check behind rocks along the right wall.",
+            "Check the later ledge branch for the Blacksmith Union Permit and nearby Bard."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "Exploration illustration",
+          "src": "/games/the-first-berserker-khazan/images/suspicious-stench-2.jpg",
+          "alt": "Enemies and exploration inside a cavern.",
+          "caption": "Enemies and exploration inside a cavern.",
+          "source": "https://www.3dmgame.com/gl/3964895_41.html",
+          "sourceLabel": "3DM Guide Team · original page 41"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "The small jar on the left of the giant spider-egg chamber."
+          ]
+        },
+        {
+          "heading": "Aratra: preparation and battle notes",
+          "type": "bullets",
+          "items": [
+            "Bring poison-cleansing items and resistant accessories. Explore barrel side paths before the fight to destroy small-spider entrances and reduce reinforcements.",
+            "Target forelegs or abdomen: breaking legs limits associated attacks; breaking the abdomen suppresses venom temporarily. Parts regenerate after its cave retreat.",
+            "Use Javelin on its back during a wall retreat. Delay counters for Burst strings and watch for grabs after webs."
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "Later mission illustration",
+          "src": "/games/the-first-berserker-khazan/images/suspicious-stench-3.jpg",
+          "alt": "A scene related to the mission boss.",
+          "caption": "A scene related to the mission boss.",
+          "source": "https://www.3dmgame.com/gl/3964895_46.html",
+          "sourceLabel": "3DM Guide Team · original page 46"
+        },
+        {
+          "heading": "After the battle and blacksmith services",
+          "type": "paragraphs",
+          "items": [
+            "After Aratra, complete Blacksmith’s Heirloom and recover the hammer for related services. Continue to the newly available sixth mission through the chapter navigation."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Text route checked against public guides; screenshots remain to be added. Use the English landmarks to locate checkpoints."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Charnak collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-charnak-mountain-range-collectible-locations/"
+      },
+      {
+        "name": "Patch Crazy — Aratra",
+        "url": "https://patchcrazy.co.uk/aratra-boss-fight-guide-first-berserker-khazan/"
+      },
+      {
+        "name": "Steam Community — Achievement route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "traitors-face",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "叛徒的真面目",
+      "summary": "沿燃烧城区进入城塞与监牢，核对四块鬼石和隐藏房间，最后挑战 Rangkus。",
+      "lead": "沿燃烧城区进入城塞与监牢，核对四块鬼石和隐藏房间，最后挑战 Rangkus。",
+      "atGlance": [
+        {
+          "label": "推进目标",
+          "value": "穿过 Palemion 城塞并击败 Rangkus"
+        },
+        {
+          "label": "路线节点",
+          "value": "燃烧城区 → 陷落城塞 → 监牢 → 电梯 → 首领"
+        },
+        {
+          "label": "收集与后续",
+          "value": "四块鬼石、罐子精灵；战后查看 Oksana 的 Kaleido 支线"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "城区与城塞推进",
+          "type": "steps",
+          "items": [
+            "从燃烧城区（Burning City）沿塔楼与屋顶推进，处理破门伏兵；留意需要投枪击碎绳索的悬挂平台。",
+            "推进到陷落城塞（Fallen Citadel），探索松散石墙后的锻造房，再沿楼梯进入监牢。",
+            "打开返回捷径后继续到电梯，先检查背后横梁，再沿主路到 Rangkus 场地。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "路线配图",
+          "src": "/games/the-first-berserker-khazan/images/traitors-face-1.jpg",
+          "alt": "村镇街道中的探索路线。",
+          "caption": "村镇街道中的探索路线。",
+          "source": "https://www.3dmgame.com/gl/3964895_61.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 61 页"
+        },
+        {
+          "heading": "四块鬼石与隐藏房间",
+          "type": "bullets",
+          "items": [
+            "鬼石一：城区塔楼附近登上第二段梯子，回头向对面平台投枪。",
+            "鬼石二：大门广场左侧小巷，清理破门伏兵后进屋登梯到顶。",
+            "鬼石三：监牢左侧通道尽头，打破松散石门进入暗室。",
+            "鬼石四：电梯后方木横梁，用投枪击碎"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "沿途探索配图",
+          "src": "/games/the-first-berserker-khazan/images/traitors-face-2.jpg",
+          "alt": "室内探索与拾取场景。",
+          "caption": "室内探索与拾取场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_65.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 65 页"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "打破松散石墙进入锻造房，检查角落小罐。"
+          ]
+        },
+        {
+          "heading": "Rangkus 战斗要点",
+          "type": "bullets",
+          "items": [
+            "准备火抗饰品和火焰净化道具；防御仍可能积累元素状态，不能只看生命条。",
+            "连击末尾砸击射程很长，后滚未必安全；观察武器发光和延迟，选择侧向避让。",
+            "旋转喷火阶段以移动避让为主，并给最后的跳起砸击留出空间；后期砸地还可能接延迟范围爆炸。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "任务后段配图",
+          "src": "/games/the-first-berserker-khazan/images/traitors-face-3.jpg",
+          "alt": "首领相关剧情与战斗场景。",
+          "caption": "首领相关剧情与战斗场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_70.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 70 页"
+        },
+        {
+          "heading": "战后装备服务前置",
+          "type": "paragraphs",
+          "items": [
+            "回裂隙找 Oksana，接取 Kaleido 并前往 Silent Temple。完成任务后返回交付，再查看属性变更与装备强化服务，然后继续第七章。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "公开资料核对后的文字路线；图片与逐房间路线待补，地名可按英文对照查找。"
+    },
+    "en": {
+      "title": "Traitor Revealed",
+      "summary": "Cross the burning city, citadel and jail, check four Soulstones and hidden rooms, then face Rangkus.",
+      "lead": "Cross the burning city, citadel and jail, check four Soulstones and hidden rooms, then face Rangkus.",
+      "atGlance": [
+        {
+          "label": "Objective",
+          "value": "Traverse Palemion Citadel and defeat Rangkus"
+        },
+        {
+          "label": "Route",
+          "value": "Burning City → Fallen Citadel → jail → elevator → boss"
+        },
+        {
+          "label": "Collectibles and follow-up",
+          "value": "Four Soulstones and a Jarling; check Oksana’s Kaleido mission afterwards"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "City and citadel route",
+          "type": "steps",
+          "items": [
+            "Follow towers and rooftops from Burning City, watch door ambushes and use Javelin on the rope holding a suspended platform.",
+            "Reach Fallen Citadel, inspect the forge behind a loose-stone wall, then descend to the jail.",
+            "After opening the return shortcut, reach the elevator, check the beam behind it and continue to Rangkus."
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "Route illustration",
+          "src": "/games/the-first-berserker-khazan/images/traitors-face-1.jpg",
+          "alt": "Exploration through the village streets.",
+          "caption": "Exploration through the village streets.",
+          "source": "https://www.3dmgame.com/gl/3964895_61.html",
+          "sourceLabel": "3DM Guide Team · original page 61"
+        },
+        {
+          "heading": "Four Soulstones and hidden rooms",
+          "type": "bullets",
+          "items": [
+            "First: climb the second ladder near the city tower, turn around and throw at the opposite platform.",
+            "Second: the left alley at the large gate; clear the door ambusher and climb inside.",
+            "Third: break the loose-stone door at the end of the jail’s left corridor.",
+            "Fourth: the beam behind the elevator, reached with Javelin."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "Exploration illustration",
+          "src": "/games/the-first-berserker-khazan/images/traitors-face-2.jpg",
+          "alt": "An interior exploration and pickup scene.",
+          "caption": "An interior exploration and pickup scene.",
+          "source": "https://www.3dmgame.com/gl/3964895_65.html",
+          "sourceLabel": "3DM Guide Team · original page 65"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "Break the loose-stone wall to enter the forge and inspect its corner jar."
+          ]
+        },
+        {
+          "heading": "Rangkus: battle notes",
+          "type": "bullets",
+          "items": [
+            "Prepare fire resistance and cleansing items; guarding can still build elemental status.",
+            "The final slam has long reach. Watch the glowing weapon and delayed timing; retreating straight back may fail.",
+            "Move clear of spinning flames and leave room for the final jumping slam. Later slams can trigger delayed area explosions."
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "Later mission illustration",
+          "src": "/games/the-first-berserker-khazan/images/traitors-face-3.jpg",
+          "alt": "A boss-related story and combat scene.",
+          "caption": "A boss-related story and combat scene.",
+          "source": "https://www.3dmgame.com/gl/3964895_70.html",
+          "sourceLabel": "3DM Guide Team · original page 70"
+        },
+        {
+          "heading": "Post-battle gear-service prerequisite",
+          "type": "paragraphs",
+          "items": [
+            "Return to Oksana in The Crevice, accept Kaleido and visit Silent Temple. Complete and turn in the mission before checking attribute alteration and gear augmentation, then continue to mission seven."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Text notes checked against public guides; screenshots and room-by-room routes remain to be added. Use the English checkpoint names for orientation."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Pell Los Plateau collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-pell-los-plateau-collectible-locations/"
+      },
+      {
+        "name": "Boss battle reference",
+        "url": "https://al-gest.com/khazen/khazan-boss-006/"
+      },
+      {
+        "name": "Steam Community — Achievement route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "blade-to-the-curtain",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "刃指账幕",
+      "summary": "从采石场穿过蜘蛛区域与盗匪城塞，核对四块鬼石、罐子精灵和密信，最后挑战 Maluca。",
+      "lead": "从采石场穿过蜘蛛区域与盗匪城塞，核对四块鬼石、罐子精灵和密信，最后挑战 Maluca。",
+      "atGlance": [
+        {
+          "label": "推进目标",
+          "value": "通过 Nadin 采石场，击败 Maluca"
+        },
+        {
+          "label": "路线节点",
+          "value": "采石营地 → 通往城塞的洞穴 → 盗匪城塞 → 首领"
+        },
+        {
+          "label": "收集与战前",
+          "value": "四块鬼石、罐子精灵、间谍信；准备混沌净化"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "采石场与盗匪城塞",
+          "type": "steps",
+          "items": [
+            "从采石营地（Quarry Camp Site）到蜘蛛区域，先处理会召唤爆炸小蜘蛛的大蜘蛛，再探索下方平台。",
+            "穿过通往城塞的洞穴（Cave Leading to the Citadel），逐段到盗匪城塞，打开返回存档点的捷径。",
+            "检查兵营左路房间与后段小屋，再完成首领前补给；进战前确认混沌净化道具已放入快捷栏。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "路线配图",
+          "src": "/games/the-first-berserker-khazan/images/blade-to-the-curtain-1.jpg",
+          "alt": "山地通路与存档点附近场景。",
+          "caption": "山地通路与存档点附近场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_71.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 71 页"
+        },
+        {
+          "heading": "鬼石、密信",
+          "type": "bullets",
+          "items": [
+            "鬼石一：蜘蛛区域下方木平台。",
+            "鬼石二：盗匪城塞存档点右侧楼梯通往的小建筑，敌人后方。",
+            "鬼石三：主路下落至楼梯后，打破下方木障碍，检查房间尽头。",
+            "鬼石四：返回捷径附近大楼梯登顶后，向左侧平台投枪。",
+            "间谍信：兵营左路的第一个右侧房间"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "沿途探索配图",
+          "src": "/games/the-first-berserker-khazan/images/blade-to-the-curtain-2.jpg",
+          "alt": "建筑内部的通道与探索场景。",
+          "caption": "建筑内部的通道与探索场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_73.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 73 页"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "后段捷径之后，越过强敌进入院子，检查中央小屋中的小罐。"
+          ]
+        },
+        {
+          "heading": "Maluca 两阶段打法",
+          "type": "bullets",
+          "items": [
+            "第一阶段双巨剑动作较慢，注意延迟；后撤转身会接飞射攻击，背身挑衅时直接上前攻击可能吃反击。",
+            "变形后开场插剑接大范围冲击，先拉开距离；之后刀剑连击明显加快，重新观察节奏。",
+            "刀发光后回拉并跳起可能是抓取，不要普通防御硬接；瞬移斩的发光提示早于实际出手。",
+            "混沌会压低资源上限，及时净化；看到抬头吼叫并出现波纹时，寻找安全机会打断恢复。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "任务后段配图",
+          "src": "/games/the-first-berserker-khazan/images/blade-to-the-curtain-3.jpg",
+          "alt": "玛路卡相关剧情画面。",
+          "caption": "玛路卡相关剧情画面。",
+          "source": "https://www.3dmgame.com/gl/3964895_77.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 77 页"
+        },
+        {
+          "heading": "战后与后续路线",
+          "type": "paragraphs",
+          "items": [
+            "战后回裂隙查看 Oksana 的 Human Xilence 支线；第八章已整理，可从章节导航继续，也可先补齐采石场收集。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "公开资料核对后的文字路线；图片与逐房间路线待补，地名可按英文对照查找。"
+    },
+    "en": {
+      "title": "Veiled Knives",
+      "summary": "Cross the quarry’s spider area and Bandits’ Citadel, check four Soulstones, a Jarling and a spy letter, then face Maluca.",
+      "lead": "Cross the quarry’s spider area and Bandits’ Citadel, check four Soulstones, a Jarling and a spy letter, then face Maluca.",
+      "atGlance": [
+        {
+          "label": "Objective",
+          "value": "Traverse Nadin Quarry and defeat Maluca"
+        },
+        {
+          "label": "Route",
+          "value": "Quarry Camp Site → Cave Leading to the Citadel → Bandits’ Citadel → boss"
+        },
+        {
+          "label": "Collectibles and preparation",
+          "value": "Four Soulstones, Jarling and Letter from a Spy; prepare Chaos cleansing"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Quarry and Bandits’ Citadel",
+          "type": "steps",
+          "items": [
+            "From Quarry Camp Site, clear the large spider that spawns exploding young before checking the lower platform.",
+            "Pass Cave Leading to the Citadel, reach Bandits’ Citadel and open shortcuts back to the Nexus.",
+            "Check the barracks’ left-hand rooms and later hut, then resupply before the boss and equip Chaos-cleansing items."
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "Route illustration",
+          "src": "/games/the-first-berserker-khazan/images/blade-to-the-curtain-1.jpg",
+          "alt": "A mountain passage near a checkpoint.",
+          "caption": "A mountain passage near a checkpoint.",
+          "source": "https://www.3dmgame.com/gl/3964895_71.html",
+          "sourceLabel": "3DM Guide Team · original page 71"
+        },
+        {
+          "heading": "Soulstones, spy letter",
+          "type": "bullets",
+          "items": [
+            "First Soulstone: the lower wooden platform in the spider area.",
+            "Second: behind enemies in the building up the stairs right of Bandits’ Citadel.",
+            "Third: after dropping onto stairs, break the lower wooden barricade and check the room’s far end.",
+            "Fourth: from the top of the broad shortcut staircase, throw toward the left platform.",
+            "Spy letter: first room on the right along the barracks’ left branch."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "Exploration illustration",
+          "src": "/games/the-first-berserker-khazan/images/blade-to-the-curtain-2.jpg",
+          "alt": "An interior passage and exploration scene.",
+          "caption": "An interior passage and exploration scene.",
+          "source": "https://www.3dmgame.com/gl/3964895_73.html",
+          "sourceLabel": "3DM Guide Team · original page 73"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "Beyond the later shortcut and elite, check the small jar in the central hut."
+          ]
+        },
+        {
+          "heading": "Maluca: two-phase battle notes",
+          "type": "bullets",
+          "items": [
+            "Phase-one greatswords are slow and delayed. A turning backstep precedes projectiles; attacking a back-turned taunt can trigger a counter.",
+            "After transformation, the opening sword plunge leads to a large shockwave. Move away, then relearn the faster sword rhythm.",
+            "A glowing drawn-back blade and jump can signal a grab. Do not rely on normal guarding; teleport-slash glow precedes the actual strike.",
+            "Cleanse Chaos before resource limits shrink. When he screams with a visible ripple, seek a safe opportunity to interrupt healing."
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "Later mission illustration",
+          "src": "/games/the-first-berserker-khazan/images/blade-to-the-curtain-3.jpg",
+          "alt": "A story scene related to Maluca.",
+          "caption": "A story scene related to Maluca.",
+          "source": "https://www.3dmgame.com/gl/3964895_77.html",
+          "sourceLabel": "3DM Guide Team · original page 77"
+        },
+        {
+          "heading": "After the battle",
+          "type": "paragraphs",
+          "items": [
+            "Check Oksana’s Human Xilence mission after victory, then continue to the newly available Devoured Village or finish quarry collectibles."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Text notes checked against public guides; screenshots and room-by-room routes remain to be added. Use the English checkpoint names for orientation."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Pell Los Plateau collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-pell-los-plateau-collectible-locations/"
+      },
+      {
+        "name": "Boss battle reference",
+        "url": "https://gamesfuze.com/guides/the-first-berserker-khazan-maluca-boss-complete-guide/"
+      },
+      {
+        "name": "Steam Community — Achievement route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "devoured-village",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "被吞噬的村庄",
+      "summary": "穿过村落、水道与地下实验室，核对隐藏收集后挑战 Elamein。",
+      "lead": "穿过村落、水道与地下实验室，核对隐藏收集后挑战 Elamein。",
+      "atGlance": [
+        {
+          "label": "路线节点",
+          "value": "村落入口 → 地下水道 → 阴森监狱 → 实验室"
+        },
+        {
+          "label": "收集核对",
+          "value": "四块鬼石、罐子精灵、Tanya 研究档案"
+        },
+        {
+          "label": "阅读状态",
+          "value": "路线摘要与参考配图；尚非全收集攻略"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "村落与地下设施",
+          "type": "steps",
+          "items": [
+            "开场先回头检查来路尽头，再从村落入口沿主路进入地下水道。",
+            "沿管道到阴森监狱（Sinister Prison），打开捷径后查看书架房。",
+            "从地下实验室入口继续，注意电梯侧边岩台与管道支路；完成设施路线后挑战 Elamein。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "路线配图",
+          "src": "/games/the-first-berserker-khazan/images/devoured-village-1.jpg",
+          "alt": "村庄入口与存档点附近场景。",
+          "caption": "村庄入口与存档点附近场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_89.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 89 页"
+        },
+        {
+          "heading": "鬼石与档案地标",
+          "type": "bullets",
+          "items": [
+            "鬼石一：开场回头走到来路尽头。",
+            "鬼石二：地下水道出管后直行再左转，打破门前木障碍。",
+            "鬼石三：监狱捷径后的书架房，互动发光书打开暗室；旁边房间还有 Tanya 研究档案一。",
+            "鬼石四：实验室电梯运行时从入口侧到岩台，沿管道检查紫色拉杆附近；谨慎通行。",
+            "关闭大型球体并传送后查看 Tanya 研究档案二。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "沿途探索配图",
+          "src": "/games/the-first-berserker-khazan/images/devoured-village-2.jpg",
+          "alt": "室内通道与探索场景。",
+          "caption": "室内通道与探索场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_97.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 97 页"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "阴森监狱的石床尸体房，经过管道后查看角落小罐。"
+          ]
+        },
+        {
+          "heading": "Elamein 战斗要点",
+          "type": "bullets",
+          "items": [
+            "准备雷电净化道具；不要持续对盾输出，盾吸收攻击后会强化反击。",
+            "绕到背后寻找输出机会，短打后留足防御和闪避精力。",
+            "避免耗尽精力进入疲竭，她可能接强力处决。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "任务后段配图",
+          "src": "/games/the-first-berserker-khazan/images/devoured-village-3.jpg",
+          "alt": "埃拉梅因相关战斗场景。",
+          "caption": "埃拉梅因相关战斗场景。",
+          "source": "https://www.3dmgame.com/gl/3964895_101.html",
+          "sourceLabel": "3DM 攻略组 · 原文第 101 页"
+        },
+        {
+          "heading": "战后关联支线",
+          "type": "paragraphs",
+          "items": [
+            "若已在 Palemion 与 Nadin 推进 Pavel 相关线索，战后查看“Pavel 的遗言”任务，前往 Forgotten Underground Canal；随后继续第九章。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "公开资料核对后的文字攻略，逐房间图文仍待补充。"
+    },
+    "en": {
+      "title": "Devoured Village",
+      "summary": "Traverse the village, water facility and underground laboratory before Elamein.",
+      "lead": "Traverse the village, water facility and underground laboratory before Elamein.",
+      "atGlance": [
+        {
+          "label": "Route",
+          "value": "Village Entrance → Underground Water Facility → Sinister Prison → laboratory"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Four Soulstones, Jarling and Tanya’s research records"
+        },
+        {
+          "label": "Guide status",
+          "value": "Text route; screenshots pending"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Village and underground facilities",
+          "type": "steps",
+          "items": [
+            "At the start, check the approach behind you, then follow the village route into the water facility.",
+            "Follow pipes to Sinister Prison; after opening its shortcut, inspect the bookcase room.",
+            "Continue from Underground Laboratory Entrance, checking the elevator side ledge and pipe branch, then reach Elamein."
+          ],
+          "id": "section-1"
+        },
+        {
+          "id": "reference-image-1",
+          "type": "image",
+          "heading": "Route illustration",
+          "src": "/games/the-first-berserker-khazan/images/devoured-village-1.jpg",
+          "alt": "The village entrance near a checkpoint.",
+          "caption": "The village entrance near a checkpoint.",
+          "source": "https://www.3dmgame.com/gl/3964895_89.html",
+          "sourceLabel": "3DM Guide Team · original page 89"
+        },
+        {
+          "heading": "Soulstone and record landmarks",
+          "type": "bullets",
+          "items": [
+            "First: the dead end behind the mission start.",
+            "Second: after exiting a water-facility pipe, go forward then left through wooden barriers.",
+            "Third: the glowing book reveals a hidden room beyond the prison shortcut; Tanya’s first record is nearby.",
+            "Fourth: step from the moving elevator onto its entrance-side ledge and follow the pipe toward the purple lever.",
+            "Check Tanya’s second record after deactivating the orb and teleporting."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "reference-image-2",
+          "type": "image",
+          "heading": "Exploration illustration",
+          "src": "/games/the-first-berserker-khazan/images/devoured-village-2.jpg",
+          "alt": "An interior passage and exploration scene.",
+          "caption": "An interior passage and exploration scene.",
+          "source": "https://www.3dmgame.com/gl/3964895_97.html",
+          "sourceLabel": "3DM Guide Team · original page 97"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "In the prison corpse room, check the corner jar beyond the pipe."
+          ]
+        },
+        {
+          "heading": "Elamein: battle notes",
+          "type": "bullets",
+          "items": [
+            "Prepare Lightning cleansing; repeatedly striking the shield strengthens her response.",
+            "Seek openings behind her and reserve stamina after short attacks.",
+            "Avoid exhaustion: she can follow with a devastating Brutal Attack."
+          ],
+          "id": "section-3"
+        },
+        {
+          "id": "reference-image-3",
+          "type": "image",
+          "heading": "Later mission illustration",
+          "src": "/games/the-first-berserker-khazan/images/devoured-village-3.jpg",
+          "alt": "A scene related to the Elamein encounter.",
+          "caption": "A scene related to the Elamein encounter.",
+          "source": "https://www.3dmgame.com/gl/3964895_101.html",
+          "sourceLabel": "3DM Guide Team · original page 101"
+        },
+        {
+          "heading": "Related mission after victory",
+          "type": "paragraphs",
+          "items": [
+            "With Pavel’s Palemion and Nadin clues completed, check Pavel’s Final Words at Forgotten Underground Canal, then continue to mission nine."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Public-reference notes, not a room-by-room illustrated walkthrough."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Pell Los Plateau collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-pell-los-plateau-collectible-locations/"
+      },
+      {
+        "name": "Destructoid — Boss battle notes",
+        "url": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/"
+      },
+      {
+        "name": "Steam Community — Achievement route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "unbelievable-truth",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "无法相信的真相",
+      "summary": "深入 Linon 矿山与劳役设施，核对三块鬼石和尤利安项链，再挑战 Shactuka。",
+      "lead": "深入 Linon 矿山与劳役设施，核对三块鬼石和尤利安项链，再挑战 Shactuka。",
+      "atGlance": [
+        {
+          "label": "路线节点",
+          "value": "帝国瞭望哨 → 劳役营 → 地下竖井 → 幽暗洞穴"
+        },
+        {
+          "label": "收集核对",
+          "value": "三块鬼石、罐子精灵、尤利安的项链"
+        },
+        {
+          "label": "阅读状态",
+          "value": "文字路线，截图待补"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "矿山推进路线",
+          "type": "steps",
+          "items": [
+            "从帝国瞭望哨（Imperial Army Lookout Post）进入建筑群，出首栋建筑后先绕右侧检查。",
+            "经过劳役营与电梯，在下降后的牢房支路查找档案和项链。",
+            "沿地下竖井木桥推进，再到幽暗洞穴（Cave of Gloom）；整理瘟疫净化补给后进入首领场地。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "三块鬼石与人物物品",
+          "type": "bullets",
+          "items": [
+            "鬼石一：首栋建筑外绕到背面。",
+            "鬼石二：木桥前看右侧横梁，用投枪击碎。",
+            "鬼石三：幽暗洞穴首个大型红晶石后立即右转，检查混在晶石旁的鬼石。",
+            "尤利安项链：下降电梯后沿斜坡进左房，打开左侧牢门。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "瘟疫岩石房的右墙后方小罐。"
+          ]
+        },
+        {
+          "heading": "Shactuka 战斗要点",
+          "type": "bullets",
+          "items": [
+            "准备瘟疫净化，优先瞄准头部弱点。",
+            "高跳落地后仍要判断续招，在防御与闪避之间切换，避免抢攻。",
+            "带瘟疫的攻击尽量闪避，普通防御或精准防御仍可能积累状态。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "矿山后的任务入口",
+          "type": "paragraphs",
+          "items": [
+            "战后可找 Tristan 与 Yulian 查看关联支线；第十章已整理，可从章节导航继续阅读。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "公开资料核对后的文字攻略，逐房间图文仍待补充。"
+    },
+    "en": {
+      "title": "Inconceivable Truth",
+      "summary": "Explore Linon Mine and its labor facilities, check three Soulstones and Yulian’s Necklace, then face Shactuka.",
+      "lead": "Explore Linon Mine and its labor facilities, check three Soulstones and Yulian’s Necklace, then face Shactuka.",
+      "atGlance": [
+        {
+          "label": "Route",
+          "value": "Imperial Army Lookout Post → Technician Labor Camp → Underground Shaft → Cave of Gloom"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Three Soulstones, Jarling and Yulian’s Necklace"
+        },
+        {
+          "label": "Guide status",
+          "value": "Text route; screenshots pending"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Mine progression",
+          "type": "steps",
+          "items": [
+            "Leave the first lookout-post building and check around its right side.",
+            "Continue through the labor camp and elevator; inspect the cell branches below for records and the necklace.",
+            "Cross the Underground Shaft bridge to Cave of Gloom; prepare Plague cleansing before the boss."
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "Three Soulstones and character items",
+          "type": "bullets",
+          "items": [
+            "First: behind the opening building.",
+            "Second: on the beam right of the wooden bridge, reached with Javelin.",
+            "Third: turn right just beyond the first large red crystal in Cave of Gloom.",
+            "Necklace: take the left room below the elevator slope and open its left cell."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "The jar along the right wall behind the plague rocks."
+          ]
+        },
+        {
+          "heading": "Shactuka: battle notes",
+          "type": "bullets",
+          "items": [
+            "Prepare Plague cleansing and target the head weak point.",
+            "Read follow-ups after the high leap; alternate guarding and dodging rather than attacking early.",
+            "Evade Plague attacks where possible; guards can still accumulate the status."
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "Follow-up missions",
+          "type": "paragraphs",
+          "items": [
+            "Check related missions with Tristan and Yulian after victory, then continue to the newly available Witch’s Castle through chapter navigation."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Public-reference notes, not a room-by-room illustrated walkthrough."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Pell Los Plateau collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-pell-los-plateau-collectible-locations/"
+      },
+      {
+        "name": "Destructoid — Boss battle notes",
+        "url": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/"
+      },
+      {
+        "name": "Steam Community — Achievement route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "city-of-witches",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "魔女之城",
+      "summary": "穿过 Aldevir 水城与城堡，检查五块鬼石、书架暗室和圆盘碎片，最后挑战 Trokka。",
+      "lead": "穿过 Aldevir 水城与城堡，检查五块鬼石、书架暗室和圆盘碎片，最后挑战 Trokka。",
+      "atGlance": [
+        {
+          "label": "路线节点",
+          "value": "商业区 → 水闸 → 混沌区域 → Aldevir 城塞 → 图书馆"
+        },
+        {
+          "label": "收集核对",
+          "value": "五块鬼石、罐子精灵、Aldevir 圆盘碎片"
+        },
+        {
+          "label": "阅读状态",
+          "value": "公开资料文字路线，截图待补"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "水城与城堡推进",
+          "type": "steps",
+          "items": [
+            "从商业区（Commercial District）沿平台下降，第一处落脚阳台先检查后再下行。",
+            "经过水闸（Floodgate）与混沌区域，到 Aldevir 城塞；城堡左右楼梯分别连到高处支路和图书馆。",
+            "整理水属性净化补给，沿主路进入王座房挑战 Trokka。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "五块鬼石与书架暗室",
+          "type": "bullets",
+          "items": [
+            "鬼石一：商业区首个下落阳台前端。",
+            "鬼石二：水闸两段长梯后的树木庭院，打破巷内房门木障。",
+            "鬼石三：混沌区域存档点前的右路尽头门后。",
+            "鬼石四：城堡右楼梯高处路线的梯子左侧。",
+            "鬼石五：图书馆二层桥左侧书架间，互动发光书进入暗室。",
+            "圆盘碎片：Aldevir 城塞大门右侧窄巷地面，保留作后续支线条件。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "图书馆二层桥左侧书架间的角落小罐；旁边发光书另通鬼石暗室。"
+          ]
+        },
+        {
+          "heading": "Trokka 战斗要点",
+          "type": "bullets",
+          "items": [
+            "尽量缩短距离，在安全空档打断施法，伞形武器的爆发攻击按提示反击。",
+            "场内红色水母会造成毒状态，蓝色水母可恢复精力，移动时分清颜色。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "战后任务入口",
+          "type": "paragraphs",
+          "items": [
+            "战后查看新增 Lacrima、Valus 的斧头任务；找 Tristan 查看“单相思”，目的地 Ivy Annex，完成后再继续山脉主线或回访收集。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "依据来源重新整理的文字攻略；精确房间图示后续补充。"
+    },
+    "en": {
+      "title": "Witch’s Castle",
+      "summary": "Cross Aldevir and its castle, checking five Soulstones, a bookcase secret and a disk fragment before Trokka.",
+      "lead": "Cross Aldevir and its castle, checking five Soulstones, a bookcase secret and a disk fragment before Trokka.",
+      "atGlance": [
+        {
+          "label": "Route",
+          "value": "Commercial District → Floodgate → Chaos-Infested Land → Aldevir Citadel → library"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Five Soulstones, a Jarling and Aldevir’s Disk Fragment"
+        },
+        {
+          "label": "Guide status",
+          "value": "Reference-based text route; screenshots pending"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "City and castle route",
+          "type": "steps",
+          "items": [
+            "At the first Commercial District drop, check the balcony before descending farther.",
+            "Pass Floodgate and Chaos-Infested Land to Aldevir Citadel; inspect both castle staircases and the library.",
+            "Prepare Water cleansing and follow the main route into Trokka’s throne room."
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "Five Soulstones and bookcase secret",
+          "type": "bullets",
+          "items": [
+            "First: the initial drop’s balcony.",
+            "Second: the barricaded house near the tree courtyard above Floodgate.",
+            "Third: behind the door at the pre-Chaos right branch’s end.",
+            "Fourth: left of the ladder above the castle’s right stairs.",
+            "Fifth: interact with the glowing book between bookshelves left of the upper library bridge.",
+            "Disk fragment: on the ground in the alley right of Aldevir Citadel’s large door; keep it for later missions."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "The corner jar between bookshelves left of the upper library bridge; the glowing book separately opens a Soulstone room."
+          ]
+        },
+        {
+          "heading": "Trokka: battle notes",
+          "type": "bullets",
+          "items": [
+            "Close the distance and interrupt casting when safe; counter the umbrella Burst Attack.",
+            "Red jellyfish inflict poison; blue ones restore stamina. Identify them before moving through the arena."
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "Follow-up missions",
+          "type": "paragraphs",
+          "items": [
+            "Check Lacrima and Valus’s Axe, and speak to Tristan about Unrequited Love at Ivy Annex. Continue to the mountains or revisit collectibles afterwards."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Original text notes with attributed references; precise room illustrations remain to be added."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Heart of Pell Los collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-heart-of-pell-los-collectible-locations/"
+      },
+      {
+        "name": "Destructoid — Boss battle notes",
+        "url": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/"
+      },
+      {
+        "name": "Steam Community — Achievement route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "hermits-mountains",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "隐士山脉",
+      "summary": "沿 Rephalan 山脉与传送支路探索，核对四块鬼石和吟游诗人房间，最后挑战 Bellerian。",
+      "lead": "沿 Rephalan 山脉与传送支路探索，核对四块鬼石和吟游诗人房间，最后挑战 Bellerian。",
+      "atGlance": [
+        {
+          "label": "路线节点",
+          "value": "雾谷 → 隐士洞穴 → 深渊桥 → 传送回访 → 首领"
+        },
+        {
+          "label": "收集核对",
+          "value": "四块鬼石、罐子精灵、吟游诗人"
+        },
+        {
+          "label": "阅读状态",
+          "value": "公开资料文字路线，截图待补"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "山谷与传送路线",
+          "type": "steps",
+          "items": [
+            "沿山谷过石桥，再到隐士洞穴（Hermit’s Cave）；把右侧吟游诗人房间与主路分开记下。",
+            "经过深渊桥（Abyssal Bridge）和传送段落，每次回到洞穴重新核对支路，再沿最终路线进入 Bellerian 场地。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "鬼石与吟游诗人房间",
+          "type": "bullets",
+          "items": [
+            "鬼石一：第一座石桥过桥后右侧短路尽头。",
+            "鬼石二：吟游诗人路线附近第一段楼梯上方，右侧高台用投枪击碎。",
+            "鬼石三：深渊桥雾门前左路，水中小岩台用投枪击碎。",
+            "鬼石四：再次传送回隐士洞穴后，下长梯再上短梯走右路，查看蜘蛛和蛛网后方。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "打破右侧木障碍落入吟游诗人房间，检查他身后左侧小罐。"
+          ]
+        },
+        {
+          "heading": "Bellerian 战斗要点",
+          "type": "bullets",
+          "items": [
+            "准备火、土、雷属性净化道具，观察实际招式再选择补给。",
+            "寻找施法空档打断；召唤骷髅时优先处理蓄能目标，减少不死增援。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "战后关联任务",
+          "type": "paragraphs",
+          "items": [
+            "战后与 Bellerian 查看“精准的 Atlante”支线；第十二章已整理，可从章节导航继续阅读。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "依据来源重新整理的文字攻略；精确房间图示后续补充。"
+    },
+    "en": {
+      "title": "Hermit Mountains",
+      "summary": "Explore Rephalan’s ravine and teleport branches, check four Soulstones and the Bard’s room, then face Bellerian.",
+      "lead": "Explore Rephalan’s ravine and teleport branches, check four Soulstones and the Bard’s room, then face Bellerian.",
+      "atGlance": [
+        {
+          "label": "Route",
+          "value": "Misty Canyon → Hermit’s Cave → Abyssal Bridge → teleport revisit → boss"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Four Soulstones, Jarling and Bard"
+        },
+        {
+          "label": "Guide status",
+          "value": "Reference-based text route; screenshots pending"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Ravine and teleport route",
+          "type": "steps",
+          "items": [
+            "Cross the ravine’s stone bridge toward Hermit’s Cave; mark the Bard’s right-hand branch separately.",
+            "Continue through Abyssal Bridge and teleports, checking branches whenever you return to the cave before reaching Bellerian."
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "Soulstones and Bard’s room",
+          "type": "bullets",
+          "items": [
+            "First: the short right path after the stone bridge.",
+            "Second: the high ledge right of the first stairs near the Bard route.",
+            "Third: a small rock in the water on the left path before Abyssal Bridge’s fog gate.",
+            "Fourth: after the later cave teleport, descend the long stairs, climb the short stairs and check behind the spider on the right."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "Break the right barricade and drop into the Bard’s room; inspect the jar behind him on the left."
+          ]
+        },
+        {
+          "heading": "Bellerian: battle notes",
+          "type": "bullets",
+          "items": [
+            "Prepare Fire, Earth and Lightning cleansing, using items according to the attacks encountered.",
+            "Interrupt casting during safe openings and disrupt skull-energy buildup to limit undead reinforcements."
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "Related mission after victory",
+          "type": "paragraphs",
+          "items": [
+            "Check Atlante the Precise with Bellerian after victory, then continue to the newly available Corruptors’ Fortress."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Original text notes with attributed references; precise room illustrations remain to be added."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Heart of Pell Los collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-heart-of-pell-los-collectible-locations/"
+      },
+      {
+        "name": "Destructoid — Boss battle notes",
+        "url": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/"
+      },
+      {
+        "name": "Steam Community — Achievement route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "cursed-fortress",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "受诅咒者的要塞",
+      "summary": "穿过 Vaisar 要塞与投石机桥段，检查五块鬼石、预言档案和圆盘碎片，再挑战 Skalpel。",
+      "lead": "穿过 Vaisar 要塞与投石机桥段，检查五块鬼石、预言档案和圆盘碎片，再挑战 Skalpel。",
+      "atGlance": [
+        {
+          "label": "路线节点",
+          "value": "破损房间 → 巨门 → Vaisar 瞭望塔 → Vampire Gate"
+        },
+        {
+          "label": "收集核对",
+          "value": "五块鬼石、罐子精灵、预言三、Vaisar 圆盘碎片"
+        },
+        {
+          "label": "阅读状态",
+          "value": "文字路线，图片待补"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "要塞与桥段推进",
+          "type": "steps",
+          "items": [
+            "从破损房间（Breached Room）穿过摆锤与牢房路线，到巨门（Massive Gate）；顺路检查书架后楼梯与强敌牢房。",
+            "沿 Vaisar 瞭望塔桥段探索投石机附近支路，打开巨门后继续到 Vampire Gate，再进入最终首领场地。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "五块鬼石与圆盘碎片",
+          "type": "bullets",
+          "items": [
+            "鬼石一：后段长廊左房尽头。",
+            "鬼石二：瞭望塔大桥后的投石机梯子旁小屋，箱子后方。",
+            "鬼石三：分岔楼梯走左再右，取得预言三后查看阳台。",
+            "鬼石四：下一桥段左楼梯投石机旁小屋。",
+            "鬼石五：Vampire Gate 入城后，同一墙面的另一侧假墙。圆盘碎片在左墙小凹室。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "巨门后的塔楼中央井道小木台，斜向控制落脚后打破小罐。"
+          ]
+        },
+        {
+          "heading": "Skalpel 战斗要点",
+          "type": "bullets",
+          "items": [
+            "准备瘟疫净化，避免反复被刀击中积累首领狂暴状态。",
+            "仪式开始后寻找机会攻击棺木，尽量在血液注入前打断。",
+            "巨剑攻击可练习精准防御，沉重棺击优先闪避；不要用同一种节奏应对全部招式。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "战后任务条件",
+          "type": "paragraphs",
+          "items": [
+            "战后找 Tristan 查看“最后的哨兵”，找刀锋幻影查看“超越者之剑”；另有 Crimson Trace 任务可检查。保留圆盘碎片，再继续剧院主线。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "依据公开资料核对的文字攻略，精确房间图示待补充。"
+    },
+    "en": {
+      "title": "Corruptors’ Fortress",
+      "summary": "Traverse Vaisar’s fortress and trebuchet bridges, checking five Soulstones, a prophecy and disk fragment before Skalpel.",
+      "lead": "Traverse Vaisar’s fortress and trebuchet bridges, checking five Soulstones, a prophecy and disk fragment before Skalpel.",
+      "atGlance": [
+        {
+          "label": "Route",
+          "value": "Breached Room → Massive Gate → Vaisar Watchtower → Vampire Gate"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Five Soulstones, Jarling, Prophecy 3 and Vaisar’s Disk Fragment"
+        },
+        {
+          "label": "Guide status",
+          "value": "Text route; images pending"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Fortress and bridge route",
+          "type": "steps",
+          "items": [
+            "From Breached Room, pass swinging hazards and cells to Massive Gate; check the bookcase stairs and elite-enemy cell.",
+            "Explore branches near the watchtower trebuchets, open Massive Gate and continue through Vampire Gate to the boss."
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "Five Soulstones and disk fragment",
+          "type": "bullets",
+          "items": [
+            "First: far end of the left room off the later hallway.",
+            "Second: behind boxes near the watchtower trebuchet ladder.",
+            "Third: balcony after Prophecy 3 at the split stairs.",
+            "Fourth: the room left of the next bridge’s trebuchet.",
+            "Fifth: the false wall opposite the left alcove inside Vampire Gate. The disk fragment is in that alcove."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "The jar on the central-shaft platform in the tower beyond Massive Gate; descend carefully at an angle."
+          ]
+        },
+        {
+          "heading": "Skalpel: battle notes",
+          "type": "bullets",
+          "items": [
+            "Prepare Plague cleansing and avoid repeated blade hits that build his Berserk state.",
+            "Attack the coffin during the ritual before blood infusion completes.",
+            "Practise Brink Guards against greatsword attacks and evade heavy coffin blows; vary your response."
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "Post-battle mission conditions",
+          "type": "paragraphs",
+          "items": [
+            "After victory, check Last Sentinel with Tristan and Transcendental Sword with Blade Phantom, plus Crimson Trace. Keep the fragment and continue to the theatre."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Public-reference notes; precise room illustrations remain to be added."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Heart of Pell Los collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-heart-of-pell-los-collectible-locations/"
+      },
+      {
+        "name": "Destructoid — Boss battle notes",
+        "url": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/"
+      },
+      {
+        "name": "Steam Community — Achievement route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "strange-melody",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "诡异的旋律",
+      "summary": "沿 Rovelion 剧院的宴会厅、传送画与隐藏房间推进，核对四块鬼石和最后一处圆盘碎片。",
+      "lead": "沿 Rovelion 剧院的宴会厅、传送画与隐藏房间推进，核对四块鬼石和最后一处圆盘碎片。",
+      "atGlance": [
+        {
+          "label": "路线节点",
+          "value": "宴会厅入口 → 传送画 → 博物馆路 → 中央剧院"
+        },
+        {
+          "label": "收集核对",
+          "value": "四块鬼石、罐子精灵、圆盘碎片、Hismar Conquest 2"
+        },
+        {
+          "label": "阅读状态",
+          "value": "文字路线，图片待补"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "剧院路线与传送画",
+          "type": "steps",
+          "items": [
+            "从宴会厅入口（Banquet Hall Entrance）处理幽灵火力，探索左门房间；假地板中央会下落，先检查外围。",
+            "桥前通道左墙可打破，进入传送画找钢琴旁吟游诗人；回来后沿博物馆路线取得大剧院钥匙。",
+            "开门后检查隐藏支路和左阳台档案，再进入舞台挑战 Princess Ilyna。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "鬼石、最后碎片",
+          "type": "bullets",
+          "items": [
+            "鬼石一：宴会厅左门房间假地板下层。",
+            "鬼石二：传送画目的地钢琴后方。",
+            "鬼石三：博物馆路强敌后的壁炉上方，用投枪。",
+            "鬼石四：大剧院钥匙取得处右侧假墙暗室。",
+            "圆盘碎片：上述隐藏通道开门后正前方地面",
+            "Hismar Conquest 2：中央剧院左阳台尽头；这是金色档案，离开前核对。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "后续两名强敌门外右转，打破雕像后的墙，检查暗室小罐。"
+          ]
+        },
+        {
+          "heading": "Princess Ilyna 战斗要点",
+          "type": "bullets",
+          "items": [
+            "准备混沌净化，细剑攻击可侧向或斜向避开，再短打反击。",
+            "声波攻击先识别合唱队位置，再选移动方向；不要只盯着首领本人。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "碎片核对与后续",
+          "type": "paragraphs",
+          "items": [
+            "核对三处圆盘碎片，后续完成帝国的末日再找 Daphrona 查看誓约；第十四章已整理，可从章节导航继续。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "依据公开资料核对的文字攻略，精确房间图示待补充。"
+    },
+    "en": {
+      "title": "Strange Melody",
+      "summary": "Follow Rovelion’s banquet hall, teleport painting and hidden rooms, checking four Soulstones and the final disk fragment.",
+      "lead": "Follow Rovelion’s banquet hall, teleport painting and hidden rooms, checking four Soulstones and the final disk fragment.",
+      "atGlance": [
+        {
+          "label": "Route",
+          "value": "Banquet Hall Entrance → teleport painting → Path to the Museum → Grand Central Theater"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Four Soulstones, Jarling, disk fragment and Hismar Conquest 2"
+        },
+        {
+          "label": "Guide status",
+          "value": "Text route; images pending"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Theatre route and teleport painting",
+          "type": "steps",
+          "items": [
+            "Clear specter fire near Banquet Hall Entrance and inspect the left-door room; its center is a false floor.",
+            "Break the left wall before the bridge for a painting leading to the Bard by a piano; return and continue toward the Grand Theater Key.",
+            "Check hidden branches and the left balcony record before facing Princess Ilyna on stage."
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "Soulstones and final fragment",
+          "type": "bullets",
+          "items": [
+            "First: below the banquet-room false floor.",
+            "Second: behind the piano at the painting destination.",
+            "Third: above the fireplace after the museum-route elite, reached with Javelin.",
+            "Fourth: behind the false wall right of the key pickup.",
+            "Fragment: on the ground beyond that hidden hallway’s gate.",
+            "Hismar Conquest 2: the end of Grand Central Theater’s left balcony; check this gold record before leaving."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "Turn right past the two later elites, break the wall behind the statue and inspect the hidden-room jar."
+          ]
+        },
+        {
+          "heading": "Princess Ilyna: battle notes",
+          "type": "bullets",
+          "items": [
+            "Prepare Chaos cleansing, evade rapier strikes sideways or diagonally, then punish briefly.",
+            "Locate the choir before choosing a direction against sound waves; watch more than the boss."
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "Fragment check and follow-up",
+          "type": "paragraphs",
+          "items": [
+            "Check all three disk fragments and ask Daphrona about The Vow after Fall of the Empire. Mission fourteen is now available through chapter navigation."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Public-reference notes; precise room illustrations remain to be added."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Heart of Pell Los collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-heart-of-pell-los-collectible-locations/"
+      },
+      {
+        "name": "Destructoid — Boss battle notes",
+        "url": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/"
+      },
+      {
+        "name": "Steam Community — Achievement route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "empires-end",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "帝国的末日",
+      "summary": "旧城区 → 新城区 → 教堂 → Hismar",
+      "lead": "旧城区 → 新城区 → 教堂 → Hismar",
+      "atGlance": [
+        {
+          "label": "路线节点",
+          "value": "旧城区 → 新城区 → 教堂 → Hismar"
+        },
+        {
+          "label": "收集核对",
+          "value": "五块鬼石、罐子精灵、两份金色档案、吟游诗人"
+        },
+        {
+          "label": "阅读状态",
+          "value": "公开资料文字攻略，图片待补"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "帝都推进路线",
+          "type": "steps",
+          "items": [
+            "从旧城区（Old Town）检查电梯旁背向小巷，再沿建筑与混沌岩石庭院推进。",
+            "经过下水道瀑布、新城区（New Town）和教堂（Church），打开返回捷径后整理补给，再到中央场地。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "鬼石、档案与吟游诗人",
+          "type": "bullets",
+          "items": [
+            "鬼石一：旧城区电梯附近左巷尽头。",
+            "鬼石二：较大的混沌岩石区域右侧凹室。",
+            "鬼石三：下水道下层瀑布后。",
+            "鬼石四：教堂大雕像后。",
+            "鬼石五：教堂捷径后的上行短阶顶端。",
+            "金色档案：后续建筑正前房间及混沌庭院喷泉前；Reese 档案编号在资料间有差异，以菜单名称核对。",
+            "吟游诗人：新城区外门左、内门右的房间，打开右门对话"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "外墙破洞卧室内的角落小罐，离开房间前检查。"
+          ]
+        },
+        {
+          "heading": "Hismar 战斗要点",
+          "type": "bullets",
+          "items": [
+            "优先破坏角，再集中攻击额头弱点；虚弱飞行时用投枪使其落地。",
+            "身体紫光提示混沌攻击，准备净化并优先闪避。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "战后支线整理",
+          "type": "paragraphs",
+          "items": [
+            "查看“卡戎的锁链”、Disobedience 与 Birth of Evil。三块圆盘碎片齐全后找 Daphrona 接“誓约”，再进入圣所主线。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "依据来源整理的文字攻略；截图及装备数值仍待实机补充。"
+    },
+    "en": {
+      "title": "Fall of the Empire",
+      "summary": "Old Town → New Town → Church → Hismar",
+      "lead": "Old Town → New Town → Church → Hismar",
+      "atGlance": [
+        {
+          "label": "Route",
+          "value": "Old Town → New Town → Church → Hismar"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Five Soulstones, Jarling, two gold records and Bard"
+        },
+        {
+          "label": "Guide status",
+          "value": "Reference-based text walkthrough; images pending"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Capital route",
+          "type": "steps",
+          "items": [
+            "Check the alley behind Old Town’s elevator approach, then follow buildings and chaos-rock courtyards.",
+            "Pass the sewer waterfall, New Town and Church, open the shortcut and prepare for the central arena."
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "Soulstones, records and Bard",
+          "type": "bullets",
+          "items": [
+            "First: the Old Town left-alley end.",
+            "Second: the right alcove in the larger chaos-rock area.",
+            "Third: behind the lower sewer waterfall.",
+            "Fourth: behind the church statue.",
+            "Fifth: atop the short stairs beyond the church shortcut.",
+            "Gold records: the forward room in the later building and before the courtyard fountain; match Reese record names to your menu, as source numbering differs.",
+            "Bard: the right interior door in New Town’s split-door room."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "The corner jar in the bedroom with the outer-wall hole; inspect it before leaving."
+          ]
+        },
+        {
+          "heading": "Hismar: battle notes",
+          "type": "bullets",
+          "items": [
+            "Break the horn, then target the forehead; use Javelin during weakened flight.",
+            "Purple glow warns of Chaos attacks; prepare cleansing and evade them."
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "Post-battle missions",
+          "type": "paragraphs",
+          "items": [
+            "Check Charon’s Chains, Disobedience and Birth of Evil. With three disk fragments, ask Daphrona for The Vow before the sanctuary."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Text guide with attributed references; screenshots and item values remain to be verified in-game."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Vitalon collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-vitalon-capital-of-the-empire-collectible-locations/"
+      },
+      {
+        "name": "Destructoid — Boss battle notes",
+        "url": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/"
+      },
+      {
+        "name": "Steam Community — Completion route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "bloodstained-sanctuary",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "血染的圣所",
+      "summary": "神殿路径 → 主入口 → 屋顶与横梁 → Reese",
+      "lead": "神殿路径 → 主入口 → 屋顶与横梁 → Reese",
+      "atGlance": [
+        {
+          "label": "路线节点",
+          "value": "神殿路径 → 主入口 → 屋顶与横梁 → Reese"
+        },
+        {
+          "label": "收集核对",
+          "value": "五块鬼石、罐子精灵、两份 Reese 金色档案"
+        },
+        {
+          "label": "阅读状态",
+          "value": "公开资料文字攻略，图片待补"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "神殿推进路线",
+          "type": "steps",
+          "items": [
+            "沿神殿路径（Path to the Temple）穿过喷泉庭院和电梯，进入楼层祭坛房，再到主入口。",
+            "开启入口捷径后检查屋顶横梁与高处梯子，再挑战 Reese；战斗有两阶段，保留后段恢复补给。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "五块鬼石与金色档案",
+          "type": "bullets",
+          "items": [
+            "鬼石一：喷泉庭院尽头门内右侧。",
+            "鬼石二：二层祭坛房外左阳台尽头。",
+            "鬼石三：主入口右走廊立即右转，打破假墙。",
+            "鬼石四：捷径屋顶下落后左侧低屋顶。",
+            "鬼石五：电梯上行至横梁区，对面高台用投枪",
+            "Reese 金色档案分别查看二层祭坛与捷径后的木横梁中央，离开前核对金色收集菜单。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "监牢房右侧最后一扇门内的小罐，先处理开门伏兵。"
+          ]
+        },
+        {
+          "heading": "Reese 两阶段打法",
+          "type": "bullets",
+          "items": [
+            "利用场地墙壁挡投枪，翼冲锋可精准防御使其失衡。",
+            "混沌蓄能时持续寻找攻击机会打断；第二阶段双镰刀更危险，保留防御与闪避精力。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "终章之前",
+          "type": "paragraphs",
+          "items": [
+            "准备真结局时先核对十五份金色档案，并完成关键支线，尤其“超越者之剑”和“卡戎的锁链”。全支线清理可作为稳妥收尾方案，不能把鬼石全收集当作结局条件。"
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "依据来源整理的文字攻略；截图及装备数值仍待实机补充。"
+    },
+    "en": {
+      "title": "Bloodied Sanctuary",
+      "summary": "Path to the Temple → Main Entrance → roofs and rafters → Reese",
+      "lead": "Path to the Temple → Main Entrance → roofs and rafters → Reese",
+      "atGlance": [
+        {
+          "label": "Route",
+          "value": "Path to the Temple → Main Entrance → roofs and rafters → Reese"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Five Soulstones, Jarling and two Reese gold records"
+        },
+        {
+          "label": "Guide status",
+          "value": "Reference-based text walkthrough; images pending"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Temple route",
+          "type": "steps",
+          "items": [
+            "Follow the fountain courtyard and elevator to the upstairs altar, then Main Entrance.",
+            "Open the shortcut, check roof beams and the upper ladder, then face Reese with recovery reserved for both phases."
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "Five Soulstones and gold records",
+          "type": "bullets",
+          "items": [
+            "First: right inside the far courtyard door.",
+            "Second: the left balcony beyond the upstairs altar.",
+            "Third: the false wall immediately right in Main Entrance’s right hallway.",
+            "Fourth: the lower-left roof after the shortcut drop.",
+            "Fifth: opposite ledge in the upper rafters, reached with Javelin.",
+            "Check Reese gold records at the upstairs altar and center of the shortcut beams; verify the gold-collection menu before leaving."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "The jar inside the last right-hand cell; handle the ambush first."
+          ]
+        },
+        {
+          "heading": "Reese: two-phase notes",
+          "type": "bullets",
+          "items": [
+            "Use arena walls against spear throws; Brink Guard wing charges to stagger her.",
+            "Interrupt Chaos buildup when safe; reserve stamina for the more dangerous twin-scythe phase."
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "Before the finale",
+          "type": "paragraphs",
+          "items": [
+            "For the true route, check all fifteen gold records and key bonus missions, especially Transcendental Sword and Charon’s Chains. Clearing all bonus missions is a conservative cleanup plan; Soulstone completion is not an ending prerequisite."
+          ],
+          "id": "section-4"
+        }
+      ],
+      "note": "Text guide with attributed references; screenshots and item values remain to be verified in-game."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Vitalon collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-vitalon-capital-of-the-empire-collectible-locations/"
+      },
+      {
+        "name": "Destructoid — Boss battle notes",
+        "url": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/"
+      },
+      {
+        "name": "Steam Community — Completion route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      }
+    ]
+  },
+  {
+    "slug": "lord-of-chaos",
+    "kind": "main",
+    "status": "published",
+    "zh": {
+      "title": "混沌之主",
+      "summary": "大教堂入口 → 旋转机关 → Corrupted Lounge → 皇宫花园 → Ozma",
+      "lead": "大教堂入口 → 旋转机关 → Corrupted Lounge → 皇宫花园 → Ozma",
+      "atGlance": [
+        {
+          "label": "路线节点",
+          "value": "大教堂入口 → 旋转机关 → Corrupted Lounge → 皇宫花园 → Ozma"
+        },
+        {
+          "label": "收集核对",
+          "value": "四块鬼石、罐子精灵、Daphrona 结局选择"
+        },
+        {
+          "label": "阅读状态",
+          "value": "公开资料文字攻略，图片待补"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "皇宫推进与旋转机关",
+          "type": "steps",
+          "items": [
+            "从大教堂入口（Cathedral Entrance）打开隐藏阶梯，下行检查左路，再沿路线到压力板房间。",
+            "踩板旋转房间后，从原来进入的门出去核对新通道；到 Corrupted Lounge 先查看结局条件，再与 Daphrona 对话。",
+            "继续经弯曲阳台、皇宫花园和地下室到最后场地，进入前补充恢复道具。"
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "最后四块鬼石",
+          "type": "bullets",
+          "items": [
+            "鬼石一：隐藏階梯下左路尽头。",
+            "鬼石二：旋转房间后从入口门返回的新通道。",
+            "鬼石三：Corrupted Lounge 后弯曲阳台柱顶，用投枪。",
+            "鬼石四：地下室返回皇宫后的正前房间，下一门前左侧假墙。"
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "罐子精灵",
+          "type": "paragraphs",
+          "items": [
+            "皇宫花园上阶后右侧阳台尽头的小罐。"
+          ]
+        },
+        {
+          "heading": "Ozma 战斗与后续阶段",
+          "type": "bullets",
+          "items": [
+            "第一阶段优先处理地面混沌长枪，避免堆积；准备火、水与混沌净化，近距离观察连击。",
+            "第二阶段实体攻击与混沌招式分开应对，混沌攻击优先闪避；不要因第一条血量耗尽而停止观察。",
+            "部分结局路线还有第三阶段，保留恢复、反击爆发攻击并在疲竭窗口处决。三阶段本身不能单独确认真结局。"
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "结局选择与收尾",
+          "type": "paragraphs",
+          "items": [
+            "真结局准备：十五份金色档案与关键支线完成后，在 Daphrona 对话中确认选择“I must know the truth”。选项未出现时先回查收集和支线，不要把任意选项当作同一路线。",
+            "战胜最终首领后完成记忆房间的互动与剧情。普通、锁链及真结局由分支选择和前置决定，不能只用首领阶段数判断。"
+          ],
+          "id": "section-4"
+        },
+        {
+          "heading": "通关后回访与新周目",
+          "type": "paragraphs",
+          "items": [
+            "通关后先在当前周目回访遗漏收集；开始新周目前核对任务菜单，确认确实要进入第二旅程。本站十六章文字路线已齐，截图与完整支线仍继续补充。"
+          ],
+          "id": "section-5"
+        }
+      ],
+      "note": "依据来源整理的文字攻略；截图及装备数值仍待实机补充。"
+    },
+    "en": {
+      "title": "Master of Chaos",
+      "summary": "Cathedral Entrance → rotating room → Corrupted Lounge → Imperial Palace Garden → Ozma",
+      "lead": "Cathedral Entrance → rotating room → Corrupted Lounge → Imperial Palace Garden → Ozma",
+      "atGlance": [
+        {
+          "label": "Route",
+          "value": "Cathedral Entrance → rotating room → Corrupted Lounge → Imperial Palace Garden → Ozma"
+        },
+        {
+          "label": "Collectibles",
+          "value": "Four Soulstones, Jarling and Daphrona’s ending choice"
+        },
+        {
+          "label": "Guide status",
+          "value": "Reference-based text walkthrough; images pending"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Palace and rotation mechanism",
+          "type": "steps",
+          "items": [
+            "Open the hidden stairs from Cathedral Entrance, inspect the lower-left branch and reach the pressure-plate room.",
+            "Rotate the room, exit through the entrance door and check the revealed path. At Corrupted Lounge, review ending requirements before Daphrona’s dialogue.",
+            "Continue through the curved balcony, palace garden and basement; replenish recovery before the final arena."
+          ],
+          "id": "section-1"
+        },
+        {
+          "heading": "Final four Soulstones",
+          "type": "bullets",
+          "items": [
+            "First: the lower-left hidden-stair path.",
+            "Second: the path exposed behind the rotated room’s entrance.",
+            "Third: pillar above the curved balcony.",
+            "Fourth: the left false wall before the next door in the forward room after the basement."
+          ],
+          "id": "section-2"
+        },
+        {
+          "id": "jarlings",
+          "heading": "Jarling location",
+          "type": "paragraphs",
+          "items": [
+            "The jar at the end of Imperial Palace Garden’s upper-right balcony."
+          ]
+        },
+        {
+          "heading": "Ozma and later phases",
+          "type": "bullets",
+          "items": [
+            "Clear embedded Chaos spears in phase one; prepare Fire, Water and Chaos cleansing and read strings at close range.",
+            "Distinguish physical and Chaos attacks in phase two, favouring evasion for Chaos; remain alert after a health bar empties.",
+            "Some ending routes add phase three. Reserve healing, counter Burst Attacks and use exhaustion openings for Brutal Attacks; three phases alone do not prove the true ending."
+          ],
+          "id": "section-3"
+        },
+        {
+          "heading": "Ending choice and conclusion",
+          "type": "paragraphs",
+          "items": [
+            "With fifteen gold records and key bonus missions complete, confirm “I must know the truth” with Daphrona. If absent, recheck collection and missions before proceeding.",
+            "After victory, complete the memory-room interactions and scene. Ending prerequisites and dialogue choices distinguish the branches, not boss phase count alone."
+          ],
+          "id": "section-4"
+        },
+        {
+          "heading": "Postgame cleanup and New Game+",
+          "type": "paragraphs",
+          "items": [
+            "Replay missions for missed collectibles before starting New Game+. Check the mission menus before committing to the second journey. All sixteen text routes are available; screenshots and full side-mission guides remain in progress."
+          ],
+          "id": "section-5"
+        }
+      ],
+      "note": "Text guide with attributed references; screenshots and item values remain to be verified in-game."
+    },
+    "updatedAt": "2026-10-13",
+    "sources": [
+      {
+        "name": "PowerPyx — Vitalon collectibles",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-vitalon-capital-of-the-empire-collectible-locations/"
+      },
+      {
+        "name": "Destructoid — Boss battle notes",
+        "url": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/"
+      },
+      {
+        "name": "Steam Community — Completion route",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950"
+      },
+      {
+        "name": "Neoseeker — Imperial Palace and endings",
+        "url": "https://www.neoseeker.com/the-first-berserker-khazan/Imperial_Palace"
+      },
+      {
+        "name": "Ozma phase-three reference",
+        "url": "https://bai-gaming.com/how-to-beat-ozma-the-first-berserker-khazan/"
+      }
+    ]
+  }
+]

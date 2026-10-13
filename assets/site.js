@@ -4,7 +4,7 @@
   const root = en ? '/en/' : '/';
   const tr = (zh, english) => en ? english : zh;
   const zhPath = location.pathname.replace(/^\/en\//, '/');
-  const paired = zhPath === '/' || /^\/(catalog|games|notes|updates|about|search)\/$/.test(zhPath) || /^\/(catalog|notes|updates)\/[^/]+\/$/.test(zhPath);
+  const paired = zhPath === '/' || /^\/(catalog|games|notes|news|updates|about|search)\/$/.test(zhPath) || /^\/(catalog|notes|news|updates)\/[^/]+\/$/.test(zhPath);
   const alternate = document.querySelector(`link[rel="alternate"][hreflang="${en ? 'zh-CN' : 'en'}"]`);
   const languageUrl = (alternate ? new URL(alternate.href).pathname : (en ? zhPath : '/en' + (paired ? zhPath : '/'))) + location.search + location.hash;
   const sectionNames = {Walkthrough:'图文流程',Maps:'地图',Bosses:'Boss 攻略',Abilities:'能力',Collectibles:'收集',Systems:'系统',Spirits:'灵魂',Relics:'遗物'};
@@ -18,13 +18,13 @@
 
   function languageSwitch() {
     const self = location.pathname + location.search + location.hash;
-    return `<details class="language-menu"><summary aria-label="${tr('选择语言','Choose language')}"><span aria-hidden="true">◎</span> ${en?'English':'简体中文'} <span class="language-chevron" aria-hidden="true">⌄</span></summary><div class="language-menu-options" role="group" aria-label="${tr('语言','Language')}"><a href="${en?languageUrl:self}" lang="zh-CN" hreflang="zh-CN"${en?'':' aria-current="page"'}>简体中文</a><a href="${en?self:languageUrl}" lang="en" hreflang="en"${en?' aria-current="page"':''}>English</a></div></details>`;
+    return `<details class="language-menu"><summary aria-label="${tr('选择语言','Choose language')}"><span aria-hidden="true">◎</span> ${en?'English':'简体中文'} <span class="language-chevron" aria-hidden="true"></span></summary><div class="language-menu-options" role="group" aria-label="${tr('语言','Language')}"><a href="${en?languageUrl:self}" lang="zh-CN" hreflang="zh-CN"${en?'':' aria-current="page"'}>简体中文</a><a href="${en?self:languageUrl}" lang="en" hreflang="en"${en?' aria-current="page"':''}>English</a></div></details>`;
   }
   function header() {
-    return `<header class="site-header"><nav class="wrap"><a class="brand" href="${root}" aria-label="${tr('GAME NOTE 首页','GAME NOTE home')}"><i>✦</i>GAME<span>NOTE</span>.CC</a><div class="nav" id="site-menu" aria-label="${tr('主导航','Main navigation')}"><a href="${root}catalog/">${tr('图鉴','Catalog')}</a><a href="${root}games/">${tr('攻略','Guides')}</a><a href="${root}notes/">${tr('手记','Notes')}</a><a href="${root}updates/">${tr('更新','Updates')}</a><a href="${root}about/">${tr('关于','About')}</a><a href="${root}search/">${tr('搜索','Search')}</a></div>${languageSwitch()}<button class="menu-toggle" aria-controls="site-menu" aria-expanded="false" type="button">${tr('菜单','Menu')}</button></nav></header>`;
+    return `<header class="site-header"><nav class="wrap"><a class="brand" href="${root}" aria-label="${tr('GAME NOTE 首页','GAME NOTE home')}"><i>✦</i>GAME<span>NOTE</span>.CC</a><div class="nav" id="site-menu" aria-label="${tr('主导航','Main navigation')}"><a href="${root}news/">${tr('动态','News')}</a><a href="${root}catalog/">${tr('图鉴','Catalog')}</a><a href="${root}games/">${tr('攻略','Guides')}</a><a href="${root}about/">${tr('关于','About')}</a><a href="${root}search/">${tr('搜索','Search')}</a></div>${languageSwitch()}<button class="menu-toggle" aria-controls="site-menu" aria-expanded="false" type="button">${tr('菜单','Menu')}</button></nav></header>`;
   }
   function footer() {
-    return `<footer><div class="wrap footer"><div><b>GAME NOTE</b><p>${tr('从实际游玩出发，认真整理游戏攻略。','Guides made from actually playing the game.')}</p></div><div class="footer-links"><a href="${root}catalog/">${tr('图鉴','Catalog')}</a><a href="${root}games/">${tr('攻略','Guides')}</a><a href="${root}notes/">${tr('手记','Notes')}</a><a href="${root}updates/">${tr('更新','Updates')}</a><a href="${root}about/">${tr('关于','About')}</a><a href="/privacy.html">${tr('隐私','Privacy (Chinese)')}</a></div></div></footer>`;
+    return `<footer><div class="wrap footer"><div><b>GAME NOTE</b><p>${tr('从实际游玩出发，认真整理游戏攻略。','Guides made from actually playing the game.')}</p></div><div class="footer-links"><a href="${root}news/">${tr('动态','News')}</a><a href="${root}catalog/">${tr('图鉴','Catalog')}</a><a href="${root}games/">${tr('攻略','Guides')}</a><a href="${root}about/">${tr('关于','About')}</a><a href="/privacy.html">${tr('隐私','Privacy (Chinese)')}</a></div></div></footer>`;
   }
   function gameCard(game) {
     const title = en ? game.title : game.titleZh;

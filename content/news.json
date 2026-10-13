@@ -1,0 +1,318 @@
+[
+  {
+    "slug": "belmonts-curse-demo",
+    "type": "news",
+    "date": "2026-10-01",
+    "game": "castlevania-belmonts-curse",
+    "source": {
+      "label": "KONAMI",
+      "url": "https://www.konami.com/games/us/en/topics/3519/"
+    },
+    "zh": {
+      "title": "《恶魔城：贝尔蒙特的诅咒》推出试玩版",
+      "summary": "Konami 发布了游戏试玩版，正式版预计于 2026 年 10 月 15 日推出。",
+      "body": [
+        "Konami 于 2026 年 10 月 1 日宣布，《恶魔城：贝尔蒙特的诅咒》试玩版已在 PlayStation 5、Nintendo Switch、Xbox Series X|S 和 Steam 推出，可体验游戏前期内容。",
+        "官方说明，试玩版存档可以继承到正式版，但需要在同一平台、同一账号游玩，并保留试玩版存档。正式版定于 2026 年 10 月 15 日推出。具体限制与更新条件请查看下方官方公告。"
+      ]
+    },
+    "en": {
+      "title": "Castlevania: Belmont’s Curse demo is available",
+      "summary": "Konami has released a playable demo ahead of the planned October 15, 2026 launch.",
+      "body": [
+        "Konami announced on October 1, 2026 that a demo of Castlevania: Belmont’s Curse is available on PlayStation 5, Nintendo Switch, Xbox Series X|S and Steam. It covers the early part of the game.",
+        "According to Konami, demo save data can carry over to the full game when played on the same platform and account, provided the demo save is retained. The full release is scheduled for October 15, 2026. See the official announcement below for the transfer conditions."
+      ]
+    }
+  },
+  {
+    "slug": "metroidvania-2026-video-watchlist",
+    "type": "news",
+    "date": "2026-10-13",
+    "source": {
+      "label": "Demogist · 原视频章节清单 / Original chapter list",
+      "url": "https://www.youtube.com/watch?v=CmGp9ZYn7qg"
+    },
+    "zh": {
+      "title": "2026 银河恶魔城观察清单：从一支视频认识十款新作",
+      "summary": "从 Demogist 的十款新作清单出发，整理游戏类型、核心玩法、适合人群与最新发售状态，并关联本站图鉴。",
+      "body": [
+        "这份名单来自 Demogist 的《10 New Upcoming Metroidvania Games in 2026 You shouldn’t ignore》。游戏与顺序依据原视频简介的章节时间戳核对，玩法和发售状态另参考官方 Steam 页面。本文是资料整理与选游观察，不是实机评分，也不代表这些游戏都确定在 2026 年发行。",
+        "信息核对日期为 2026 年 10 月 13 日：部分作品已发行，另一些仍为 Coming soon 或日期待公布。下方“适合谁”是本站根据玩法特点的编辑判断。视频截图来自用户提供的 B 站中配版本，保留画面标记，原作者为 Demogist。",
+        "名称与发售状态按 Steam 简体中文商店于 2026 年 10 月 13 日的资料核对：4 款已发售、6 款未发售。商店没有中文名的作品保留英文名；试玩版可下载不等于正式版已发售。"
+      ]
+    },
+    "en": {
+      "title": "A 2026 Metroidvania watchlist: ten games from Demogist’s video",
+      "summary": "Ten games from Demogist’s chapter list, with genres, core play, audience notes, current release status and catalog links.",
+      "body": [
+        "This list follows the chapter timestamps in Demogist’s video description. Gameplay and release information are checked separately against official Steam pages. This is a description-based watchlist, not a hands-on rating or a claim that every game will release in 2026.",
+        "Checked on October 13, 2026. Some games are released; others remain coming soon or undated. Audience notes are GAME NOTE editorial inferences from gameplay descriptions. Screenshots come from the supplied Chinese-dubbed Bilibili version, with on-screen marks retained; the original video creator is Demogist.",
+        "Names and release status were checked against Steam’s Simplified Chinese store on October 13, 2026: four games are released and six are not. English names are retained where no official Chinese title is confirmed; an available demo does not count as a full release."
+      ]
+    },
+    "recommendations": [
+      {
+        "slug": "an-jing-wei-guang",
+        "name": "Well Dweller",
+        "source": "https://store.steampowered.com/app/3699590/",
+        "seconds": 49,
+        "time": "0:49",
+        "image": "/assets/news/metroidvania-2026/well-dweller.jpg",
+        "imageSeconds": 69,
+        "imageTime": "1:09",
+        "zh": {
+          "type": "黑暗童话／2D 银河恶魔城",
+          "play": "手持火柴的小鸟 Glimmer 探索王国，以战斗、能力解锁和回访寻找家人。",
+          "appeal": "喜欢童话氛围、连通地图和能力成长的玩家；本站已有攻略可参考。",
+          "status": "已发售：2026-09-22",
+          "name": "黯井微光",
+          "nameNote": "Steam 官方中文名：黯井微光"
+        },
+        "en": {
+          "type": "Dark fairy tale / 2D Metroidvania",
+          "play": "Glimmer, a bird armed with a matchstick, explores a kingdom through combat, ability upgrades and revisits to rescue his family.",
+          "appeal": "Players drawn to fairy-tale atmosphere, connected maps and ability progression; a site guide is available.",
+          "status": "Released: September 22, 2026",
+          "name": "Well Dweller",
+          "nameNote": "Official Simplified Chinese title: 黯井微光"
+        }
+      },
+      {
+        "slug": "silver-pines",
+        "name": "Silver Pines",
+        "source": "https://store.steampowered.com/app/2333000/",
+        "seconds": 102,
+        "time": "1:42",
+        "image": "/assets/news/metroidvania-2026/silver-pines.jpg",
+        "imageSeconds": 122,
+        "imageTime": "2:02",
+        "zh": {
+          "type": "生存恐怖／探索动作／银河恶魔城",
+          "play": "在美国小镇调查失踪案，搜索线索、解谜并管理弹药、药品和有限背包，决定战斗还是避敌。",
+          "appeal": "偏爱恐怖气氛、调查和资源取舍，而非持续高速战斗的玩家。",
+          "status": "已发售：2026-10-08",
+          "name": "银松镇",
+          "nameNote": "Steam 官方中文名：银松镇"
+        },
+        "en": {
+          "type": "Survival horror / exploration / Metroidvania",
+          "play": "Investigate a disappearance in an American town, solve puzzles and manage ammunition, medicine and inventory space while choosing whether to fight or evade.",
+          "appeal": "Players who prefer horror, investigation and resource decisions over constant fast combat.",
+          "status": "Released: October 8, 2026",
+          "name": "Silver Pines",
+          "nameNote": "Official Simplified Chinese title: 银松镇"
+        }
+      },
+      {
+        "slug": "a-sisters-journey",
+        "name": "A Sister's Journey",
+        "source": "https://store.steampowered.com/app/1730790/",
+        "seconds": 156,
+        "time": "2:36",
+        "image": "/assets/news/metroidvania-2026/a-sisters-journey.jpg",
+        "imageSeconds": 176,
+        "imageTime": "2:56",
+        "zh": {
+          "type": "跑枪动作／精准平台／银河恶魔城",
+          "play": "Violet 寻找失踪的 Rena，以枪械、闪避和精准跳跃探索像素世界，收集武器升级与新能力。",
+          "appeal": "喜欢射击与高要求平台挑战的玩家；官方也介绍了辅助模式。",
+          "status": "未发售；计划发售：2026-10-20",
+          "name": "A Sister's Journey",
+          "nameNote": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。"
+        },
+        "en": {
+          "type": "Run-and-gun / precision platforming / Metroidvania",
+          "play": "Violet searches for Rena using guns, dodges and precise jumps, collecting weapon upgrades and abilities across a pixel-art world.",
+          "appeal": "Players who enjoy shooting and demanding platforming; the developer also describes an assist mode.",
+          "status": "Not released; planned: October 20, 2026",
+          "name": "A Sister's Journey",
+          "nameNote": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed."
+        }
+      },
+      {
+        "slug": "sinweaver",
+        "name": "Sinweaver",
+        "source": "https://store.steampowered.com/app/3559990/",
+        "seconds": 212,
+        "time": "3:32",
+        "image": "/assets/news/metroidvania-2026/sinweaver.jpg",
+        "imageSeconds": 232,
+        "imageTime": "3:52",
+        "zh": {
+          "type": "战斗导向／2D Metroidvania Lite",
+          "play": "通过有首领战的手工关卡与可探索大地图推进，用近战、罪之魔法和新能力杀出地狱。",
+          "appeal": "想保留探索感，同时更重视战斗和明确关卡结构的玩家。",
+          "status": "未发售；Steam 标注“即将宣布”，日期待公布",
+          "name": "Sinweaver",
+          "nameNote": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。"
+        },
+        "en": {
+          "type": "Combat-focused / 2D Metroidvania Lite",
+          "play": "Progress through handcrafted boss stages and an explorable overworld, using melee combat, Sin magic and abilities to escape hell.",
+          "appeal": "Players seeking exploration alongside combat and a more clearly segmented stage structure.",
+          "status": "Not released; date to be announced",
+          "name": "Sinweaver",
+          "nameNote": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed."
+        }
+      },
+      {
+        "slug": "maseylia-echoes-of-the-past",
+        "name": "Maseylia: Echoes of the Past",
+        "source": "https://store.steampowered.com/app/2938870/",
+        "seconds": 267,
+        "time": "4:27",
+        "image": "/assets/news/metroidvania-2026/maseylia.jpg",
+        "imageSeconds": 287,
+        "imageTime": "4:47",
+        "zh": {
+          "type": "3D 银河恶魔城／移动与空间探索",
+          "play": "在互相连通的立体世界中，以二段跳、空中冲刺和钩索等能力打开新路径，战斗也强调移动。",
+          "appeal": "想把能力回访带入立体空间、喜欢纵向探索的玩家。",
+          "status": "已发售：2026-06-19",
+          "name": "Maseylia: Echoes of the Past",
+          "nameNote": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。"
+        },
+        "en": {
+          "type": "3D Metroidvania / movement and spatial exploration",
+          "play": "Explore an interconnected 3D world with double jumps, air dashes and grappling abilities that open paths and shape mobile combat.",
+          "appeal": "Players who want ability-based revisits in three dimensions and enjoy vertical exploration.",
+          "status": "Released: June 19, 2026",
+          "name": "Maseylia: Echoes of the Past",
+          "nameNote": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed."
+        }
+      },
+      {
+        "slug": "lucid",
+        "name": "LUCID",
+        "source": "https://store.steampowered.com/app/1717730/",
+        "seconds": 322,
+        "time": "5:22",
+        "image": "/assets/news/metroidvania-2026/lucid.jpg",
+        "imageSeconds": 342,
+        "imageTime": "5:42",
+        "zh": {
+          "type": "动作平台／空中战斗／银河恶魔城要素",
+          "play": "Oenn 在水晶朋克世界吸收 Crystal Arts，让移动和战斗共同成长，以不同水晶武器应对平台谜题与首领。",
+          "appeal": "更关注操作连贯、空中移动和能力组合的玩家。",
+          "status": "未发售；Steam 标注“即将推出”，日期待公布",
+          "name": "LUCID",
+          "nameNote": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。"
+        },
+        "en": {
+          "type": "Action platforming / aerial combat / Metroidvania elements",
+          "play": "Oenn gains Crystal Arts in a crystal-punk world, expanding movement and combat with crystal weapons for platform puzzles and bosses.",
+          "appeal": "Players focused on fluid controls, airborne movement and ability combinations.",
+          "status": "Not released; coming soon, no date announced",
+          "name": "LUCID",
+          "nameNote": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed."
+        }
+      },
+      {
+        "slug": "demon-still-alive",
+        "name": "Demon Still Alive",
+        "source": "https://store.steampowered.com/app/3033190/",
+        "seconds": 373,
+        "time": "6:13",
+        "image": "/assets/news/metroidvania-2026/demon-still-alive.jpg",
+        "imageSeconds": 393,
+        "imageTime": "6:33",
+        "zh": {
+          "type": "黑暗奇幻／动作平台／银河恶魔城",
+          "play": "在恶魔噩梦世界探索并升级能力，结合火与冰的力量、平台移动和近战处理敌人。",
+          "appeal": "偏好恶魔题材、直接战斗和元素能力的玩家。",
+          "status": "未发售；Steam 标注“即将推出”，日期待公布",
+          "name": "Demon Still Alive",
+          "nameNote": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。"
+        },
+        "en": {
+          "type": "Dark fantasy / action platforming / Metroidvania",
+          "play": "Explore a demonic nightmare, upgrade abilities and combine fire, ice, platform movement and combat against enemies.",
+          "appeal": "Players drawn to demons, direct combat and elemental abilities.",
+          "status": "Not released; coming soon, no date announced",
+          "name": "Demon Still Alive",
+          "nameNote": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed."
+        }
+      },
+      {
+        "slug": "mira-and-the-legend-of-the-djinns",
+        "name": "Mira and the Legend of the Djinns",
+        "source": "https://store.steampowered.com/app/1927360/",
+        "seconds": 437,
+        "time": "7:17",
+        "image": "/assets/news/metroidvania-2026/mira.jpg",
+        "imageSeconds": 457,
+        "imageTime": "7:37",
+        "zh": {
+          "type": "摩洛哥神话／像素银河恶魔城",
+          "play": "宝藏猎人 Yuba 与失忆精灵 Mira 结伴，在遗迹、沙漠与山地探索，以武器和元素战斗寻找失落真相。",
+          "appeal": "对北非文化、精灵魔法和像素探索世界感兴趣的玩家。",
+          "status": "未发售；Steam 标注“即将宣布”，日期待公布",
+          "name": "米拉与灯灵传奇",
+          "nameNote": "Steam 官方中文名：米拉与灯灵传奇"
+        },
+        "en": {
+          "type": "Moroccan mythology / pixel-art Metroidvania",
+          "play": "Treasure hunter Yuba and the amnesiac Djinn Mira explore ruins, deserts and mountains using weapons and elemental combat to uncover the past.",
+          "appeal": "Players interested in North African influences, Djinn magic and pixel-art exploration.",
+          "status": "Not released; date to be announced",
+          "name": "Mira and the Legend of the Djinns",
+          "nameNote": "Official Simplified Chinese title: 米拉与灯灵传奇"
+        }
+      },
+      {
+        "slug": "altered-alma",
+        "name": "Altered Alma",
+        "source": "https://store.steampowered.com/app/2190700/",
+        "seconds": 500,
+        "time": "8:20",
+        "image": "/assets/news/metroidvania-2026/altered-alma.jpg",
+        "imageSeconds": 535,
+        "imageTime": "8:55",
+        "zh": {
+          "type": "赛博朋克银河恶魔城／RPG／关系养成",
+          "play": "在 Neo Barcelona 快速战斗与探索，升级飞船、招募船员并建立关系，基地与角色选择影响能力和玩法。",
+          "appeal": "喜欢城市题材，也希望战斗之外有角色关系与基地成长的玩家。",
+          "status": "未发售；Steam 标注“即将推出”，日期待公布",
+          "name": "赛博战魂",
+          "nameNote": "Steam 官方中文名：赛博战魂"
+        },
+        "en": {
+          "type": "Cyberpunk Metroidvania / RPG / relationships",
+          "play": "Explore and fight in Neo Barcelona, upgrade a spaceship, recruit crew and build relationships that influence abilities and playstyle.",
+          "appeal": "Players who want a city setting with relationships and base progression alongside combat.",
+          "status": "Not released; coming soon, no date announced",
+          "name": "Altered Alma",
+          "nameNote": "Official Simplified Chinese title: 赛博战魂"
+        }
+      },
+      {
+        "slug": "aggelos-2",
+        "name": "Aggelos 2",
+        "source": "https://store.steampowered.com/app/2864290/",
+        "seconds": 562,
+        "time": "9:22",
+        "image": "/assets/news/metroidvania-2026/aggelos-2.jpg",
+        "imageSeconds": 600,
+        "imageTime": "10:00",
+        "zh": {
+          "type": "复古动作平台／双世界探索／银河恶魔城",
+          "play": "在光与暗两个相对世界中探索、解谜和战斗，结合高速动作与精准平台挑战。",
+          "appeal": "偏爱复古像素风、平台操作与世界切换机制的玩家。",
+          "status": "已发售：2026-08-27",
+          "name": "Aggelos 2",
+          "nameNote": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。"
+        },
+        "en": {
+          "type": "Retro action platforming / dual-world exploration / Metroidvania",
+          "play": "Explore, solve puzzles and fight across opposing light and dark realms with fast action and precise platforming.",
+          "appeal": "Players who enjoy retro pixel art, demanding movement and world-switching mechanics.",
+          "status": "Released: August 27, 2026",
+          "name": "Aggelos 2",
+          "nameNote": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed."
+        }
+      }
+    ],
+    "videoSource": "https://www.bilibili.com/video/BV1yEVL6pEgf/"
+  }
+]

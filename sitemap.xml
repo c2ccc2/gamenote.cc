@@ -2,12 +2,280 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://gamenote.cc/</loc></url>
   <url><loc>https://gamenote.cc/about/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/a-sisters-journey/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/afterimage/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/aggelos-2/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/aggelos/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/ai-limit/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/altered-alma/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/an-jing-wei-guang/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/animal-well/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/another-crabs-treasure/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/astlibra-revision/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/blasphemous-2/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/blasphemous/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/bloodstained-ritual-of-the-night/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/castlevania-aria-of-sorrow/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/castlevania-belmonts-curse/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/castlevania-dawn-of-sorrow/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/castlevania-grimoire-of-souls/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/castlevania-symphony-of-the-night/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/crypt-custodian/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/deaths-door/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/demon-still-alive/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/ender-lilies/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/ender-magnolia/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/grime/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/hollow-knight-silksong/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/hollow-knight/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/islets/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/lucid/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/maseylia-echoes-of-the-past/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/metroid-dread/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/metroid-fusion/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/mira-and-the-legend-of-the-djinns/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/nine-sols/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/ori-and-the-blind-forest/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/ori-and-the-will-of-the-wisps/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/silver-pines/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/sinweaver/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/souldiers/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/super-metroid/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/the-first-berserker-khazan/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/tunic/</loc></url>
+  <url><loc>https://gamenote.cc/en/</loc></url>
+  <url><loc>https://gamenote.cc/en/about/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/a-sisters-journey/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/afterimage/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/aggelos-2/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/aggelos/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/ai-limit/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/altered-alma/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/an-jing-wei-guang/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/animal-well/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/another-crabs-treasure/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/astlibra-revision/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/blasphemous-2/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/blasphemous/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/bloodstained-ritual-of-the-night/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/castlevania-aria-of-sorrow/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/castlevania-belmonts-curse/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/castlevania-dawn-of-sorrow/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/castlevania-grimoire-of-souls/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/castlevania-symphony-of-the-night/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/crypt-custodian/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/deaths-door/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/demon-still-alive/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/ender-lilies/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/ender-magnolia/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/grime/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/hollow-knight-silksong/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/hollow-knight/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/islets/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/lucid/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/maseylia-echoes-of-the-past/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/metroid-dread/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/metroid-fusion/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/mira-and-the-legend-of-the-djinns/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/nine-sols/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/ori-and-the-blind-forest/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/ori-and-the-will-of-the-wisps/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/silver-pines/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/sinweaver/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/souldiers/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/super-metroid/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/the-first-berserker-khazan/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/tunic/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/climb/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/endless-climb/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/hover/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/slingshot/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/soar/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/tent-travel/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/torpedo/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/wall-sling/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/water-vessel/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/abilities/wind-ride/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/50-slots/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/a-warm-fire/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/above-the-kingdom/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/amateur-collector/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/at-the-dollmakers-house/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/bouncing-bottles/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/buggy-business/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/complete-flock/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/dark-garden/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/digging-deep/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/double-trouble/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/down-the-drain/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/endgame/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/expert-collector/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/first-purchase/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/flying-high/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/fully-stocked/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/halfway-there/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/hide-and-seek/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/in-the-workshop/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/into-the-deep/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/kings-hat/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/late-night-guest/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/littlest-bird/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/lonely-soul/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/on-fire/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/once-upon-a-time/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/pyromaniac/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/sharp-and-shiny/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/snatched-up/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/song-of-stars/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/splendid-feast/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/stitched-back-together/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/stormy-night/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/taking-a-break/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/ten-slots/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/the-first-born-daughter/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/the-tattered-doll/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/together-at-last/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/veteran-collector/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/achievements/warming-up/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/creature-from-the-deep/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/dollmaker/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/forest-king/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/gravedigger/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/lida-the-terrible/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/shrine-of-the-seven-sons/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/silver-doll/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/starsinger/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-colony/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-groundskeeper/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-lady-of-the-drains/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-queen/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/bosses/the-swarm/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/puzzle-solutions/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/time-trial-autumn-forest/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/time-trial-desiccated-castle/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/time-trial-dollmakers-house/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/time-trial-graven-valley/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/time-trial-hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/time-trial-midnight-drench/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/time-trial-night-garden/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/time-trial-the-bog/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/time-trial-the-docks/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/challenges/time-trials/time-trial-the-drains/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/elevator-parts/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/golden-feathers/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/elevator-parts/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/festival-hat/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/golden-feathers/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/golden-gate-key/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/ildas-siblings/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/looter-parts/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/mysterious-markings/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/spirit-fragments/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/key-items/the-queens-coin/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/looter-parts/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/quest-items/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/spirit-fragments/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/spirits/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/story-pages/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/trinket-slots/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/trinkets/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/workshop-tokens/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/autumn-forest/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/burial-vault/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/desiccated-castle/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/dollmakers-house/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/graven-valley/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/lookout-tower/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/midnight-drench/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/night-garden/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/queens-castle/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-bog/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-deep/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-docks/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-drains/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/the-well/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/webdrench-inn/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/world/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/quests/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/quests/a-ride-to-the-party/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/quests/graven-valley-rescue/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/quests/missing-sailors/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/quests/repair-the-elevator/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/quests/the-castle-gate/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/quests/the-queens-chamber/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/secrets/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/systems/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/updates/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/autumn-forest/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/burial-vault/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/desiccated-castle/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/dollmakers-house/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/graven-valley/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/lookout-tower/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/midnight-drench/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/night-garden/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/queens-castle/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-bog/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-deep/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-docks/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-drains/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-well/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/webdrench-inn/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/bosses/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/characters/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/collectibles/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/equipment/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/side-quests/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/systems/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/updates/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/banished-hero/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/blade-to-the-curtain/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/bloodstained-sanctuary/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/city-of-witches/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/cursed-fortress/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/devoured-village/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/empires-end/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/forgotten-temple/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/hermits-mountains/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/lord-of-chaos/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/revenge-prelude/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/snow-mountain-trial/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/strange-melody/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/suspicious-stench/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/traitors-face/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/walkthrough/unbelievable-truth/</loc></url>
+  <url><loc>https://gamenote.cc/en/news/</loc></url>
+  <url><loc>https://gamenote.cc/en/news/belmonts-curse-demo/</loc></url>
+  <url><loc>https://gamenote.cc/en/news/metroidvania-2026-video-watchlist/</loc></url>
+  <url><loc>https://gamenote.cc/en/notes/</loc></url>
+  <url><loc>https://gamenote.cc/en/notes/why-an-jing-wei-guang-looks-like-an-old-guide-site/</loc></url>
+  <url><loc>https://gamenote.cc/en/notes/why-organize-game-guides-again/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/classic-content-generation/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/classic-framework/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/ender-lilies-pages-deployment/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/gamenote-archive-structure/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/gamenote-catalog-news-2026-10-13/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/islets-boss-notes/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/khazan-guide-v1-2026-10-13/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/well-dweller-content-refresh-2026-10-13/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/well-dweller-guide-reading-update/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/well-dweller-guide-scaffolding/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/well-dweller-v1-database/</loc></url>
@@ -67,47 +335,126 @@
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/veteran-collector/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/achievements/warming-up/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/creature-from-the-deep/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/dollmaker/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/forest-king/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/gravedigger/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/lida-the-terrible/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/shrine-of-the-seven-sons/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/silver-doll/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/starsinger/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-colony/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-groundskeeper/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-lady-of-the-drains/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-queen/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/bosses/the-swarm/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/puzzle-solutions/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/time-trial-autumn-forest/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/time-trial-desiccated-castle/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/time-trial-dollmakers-house/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/time-trial-graven-valley/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/time-trial-hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/time-trial-midnight-drench/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/time-trial-night-garden/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/time-trial-the-bog/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/time-trial-the-docks/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/challenges/time-trials/time-trial-the-drains/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/elevator-parts/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/golden-feathers/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/elevator-parts/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/festival-hat/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/golden-feathers/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/golden-gate-key/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/ildas-siblings/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/looter-parts/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/mysterious-markings/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/spirit-fragments/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/key-items/the-queens-coin/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/looter-parts/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/quest-items/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/spirit-fragments/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/spirits/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/story-pages/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/trinket-slots/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/trinkets/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/workshop-tokens/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/autumn-forest/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/burial-vault/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/desiccated-castle/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/dollmakers-house/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/graven-valley/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/lookout-tower/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/midnight-drench/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/night-garden/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/queens-castle/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-bog/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-deep/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-docks/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-drains/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/the-well/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/webdrench-inn/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/world/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/quests/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/quests/a-ride-to-the-party/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/quests/graven-valley-rescue/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/quests/missing-sailors/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/quests/repair-the-elevator/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/quests/the-castle-gate/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/quests/the-queens-chamber/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/secrets/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/systems/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/updates/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/autumn-forest/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/burial-vault/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/desiccated-castle/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/dollmakers-house/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/graven-valley/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/lookout-tower/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/midnight-drench/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/night-garden/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/queens-castle/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-bog/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-deep/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-docks/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-drains/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-well/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/webdrench-inn/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/bosses/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/characters/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/collectibles/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/equipment/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/side-quests/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/systems/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/updates/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/banished-hero/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/blade-to-the-curtain/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/bloodstained-sanctuary/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/city-of-witches/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/cursed-fortress/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/devoured-village/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/empires-end/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/forgotten-temple/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/hermits-mountains/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/lord-of-chaos/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/revenge-prelude/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/snow-mountain-trial/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/strange-melody/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/suspicious-stench/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/traitors-face/</loc></url>
+  <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/walkthrough/unbelievable-truth/</loc></url>
+  <url><loc>https://gamenote.cc/news/</loc></url>
+  <url><loc>https://gamenote.cc/news/belmonts-curse-demo/</loc></url>
+  <url><loc>https://gamenote.cc/news/metroidvania-2026-video-watchlist/</loc></url>
   <url><loc>https://gamenote.cc/notes/</loc></url>
   <url><loc>https://gamenote.cc/notes/why-an-jing-wei-guang-looks-like-an-old-guide-site/</loc></url>
   <url><loc>https://gamenote.cc/notes/why-organize-game-guides-again/</loc></url>
@@ -116,74 +463,11 @@
   <url><loc>https://gamenote.cc/updates/classic-framework/</loc></url>
   <url><loc>https://gamenote.cc/updates/ender-lilies-pages-deployment/</loc></url>
   <url><loc>https://gamenote.cc/updates/gamenote-archive-structure/</loc></url>
+  <url><loc>https://gamenote.cc/updates/gamenote-catalog-news-2026-10-13/</loc></url>
   <url><loc>https://gamenote.cc/updates/islets-boss-notes/</loc></url>
+  <url><loc>https://gamenote.cc/updates/khazan-guide-v1-2026-10-13/</loc></url>
+  <url><loc>https://gamenote.cc/updates/well-dweller-content-refresh-2026-10-13/</loc></url>
   <url><loc>https://gamenote.cc/updates/well-dweller-guide-reading-update/</loc></url>
   <url><loc>https://gamenote.cc/updates/well-dweller-guide-scaffolding/</loc></url>
   <url><loc>https://gamenote.cc/updates/well-dweller-v1-database/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/super-metroid/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/metroid-dread/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/castlevania-symphony-of-the-night/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/castlevania-aria-of-sorrow/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/hollow-knight/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/ori-and-the-will-of-the-wisps/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/islets/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/ender-lilies/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/an-jing-wei-guang/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/hollow-knight-silksong/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/ori-and-the-blind-forest/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/crypt-custodian/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/bloodstained-ritual-of-the-night/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/castlevania-belmonts-curse/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/ender-magnolia/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/deaths-door/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/tunic/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/afterimage/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/metroid-fusion/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/castlevania-dawn-of-sorrow/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/blasphemous/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/blasphemous-2/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/nine-sols/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/animal-well/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/souldiers/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/another-crabs-treasure/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/ai-limit/</loc></url>
-<url><loc>https://gamenote.cc/en/</loc></url>
-<url><loc>https://gamenote.cc/en/games/</loc></url>
-<url><loc>https://gamenote.cc/en/notes/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/</loc></url>
-<url><loc>https://gamenote.cc/en/about/</loc></url>
-<url><loc>https://gamenote.cc/en/search/</loc></url>
-<url><loc>https://gamenote.cc/en/notes/why-organize-game-guides-again/</loc></url>
-<url><loc>https://gamenote.cc/en/notes/why-an-jing-wei-guang-looks-like-an-old-guide-site/</loc></url>
-<url><loc>https://gamenote.cc/en/notes/mapping-a-metroidvania/</loc></url>
-<url><loc>https://gamenote.cc/en/notes/after-islets/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/super-metroid/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/metroid-dread/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/castlevania-symphony-of-the-night/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/castlevania-aria-of-sorrow/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/bloodstained-ritual-of-the-night/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/castlevania-belmonts-curse/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/hollow-knight/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/hollow-knight-silksong/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/ori-and-the-blind-forest/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/ori-and-the-will-of-the-wisps/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/islets/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/crypt-custodian/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/ender-lilies/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/ender-magnolia/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/afterimage/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/deaths-door/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/tunic/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/metroid-fusion/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/castlevania-dawn-of-sorrow/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/blasphemous/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/blasphemous-2/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/nine-sols/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/animal-well/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/souldiers/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/another-crabs-treasure/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/ai-limit/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/an-jing-wei-guang/</loc></url>
 </urlset>

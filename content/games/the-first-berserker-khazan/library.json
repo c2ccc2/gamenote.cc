@@ -1,0 +1,117 @@
+[
+  {
+    "id": "walkthrough",
+    "status": "available",
+    "href": "walkthrough/",
+    "zh": {
+      "title": "主线流程",
+      "description": "按任务顺序阅读路线、捷径与首领节点。"
+    },
+    "en": {
+      "title": "Main missions",
+      "description": "Routes, shortcuts and boss checkpoints in mission order."
+    }
+  },
+  {
+    "id": "side-quests",
+    "status": "available",
+    "zh": {
+      "title": "支线任务",
+      "description": "任务接取、推进条件、奖励与容易错过的节点。",
+      "intro": "按关联主线查找接取条件与任务目的地，当前为支线要点目录。"
+    },
+    "en": {
+      "title": "Side missions",
+      "description": "Unlock conditions, steps, rewards and missable moments.",
+      "intro": "Find prerequisites and destinations by related main mission; this is a concise side-mission index."
+    },
+    "href": "side-quests/"
+  },
+  {
+    "id": "bosses",
+    "status": "available",
+    "href": "bosses/",
+    "zh": {
+      "title": "首领图鉴",
+      "description": "招式识别、战前准备与应对思路。",
+      "intro": "十六章主线首领均已有基础战斗要点，详细招式与装备数值继续补充。"
+    },
+    "en": {
+      "title": "Boss index",
+      "description": "Attack tells, preparation and responses.",
+      "intro": "Basic battle notes cover all sixteen main bosses; detailed moves and gear values remain in progress."
+    }
+  },
+  {
+    "id": "equipment",
+    "status": "available",
+    "href": "equipment/",
+    "zh": {
+      "title": "武器与装备",
+      "description": "三类武器、装备套装与后续单件资料。",
+      "intro": "先按武器类别和套装规则建立索引。单件的属性、获取地点和版本差异会逐项核验，不以宣传资料代替游戏内数值。"
+    },
+    "en": {
+      "title": "Weapons and gear",
+      "description": "Three weapon classes, gear sets and future item entries.",
+      "intro": "Start with weapon classes and set rules. Individual stats, locations and version differences will be checked in-game."
+    }
+  },
+  {
+    "id": "systems",
+    "status": "available",
+    "href": "systems/",
+    "zh": {
+      "title": "技能与系统",
+      "description": "防御、精力、技能与幻影形态等机制。",
+      "intro": "这里解释战斗与成长机制，区分官方说明和需要实际操作核验的细节。"
+    },
+    "en": {
+      "title": "Skills and systems",
+      "description": "Guarding, stamina, skills and Phantom Form.",
+      "intro": "Combat and progression mechanics, with official descriptions separated from details that still need hands-on checks."
+    }
+  },
+  {
+    "id": "characters",
+    "status": "available",
+    "href": "characters/",
+    "zh": {
+      "title": "人物与 NPC",
+      "description": "角色关系、出场章节和相关任务。",
+      "intro": "先按官方公开资料梳理主要人物。后续再补出场章节、交互功能和剧情关系，较深的剧情内容会标注剧透范围。"
+    },
+    "en": {
+      "title": "Characters and NPCs",
+      "description": "Relationships, appearances and related missions.",
+      "intro": "Major characters from official material. Appearances, interactions and deeper story connections will be added with spoiler labels."
+    }
+  },
+  {
+    "id": "collectibles",
+    "status": "available",
+    "href": "collectibles/",
+    "zh": {
+      "title": "收集与档案",
+      "description": "剧情物品、鬼石与其他收集品的可核验位置。",
+      "intro": "当前只记录已找到可靠线索的条目。具体路径、可错过条件与总数需要实机复核，因此本页暂不称为全收集清单。"
+    },
+    "en": {
+      "title": "Collectibles and lore",
+      "description": "Checked locations for story items, stones and other finds.",
+      "intro": "Only entries with a traceable lead appear here. Exact routes, missable conditions and totals still need in-game verification."
+    }
+  },
+  {
+    "id": "achievements",
+    "status": "planned",
+    "zh": {
+      "title": "成就与挑战",
+      "description": "成就条件、关联章节与多周目挑战。"
+    },
+    "en": {
+      "title": "Achievements and challenges",
+      "description": "Achievement conditions, related chapters and repeat runs."
+    }
+  }
+]

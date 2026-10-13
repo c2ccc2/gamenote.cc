@@ -1,0 +1,59 @@
+{
+  "video": "https://www.bilibili.com/video/BV1yEVL6pEgf/",
+  "original": "https://www.youtube.com/watch?v=CmGp9ZYn7qg",
+  "author": "Demogist",
+  "purpose": "One illustrative screenshot per game, requested by the user; not a gameplay walkthrough.",
+  "checkedAt": "2026-10-13",
+  "frames": [
+    {
+      "game": "Well Dweller",
+      "path": "/assets/news/metroidvania-2026/well-dweller.jpg",
+      "seconds": 69
+    },
+    {
+      "game": "Silver Pines",
+      "path": "/assets/news/metroidvania-2026/silver-pines.jpg",
+      "seconds": 122
+    },
+    {
+      "game": "A Sister's Journey",
+      "path": "/assets/news/metroidvania-2026/a-sisters-journey.jpg",
+      "seconds": 176
+    },
+    {
+      "game": "Sinweaver",
+      "path": "/assets/news/metroidvania-2026/sinweaver.jpg",
+      "seconds": 232
+    },
+    {
+      "game": "Maseylia: Echoes of the Past",
+      "path": "/assets/news/metroidvania-2026/maseylia.jpg",
+      "seconds": 287
+    },
+    {
+      "game": "LUCID",
+      "path": "/assets/news/metroidvania-2026/lucid.jpg",
+      "seconds": 342
+    },
+    {
+      "game": "Demon Still Alive",
+      "path": "/assets/news/metroidvania-2026/demon-still-alive.jpg",
+      "seconds": 393
+    },
+    {
+      "game": "Mira and the Legend of the Djinns",
+      "path": "/assets/news/metroidvania-2026/mira.jpg",
+      "seconds": 457
+    },
+    {
+      "game": "Altered Alma",
+      "path": "/assets/news/metroidvania-2026/altered-alma.jpg",
+      "seconds": 535
+    },
+    {
+      "game": "Aggelos 2",
+      "path": "/assets/news/metroidvania-2026/aggelos-2.jpg",
+      "seconds": 600
+    }
+  ]
+}

@@ -1,9 +1,27 @@
 // Static paired pages: human-authored text translations, not runtime machine translation.
+const writeFile = require('./lib/write-file.cjs');
 const fs=require('node:fs'),path=require('node:path'),cheerio=require('cheerio');
 const {loadClassicData,confirmed,approvedImage}=require('./lib/classic-data.cjs');
 const root=path.resolve(__dirname,'..'),base='/games/an-jing-wei-guang/',origin='https://gamenote.cc',data=loadClassicData(root);
 const labels=require('../content/games/an-jing-wei-guang/labels-zh.json'),ui=require('../content/games/an-jing-wei-guang/ui-en.json'),video=require('../content/games/an-jing-wei-guang/video-en.json');
 const dictionary=new Map(Object.entries(ui)),untranslated=new Set();
+for(const item of require('../content/games/an-jing-wei-guang/reference-refresh.json').entries)for(const field of Object.values(item.fields))field.zh.forEach((text,index)=>dictionary.set(text,field.en[index]));
+for(const area of require('../content/games/an-jing-wei-guang/late-walkthrough.json').areas){
+ for(const key of ['goal','before'])dictionary.set(area.zh[key],area.en[key]);
+ for(const key of ['nodes','check'])area.zh[key].forEach((text,index)=>dictionary.set(text,area.en[key][index]));
+ area.zh.steps.forEach((step,index)=>{dictionary.set(step.title,area.en.steps[index].title);dictionary.set(step.text,area.en.steps[index].text)});
+ for(const id of area.next){const record=data.areas.find(record=>record.id===id);dictionary.set('后续区域：'+(labels[record.nameEn]||record.nameEn),'Next area: '+record.nameEn)}
+}
+for(const [zh,en] of Object.entries({'按节点推进':'Follow the Checkpoints','本段目标':'Goal','入区准备':'Before Entering','路线节点示意':'Route checkpoints','GAME NOTE 原创节点示意 · 不代表实际房间地图':'Original GAME NOTE checkpoint diagram · not a room map','离开前检查':'Before Leaving','后续攻略':'Related guides','首领战要点':'Boss battle notes','护送任务':'Escort quest','兄弟姐妹任务':'Sibling quest'}))dictionary.set(zh,en);
+for(const [zh,en] of Object.entries({'参考推进路线':'Reference Route','参考战斗要点':'Battle Notes','收集核对要点':'Collection Notes','参考区域定位':'Regional Orientation'}))dictionary.set(zh,en);
+dictionary.set('攻略整理进度','Guide Progress');
+dictionary.set('机关解法','Puzzle Solutions');
+dictionary.set('通关后的探索','Postgame Exploration');
+dictionary.set('完成女王路线后，可继续回访收集。先检查腾空能力与神秘地图，再按灵魂碎片资料确认探索目标。','After the Queen route, you can keep exploring. Check Soar and the mysterious map, then use the fragment notes to plan return visits.');
+dictionary.set('通关后参考','Postgame Reference');
+dictionary.set(data.areas.filter(e=>e.publish).length+' 个区域已有路线或参考节点',data.areas.filter(e=>e.publish).length+' areas have routes or reference checkpoints');
+dictionary.set(data.bosses.filter(e=>confirmed(e.fields.referenceStrategy)||confirmed(e.fields.attacks)).length+' 场遭遇已有战斗要点',data.bosses.filter(e=>confirmed(e.fields.referenceStrategy)||confirmed(e.fields.attacks)).length+' encounters have battle notes');
+dictionary.set(data.quests.filter(e=>e.publish).length+' 条任务已有推进提示',data.quests.filter(e=>e.publish).length+' quests have progression notes');
 dictionary.set('41 项成就','41 Achievements');
 dictionary.set('收起栏目','Collapse section');
 dictionary.set('全部收起','Collapse all');
@@ -45,20 +63,20 @@ function translate(text){
 }
 const files=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?files(path.join(dir,entry.name)):entry.name==='index.html'?[path.join(dir,entry.name)]:[]);
 const all=files(path.join(root,base)),urls=[];
-const switcher=(route,en)=>`<nav class="classic-language-switch" aria-label="${en?'Language':'语言'}">${en?`<a href="${route}" lang="zh-CN" hreflang="zh-CN">中文</a><span aria-hidden="true"> / </span><span lang="en" aria-current="true">EN</span>`:`<span lang="zh-CN" aria-current="true">中文</span><span aria-hidden="true"> / </span><a href="/en${route}" lang="en" hreflang="en">EN</a>`}</nav>`;
+const switcher=(route,en)=>`<nav class="classic-language-switch" aria-label="${en?'Language':'语言'}"><details class="language-menu"><summary aria-label="${en?'Choose language':'选择语言'}"><span aria-hidden="true">◎</span> ${en?'English':'简体中文'} <span class="language-chevron" aria-hidden="true"></span></summary><div class="language-menu-options" role="group" aria-label="${en?'Language':'语言'}"><a href="${route}" lang="zh-CN" hreflang="zh-CN"${en?'':' aria-current="page"'}>简体中文</a><a href="/en${route}" lang="en" hreflang="en"${en?' aria-current="page"':''}>English</a></div></details></nav>`;
 const imageRecords=Object.values(data).filter(Array.isArray).flat().flatMap(record=>record.images||[]).concat(data.game.images);
 for(const file of all){
  const route='/'+path.relative(root,file).replaceAll('\\','/').replace(/index\.html$/,''),zh=cheerio.load(fs.readFileSync(file,'utf8'));
  zh('[data-achievement-language],.classic-language-switch,link[hreflang]').remove();
  zh('head').append(`<link rel="alternate" hreflang="zh-CN" href="${origin+route}"><link rel="alternate" hreflang="en" href="${origin+'/en'+route}"><link rel="alternate" hreflang="x-default" href="${origin+route}"><link rel="stylesheet" href="/assets/classic-language.css">`);
- zh('.classic-main > header').prepend(switcher(route,false));fs.writeFileSync(file,zh.html()+'\n');
+ zh('.classic-main > header').prepend(switcher(route,false));writeFile(file,zh.html()+'\n');
  const en=cheerio.load(zh.html());en('.classic-language-switch').remove();
  function walk(node){if(node.type==='text')node.data=translate(node.data);else if(!['script','style','figcaption'].includes(node.name))for(const child of node.children||[])walk(child)}walk(en('body')[0]);
  en('html').attr('lang','en');en('title').text('Well Dweller — '+translate(zh('h1').text())+' | GAME NOTE CLASSIC');
  en('link[rel=canonical],meta[property="og:url"]').each((_,node)=>en(node).attr(node.name==='link'?'href':'content',origin+'/en'+route));
  en('meta[name=description],meta[property="og:description"]').attr('content','Well Dweller — '+translate(zh('h1').text())+'. Reviewed guide notes and reference material.');en('meta[property="og:title"]').attr('content',en('title').text());
  en('[aria-label],img[alt]').each((_,node)=>{for(const attr of ['aria-label','alt'])if(en(node).attr(attr))en(node).attr(attr,translate(en(node).attr(attr)))});
- en('img[src],a[href]').each((_,node)=>{const attr=node.name==='img'?'src':'href',url=en(node).attr(attr);if(url?.startsWith(base+'images/maps/'))en(node).attr(attr,url.replace(/-zh\.svg$/,'-en.svg'))});
+ en('img[src],a[href]').each((_,node)=>{const attr=node.name==='img'?'src':'href',url=en(node).attr(attr);if(url?.startsWith(base+'images/maps/')||url?.startsWith(base+'images/routes/'))en(node).attr(attr,url.replace(/-zh\.svg$/,'-en.svg'))});
  en('a[href]').each((_,node)=>{const a=en(node),href=a.attr('href');if((href.startsWith(base)&&! /\.(webp|png|jpe?g|gif|avif|svg)(?:[?#]|$)/i.test(href))||/^\/(?:notes|updates)\/[^/]+\/$/.test(href)||['/','/games/','/notes/','/updates/','/about/','/search/'].includes(href))a.attr('href','/en'+href)});
  en('.classic-main > header').prepend(switcher(route,true));
  en('.classic-main > header > .classic-subtitle').first().text('Guide in progress · Updated '+data.updatedAt);en('.classic-main > header > .classic-subtitle').eq(1).text('GAME NOTE CLASSIC · Well Dweller');
@@ -68,10 +86,10 @@ for(const file of all){
  const achievement=data.achievements.find(e=>route===base+'achievements/'+e.slug+'/');
  if(achievement){en('h1').text(achievement.nameEn);en('.classic-main > article').html(`<p>${escape(achievement.descriptionEn)}</p><p><a href="https://steamcommunity.com/stats/3699590/achievements/?l=english">Steam English achievement list</a></p><h2 class="classic-heading">Related guides</h2><ul class="classic-links"><li><a href="/en${base}achievements/">Achievement index</a></li></ul>`)}
  if(route===base+'achievements/')en('.classic-main > article').html('<p>Well Dweller has 41 Steam achievements. The names and descriptions below use the official English Steam text.</p><div class="classic-table-wrap" tabindex="0" role="region" aria-label="Achievements"><table class="classic-table"><caption>Steam achievements</caption><thead><tr><th scope="col">Achievement</th><th scope="col">Official description</th></tr></thead><tbody>'+data.achievements.map(e=>`<tr><td><a href="/en${base}achievements/${e.slug}/">${escape(e.nameEn)}</a></td><td>${escape(e.descriptionEn)}</td></tr>`).join('')+'</tbody></table></div>');
- const dest=path.join(root,'en',route,'index.html');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,en.html()+'\n');
+ const dest=path.join(root,'en',route,'index.html');fs.mkdirSync(path.dirname(dest),{recursive:true});writeFile(dest,en.html()+'\n');
  if(!/noindex/.test(en('meta[name=robots]').attr('content')||''))urls.push('/en'+route);
 }
 function escape(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-const sitemap=path.join(root,'sitemap.xml');let xml=fs.readFileSync(sitemap,'utf8').replace(/\s*<url><loc>https:\/\/gamenote.cc\/en\/games\/an-jing-wei-guang\/[^<]*<\/loc><\/url>/g,'');xml=xml.replace('</urlset>',urls.map(url=>`<url><loc>${origin+url}</loc></url>`).join('\n')+'\n</urlset>');fs.writeFileSync(sitemap,xml);
-fs.writeFileSync(path.join(root,'_research/an-jing-wei-guang/english-pending.json'),JSON.stringify([...untranslated],null,2)+'\n');
+const sitemap=path.join(root,'sitemap.xml');let xml=fs.readFileSync(sitemap,'utf8').replace(/\s*<url><loc>https:\/\/gamenote.cc\/en\/games\/an-jing-wei-guang\/[^<]*<\/loc><\/url>/g,'');xml=xml.replace('</urlset>',urls.map(url=>`<url><loc>${origin+url}</loc></url>`).join('\n')+'\n</urlset>');writeFile(sitemap,xml);
+writeFile(path.join(root,'_research/an-jing-wei-guang/english-pending.json'),JSON.stringify([...untranslated],null,2)+'\n');
 console.log(`Generated ${all.length} paired Classic pages (${urls.length} English indexable); untranslated notes are explicitly labelled, never mixed into English prose.`);

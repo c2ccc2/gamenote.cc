@@ -6,6 +6,7 @@ assert.equal(urls.length,new Set(urls).size,'Sitemap must contain no duplicate U
 assert.equal(urls.filter(u=>u===origin+'/en/updates/').length,1);
 for(const url of urls){const $=read(url.slice(origin.length));assert.doesNotMatch($('meta[name=robots]').attr('content')||'',/noindex/i);assert.equal($('link[rel=canonical]').attr('href'),url)}
 const summaries=require('../content/games/an-jing-wei-guang/region-summaries.json');
+const classicData=require('./lib/classic-data.cjs').loadClassicData(root);
 for(const crop of require('../content/games/an-jing-wei-guang/map-crops.json'))for(const en of [false,true]){
  const $=read((en?'en/':'')+base+'maps/'+crop.id+'/'),svgPath='/'+base+'images/maps/crops/'+crop.id+'-'+(en?'en':'zh')+'.svg';
  assert.equal($('.classic-regional-crop').length,1);assert.equal($('.classic-regional-crop img').attr('src'),svgPath);
@@ -18,17 +19,18 @@ for(const crop of require('../content/games/an-jing-wei-guang/map-crops.json'))f
 for(const prefix of ['', 'en/']){
  const en=!!prefix,queen=read(prefix+base+'bosses/the-queen/');
  const well=read(prefix+base+'walkthrough/the-well/'),garden=read(prefix+base+'walkthrough/night-garden/');
- assert.equal(garden('#garden-spirits').length,1);
- assert.equal(garden('.classic-spirit-route li').length,2);
- assert.ok(well('a[href="/'+prefix+base+'walkthrough/night-garden/#garden-spirits"]').length);
+ assert.equal(garden('#area-spirits').length,1);
+ assert.equal(garden('.classic-spirit-route li').length,require('../content/games/an-jing-wei-guang/spirits-by-area.json')['night-garden'].length);
+ assert.ok(well('a[href="/'+prefix+base+'collectibles/spirits/"]').length);
  for(const page of [well,garden]){
   const copy=page('.classic-main > article').text();
   assert.doesNotMatch(copy,en?/return (?:them|the spirit) to (?:the|a) nest/i:/找到之后还要归还|回到巢穴归还|仅找到鸟灵还不等于已经归还/);
  }
- assert.match(queen('meta[name=robots]').attr('content'),/noindex/);assert.ok(!urls.includes(origin+'/'+prefix+base+'bosses/the-queen/'));
+ assert.doesNotMatch(queen('meta[name=robots]').attr('content')||'',/noindex/);assert.ok(urls.includes(origin+'/'+prefix+base+'bosses/the-queen/'));
  assert.ok(queen('.classic-main > article').text().length>150);assert.equal(queen('.article-references').length,1);
  assert.ok(queen('a[href="/'+prefix+base+'achievements/endgame/"]').length);
  for(const [id,summary] of Object.entries(summaries)){
+  const updatedAt=classicData.areas.find(record=>record.id===id).updatedAt;
   const $=read(prefix+base+'walkthrough/'+id+'/');
   assert.equal($('.classic-region-summary').length,1);assert.ok($('.classic-region-summary dt').length>=3);
   if(id==='the-bog'){
@@ -44,8 +46,8 @@ for(const prefix of ['', 'en/']){
   if(summary.bosses?.length)assert.ok($('.classic-region-summary dd a[href*="/bosses/"]').length);
   assert.equal($('meta[name=description]').attr('content'),summary[en?'en':'zh']);
   assert.equal($('.article-references').length,1);
-  const schema=JSON.parse($('script[data-article-schema]').text());assert.equal(schema['@type'],'Article');assert.equal(schema.dateModified,today);assert.equal(schema.author.name,'GAME NOTE');assert.equal(schema.inLanguage,en?'en':'zh-CN');
-  assert.equal($('.classic-main > header time[datetime="'+today+'"]').length,1);
+  const schema=JSON.parse($('script[data-article-schema]').text());assert.equal(schema['@type'],'Article');assert.equal(schema.dateModified,updatedAt);assert.equal(schema.author.name,'GAME NOTE');assert.equal(schema.inLanguage,en?'en':'zh-CN');
+  assert.equal($('.classic-main > header time[datetime="'+updatedAt+'"]').length,1);
   assert.equal($('.classic-main > header > p').length,1,'Classic headers must have one byline only');
   assert.equal($('.classic-main > header > h1').next().find('time').length,1);
   assert.doesNotMatch($('.classic-main > header > p').text(),/资料持续整理中|GAME NOTE CLASSIC|Guide in progress/);
@@ -65,6 +67,6 @@ for(let part=2;part<=7;part++){
  }
 }
 assert.equal(count,63);
-const llms=fs.readFileSync(path.join(root,'llms.txt'),'utf8');assert.ok(llms.startsWith('# GAME NOTE\n\n> '));const links=[...llms.matchAll(/\]\((https:\/\/[^)]+)\):/g)].map(m=>m[1]);assert.ok(links.length>=10&&links.length<=30);
+const llms=fs.readFileSync(path.join(root,'llms.txt'),'utf8').replaceAll('\r\n','\n');assert.ok(llms.startsWith('# GAME NOTE\n\n> '));const links=[...llms.matchAll(/\]\((https:\/\/[^)]+)\):/g)].map(m=>m[1]);assert.ok(links.length>=10&&links.length<=30);
 for(const url of links)if(url.startsWith(origin+'/')){const target=path.join(root,url.slice(origin.length));assert.ok(fs.existsSync(path.extname(target)?target:path.join(target,'index.html')),'Broken llms entry: '+url)}
 console.log(`Verified ${urls.length} unique sitemap entries, bilingual article metadata, 9 regional summaries, 63 retained illustrated passages and ${links.length} llms.txt links.`);

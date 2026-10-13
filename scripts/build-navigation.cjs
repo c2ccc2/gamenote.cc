@@ -1,18 +1,19 @@
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),cheerio=require('cheerio');
+const writeFile = require('./lib/write-file.cjs');
 const routes=require('../assets/routes.js'),{loadClassicData,confirmed,canPublish}=require('./lib/classic-data.cjs');
 const root=path.resolve(__dirname,'..'),origin='https://gamenote.cc',base='/games/an-jing-wei-guang/';
 function content(en){const context={window:{GAMENOTE_ROUTES:routes}};for(const file of ['content.js',...(en?['content.en.js']:[])])vm.runInNewContext(fs.readFileSync(path.join(root,'assets',file),'utf8'),context);return context.window.GAMENOTE_CONTENT}
 const zh=content(false),english=content(true),data=loadClassicData(root),escape=routes.escape;
-const records={walkthrough:[...data.areas,...data.walkthroughs],maps:data.areas,bosses:data.bosses,abilities:data.abilities,collectibles:data.collectibles,quests:data.quests,achievements:data.achievements};
-const names={catalog:'游戏图鉴',games:'Games',notes:'Notes',updates:'Updates',about:'About',search:'Search',walkthrough:'流程攻略',maps:'地图',bosses:'Boss',abilities:'能力',collectibles:'收集',quests:'任务',challenges:'挑战',achievements:'成就',systems:'系统',secrets:'隐藏内容', 'key-items':'Key Items','time-trials':'Time Trials'};
-const enNames={catalog:'Game Catalog',walkthrough:'Walkthrough',maps:'Maps',bosses:'Bosses',abilities:'Abilities',collectibles:'Collectibles',quests:'Quests',challenges:'Challenges',achievements:'Achievements',systems:'Systems',secrets:'Secrets'};
+const records={walkthrough:[...data.areas,...data.walkthroughs],maps:data.areas,bosses:data.bosses,abilities:data.abilities,collectibles:data.collectibles,quests:data.quests,achievements:data.achievements,challenges:data.challenges};
+const names={catalog:'游戏图鉴',news:'动态',games:'Games',notes:'Notes',updates:'Updates',about:'About',search:'Search',walkthrough:'流程攻略','the-first-berserker-khazan':'第一狂战士：卡赞',maps:'地图',bosses:'Boss',abilities:'能力',collectibles:'收集',quests:'任务',challenges:'挑战',achievements:'成就',systems:'系统',secrets:'隐藏内容', 'key-items':'Key Items','time-trials':'Time Trials'};
+const enNames={catalog:'Game Catalog',news:'News','the-first-berserker-khazan':'The First Berserker: Khazan',walkthrough:'Walkthrough',maps:'Maps',bosses:'Bosses',abilities:'Abilities',collectibles:'Collectibles',quests:'Quests',challenges:'Challenges',achievements:'Achievements',systems:'Systems',secrets:'Secrets'};
 function files(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?files(path.join(dir,entry.name)):entry.name.endsWith('.html')?[path.join(dir,entry.name)]:[])}
-const pages=[path.join(root,'index.html'),...['catalog','games','notes','updates','about','search','en'].flatMap(dir=>files(path.join(root,dir)))];
+const pages=[path.join(root,'index.html'),...['catalog','news','games','notes','updates','about','search','en'].flatMap(dir=>files(path.join(root,dir)))];
 function noteCard(note,en,shared){const game=shared.games.find(g=>g.id===note.game),url=(en?'/en':'')+note.url;return `<article class="note-card"><p class="eyebrow coral">${escape(note.categoryLabel)}</p><h3><a href="${url}" target="_blank" rel="noopener noreferrer">${escape(note.title)}</a></h3><p>${escape(note.description)}</p><div class="note-meta"><time datetime="${note.date}">${note.date.replaceAll('-','/')}</time>${game?`<a href="${game.guideUrl}">${escape(en?game.title:game.titleZh)}</a>`:''}</div><a class="text-link" href="${url}" target="_blank" rel="noopener noreferrer">${en?'Read note':'阅读手记'} <b>→</b></a></article>`}
 let indexed=0;
 for(const file of pages){
  const url='/'+path.relative(root,file).replaceAll('\\','/').replace(/index\.html$/,''),en=url.startsWith('/en/'),current=url.replace(/^\/en\//,'/'),prefix=en?'/en/':'/',shared=en?english:zh;
- let $=cheerio.load(fs.readFileSync(file,'utf8'));const classic=$('body').hasClass('classic');
+ let $=cheerio.load(fs.readFileSync(file,'utf8'));const classic=$('body').hasClass('classic'),khazanClassic=$('body').hasClass('khazan-classic');
  $('link[href="/assets/image-viewer.css"],script[src="/assets/image-viewer.js"]').remove();
  // Rebuilding a page must not retain whitespace left by the removed viewer script.
  if(current==='/'||current==='/en/')$('body').contents().filter((_,node)=>node.type==='text'&&/^\s+$/.test(node.data||'')).last().remove();
@@ -21,7 +22,7 @@ for(const file of pages){
  $('a[href]').each((_,node)=>{const a=$(node);if(a.find('img').length&&/\.(webp|png|jpe?g|gif|avif|svg)(?:[?#]|$)/i.test(a.attr('href')))a.attr({target:'_blank',rel:'noopener noreferrer'})});
  // Discard the retired empty modern game route without changing the actual guide.
  if(current==='/games/well-dweller/'){
-  $('meta[http-equiv=refresh],meta[name=robots]').remove();$('head').append(`<meta http-equiv="refresh" content="0; url=${base}"><meta name="robots" content="noindex,follow">`);$('link[rel=canonical]').attr('href',origin+base);$('main').html(`<p><a href="${base}">前往《黯井微光》攻略专题 →</a></p>`);fs.writeFileSync(file,$.html());continue;
+  $('meta[http-equiv=refresh],meta[name=robots]').remove();$('head').append(`<meta http-equiv="refresh" content="0; url=${base}"><meta name="robots" content="noindex,follow">`);$('link[rel=canonical]').attr('href',origin+base);$('main').html(`<p><a href="${base}">前往《黯井微光》攻略专题 →</a></p>`);writeFile(file,$.html());continue;
  }
  $('link[href="/assets/navigation.css"]').remove();$('head').append('<link rel="stylesheet" href="/assets/navigation.css">');
  $('script[src="/assets/routes.js"]').remove();const source=$('script[src="/assets/content.js"]').first();if(source.length)source.before('<script src="/assets/routes.js"></script>');
@@ -31,8 +32,8 @@ for(const file of pages){
  if(segments.length){
   const items=[{label:'GAME NOTE',href:prefix}];let accumulated=prefix;
   segments.forEach((segment,index)=>{accumulated+=segment+'/';const last=index===segments.length-1;items.push({label:last?title:segment==='an-jing-wei-guang'?(en?'Well Dweller':'黯井微光'):en?(enNames[segment]||names[segment]):names[segment]||segment,href:accumulated,current:last})});
-  const target=classic?$('.classic-main'):$('.article').length?$('.article'):$('main').first();
-  target.prepend(routes.breadcrumb(items,classic?'classic':'modern'));$('head').append(`<script type="application/ld+json" data-breadcrumb-schema>${routes.schema(items)}</script>`);
+  const target=classic||khazanClassic?$('.classic-main'):$('.article').length?$('.article'):$('main').first();
+  target.prepend(routes.breadcrumb(items,classic||khazanClassic?'classic':'modern'));$('head').append(`<script type="application/ld+json" data-breadcrumb-schema>${routes.schema(items)}</script>`);
  }
  // Render existing JS collections at build time, so links and search work without JS.
  $('[data-notes]').each((_,node)=>{const value=$(node).attr('data-notes'),limit=Number(value)||shared.notes.length;$(node).html([...shared.notes].filter(note=>note.listed!==false).sort((a,b)=>b.date.localeCompare(a.date)).slice(0,limit).map(note=>noteCard(note,en,shared)).join(''))});
@@ -60,17 +61,18 @@ for(const file of pages){
  let indexable=!search&&!/noindex/.test($('meta[name=robots]').attr('content')||'');
  if(classic){
   const parts=current.slice(base.length).split('/').filter(Boolean);
-  if(parts.length>=2&&!(parts[0]==='maps'&&parts[1]==='world')){let record=records[parts[0]]?.find(record=>record.slug===parts[1]);if(parts[0]==='collectibles'&&parts[1]==='key-items'&&parts[2])record=data.keyItems.find(record=>record.slug===parts[2]);indexable=indexable&&!!record&&canPublish(record);}
+  const puzzleDirectory=parts[0]==='challenges'&&parts[1]==='puzzle-solutions'&&parts.length===2&&data.areas.some(record=>canPublish(record)&&record.fields.referencePuzzle?.publish);
+  if(parts.length>=2&&!(parts[0]==='maps'&&parts[1]==='world')){let record=records[parts[0]]?.find(record=>record.slug===parts[1]);if(parts[0]==='collectibles'&&parts[1]==='key-items'&&parts[2])record=data.keyItems.find(record=>record.slug===parts[2]);if(parts[0]==='challenges'&&parts[1]==='time-trials')record=parts[2]?data.challenges.find(record=>record.slug===parts[2]):null;indexable=indexable&&(puzzleDirectory||parts[0]==='challenges'&&parts[1]==='time-trials'&&!parts[2]||!!record&&canPublish(record));}
  }
  if(indexable){
-  (classic?$('.classic-main > article'):$('.article').length?$('.article'):$('main').first()).attr('data-pagefind-body','');indexed++;
+  (classic||khazanClassic?$('.classic-main > article'):$('.article').length?$('.article'):$('main').first()).attr('data-pagefind-body','');indexed++;
   const type=note?'Note':update?'Update':classic?(names[current.slice(base.length).split('/')[0]]||'Game'):(names[segments[0]]||'Home');
   const metadata={title,type,...(update?{category:update.type,...(update.game?{game:shared.games.find(game=>game.id===update.game)?.titleZh||''}:{})}:{}),...(classic?{game:'黯井微光 / Well Dweller'}:{}),...(note?{category:note.categoryLabel,...(note.game?{game:shared.games.find(g=>g.id===note.game)?.titleZh||''}:{})}:{})};
   for(const [key,value] of Object.entries(metadata))$('head').append(`<meta data-search-meta data-pagefind-meta="${key}[content]" content="${escape(value)}">`);
  }
  $('.classic-sidebar,.classic-banner,#related-notes,[data-site-header],[data-site-footer]').attr('data-pagefind-ignore','all');
  const html=$.html();
- fs.writeFileSync(file,(current==='/'||current==='/en/'?html.replace(/(?:\r?\n[ \t]*){3,}(?=<script src="\/assets\/image-viewer\.js")/g,'\n'):html)+'\n');
+ writeFile(file,(current==='/'||current==='/en/'?html.replace(/(?:\r?\n[ \t]*){3,}(?=<script src="\/assets\/image-viewer\.js")/g,'\n'):html)+'\n');
 }
-const sitemap=path.join(root,'sitemap.xml');let xml=fs.readFileSync(sitemap,'utf8');for(const note of zh.notes.filter(note=>note.listed===false))for(const url of [note.url,'/en'+note.url])xml=xml.replace('<url><loc>'+origin+url+'</loc></url>','');fs.writeFileSync(sitemap,xml);
+const sitemap=path.join(root,'sitemap.xml');let xml=fs.readFileSync(sitemap,'utf8');for(const note of zh.notes.filter(note=>note.listed===false))for(const url of [note.url,'/en'+note.url])xml=xml.replace('<url><loc>'+origin+url+'</loc></url>','');writeFile(sitemap,xml);
 console.log(`Unified navigation on ${pages.length} pages; ${indexed} pages allowed into Pagefind.`);

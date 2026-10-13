@@ -1,4 +1,5 @@
 const fs = require('node:fs');
+const writeFile = require('./lib/write-file.cjs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const games = require('../content/catalog/games.json');
@@ -15,7 +16,7 @@ for (const slug of ['', ...games.map(game => game.slug)]) {
     html = html.replace(/<link rel="alternate" hreflang="(?:zh-CN|en|x-default)"[^>]*>/g, '');
     html = html.replace('</head>', alternate + `<script data-gamenote-gtm="${container}">${bootstrap}</script></head>`);
     html = html.replace('<body>', `<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${container}" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>`);
-    fs.writeFileSync(file, html);
+    writeFile(file, html);
   }
 }
 const sitemap = path.join(root, 'sitemap.xml');
@@ -25,6 +26,6 @@ if (fs.existsSync(sitemap)) {
     const loc = origin + prefix + (slug ? slug + '/' : '');
     if (!xml.includes('<loc>' + loc + '</loc>')) xml = xml.replace('</urlset>', '  <url><loc>' + loc + '</loc></url>\n</urlset>');
   }
-  fs.writeFileSync(sitemap, xml);
+  writeFile(sitemap, xml);
 }
-console.log('Added reciprocal catalog languages and GTM to 56 pages.');
+console.log(`Added reciprocal catalog languages and GTM to ${(games.length + 1) * 2} pages.`);

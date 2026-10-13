@@ -4,9 +4,10 @@
  const games={
   islets:['Islets','Travel between broken islands, find magnetic cores and reconnect the world.'],
   'ender-lilies':['ENDER LILIES','Explore a kingdom beneath the rain of death and purify blighted spirits.'],
-  'an-jing-wei-guang':['Well Dweller','Area, boss, ability, collectible, quest and achievement directories are ready. Detailed guides remain under verification.']
+  'an-jing-wei-guang':['Well Dweller','Area, boss, ability, collectible, quest and achievement directories are ready. Detailed guides remain under verification.'],
+  'the-first-berserker-khazan':['The First Berserker: Khazan','A mission and boss guide is being prepared, beginning with the opening snowfield and combat basics.']
  };
- c.games=c.games.map(g=>games[g.id]?({...g,titleZh:games[g.id][0],description:games[g.id][1],...(g.id==='an-jing-wei-guang'?{guideUrl:'/en/games/an-jing-wei-guang/'}:{})}):g);
+ c.games=c.games.map(g=>games[g.id]?({...g,titleZh:games[g.id][0],description:games[g.id][1],...(['an-jing-wei-guang','the-first-berserker-khazan'].includes(g.id)?{guideUrl:'/en/games/'+g.slug+'/'}:{})}):g);
  const notes={
   'why-organize-game-guides-again':['Why Organize Game Guides Again?','Finding an answer and finding the answer needed right now are two different things.'],
   'why-an-jing-wei-guang-looks-like-an-old-guide-site':['Why Does the Well Dweller Guide Look Like a Website from Twenty Years Ago?','Traditional guide-site reading, built on a modern website.'],
@@ -25,7 +26,7 @@
  ];
  updates.push(['Well Dweller: Guide Structure and Reading Improvements','Regional walkthroughs, bilingual pages and section navigation have been refined. System explanations are now separate from abilities, with improved reading tools.']);
  const updateKeys=['《黯井微光》第一版资料库建立','章节、Boss 与地图页面骨架建立','Classic 内容数据与静态生成机制建立','GAME NOTE CLASSIC 专题框架建立','补充 Boss 战斗说明与主站入口','主站链接与 Pages 部署完成','GAME NOTE 信息架构开始升级','《黯井微光》攻略结构与阅读体验更新'];
- c.updates=c.updates.filter(u=>updateKeys.includes(u.title)).map(u=>{const i=updateKeys.indexOf(u.title);return {...u,title:updates[i][0],description:updates[i][1]}});
+ c.updates=c.updates.filter(u=>u.en || updateKeys.includes(u.title)).map(u=>{if(u.en)return {...u,...u.en};const i=updateKeys.indexOf(u.title);return {...u,title:updates[i][0],description:updates[i][1]}});
  const readingUpdate=c.updates.find(u=>u.slug==='well-dweller-guide-reading-update');
  if(readingUpdate){const sections=[
   ['Regional Walkthroughs and Maps','Exploration steps, pickups and combat notes now live in the corresponding regional walkthroughs. Maps retain reference images and walkthrough links; existing text and screenshots are preserved.'],

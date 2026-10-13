@@ -1,0 +1,78 @@
+{
+  "updatedAt":"2026-10-13",
+  "sources":{
+    "house":{"name":"QuestDuo — The Deep and Dollmaker's House","url":"https://questduo.com/well-dweller/the-deep-the-dollmakers-house-walkthrough/","type":"guide","accessedAt":"2026-10-13"},
+    "vault":{"name":"QuestDuo — Burial Vault","url":"https://questduo.com/well-dweller/burial-vault-walkthrough/","type":"guide","accessedAt":"2026-10-13"},
+    "castle":{"name":"QuestDuo — Queen's Castle","url":"https://questduo.com/well-dweller/queens-castle-walkthrough-the-final-battle/","type":"guide","accessedAt":"2026-10-13"},
+    "pages":{"name":"Gamer Social Club — Story Pages","url":"https://gamersocialclub.ca/2026/09/21/well-dweller-all-story-page-locations-guide/","type":"guide","accessedAt":"2026-10-13"},
+    "grave":{"name":"Gamer Social Club — Gravedigger","url":"https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-gravedigger-boss-guide/","type":"guide","accessedAt":"2026-10-13"},
+    "inn":{"name":"Gamer Social Club — Escape Webdrench Inn","url":"https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-late-night-guest-achievement-trophy-guide/","type":"guide","accessedAt":"2026-10-13"},
+    "siblings":{"name":"Gamer Social Club — Ilda's Siblings","url":"https://gamersocialclub.ca/2026/09/21/well-dweller-find-ildas-siblings-in-the-queens-castle/","type":"guide","accessedAt":"2026-10-13"},
+    "queen":{"name":"Gamer Social Club — The Queen","url":"https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-queen-boss-guide/","type":"guide","accessedAt":"2026-10-13"},
+    "ending":{"name":"Gamer Social Club — Together at Last","url":"https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-together-at-last-achievement-trophy/","type":"guide","accessedAt":"2026-10-13"}
+  },
+  "areas":[
+    {"id":"dollmakers-house","sources":["house","pages"],"boss":"dollmaker","next":["burial-vault","webdrench-inn"],
+      "zh":{"goal":"解救 Magda，取得墙壁弹射，开放后续探索。","before":"先检查无限攀爬与悬停，并在沿途帐篷整理油瓶和饰物。","nodes":["沼泽西端","第二帐篷","镜子战","Magda / 墙壁弹射"],"steps":[
+        {"title":"进入房屋","text":"从沼泽西侧过水，继续向左，下行后进入房屋。"},
+        {"title":"沿钟声机关下行","text":"在粉色尖刺通道用火柴敲钟切换平台，向下层第二帐篷推进并存档。"},
+        {"title":"打开支路","text":"帐篷下方右侧可检查墓室拉杆；返回房屋左侧，借电梯和弹射打开上方拉杆。"},
+        {"title":"处理玩偶师之镜","text":"进入镜子战。分身阶段控制会反向，先观察受攻击的半边，再决定移动。详细要点见下方首领入口。"},
+        {"title":"取得新能力","text":"胜利后找 Magda，进入能力巢穴，完成墙壁弹射教学。"}
+      ],"check":["离开前确认墙壁弹射已取得。","遇到单侧拉杆无法打开的支路，记下位置，从另一侧回访。"]},
+      "en":{"goal":"Rescue Magda and unlock Wall Sling for later exploration.","before":"Check Endless Climb and Hover, then review healing and trinkets at a tent.","nodes":["Western Bog","Second tent","Mirror battle","Magda / Wall Sling"],"steps":[
+        {"title":"Enter the house","text":"Cross the western Bog water, continue left and descend into the house."},
+        {"title":"Follow the bell route","text":"Switch platforms across pink spikes with bells; descend to the second tent and save."},
+        {"title":"Open branches","text":"Check the Burial Vault lever below-right of the tent. Return left through the house elevator to the upper lever."},
+        {"title":"Face the mirror","text":"During the split phase, controls mirror each other. Watch the attacked half before moving; use the boss notes below."},
+        {"title":"Learn the ability","text":"After victory, find Magda and complete the Wall Sling nest tutorial."}
+      ],"check":["Confirm Wall Sling before leaving.","Mark one-sided lever routes and return from their other side."]}
+    },
+    {"id":"burial-vault","sources":["vault","grave"],"boss":"gravedigger","next":["webdrench-inn","queens-castle"],
+      "zh":{"goal":"护送 Irma 参加聚会，并取得这一支路的金色羽毛。","before":"带上墙壁弹射，准备在墓室西侧持续探索。","nodes":["午夜雨境","Irma / 帐篷","掘墓者","聚会 / 金色羽毛"],"steps":[
+        {"title":"从雨境进入","text":"沿午夜雨境下层支路进入墓室；入区后先向左寻找 Irma。"},
+        {"title":"接上护送任务","text":"与 Irma 对话后到附近帐篷存档。帐篷上方支路可查看生锈罗盘。"},
+        {"title":"打开回返通道","text":"沿下层机关路线推进，处理箭陷阱并拉动拉杆，打开连接排水道的通道。"},
+        {"title":"前往西侧帐篷","text":"继续向左穿过上层陷阱，到第二帐篷休整，再从左侧进入掘墓者场地。"},
+        {"title":"完成聚会","text":"胜利后继续向左进入聚会屋，完成护送并领取金色羽毛。"}
+      ],"check":["击败首领后还要继续到聚会屋。","可从下方任务入口核对护送目标。"]},
+      "en":{"goal":"Escort Irma to the party and collect this branch's Golden Feather.","before":"Bring Wall Sling and prepare to explore west through the vault.","nodes":["Midnight Drench","Irma / tent","Gravedigger","Party / feather"],"steps":[
+        {"title":"Enter from the rain","text":"Follow the lower Midnight Drench branch into the vault; look left for Irma."},
+        {"title":"Start the escort","text":"Talk to Irma and save nearby. Check above the tent for Rusted Compass."},
+        {"title":"Open the return route","text":"Continue through lower mechanisms and arrow traps; pull the lever linking back to the Drains."},
+        {"title":"Reach the western tent","text":"Cross upper traps leftward to the second tent, then enter Gravedigger's arena to its left."},
+        {"title":"Finish at the party","text":"After victory, continue left into the party house for the escort reward and feather."}
+      ],"check":["Continue to the party house after the boss.","Use the related quest below to check the escort objective."]}
+    },
+    {"id":"webdrench-inn","sources":["castle","inn"],"next":["midnight-drench","queens-castle"],
+      "zh":{"goal":"通过旅店机关并逃离店主，取得金色羽毛。","before":"在追逐前存档，并确认能使用滑行、悬停与墙壁弹射。","nodes":["旅店帐篷","拉杆与钟","访客簿","午夜雨境 / 羽毛"],"steps":[
+        {"title":"探索与开路","text":"借泡泡和钟声机关向上探索，操作沿途拉杆；虫翅饰物所在支路也有开路拉杆。"},
+        {"title":"接近访客簿","text":"到后段帐篷存档，再向下与店主互动，触发签名场景。"},
+        {"title":"向左逃离","text":"追逐中连续处理钟、可破坏障碍和蛛网借力点；按游戏提示操作。"},
+        {"title":"检查出口","text":"逃出后进入午夜雨境，向左领取金色羽毛。"}
+      ],"check":["羽毛总数未到七根时，先回金色羽毛目录核对其他支路。"]},
+      "en":{"goal":"Clear the inn mechanisms and escape for a Golden Feather.","before":"Save before the chase and check Slide, Hover and Wall Sling.","nodes":["Inn tent","Levers / bells","Guest book","Rain / feather"],"steps":[
+        {"title":"Explore and open paths","text":"Use bubbles, bells and levers; the Insect Wing branch also opens a route."},
+        {"title":"Approach the guest book","text":"Save at the later tent, then descend to the signing encounter."},
+        {"title":"Escape left","text":"Handle bells, barriers and web launch points using the game's prompts."},
+        {"title":"Check the exit","text":"Collect the feather left of the Midnight Drench exit."}
+      ],"check":["If you still lack seven feathers, check the feather index for other branches."]}
+    },
+    {"id":"queens-castle","sources":["castle","siblings","queen","ending"],"boss":"the-queen","next":[],
+      "zh":{"goal":"解救 Ilda 的兄弟姐妹，前往女王寝室并完成主线。","before":"确认七根金色羽毛齐全，回沼泽的城堡入口。","nodes":["七根羽毛","Ilda 的任务","三对救援","女王战"],"steps":[
+        {"title":"入城存档","text":"向入口出示羽毛，继续上行与 Ilda 对话，找到城堡帐篷。"},
+        {"title":"解救兄弟姐妹","text":"探索上下层拉杆支路；一对在银色玩偶场地右侧，另外两对分别需探索下层与上层战斗房。"},
+        {"title":"返回 Ilda","text":"三对全数救出后按目标返回 Ilda，经搭出的路径前往寝室并存档。"},
+        {"title":"应对女王","text":"前段处理地面危险，后段转移到升起的平台。招式应对见下方女王攻略。"},
+        {"title":"继续回访","text":"主线结束后可以补收集；从通关后入口核对 Soar、神秘地图和灵魂碎片。"}
+      ],"check":["兄弟姐妹不是一处目标，要确认三对均已救出。","若尚未取得 Soar，先查看能力页的开放条件。"]},
+      "en":{"goal":"Rescue Ilda's siblings and reach the Queen's Chamber.","before":"Bring seven Golden Feathers to the Bog castle entrance.","nodes":["Seven feathers","Ilda's task","Three rescues","Queen battle"],"steps":[
+        {"title":"Enter and save","text":"Present the feathers, ascend to Ilda and find the castle tent."},
+        {"title":"Rescue the siblings","text":"Check lower and upper branches; one pair is right of Silver Doll, others follow lower exploration and an upper combat room."},
+        {"title":"Return to Ilda","text":"With all three pairs freed, return to Ilda and save on the chamber route."},
+        {"title":"Face the Queen","text":"Handle floor hazards, then raised platforms; consult the boss guide below."},
+        {"title":"Keep exploring","text":"After the story, check postgame notes for Soar, the map and fragments."}
+      ],"check":["Confirm all three sibling pairs.","Check Soar's ability page if it remains locked."]}
+    }
+  ]
+}

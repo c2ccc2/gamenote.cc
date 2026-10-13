@@ -118,7 +118,8 @@
       "未发布"
     ],
     "source": "https://www.konami.com/games/eu/en/topics/19188/",
-    "store": "https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/"
+    "store": "https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/",
+    "expectedReleaseDate": "2026-10-15"
   },
   {
     "slug": "hollow-knight",
@@ -275,7 +276,11 @@
     "creator": "Adglobe / Live Wire",
     "cover": "/assets/catalog/ender-magnolia.jpg",
     "summary": "《终焉之莉莉》事件数十年后的故事：调律师莱拉克与人造生命体一起探索被烟雾侵蚀的国度。",
-    "features": ["伙伴能力", "地图探索", "首领战"],
+    "features": [
+      "伙伴能力",
+      "地图探索",
+      "首领战"
+    ],
     "source": "https://store.steampowered.com/app/2725260/ENDER_MAGNOLIA_Bloom_in_the_Mist/",
     "store": "https://store.steampowered.com/app/2725260/ENDER_MAGNOLIA_Bloom_in_the_Mist/"
   },
@@ -283,7 +288,9 @@
     "slug": "afterimage",
     "name": "心渊梦境",
     "nameEn": "Afterimage",
-    "aliases": ["心渊噩梦"],
+    "aliases": [
+      "心渊噩梦"
+    ],
     "category": "metroidvania",
     "difficulty": "challenging",
     "year": "2023",
@@ -291,7 +298,11 @@
     "creator": "Aurogon Shanghai",
     "cover": "/assets/catalog/afterimage.jpg",
     "summary": "在手绘的园庭世界中探索非线性区域，以不同武器和能力开辟路线，寻找蕾妮失去的记忆。",
-    "features": ["大地图探索", "武器成长", "多结局"],
+    "features": [
+      "大地图探索",
+      "武器成长",
+      "多结局"
+    ],
     "source": "https://store.steampowered.com/app/1701520/Afterimage/?l=schinese",
     "store": "https://store.steampowered.com/app/1701520/Afterimage/?l=schinese"
   },
@@ -306,7 +317,11 @@
     "creator": "Acid Nerve",
     "cover": "/assets/catalog/deaths-door.jpg",
     "summary": "扮演负责收割灵魂的乌鸦，穿行于相互连通的世界，探索地牢、解谜并与首领战斗。",
-    "features": ["俯视角探索", "地牢解谜", "动作战斗"],
+    "features": [
+      "俯视角探索",
+      "地牢解谜",
+      "动作战斗"
+    ],
     "source": "https://store.steampowered.com/app/894020/Deaths_Door/",
     "store": "https://store.steampowered.com/app/894020/Deaths_Door/"
   },
@@ -321,7 +336,11 @@
     "creator": "TUNIC Team",
     "cover": "/assets/catalog/tunic.jpg",
     "summary": "操控小狐狸探索陌生世界，通过散落的游戏说明书逐步理解规则、破解谜题与隐藏路线。",
-    "features": ["俯视角探索", "知识解谜", "动作战斗"],
+    "features": [
+      "俯视角探索",
+      "知识解谜",
+      "动作战斗"
+    ],
     "source": "https://store.steampowered.com/app/553420/TUNIC/",
     "store": "https://store.steampowered.com/app/553420/TUNIC/"
   },
@@ -337,7 +356,11 @@
     "creator": "Nintendo",
     "cover": "/assets/catalog/metroid-fusion.jpg",
     "summary": "萨姆斯在空间站调查 X 寄生体事件，逐步恢复能力，并躲避强大的 SA-X。",
-    "features": ["能力解锁", "空间站探索", "追逐"],
+    "features": [
+      "能力解锁",
+      "空间站探索",
+      "追逐"
+    ],
     "source": "https://www.nintendo.com/us/whatsnew/metroid-fusion-is-now-available-for-nintendo-switch-online-expansion-pack-members/",
     "store": null
   },
@@ -353,7 +376,11 @@
     "creator": "Konami",
     "cover": "/assets/catalog/castlevania-dawn-of-sorrow.png",
     "summary": "《晓月圆舞曲》的续作，苍真再次卷入德古拉复活的阴谋，继续以魂魄能力探索城堡。",
-    "features": ["城堡探索", "魂魄收集", "装备成长"],
+    "features": [
+      "城堡探索",
+      "魂魄收集",
+      "装备成长"
+    ],
     "source": "https://www.konami.com/games/castlevania/us/en-us/page/history_2005_nds",
     "store": null
   },
@@ -361,7 +388,9 @@
     "slug": "blasphemous",
     "name": "神之亵渎",
     "nameEn": "Blasphemous",
-    "aliases": ["渎神"],
+    "aliases": [
+      "渎神"
+    ],
     "category": "metroidvania",
     "series": "blasphemous",
     "difficulty": "challenging",
@@ -370,7 +399,11 @@
     "creator": "The Game Kitchen",
     "cover": "/assets/catalog/blasphemous.jpg",
     "summary": "扮演忏悔者穿越扭曲的 Cvstodia，在相互连通的区域中战斗、寻找遗物与秘密。",
-    "features": ["非线性探索", "精确战斗", "首领战"],
+    "features": [
+      "非线性探索",
+      "精确战斗",
+      "首领战"
+    ],
     "source": "https://store.steampowered.com/app/774361/Blasphemous/?l=schinese",
     "store": "https://store.steampowered.com/app/774361/Blasphemous/?l=schinese"
   },
@@ -386,7 +419,11 @@
     "creator": "The Game Kitchen",
     "cover": "/assets/catalog/blasphemous-2.jpg",
     "summary": "忏悔者在新的世界苏醒，以多种武器与新能力探索道路，对抗新的敌人与首领。",
-    "features": ["能力解锁", "武器切换", "首领战"],
+    "features": [
+      "能力解锁",
+      "武器切换",
+      "首领战"
+    ],
     "source": "https://store.steampowered.com/app/2114740/Blasphemous_2/?l=schinese",
     "store": "https://store.steampowered.com/app/2114740/Blasphemous_2/?l=schinese"
   },
@@ -401,7 +438,11 @@
     "creator": "RedCandleGames",
     "cover": "/assets/catalog/nine-sols.jpg",
     "summary": "在道教科幻风格的新昆仑探索，依靠格挡与反击推进战斗并挑战九位统治者。",
-    "features": ["地图探索", "格挡反击", "首领战"],
+    "features": [
+      "地图探索",
+      "格挡反击",
+      "首领战"
+    ],
     "source": "https://store.steampowered.com/app/1809540/Nine_Sols/?l=schinese",
     "store": "https://store.steampowered.com/app/1809540/Nine_Sols/?l=schinese"
   },
@@ -416,7 +457,11 @@
     "creator": "Billy Basso",
     "cover": "/assets/catalog/animal-well.jpg",
     "summary": "在层层相连的井中寻找物品与线索，用观察和实验解开隐蔽的谜题。",
-    "features": ["非线性探索", "道具解谜", "隐藏秘密"],
+    "features": [
+      "非线性探索",
+      "道具解谜",
+      "隐藏秘密"
+    ],
     "source": "https://store.steampowered.com/app/813230/ANIMAL_WELL/?l=schinese",
     "store": "https://store.steampowered.com/app/813230/ANIMAL_WELL/?l=schinese"
   },
@@ -431,7 +476,11 @@
     "creator": "Retro Forge",
     "cover": "/assets/catalog/souldiers.jpg",
     "summary": "在泰拉加亚的奇幻世界中选择职业，探索相连区域，结合平台动作与角色成长突破险境。",
-    "features": ["职业选择", "区域探索", "角色成长"],
+    "features": [
+      "职业选择",
+      "区域探索",
+      "角色成长"
+    ],
     "source": "https://store.steampowered.com/app/1419160/Souldiers/?l=schinese",
     "store": "https://store.steampowered.com/app/1419160/Souldiers/?l=schinese"
   },
@@ -439,7 +488,9 @@
     "slug": "another-crabs-treasure",
     "name": "蟹蟹寻宝奇遇",
     "nameEn": "Another Crab's Treasure",
-    "aliases": ["蟹宝"],
+    "aliases": [
+      "蟹宝"
+    ],
     "category": "soulslike",
     "difficulty": "challenging",
     "year": "2024",
@@ -447,7 +498,11 @@
     "creator": "Aggro Crab",
     "cover": "/assets/catalog/another-crabs-treasure.jpg",
     "summary": "寄居蟹 Kril 在海底王国寻找失去的壳，以捡来的物品充当护甲，探索并迎战强敌。",
-    "features": ["类魂战斗", "贝壳装备", "海底探索"],
+    "features": [
+      "类魂战斗",
+      "贝壳装备",
+      "海底探索"
+    ],
     "source": "https://store.steampowered.com/app/1887840/Another_Crabs_Treasure/?l=schinese",
     "store": "https://store.steampowered.com/app/1887840/Another_Crabs_Treasure/?l=schinese"
   },
@@ -462,9 +517,36 @@
     "creator": "Sense Games",
     "cover": "/assets/catalog/ai-limit.jpg",
     "summary": "扮演机兵阿丽莎探索末日城市海汶斯威尔，在遗迹与怪物间寻找文明衰落的真相。",
-    "features": ["类魂战斗", "城市探索", "角色成长"],
+    "features": [
+      "类魂战斗",
+      "城市探索",
+      "角色成长"
+    ],
     "source": "https://store.steampowered.com/app/2407270/AI_LIMIT/?l=schinese",
     "store": "https://store.steampowered.com/app/2407270/AI_LIMIT/?l=schinese"
+  },
+  {
+    "slug": "the-first-berserker-khazan",
+    "name": "第一狂战士：卡赞",
+    "nameEn": "The First Berserker: Khazan",
+    "aliases": [
+      "卡赞"
+    ],
+    "category": "soulslike",
+    "difficulty": "challenging",
+    "year": "2025",
+    "platform": "PC / PlayStation 5 / Xbox Series X|S",
+    "creator": "Neople",
+    "cover": "/assets/catalog/the-first-berserker-khazan.jpg",
+    "summary": "扮演被流放的将军卡赞，以近战格挡、精力管理与武器招式突破高压首领战。",
+    "features": [
+      "类魂战斗",
+      "精力管理",
+      "首领战"
+    ],
+    "source": "https://khazan.nexon.com/",
+    "store": "https://store.steampowered.com/app/2680010/The_First_Berserker_Khazan/",
+    "guide": "/games/the-first-berserker-khazan/"
   },
   {
     "slug": "an-jing-wei-guang",
@@ -485,6 +567,384 @@
     ],
     "source": "https://store.steampowered.com/app/3699590/Well_Dweller/",
     "store": "https://store.steampowered.com/app/3699590/Well_Dweller/",
-    "guide": "/games/an-jing-wei-guang/"
+    "guide": "/games/an-jing-wei-guang/",
+    "news": "/news/metroidvania-2026-video-watchlist/",
+    "status": "released",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "已发售：2026-09-22",
+      "en": "Released: September 22, 2026",
+      "nameNoteZh": "Steam 官方中文名：黯井微光",
+      "nameNoteEn": "Official Simplified Chinese title: 黯井微光",
+      "source": "https://store.steampowered.com/app/3699590/?l=schinese"
+    }
+  },
+  {
+    "slug": "silver-pines",
+    "name": "银松镇",
+    "nameEn": "Silver Pines",
+    "category": "metroidvania",
+    "difficulty": "pending",
+    "year": "2026",
+    "platform": "PC / Steam",
+    "creator": "Wych Elm",
+    "cover": "/assets/catalog/silver-pines.jpg",
+    "summary": "在美国小镇调查失踪案，搜索线索、解谜并管理弹药、药品和有限背包，决定战斗还是避敌。",
+    "features": [
+      "生存恐怖／探索动作／银河恶魔城"
+    ],
+    "source": "https://store.steampowered.com/app/2333000/",
+    "store": "https://store.steampowered.com/app/2333000/",
+    "status": "released",
+    "news": "/news/metroidvania-2026-video-watchlist/",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "已发售：2026-10-08",
+      "en": "Released: October 8, 2026",
+      "nameNoteZh": "Steam 官方中文名：银松镇",
+      "nameNoteEn": "Official Simplified Chinese title: 银松镇",
+      "source": "https://store.steampowered.com/app/2333000/?l=schinese"
+    }
+  },
+  {
+    "slug": "a-sisters-journey",
+    "name": "A Sister's Journey",
+    "nameEn": "A Sister's Journey",
+    "category": "metroidvania",
+    "difficulty": "pending",
+    "year": "2026",
+    "platform": "PC / Steam",
+    "creator": "Florian Lackner",
+    "cover": "/assets/catalog/a-sisters-journey.jpg",
+    "summary": "Violet 寻找失踪的 Rena，以枪械、闪避和精准跳跃探索像素世界，收集武器升级与新能力。",
+    "features": [
+      "跑枪动作／精准平台／银河恶魔城"
+    ],
+    "source": "https://store.steampowered.com/app/1730790/",
+    "store": "https://store.steampowered.com/app/1730790/",
+    "status": "upcoming",
+    "news": "/news/metroidvania-2026-video-watchlist/",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "未发售；计划发售：2026-10-20",
+      "en": "Not released; planned: October 20, 2026",
+      "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
+      "nameNoteEn": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed.",
+      "source": "https://store.steampowered.com/app/1730790/?l=schinese"
+    },
+    "expectedReleaseDate": "2026-10-20"
+  },
+  {
+    "slug": "sinweaver",
+    "name": "Sinweaver",
+    "nameEn": "Sinweaver",
+    "category": "metroidvania",
+    "difficulty": "pending",
+    "year": "TBA",
+    "platform": "PC / Steam",
+    "creator": "Jitterbug Games",
+    "cover": "/assets/catalog/sinweaver.jpg",
+    "summary": "通过有首领战的手工关卡与可探索大地图推进，用近战、罪之魔法和新能力杀出地狱。",
+    "features": [
+      "战斗导向／2D Metroidvania Lite"
+    ],
+    "source": "https://store.steampowered.com/app/3559990/",
+    "store": "https://store.steampowered.com/app/3559990/",
+    "status": "upcoming",
+    "news": "/news/metroidvania-2026-video-watchlist/",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "未发售；Steam 标注“即将宣布”，日期待公布",
+      "en": "Not released; date to be announced",
+      "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
+      "nameNoteEn": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed.",
+      "source": "https://store.steampowered.com/app/3559990/?l=schinese"
+    }
+  },
+  {
+    "slug": "maseylia-echoes-of-the-past",
+    "name": "Maseylia: Echoes of the Past",
+    "nameEn": "Maseylia: Echoes of the Past",
+    "category": "metroidvania",
+    "difficulty": "pending",
+    "year": "2026",
+    "platform": "PC / Steam",
+    "creator": "Sol Brothers",
+    "cover": "/assets/catalog/maseylia-echoes-of-the-past.jpg",
+    "summary": "在互相连通的立体世界中，以二段跳、空中冲刺和钩索等能力打开新路径，战斗也强调移动。",
+    "features": [
+      "3D 银河恶魔城／移动与空间探索"
+    ],
+    "source": "https://store.steampowered.com/app/2938870/",
+    "store": "https://store.steampowered.com/app/2938870/",
+    "status": "released",
+    "news": "/news/metroidvania-2026-video-watchlist/",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "已发售：2026-06-19",
+      "en": "Released: June 19, 2026",
+      "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
+      "nameNoteEn": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed.",
+      "source": "https://store.steampowered.com/app/2938870/?l=schinese"
+    }
+  },
+  {
+    "slug": "lucid",
+    "name": "LUCID",
+    "nameEn": "LUCID",
+    "category": "metroidvania",
+    "difficulty": "pending",
+    "year": "TBA",
+    "platform": "PC / Steam",
+    "creator": "The Matte Black Studio",
+    "cover": "/assets/catalog/lucid.jpg",
+    "summary": "Oenn 在水晶朋克世界吸收 Crystal Arts，让移动和战斗共同成长，以不同水晶武器应对平台谜题与首领。",
+    "features": [
+      "动作平台／空中战斗／银河恶魔城要素"
+    ],
+    "source": "https://store.steampowered.com/app/1717730/",
+    "store": "https://store.steampowered.com/app/1717730/",
+    "status": "upcoming",
+    "news": "/news/metroidvania-2026-video-watchlist/",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "未发售；Steam 标注“即将推出”，日期待公布",
+      "en": "Not released; coming soon, no date announced",
+      "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
+      "nameNoteEn": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed.",
+      "source": "https://store.steampowered.com/app/1717730/?l=schinese"
+    }
+  },
+  {
+    "slug": "demon-still-alive",
+    "name": "Demon Still Alive",
+    "nameEn": "Demon Still Alive",
+    "category": "metroidvania",
+    "difficulty": "pending",
+    "year": "TBA",
+    "platform": "PC / Steam",
+    "creator": "2.0 Creations",
+    "cover": "/assets/catalog/demon-still-alive.jpg",
+    "summary": "在恶魔噩梦世界探索并升级能力，结合火与冰的力量、平台移动和近战处理敌人。",
+    "features": [
+      "黑暗奇幻／动作平台／银河恶魔城"
+    ],
+    "source": "https://store.steampowered.com/app/3033190/",
+    "store": "https://store.steampowered.com/app/3033190/",
+    "status": "upcoming",
+    "news": "/news/metroidvania-2026-video-watchlist/",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "未发售；Steam 标注“即将推出”，日期待公布",
+      "en": "Not released; coming soon, no date announced",
+      "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
+      "nameNoteEn": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed.",
+      "source": "https://store.steampowered.com/app/3033190/?l=schinese"
+    }
+  },
+  {
+    "slug": "mira-and-the-legend-of-the-djinns",
+    "name": "米拉与灯灵传奇",
+    "nameEn": "Mira and the Legend of the Djinns",
+    "category": "metroidvania",
+    "difficulty": "pending",
+    "year": "TBA",
+    "platform": "PC / Steam",
+    "creator": "littleknightgames",
+    "cover": "/assets/catalog/mira-and-the-legend-of-the-djinns.jpg",
+    "summary": "宝藏猎人 Yuba 与失忆精灵 Mira 结伴，在遗迹、沙漠与山地探索，以武器和元素战斗寻找失落真相。",
+    "features": [
+      "摩洛哥神话／像素银河恶魔城"
+    ],
+    "source": "https://store.steampowered.com/app/1927360/",
+    "store": "https://store.steampowered.com/app/1927360/",
+    "status": "upcoming",
+    "news": "/news/metroidvania-2026-video-watchlist/",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "未发售；Steam 标注“即将宣布”，日期待公布",
+      "en": "Not released; date to be announced",
+      "nameNoteZh": "Steam 官方中文名：米拉与灯灵传奇",
+      "nameNoteEn": "Official Simplified Chinese title: 米拉与灯灵传奇",
+      "source": "https://store.steampowered.com/app/1927360/?l=schinese"
+    }
+  },
+  {
+    "slug": "altered-alma",
+    "name": "赛博战魂",
+    "nameEn": "Altered Alma",
+    "category": "metroidvania",
+    "difficulty": "pending",
+    "year": "TBA",
+    "platform": "PC / Steam",
+    "creator": "2Awesome Studio",
+    "cover": "/assets/catalog/altered-alma.jpg",
+    "summary": "在 Neo Barcelona 快速战斗与探索，升级飞船、招募船员并建立关系，基地与角色选择影响能力和玩法。",
+    "features": [
+      "赛博朋克银河恶魔城／RPG／关系养成"
+    ],
+    "source": "https://store.steampowered.com/app/2190700/",
+    "store": "https://store.steampowered.com/app/2190700/",
+    "status": "upcoming",
+    "news": "/news/metroidvania-2026-video-watchlist/",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "未发售；Steam 标注“即将推出”，日期待公布",
+      "en": "Not released; coming soon, no date announced",
+      "nameNoteZh": "Steam 官方中文名：赛博战魂",
+      "nameNoteEn": "Official Simplified Chinese title: 赛博战魂",
+      "source": "https://store.steampowered.com/app/2190700/?l=schinese"
+    }
+  },
+  {
+    "slug": "aggelos-2",
+    "name": "Aggelos 2",
+    "nameEn": "Aggelos 2",
+    "category": "metroidvania",
+    "difficulty": "pending",
+    "year": "2026",
+    "platform": "PC / Steam",
+    "creator": "WONDERBOY BOBI",
+    "cover": "/assets/catalog/aggelos-2.jpg",
+    "summary": "在光与暗两个相对世界中探索、解谜和战斗，结合高速动作与精准平台挑战。",
+    "features": [
+      "复古动作平台／双世界探索／银河恶魔城"
+    ],
+    "source": "https://store.steampowered.com/app/2864290/",
+    "store": "https://store.steampowered.com/app/2864290/",
+    "status": "released",
+    "news": "/news/metroidvania-2026-video-watchlist/",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "已发售：2026-08-27",
+      "en": "Released: August 27, 2026",
+      "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
+      "nameNoteEn": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed.",
+      "source": "https://store.steampowered.com/app/2864290/?l=schinese"
+    },
+    "series": "aggelos"
+  },
+  {
+    "slug": "grime",
+    "name": "尘埃异变",
+    "nameEn": "GRIME",
+    "aliases": [
+      "尘埃异变",
+      "Shapely Fidus"
+    ],
+    "category": "metroidvania",
+    "difficulty": "pending",
+    "year": "2021",
+    "platform": "PC / Steam",
+    "creator": "Clover Bite / Akupara Games",
+    "cover": "/assets/catalog/grime.jpg",
+    "summary": "在超现实的有机世界中探索，以黑洞吸收敌人的攻击与特质，搭配活化武器和能力成长，挑战强调招架与时机判断的战斗。",
+    "features": [
+      "2.5D 探索",
+      "类魂战斗",
+      "吸收与招架",
+      "活化武器"
+    ],
+    "source": "https://store.steampowered.com/app/1123050/?l=schinese",
+    "store": "https://store.steampowered.com/app/1123050/",
+    "status": "released",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "已发售：2021-08-02",
+      "en": "Released: August 2, 2021",
+      "nameNoteZh": "本站使用中文常用名“尘埃异变”；Steam 简体中文商店标题为 GRIME。",
+      "nameNoteEn": "The catalog uses the commonly used Chinese name 尘埃异变; Steam lists the title as GRIME.",
+      "source": "https://store.steampowered.com/app/1123050/?l=schinese"
+    }
+  },
+  {
+    "slug": "castlevania-grimoire-of-souls",
+    "name": "恶魔城：灵魂魔典",
+    "nameEn": "Castlevania: Grimoire of Souls",
+    "category": "castlevania",
+    "series": "castlevania",
+    "difficulty": "pending",
+    "year": "2021",
+    "platform": "iOS / iPadOS（Apple Arcade）",
+    "creator": "Konami",
+    "cover": "/assets/catalog/castlevania-grimoire-of-souls.jpg",
+    "summary": "以阿鲁卡多、西蒙等系列角色进入魔典中的世界，通过横版关卡、角色技能与装备成长迎战敌人。主要为移动端作品，Apple Arcade 版已于 2026 年 9 月 3 日停止服务。",
+    "features": [
+      "移动端作品",
+      "关卡式横版动作",
+      "系列角色",
+      "已停止服务"
+    ],
+    "source": "https://www.konami.com/games/castlevania/gos/global/en/",
+    "store": null,
+    "status": "discontinued",
+    "releaseStatusZh": "已停止服务：2026-09-03（Apple Arcade 版）",
+    "releaseStatusEn": "Service ended: September 3, 2026 (Apple Arcade version)",
+    "releaseDateZh": "2021-09-17（Apple Arcade 全球版）",
+    "releaseDateEn": "September 17, 2021 (global Apple Arcade version)",
+    "releaseChecked": "2026-10-13"
+  },
+  {
+    "slug": "aggelos",
+    "name": "Aggelos",
+    "nameEn": "Aggelos",
+    "category": "metroidvania",
+    "series": "aggelos",
+    "difficulty": "pending",
+    "year": "2018",
+    "platform": "PC / Steam",
+    "creator": "Storybird Games / PQube / Look At My Game",
+    "cover": "/assets/catalog/aggelos.jpg",
+    "summary": "以复古像素动作 RPG 的方式探索 Lumen 王国，在森林、洞窟与神庙间寻找元素能力，用剑术和魔法打开新的路线。",
+    "features": [
+      "复古像素",
+      "元素能力",
+      "非线性探索",
+      "动作 RPG"
+    ],
+    "source": "https://store.steampowered.com/app/717310/",
+    "store": "https://store.steampowered.com/app/717310/",
+    "status": "released",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "已发售：2018-06-19",
+      "en": "Released: June 19, 2018",
+      "nameNoteZh": "Steam 简体中文商店标题为 Aggelos；暂未确认官方中文名。",
+      "nameNoteEn": "Steam’s Simplified Chinese store lists Aggelos; no official Chinese title confirmed.",
+      "source": "https://store.steampowered.com/app/717310/?l=schinese"
+    }
+  },
+  {
+    "slug": "astlibra-revision",
+    "name": "神之天平",
+    "nameEn": "ASTLIBRA Revision",
+    "aliases": [
+      "ASTLIBRA",
+      "神之天平 Revision"
+    ],
+    "category": "exploration-action",
+    "difficulty": "pending",
+    "year": "2022",
+    "platform": "PC / Nintendo Switch",
+    "creator": "KEIZO / WhisperGames",
+    "cover": "/assets/catalog/astlibra-revision.jpg",
+    "summary": "与会说话的鸟伙伴 Karon 一同穿越时间与命运，以横版战斗推进章节，探索世界，通过装备熟练、成长与技能搭配强化角色。",
+    "features": [
+      "横版动作 RPG",
+      "章节剧情",
+      "装备成长",
+      "技能搭配"
+    ],
+    "source": "https://store.steampowered.com/app/1718570/?l=schinese",
+    "store": "https://store.steampowered.com/app/1718570/",
+    "status": "released",
+    "steamRelease": {
+      "checked": "2026-10-13",
+      "zh": "已发售：2022-10-13（PC）；2023-11-16（Switch）",
+      "en": "Released: October 13, 2022 (PC); November 16, 2023 (Switch)",
+      "nameNoteZh": "Steam 官方中文名：神之天平（ASTLIBRA Revision）。",
+      "nameNoteEn": "Official Simplified Chinese title: 神之天平（ASTLIBRA Revision）.",
+      "source": "https://store.steampowered.com/app/1718570/?l=schinese"
+    }
   }
 ]
