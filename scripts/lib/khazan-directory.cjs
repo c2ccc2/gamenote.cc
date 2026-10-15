@@ -1,4 +1,4 @@
-module.exports = function directory({en, locale, base, current, library, entries, missions, esc}) {
+module.exports = function directory({en, locale, base, current, library, entries, missions, guide, bossPages, esc}) {
   const link = (title, href, pending = false) => pending
     ? `<span class="khazan-nav-pending">${esc(title)} · ${en ? 'In progress' : '待整理'}</span>`
     : `<a href="${href}"${href === current ? ' aria-current="page"' : ''}>${esc(title)}</a>`;
@@ -8,8 +8,16 @@ module.exports = function directory({en, locale, base, current, library, entries
     const heading = section.status === 'available' ? link(title, base + section.href) : esc(title);
     const items = section.id === 'walkthrough'
       ? missions.map((mission, index) => link(`${String(index + 1).padStart(2, '0')} · ${mission[locale].title}`, base + 'walkthrough/' + mission.slug + '/', mission.status !== 'published')).join('')
+      : section.id === 'side-quests' && guide
+        ? guide.side.map(task => link(task[locale].title, base + 'side-quests/' + task.id + '/')).join('')
+      : section.id === 'collectibles' && guide
+        ? guide.types.map(type => link(type[locale], base + 'collectibles/' + type.id + '/')).join('')
+      : section.id === 'bosses' && guide
+        ? bossPages.map(boss => link(boss.title[locale], base + 'bosses/' + boss.id + '/')).join('')
+      : section.id === 'achievements'
+        ? [['boss',en?'Story bosses':'剧情BOSS'],['side',en?'Side stories':'支线剧情'],['combat',en?'Combat and progression':'战斗与养成'],['collect',en?'Collecting':'探索收集'],['ending',en?'Endings and challenges':'结局与通关挑战']].map(([id,title])=>link(title,base+'achievements/'+id+'/')).join('')
       : section.status === 'available'
-        ? entries.filter(entry => entry.category === section.id).map(entry => link(entry[locale].title, base + section.href + '#' + entry.id)).join('')
+        ? entries.filter(entry => entry.category === section.id).map(entry => link(entry[locale].title, section.id === 'characters' ? base + 'characters/' + entry.id + '/' : base + section.href + '#' + entry.id)).join('')
         : `<span class="khazan-nav-pending">${en ? 'Content in progress' : '内容整理中'}</span>`;
     return `<section class="classic-nav-group"><div class="classic-nav-group-heading"><h2>${heading}</h2><button class="classic-group-toggle" type="button" aria-expanded="true" aria-controls="${id}" aria-label="${en ? 'Collapse ' : '收起'}${esc(title)}">−</button></div><div class="classic-nav-group-items" id="${id}">${items}</div></section>`;
   }).join('');

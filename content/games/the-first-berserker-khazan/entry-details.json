@@ -1,52 +1,34 @@
 {
-  "snow-yeti-king": {
-    "zh": [
-      "关联任务：第一章《被流放的英雄》。",
-      "当前可读内容：冲锋、落冰与正面冰攻击的基础应对，以及战前补给提醒。"
-    ],
-    "en": [
-      "Related mission: Chapter 1, The Banished Hero.",
-      "Current notes cover the charge, falling ice, a frontal ice attack and preparation before the fight."
-    ]
-  },
   "dual-wield": {
     "zh": [
-      "卡赞在开场任务取得刀斧，因此适合从第一章开始记录它的操作与技能。",
-      "本站尚未列出各单件刀斧的属性、获取地点或强度排名。"
+      "卡赞在开场任务取得刀斧。"
     ],
     "en": [
-      "Khazan receives paired blades in the opening mission, making Chapter 1 the starting point for this class.",
-      "Individual stats, acquisition routes and rankings have not yet been checked."
+      "Khazan receives paired blades in the opening mission, making Chapter 1 the starting point for this class."
     ]
   },
   "greatsword": {
     "zh": [
-      "巨剑是官方列出的三类武器之一。",
-      "后续单件资料将区分基础武器、版本赠品与装备套装，不混作普通掉落。"
+      "巨剑是官方列出的三类武器之一。"
     ],
     "en": [
-      "Greatsword is one of the three weapon classes listed by the publisher.",
-      "Future entries will distinguish standard weapons, edition bonuses and gear sets."
+      "Greatsword is one of the three weapon classes listed by the publisher."
     ]
   },
   "spear": {
     "zh": [
-      "长枪是官方列出的三类武器之一。",
-      "后续单件资料将记录技能、获取条件和版本信息。"
+      "长枪是官方列出的三类武器之一。"
     ],
     "en": [
-      "Spear is one of the three weapon classes listed by the publisher.",
-      "Future entries will record skills, acquisition conditions and version information."
+      "Spear is one of the three weapon classes listed by the publisher."
     ]
   },
   "gear-sets": {
     "zh": [
-      "官方说明称，穿戴完整套装可获得特殊属性或技能，也可以混搭不同套装。",
-      "具体套装效果需要按名称、件数和游戏版本分别记录。"
+      "官方说明称，穿戴完整套装可获得特殊属性或技能，也可以混搭不同套装。"
     ],
     "en": [
-      "The official store page describes full-set bonuses and mixed loadouts.",
-      "Specific effects will be recorded by set name, piece count and game version."
+      "The official store page describes full-set bonuses and mixed loadouts."
     ]
   },
   "hero-set": {
@@ -61,32 +43,26 @@
   },
   "skills": {
     "zh": [
-      "技能点可用于解锁技能；不同武器的技能还需要按类别分别整理。",
-      "正式推荐某项技能前，应核对解锁前置、实际效果与当前游戏版本。"
+      "技能点可用于解锁技能，不同武器拥有各自的技能。"
     ],
     "en": [
-      "Skill Points unlock abilities; weapon-specific skills will be organized by class.",
-      "Recommendations will require checks of prerequisites, effects and the current game version."
+      "Skill Points unlock abilities, with distinct skills for each weapon class."
     ]
   },
   "respec": {
     "zh": [
-      "官方说明支持随时随地重置和重新分配技能。",
-      "本站尚未核对具体菜单步骤；不会把技能重置与角色属性重置混为一谈。"
+      "官方说明支持随时随地重置和重新分配技能。"
     ],
     "en": [
-      "The official store description says skill points can be reset and reassigned at any time and from anywhere.",
-      "The exact menu steps remain unchecked; skill respec and attribute reset are tracked separately."
+      "The official store description says skill points can be reset and reassigned at any time and from anywhere."
     ]
   },
   "lacrima": {
     "zh": [
-      "死亡后可返回倒下地点取回失去的 Lacrima，以继续升级。",
-      "连续死亡等情况下的损失规则和具体界面提示仍待实机核验。"
+      "死亡后可返回倒下地点取回失去的 Lacrima，以继续升级。"
     ],
     "en": [
-      "After death, returning to the defeat location can recover lost Lacrima for progression.",
-      "Loss rules and exact interface messages in repeat-death cases still need hands-on review."
+      "After death, returning to the defeat location can recover lost Lacrima for progression."
     ]
   },
   "phantom-form": {
@@ -101,332 +77,10 @@
   },
   "new-game-plus": {
     "zh": [
-      "官方列有新游戏＋和终极挑战两个后续游玩方向。",
-      "终极挑战包含不同规则的首领挑战；其属性与装备重置规则应与新游戏＋分开说明。"
+      ""
     ],
     "en": [
-      "The official store page lists New Game+ and Ultimate Challenge as postgame options.",
-      "Ultimate Challenge boss modes have separate rules; their stat and equipment resets should not be confused with New Game+."
-    ]
-  },
-  "khazan": {
-    "zh": [
-      "卡赞曾是佩洛斯帝国的大将军，并参与击败狂龙。",
-      "被诬陷为叛徒后遭受酷刑并流放雪山；故事从他的死里逃生与复仇开始。"
-    ],
-    "en": [
-      "Khazan was a general of the Pell Los Empire and a hero of the battle against the Berserk Dragon.",
-      "After being framed, tortured and banished, his survival begins the revenge story."
-    ]
-  },
-  "blade-phantom": {
-    "zh": [
-      "刀锋幻影来自冥界，寻找能承载自身力量的容器。",
-      "它与卡赞的结盟同时推动剧情与幻影形态机制。"
-    ],
-    "en": [
-      "Blade Phantom comes from the Netherworld and seeks a vessel able to contain its power.",
-      "Its alliance with Khazan underpins both the story and Phantom Form."
-    ]
-  },
-  "ozma": {
-    "zh": [
-      "奥兹玛曾与卡赞共同对抗狂龙。",
-      "官方人物简介说明，他随后也因叛国指控而失势；更深的剧情关系会另行标注剧透。"
-    ],
-    "en": [
-      "Ozma fought the Berserk Dragon alongside Khazan.",
-      "The official profile says he also fell from grace after treason accusations; later story details will carry spoiler labels."
-    ]
-  },
-  "quimuk": {
-    "zh": [
-      "Quimuk 是救下卡赞的班图萨满；中文译名仍待游戏内核对。",
-      "官方简介说，她建议通过班图仪式驱逐卡赞体内的幽魂。"
-    ],
-    "en": [
-      "Quimuk is the Bantu shaman who rescued Khazan from the snowy mountains.",
-      "Her official profile says she proposed a Bantu ritual to drive out the phantom within him."
-    ]
-  },
-  "transport-order": {
-    "zh": [
-      "《被流放的英雄》前段敌人之后可检查“押送令”这一剧情物品。",
-      "目前只确认这一条线索；本页尚不能代替本章全收集路线。"
-    ],
-    "en": [
-      "The transport order is a story item noted after an early encounter in The Banished Hero.",
-      "Only this lead has been checked; this page is not a complete collectible route."
-    ]
-  },
-  "blade-phantom-boss": {
-    "zh": [
-      "长枪投掷可能接瞬移砸击；锤击产生前方尖刺。",
-      "第二阶段增加爪击与瞬移，爆发攻击使用反击应对。"
-    ],
-    "en": [
-      "A spear throw can lead into a teleporting slam; hammer attacks create frontal spikes.",
-      "Phase two adds claws and teleports; respond to Burst Attacks with Counterattack."
-    ]
-  },
-  "viper": {
-    "zh": [
-      "长枪延迟出手，不要过早防御；抓取应拉开距离。",
-      "第二阶段区分快匕首与慢拳击，注意拍地后的投石。"
-    ],
-    "en": [
-      "Avoid guarding too early against delayed spear attacks; move away from grabs.",
-      "Distinguish fast daggers from slower punches, and watch for rock throws after palm slams."
-    ]
-  },
-  "soulstones": {
-    "zh": [
-      "试炼雪山：狼群区域木结构后、冻湖左洞、冰峡谷高处悬崖。",
-      "被遗忘的神庙：入口前木障碍后、入口楼梯右支路、第二石像机关后。"
-    ],
-    "en": [
-      "Stormpass: behind the wolf-area structure, Frozen Lake’s left cave, and the high Ice Canyon cliff.",
-      "Temple: pre-entrance barriers, right of the entrance stairs, and behind the second statue puzzle."
-    ]
-  },
-  "jarlings": {
-    "zh": [
-      "冰峡谷：存档点附近小壶。",
-      "神庙深处：第二处旋转陷阱之后，下行楼梯左侧小壶。"
-    ],
-    "en": [
-      "Ice Canyon: the small jar near the Nexus.",
-      "Temple depths: left of the descending stairs after the second rotating trap."
-    ]
-  },
-  "daphrona": {
-    "zh": [
-      "乘电梯进入神庙地下后，在存档点附近完成对话。",
-      "收集鬼石后查看服务菜单，按自己的强化需求选择。"
-    ],
-    "en": [
-      "Speak to her near the Nexus after descending by elevator.",
-      "After collecting Soulstones, check her service menu for your preferred upgrades."
-    ]
-  },
-  "volbaino": {
-    "zh": [
-      "注意冲击波与后半场残留火焰，用场地梯子避开下层起火。"
-    ],
-    "en": [
-      "Watch shockwaves and persistent fire; use the ladder when the lower floor ignites."
-    ]
-  },
-  "aratra": {
-    "zh": [
-      "准备抗毒与解毒，针对前肢和腹部；爬墙时用投枪打断。"
-    ],
-    "en": [
-      "Prepare poison resistance and cleansing; target legs and abdomen, and interrupt wall retreats with Javelin."
-    ]
-  },
-  "evacuation-order": {
-    "zh": [
-      "下落后进入开门建筑，登梯并从对面落下，到出口检查。"
-    ],
-    "en": [
-      "Enter the open building after dropping, climb its ladder and drop opposite to check the exit."
-    ]
-  },
-  "rangkus": {
-    "zh": [
-      "火抗与净化；留意长距离末尾砸击和旋转喷火。"
-    ],
-    "en": [
-      "Use fire resistance and cleansing; watch the long final slam and spinning flames."
-    ]
-  },
-  "maluca": {
-    "zh": [
-      "准备混沌净化，分开学习慢巨剑与快刀阶段；抓取不可用普通防御应对。"
-    ],
-    "en": [
-      "Prepare Chaos cleansing; learn slow greatswords and fast blades separately, and evade grabs."
-    ]
-  },
-  "kaleido": {
-    "zh": [
-      "完成后查看属性变更与装备强化服务。",
-      "强化会消耗选定的供体装备，操作前核对菜单。"
-    ],
-    "en": [
-      "Check attribute alteration and gear augmentation after completion.",
-      "Augmentation consumes the selected donor gear; review the menu before proceeding."
-    ]
-  },
-  "elamein": {
-    "zh": [
-      "绕背短打，避免疲竭；准备雷电净化。"
-    ],
-    "en": [
-      "Attack briefly from behind, avoid exhaustion and prepare Lightning cleansing."
-    ]
-  },
-  "shactuka": {
-    "zh": [
-      "瘟疫攻击优先闪避，高跳落地后留意续招。"
-    ],
-    "en": [
-      "Evade Plague attacks and read follow-ups after the high leap."
-    ]
-  },
-  "yulians-necklace": {
-    "zh": [
-      "电梯下行后沿斜坡进入左房，检查左侧牢门。"
-    ],
-    "en": [
-      "Below the elevator, follow the slope into the left room and inspect its left cell."
-    ]
-  },
-  "pavels-final-words": {
-    "zh": [
-      "目的地为 Forgotten Underground Canal，完成后返回裂隙。"
-    ],
-    "en": [
-      "Visit Forgotten Underground Canal and return to The Crevice after completion."
-    ]
-  },
-  "escaping-linon-mine": {
-    "zh": [
-      "目的地为 Mine No. 2 Workyard；完成后查看 Last Command。"
-    ],
-    "en": [
-      "Visit Mine No. 2 Workyard; check Last Command after completion."
-    ]
-  },
-  "trokka": {
-    "zh": [
-      "红水母带毒，蓝水母恢复精力；伞形爆发可反击。"
-    ],
-    "en": [
-      "Red jellyfish poison, blue restore stamina; counter umbrella Burst Attacks."
-    ]
-  },
-  "bellerian": {
-    "zh": [
-      "打断施法和骷髅蓄能，准备多种元素净化。"
-    ],
-    "en": [
-      "Interrupt casting and skull energy; prepare elemental cleansing."
-    ]
-  },
-  "aldevir-disk-fragment": {
-    "zh": [
-      "城塞大门右侧窄巷地面，拾取后保留。"
-    ],
-    "en": [
-      "Collect from the alley right of the citadel gate and keep it."
-    ]
-  },
-  "unrequited-love": {
-    "zh": [
-      "目的地 Ivy Annex；击败 Gwydo 后检查棺木并完成 Tristan 对话。"
-    ],
-    "en": [
-      "Visit Ivy Annex; after Gwydo, inspect the coffin and finish Tristan’s dialogue."
-    ]
-  },
-  "atlante-the-precise": {
-    "zh": [
-      "前往 Wastus Canyon，击败任务首领并完成对话后返回裂隙。"
-    ],
-    "en": [
-      "Visit Wastus Canyon, defeat its mission boss and finish the dialogue before returning."
-    ]
-  },
-  "skalpel": {
-    "zh": [
-      "攻击棺木打断仪式，巨剑与棺击分开应对。"
-    ],
-    "en": [
-      "Interrupt coffin rituals; distinguish greatsword and coffin attacks."
-    ]
-  },
-  "princess-ilyna": {
-    "zh": [
-      "准备混沌净化，观察合唱队声波方向。"
-    ],
-    "en": [
-      "Prepare Chaos cleansing and read choir wave directions."
-    ]
-  },
-  "disk-fragments": {
-    "zh": [
-      "分别核对 Aldevir、Vaisar 和 Rovelion，集齐后保留。",
-      "完成帝国的末日后与 Daphrona 查看誓约。"
-    ],
-    "en": [
-      "Check Aldevir, Vaisar and Rovelion; keep all three.",
-      "After Fall of the Empire, check The Vow with Daphrona."
-    ]
-  },
-  "last-sentinel": {
-    "zh": [
-      "完成战斗与兄弟剧情，再由临时存档点离开。"
-    ],
-    "en": [
-      "Finish the battles and brothers’ scene, then leave via the temporary Nexus."
-    ]
-  },
-  "transcendental-sword": {
-    "zh": [
-      "击败 Remnant of Elamein 后完成 Daphrona 对话。"
-    ],
-    "en": [
-      "Defeat Remnant of Elamein and finish Daphrona’s dialogue."
-    ]
-  },
-  "hismar": {
-    "zh": [
-      "优先破角与额头弱点，虚弱飞行时用投枪。"
-    ],
-    "en": [
-      "Break the horn and target the forehead; use Javelin in weakened flight."
-    ]
-  },
-  "reese": {
-    "zh": [
-      "利用墙壁挡投枪，打断混沌蓄能，保留两阶段补给。"
-    ],
-    "en": [
-      "Use walls against spears, interrupt Chaos buildup and reserve healing for both phases."
-    ]
-  },
-  "ozma-boss": {
-    "zh": [
-      "处理地面长枪，保留后期恢复；结局选择见终章。"
-    ],
-    "en": [
-      "Clear embedded spears and reserve recovery; see the finale for ending choices."
-    ]
-  },
-  "the-vow": {
-    "zh": [
-      "目的地 Temple of Shadows，完成任务并核对金色档案。"
-    ],
-    "en": [
-      "Visit Temple of Shadows and check its gold records."
-    ]
-  },
-  "charons-chains": {
-    "zh": [
-      "目的地 Vitalon Underground Passage，完成三场连续战斗。"
-    ],
-    "en": [
-      "Visit Vitalon Underground Passage and finish three consecutive battles."
-    ]
-  },
-  "golden-records": {
-    "zh": [
-      "不以鬼石数量或首领阶段数代替档案与任务条件核对。"
-    ],
-    "en": [
-      "Do not substitute Soulstone totals or boss phase count for record and mission checks."
+      "The official store page lists New Game+ and Ultimate Challenge as postgame options."
     ]
   }
 }

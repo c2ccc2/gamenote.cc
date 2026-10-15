@@ -1,16 +1,21 @@
-# 卡赞流程攻略内容维护
+# 卡赞攻略内容与构建
 
-`missions.json` 是主线目录与章节正文的数据源。运行 `node scripts/build-khazan.cjs` 会生成中文和英文攻略首页、任务目录，以及所有 `status: "published"` 的章节页。
+主线、支线和收集列表使用同一份任务与路线数据，不再分别维护摘要卡和原文图片索引。
 
-`library.json` 定义攻略资料库栏目与显示状态；`entries.json` 存放起始资料卡。资料卡需要中英文标题、简介和来源链接。已有条目的栏目会生成中英文目录页；没有核验内容的栏目显示为“待整理”，不会生成空白详情页。
-`entry-details.json` 存放每张资料卡在栏目页展示的中英文事实要点。新增 `entries.json` 条目时须同步添加两种语言的要点，构建器会检查。
+- `tasks.json`：16 项主线和 24 项支线的名称、分类、接取说明及路线顺序。`sourcePages` 是维护用来源定位信息，不直接显示在攻略正文里。
+- `source-content.json`：用户提供的本地 Markdown 归档导入后的完整正文块与图片顺序。中文任务页逐块渲染正文和相邻截图，不再只展示摘要。重复网页标题、导航和作者个人存档说明在导入时清理，来源保留在任务末尾。
+- `route-notes.cjs`：各段的中英文简明路线，用于收集位置说明、目录和简介。一个步骤可以承载多个收集点，不能把目录标题当作完整收集数量。
+- `english-body.txt`：完整英文正文，以 `来源页|正文块索引|英文` 对应原文。2,245 段独立译文与 158 个按规则翻译的招式标签，共覆盖 2,403 段正文。主线、支线、BOSS 和人物相遇摘录共用这些译文。
+- `english-source-sha256.txt`：英文所对应原文的签名；来源正文发生变化时构建失败，必须核对受影响译文后更新签名，不能直接跳过校验。
+- `scripts/lib/khazan-english.cjs`：校验英文正文覆盖范围、原文签名并提供物品与步骤标题词表。缺译不会回退为摘要或中文。
+- `source-index.json`：从完整本地归档导出的标题、链接与配图索引，共 285 个分页、2,362 处图片引用。图片在导入时按文件哈希复用已有素材，其余存放到 `images/source/`，动图保留原格式。
+- `scripts/lib/khazan-guide.cjs`：把任务、步骤、来源和收集点归一化。`extras` 补充正文中的收集物，例如第十章同一页的两块鬼石。每个收集点有稳定 ID、类别、位置说明、任务和步骤链接。
+- `entries.json` / `entry-details.json`：装备与系统资料。`characters.cjs` 维护人物名称与身份，`boss-profiles.cjs` 维护 BOSS 介绍、关卡和已记载掉落。
 
-- 新章节先设为 `planned`，核验并写完中英文 `summary`、`lead`、`sections` 后改为 `published`。
-- 正文段落可使用 `steps`、`bullets`、`paragraphs`；每节提供 `heading` 和非空的 `items`。
-- 已发布章节还需提供 `atGlance`，每项包含 `label`、`value`。页面自动生成速览卡和段落跳转。
-- 图片使用 `image` 节，提供 `heading`、`src`、`alt`，可选 `caption`。文件放在 `/games/the-first-berserker-khazan/images/`，构建器会检查图片存在及替代文字。中英文可分别指定对应的本地图片。
-- 现有首章是原创路线速览，收集位置和未完成章节需要实机核验。引用资料时记录来源；未经许可，不复制第三方攻略正文或截图。
+构建时生成主线目录、支线目录、40 个任务详情、收集总目录，以及鬼石、罐子精灵、文书、卷轴、冥界气息、鬼气物品、钥匙与圆盘碎片七种位置列表。修改一个步骤会同时更新任务正文与引用它的收集位置。收集列表按任务分组，支持关键词和主线／支线筛选。
 
-全站构建命令为 `npm run build`，单独验证攻略可运行 `node scripts/build-khazan.cjs` 和 `npm run lint`。
+本地正文作为用户提供的导入资料，保留来源与图片水印；排版调整应保持正文和相邻截图的关系。人工路线摘要与位置说明单独维护。同页有多个收集点时应分别列出，不能只修改显示数量。
 
-内容分层、核验清单和首章范围见 [CONTENT-DESIGN.md](CONTENT-DESIGN.md)。
+从用户提供的本地目录更新正文与图片：`node scripts/import-khazan-local.cjs --source "本地攻略目录"`。此目录应包含 `pages/page_001.md` 至 `page_285.md` 及 `images/`。源目录只读，导入后构建不依赖该绝对路径。
+
+运行 `npm run build:khazan` 生成卡赞页面，并添加导航、来源、统计标记和校验。完整构建使用 `npm run build`。`node scripts/verify-khazan.cjs` 检查完整正文、配图、100 个鬼石、44 个罐子、互链和中英文页面；全站另运行 `npm run typecheck` 与 `npm run lint`。

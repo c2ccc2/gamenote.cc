@@ -1,0 +1,887 @@
+[
+  {
+    "id": "banished-hero",
+    "kind": "main",
+    "chapter": 1,
+    "sourcePages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      49
+    ],
+    "zh": {
+      "title": "被流放的英雄",
+      "summary": "雪地逃生、战斗教学、两块鬼石与雪魈王。"
+    },
+    "en": {
+      "title": "The Banished Hero",
+      "summary": "Escape the snowy opening, unlock the cart shortcut, and face the Snow Yeti King."
+    }
+  },
+  {
+    "id": "snow-mountain-trial",
+    "kind": "main",
+    "chapter": 2,
+    "sourcePages": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      50
+    ],
+    "zh": {
+      "title": "试炼雪山",
+      "summary": "巨剑、长枪、刀斧三段试炼，三块鬼石与布雷德。"
+    },
+    "en": {
+      "title": "Trials of the Frozen Mountain",
+      "summary": "Complete the greatsword, spear and axe trials before facing Blade."
+    }
+  },
+  {
+    "id": "forgotten-temple",
+    "kind": "main",
+    "chapter": 3,
+    "sourcePages": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      52
+    ],
+    "zh": {
+      "title": "被遗忘的神庙",
+      "summary": "探索神庙机关，取得三块鬼石，击败蝰蛇。"
+    },
+    "en": {
+      "title": "Forgotten Temple",
+      "summary": "Enter the temple, work through its mechanisms, and open the Viper arena."
+    }
+  },
+  {
+    "id": "revenge-prelude",
+    "kind": "main",
+    "chapter": 4,
+    "sourcePages": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      51
+    ],
+    "zh": {
+      "title": "复仇序章",
+      "summary": "穿过村落与仓库，收集三块鬼石和“避难令”，挑战沃尔巴依诺。"
+    },
+    "en": {
+      "title": "First Act of Revenge",
+      "summary": "Cross the village and warehouse, then unlock the cart shortcut before Volbaino."
+    }
+  },
+  {
+    "id": "suspicious-stench",
+    "kind": "main",
+    "chapter": 5,
+    "sourcePages": [
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      53
+    ],
+    "zh": {
+      "title": "可疑的恶臭",
+      "summary": "探索矿山与毒沼，收集三块鬼石、铁匠工会许可证，挑战阿拉特拉。"
+    },
+    "en": {
+      "title": "Strange Stench",
+      "summary": "Advance through the mine and poisonous swamp to Aratra."
+    }
+  },
+  {
+    "id": "traitors-face",
+    "kind": "main",
+    "chapter": 6,
+    "sourcePages": [
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "zh": {
+      "title": "叛徒的真面目",
+      "summary": "穿过城区与城塞，收集四块鬼石，挑战朗格斯。"
+    },
+    "en": {
+      "title": "Traitor Revealed",
+      "summary": "Cross the city and citadel, opening shortcuts before Rangkus."
+    }
+  },
+  {
+    "id": "blade-to-the-curtain",
+    "kind": "main",
+    "chapter": 7,
+    "sourcePages": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77
+    ],
+    "zh": {
+      "title": "刃指账幕",
+      "summary": "穿过采石场与盗匪城塞，收集四块鬼石和间谍密信，挑战玛路卡。"
+    },
+    "en": {
+      "title": "Veiled Knives",
+      "summary": "Traverse the quarry and bandit citadel before Maluca."
+    }
+  },
+  {
+    "id": "devoured-village",
+    "kind": "main",
+    "chapter": 8,
+    "sourcePages": [
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101
+    ],
+    "zh": {
+      "title": "被吞噬的村庄",
+      "summary": "从村落深入地下设施，收集四块鬼石与实验记录，挑战埃拉梅因。"
+    },
+    "en": {
+      "title": "Devoured Village",
+      "summary": "Return behind the starting checkpoint, then descend through the village and underground facility."
+    }
+  },
+  {
+    "id": "unbelievable-truth",
+    "kind": "main",
+    "chapter": 9,
+    "sourcePages": [
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115
+    ],
+    "zh": {
+      "title": "无法相信的真相",
+      "summary": "探索劳役场与矿洞，收集三块鬼石、尤利安项链，挑战沙克图卡。"
+    },
+    "en": {
+      "title": "Inconceivable Truth",
+      "summary": "Search the labor facility and mine before Shactuka."
+    }
+  },
+  {
+    "id": "city-of-witches",
+    "kind": "main",
+    "chapter": 10,
+    "sourcePages": [
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144
+    ],
+    "zh": {
+      "title": "魔女之城",
+      "summary": "穿过魔女之城，收集五块鬼石与圆盘碎片，挑战特萝卡。"
+    },
+    "en": {
+      "title": "Witch’s Castle",
+      "summary": "Descend through the city and castle to Trokka."
+    }
+  },
+  {
+    "id": "hermits-mountains",
+    "kind": "main",
+    "chapter": 11,
+    "sourcePages": [
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170
+    ],
+    "zh": {
+      "title": "隐士山脉",
+      "summary": "穿越隐士山脉与传送区域，收集四块鬼石，挑战贝雷里安。"
+    },
+    "en": {
+      "title": "Hermit Mountains",
+      "summary": "Cross the mountains, portals and phantom forest before Bellerian."
+    }
+  },
+  {
+    "id": "cursed-fortress",
+    "kind": "main",
+    "chapter": 12,
+    "sourcePages": [
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187
+    ],
+    "zh": {
+      "title": "受诅咒者的要塞",
+      "summary": "通过受诅咒的要塞，收集五块鬼石与圆盘碎片，挑战斯卡坡。"
+    },
+    "en": {
+      "title": "Corruptors’ Fortress",
+      "summary": "Traverse the fortress, towers and bridges to Skalpel."
+    }
+  },
+  {
+    "id": "strange-melody",
+    "kind": "main",
+    "chapter": 13,
+    "sourcePages": [
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219
+    ],
+    "zh": {
+      "title": "诡异的旋律",
+      "summary": "探索剧院与传送画，收集四块鬼石和圆盘碎片，挑战伊莉娜。"
+    },
+    "en": {
+      "title": "Strange Melody",
+      "summary": "Explore the theatre, falling floor and transport paintings before Ilyna."
+    }
+  },
+  {
+    "id": "empires-end",
+    "kind": "main",
+    "chapter": 14,
+    "sourcePages": [
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242
+    ],
+    "zh": {
+      "title": "帝国的末日",
+      "summary": "穿越帝都旧城与教堂，收集五块鬼石，挑战狂龙赫斯。"
+    },
+    "en": {
+      "title": "Fall of the Empire",
+      "summary": "Cross the imperial city, sewer and church to Hismar."
+    }
+  },
+  {
+    "id": "bloodstained-sanctuary",
+    "kind": "main",
+    "chapter": 15,
+    "sourcePages": [
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274
+    ],
+    "zh": {
+      "title": "血染的圣所",
+      "summary": "穿过血染的圣所，收集五块鬼石与莉丝档案，挑战莉丝。"
+    },
+    "en": {
+      "title": "Bloodied Sanctuary",
+      "summary": "Climb through the sanctuary and beam sections before Reese."
+    }
+  },
+  {
+    "id": "lord-of-chaos",
+    "kind": "main",
+    "chapter": 16,
+    "sourcePages": [
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285
+    ],
+    "zh": {
+      "title": "混沌之主",
+      "summary": "穿过皇宫与隐藏通道，收集四块鬼石，迎战奥兹玛。"
+    },
+    "en": {
+      "title": "Master of Chaos",
+      "summary": "Cross the palace and hidden passage to Ozma."
+    }
+  },
+  {
+    "id": "ston-snowfield-spirit",
+    "kind": "side",
+    "afterChapter": 2,
+    "sourcePages": [
+      20,
+      21
+    ],
+    "zh": {
+      "title": "斯顿雪域的斗鬼",
+      "summary": "进入边界裂缝后，在任务传送界面选择挑战。"
+    },
+    "en": {
+      "title": "Spirit of the Ston Snowfield",
+      "summary": "Select the challenge from the mission portal after reaching the Crevice."
+    }
+  },
+  {
+    "id": "jar-enthusiast",
+    "kind": "side",
+    "afterChapter": 5,
+    "sourcePages": [
+      47,
+      48
+    ],
+    "zh": {
+      "title": "罐子爱好者",
+      "summary": "在据点接取罐子任务；完成后可回访前五章寻找罐子精灵。"
+    },
+    "en": {
+      "title": "Jar Enthusiast",
+      "summary": "Accept the jar quest at the hub. Finishing it enables the early chapter Jarling revisits."
+    }
+  },
+  {
+    "id": "blacksmith-heirloom",
+    "kind": "side",
+    "afterChapter": 5,
+    "sourcePages": [
+      54,
+      55,
+      56
+    ],
+    "zh": {
+      "title": "铁匠的传家宝",
+      "summary": "与据点铁匠交谈，进入蜘蛛坟墓取回传家宝。"
+    },
+    "en": {
+      "title": "The Blacksmith’s Heirloom",
+      "summary": "Speak to the blacksmith and return to the Spider Tomb."
+    }
+  },
+  {
+    "id": "tragic-night",
+    "kind": "side",
+    "afterChapter": 5,
+    "sourcePages": [
+      57,
+      58,
+      59,
+      60
+    ],
+    "zh": {
+      "title": "悲惨之夜",
+      "summary": "与达芙罗娜交谈接取。"
+    },
+    "en": {
+      "title": "Tragic Night",
+      "summary": "Accept the mission from Daphrona."
+    }
+  },
+  {
+    "id": "silent-temple",
+    "kind": "side",
+    "afterChapter": 7,
+    "sourcePages": [
+      78,
+      79
+    ],
+    "zh": {
+      "title": "寂静神庙",
+      "summary": "与奥克萨娜交谈接取，完成后开放装备特性更改与继承。"
+    },
+    "en": {
+      "title": "Silent Temple",
+      "summary": "Accept from Oksana to unlock gear modification and inheritance."
+    }
+  },
+  {
+    "id": "human-xilence",
+    "kind": "side",
+    "afterChapter": 7,
+    "sourcePages": [
+      80,
+      81,
+      82,
+      83
+    ],
+    "zh": {
+      "title": "人类塞伦斯",
+      "summary": "推进据点对话后，在任务列表选择人类塞伦斯。"
+    },
+    "en": {
+      "title": "Human Xilence",
+      "summary": "Finish the hub conversations and select Human Xilence."
+    }
+  },
+  {
+    "id": "final-subjugation",
+    "kind": "side",
+    "afterChapter": 7,
+    "sourcePages": [
+      84,
+      85,
+      86,
+      87,
+      88
+    ],
+    "zh": {
+      "title": "最后的讨伐",
+      "summary": "在人类塞伦斯之后继续塞伦斯的任务线。"
+    },
+    "en": {
+      "title": "The Final Subjugation",
+      "summary": "Continue Xilence’s mission chain after Human Xilence."
+    }
+  },
+  {
+    "id": "pavels-final-words",
+    "kind": "side",
+    "afterChapter": 8,
+    "sourcePages": [
+      102,
+      103,
+      104,
+      105,
+      106
+    ],
+    "zh": {
+      "title": "帕维尔的遗言",
+      "summary": "完成被吞噬的村庄后，在任务传送界面选择。"
+    },
+    "en": {
+      "title": "Pavel’s Final Words",
+      "summary": "Select the mission after Devoured Village."
+    }
+  },
+  {
+    "id": "why-abandon-us",
+    "kind": "side",
+    "afterChapter": 9,
+    "sourcePages": [
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125
+    ],
+    "zh": {
+      "title": "为何要抛弃我们",
+      "summary": "返回据点与特利斯坦交谈接取。"
+    },
+    "en": {
+      "title": "Why Did You Abandon Us",
+      "summary": "Speak to Tristan at the hub after the main mission."
+    }
+  },
+  {
+    "id": "escaping-linon-mine",
+    "kind": "side",
+    "afterChapter": 9,
+    "sourcePages": [
+      126,
+      127,
+      128,
+      129,
+      130
+    ],
+    "zh": {
+      "title": "里侬矿山逃脱记",
+      "summary": "完成前置支线后与尤利安对话接取。"
+    },
+    "en": {
+      "title": "Escaping Linon Mine",
+      "summary": "Speak to Yulian after the preceding side mission."
+    }
+  },
+  {
+    "id": "last-command",
+    "kind": "side",
+    "afterChapter": 9,
+    "sourcePages": [
+      131,
+      132,
+      133
+    ],
+    "zh": {
+      "title": "最后的命令",
+      "summary": "完成矿山救援、返回据点对话后继续任务线。"
+    },
+    "en": {
+      "title": "The Last Command",
+      "summary": "Continue after the mine rescue and hub dialogue."
+    }
+  },
+  {
+    "id": "lacrima",
+    "kind": "side",
+    "afterChapter": 10,
+    "sourcePages": [
+      145,
+      146,
+      147,
+      148,
+      149
+    ],
+    "zh": {
+      "title": "拉克里玛",
+      "summary": "在新解锁的任务列表中选择，推进幽魂的成长。"
+    },
+    "en": {
+      "title": "Lacrima",
+      "summary": "Select the newly unlocked mission to develop the Phantom."
+    }
+  },
+  {
+    "id": "unrequited-love",
+    "kind": "side",
+    "afterChapter": 10,
+    "sourcePages": [
+      150,
+      151,
+      152,
+      153,
+      154,
+      155
+    ],
+    "zh": {
+      "title": "窒息的单相思",
+      "summary": "与特利斯坦交谈，调查莉迪亚的遭遇。"
+    },
+    "en": {
+      "title": "Unrequited Love",
+      "summary": "Speak to Tristan and investigate Lydia’s fate."
+    }
+  },
+  {
+    "id": "varus-axe",
+    "kind": "side",
+    "afterChapter": 10,
+    "sourcePages": [
+      156,
+      157,
+      158,
+      159,
+      160,
+      161
+    ],
+    "zh": {
+      "title": "巴鲁斯的斧头",
+      "summary": "进入任务后先与巴鲁斯之子交谈。"
+    },
+    "en": {
+      "title": "Varus’s Axe",
+      "summary": "Speak to Varus’s son at the beginning of the mission."
+    }
+  },
+  {
+    "id": "atlante-the-precise",
+    "kind": "side",
+    "afterChapter": 11,
+    "sourcePages": [
+      171,
+      172,
+      173,
+      174,
+      175,
+      176
+    ],
+    "zh": {
+      "title": "精准之亚特兰特",
+      "summary": "与贝雷里安交谈接取。"
+    },
+    "en": {
+      "title": "Atlante the Precise",
+      "summary": "Accept the mission from Bellerian."
+    }
+  },
+  {
+    "id": "crimson-trace",
+    "kind": "side",
+    "afterChapter": 12,
+    "sourcePages": [
+      188,
+      189,
+      190,
+      191,
+      192
+    ],
+    "zh": {
+      "title": "猩红踪迹",
+      "summary": "完成要塞主线并推进据点对话后选择此任务。"
+    },
+    "en": {
+      "title": "Crimson Trace",
+      "summary": "Select the mission after the fortress and hub dialogue."
+    }
+  },
+  {
+    "id": "last-guard",
+    "kind": "side",
+    "afterChapter": 12,
+    "sourcePages": [
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199
+    ],
+    "zh": {
+      "title": "最后的护卫军",
+      "summary": "与特利斯坦交谈，寻找西凡和维蒙。"
+    },
+    "en": {
+      "title": "The Last Guard",
+      "summary": "Speak to Tristan to search for Sivan and Vimon."
+    }
+  },
+  {
+    "id": "transcendental-sword",
+    "kind": "side",
+    "afterChapter": 12,
+    "sourcePages": [
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209
+    ],
+    "zh": {
+      "title": "超越者之剑",
+      "summary": "继续后续支线，寻找布雷德的剑。"
+    },
+    "en": {
+      "title": "Transcendental Sword",
+      "summary": "Continue the side missions to recover Blade’s sword."
+    }
+  },
+  {
+    "id": "suicide-squad",
+    "kind": "side",
+    "afterChapter": 13,
+    "sourcePages": [
+      220,
+      221,
+      222,
+      223,
+      224
+    ],
+    "zh": {
+      "title": "百人敢死队",
+      "summary": "完成剧院主线后选择此任务。"
+    },
+    "en": {
+      "title": "The Suicide Squad",
+      "summary": "Select this mission after the theatre main quest."
+    }
+  },
+  {
+    "id": "residual-chaos",
+    "kind": "side",
+    "afterChapter": 13,
+    "sourcePages": [
+      225,
+      226,
+      227,
+      228,
+      229
+    ],
+    "zh": {
+      "title": "残余的混沌",
+      "summary": "返回据点与特利斯坦对话接取。"
+    },
+    "en": {
+      "title": "Residual Chaos",
+      "summary": "Speak to Tristan at the hub."
+    }
+  },
+  {
+    "id": "disobedience",
+    "kind": "side",
+    "afterChapter": 14,
+    "sourcePages": [
+      243,
+      244,
+      245,
+      246,
+      247
+    ],
+    "zh": {
+      "title": "抗命",
+      "summary": "帮助尤利安寻找家人。"
+    },
+    "en": {
+      "title": "Disobedience",
+      "summary": "Help Yulian find his family."
+    }
+  },
+  {
+    "id": "charons-chains",
+    "kind": "side",
+    "afterChapter": 14,
+    "sourcePages": [
+      248
+    ],
+    "zh": {
+      "title": "卡隆的锁链",
+      "summary": "继续圣物相关任务，准备连续首领战。"
+    },
+    "en": {
+      "title": "Charon’s Chains",
+      "summary": "Continue the relic mission and prepare for consecutive bosses."
+    }
+  },
+  {
+    "id": "birth-of-evil",
+    "kind": "side",
+    "afterChapter": 14,
+    "sourcePages": [
+      249,
+      250,
+      251,
+      252
+    ],
+    "zh": {
+      "title": "恶的诞生",
+      "summary": "与尤利安交谈接取。"
+    },
+    "en": {
+      "title": "The Birth of Evil",
+      "summary": "Accept the mission from Yulian."
+    }
+  },
+  {
+    "id": "the-vow",
+    "kind": "side",
+    "afterChapter": 14,
+    "sourcePages": [
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261
+    ],
+    "zh": {
+      "title": "誓约",
+      "summary": "集齐阿尔戴比勒、瓦尔萨勒、罗维利恩三块圆盘碎片后，与达芙罗娜推进对话。"
+    },
+    "en": {
+      "title": "The Vow",
+      "summary": "Collect the Aldevir, Vaisar and Rovelion disc fragments, then speak to Daphrona."
+    }
+  }
+]

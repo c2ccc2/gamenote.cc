@@ -1,29 +1,15 @@
 [
   {
-    "category": "bosses",
-    "id": "snow-yeti-king",
-    "href": "walkthrough/banished-hero/#section-3",
-    "source": "https://www.3dmgame.com/gl/3964895_9.html",
-    "zh": {
-      "title": "雪魈王",
-      "description": "开场任务的首领。现有基础应对与精力管理提示，招式细表待实机核验。"
-    },
-    "en": {
-      "title": "Snow Yeti King",
-      "description": "Opening mission boss. Basic responses are available; a move-by-move table still needs hands-on review."
-    }
-  },
-  {
     "category": "equipment",
     "id": "dual-wield",
     "source": "https://khazan.nexon.com/en/buynow",
     "zh": {
       "title": "刀斧／双持",
-      "description": "武器类别之一，开场任务即可接触。后续将记录招式、技能与适配装备。"
+      "description": "武器类别之一，开场任务即可接触。"
     },
     "en": {
       "title": "Dual Wield",
-      "description": "One of the weapon classes, introduced in the opening. Moves, skills and gear pairings will follow."
+      "description": "One of the weapon classes, introduced in the opening mission."
     }
   },
   {
@@ -32,11 +18,11 @@
     "source": "https://khazan.nexon.com/en/buynow",
     "zh": {
       "title": "巨剑",
-      "description": "武器类别之一。具体武器与套装效果将按游戏内资料逐件核验。"
+      "description": "三类武器之一。"
     },
     "en": {
       "title": "Greatsword",
-      "description": "One of the weapon classes. Individual weapons and set effects need in-game checks."
+      "description": "One of the three weapon classes."
     }
   },
   {
@@ -45,11 +31,11 @@
     "source": "https://khazan.nexon.com/en/buynow",
     "zh": {
       "title": "长枪",
-      "description": "武器类别之一。后续可按攻击距离、技能和获取路线整理单件资料。"
+      "description": "三类武器之一。"
     },
     "en": {
       "title": "Spear",
-      "description": "One of the weapon classes. Individual entries can cover reach, skills and acquisition."
+      "description": "One of the three weapon classes."
     }
   },
   {
@@ -58,11 +44,11 @@
     "source": "https://store.steampowered.com/app/2680010/The_First_Berserker_Khazan/",
     "zh": {
       "title": "装备套装",
-      "description": "游戏支持整套装备效果与混搭配装。这里先建立分类，具体数值与获取方式待核验。"
+      "description": "游戏支持整套装备效果与混搭配装。"
     },
     "en": {
       "title": "Gear sets",
-      "description": "Full sets and mixed loadouts are supported. Values and acquisition routes still need verification."
+      "description": "Full sets and mixed loadouts are supported."
     }
   },
   {
@@ -84,11 +70,11 @@
     "source": "https://store.steampowered.com/app/2680010/The_First_Berserker_Khazan/",
     "zh": {
       "title": "武器技能",
-      "description": "技能点可用于解锁不同技能；后续按武器类别整理解锁条件和实际用途。"
+      "description": "技能点可用于解锁不同武器的技能。"
     },
     "en": {
       "title": "Weapon skills",
-      "description": "Skill Points unlock abilities. Later entries will group conditions and uses by weapon class."
+      "description": "Skill Points unlock abilities for different weapon classes."
     }
   },
   {
@@ -97,11 +83,11 @@
     "source": "https://store.steampowered.com/app/2680010/The_First_Berserker_Khazan/",
     "zh": {
       "title": "技能重置",
-      "description": "官方商店说明支持随时重置技能点。后续会补界面路径与具体操作。"
+      "description": "支持随时重置和重新分配技能点。"
     },
     "en": {
       "title": "Skill reset",
-      "description": "The official store description says skills can be reset at any time. The menu path and exact steps still need checking."
+      "description": "Skill points can be reset and reassigned at any time."
     }
   },
   {
@@ -110,11 +96,11 @@
     "source": "https://store.steampowered.com/app/2680010/The_First_Berserker_Khazan/",
     "zh": {
       "title": "死亡后取回 Lacrima",
-      "description": "倒下后可以返回死亡地点取回失去的 Lacrima。具体失败条件与路线风险待实机核验。"
+      "description": "倒下后可以返回死亡地点取回失去的 Lacrima。"
     },
     "en": {
       "title": "Recovering Lacrima",
-      "description": "Return to the place of death to recover lost Lacrima. Failure conditions and route risks still need in-game checks."
+      "description": "Return to the place of death to recover lost Lacrima."
     }
   },
   {
@@ -123,11 +109,11 @@
     "source": "https://khazan.nexon.com/en/story",
     "zh": {
       "title": "幻影形态",
-      "description": "官方介绍称，击败敌人、使用特定攻击与技能可积累变身量表；详细触发与实战用法待补。"
+      "description": "击败敌人、使用特定攻击与技能可积累变身量表。"
     },
     "en": {
       "title": "Phantom Form",
-      "description": "The official story page describes a gauge built through combat actions. Detailed triggers and use cases will follow."
+      "description": "Defeating enemies and using specific attacks and skills builds the transformation gauge."
     }
   },
   {
@@ -136,525 +122,11 @@
     "source": "https://store.steampowered.com/app/2680010/The_First_Berserker_Khazan/",
     "zh": {
       "title": "新游戏＋与终极挑战",
-      "description": "通关后可进入新游戏＋，另有终极挑战模式。模式解锁条件、继承内容与奖励将分别核验。"
+      "description": "通关后可进入新游戏＋，另有终极挑战模式。"
     },
     "en": {
       "title": "New Game+ and Ultimate Challenge",
-      "description": "The game offers New Game+ and Ultimate Challenge. Unlock conditions, carryover rules and rewards need separate checks."
-    }
-  },
-  {
-    "category": "characters",
-    "id": "khazan",
-    "source": "https://khazan.nexon.com/en/characters",
-    "zh": {
-      "title": "卡赞",
-      "description": "帝国大将军，遭诬陷后被流放雪山，是本作的主角。"
-    },
-    "en": {
-      "title": "Khazan",
-      "description": "A former imperial general, framed and banished to the mountains; the game's protagonist."
-    }
-  },
-  {
-    "category": "characters",
-    "id": "blade-phantom",
-    "source": "https://khazan.nexon.com/en/characters",
-    "zh": {
-      "title": "刀锋幻影",
-      "description": "来自冥界的幻影，与卡赞结盟。其关系构成故事与战斗能力的重要线索。"
-    },
-    "en": {
-      "title": "Blade Phantom",
-      "description": "A phantom from the Netherworld that forms an alliance with Khazan."
-    }
-  },
-  {
-    "category": "characters",
-    "id": "ozma",
-    "source": "https://khazan.nexon.com/en/characters",
-    "zh": {
-      "title": "奥兹玛",
-      "description": "曾与卡赞并肩对抗狂龙的英雄，之后也卷入叛国指控。"
-    },
-    "en": {
-      "title": "Ozma",
-      "description": "A hero who fought the Berserk Dragon alongside Khazan and later fell under treason accusations."
-    }
-  },
-  {
-    "category": "characters",
-    "id": "quimuk",
-    "source": "https://khazan.nexon.com/en/characters",
-    "zh": {
-      "title": "Quimuk（译名待核对）",
-      "description": "救下卡赞的班图萨满。后续将补其出场章节与相关任务。"
-    },
-    "en": {
-      "title": "Quimuk",
-      "description": "A Bantu shaman who rescued Khazan. Related appearances and missions will be added."
-    }
-  },
-  {
-    "category": "collectibles",
-    "id": "transport-order",
-    "href": "walkthrough/banished-hero/#section-2",
-    "source": "https://www.3dmgame.com/gl/3964895.html",
-    "zh": {
-      "title": "押送令",
-      "description": "开场任务中的剧情物品。当前位置提示见首章；本栏尚不是全收集清单。"
-    },
-    "en": {
-      "title": "Transport order",
-      "description": "A story item in the opening mission. See Chapter 1 for the current location note; this is not a complete checklist."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "blade-phantom-boss",
-    "href": "walkthrough/snow-mountain-trial/#section-3",
-    "source": "https://www.escapistmagazine.com/the-first-berserker-khazan-how-to-beat-the-blade-phantom/",
-    "zh": {
-      "title": "刀锋幻影（首领）",
-      "description": "试炼雪山的首领；按武器和阶段辨认连击。"
-    },
-    "en": {
-      "title": "Blade Phantom (boss)",
-      "description": "Stormpass boss; read attack strings by weapon and phase."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "viper",
-    "href": "walkthrough/forgotten-temple/#section-4",
-    "source": "https://gamesfuze.com/guides/how-to-beat-viper-boss-in-the-first-berserker-khazan/",
-    "zh": {
-      "title": "Viper",
-      "description": "被遗忘的神庙首领；长枪阶段与变形后的拳刃阶段需分别判断。"
-    },
-    "en": {
-      "title": "Viper",
-      "description": "Forgotten Temple boss; read spear and transformed fist/dagger phases separately."
-    }
-  },
-  {
-    "category": "collectibles",
-    "id": "soulstones",
-    "href": "walkthrough/snow-mountain-trial/#section-2",
-    "source": "https://al-gest.com/khazen/khazan-stage-002/",
-    "zh": {
-      "title": "鬼石",
-      "description": "本次已整理第二、三章各三块的地标位置，第三章遇到 Daphrona 后可查看解放选项。"
-    },
-    "en": {
-      "title": "Soulstones",
-      "description": "Landmark checks cover three each in missions two and three; Daphrona introduces unleashing."
-    }
-  },
-  {
-    "category": "collectibles",
-    "id": "jarlings",
-    "href": "walkthrough/snow-mountain-trial/#jarlings",
-    "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950",
-    "zh": {
-      "title": "罐子精灵与回访",
-      "description": "先完成后续壶爱好者支线，再回访早期关卡的指定小壶。"
-    },
-    "en": {
-      "title": "Jarlings and revisits",
-      "description": "Complete Jar Enthusiasts later, then revisit the marked jars in early missions."
-    }
-  },
-  {
-    "category": "characters",
-    "id": "daphrona",
-    "href": "walkthrough/forgotten-temple/#section-3",
-    "source": "https://esportvoice.com/2025/03/29/forgotten-temple-guide-the-first-berserker-khazan/",
-    "zh": {
-      "title": "Daphrona",
-      "description": "在被遗忘的神庙地下遇到，提供鬼石解放相关服务。"
-    },
-    "en": {
-      "title": "Daphrona",
-      "description": "Met beneath the Forgotten Temple; offers Soulstone unleashing."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "volbaino",
-    "href": "walkthrough/revenge-prelude/#section-3",
-    "source": "https://patchcrazy.co.uk/volbaino-boss-fight-guide-the-first-berserker-khazan/",
-    "zh": {
-      "title": "Volbaino",
-      "description": "对应章节已有战斗与战前准备提示。"
-    },
-    "en": {
-      "title": "Volbaino",
-      "description": "Battle and preparation notes are available in the related mission."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "aratra",
-    "href": "walkthrough/suspicious-stench/#section-3",
-    "source": "https://patchcrazy.co.uk/aratra-boss-fight-guide-first-berserker-khazan/",
-    "zh": {
-      "title": "Aratra",
-      "description": "对应章节已有战斗与战前准备提示。"
-    },
-    "en": {
-      "title": "Aratra",
-      "description": "Battle and preparation notes are available in the related mission."
-    }
-  },
-  {
-    "category": "collectibles",
-    "id": "evacuation-order",
-    "href": "walkthrough/revenge-prelude/#section-2",
-    "source": "https://www.powerpyx.com/the-first-berserker-khazan-charnak-mountain-range-collectible-locations/",
-    "zh": {
-      "title": "撤离令",
-      "description": "复仇序章中央仓库入口后的建筑支路档案。"
-    },
-    "en": {
-      "title": "Evacuation Order",
-      "description": "Story record in the building branch after Central Storehouse Entrance."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "rangkus",
-    "href": "walkthrough/traitors-face/#section-3",
-    "source": "https://al-gest.com/khazen/khazan-boss-006/",
-    "zh": {
-      "title": "Rangkus",
-      "description": "对应主线章节已有战斗要点。"
-    },
-    "en": {
-      "title": "Rangkus",
-      "description": "Battle notes are available in the related main mission."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "maluca",
-    "href": "walkthrough/blade-to-the-curtain/#section-3",
-    "source": "https://gamesfuze.com/guides/the-first-berserker-khazan-maluca-boss-complete-guide/",
-    "zh": {
-      "title": "Maluca",
-      "description": "对应主线章节已有战斗要点。"
-    },
-    "en": {
-      "title": "Maluca",
-      "description": "Battle notes are available in the related main mission."
-    }
-  },
-  {
-    "category": "side-quests",
-    "id": "kaleido",
-    "href": "walkthrough/traitors-face/#section-4",
-    "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950",
-    "zh": {
-      "title": "Kaleido：装备服务前置",
-      "description": "第六章之后回裂隙找 Oksana，前往 Silent Temple 完成任务并交付。"
-    },
-    "en": {
-      "title": "Kaleido: gear-service prerequisite",
-      "description": "After mission six, speak to Oksana, complete Silent Temple and return to turn it in."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "elamein",
-    "href": "walkthrough/devoured-village/#section-3",
-    "source": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/",
-    "zh": {
-      "title": "Elamein",
-      "description": "第八章首领，注意盾反与精力管理。"
-    },
-    "en": {
-      "title": "Elamein",
-      "description": "Mission-eight boss: watch shield responses and stamina."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "shactuka",
-    "href": "walkthrough/unbelievable-truth/#section-3",
-    "source": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/",
-    "zh": {
-      "title": "Shactuka",
-      "description": "第九章首领，头部为主要弱点。"
-    },
-    "en": {
-      "title": "Shactuka",
-      "description": "Mission-nine boss, with a head weak point."
-    }
-  },
-  {
-    "category": "collectibles",
-    "id": "yulians-necklace",
-    "href": "walkthrough/unbelievable-truth/#section-2",
-    "source": "https://www.powerpyx.com/the-first-berserker-khazan-pell-los-plateau-collectible-locations/",
-    "zh": {
-      "title": "尤利安的项链",
-      "description": "Linon 矿山牢房支路物品。"
-    },
-    "en": {
-      "title": "Yulian’s Necklace",
-      "description": "Item in a Linon Mine cell branch."
-    }
-  },
-  {
-    "category": "side-quests",
-    "id": "pavels-final-words",
-    "href": "walkthrough/devoured-village/#section-4",
-    "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950",
-    "zh": {
-      "title": "Pavel 的遗言",
-      "description": "第八章后的关联支线，需要此前 Pavel 线索推进。"
-    },
-    "en": {
-      "title": "Pavel’s Final Words",
-      "description": "Follow-up to mission eight after progressing Pavel’s earlier clues."
-    }
-  },
-  {
-    "category": "side-quests",
-    "id": "escaping-linon-mine",
-    "href": "walkthrough/unbelievable-truth/#section-4",
-    "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950",
-    "zh": {
-      "title": "逃离 Linon 矿山",
-      "description": "第九章后与 Yulian 对话查看任务。"
-    },
-    "en": {
-      "title": "Escaping Linon Mine",
-      "description": "Check the mission with Yulian after mission nine."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "trokka",
-    "href": "walkthrough/city-of-witches/#section-3",
-    "source": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/",
-    "zh": {
-      "title": "Trokka",
-      "description": "第十章水城首领，关注施法和水母。"
-    },
-    "en": {
-      "title": "Trokka",
-      "description": "Mission-ten boss: watch casting and jellyfish."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "bellerian",
-    "href": "walkthrough/hermits-mountains/#section-3",
-    "source": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/",
-    "zh": {
-      "title": "Bellerian",
-      "description": "第十一章首领，注意元素法术和骷髅召唤。"
-    },
-    "en": {
-      "title": "Bellerian",
-      "description": "Mission-eleven boss: elemental magic and skull summons."
-    }
-  },
-  {
-    "category": "collectibles",
-    "id": "aldevir-disk-fragment",
-    "href": "walkthrough/city-of-witches/#section-2",
-    "source": "https://www.powerpyx.com/the-first-berserker-khazan-heart-of-pell-los-collectible-locations/",
-    "zh": {
-      "title": "Aldevir 圆盘碎片",
-      "description": "魔女之城的后续任务条件物品。"
-    },
-    "en": {
-      "title": "Aldevir’s Disk Fragment",
-      "description": "A later mission prerequisite found in Witch’s Castle."
-    }
-  },
-  {
-    "category": "side-quests",
-    "id": "unrequited-love",
-    "href": "walkthrough/city-of-witches/#section-4",
-    "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950",
-    "zh": {
-      "title": "单相思",
-      "description": "第十章后与 Tristan 对话查看。"
-    },
-    "en": {
-      "title": "Unrequited Love",
-      "description": "Check with Tristan after mission ten."
-    }
-  },
-  {
-    "category": "side-quests",
-    "id": "atlante-the-precise",
-    "href": "walkthrough/hermits-mountains/#section-4",
-    "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950",
-    "zh": {
-      "title": "精准的 Atlante",
-      "description": "隐士山脉后与 Bellerian 对话查看。"
-    },
-    "en": {
-      "title": "Atlante the Precise",
-      "description": "Check with Bellerian after Hermit Mountains."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "skalpel",
-    "href": "walkthrough/cursed-fortress/#section-3",
-    "source": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/",
-    "zh": {
-      "title": "Skalpel",
-      "description": "对应章节已有首领应对要点。"
-    },
-    "en": {
-      "title": "Skalpel",
-      "description": "Battle notes are available in the related mission."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "princess-ilyna",
-    "href": "walkthrough/strange-melody/#section-3",
-    "source": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/",
-    "zh": {
-      "title": "Princess Ilyna",
-      "description": "对应章节已有首领应对要点。"
-    },
-    "en": {
-      "title": "Princess Ilyna",
-      "description": "Battle notes are available in the related mission."
-    }
-  },
-  {
-    "category": "collectibles",
-    "id": "disk-fragments",
-    "href": "walkthrough/strange-melody/#section-4",
-    "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950",
-    "zh": {
-      "title": "三处圆盘碎片",
-      "description": "第十、十二、十三章的后续支线条件物品。"
-    },
-    "en": {
-      "title": "Three Disk Fragments",
-      "description": "Later mission prerequisites from missions ten, twelve and thirteen."
-    }
-  },
-  {
-    "category": "side-quests",
-    "id": "last-sentinel",
-    "href": "walkthrough/cursed-fortress/#section-4",
-    "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950",
-    "zh": {
-      "title": "最后的哨兵",
-      "description": "要塞主线后向 Tristan 查看，目的地 Sentinels’ Fortress。"
-    },
-    "en": {
-      "title": "Last Sentinel",
-      "description": "Check with Tristan after the fortress; destination: Sentinels’ Fortress."
-    }
-  },
-  {
-    "category": "side-quests",
-    "id": "transcendental-sword",
-    "href": "walkthrough/cursed-fortress/#section-4",
-    "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950",
-    "zh": {
-      "title": "超越者之剑",
-      "description": "要塞之后向刀锋幻影查看，目的地 Ruined Citadel。"
-    },
-    "en": {
-      "title": "Transcendental Sword",
-      "description": "Check with Blade Phantom after the fortress; destination: Ruined Citadel."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "hismar",
-    "href": "walkthrough/empires-end/#section-3",
-    "source": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/",
-    "zh": {
-      "title": "Hismar",
-      "description": "对应终盘章节已有战斗要点。"
-    },
-    "en": {
-      "title": "Hismar",
-      "description": "Battle notes are available in the related final mission."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "reese",
-    "href": "walkthrough/bloodstained-sanctuary/#section-3",
-    "source": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/",
-    "zh": {
-      "title": "Reese",
-      "description": "对应终盘章节已有战斗要点。"
-    },
-    "en": {
-      "title": "Reese",
-      "description": "Battle notes are available in the related final mission."
-    }
-  },
-  {
-    "category": "bosses",
-    "id": "ozma-boss",
-    "href": "walkthrough/lord-of-chaos/#section-3",
-    "source": "https://www.destructoid.com/the-first-berserker-khazan-all-bosses-in-order/",
-    "zh": {
-      "title": "Ozma",
-      "description": "对应终盘章节已有战斗要点。"
-    },
-    "en": {
-      "title": "Ozma",
-      "description": "Battle notes are available in the related final mission."
-    }
-  },
-  {
-    "category": "side-quests",
-    "id": "the-vow",
-    "href": "walkthrough/empires-end/#section-4",
-    "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950",
-    "zh": {
-      "title": "誓约",
-      "description": "帝国的末日后，三块圆盘碎片齐全时找 Daphrona 查看。"
-    },
-    "en": {
-      "title": "The Vow",
-      "description": "After Fall of the Empire, check with Daphrona while holding three disk fragments."
-    }
-  },
-  {
-    "category": "side-quests",
-    "id": "charons-chains",
-    "href": "walkthrough/bloodstained-sanctuary/#section-4",
-    "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3785100950",
-    "zh": {
-      "title": "卡戎的锁链",
-      "description": "帝国的末日后的连续战斗任务，也是结局前置核对项目。"
-    },
-    "en": {
-      "title": "Charon’s Chains",
-      "description": "A consecutive-battle mission after Fall of the Empire; check it before ending selection."
-    }
-  },
-  {
-    "category": "collectibles",
-    "id": "golden-records",
-    "href": "walkthrough/lord-of-chaos/#section-4",
-    "source": "https://www.neoseeker.com/the-first-berserker-khazan/Imperial_Palace",
-    "zh": {
-      "title": "金色档案与结局",
-      "description": "共十五份，结局前在收集菜单核对；包含主线与支线来源。"
-    },
-    "en": {
-      "title": "Gold records and endings",
-      "description": "Fifteen records across main and bonus missions; check the menu before ending selection."
+      "description": "The game offers New Game+ and Ultimate Challenge."
     }
   }
 ]

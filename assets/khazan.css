@@ -19,12 +19,6 @@
 .khazan-article p,.khazan-article li{line-height:1.9}
 .khazan-article ol{padding-left:25px}
 .khazan-article li{margin:0 0 15px}
-.khazan-at-glance{margin:30px 0 24px;padding:22px 25px;border:1px solid #d8dee0;border-top:4px solid #3d5960;background:#f5f8f7}
-.khazan-at-glance h2{margin:0 0 14px;font-size:22px}
-.khazan-at-glance dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 25px;margin:0}
-.khazan-at-glance dl>div{padding:10px 0;border-top:1px solid #d9e1e1}
-.khazan-at-glance dt{font-size:12px;font-weight:800;color:#607078}
-.khazan-at-glance dd{margin:4px 0 0;font-size:15px;line-height:1.55}
 .khazan-toc{margin:0 0 32px;padding:15px 0 20px;border-bottom:1px solid var(--line)}
 .khazan-toc>strong{display:block;margin-bottom:9px;font-size:13px;color:var(--soft)}
 .khazan-toc>div{display:flex;flex-wrap:wrap;gap:8px}
@@ -38,7 +32,7 @@
 .khazan-reference h2{font-size:17px;margin:0 0 6px}
 .khazan-reference p{margin:0;color:var(--soft);font-size:13px}
 @media(max-width:720px){.khazan-hero,.khazan-grid{grid-template-columns:1fr}.khazan-hero{padding-top:35px}.khazan-hero img{max-width:500px}}
-@media(max-width:600px){.khazan-at-glance{padding:18px}.khazan-at-glance dl{grid-template-columns:1fr}.khazan-toc>div{display:grid;grid-template-columns:1fr 1fr}.khazan-toc a{line-height:1.35}}
+@media(max-width:600px){.khazan-toc>div{display:grid;grid-template-columns:1fr 1fr}.khazan-toc a{line-height:1.35}}
 [data-theme="classic"] .khazan-classic-shell .classic-nav h2{padding:0 9px}
 [data-theme="classic"] .khazan-classic-shell .classic-main>header{margin-bottom:0}
 [data-theme="classic"] .khazan-classic-shell .classic-main>article{max-width:790px}
@@ -81,8 +75,7 @@
 [data-theme="classic"] .khazan-classic-content .khazan-card--planned{background:#f4f5f3;border-style:dashed}
 [data-theme="classic"] .khazan-classic-content .khazan-card--planned h3{color:#526168}
 [data-theme="classic"] .khazan-classic-content .khazan-article{max-width:none;margin:0}
-[data-theme="classic"] .khazan-classic-content .khazan-at-glance{margin:15px 0 22px;border:1px solid #cbd8dc;border-top:4px double #a93131;background:#f0f5f7}
-[data-theme="classic"] .khazan-classic-content .khazan-at-glance h2,[data-theme="classic"] .khazan-classic-content .khazan-chapter-section h2{color:#a93131;font:700 21px/1.5 Georgia,'SimSun',serif}
+[data-theme="classic"] .khazan-classic-content .khazan-chapter-section h2{color:#a93131;font:700 21px/1.5 Georgia,'SimSun',serif}
 [data-theme="classic"] .khazan-classic-content .khazan-toc a{border-color:#cbd8dc;border-radius:0;background:#f8fbfb;color:#254e79}
 [data-theme="classic"] .khazan-classic-content .khazan-toc a:hover{border-color:#a93131}
 [data-theme="classic"] .khazan-classic-content .khazan-chapter-section{scroll-margin-top:25px}
@@ -103,3 +96,61 @@
 [data-theme="classic"] .khazan-classic-content .khazan-chapter-section ul{font-size:17px;line-height:1.85;padding-left:24px}
 [data-theme="classic"] .khazan-classic-content .khazan-chapter-section li{margin:12px 0}
 [data-theme="classic"] .khazan-classic-content .khazan-chapter-section .classic-image-block img{display:block;width:100%;height:auto}
+.khazan-source-index{margin:24px 0 36px}
+.khazan-source-pages{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;list-style:none;padding:0!important;margin:20px 0}
+.khazan-source-pages>li{min-width:0;margin:0;padding:12px;border:1px solid #cbd8dc;background:#f8fbfb}
+.khazan-source-pages>li>a{display:flex;flex-direction:column;gap:4px;text-decoration:none}
+.khazan-source-pages strong{font-size:13px;color:#a93131}
+.khazan-source-pages span{font-size:15px;color:#254e79;line-height:1.5}
+.khazan-source-pages figure{margin:12px 0 0}
+.khazan-source-pages img{display:block;width:100%;height:auto;max-height:160px;object-fit:contain;background:#e6ebec}
+.khazan-source-pages figcaption{font-size:12px;line-height:1.5;color:#526168;margin-top:5px}
+.khazan-source-gallery{margin-top:10px;border-top:1px dotted #cbd8dc;padding-top:8px}
+.khazan-source-gallery summary{cursor:pointer;color:#254e79;font-size:13px;font-weight:700}
+.khazan-source-gallery>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px;margin-top:10px}
+.khazan-source-gallery img{max-height:200px}
+.khazan-source-appendix{margin:30px 0;padding:14px 18px;border:1px solid #cbd8dc;background:#f8fbfb}
+.khazan-source-appendix>summary{cursor:pointer;color:#254e79;font-weight:700}
+.khazan-source-appendix[open]>summary{margin-bottom:14px}
+.khazan-task-list{list-style:none;padding:0!important;margin:16px 0 30px}
+.khazan-task-list>li{padding:10px 0 18px;border-bottom:1px solid #cbd8dc}
+.khazan-task-list h2{margin:10px 0!important}
+.khazan-related-missions{font-size:14px;color:#526168}
+.khazan-related-missions a{white-space:nowrap}
+.khazan-guide-actions,.khazan-collection-links{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+.khazan-guide-actions>a,.khazan-collection-links>a{padding:9px 13px;border:1px solid #cbd8dc;background:#f5f9fa}
+.khazan-guide-actions>a{font-weight:700}
+.khazan-collection-links span{margin-left:6px;color:#a93131;font-weight:700}
+.khazan-flow-nav{margin:24px 0;padding:15px 20px;border-block:1px solid #cbd8dc;background:#f5f9fa}
+.khazan-flow-nav ol{columns:2;gap:30px;margin:0;padding-left:22px}
+.khazan-flow-nav li{break-inside:avoid;margin:5px 0}
+.khazan-flow-step{margin:35px 0 48px;scroll-margin-top:20px}
+.khazan-step-number{display:inline-block;margin-right:12px;color:#637980;font:700 16px/1.5 system-ui,sans-serif}
+.khazan-step-pickups{display:flex;flex-wrap:wrap;gap:8px 20px;padding-left:20px;margin:12px 0 18px}
+.khazan-step-pickups>li{margin:0}
+.khazan-flow-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:14px;margin:15px 0}
+.khazan-flow-images figure{margin:0}
+.khazan-flow-images img{display:block;width:100%;height:auto;max-height:none;cursor:zoom-in;border:1px solid #cbd8dc}
+.khazan-flow-more{margin-top:12px}
+.khazan-flow-more summary,.khazan-references summary{cursor:pointer;color:#285577;font-weight:700}
+.khazan-references{border-top:1px solid #cbd8dc;margin:30px 0;padding:18px 0;font-size:14px}
+.khazan-location-table{width:100%;table-layout:fixed}
+.khazan-location-table th:first-child{width:20%}
+.khazan-location-table th:last-child{width:15%}
+.khazan-location-table th small{display:block;font-weight:400;margin-top:6px}
+.khazan-location-preview{display:block;width:100%;max-width:165px;height:auto;margin-bottom:8px;border:1px solid #cbd8dc}
+.khazan-route-copy{max-width:920px;margin-inline:auto}
+.khazan-route-copy>p{margin:22px 0 12px;text-align:left}
+.khazan-route-copy>h3{margin-top:28px;color:#a93131;text-align:left}
+.khazan-instruction-image{max-width:840px;margin:14px auto 28px}
+.khazan-instruction-image img{display:block;width:100%;height:auto;border:1px solid #cbd8dc;cursor:zoom-in}
+.khazan-location-table tr{scroll-margin-top:25px}
+.khazan-pickup-anchor{display:block;scroll-margin-top:25px}
+.khazan-collection-filter{display:flex;align-items:end;flex-wrap:wrap;gap:12px;margin:25px 0 10px;padding:18px;background:#f0f5f7;border:1px solid #cbd8dc}
+.khazan-collection-filter label{display:grid;gap:6px;font-size:14px}
+.khazan-collection-filter label:first-child{flex:1;min-width:200px}
+.khazan-collection-filter input,.khazan-collection-filter select,.khazan-collection-filter button{box-sizing:border-box;min-height:40px;padding:8px 12px;border:1px solid #acbdc4;background:#fff;color:#233c4c;font:inherit}
+.khazan-collection-filter button{cursor:pointer}
+.khazan-pickup-condition{font-size:14px;font-weight:700;color:#984236}
+[data-collection-item][hidden],[data-collection-group][hidden]{display:none!important}
+@media(max-width:650px){.khazan-flow-nav ol{columns:1}.khazan-flow-images{grid-template-columns:1fr}.khazan-location-table{min-width:560px}.khazan-collection-filter label:first-child{min-width:100%}.khazan-guide-actions>a{flex:1}.khazan-flow-step{margin-bottom:30px}}

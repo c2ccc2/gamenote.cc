@@ -30,13 +30,13 @@
     const title = en ? game.title : game.titleZh;
     const status = game.status === 'Complete' ? tr('已完成','Complete') : tr('整理中','In Progress');
     const cover = game.cover ? `<img src="${game.cover}" alt="${title} ${tr('游戏宣传图','game artwork')}" loading="lazy">` : `<div class="game-cover game-cover--type"><span>GAME NOTE${game.theme === 'classic' ? ' CLASSIC' : ''}</span><strong>${title}</strong><small>${tr('攻略整理中','GUIDE IN PROGRESS')}</small></div>`;
-    return `<article class="game-card"><a class="game-cover-link" href="${game.guideUrl}">${cover}</a><div class="game-copy"><div class="card-topline"><span class="status ${game.status === 'Complete' ? 'status--complete' : ''}">${status}</span></div><h3><a href="${game.guideUrl}">${title}</a></h3><p>${game.description}</p><div class="section-tags">${game.sections.map(s => `<span>${en?s:sectionNames[s]||s}</span>`).join('')}</div><a class="text-link" href="${game.guideUrl}">${tr('打开攻略档案','Open guide')} <b>→</b></a></div></article>`;
+    return `<article class="game-card"><a class="game-cover-link" href="${game.guideUrl}" target="_blank" rel="noopener noreferrer">${cover}</a><div class="game-copy"><div class="card-topline"><span class="status ${game.status === 'Complete' ? 'status--complete' : ''}">${status}</span></div><h3><a href="${game.guideUrl}" target="_blank" rel="noopener noreferrer">${title}</a></h3><p>${game.description}</p><div class="section-tags">${game.sections.map(s => `<span>${en?s:sectionNames[s]||s}</span>`).join('')}</div><a class="text-link" href="${game.guideUrl}" target="_blank" rel="noopener noreferrer">${tr('打开攻略档案','Open guide')} <b>→</b></a></div></article>`;
   }
   function noteCard(note) {
     const game = note.game && gameById(note.game);
     const category = en ? note.categoryLabel : ({'behind-the-guide':'攻略幕后','map-making':'地图制作'}[note.category] || note.categoryLabel) + (note.categoryLabel.includes('Site Note') ? ' / 站点观察' : '');
     const url = (en ? '/en' : '') + note.url;
-    return `<article class="note-card"><p class="eyebrow coral">${category}</p><h3><a href="${url}" target="_blank" rel="noopener noreferrer">${note.title}</a></h3><p>${note.description}</p><div class="note-meta"><time datetime="${note.date}">${formatDate(note.date)}</time>${game ? `<a href="${game.guideUrl}">${en?game.title:game.titleZh||game.title}</a>` : ''}</div><a class="text-link" href="${url}" target="_blank" rel="noopener noreferrer">${tr('阅读手记','Read note')} <b>→</b></a></article>`;
+    return `<article class="note-card"><p class="eyebrow coral">${category}</p><h3><a href="${url}" target="_blank" rel="noopener noreferrer">${note.title}</a></h3><p>${note.description}</p><div class="note-meta"><time datetime="${note.date}">${formatDate(note.date)}</time>${game ? `<a href="${game.guideUrl}" target="_blank" rel="noopener noreferrer">${en?game.title:game.titleZh||game.title}</a>` : ''}</div><a class="text-link" href="${url}" target="_blank" rel="noopener noreferrer">${tr('阅读手记','Read note')} <b>→</b></a></article>`;
   }
   function updateItem(update) {
     const game = update.game && gameById(update.game);

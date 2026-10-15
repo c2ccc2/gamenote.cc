@@ -142,7 +142,7 @@ for(const file of files){
  }
  if(current==='/')$('head').append(`<script type="application/ld+json" data-site-schema>${JSON.stringify({'@context':'https://schema.org','@type':'WebSite',name:'GAME NOTE',url:origin+url,inLanguage:en?'en':'zh-CN',publisher:{'@type':'Organization',name:'GAME NOTE',url:origin}})}</script>`);
  const canonical=$('link[rel=canonical]').attr('href');if(!/noindex/i.test($('meta[name=robots]').attr('content')||'')&&canonical===origin+url&&current!=='/search/')indexable.push(origin+url);
- writeFile(file,$.html()+'\n');
+ if(!process.argv.includes('--khazan')||file.replaceAll('\\','/').includes('/games/the-first-berserker-khazan/'))writeFile(file,$.html()+'\n');
 }
 const urls=[...new Set(indexable)].sort();
 writeFile(path.join(root,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(u=>`  <url><loc>${esc(u)}</loc></url>`).join('\n')+'\n</urlset>\n');
