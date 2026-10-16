@@ -105,21 +105,19 @@
     "category": "castlevania",
     "series": "castlevania",
     "difficulty": "pending",
-    "status": "upcoming",
+    "status": "released",
     "year": "2026",
     "releaseDate": "2026-10-15",
     "platform": "PC / PlayStation 5 / Xbox Series X|S",
     "creator": "Konami / Evil Empire / Motion Twin",
     "cover": "/assets/catalog/castlevania-belmonts-curse.jpg",
-    "summary": "以罗丝·贝尔蒙特为主角的 2D 探索动作游戏，故事发生在《德古拉的诅咒》之后。尚未发行。",
+    "summary": "以罗丝·贝尔蒙特为主角的 2D 探索动作游戏，故事发生在《德古拉的诅咒》之后。",
     "features": [
       "2D 探索",
-      "动作战斗",
-      "未发布"
+      "动作战斗"
     ],
     "source": "https://www.konami.com/games/eu/en/topics/19188/",
-    "store": "https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/",
-    "expectedReleaseDate": "2026-10-15"
+    "store": "https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/"
   },
   {
     "slug": "hollow-knight",

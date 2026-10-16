@@ -45,13 +45,14 @@
     "replay": "Optional modes, collection goals and different ability builds support repeat play."
   },
   "castlevania-belmonts-curse": {
-    "summary": "An upcoming 2D Castlevania adventure starring Rose Belmont, set after Dracula's Curse.",
+    "summary": "A 2D Castlevania adventure starring Rose Belmont, set after Dracula's Curse.",
     "review": "Traversal is packed with spikes, saw blades and precision-platforming challenges. Change the visuals and characters, and it could easily bring Hollow Knight to mind. Many walls that change with different states are familiar tricks from other platformers, too. Add the highly aggressive enemies along the way, and it starts to feel like Dead Cells. Smaller details such as skills and equipment also draw on mechanics common in popular games. For me, its biggest problem is that, as a new Castlevania, it may differ from earlier Castlevania games, but its gameplay does not feel particularly new.",
-    "fit": "Players interested in a new 2D Castlevania can follow its release and later coverage.",
+    "fit": "Players interested in a new 2D Castlevania who also enjoy frequent platforming challenges and fast-paced combat.",
     "caution": "Play time, difficulty and replay features remain unverified.",
-    "hours": "pending release",
+    "hours": "To be verified",
     "replayStatus": "Unconfirmed",
-    "replay": "Replay features will be checked after release."
+    "replay": "Replay features remain to be verified.",
+    "reviewClosing": "It has everything except Castlevania."
   },
   "hollow-knight": {
     "summary": "Descend into Hallownest, explore its connected regions and uncover new ways to move.",
