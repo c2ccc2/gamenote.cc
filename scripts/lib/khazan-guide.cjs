@@ -141,5 +141,14 @@ module.exports = function loadGuide(root) {
   const english=require('./khazan-english.cjs');
   for(const task of normalized)for(const step of task.steps)step.title.en=english.title(step.title.zh);
   for(const point of allPoints)if(!['soulstones','jarlings'].includes(point.type))point.name.en=english.title(point.name.zh);
+  const snowLayout=require('../../content/games/the-first-berserker-khazan/snow-mountain-layout.cjs');
+  const snow=normalized.find(t=>t.id==='snow-mountain-trial');
+  for(const step of snow.steps){step.layout=snowLayout[step.sourcePage];step.routeTitle=step.layout?.title;}
+  const snowLocations={
+   soulstones:[['清理雪原狼群后，绕到木制瞭望塔后方。','Clear the snowfield wolves and circle behind the wooden lookout.'],['狼群坡道左侧洞窟深处，士兵尸体与日记旁。','Deep in the cave left of the wolf slope, beside the soldier’s corpse and diary.'],['双梯悬崖处先向右绕行洞窟，再从左侧岔路登梯到鬼石平台。','From the paired ladders, circle right through the cave, then climb from the left branch to the Soulstone ledge.']],
+   jarlings:[['完成罐子爱好者后回访冰封峡谷，查看抵达点旁的罐子。','After Jar Enthusiast, revisit Ice Canyon and check the pot beside the arrival point.']]
+  };
+  for(const point of snow.points){const list=snowLocations[point.type];if(!list)continue;const index=point.type==='soulstones'?snow.points.filter(p=>p.type===point.type).indexOf(point):0;const loc=list[index];point.location={zh:loc[0],en:loc[1]};}
+  require('./khazan-route-layout.cjs')(normalized);
   return {tasks:normalized,main:normalized.filter(t=>t.kind==='main'),side:normalized.filter(t=>t.kind==='side'),points:allPoints,types,assets:archive.assets||{}};
 };

@@ -17,10 +17,11 @@ for(const locale of ['zh','en']){
  const esc=value=>escapeHtml(normalizeName(value,locale));
  const en=locale==='en',base=(en?'/en':'')+'/games/'+slug+'/',name=en?'The First Berserker: Khazan':'第一狂战士：卡赞';
  const taskHref=t=>base+(t.kind==='main'?'walkthrough/':'side-quests/')+t.id+'/',typeHref=t=>base+'collectibles/'+t.id+'/';
+ const stepTitle=s=>s.routeTitle?.[locale]||s.title[locale];
  const imageAttrs=src=>guide.assets[src]?` width="${guide.assets[src].width}" height="${guide.assets[src].height}"`:'';
  const taskTitle=t=>t.kind==='main'?`${String(t.chapter).padStart(2,'0')} · ${t[locale].title}`:t[locale].title;
  const typeLinks=()=>`<nav class="khazan-collection-links" aria-label="${en?'Collectible categories':'收集分类'}">${guide.types.map(t=>`<a href="${typeHref(t)}">${esc(t[locale])} <span>${guide.points.filter(p=>p.type===t.id).length}</span></a>`).join('')}</nav>`;
- function references(task){return `<details class="khazan-references"><summary>${en?'Reference: 3DM Guide Team':'资料来源：3DM 攻略组'}</summary><p>${en?'GAME NOTE has reorganized and rewritten the routes from this walkthrough.':'GAME NOTE 根据以下攻略重新组织任务与收集路线，图片保留原图署名。'}</p><ul>${task?task.steps.map(s=>`<li><a href="${s.source}" target="_blank" rel="noopener noreferrer">${esc(s.title[locale])} ↗</a></li>`).join(''):`<li><a href="${source}" target="_blank" rel="noopener noreferrer">${en?'The First Berserker: Khazan walkthrough':'《第一狂战士：卡赞》全任务流程图文攻略'} ↗</a></li>`}</ul></details>`}
+ function references(task){return `<details class="khazan-references"><summary>${en?'Reference: 3DM Guide Team':'资料来源：3DM 攻略组'}</summary><p>${en?'GAME NOTE has reorganized and rewritten the routes from this walkthrough.':'GAME NOTE 根据以下攻略重新组织任务与收集路线，图片保留原图署名。'}</p><ul>${task?task.steps.map(s=>`<li><a href="${s.source}" target="_blank" rel="noopener noreferrer">${esc(stepTitle(s))} ↗</a></li>`).join(''):`<li><a href="${source}" target="_blank" rel="noopener noreferrer">${en?'The First Berserker: Khazan walkthrough':'《第一狂战士：卡赞》全任务流程图文攻略'} ↗</a></li>`}</ul></details>`}
  function emit(route,title,lead,body,collections=false,showLead=true){
   const alternate=en?route.replace(/^\/en\//,'/'):'/en'+route;
   const language=`<details class="language-menu"><summary aria-label="${en?'Choose language':'选择语言'}"><span aria-hidden="true">◎</span> ${en?'English':'简体中文'} <span class="language-chevron" aria-hidden="true"></span></summary><div class="language-menu-options"><a href="${en?alternate:route}" lang="zh-CN" hreflang="zh-CN"${en?'':' aria-current="page"'}>简体中文</a><a href="${en?route:alternate}" lang="en" hreflang="en"${en?' aria-current="page"':''}>English</a></div></details>`;
@@ -29,15 +30,41 @@ for(const locale of ['zh','en']){
  }
  function taskList(tasks,related=false){return `<ol class="khazan-task-list">${tasks.map(t=>`<li${related?'':` id="${t.id}"`}>${!related&&t.id==='silent-temple'?'<span id="kaleido"></span>':''}${!related&&t.id==='last-guard'?'<span id="last-sentinel"></span>':''}<h2 class="classic-heading"><a href="${taskHref(t)}">${esc(taskTitle(t))} →</a></h2><p>${esc(t[locale].summary)}</p>${!related&&t.kind==='main'&&guide.side.some(s=>s.afterChapter===t.chapter)?`<p class="khazan-related-missions">${en?'Related side missions:':'关联支线：'}${guide.side.filter(s=>s.afterChapter===t.chapter).map(s=>`<a href="${taskHref(s)}">${esc(s[locale].title)}</a>`).join(' · ')}</p>`:''}</li>`).join('')}</ol>`}
  function collectionRows(points){return `<div class="classic-table-wrap"><table class="classic-table khazan-location-table"><thead><tr><th scope="col">${en?'Item':'收集物'}</th><th scope="col">${en?'Location':'位置与走法'}</th><th scope="col">${en?'Walkthrough':'图文流程'}</th></tr></thead><tbody>${points.map(p=>`<tr id="${p.id}" data-collection-item data-kind="${p.kind}" data-search="${esc([p.name.zh,p.name.en,p.location[locale]].join(' '))}"><th scope="row">${esc(p.name[locale])}</th><td>${esc(p.location[locale])}${p.requirement?`<p class="khazan-pickup-condition">${esc(p.requirement[locale])}</p>`:''}</td><td><a href="${taskHref(guide.tasks.find(t=>t.id===p.taskId))}#${p.routeAnchor}">${p.image?`<img class="khazan-location-preview" src="${esc(p.image)}"${imageAttrs(p.image)} alt="${esc(p.name[locale])} · ${en?'location':'位置'}" loading="lazy">`:''}${en?'View route':'查看路线'} →</a></td></tr>`).join('')}</tbody></table></div>`}
- function stepCopy(step){
-  const anchors=index=>step.points.filter(p=>p.blockIndex===index).map(p=>`<span class="khazan-pickup-anchor" id="${p.routeAnchor}"></span>`).join('');
-  let imageNumber=0;
-  return `<div class="khazan-route-copy">${step.blocks.map((block,index)=>{
-   if(block.kind==='image')return `<figure class="khazan-instruction-image"><a href="${esc(block.src)}" target="_blank" rel="noopener noreferrer"><img src="${esc(block.src)}"${imageAttrs(block.src)} alt="${esc(step.title[locale])} · ${en?'route image':'路线图'} ${++imageNumber}" loading="lazy"></a></figure>`;
-   const text=en?english.paragraph(step.sourcePage,index):dialogueNames(step,block.text);
-   return anchors(index)+(block.kind==='heading'?`<h3>${esc(text)}</h3>`:`<p>${esc(text)}</p>`);
-  }).join('')}</div>`;
+ function routeBlock(step,index,flow=false,routeHeading=null){
+  const block=step.blocks[index],points=step.points.filter(p=>p.blockIndex===index);
+  if(flow&&/^章节：/.test(block.text||''))return ''; 
+  const trace=flow?` data-source-page="${step.sourcePage}" data-source-block="${index}"`:'';
+  if(block.kind==='image'){
+   const imageNumber=step.blocks.slice(0,index+1).filter(b=>b.kind==='image').length;
+   return `<figure class="khazan-instruction-image"${trace}><a href="${esc(block.src)}" target="_blank" rel="noopener noreferrer"><img src="${esc(block.src)}"${imageAttrs(block.src)} alt="${esc(flow?routeHeading.title[locale]:stepTitle(step))} · ${en?'route image':'路线图'} ${imageNumber}" loading="lazy"></a>${step.layout?.captions?.[index]?`<figcaption>${esc(step.layout.captions[index][locale])}</figcaption>`:''}</figure>`;
+  }
+  const links=flow&&points.length?`<ul class="khazan-step-pickups">${points.map(p=>`<li><a href="#${p.routeAnchor}">${esc(p.name[locale])}</a> · <a href="${base}collectibles/${p.type}/#${p.id}">${en?'Location list':'位置列表'}</a></li>`).join('')}</ul>`:'';
+  const anchors=points.map(p=>`<span class="khazan-pickup-anchor" id="${p.routeAnchor}"></span>`).join('');
+  const text=en?english.paragraph(step.sourcePage,index):dialogueNames(step,block.text);
+  return links+anchors+(block.kind==='heading'?`<h3${trace}>${esc(text)}</h3>`:`<p${trace}>${esc(text)}</p>`);
  }
+ function stepCopy(step){return `<div class="khazan-route-copy">${step.blocks.map((_,index)=>routeBlock(step,index)).join('')}</div>`;}
+ function taskCopy(task){
+  let html='',opened=false,bossAlias=false,jarAlias=false,currentHeading=null;
+  for(const [i,step] of task.steps.entries()){
+   for(let index=0;index<step.blocks.length;index++){
+    const heading=step.routeSections.find(h=>h.blockIndex===index);
+    if(heading){
+     currentHeading=heading;
+     if(opened)html+='</section>';
+     html+=`<section class="khazan-route-section" id="${heading.id}"><h2 class="classic-heading"><span class="khazan-step-number">${String(heading.number).padStart(2,'0')}</span>${esc(heading.title[locale])}</h2>`;
+     opened=true;
+    }
+    if(index===0){
+     const boss=/首领战|BOSS战/.test(step.title.zh),jar=step.points.some(p=>p.type==='jarlings');
+     html+=`<span id="${step.id}" class="khazan-legacy-anchor"></span>${i===0?'<span id="section-1"></span>':''}${boss&&!bossAlias?(bossAlias=true,'<span id="section-3"></span>'):''}${jar&&!jarAlias?(jarAlias=true,'<span id="jarlings"></span>'):''}`;
+    }
+    html+=routeBlock(step,index,true,currentHeading);
+   }
+  }
+  return `<div class="khazan-route-copy">${html}</section></div>${!jarAlias?'<span id="jarlings"></span>':''}${!bossAlias?'<span id="section-3"></span>':''}`;
+ }
+
  // All task pages and collectible lists below share the normalized steps and pickup records.
  const cards=library.filter(s=>s.status==='available').map(s=>`<a class="khazan-library-card" href="${base+s.href}"><strong>${esc(s[locale].title)}</strong><span>${esc(s[locale].description)}</span></a>`).join('');
  emit(base,name,en?'Main and side mission routes, with Soulstone, Jarling and item location lists.':'按主线与支线阅读图文流程，也可按鬼石、罐子精灵和其他收集物查找位置。',`<div class="khazan-guide-actions"><a href="${base}walkthrough/">${en?'16 main missions':'16 章主线流程'} →</a><a href="${base}side-quests/">${en?'24 side missions':'24 项支线任务'} →</a></div><section><h2 class="classic-heading">${en?'Find a collectible':'查找收集物'}</h2>${typeLinks()}</section><section><h2 class="classic-heading">${en?'Guide library':'攻略目录'}</h2><div class="khazan-library-grid">${cards}</div></section>${references()}`);
@@ -46,14 +73,10 @@ for(const locale of ['zh','en']){
  for(const task of guide.tasks){
   const family=task.kind==='main'?guide.main:guide.side,position=family.indexOf(task),previous=family[position-1],next=family[position+1],related=task.kind==='main'?guide.side.filter(s=>s.afterChapter===task.chapter):[];
   const links=guide.types.filter(t=>task.points.some(p=>p.type===t.id)).map(t=>`<a href="${typeHref(t)}#task-${task.id}">${esc(t[locale])} <span>${task.points.filter(p=>p.type===t.id).length}</span></a>`).join('');
-  const toc=`<nav class="khazan-flow-nav" aria-label="${en?'Route steps':'流程步骤'}"><ol>${task.steps.map(s=>`<li><a href="#${s.id}">${s.revisit?(en?'Revisit: ':'回访：'):''}${esc(s.title[locale])}</a></li>`).join('')}</ol></nav>`;
-  let bossAlias=false,jarAlias=false;
-  const steps=task.steps.map((s,i)=>{
-   const boss=/首领战|BOSS战/.test(s.title.zh),jar=s.points.some(p=>p.type==='jarlings');
-   const alias=`${i===0?'<span id="section-1"></span>':''}${boss&&!bossAlias?(bossAlias=true,'<span id="section-3"></span>'):''}${jar&&!jarAlias?(jarAlias=true,'<span id="jarlings"></span>'):''}`;
-   return `${alias}<section class="khazan-flow-step" id="${s.id}"><h2 class="classic-heading"><span class="khazan-step-number">${String(i+1).padStart(2,'0')}</span>${s.revisit?(en?'Revisit: ':'回访：'):''}${esc(s.title[locale])}</h2>${s.points.length?`<ul class="khazan-step-pickups">${s.points.map(p=>`<li><a href="${base}collectibles/${p.type}/#${p.id}">${esc(p.name[locale])}</a></li>`).join('')}</ul>`:''}${stepCopy(s)}</section>`;
-  }).join('');
-  const body=`<div class="khazan-article"><section id="section-2"><h2 class="classic-heading">${en?'Pickups in this mission':'本任务收集'}</h2><nav class="khazan-collection-links" aria-label="${en?'Mission collectibles':'本任务收集分类'}">${links||`<span>${en?'No fixed collectible location is listed for this mission.':'本任务未列出固定收集点。'}</span>`}</nav></section>${toc}${steps}${!jarAlias?'<span id="jarlings"></span>':''}${!bossAlias?'<span id="section-3"></span>':''}<section id="section-4"><h2 class="classic-heading">${related.length?(en?'Related side missions':'关联支线'):(en?'Continue':'继续流程')}</h2>${related.length?taskList(related,true):`<p><a href="${base+(task.kind==='main'?'walkthrough/':'side-quests/')}">${en?'Back to mission index':'返回任务目录'} →</a></p>`}</section>${references(task)}<nav class="classic-pager" aria-label="${en?'Mission navigation':'任务导航'}">${previous?`<a href="${taskHref(previous)}">← ${esc(previous[locale].title)}</a>`:'<span></span>'}<a href="${base+(task.kind==='main'?'walkthrough/':'side-quests/')}">${en?'Mission index':'任务目录'}</a>${next?`<a href="${taskHref(next)}">${esc(next[locale].title)} →</a>`:'<span></span>'}</nav></div>`;
+  const toc=`<nav class="khazan-flow-nav" aria-label="${en?'Route steps':'流程步骤'}"><ol>${task.routeNavigation.map(entry=>`<li${entry.point?' class="khazan-toc-pickup"':''}><a href="#${entry.id}">${esc(entry.title[locale])}</a></li>`).join('')}</ol></nav>`;
+  const steps=taskCopy(task);
+
+  const body=`<div class="khazan-article"><section id="section-2"><h2 class="classic-heading">${en?'Pickups in this mission':'本任务收集'}</h2><nav class="khazan-collection-links" aria-label="${en?'Mission collectibles':'本任务收集分类'}">${links||`<span>${en?'No fixed collectible location is listed for this mission.':'本任务未列出固定收集点。'}</span>`}</nav></section>${toc}${steps}<section id="section-4"><h2 class="classic-heading">${related.length?(en?'Related side missions':'关联支线'):(en?'Continue':'继续流程')}</h2>${related.length?taskList(related,true):`<p><a href="${base+(task.kind==='main'?'walkthrough/':'side-quests/')}">${en?'Back to mission index':'返回任务目录'} →</a></p>`}</section>${references(task)}<nav class="classic-pager" aria-label="${en?'Mission navigation':'任务导航'}">${previous?`<a href="${taskHref(previous)}">← ${esc(previous[locale].title)}</a>`:'<span></span>'}<a href="${base+(task.kind==='main'?'walkthrough/':'side-quests/')}">${en?'Mission index':'任务目录'}</a>${next?`<a href="${taskHref(next)}">${esc(next[locale].title)} →</a>`:'<span></span>'}</nav></div>`;
   emit(taskHref(task),task[locale].title,task[locale].summary,body);
  }
  const aliases={records:['transport-order','evacuation-order','yulians-necklace','golden-records'],'key-items':['aldevir-disk-fragment','disk-fragments']};

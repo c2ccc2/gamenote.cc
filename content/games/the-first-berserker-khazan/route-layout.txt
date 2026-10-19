@@ -1,0 +1,466 @@
+# page|block|Chinese route heading|English route heading
+1|0|雪崩后的押送队：接受巨剑之力|The convoy after the avalanche: accept the sword's power
+1|12|雪路守卫：练习防御，取得押送令|Guards on the snowy path: guard and recover the Transport Order
+2|0|雪怪伏击处：削减精力，施展致命攻击|Yeti ambush: drain Stamina and use a Brutal Attack
+3|0|雪怪左侧宝箱与下层存档点|Chest left of the yeti and the lower Nexus
+3|8|山道守卫与落差：闪避、背刺和下落攻击|Mountain guards and ledges: dodge, backstab and plunge
+4|0|盾兵后的洞窟：取得明灯，寻找存档点|Cave beyond the shield guard: find the lamp and Nexus
+4|11|洞内岔路与悬崖：搜物，迎战持斧精英|Cave fork and cliff: search the branches and face the axe elite
+5|0|倒地士兵的小路：宝箱与石台前的记录|Path of fallen soldiers: chest and record before the platform
+6|0|石台两侧洞道：绕到下层击碎鬼石|Tunnels beside the platform: drop down to the Soulstone
+7|0|重走上层通道：返回雪山存档点|Upper passage: return to the mountain Nexus
+7|4|洞外塌陷冰面：避开猴群，沿悬崖下行|Collapsing ice outside the cave: pass the monkeys and descend
+7|18|下层雪怪与左侧上坡：第二块鬼石|Lower yeti and the left slope: the second Soulstone
+8|0|火把岔路：搜完支路后抵达存档点|Torchlit fork: search the side path and reach the Nexus
+8|7|弓兵平台与巨熊洞窟：绕到雪魈记录处|Archer ledge and bear cave: reach the yeti record
+9|0|高层推车：打通存档点捷径，拾取识别牌|Upper cart: open the Nexus shortcut and collect the badge
+9|5|雪魈王竞技场：近身连击与冰块阶段|Yetuga's arena: melee combos and the ice phase
+9|27|战后获救：前往班图族落脚处|Rescue after the battle: reach the Bantu shelter
+10|0|班图营地的梯子：攀上斯顿雪域|Ladders at the Bantu shelter: climb into Stormpass
+10|8|雪原狼群与瞭望台：解锁斗志，寻找鬼石|Snowfield wolves and lookout: unlock Spirit and find the Soulstone
+11|0|林间坡道：投掷标枪，搜索沿路支岔|Forest slope: throw javelins and search the branches
+11|15|石桥下方与倒树捷径|Beneath the stone bridge and the fallen-tree shortcut
+11|21|墓地入口：完成巨剑试炼|Cemetery entrance: complete the Greatsword trial
+12|0|冰面前的存档点：搜索右侧洞穴|Nexus before the ice: search the cave on the right
+12|9|左侧冰面巨熊：练习爆发反制|Bear on the left ice field: practice Burst Attack counters
+13|0|猴群下坡与狼群上坡：进入左侧洞窟|Monkey descent and wolf slope: enter the cave on the left
+13|9|洞窟深处的士兵：日记与第二块鬼石|Soldier deep in the cave: diary and the second Soulstone
+13|13|另一侧洞口：穿过野猪小路到存档点|Other cave exit: follow the boar path to the Nexus
+14|0|存档点左侧：完成长枪试炼|Left of the Nexus: complete the Spear trial
+15|0|桥边宝箱与洞口：从存档点左侧绕行|Bridge chest and cave entrance: take the route left of the Nexus
+15|9|双梯高台：观察鬼石，向右下方绕行|Paired ladders: locate the Soulstone and circle down to the right
+15|13|右侧洞窟：挡住蝙蝠，逐层下降|Right cave: guard against bats and descend the ledges
+15|21|回到左侧岔路：清弓兵，登梯取鬼石|Left fork: clear the archer and climb to the Soulstone
+16|0|斧兵小路与刀斧试炼入口|Axe warrior path and the Dual Wield trial approach
+17|0|刀斧心魔：完成第三场武器试炼|Dual Wield specter: complete the third weapon trial
+18|0|过桥右侧：拾取预言家的记录|Right side beyond the bridge: collect the prophet's record
+19|0|山巅存档点与布雷德竞技场|Mountaintop Nexus and Blade Phantom's arena
+19|29|布雷德第二阶段：爪击与巨剑变招|Blade Phantom phase two: claws and Greatsword attacks
+19|38|缔结契约：返回班图营地|Form the pact and return to the Bantu shelter
+20|0|边界裂缝：接取斗鬼任务，领取装备|The Crevice: accept the phantom mission and collect equipment
+21|0|重返山巅竞技场：挑战凯斯塔|Return to the mountaintop arena: challenge Kesta
+21|8|返回布雷德处：解锁并切换幽魂|Return to Blade Phantom: unlock and change phantoms
+22|0|恩巴斯遗迹入口：搜索三向岔路|Embars Ruins entrance: search the three-way fork
+22|10|左侧木板通道：打破木栏找鬼石|Left plank passage: break the wooden barrier for the Soulstone
+23|0|瞭望台下的宝箱与前方士兵尸体|Chest beneath the lookout and the soldier ahead
+24|0|神庙大门：先搜右路，再开启存档点|Temple gate: search right before opening the Nexus
+24|6|朝拜龙族的大厅：搜索角落罐子|Hall of worshipping dragonkin: search the corner pots
+25|0|中央楼梯右侧：跳下缺口拜访商人|Right of the central stairs: drop through the gap to the merchant
+26|0|楼梯左侧下坡：穿过机关神庙|Slope left of the stairs: cross the trap-filled temple
+26|5|上层封闭大门：沿左侧寻找龙族报告|Closed upper gates: find the dragonkin report on the left
+27|0|开关与电梯：抵达达芙罗娜的存档点|Switch and elevator: reach Daphrona's Nexus
+27|12|龙族精英后的房间：上楼寻找石像|Room beyond the dragonkin elite: climb to the statues
+28|0|石像大厅右房：避开爆炸宝箱|Room right of the statue hall: beware the explosive chest
+28|7|转动对眼石像：登台关闭第一处机关|Align the facing statues: climb up and stop the first mechanism
+28|15|圆盘右侧楼梯：穿过爆炸罐与龙群|Stairs right of the discs: pass explosive pots and dragonkin
+28|27|梯子上层与强敌房间：解锁贝罗妮卡|Upper ladder and powerful foe: unlock Veronika
+29|0|第二组石像与消失石板：隔空击碎鬼石|Second statue puzzle and vanishing tiles: hit the distant Soulstone
+30|0|圆盘外侧楼梯：关闭其余机关|Outer stairs around the discs: stop the remaining mechanisms
+30|12|圆盘中央的怨魂与通往大门的电梯|Specter at the central discs and the elevator to the gate
+30|18|开启中央大门：准备助力之魂与BOSS战|Open the central gate: prepare the Spirit of Advocacy and boss fight
+31|0|神庙深处的蝰蛇：长柄武器与旋风|Viper in the temple depths: polearm attacks and whirlwinds
+31|34|蝰蛇变身：手臂弱点与黑暗突袭|Viper's transformation: arm weak points and dark ambushes
+31|64|战后记忆与布雷德：返回边界裂缝|Post-battle memory and Blade Phantom: return to the Crevice
+32|0|裂缝红色传送门：拜访杜伊穆克，启程前往村庄|Red portal in the Crevice: meet Duimuk and set out for the village
+32|8|普拉乌村口：与杜伊穆克交谈，搜索右侧洞窟|Phraugh village entrance: speak to Duimuk and search the right caves
+32|19|左侧山路与沙虫洞：爬梯寻找高处鬼石|Left mountain path and burrower cave: climb to the high Soulstone
+33|0|下层村道与码头：救下村民，开启存档点|Lower village road and wharf: rescue the villagers and reach the Nexus
+33|10|桥后木门与瞭望塔：绕到塔后找鬼石|Wooden gate beyond the bridge: circle behind the lookout for the Soulstone
+34|0|吊货广场与屋内楼梯：沿高处进入仓库区|Cargo yard and indoor ladders: enter the warehouse district from above
+34|13|仓库间的木桥：穿过房屋，抵达存档点|Wooden bridges between warehouses: pass through to the Nexus
+34|25|屋顶绕行：从宝箱平台跳向避难令|Rooftop detour: drop from the chest platform to the Evacuation Order
+35|0|闪电龙守门处：借滚石作战，击碎头顶鬼石|Lightning dragonkin at the gate: use the boulder and hit the overhead Soulstone
+36|0|滚石封门的坡道：引石后进入学者小屋|Boulder-blocked slope: lure the rock down and enter the scholar's house
+37|0|守桥龙族与推车：接通BOSS前的捷径|Dragonkin bridge and cart: open the shortcut before the boss
+38|0|沃尔巴依诺的双层场地：锤击与钉刺|Volbaino's two-level arena: hammer blows and spikes
+38|18|灼热地板与二楼：换层应对火焰阶段|Burning floor and upper level: change floors during the fire phase
+38|34|战后与埃拉梅因会合：前往洞穴|Meet Elamein after the battle and head to the caves
+39|0|斯科帕洞穴入口：清理蛛卵，炸桶封住通道|Skoffa Cave entrance: clear spider eggs and seal the passage with barrels
+39|9|存档点上方木梁：防蝙蝠，攀向冥界气息|Beams above the Nexus: guard against bats and climb to Netherworld Energy
+40|0|木梁尽头的巨型蝙蝠与远处鬼石|Giant bat at the end of the beams and the distant Soulstone
+41|0|丧尸洞与双层梯子：炸桶后接通铁门捷径|Zombie cave and paired ladders: seal the passage and open the gate shortcut
+41|12|木桥巨蝠与蜘蛛岔路：搜索后前往下层|Bat bridge and spider fork: search the branches and descend
+41|26|下层存档点与毒沼：鬼石、石上记录|Lower Nexus and poison swamp: Soulstone and the record on the rock
+43|0|毒沼边缘：解毒补给与狂暴蜘蛛|Poison swamp edge: antidotes and the frenzied spider
+43|9|高台宝箱与吟游诗人：沿上坡寻找许可证|Raised chest and bard: climb toward the guild permit
+44|0|存档点旁的木板密口：封路后搜索第二片毒沼|Plank opening beside the Nexus: seal the path and search the second swamp
+45|4|返回存档点：从右侧进入蜘蛛巢穴|Return to the Nexus and enter the spider nest on the right
+46|0|蛛网大厅：迎战阿拉特拉|Webbed chamber: face Aratra
+46|30|断肢与高处毒液：结束蜘蛛战，救出铁匠|Broken limbs and poison from above: finish the battle and rescue the blacksmith
+47|0|裂缝任务准备：接取罐子爱好者|Mission preparations in the Crevice: accept Jar Enthusiast
+47|8|桥头商人与隐形敌人：寻找前两个罐子|Merchant by the bridge and invisible foes: find the first two jars
+47|16|房屋外的支路：取得第一块鬼石|Side path outside the house: collect the first Soulstone
+48|0|右侧房屋楼梯：逐屋寻找剩余四个罐子|Stairs in the right house: search the houses for the remaining four jars
+48|10|瞭望塔背面：补取鬼石，返回交付任务|Behind the lookout: collect the Soulstone and return to turn in the mission
+49|0|回访风雪峡谷：传送点前的罐子|Revisit Snowy Gorge: the jar in front of the arrival point
+50|0|回访冰封峡谷：抵达点旁的罐子|Revisit Ice Canyon: the jar beside the arrival point
+51|0|回访中央仓库入口：绕到房屋后方|Revisit Central Warehouse Entrance: circle behind the house
+52|0|回访神庙地下：重解机关，进入左侧通道|Revisit the underground temple: repeat the puzzle and enter the left passage
+53|0|回访坍塌矿山：登台进入丧尸房间|Revisit Collapsed Mine: climb the platform to the zombie room
+54|0|蜘蛛坟墓入口：岔路两侧的鬼石与罐子|Spider Graveyard entrance: Soulstone and jar on opposite branches
+55|0|原铁门后的通道：穿过巨蝠与猴群|Passage beyond the former iron gate: pass the giant bat and monkeys
+55|8|存档点左侧：识破假记忆，搜索鬼石平台|Left of the Nexus: expose the false memory and search the Soulstone ledge
+56|0|树根捷径与巨熊贝里乌斯|Tree-root shortcut and Belius the giant bear
+56|6|战后楼梯上的亨吉：带回传家宝，解锁锻造|Hengie atop the post-battle stairs: return the heirloom and unlock crafting
+57|0|骷髅村道与巨熊楼梯：前往门后存档点|Skeleton village road and bear stairs: reach the Nexus beyond the gate
+57|12|存档点后的对门房屋：日记与鬼石|Facing houses beyond the Nexus: diary and Soulstone
+58|0|桥边拐角与左侧罐子：搜取火召唤卷轴|Bridge corner and jar on the left: collect the Fire Summoning Scroll
+59|0|右侧木屋宝箱与屋外高处鬼石|Chest in the right wooden house and the Soulstone overhead
+60|0|左侧楼梯尽头：取卷轴，再战鹿头|End of the left stairs: collect the scroll and face the deer-headed foe again
+61|0|与埃拉梅因会合：沿断桥落到下层城区|Meet Elamein and descend the broken bridges to the lower town
+61|9|屋顶岔路与堵路推车：拾取通缉令|Rooftop fork and blocking cart: find the Wanted Poster
+62|0|左门士兵与爆炸宝箱：从室内楼梯上行|Soldier at the left door and explosive chest: climb the indoor stairs
+62|14|下层小巷存档点：从右侧房屋瞄准圣物|Lower alley Nexus: aim at the relic from the house on the right
+63|0|屋顶宝箱与落点：绕进房梁下方找鬼石|Rooftop chest and drop: circle beneath the beams for the Soulstone
+64|0|左侧梯子下层：绕房后小门登顶|Below the left ladder: circle to the back door and climb to the top
+65|0|断链吊桥与城堡落点：前往内部存档点|Chain bridge and castle drop: reach the inner Nexus
+65|8|上锁铁门旁的通道：寻找桌边皇帝书信|Passage beside the locked gates: find the emperor's letter by the desk
+66|0|窄巷钥匙与书房：砸开墙壁找罐子|Alley key and study: break the wall to find the jar
+67|0|穿过酒窖下楼：砸开双桶旁的石墙|Descend through the wine cellar: break the stone wall beside the barrels
+68|0|下水道隐形敌人：开启角落闸门|Invisible sewer enemy: open the gate with the corner switch
+68|9|下水道竖井：与安德尔交谈，逐层跳到木板旁|Sewer shaft: speak to Andell and descend to the planks
+69|0|竖井尽头电梯：抵达上层存档点|Elevator at the shaft's end: reach the upper Nexus
+70|0|城堡大厅：朗格斯的重锤与火铳|Castle hall: Rangkus's hammer and firearm
+70|30|与特利斯坦交谈：揭开帕威尔的真相|Speak to Tristan: uncover the truth about Pavel
+71|0|纳丁废墟入口：与特利斯坦会合，进入矿场|Nadin Ruins entrance: meet Tristan and enter the mine
+71|14|墓地与瞭望台：放下通往存档点的梯子|Graveyard and lookout: lower the ladder to the Nexus
+71|24|高层下坡蜘蛛巢：鬼石与食人蛛卷轴|Spider nest down the upper slope: Soulstone and Man-Eating Spider Scroll
+72|0|楼梯后的电梯：下到滚石坡道|Elevator beyond the stairs: descend to the rolling-boulder slope
+72|8|滚石坡道凹槽：上坡关闭落石机关|Recesses on the boulder slope: climb up and stop the falling rocks
+72|16|蜘蛛巢与升降梯：搜卷轴，再与埃拉梅因会合|Spider nest and lift: collect the scroll and meet Elamein
+72|27|存档点左侧铁门：爬梯绕到门后鬼石|Gate left of the Nexus: climb around to the Soulstone behind it
+73|0|铁门对面的侧屋：从楼上绕到下层宝箱|Side house opposite the gate: circle upstairs to the lower chest
+73|10|宝箱后铁门与梯子：下降至鬼石平台|Gate and ladder beyond the chest: drop to the Soulstone platform
+74|0|存档点三岔路：先走洞口与右侧走廊|Three-way fork at the Nexus: take the cave and right corridor first
+74|12|梯子左侧落点：搜查院内房间与密信|Drop left of the ladder: search the courtyard rooms for the secret letter
+75|0|马车后的滚石坡：借房间躲避，关闭机关|Boulder slope beyond the cart: shelter in the room and stop the trap
+75|10|坡顶院落与破屋：寻找罐子精灵|Courtyard and ruined house atop the slope: find the Jarling
+76|0|破屋后下层：搜索宝箱，前往帷幕前存档点|Lower route beyond the ruined house: search the chest and reach the Nexus before the curtain
+76|9|存档点左门外：瞄准右侧高台鬼石|Beyond the gate left of the Nexus: aim at the Soulstone on the right ledge
+77|0|帷幕后竞技场：玛路卡的巨剑阶段|Arena behind the curtain: Maluka's Greatsword phase
+77|18|玛路卡拔刀：九连斩与污染攻击|Maluka draws his blade: nine-hit combo and contamination attacks
+77|41|平息混沌：与埃拉梅因商议下一站|Quell the chaos: discuss the next destination with Elamein
+78|0|奥克萨娜的委托：进入寂静神庙|Oksana's request: enter the Silent Temple
+78|4|喷火楼梯与弓兵：绕向左侧宝箱|Flame-trap stairs and archers: circle to the chest on the left
+78|13|宝箱后的楼梯：隔空打鬼石，下楼取卷轴|Stairs beyond the chest: hit the distant Soulstone and descend for the scroll
+79|0|上层喷火平台：记录、双宝箱与罐子|Upper flame-trap platform: record, paired chests and jar
+79|7|存档点后的亡灵士兵：完成委托，解锁装备继承|Undead soldiers beyond the Nexus: finish the request and unlock equipment inheritance
+80|0|发出人声的龙族：沿楼梯绕到高处鬼石|Dragonkin with a human voice: follow the stairs to the high Soulstone
+81|0|内侧门与第二个凹槽：卷轴、鬼石|Inner doorway and second recess: scroll and Soulstone
+82|0|室外宝箱与电梯：前往存档点角落的罐子|Outdoor chest and elevator: reach the jar in the Nexus corner
+83|0|左侧强敌与门后BOSS：救助塞伦斯|Powerful foe on the left and boss beyond the door: help Xilence
+83|6|战后交谈：交出龙鳞，解锁废弃城堡|Post-battle conversation: hand over the scale and unlock the Abandoned Castle
+84|0|废弃城堡石桥：与塞伦斯交谈后登梯|Abandoned Castle bridge: speak to Xilence and climb the stairs
+85|0|鬼石左侧房间：爆炸宝箱中的卷轴|Room left of the Soulstone: scroll in the explosive chest
+86|0|推车后的下坡：搜高台后进入右门存档|Slope beyond the carts: search the ledges and enter the right doorway to save
+86|8|存档点外空地：拾取记忆与左侧罐子|Clearing outside the Nexus: collect the memory and jar on the left
+87|0|前方存档点：抬头找鬼石，搜左门宝箱|Nexus ahead: look up for the Soulstone and search the left doorway chest
+88|2|城堡BOSS房：面对被鳞片影响的塞伦斯|Castle boss room: face Xilence under the scale's influence
+89|0|被吞噬的村庄入口：先回头寻找鬼石|Devoured Village entrance: turn back for the Soulstone first
+90|0|台阶左侧房屋：登梯跨屋顶，进入房梁缺口|House left of the steps: climb across the roofs and enter through the opening
+91|0|屋内隐藏门：绕回主路右侧，寻找下行电梯|Hidden indoor door: return to the right branch and find the descending elevator
+91|13|巨蝠洞口与竖井：逐层下到排水管|Bat cave entrance and shaft: descend to the drainpipe
+91|19|管道存档点下方：清水蛭，绕回铁门捷径|Below the pipe Nexus: clear leeches and circle to the gate shortcut
+92|0|左侧蜘蛛岔路：登梯进入冥界气息房间|Left spider branch: climb to the Netherworld Energy room
+93|0|红色洞口与室外管道：返回上层存档点|Red opening and outdoor pipes: return to the upper Nexus
+93|8|中央闸门开关：探索牢房与过桥区域|Central gate switch: explore the cells and area beyond the bridge
+93|27|左侧小路的双向楼梯：穿过蜘蛛房与走廊|Two-way stairs on the left path: pass the spider room and corridor
+93|41|走廊尽头锁门：回头寻找角落罐子|Locked gate at the corridor end: turn back for the corner jar
+94|0|管道捷径与上层机关：找到受困的埃拉梅因|Pipe shortcut and upper switch: find the captive Elamein
+94|12|右门紫色管线：进入图书馆书柜密道|Purple pipeline through the right door: enter the library bookshelf passage
+96|0|关闭防护罩：乘中央电梯前往下层|Disable the barrier: ride the central elevator down
+96|7|电梯边缘落点：绕上楼梯取下方记忆|Drop beside the elevator: climb around to the memory below
+96|13|右门激光房：打开书柜密道关闭激光|Laser room through the right door: open the bookshelf passage and disable the beams
+96|21|实验水缸与紫色管道：避激光进入侧房|Experimental tanks and purple pipes: pass the lasers into the side room
+96|29|侧房电梯中层：跳上管道搜鬼气剑柄|Middle elevator stop: step onto the pipes for the ghostly hilt
+97|0|左侧管道尽头：击碎高处鬼石|End of the left pipe: break the high Soulstone
+98|0|管道开关与下层环道：绕过圆盘回到实验区|Pipe switch and lower ring: circle the discs back into the laboratory
+98|12|瘟疫精英的左侧房间：寻找侦查记录|Room left of the plague elite: find the scout's record
+99|0|走廊左侧暗门与中央水缸房|Hidden door left of the corridor and the central tank room
+99|6|圆盘房间与双开关：传送到实验记录旁|Disc room and paired switches: teleport to the experimental record
+100|0|传送落点外：宝箱、存档点与返回大厅的大门|Outside the teleport destination: chest, Nexus and gate back to the hall
+101|0|实验装置大厅：面对混沌化的埃拉梅因|Experimental chamber: face Elamein consumed by chaos
+102|0|与特利斯坦重返旧城：搜索右侧角落|Return to the old town with Tristan: search the right corner
+103|0|大门左侧高台：先清远程敌人，再登梯存档|Raised area left of the gate: clear ranged foes before climbing to the Nexus
+103|10|精英守卫后的房屋：右侧宝箱，左侧罐子|Houses beyond the elite guard: chest on the right and jar on the left
+104|0|第二间房与走廊梯子：取秘方后向上搜寻|Second house and corridor ladder: collect the recipe and search upstairs
+104|4|上层岔路：先搜右侧，再到左侧深处|Upper fork: search right before exploring deep into the left branch
+105|0|楼梯下的精英与电梯开关：指令、鬼石|Elite beneath the stairs and elevator switch: orders and Soulstone
+106|0|电梯落点存档：挑战朗格斯形态的敌人|Save at the elevator landing: challenge the Rangkus-like foe
+107|0|里侬矿山入口：与特利斯坦交谈，打开大门|Linon Mine entrance: speak to Tristan and open the gate
+107|8|左侧下坡与房后悬崖：绕到楼梯后的鬼石|Left slope and cliff behind the house: circle to the Soulstone behind the stairs
+108|0|房屋二楼炸药桶：避开弓兵，攀上屋顶|Explosive barrels on the second floor: avoid archers and climb to the roofs
+108|13|守桥精英与顶层房间：搜宝箱后下跳|Bridge elite and top-floor room: search the chest before dropping down
+108|29|铁匠作坊与爆炸过道：前往新存档点|Blacksmith workshop and explosive corridor: reach the next Nexus
+108|41|铁门后的哨兵记录：乘电梯下矿洞|Sentry record beyond the iron gate: descend into the mine
+108|49|矿洞右侧高台：搜宝箱后回到左门|Raised area on the right of the mine: search the chest and return to the left gate
+109|0|下坡监牢：寻找尤利安的项链|Prison down the slope: find Yulian's Necklace
+110|0|劳役场存档点下方：清精英，搜索左侧平台|Below the labor camp Nexus: defeat the elite and search the left platform
+111|0|回头左侧桥梁：瞄准桥右的鬼石|Bridge on the left return path: aim at the Soulstone to its right
+112|0|桥后炸药桶与落差：进入丧尸区域找罐子|Barrels and drop beyond the bridge: enter the zombie area for the jar
+113|0|左门后的楼梯与独木桥：绕到爆炸宝箱|Stairs beyond the left door and narrow bridge: circle to the explosive chest
+113|14|过桥下梯：拜访伯戈诺夫，开启新存档点|Descend beyond the bridge: meet Borgonov and reach the next Nexus
+113|24|存档点后双岔路：左搜宝箱，右找矿壁鬼石|Fork beyond the Nexus: chest on the left and Soulstone in the right rock wall
+114|0|爆炸桶后的蝙蝠洞口：连续登梯前往BOSS|Bat cave beyond the barrels: climb the ladders toward the boss
+115|0|矿洞埋伏场：迎战瘟疫合成兽沙克图卡|Mine ambush chamber: face Shactuka, the plague chimera
+115|19|救出尤利安：听取奥兹玛的消息|Rescue Yulian and hear the news about Ozma
+116|0|特利斯坦的委托：重返激光实验区|Tristan's request: return to the laser laboratory
+116|10|激光与牢房开关：借机关清怪，打开铁门|Lasers and cell switches: use the beams against enemies and open the gates
+116|22|下层书柜暗门：操作机关取战士卷轴|Bookshelf passage below: operate the switch for the Warrior Scroll
+117|0|木板后的盾兵与右侧水缸鬼石|Shield guard behind the planks and Soulstone in the right tank
+118|0|下层精英与牢房开关：绕过存档点继续直行|Lower elite and cell switch: pass the Nexus and continue straight
+119|0|丧尸平台后的楼梯：进入巨蛛水缸房|Stairs beyond the zombie platform: enter the giant spider tank room
+120|0|水缸房左侧拉杆：乘电梯到棺材平台|Lever left of the tank room: ride the elevator to the coffin platform
+120|8|隐形敌人后的左路：助跑跳上卷轴木板|Left path beyond the invisible foe: running jump to the scroll ledge
+121|0|木板下层的书房：记录与书架角落罐子|Study below the planks: record and jar in the bookshelf corner
+123|0|书房楼梯下层：打破水缸寻找鬼气双剑|Below the study stairs: break the tank for the ghostly swords
+124|0|对面激光区域：清敌，击碎第三块鬼石|Opposite laser area: clear the enemies and break the third Soulstone
+125|0|左侧宝箱与右门落点：接通补给路，进入BOSS房|Left chest and right doorway drop: open the supply route and enter the boss room
+126|0|与尤利安进矿山：先搜蜘蛛下坡|Enter the mine with Yulian: search the spider slope first
+126|9|左坡高台落点：清蜘蛛，找角落罐子|Drop from the left slope: clear spiders and find the corner jar
+127|0|长楼梯与狮像：接通入口捷径|Long stairs and lion statue: open the entrance shortcut
+127|12|产卵蜘蛛守桥处：射落蛛网盾牌，搜索右侧鬼石|Bridge guarded by a spawning spider: shoot down the webbed shield and search right for the Soulstone
+128|0|蛛卵宝箱与过桥存档点：从右侧梯子下行|Egg-covered chest and bridge Nexus: descend the right ladder
+129|0|前方蜘蛛洞：击落头顶蛛网卷轴|Spider cave ahead: shoot down the scroll in the overhead web
+130|0|沙虫旁的左梯：登顶存档，挑战雪魈王形态敌人|Left stairs beside the burrower: save at the top and face the Yetuga-like foe
+131|0|最后的命令：与同伴会合，下楼营救战士|The Last Command: meet your allies and descend to rescue the soldiers
+131|10|右侧门内的犬群与炸药房：救人、搜罐子|Dogs and explosive room through the right door: rescue captives and search for the jar
+132|0|房间另一侧出口：搜索宝箱与楼梯左侧鬼石|Other exit from the room: search the chest and Soulstone left of the stairs
+133|0|左右楼梯上的俘虏：救人后前往存档点|Captives by the stairs: rescue them before reaching the Nexus
+133|6|彼得与法师的战场：随后迎战谢尔盖|Battlefield of Peter and the mage: face Sergei afterward
+134|0|魔女城入口：与尤利安交谈，搜索楼梯左侧|Witch city entrance: speak to Yulian and search left of the stairs
+134|11|铁门后的高处落点：回头找鬼石|Drop beyond the iron gate: turn back for the Soulstone
+135|0|石像广场与右侧巷道：开铁门下行|Statue square and right alley: open the gate and descend
+135|16|屋顶落点与左侧存档点：登梯搜索宝箱|Rooftop drop and left Nexus: climb to search the chest
+135|26|书架房与屋顶捷径：打破门旁木板取卷轴|Bookshelf room and roof shortcut: break the planks beside the door for the scroll
+136|0|上层双梯岔路：搜右房，回左门取日记|Upper paired-stair fork: search the right room and return left for the diary
+137|0|存档点后的水闸：拉杆降低全城水位|Sluice beyond the Nexus: lower the city's water with the lever
+137|8|退水后的骷髅平台：清远程敌人，过木桥|Drained skeleton platforms: clear ranged foes and cross the wooden bridge
+137|21|桥下双管道：搜记忆和宝箱后登梯|Paired pipes beneath the bridge: search the memory and chest before climbing
+137|32|上层开关与树旁房屋：寻找第二块鬼石|Upper switch and house beside the tree: find the second Soulstone
+138|0|房后卷轴与木板入口：沿下层小路取鬼石|Scroll behind the house and plank entrance: follow the lower path to the Soulstone
+139|0|回到水闸存档点：搜索右侧宝箱支路|Return to the sluice Nexus: search the right chest branch
+139|10|左侧空地精英：开闸后沿狭窄边缘上行|Elite in the left clearing: open the gate and climb the narrow edge
+140|0|边缘落点与双梯：乘电梯抵达存档点|Drop from the edge and paired stairs: ride the elevator to the Nexus
+141|0|大厅正门与巨型精英：清场后登主楼梯|Main hall gate and giant elite: clear the hall and climb the main stairs
+141|14|大厅右翼书房：登楼取第四块鬼石|Study in the right wing: climb for the fourth Soulstone
+141|22|大厅左翼图书馆：罐子与书柜密道鬼石|Library in the left wing: jar and Soulstone behind the bookshelf
+142|2|图书馆后存档点：破木板取信，再跳电梯中层|Nexus beyond the library: break the planks for the letter and step off the elevator midway
+143|0|电梯房回程：看清落点后返回BOSS门前|Return from the elevator room: check the landing and head back to the boss gate
+144|0|特萝卡的庭院：水球、伞击与空中弹幕|Trokka's courtyard: water orbs, umbrella strikes and aerial barrage
+144|35|战后线索：动身前往暗夜精灵的领地|Post-battle lead: set out for the dark elves' territory
+145|0|拉克里玛入口：清自爆丧尸，沿桥取噬魂者卷轴|Lacrima entrance: clear exploding zombies and cross the bridge for the Soul-Eater Scroll
+146|0|左侧小门后的木栏与下层木板落点|Wooden barrier behind the left door and the lower plank landing
+148|0|柱子下层的丧尸：清火球怪，登梯取鬼石|Zombies below the pillars: clear fireball enemies and climb to the Soulstone
+149|0|另一侧楼梯：存档后清理火焰敌群|Stairs on the other side: save before clearing the fire-wielding group
+150|0|追查莉迪亚：从入口楼梯寻找箱后鬼石|Investigate Lydia: take the entrance stairs to the Soulstone behind the crates
+151|0|主楼梯与左侧落点：进入精英守卫大厅|Main stairs and left drop: enter the elite-guarded hall
+151|15|大厅宝箱与楼梯上方：瞄准第二块鬼石|Hall chest and upper stairs: aim at the second Soulstone
+152|0|开关捷径与左侧楼梯：穿过激光找柜间罐子|Switch shortcut and left stairs: pass the lasers to the jar between the cabinets
+153|0|侧房宝箱与外侧脚架：登高取魔女卷轴|Side-room chest and outer scaffolding: climb for the witch scroll
+154|0|左梯上的存档点：瞄准下行楼梯上方鬼石|Nexus atop the left stairs: aim above the descending ladder for the Soulstone
+155|0|棺材前的战场：击败奎多，调查莉迪亚的死因|Battle before the coffin: defeat Guido and investigate Lydia's death
+156|0|巴鲁斯之子的委托：开门乘电梯下行|Request from Varus's son: open the gate and ride the elevator down
+156|10|下层激光房：沿唯一通路搜索鬼气圣物|Lower laser room: follow the passage to the ghostly relic
+157|0|门后隐形敌人：开机关，搜爆炸宝箱和龙鳞卷轴|Invisible foe beyond the door: operate the switch and search the explosive chest and Dragon Scale Scroll
+158|0|入口存档点右侧开关：抬头寻找鬼石|Switch right of the entrance Nexus: look up for the Soulstone
+159|0|存档点旁小门：先走右道，再进入水缸装置房|Small doorway beside the Nexus: take the right path before entering the tank chamber
+159|12|强敌水缸左侧：搜材料与角落鬼石|Left of the powerful foe's tank: search for material and the corner Soulstone
+160|0|门左右两侧房间：宝箱、记忆与罐子|Rooms on either side of the door: chest, memory and jar
+161|0|光壁外的双激光：绕到机关打开BOSS门|Paired lasers outside the barrier: circle to the switch that opens the boss gate
+161|10|激光怪与火焰怪：战后寻回巴鲁斯的斧头|Laser and flame foes: recover Varus's axe after the battle
+162|0|隐士山脉入口：与尤利安交谈后上台阶|Hermit's Mountains entrance: speak to Yulian and climb the steps
+163|0|蝙蝠石桥与传送门：进入三岔路存档点|Bat bridge and portal: enter the three-way Nexus area
+163|14|右侧试炼路：避开红树，寻找卷轴与高处鬼石|Right trial path: avoid red trees and find the scroll and high Soulstone
+164|0|瘟疫蝙蝠后的右梯：拜访吟游诗人，搜身后罐子|Right stairs beyond the plague bats: meet the bard and search the jar behind him
+165|0|弓兵楼梯与传送门：穿过会塌陷的木桥|Archer stairs and portal: cross the collapsing wooden bridge
+166|0|右路小BOSS与出口传送门|Right-path miniboss and exit portal
+166|4|返回十字路口左路：走右坡寻找幻觉蝙蝠|Left route from the crossroads: take the right slope to the hallucinatory bat
+167|0|幻影森林传送门：完成第二处试炼|Phantom Forest portal: complete the second trial
+167|4|十字路口正面石门：搜右侧鬼石，再下蜘蛛坡|Stone gate straight ahead at the crossroads: search right for the Soulstone, then descend the spider slope
+168|0|蜘蛛卵宝箱与巨蝠：绕到下坡内室|Spider-egg chest and giant bat: circle into the chamber down the slope
+169|0|楼梯上层产卵蜘蛛：搜宝箱，保存后进传送门|Spawning spider atop the stairs: search the chest and save before entering the portal
+169|10|毒雾洞穴试炼：沿平台作战，开启最终传送门|Poison cave trial: fight from the platform and unlock the final portal
+170|0|传送门后的暗夜精灵：迎战贝雷里安|Dark elf beyond the portal: face Bellerian
+170|25|解开误会：与贝雷里安返回裂缝|Resolve the misunderstanding and return to the Crevice with Bellerian
+171|0|贝雷里安的幽魂委托：出发寻找亚特兰特|Bellerian's phantom request: set out to find Atlante
+171|9|炸药酒缸与精英：搜索楼梯宝箱及正面冥界气息|Explosive jars and elite: search the stair chest and Netherworld Energy ahead
+172|0|左侧窄道与石后支路：卷轴和角落鬼石|Left narrow path and branch behind the rock: scroll and corner Soulstone
+173|0|盾兵下坡：前往存档点，搜索左侧研究日记|Slope with the shield guard: reach the Nexus and search left for the research diary
+174|0|存档点后的骷髅路：先搜左侧罐子|Skeleton path beyond the Nexus: search the jar on the left first
+175|2|远程骷髅岔路：绕行搜物，登后方楼梯|Ranged skeleton fork: circle for supplies and climb the rear stairs
+176|0|楼梯宝箱与侧路存档点：进入死神传送门|Stair chest and side-path Nexus: enter the reaper's portal
+177|0|要塞外层楼梯：与特利斯坦会合后沿外墙下跳|Outer fortress stairs: meet Tristan and drop along the outside wall
+177|10|外墙内侧存档点：打开书柜密道找日记|Nexus inside the outer wall: open the bookshelf passage for the diary
+178|0|地下牢房与摆动铁球：先过桥再下跳|Underground cells and swinging iron balls: cross before dropping down
+178|10|铁球走廊与上层盾兵：利用机关清路|Iron-ball corridor and upper shield guards: use the traps to clear the way
+178|26|左侧下行支路：击败房内精英，破木板搜盾牌|Descending left branch: defeat the room elite and break the planks for the shield
+179|0|回到铁球主路：搜索笼子后下楼接通铁门|Back to the iron-ball route: search the cage and descend to connect the gate
+179|15|上层右侧走廊：砸开左墙寻找鬼石|Upper right corridor: break the left wall for the Soulstone
+180|0|盾兵狭道与闸门：抵达新存档点|Narrow shield-guard passage and gate: reach the next Nexus
+180|11|左梯军营：搜帐篷记忆，进入炸药桶房|Camp by the left stairs: search the tent memory and enter the barrel room
+180|23|屋内楼梯与中央缺口：落到木板上找罐子|Indoor stairs and central gap: land on the planks for the jar
+181|0|重登楼梯：向右通过感应机关|Climb the stairs again: head right past the triggered trap
+181|10|长梯屋顶与窗口：沿边缘落到城堡外墙|Long ladder to the roof and window: drop along the edge to the outer wall
+181|22|遭轰击的石墙与木板路：搜破墙宝箱后登顶|Bombarded wall and plank path: search the breached-wall chest before climbing
+181|29|投石机轰炸的屋顶：穿过平台，从中间洞口下跳|Roof under catapult fire: cross the platforms and drop through the central opening
+182|0|屋顶下层侧房：开捷径，搜索金色材料|Side room below the roof: open the shortcut and search the golden material
+182|7|下层主路与精英盾兵：从左梯登上阳台|Lower main route and elite shield guard: climb the left stairs to the balcony
+183|0|阳台回程的内室：寻找预言|Inner room on the return from the balcony: find the Prophecy
+184|0|城堡内部双开关：绕回之前的存档点|Paired switches inside the castle: circle back to the earlier Nexus
+184|14|大门内的双侧楼梯：右搜卷轴，左找鬼石|Stairs on both sides beyond the gate: scroll on the right and Soulstone on the left
+185|0|弩机主路与瘟疫血池：搜左角日记、右梯宝箱|Ballista route and plague pool: diary in the left corner and chest up the right stairs
+185|10|正面记忆与左侧电梯：抵达大厅碎片存档点|Memory ahead and elevator on the left: reach the Nexus and hall fragment
+187|0|棺材大厅：斯卡坡的巨剑与棺材冲击|Coffin hall: Skalpel's Greatsword and coffin charges
+187|21|棺材再次开启：应对斯卡坡第二阶段|The coffin opens again: handle Skalpel's second phase
+187|37|吸收斯卡坡记忆：确认混沌之主的身份|Absorb Skalpel's memory: confirm the Lord of Chaos's identity
+188|0|猩红踪迹入口：先搜右台阶，再走左侧走廊|Crimson Trace entrance: search the right steps, then the left corridor
+189|0|分身精英后的台阶与预言记录|Steps and Prophecy beyond the duplicating elite
+190|0|前方记忆与左侧高处：鬼石后登楼搜罐子|Memory ahead and high left ledge: find the Soulstone, then climb for the jar
+192|0|尽头存档点与双精英：战后拜访兰提莫斯|Nexus at the end and paired elites: meet Lantimos after the fight
+192|8|下层书柜密道：打开宝箱寻找歌唱之鹰的头发|Lower bookshelf passage: open the chest for the Singing Eagle's Hair
+193|0|与特利斯坦寻找护卫军：从断桥左梯绕行|Search for the guard with Tristan: take the stairs left of the broken bridge
+194|0|铁门前法师与蝌蚪怪大厅：搜索右侧遗书|Mage before the gate and tadpole hall: search right for the farewell letter
+195|0|大厅尸体记忆与后方鬼石|Memory by the hall's corpse and Soulstone behind it
+196|0|大厅左侧阳台：下楼清精英，再走旋转楼梯|Balcony left of the hall: descend past the elite, then take the spiral stairs
+196|9|旋转楼梯首层出口：宝箱与护卫军记录|First exit from the spiral stairs: chest and guard record
+197|0|大厅捷径门与更高一层：寻找罐子精灵|Shortcut gate to the hall and the next level up: find the Jarling
+198|0|走廊左侧记忆与下方血池卷轴|Memory left of the corridor and scroll in the blood pool below
+199|0|血池边吊桥与左侧电梯：迎战西凡、维蒙|Drawbridge beside the blood pool and left elevator: face Sivan and Vimon
+200|0|兰提莫斯旁存档点：从下层隐藏墙进入|Nexus beside Lantimos: enter through the hidden wall below
+201|0|鬼石下方半座吊桥：回到入口，改走另一侧|Half-lowered bridge below the Soulstone: return to the entrance and take the other route
+201|8|三向机关岔路：右梯下层屏风后的双剑|Three-way trap fork: swords behind the screen below the right stairs
+202|0|机关旁木桥与高台落点：返回存档点|Wooden bridge beside the trap and ledge drop: return to the Nexus
+202|14|存档点左门分身精英：打开棺材旁隐藏墙|Duplicating elite beyond the left Nexus door: open the hidden wall beside the coffin
+203|0|后方楼梯开关：降下石像，穿过感应箭阵|Switch up the rear stairs: lower the statue and pass the triggered arrow trap
+203|10|铁门捷径后的二楼落点：搜下层爆炸宝箱|Second-floor drop beyond the gate shortcut: search the explosive chest below
+204|0|锁门左侧木板路：避机关，搜罐子|Plank path left of the locked gate: avoid the trap and search the jar
+205|0|右门后的楼梯：拾取赫斯讨伐记录|Stairs beyond the right doorway: collect the Hismar Subjugation record
+206|0|左梯上层铁笼：瞄准鬼石，再搜闸门左侧宝箱|Iron cage above the left stairs: aim at the Soulstone, then search the chest left of the gate
+208|0|闸门后下行：在存档点下方击败精英|Descend beyond the gate: defeat the elite below the Nexus
+209|0|剑前战场：击败守卫，取回布雷德的剑|Battlefield before the sword: defeat the guardian and recover Blade Phantom's weapon
+210|0|剧院大厅入口：利用掩体，沿小门登楼|Theater hall entrance: use cover and climb through the small doorway
+210|12|上层石像与两幅壁画：穿隐藏门绕行|Upper statue and paired murals: circle through the hidden doors
+210|28|演奏者房间与左梯：沿消失地板边缘取卷轴|Performer's room and left stairs: follow the vanishing floor edge to the scroll
+211|0|落地鬼石与传送画：返回楼上中央房间|Soulstone below and teleport painting: return to the central room upstairs
+211|4|左侧走廊隐藏壁画：拜访琴房吟游诗人|Hidden mural in the left corridor: visit the bard in the piano room
+212|0|琴房后门与侧梯：搜宝箱，挑战歌唱的死神|Rear piano-room door and side stairs: search the chest and challenge the singing reaper
+212|13|战后旋转楼梯：拾取钢琴前的教师手记|Spiral stairs after the fight: collect the teacher's notes before the piano
+213|0|长廊阳台与新存档点：前往唱片机区域|Long corridor balcony and new Nexus: enter the phonograph area
+213|12|打断旋律：搜索右侧支路，再绕书房阳台|Interrupt the melody: search the right branch and circle around the study balcony
+213|30|主楼梯精英与对面房间：收集第三块鬼石|Elite on the main stairs and the room opposite: collect the third Soulstone
+214|0|激光怪守桥处：破坏唱片机，接通大厅捷径|Bridge guarded by a laser foe: break the phonograph and open the hall shortcut
+214|8|锁门左侧阳台：沿外缘绕入钥匙房|Balcony left of the locked gate: circle along the outer edge to the key room
+214|16|钥匙宝箱与右侧隐藏门：收齐第四块鬼石|Key chest and hidden door on the right: collect the fourth Soulstone
+215|0|铁门后的剧院模型：圆盘碎片与唱片机|Theater model beyond the iron gate: disc fragment and phonograph
+216|4|用钥匙开启主门：击败精英，搜索雕像后暗门|Unlock the main gate: defeat the elite and search behind the statue
+217|0|隐藏房间后的存档点：沿左墙搜讨伐记录|Nexus beyond the hidden room: search along the left wall for the subjugation record
+218|0|楼下骑士与双侧宝箱：取枪刃后前往BOSS门|Knights below and chests on both sides: collect the gunblade before the boss gate
+219|0|大剧院舞台：伊莉娜的近战与法师形态|Grand theater stage: Princess Illyna's melee and mage forms
+220|0|敢死队任务入口：沿士兵主路前往桥边鬼石|Suicide Squad mission entrance: follow the soldier-lined path to the bridge Soulstone
+221|0|走廊梯子前的宝箱：下楼先搜右侧|Chest before the corridor stairs: descend and search right first
+221|11|楼梯左侧壁画暗门：罐子与预言|Mural passage left of the stairs: jar and Prophecy
+222|0|书柜出口旁的门：下楼寻找第二幅暗门壁画|Door beside the bookshelf exit: descend to the second hidden mural
+223|0|返回走廊：搜宝箱，前往BOSS门口记录|Return to the corridor: search the chest and record before the boss gate
+224|0|门后侵蚀士兵：清敌取得第九十九只猫头鹰的遗书|Corrupted soldiers beyond the gate: defeat them for the Ninety-Ninth Owl's Farewell Letter
+225|0|残余混沌入口：先回头取记忆与左侧鬼石|Residual Chaos entrance: turn back for the memory and left Soulstone
+226|0|紫色传送门内：清理多波敌人后开启机关|Inside the purple portal: clear the enemy waves to activate the switch
+226|12|传送门回程：左搜宝箱，主路寻找埃拉梅因笔记|Return through the portal: search the left chest and Elamein's notes on the main path
+227|0|主路尽头开关：再次传送寻找实验记录|Switch at the main path's end: teleport again to the experimental record
+228|0|楼梯左侧隐藏门：卷轴与角落罐子|Hidden door left of the stairs: scroll and corner jar
+229|0|存档点后的坦尼娅：战后触发埃拉梅因回忆|Tanya beyond the Nexus: trigger Elamein's memory after the battle
+230|0|末日城区入口：沿楼梯乘电梯下行|Doomed city entrance: follow the stairs and take the elevator down
+230|8|电梯下方存档点：打破右侧木栏找鬼石|Nexus below the elevator: break the right wooden barrier for the Soulstone
+231|0|下层双向楼梯：左搜道具，右侧进屋找莉丝记录|Paired lower stairs: supplies on the left and Reese's record in the room on the right
+232|0|隔壁岔路与过桥铁门：搜宝箱，放下存档点捷梯|Adjacent fork and gate beyond the bridge: search the chest and lower the Nexus shortcut ladder
+232|12|左侧房间支路与紫雾主路：搜索石像前记录|Left room branch and purple-mist route: search the record before the statue
+233|0|毒瘤堵路的街巷：搜右梯宝箱与墙内鬼石|Streets blocked by growths: search the right stair chest and Soulstone inside the wall
+234|0|铁门过桥存档点：下楼乘电梯，拜访安德尔|Nexus beyond the gate and bridge: descend by elevator and meet Andell
+234|18|下层边缘与丧尸坡：沿左侧落点取鬼气锤|Lower edge and zombie slope: drop along the left to the ghostly hammer
+235|0|流水下层双火球怪：利用掩体搜索管道鬼石|Paired fireball foes below the water: use cover and search the pipe Soulstone
+236|0|管道尽头电梯：抵达上层存档点后继续下楼|Elevator at the pipe's end: reach the upper Nexus, then descend the stairs
+236|12|精英守卫与紫雾：从侧门登梯到日记阳台|Elite guard and purple mist: climb through the side door to the diary balcony
+237|0|上层屋顶落点：从左门进入壁炉房|Upper rooftop drop: enter the fireplace room through the left door
+237|14|吟游诗人房间与教堂：搜宝箱后找像后鬼石|Bard's room and chapel: search the chest, then the Soulstone behind the statue
+238|0|教堂外街道：清紫雾后绕到旋转楼梯房|Streets outside the chapel: clear purple mist and circle to the spiral-stair building
+238|18|旋转楼梯双门：先下楼拜访NPC|Paired doors at the spiral stairs: descend to meet the NPC first
+238|29|重返上层书房：搜索左侧房间的罐子|Return to the upper study: search the jar in the left room
+239|0|书房外窄边：落到下层，打破墙壁搜双剑|Narrow edge outside the study: drop below and break the wall for the swords
+240|0|下层教堂捷径：回到街道岔路找水车鬼石|Lower chapel shortcut: return to the street fork for the waterwheel Soulstone
+241|0|左侧亭子与主楼梯：前往狂龙前的存档点|Pavilion on the left and main stairs: reach the Nexus before the dragon
+242|0|狂龙遗骸大厅：赫斯复苏，躲避激光与紫火|Hall of the dragon's remains: Hismar revives with lasers and purple flames
+242|26|再次击败狂龙：获得屠戮者卷轴|Defeat the dragon again and receive the Slaughterer Scroll
+243|0|抗命任务准备：与尤利安寻找家人|Disobedience preparations: search for Yulian's family
+243|10|左侧落点与博里斯铁门：存档后探索街道|Left drop and Boris at the gate: save before exploring the streets
+243|21|求援铁门与下层房间：搜宝箱，登梯找手记|Gate with the call for help and lower room: search the chest and climb to the notes
+244|0|新存档点右侧落差：识破魅魔陷阱|Drop right of the new Nexus: expose the succubus trap
+245|0|魅魔楼梯与捷径铁门：瞄准左侧高处鬼石|Succubus stairs and shortcut gate: aim at the Soulstone high on the left
+246|0|尸体堆记忆与草堆旁的罐子|Memory in the corpse pile and jar beside the hay
+247|0|左门BOSS房：取回妻子的信，与尤利安交谈|Boss room through the left doorway: recover the wife's letter and speak to Yulian
+248|0|卡隆锁链入口：补给后搜索左侧木桶|Charon's Chains entrance: save and search the barrels on the left
+248|6|右侧房间三连战：取回幽魂中的圣物|Three consecutive fights in the right room: retrieve the relic within the phantom
+249|0|与安德尔、赛欧娜会合：沿左路搜花坛宝箱及罐子|Meet Andell and Seona: search the flowerbed chest and jar along the left path
+250|0|楼梯下的紫雾街道：到水车右侧草地找鬼石|Purple-mist street below the stairs: find the Soulstone on the grass right of the waterwheels
+251|0|空地精英与侧路：登左梯进入存档点房间|Clearing elite and side path: climb the left stairs into the Nexus room
+251|12|存档点楼上雕像与柱子：宝石、鬼石|Statue and pillars above the Nexus: gem and Soulstone
+252|0|门后双层房间：下层搜材料，上层搜宝箱|Two-level room beyond the door: material below and chest above
+252|7|BOSS前存档点：先清远程敌人，再取小丑短剑|Nexus before the boss: clear the ranged foe first, then recover the clown's dagger
+253|0|三碎片隐藏关入口：开铁门，乘电梯存档|Entrance unlocked by three fragments: open the gate and ride down to the Nexus
+253|8|雕像后的隐藏石墙：搜宝箱后从侧门下楼|Hidden stone wall behind the statue: search the chest and descend through the side doorway
+253|20|感应机关与塌陷地板：在下层击败精英|Triggered trap and collapsing floor: defeat the elite below
+254|0|精英房后的铁门：搜索右侧隐藏墙|Gate beyond the elite room: search the hidden wall on the right
+255|0|岔路左房楼梯：穿过暗门搜圣物宝箱|Stairs in the left fork's room: pass the hidden door to the relic chest
+256|0|返回右侧雕像房：登梯先搜右侧罐子|Return to the statue room on the right: climb and search right for the jar first
+257|0|另一条骷髅走廊：取得冥界气息后下跳|Other skeleton corridor: collect Netherworld Energy before dropping down
+258|0|下层牢房与机关门：到电梯后方找讨伐记录|Lower cells and trapped doorway: find the subjugation record behind the elevator
+259|0|电梯下层存档点：在岔路先搜左侧瀑布|Nexus below the elevator: search the left waterfall at the fork first
+260|0|右侧水池主路：下跳后迎战守门怪|Main route by the right pool: drop down and face the gatekeeper
+261|0|大门后的存档点：左侧暗门与分身BOSS|Nexus beyond the gate: hidden door on the left and duplicating boss
+261|10|战后教堂：寻找莉丝戒指，阅读笔记|Chapel after the battle: find Reese's Ring and read the notebook
+262|0|婚礼圣所入口：存档后探索中庭花园|Wedding sanctuary entrance: save before exploring the central garden
+262|17|花园左梯与正面大门：寻找门后鬼石|Left garden stairs and main gate: find the Soulstone beyond the door
+263|0|右侧小门楼梯：清法师，打开花园捷径|Stairs through the right doorway: clear the mage and open the garden shortcut
+263|11|房内电梯下层：防头顶伏击，沿崖前往城堡|Below the indoor elevator: watch for an overhead ambush and follow the cliff to the castle
+264|0|城堡门口魅魔与内侧楼梯：寻找莉丝记录|Succubus at the castle gate and inner stairs: find the Reese record
+265|0|城堡外侧鬼石与新存档点：沿主路进入分身精英房|Soulstone outside the castle and next Nexus: follow the main path to the duplicating elite's room
+266|0|双雕像对视机关：开启密道，清理走廊伏兵|Align the paired statues: open the passage and clear corridor ambushes
+266|8|密道两侧小房：搜索右侧房间罐子|Small rooms beside the passage: search the jar in the right room
+267|0|棺材后的宝箱与电梯：抵达新存档点|Chest behind the coffin and elevator: reach the next Nexus
+267|9|大门内右侧暗门：收鬼石，再登顶取骑士卷轴|Hidden door right of the main gate: collect the Soulstone, then climb for the knight scroll
+269|0|顶层左侧落点：接通存档点捷径|Drop on the upper left: open the Nexus shortcut
+269|12|电梯旁的下行楼梯：落到屋顶搜卷轴与记录|Descending stairs beside the elevator: drop to the roof for the scroll and record
+270|0|房梁下层记忆：原梯返回，搜索梯后鬼石|Memory below the beams: return up the ladder for the Soulstone behind the stairs
+272|0|返回电梯落点：沿最后一段石路寻找高处鬼石|Return to the elevator drop: follow the final stone path to the high Soulstone
+273|0|狭窄上层石路：隔断桥打鬼石，再下跳木梁|Narrow upper stone path: hit the Soulstone across the gap, then drop to the beams
+273|14|下层存档点与牢房：进入大花园清理双强敌|Lower Nexus and cell: enter the large garden and clear the paired powerful foes
+273|28|花园侧门与大厅：搜双宝箱，登梯到莉丝门前|Garden side door and hall: search both chests and climb to Reese's gate
+274|0|婚礼大厅：莉丝的法术与光壁|Wedding hall: Reese's spells and light barriers
+274|28|血色新娘第二形态：镰刀近战与瞬身爆炸|Blood Bride's second form: scythe melee and teleporting blasts
+274|40|莉丝最后的请求：准备前往皇宫|Reese's last request: prepare to enter the palace
+275|0|皇宫外围魔法球：沿楼梯前往土罐存档点|Magic orbs outside the palace: follow the stairs to Danjin's Nexus
+275|18|移动石块通道：过门清精英，乘电梯上楼|Moving stone passage: clear the elite beyond the gate and ride the elevator up
+276|0|存档点旁缺口：搜下层宝箱后登梯返回|Gap beside the Nexus: search the lower chest and climb back
+276|8|石像双侧支路：先搜道具与记忆，再进正门|Branches beside the statue: search supplies and memories before the main door
+276|25|室外亭子与魔法球：沿平台攀向下个存档点|Outdoor pavilions and magic orbs: climb the platforms to the next Nexus
+277|0|大门精英大厅：搜两侧高处，拉杆开启地道|Elite hall beyond the gate: search both upper sides and pull the lever to open the tunnel
+277|11|地道左侧鬼石与右侧返回梯|Soulstone left of the tunnel and return ladder on the right
+278|0|上层缺口与横梁：先取记忆，再穿过室外塌陷石块|Upper gap and beams: collect the memory, then cross the crumbling outdoor stones
+278|17|连续下跳到阳台：踩机关旋转楼梯，搜走廊鬼石|Descend to the balcony: rotate the stairs with the switch and search the corridor Soulstone
+279|0|旋转楼梯两次换路：抵达达芙罗娜的结局选择点|Rotate the stairs twice: reach Daphrona's ending-choice Nexus
+279|12|存档点后的书房：搜右侧书柜，再过中间木架|Study beyond the Nexus: search the right bookshelf and cross the central beams
+279|28|木架旁书柜机关：沿密道登梯找头顶鬼石|Bookshelf switch beside the beams: climb through the passage to the overhead Soulstone
+280|0|旋转楼梯与室外阳台：绕到房间存档点|Spiral stairs and outer balcony: circle to the room's Nexus
+280|19|存档点后的双侧房间：左搜精英宝箱，右找罐子|Rooms beyond the Nexus: elite chest on the left and jar on the right
+281|0|左房洞口与酒桶走廊：搜记忆、爆炸宝箱|Opening in the left room and barrel corridor: search the memory and explosive chest
+281|13|右坡房间隐藏墙：击碎最后一块鬼石|Hidden wall in the room up the right slope: break the final Soulstone
+282|0|阳台电梯机关：先抬平台取材料，再下楼出门|Balcony elevator mechanism: raise the platform for material, then descend and leave
+282|10|天井楼梯与中央落点：搜材料后前往存档点|Courtyard stairs and central drop: search the material and reach the Nexus
+283|0|存档点两侧补给：搜魅魔宝箱后进右侧电梯|Supplies beside the Nexus: search the succubus chest, then enter the right elevator
+283|14|翻转石板群：跟随落点过平台，等待升降石块|Tilting stone slabs: cross the platforms and wait for the rising block
+283|38|高层电梯旁的洞口：下跳回主路，穿过骷髅平台|Opening beside the upper elevator: drop to the main path and cross the skeleton platforms
+283|54|右侧旋转楼梯：打开最终存档点大门|Spiral stairs on the right: open the gate to the final Nexus
+283|60|奥兹玛门前：最终对话与决战准备|Before Ozma's gate: final conversation and battle preparations
+284|0|混沌之主第一阶段：剑击与元素法术|Lord of Chaos phase one: sword attacks and elemental spells
+284|24|奥兹玛第二形态：连击、下砸与范围爆炸|Ozma's second form: combos, slams and area blasts
+284|43|决战结束：卷轴奖励与结局分支|After the final battle: scroll reward and ending branches
+285|0|奥兹玛的住所：逐层查看回忆，向肖像献花|Ozma's residence: explore the memories and lay a flower at the portrait

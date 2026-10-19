@@ -124,6 +124,9 @@
 .khazan-flow-nav{margin:24px 0;padding:15px 20px;border-block:1px solid #cbd8dc;background:#f5f9fa}
 .khazan-flow-nav ol{columns:2;gap:30px;margin:0;padding-left:22px}
 .khazan-flow-nav li{break-inside:avoid;margin:5px 0}
+.khazan-flow-nav ol ol{list-style:none;columns:1;margin:6px 0 12px;padding-left:18px;font-size:.92em;line-height:1.55}
+.khazan-route-copy [data-route-subheading]{margin:36px 0 18px;padding-top:16px;border-top:1px solid #cbd8dc;text-align:left;scroll-margin-top:24px}
+.khazan-instruction-image figcaption{margin-top:9px;padding-left:12px;border-left:3px solid #cbd8dc;color:#526168;font-size:14px;line-height:1.65;text-align:left}
 .khazan-flow-step{margin:35px 0 48px;scroll-margin-top:20px}
 .khazan-step-number{display:inline-block;margin-right:12px;color:#637980;font:700 16px/1.5 system-ui,sans-serif}
 .khazan-step-pickups{display:flex;flex-wrap:wrap;gap:8px 20px;padding-left:20px;margin:12px 0 18px}
@@ -154,3 +157,10 @@
 .khazan-pickup-condition{font-size:14px;font-weight:700;color:#984236}
 [data-collection-item][hidden],[data-collection-group][hidden]{display:none!important}
 @media(max-width:650px){.khazan-flow-nav ol{columns:1}.khazan-flow-images{grid-template-columns:1fr}.khazan-location-table{min-width:560px}.khazan-collection-filter label:first-child{min-width:100%}.khazan-guide-actions>a{flex:1}.khazan-flow-step{margin-bottom:30px}}
+
+/* Mission prose is grouped by landmarks, across imported page boundaries. */
+.khazan-route-section{margin:38px 0 48px;scroll-margin-top:24px}
+.khazan-route-section>.classic-heading{text-align:left;border-top:1px solid #cbd8dc;padding-top:22px}
+.khazan-route-section>p{margin:22px 0 12px;text-align:left}
+.khazan-route-section .khazan-step-pickups{font-size:.9em;margin:24px 0 8px}
+.khazan-legacy-anchor{display:block;scroll-margin-top:24px}
