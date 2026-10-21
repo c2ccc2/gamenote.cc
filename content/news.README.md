@@ -28,3 +28,6 @@
 - `slug` 发布后应保持不变，以免旧链接失效。
 
 游戏清单文章可添加 `recommendations`：每项包含已有图鉴的 `slug`、名称、官方 `source`、原视频节点 `seconds/time`、本地截图 `image` 与截取时间 `imageSeconds/imageTime`。`zh/en` 分别提供 `type`、`play`、`appeal`、`status`；页面生成目录、配图与图鉴链接。截图出处与提取记录保留在研究目录。
+
+
+评测文章使用 `type: "review"`。中英文正文可增加 `sections`（`heading`、非空 `paragraphs` 数组），自动生成目录与小节锚点；`experience` 记录作者体验范围，`spoilers` 提醒涉及的剧情内容。保留作者主观观点，不编造评分与实机记录。

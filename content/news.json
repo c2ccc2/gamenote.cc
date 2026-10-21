@@ -314,5 +314,247 @@
       }
     ],
     "videoSource": "https://www.bilibili.com/video/BV1yEVL6pEgf/"
+  },
+  {
+    "slug": "prince-of-persia-the-lost-crown-review",
+    "type": "review",
+    "date": "2026-10-21",
+    "zh": {
+      "title": "《波斯王子：失落的王冠》评测：看得见用心，却总觉得不够尽兴",
+      "summary": "PC 与移动端双端通关后的主观评价：移动端移植、地图和能力设计值得肯定，但战斗限制、能力解锁时机与世界填充削弱了整体爽快感。",
+      "body": [
+        "《波斯王子：失落的王冠》是一款很奇妙的游戏。",
+        "你很难说它有什么明显的大缺点，但同样，你也很难感受到它有多少能够让人惊艳的优点。你能明显感觉到制作组在这款游戏上投入了大量心血，可惜的是，这一手好牌在设计分配上出现了一些问题。"
+      ],
+      "sections": [
+        {
+          "heading": "移动端：一次用心的移植",
+          "paragraphs": [
+            "我这边是PC端和移动端双端体验，目前两个版本都已经通关体验过。首先必须夸一下移动端优化，这也是我目前见过的PC移植游戏中，优化完成度最高的一个。",
+            "移动端提供了非常高自由度的虚拟按键配置，同时加入了非常人性化的触屏滑动按钮设计，避免了部分手机触屏操作不灵敏的问题。",
+            "除此之外，手机版还加入了许多针对移动端玩家的优化功能：",
+            "例如自动格挡、全局游戏速度调整(75%～100%)、更大范围的自定义难度调节(0.1～6)，以及针对跳跳乐设计的额外冲刺、失败后的无敌护盾等等。",
+            "这些细节都能看出来，移动端团队确实花了大量心思，并不是简单粗暴地把 PC 版本搬过来。",
+            "甚至到了后面，我自己都开始主要玩手机版了。"
+          ]
+        },
+        {
+          "heading": "整体感受：每个部分都不错，却总觉得不够尽兴",
+          "paragraphs": [
+            "《波斯王子：失落的王冠》这款游戏，在完整体验之后，你很难找到它有什么致命缺陷。",
+            "虽然中途部分跳跳乐确实有些折磨人，但整体来看依然属于合理范围。并且几乎每一种跳跃关卡，都将玩家新获得的能力运用到了极致。",
+            "游玩过程中，你可能会觉得痛苦，甚至有些烦躁，但当真正结束之后，却又很奇怪地不会对此产生太强烈的怨念。",
+            "不过问题也正是在这里：",
+            "你同样很难说这款游戏在同档次作品中到底优秀到了什么程度。(当然，它肯定已经超过大部分同类型作品。)",
+            "它的问题不是不好玩，而是明明每个部分都做得不错，却总感觉不太爽。下面我详细分析。"
+          ]
+        },
+        {
+          "heading": "动作系统：丰富的招式，受限的发挥",
+          "paragraphs": [
+            "本作最大的卖点之一，是丰富的动作系统与流畅的打击动画。游戏为每一个动作都设计了不同的分支和组合方式。按理来说，这应该是一款打击感爆炸、让玩家疯狂秀操作的爽游。",
+            "但很遗憾，本作绝大多数怪物都拥有霸体，而且大量攻击属于不可格挡攻击（红招）。。这导致游戏中大量动作设计，在实际战斗里很难真正发挥出来。",
+            "很多时候，你能做到的事情只有偷两刀。而且还不能贪第三段攻击，否则很容易因为攻击后摇被怪物直接抓住。所以我在游戏中的实际体验，并不是：",
+            "“卧槽，这套连招也太帅了。”",
+            "而更多是：",
+            "“这个小怪到底还要砍几刀才死？”",
+            "“刚打出僵直，怎么又冒红光了？”",
+            "“这个小怪为什么又会闪避，又会格挡，还有霸体？”",
+            "因此，本作实际带给我的并不是传统动作游戏那种纯粹爽快的打击感，而是一种不断权衡、患得患失的战斗体验。。",
+            "另外，本作所有怪物的死亡表现几乎完全一致(不考虑处决)。倒地、翻滚两圈，然后化成灰烬。这种统一化的死亡反馈严重削弱了动作游戏最重要的打击感。",
+            "一个小怪的死亡方式，难道不能设计得更加直接或者更加多样一点吗？现在的感觉不像是玩家击杀了敌人，而更像是敌人自己完成了某种解脱仪式。",
+            "整得跟“魂归故土”似的。。"
+          ]
+        },
+        {
+          "heading": "地图：结构出色，世界却有些空",
+          "paragraphs": [
+            "本作的地图设计，是整个游戏中最值得肯定的部分之一。",
+            "无论是地图规模、区域之间的连接方式，还是各种环境互动设计，都能看出来制作组投入了大量心思。",
+            "相比很多采用房间式关卡的类银游戏，《波斯王子：失落的王冠》的地图更加完整，也让人更有探索欲。",
+            "玩家穿梭在不同区域之间时，能够明显感受到这是一个真正存在的世界，而不是由一个个独立房间拼接出来的关卡。",
+            "不过，问题主要出现在环境塑造方面。本作部分场景的视觉表现其实非常优秀，有些区域甚至相当震撼。",
+            "尤其是上城西部区域，也就是挑战弓箭手Boss前的那一段，整体氛围和场景规模都非常出色。",
+            "但遗憾的是，游戏中的平台设计与背景环境之间存在一定割裂感。",
+            "很多时候，你会感觉这些平台并不是自然存在于这个世界里，而是在一个宏大的场景中额外搭建出来的几块板子。。",
+            "它们没有完全融入环境之中，因此会产生强烈的违和感。",
+            "看起来不像一个完整的世界，而更像是在一个漂亮的背景里放入了几个供玩家跳跃的平台。",
+            "除此之外，本作的敌人数量也存在明显问题。整个游戏的怪物种类大概只有 20 多种(不计算飞行小怪以及换皮敌人)。不仅敌人类型偏少，数量也相当有限。",
+            "很多时候，你在一张看起来非常庞大的地图里探索，遇到的敌人甚至不会超过十只。。这导致玩家在地图中的体验不像是在探索一片群落，而是像探索一片荒废遗迹。",
+            "你一路上更多是在跑图，继续跑图。然后偶尔终于看到一个敌人的身影：",
+            "“终于有人了，可以试试我的连招了。”",
+            "结果跳出来的是一个霸体红招怪。所以本作虽然拥有非常优秀的地图结构，但世界填充感明显不足。它有一个很大的世界，却没有足够多的东西让这个世界真正活起来。"
+          ]
+        },
+        {
+          "heading": "小技能：出色的能力来得太晚",
+          "paragraphs": [
+            "本作实际上提供了 8 个主要小技能。除去那个视野能力之外，其他技能几乎全部都是顶级设计。。这里先吐槽一下视野能力。这个技能在战斗中的作用非常有限。",
+            "除了面对深地那个隐身附身怪之外，基本没有任何实际用途。它更像是专门为了跳跳乐设计的能力。但问题是，如果你给它增加敌人显示功能，其实体验会好很多。",
+            "游戏里本身就存在高对比度模式(给敌人标红)，完全可以直接套用这个机制。现在来看，只能期待未来有没有相关 Mod 解决这个问题。本作最强的两个技能，我认为是钩索以及环刃之影。",
+            "当然，这里必须额外提一句，空中冲刺的手感非常优秀。",
+            "那种轻盈流畅、带有松弛感的移动体验，在其他类银游戏中，我暂时还没有体验到类似的感觉。",
+            "先说钩索。钩索最强大的地方，在于它可以让玩家在空中接近敌人的同时，刷新冲刺和二段跳。通过不断拉取目标，可以实现非常夸张的空中移动。",
+            "理论上，玩家甚至可以在敌人之间无限连飞。但问题是，这个技能获得得实在太晚了。当玩家拿到钩索的时候，游戏已经进入大后期，基本接近最终阶段。",
+            "而且游戏中大量霸体怪无法直接被挑飞或者拉取。但即便如此，也无法否认钩索的强度。尤其是在移动端，配合手机版独有的强辅助瞄准后，这个技能简直像开了另一种玩法。",
+            "你可以像蜘蛛侠一样，在敌群之间快速穿梭。",
+            "“躲在高处的怪很恶心？”",
+            "直接飞过去。",
+            "“小怪会闪避？”",
+            "抓住它，直接跟过去。如果把钩索放到其他类银游戏里，它可能只是一个普通移动技能。但在《波斯王子：失落的王冠》这种独特环境中，它毫无疑问是神技。",
+            "第二个需要重点说的是：西摩格之影，以及进化后的环刃之影。这个技能在Boss战中的表现非常优秀。玩家可以利用它躲避一些理论上难以闪避的攻击。",
+            "同时，在面对多个敌人围攻时，也可以快速进行位置转移。甚至在跳跳乐中，它也能够提供非常夸张的移动能力。不过这里提醒一点，拿薛西币的时候千万不要使用传送。",
+            "否则会直接导致掉落。但问题依然存在：这两个技能获得时间真的太晚了。环刃之影需要击败后期弓箭手Boss后才能进化。而钩索更是在二见队长之后才获得。",
+            "基本拿到之后，距离结局已经不远。如此优秀、如此改变游戏体验的能力，却只给玩家最后一小段时间体验。当时游玩的时候，我甚至一直在想：",
+            "“我前面几十个小时到底是在干什么？”",
+            "如果这些技能能够更早开放，整个游戏体验绝对会提升一个档次。"
+          ]
+        },
+        {
+          "heading": "炎火技能：有想法，也有太多限制",
+          "paragraphs": [
+            "本作的大技能系统，也就是炎火技能，整体设计水平其实非常优秀。技能种类非常丰富。有对空技能，有对地技能有群攻技能，有对单技能有反击技能，也有恢复类技能",
+            "基本覆盖了各种战斗需求。单从技能设计层面来看，制作组确实做出了很多有想法的东西。但这些技能虽然设计优秀，实际使用体验却被限制了不少。",
+            "首先是有些技能的判定范围比较迷。有时候明明感觉应该命中，结果却完全没有效果比如那个瞬移到敌人上方进行攻击的技能，我个人体验下来，基本没怎么成功命中过。",
+            "其次，就是技能限制。本作设定中，玩家可以通过成功格挡、攻击敌人等方式恢复炎火能量。理论上，这是鼓励玩家积极战斗。但恢复量非常有限，而且大多数攻击不能格挡。",
+            "而游戏中真正好用的技能，基本都是两三级起步。同时，炎火技能本身的消耗额度较高，冷却时间也比较长。于是就像这样：为了攒一个大招，格挡、攻击。",
+            "攒了五分钟终于开出来。结果空了，然后进入漫长冷却。这种落差感还是比较明显的。本来设计优秀的大技能系统，因为获取成本和使用限制，导致玩家并不能尽情享受。"
+          ]
+        },
+        {
+          "heading": "Boss 战：压迫感很强，但更像另一种跳跳乐",
+          "paragraphs": [
+            "最后说一下本作的 Boss 战。整体来看，Boss 设计属于中规中矩。能够看出来制作组参考、融合了不少其他动作游戏的设计理念。但在我看来，本作的 Boss 战更像是另一种形式的跳跳乐。",
+            "原因在于，大部分 Boss 的攻击，都存在较强限制。很多攻击并不是单纯依靠反应就能躲避，而是要求玩家提前利用西摩格之影进行规避。也就是说，你不是看到攻击后闪避。",
+            "而是需要提前知道，这里必须放影子，否则基本躲不过去。同时，Boss留给玩家输出的窗口非常短。第一次挑战时，很多机制玩家根本无法提前预判。",
+            "你甚至不知道什么时候应该放影子，影子应该放在哪里，什么时候才是正确攻击时机。因此初见Boss战的体验并不是传统动作游戏那种通过操作战胜了敌人。",
+            "而更类似于，我先学习机制，然后按照正确答案执行。",
+            "所以我个人在Boss战中，很多时候并不是靠普通攻击打伤害，而是主要依靠炎火技能硬堆过去。",
+            "Boss战确实有压迫感，但它给予玩家的自由发挥空间并没有想象中那么大。"
+          ]
+        },
+        {
+          "heading": "剧情：可以跳过",
+          "paragraphs": [
+            "剧情部分，我只能说：比较失望。",
+            "除了使用了“波斯王子”这个IP之外，我很难感受到它和这个系列之间有多少真正联系。",
+            "整个故事从头到尾都透露着一种莫名其妙的感觉。奇怪的过去。奇怪的人物动机。奇怪的价值观。最后甚至莫名其妙全部复活。剧情的发展并没有给予我太多情感推动。",
+            "所以如果你只是为了体验动作系统和地图探索，那么剧情部分完全可以直接跳过。"
+          ]
+        },
+        {
+          "heading": "总结：能看见优秀，也能感到可惜",
+          "paragraphs": [
+            "《波斯王子：失落的王冠》是一款非常矛盾的游戏。它拥有类银游戏中数一数二的动作系统。无论是动作设计、连招分支，还是移动手感，都属于第一梯队。",
+            "但问题是：这些优秀设计，在实际战斗中并没有得到充分发挥。绝大多数时候，它们只能存在于演练场里让玩家自己爽。真正能够熟练运用到战斗中的玩家，只会是少数高手。",
+            "本作的地图设计非常优秀。完整的地图结构、优秀的探索路线、丰富的环境互动，都属于第一档水平。但它的问题是：代入感不足。世界虽然很大，却缺少足够的生命力。",
+            "敌人的设计方面：每个敌人的机制其实并不少。很多怪物都有自己的攻击方式和特殊机制。但整体敌人种类太少，数量也不足。同时，大部分敌人的攻击模式比较单一，死亡反馈也过于重复。",
+            "导致战斗体验没有达到应有的高度。技能系统方面：技能设计可以说夯爆了。尤其是钩索、环刃之影等能力，完全称得上神级设计。但遗憾的是：这些改变游戏体验的能力，获得时间太晚。",
+            "炎火技能设计出色，但条件限制太高。导致玩家真正使用它们的时间非常有限。Boss 战：压迫感很强。但很多时候更像是一种机制型跳跳乐。",
+            "需要玩家提前掌握答案，而不是单纯依靠操作突破。剧情：可以直接跳过。最终来说：《波斯王子：失落的王冠》绝对是一款制作非常用心的作品。",
+            "你能感受到制作组在每一个系统上都投入了大量精力。动作系统、地图结构、技能设计，甚至移动端优化，都能看出诚意。但遗憾的是：游戏中的限制因素太多。",
+            "怪物限制了动作系统发挥；技能获取时间限制了爽快感；资源机制限制了技能使用；Boss 机制限制了操作自由。它像是一副精心绘制的画，却被加上了太多边框。",
+            "以至于影响了爽感。最终呈现出来的效果，就是：你能看见它的优秀。也能感受到它的用心。但总觉得，体验上有点可惜。"
+          ]
+        }
+      ],
+      "experience": "体验平台：PC、移动端；两个版本均已通关。文中机制与数值为作者所玩版本的体验记录。",
+      "spoilers": "包含后期能力、Boss 与剧情结局讨论。"
+    },
+    "en": {
+      "title": "Prince of Persia: The Lost Crown review — impressive craft, constrained enjoyment",
+      "summary": "A personal review after completing the PC and mobile versions: a thoughtful mobile port, strong map structure and excellent abilities, held back by combat restrictions, late unlocks and an underpopulated world.",
+      "body": [
+        "Prince of Persia: The Lost Crown is a peculiar game. I struggle to find an obvious major flaw, yet I also struggle to point to enough moments that truly astonished me. The effort behind it is unmistakable, but the way its design strengths are distributed leaves me feeling that a strong hand was not played to its full potential."
+      ],
+      "sections": [
+        {
+          "heading": "Mobile: a thoughtful port",
+          "paragraphs": [
+            "I completed the game on both PC and mobile. The mobile optimization deserves particular praise: among the PC-to-mobile ports I have played, this is the most accomplished.",
+            "The virtual controls are highly customizable, and swipe controls help overcome some of the limitations of touch input. The mobile version also offers auto-parrying, game-speed adjustments from 75% to 100%, a wider custom-difficulty adjustment range of 0.1 to 6, and platforming assists such as extra dashes and a temporary protective shield after failure.",
+            "These details make it clear that the mobile team put considerable thought into the experience. It feels like much more than a PC game dropped onto a touchscreen. Eventually, I found myself playing mainly on my phone."
+          ]
+        },
+        {
+          "heading": "The overall feeling: accomplished, yet not quite satisfying",
+          "paragraphs": [
+            "After finishing The Lost Crown, I struggle to point to a fatal flaw. Some platforming stretches are punishing, but they generally remain reasonable, and almost every kind of challenge puts a newly acquired ability to extensive use.",
+            "In the moment, those sections can be frustrating. Once they are over, though, I find that I do not resent them as much as I expected. Yet I also struggle to say what makes the game truly exceptional among its peers, even though I would place it above most games in the genre.",
+            "The problem is not that it is unenjoyable. Nearly every component is well made, but the overall experience rarely feels as satisfying as it should."
+          ]
+        },
+        {
+          "heading": "Combat: many moves, limited room to use them",
+          "paragraphs": [
+            "A rich moveset and fluid attack animations are among the game’s major attractions. Individual actions branch into different combinations, which should make this an ideal playground for stylish combat.",
+            "In my experience, however, most enemies have hyperarmor, and many attacks are red, unparryable attacks. That makes much of the moveset difficult to use in real encounters. Often I can only sneak in two hits; committing to a third risks being caught during recovery.",
+            "Instead of thinking, “That combo looked incredible,” I am more often asking how many more hits a basic enemy needs, why an enemy that just staggered is already flashing red, or why the same enemy can dodge, block and resist interruption.",
+            "The result is a constant calculation of risks rather than the straightforward satisfaction I want from an action game.",
+            "Enemy death animations also feel almost identical, setting executions aside: fall, roll, then dissolve into ash. That repetition weakens the impact of landing the finishing blow. I wish the feedback were more immediate or varied; sometimes it feels less like I defeated an enemy and more like it completed a ritual of release."
+          ]
+        },
+        {
+          "heading": "The map: excellent structure, an underpopulated world",
+          "paragraphs": [
+            "The map is one of the game’s strongest achievements. Its scale, interconnected regions and environmental interactions show considerable care. Compared with room-based structures in many Metroidvanias, it feels more cohesive and gives me more reason to explore. Moving between regions can feel like traveling through a real place.",
+            "The visual staging is less consistent. Some areas are genuinely striking, particularly the western Upper City before the archer boss. The atmosphere and scale are excellent. But traversal platforms sometimes feel disconnected from their surroundings, like boards placed in front of an impressive backdrop rather than natural parts of the world.",
+            "Enemy variety and density are another issue for me. I would estimate only twenty-something distinct ground-enemy types if flying creatures and recolors are excluded; that is my impression rather than a formal count. Large stretches can feel sparsely populated.",
+            "I spend a lot of time running, then running some more. When I finally find something to try a combo on, it can turn out to be another hyperarmored enemy with red attacks.",
+            "The world has an excellent underlying structure, but I do not feel it has enough life within it. Too often it feels like an abandoned ruin rather than a place with its own communities."
+          ]
+        },
+        {
+          "heading": "Traversal abilities: brilliant tools that arrive too late",
+          "paragraphs": [
+            "I count eight main small abilities. Aside from the vision ability, I think almost all of them are exceptionally designed.",
+            "The vision ability feels narrowly useful in combat. Beyond the invisible possessing enemy in the Depths, I found little use for it outside platforming. Giving it an enemy-highlighting function could make it more useful; the game already has a high-contrast mode that highlights enemies.",
+            "The grappling ability and the upgraded Chakram shadow ability are my favorites. Air-dashing also deserves special mention: its light, fluid, relaxed movement feels unusually good compared with other Metroidvanias I have played.",
+            "The grapple lets me close on airborne enemies while refreshing my dash and double jump. Chaining targets can create extraordinary aerial movement. On mobile, the strong aim assistance makes it feel like an entirely different style of play: I can zip between targets almost like Spider-Man, reaching enemies on high platforms or following evasive opponents.",
+            "However, the grapple arrives very late, and many hyperarmored enemies cannot simply be launched or pulled. It is a remarkable tool, but the game gives me too little time to enjoy it.",
+            "Shadow of the Simurgh, and its later Chakram-based upgrade, are also excellent. They offer powerful repositioning in boss fights, when surrounded, and during platforming. One practical warning from my experience: using teleportation during a Xerxes-coin challenge can make you drop the coin.",
+            "The Chakram upgrade follows the late-game archer boss, and the grapple comes after the second encounter with the captain. By that point the ending is close. These abilities change the game so dramatically that I kept wondering what I had been doing for the preceding hours. Opening them earlier could have made the whole adventure much more enjoyable."
+          ]
+        },
+        {
+          "heading": "Athra Surges: inventive skills with too many restrictions",
+          "paragraphs": [
+            "The large-scale skills, Athra Surges, cover an impressive range: aerial and grounded attacks, crowd control and single-target damage, counters and healing. There is real imagination in the selection.",
+            "Yet I found some hit detection difficult to understand. The move that teleports above an enemy before attacking, for example, rarely seemed to connect when I used it.",
+            "The resource economy creates further restrictions. Attacking and successfully parrying build Athra, which should encourage aggressive play. In practice, I found the gains limited, while many attacks could not be parried and my preferred skills required higher levels of energy.",
+            "The costs and waits made using them feel laborious. I would spend a long time building a powerful attack, miss with it, then have to wait and rebuild. This is a description of how the pacing felt to me, not a measured five-minute cooldown.",
+            "A skill system with this much invention should be something I can enjoy more freely. Instead, the effort required to use it often dilutes the payoff."
+          ]
+        },
+        {
+          "heading": "Bosses: pressure, but often another kind of platforming puzzle",
+          "paragraphs": [
+            "I find the bosses competent overall, with ideas drawn from other action games. But to me they often resemble another form of platforming challenge.",
+            "Many attacks seem to demand advance knowledge and preparation with Shadow of the Simurgh rather than a reaction after the attack begins. I need to know where to leave a shadow and when to return to it. Attack windows are also short.",
+            "On a first attempt, I often do not know where the intended opening is or what preparation the next sequence requires. The experience becomes learning the mechanism and executing its answer, rather than finding my own solution through combat.",
+            "I consequently relied heavily on Athra Surges for damage rather than ordinary attacks. The bosses create real pressure, but I found less space for improvisation than the moveset initially suggested."
+          ]
+        },
+        {
+          "heading": "Story: something I could skip",
+          "paragraphs": [
+            "I was disappointed by the story. Beyond the Prince of Persia name, I struggled to feel a strong connection with the series. The history, character motivations and values often felt inexplicable to me, and the eventual resurrections did little to change that.",
+            "The narrative did not provide much emotional momentum. For someone playing mainly for combat and exploration, I think it is entirely reasonable to skip it."
+          ]
+        },
+        {
+          "heading": "Conclusion: I can see the quality, and still feel the missed opportunity",
+          "paragraphs": [
+            "The Lost Crown is a contradictory game. I would put its moveset, branching attacks and movement feel among the best in the genre. But I rarely felt those strengths were fully realized in ordinary combat; the practice area can offer more freedom to enjoy them than the adventure itself. Highly skilled players may get much more out of the system.",
+            "The map structure, exploration routes and environmental interactions are excellent, yet the world does not feel alive enough. Individual enemies have several mechanics, but the limited variety, sparse population and repetitive death feedback reduce the overall effect.",
+            "Its best abilities—the grapple and the Chakram shadow upgrade in particular—are outstanding, but arrive too late. Athra Surges are inventive but demanding to use. Boss fights are imposing, yet can feel like tests with predetermined answers. The story gave me little reason to stay invested.",
+            "I can feel the effort invested in every system, including the mobile port. But enemies restrict the moveset, the timing of unlocks restricts the most enjoyable abilities, the resource economy restricts skill use, and boss mechanics restrict improvisation.",
+            "It feels like a carefully painted picture surrounded by too many frames. I can see its quality and appreciate the care behind it, but I keep wishing the experience had been allowed to breathe."
+          ]
+        }
+      ],
+      "experience": "Played on PC and mobile; both versions completed. Mechanics and figures reflect the author’s experience with the versions played.",
+      "spoilers": "Discusses late-game abilities, bosses and the story ending."
+    }
   }
 ]

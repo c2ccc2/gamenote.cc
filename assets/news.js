@@ -7,7 +7,7 @@
   const count = document.querySelector('[data-news-count]');
   const en = document.documentElement.lang === 'en';
   function show(type) {
-    const selected = ['all', 'note', 'news'].includes(type) ? type : 'all';
+    const selected = ['all', 'note', 'news', 'review'].includes(type) ? type : 'all';
     let visible = 0;
     for (const card of cards) {
       card.hidden = selected !== 'all' && card.dataset.newsType !== selected;
