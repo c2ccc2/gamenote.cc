@@ -38,9 +38,19 @@ window.GAMENOTE_CONTENT = {
       genres: ['动作角色扮演', '类魂动作'],
       sections: ['Walkthrough', 'Bosses', 'Collectibles'],
       lastUpdated: '2026-10-13', featured: true, order: 4
+    },
+    {
+      id: 'astlibra-revision', slug: 'astlibra-revision', title: 'ASTLIBRA Revision', titleZh: '神之天平',
+      cover: '/assets/catalog/astlibra-revision.jpg', status: 'in-progress', type: 'directory', theme: 'classic',
+      guideUrl: '/games/astlibra-revision/',
+      description: '按区域阅读主线与新章图文流程，查询地图宝箱、装备道具、嘉隆技能与系统资料。',
+      platforms: ['PC', 'Nintendo Switch'], genres: ['动作角色扮演', '横版动作'],
+      sections: ['Walkthrough', 'Maps', 'Equipment', 'KARON', 'Collectibles', 'Systems'],
+      lastUpdated: '2026-10-20', featured: true, order: 5
     }
   ],
   notes: [
+    {"slug": "adding-astlibra-revision-guide", "title": "把《神之天平》的漫长旅程，整理成随手可查的攻略", "description": "新增《神之天平》攻略专题：让主线推进、回访收集与系统查询，各自有清楚的入口。", "date": "2026-10-21", "updatedAt": "2026-10-21", "category": "behind-the-guide", "categoryLabel": "Behind the Guide / Site Note", "game": "astlibra-revision", "featured": true},
     {
       slug: 'why-organize-game-guides-again', title: '为什么还要重新整理一份游戏攻略',
       description: '能找到答案，和能顺利找到现在需要的答案，其实是两件不同的事情。',

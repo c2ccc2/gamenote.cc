@@ -6,7 +6,8 @@ const games = require('../content/catalog/games.json');
 const origin = 'https://gamenote.cc';
 const container = 'GTM-W5W5PT67';
 const bootstrap = "(function(w,d,s,l,i){if(d.querySelector('script[src*=\"googletagmanager.com/gtm.js?id='+i+'\"]'))return;w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W5W5PT67');";
-for (const slug of ['', ...games.map(game => game.slug)]) {
+const selectedGame = process.argv.includes('--game') ? process.argv[process.argv.indexOf('--game') + 1] : null;
+for (const slug of ['', ...games.filter(game => !selectedGame || game.slug === selectedGame).map(game => game.slug)]) {
   const suffix = slug ? slug + '/' : '';
   const zh = '/catalog/' + suffix, en = '/en/catalog/' + suffix;
   const alternate = `<link rel="alternate" hreflang="zh-CN" href="${origin+zh}"><link rel="alternate" hreflang="en" href="${origin+en}"><link rel="alternate" hreflang="x-default" href="${origin+zh}">`;

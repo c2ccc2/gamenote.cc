@@ -5,10 +5,12 @@
   islets:['Islets','Travel between broken islands, find magnetic cores and reconnect the world.'],
   'ender-lilies':['ENDER LILIES','Explore a kingdom beneath the rain of death and purify blighted spirits.'],
   'an-jing-wei-guang':['Well Dweller','Area, boss, ability, collectible, quest and achievement directories are ready. Detailed guides remain under verification.'],
-  'the-first-berserker-khazan':['The First Berserker: Khazan','A mission and boss guide is being prepared, beginning with the opening snowfield and combat basics.']
+  'the-first-berserker-khazan':['The First Berserker: Khazan','A mission and boss guide is being prepared, beginning with the opening snowfield and combat basics.'],
+  'astlibra-revision':['ASTLIBRA Revision','Chinese illustrated walkthroughs, chest maps, equipment charts, KARON skills and system references.']
  };
  c.games=c.games.map(g=>games[g.id]?({...g,titleZh:games[g.id][0],description:games[g.id][1],...(['an-jing-wei-guang','the-first-berserker-khazan'].includes(g.id)?{guideUrl:'/en/games/'+g.slug+'/'}:{})}):g);
  const notes={
+  "adding-astlibra-revision-guide":["Organizing the Long Journey of ASTLIBRA Revision", "A new guide archive with clear entrances for story progress, return visits, collectibles and system references."],
   'why-organize-game-guides-again':['Why Organize Game Guides Again?','Finding an answer and finding the answer needed right now are two different things.'],
   'why-an-jing-wei-guang-looks-like-an-old-guide-site':['Why Does the Well Dweller Guide Look Like a Website from Twenty Years Ago?','Traditional guide-site reading, built on a modern website.'],
   'mapping-a-metroidvania':['How a Metroidvania Map Is Organized','Start with recognizable landmarks, ability requirements and return routes, rather than a map that merely looks good.'],

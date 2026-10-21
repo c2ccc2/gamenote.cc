@@ -7,11 +7,14 @@ const zh=content(false),english=content(true),data=loadClassicData(root),escape=
 const records={walkthrough:[...data.areas,...data.walkthroughs],maps:data.areas,bosses:data.bosses,abilities:data.abilities,collectibles:data.collectibles,quests:data.quests,achievements:data.achievements,challenges:data.challenges};
 const names={catalog:'游戏图鉴',news:'动态',games:'Games',notes:'Notes',updates:'Updates',about:'About',search:'Search',walkthrough:'流程攻略','side-quests':'支线任务','the-first-berserker-khazan':'第一狂战士：卡赞',maps:'地图',bosses:'Boss',abilities:'能力',collectibles:'收集',quests:'任务',challenges:'挑战',achievements:'成就',systems:'系统',secrets:'隐藏内容', 'key-items':'Key Items','time-trials':'Time Trials'};
 const enNames={catalog:'Game Catalog',news:'News','the-first-berserker-khazan':'The First Berserker: Khazan',walkthrough:'Walkthrough','side-quests':'Side missions',maps:'Maps',bosses:'Bosses',abilities:'Abilities',collectibles:'Collectibles',quests:'Quests',challenges:'Challenges',achievements:'Achievements',systems:'Systems',secrets:'Secrets'};
+Object.assign(names,{'astlibra-revision':'神之天平',equipment:'装备与道具',skills:'嘉隆技能',postgame:'新章与结局'});
+Object.assign(enNames,{'astlibra-revision':'ASTLIBRA Revision',equipment:'Equipment',skills:'KARON skills',postgame:'Postscript'});
 function files(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?files(path.join(dir,entry.name)):entry.name.endsWith('.html')?[path.join(dir,entry.name)]:[])}
 const pages=[path.join(root,'index.html'),...['catalog','news','games','notes','updates','about','search','en'].flatMap(dir=>files(path.join(root,dir)))];
 function noteCard(note,en,shared){const game=shared.games.find(g=>g.id===note.game),url=(en?'/en':'')+note.url;return `<article class="note-card"><p class="eyebrow coral">${escape(note.categoryLabel)}</p><h3><a href="${url}" target="_blank" rel="noopener noreferrer">${escape(note.title)}</a></h3><p>${escape(note.description)}</p><div class="note-meta"><time datetime="${note.date}">${note.date.replaceAll('-','/')}</time>${game?`<a href="${game.guideUrl}" target="_blank" rel="noopener noreferrer">${escape(en?game.title:game.titleZh)}</a>`:''}</div><a class="text-link" href="${url}" target="_blank" rel="noopener noreferrer">${en?'Read note':'阅读手记'} <b>→</b></a></article>`}
 let indexed=0;
 for(const file of pages){
+ if(process.argv.includes('--astlibra')&&file!==path.join(root,'index.html')&&file!==path.join(root,'en','index.html')&&!file.replaceAll('\\','/').includes('/games/astlibra-revision/')&&!/\/(?:en\/)?games\/index\.html$/.test(file.replaceAll('\\','/'))&&!/\/(?:en\/)?catalog\/(?:astlibra-revision\/)?index\.html$/.test(file.replaceAll('\\','/')))continue;
  if(process.argv.includes('--khazan')&&!file.replaceAll('\\','/').includes('/games/the-first-berserker-khazan/'))continue;
  const url='/'+path.relative(root,file).replaceAll('\\','/').replace(/index\.html$/,''),en=url.startsWith('/en/'),current=url.replace(/^\/en\//,'/'),prefix=en?'/en/':'/',shared=en?english:zh;
  let $=cheerio.load(fs.readFileSync(file,'utf8'));const classic=$('body').hasClass('classic'),khazanClassic=$('body').hasClass('khazan-classic');
@@ -69,6 +72,7 @@ for(const file of pages){
   (classic||khazanClassic?$('.classic-main > article'):$('.article').length?$('.article'):$('main').first()).attr('data-pagefind-body','');indexed++;
   const type=note?'Note':update?'Update':classic?(names[current.slice(base.length).split('/')[0]]||'Game'):(names[segments[0]]||'Home');
   const metadata={title,type,...(update?{category:update.type,...(update.game?{game:shared.games.find(game=>game.id===update.game)?.titleZh||''}:{})}:{}),...(classic?{game:'黯井微光 / Well Dweller'}:{}),...(note?{category:note.categoryLabel,...(note.game?{game:shared.games.find(g=>g.id===note.game)?.titleZh||''}:{})}:{})};
+  if(current.startsWith('/games/astlibra-revision/')){metadata.game='神之天平 / ASTLIBRA Revision';metadata.type=names[segments[2]]||'游戏攻略'}
   for(const [key,value] of Object.entries(metadata))$('head').append(`<meta data-search-meta data-pagefind-meta="${key}[content]" content="${escape(value)}">`);
  }
  $('.classic-sidebar,.classic-banner,#related-notes,[data-site-header],[data-site-footer]').attr('data-pagefind-ignore','all');

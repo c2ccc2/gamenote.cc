@@ -199,6 +199,14 @@
       "A first visit, a return after obtaining a new ability and a collectible cleanup run do not need the same answers. The walkthrough must distinguish them.",
       "Make the next step recognizable.",
       "Instead of naming only a place, provide visible landmarks, the immediate objective and ability requirements. Players should not need to identify their chapter before they can continue."
+    ],
+    "adding-astlibra-revision-guide": [
+      "ASTLIBRA Revision has joined the GAME NOTE guide archive. Using the supplied guide series and the directory approach of our Khazan guide, the long walkthrough has been reorganized into routes that are easier to consult.",
+      "The main story runs from the opening cave to the finale. Post-game routes follow the areas revisited. Maps and chests, equipment, KARON skills and Libra systems have separate reference sections.",
+      "The original article headings were not copied directly. The directory aims to answer immediate questions: where to go, what a mechanism requires, and what can be collected along the way. Source credits remain with the illustrated steps, and gem and encounter indexes link to specific passages.",
+      "The additions include a component gem location table, chronological reminders and a searchable encounter index. Branch answers are folded by default, and chest locations are presented as reference tables.",
+      "The landing page uses deep green and antique gold, with a game scene, chapter cards and quick reference links. Articles retain the Classic reading layout for longer illustrated passages.",
+      "Topics outside the supplied material remain open for later additions. Corrections and further checks will continue to improve the guide."
     ]
   }
 }

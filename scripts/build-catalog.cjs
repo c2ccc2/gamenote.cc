@@ -86,7 +86,9 @@ function detail(game) {
   writeFile(file, shell(game.name, game.summary, url(game), pageBody));
 }
 if (new Set(games.map(game => game.slug)).size !== games.length) throw Error('Duplicate catalog slug');
-for (const game of games) {
+const selectedGame = process.argv.includes('--game') ? process.argv[process.argv.indexOf('--game') + 1] : null;
+if (selectedGame && !games.some(game => game.slug === selectedGame)) throw Error('Unknown catalog game: ' + selectedGame);
+for (const game of games.filter(game => !selectedGame || game.slug === selectedGame)) {
   if (!groups.some(group => group.id === game.category) || !game.source || !difficultyLabels[game.difficulty]) throw Error('Incomplete catalog entry: ' + game.slug);
   if (!game.cover || !game.cover.startsWith('/') || !fs.existsSync(path.join(root, game.cover.slice(1)))) throw Error('Catalog cover must be local: ' + game.slug);
   detail(game);

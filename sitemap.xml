@@ -354,6 +354,7 @@
   <url><loc>https://gamenote.cc/en/news/belmonts-curse-demo/</loc></url>
   <url><loc>https://gamenote.cc/en/news/metroidvania-2026-video-watchlist/</loc></url>
   <url><loc>https://gamenote.cc/en/notes/</loc></url>
+  <url><loc>https://gamenote.cc/en/notes/adding-astlibra-revision-guide/</loc></url>
   <url><loc>https://gamenote.cc/en/notes/why-an-jing-wei-guang-looks-like-an-old-guide-site/</loc></url>
   <url><loc>https://gamenote.cc/en/notes/why-organize-game-guides-again/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/</loc></url>
@@ -516,6 +517,82 @@
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-drains/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-well/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/walkthrough/webdrench-inn/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/achievements/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/bosses/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/bosses/adolphus/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/bosses/al-khamis/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/bosses/beatrice/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/bosses/loretta/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/bosses/unknown-creature/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/collectibles/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/collectibles/chapter-1/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/collectibles/chapter-2/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/collectibles/chapter-3/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/collectibles/chapter-4/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/collectibles/chapter-5/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/collectibles/chapter-6/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/collectibles/chapter-7/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/collectibles/chapter-8/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/collectibles/final-chapter/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/collectibles/postscript/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/accessories/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/armor/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/books-cards/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/collection-items/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/food/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/ingredients/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/key-items/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/medicine/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/minerals/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/misc/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/monster-materials/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/shields/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/subweapons/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/equipment/weapons/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/postgame/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/postgame/awakening/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/postgame/castle/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/postgame/coast/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/postgame/future/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/postgame/gaia/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/postgame/gems/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/postgame/love/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/postgame/snow-ruins/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/postgame/volcano/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/postgame/wetland/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/side-quests/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/side-quests/ciro/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/side-quests/love/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/side-quests/progress-reminders/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/side-quests/time-branches/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/skills/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/skills/basic/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/skills/defense/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/skills/elements/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/skills/exploration/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/skills/possession/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/skills/special/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/skills/techniques/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/skills/weapon/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/systems/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/systems/arena/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/systems/crafting/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/systems/equipment-upgrades/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/systems/libra/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/systems/medals/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/chapter-1/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/chapter-2/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/chapter-3/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/chapter-4/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/chapter-5/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/chapter-6/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/chapter-7/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/chapter-8/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/final-chapter/</loc></url>
+  <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/postscript/</loc></url>
   <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/</loc></url>
   <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/achievements/</loc></url>
   <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/achievements/boss/</loc></url>
@@ -634,6 +711,7 @@
   <url><loc>https://gamenote.cc/news/belmonts-curse-demo/</loc></url>
   <url><loc>https://gamenote.cc/news/metroidvania-2026-video-watchlist/</loc></url>
   <url><loc>https://gamenote.cc/notes/</loc></url>
+  <url><loc>https://gamenote.cc/notes/adding-astlibra-revision-guide/</loc></url>
   <url><loc>https://gamenote.cc/notes/why-an-jing-wei-guang-looks-like-an-old-guide-site/</loc></url>
   <url><loc>https://gamenote.cc/notes/why-organize-game-guides-again/</loc></url>
   <url><loc>https://gamenote.cc/updates/</loc></url>
