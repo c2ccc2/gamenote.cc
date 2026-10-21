@@ -1,0 +1,112 @@
+[
+  {
+    "id": 3699590,
+    "success": true,
+    "name": "Well Dweller",
+    "release": {
+      "coming_soon": false,
+      "date": "22 Sep, 2026"
+    },
+    "earlyAccess": false
+  },
+  {
+    "id": 2333000,
+    "success": true,
+    "name": "Silver Pines",
+    "release": {
+      "coming_soon": false,
+      "date": "8 Oct, 2026"
+    },
+    "earlyAccess": false
+  },
+  {
+    "id": 1730790,
+    "success": true,
+    "name": "A Sister's Journey",
+    "release": {
+      "coming_soon": false,
+      "date": "20 Oct, 2026"
+    },
+    "earlyAccess": false
+  },
+  {
+    "id": 3559990,
+    "success": true,
+    "name": "Sinweaver",
+    "release": {
+      "coming_soon": true,
+      "date": "To be announced"
+    },
+    "earlyAccess": false
+  },
+  {
+    "id": 2938870,
+    "success": true,
+    "name": "Maseylia : Echoes of the Past",
+    "release": {
+      "coming_soon": false,
+      "date": "19 Jun, 2026"
+    },
+    "earlyAccess": false
+  },
+  {
+    "id": 1717730,
+    "success": true,
+    "name": "LUCID",
+    "release": {
+      "coming_soon": true,
+      "date": "Coming soon"
+    },
+    "earlyAccess": false
+  },
+  {
+    "id": 3033190,
+    "success": true,
+    "name": "Demon Still Alive",
+    "release": {
+      "coming_soon": true,
+      "date": "Coming soon"
+    },
+    "earlyAccess": false
+  },
+  {
+    "id": 1927360,
+    "success": true,
+    "name": "Mira and the Legend of the Djinns",
+    "release": {
+      "coming_soon": true,
+      "date": "To be announced"
+    },
+    "earlyAccess": false
+  },
+  {
+    "id": 2190700,
+    "success": true,
+    "name": "Altered Alma",
+    "release": {
+      "coming_soon": true,
+      "date": "Coming soon"
+    },
+    "earlyAccess": false
+  },
+  {
+    "id": 2864290,
+    "success": true,
+    "name": "Aggelos 2",
+    "release": {
+      "coming_soon": false,
+      "date": "27 Aug, 2026"
+    },
+    "earlyAccess": false
+  },
+  {
+    "id": 4231820,
+    "success": true,
+    "name": "Castlevania: Belmont's Curse",
+    "release": {
+      "coming_soon": false,
+      "date": "14 Oct, 2026"
+    },
+    "earlyAccess": false
+  }
+]

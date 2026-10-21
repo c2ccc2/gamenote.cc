@@ -38,8 +38,9 @@
       "summary": "从 Demogist 的十款新作清单出发，整理游戏类型、核心玩法、适合人群与最新发售状态，并关联本站图鉴。",
       "body": [
         "这份名单来自 Demogist 的《10 New Upcoming Metroidvania Games in 2026 You shouldn’t ignore》。游戏与顺序依据原视频简介的章节时间戳核对，玩法和发售状态另参考官方 Steam 页面。本文是资料整理与选游观察，不是实机评分，也不代表这些游戏都确定在 2026 年发行。",
-        "信息核对日期为 2026 年 10 月 13 日：部分作品已发行，另一些仍为 Coming soon 或日期待公布。下方“适合谁”是本站根据玩法特点的编辑判断。视频截图来自用户提供的 B 站中配版本，保留画面标记，原作者为 Demogist。",
-        "名称与发售状态按 Steam 简体中文商店于 2026 年 10 月 13 日的资料核对：4 款已发售、6 款未发售。商店没有中文名的作品保留英文名；试玩版可下载不等于正式版已发售。"
+        "信息核对日期为 2026 年 10 月 21 日：部分作品已发行，另一些仍为 Coming soon 或日期待公布。下方“适合谁”是本站根据玩法特点的编辑判断。视频截图来自用户提供的 B 站中配版本，保留画面标记，原作者为 Demogist。",
+        "名称与发售状态按 Steam 简体中文商店于 2026 年 10 月 21 日的资料核对：5 款已发售、5 款未发售。商店没有中文名的作品保留英文名；试玩版可下载不等于正式版已发售。",
+        "2026 年 10 月 21 日复核：A Sister’s Journey 已于 10 月 20 日在 Steam 正式发售，本文与图鉴同步更新。其余五款未发售作品仍未公布具体日期。"
       ]
     },
     "en": {
@@ -47,8 +48,9 @@
       "summary": "Ten games from Demogist’s chapter list, with genres, core play, audience notes, current release status and catalog links.",
       "body": [
         "This list follows the chapter timestamps in Demogist’s video description. Gameplay and release information are checked separately against official Steam pages. This is a description-based watchlist, not a hands-on rating or a claim that every game will release in 2026.",
-        "Checked on October 13, 2026. Some games are released; others remain coming soon or undated. Audience notes are GAME NOTE editorial inferences from gameplay descriptions. Screenshots come from the supplied Chinese-dubbed Bilibili version, with on-screen marks retained; the original video creator is Demogist.",
-        "Names and release status were checked against Steam’s Simplified Chinese store on October 13, 2026: four games are released and six are not. English names are retained where no official Chinese title is confirmed; an available demo does not count as a full release."
+        "Checked on October 21, 2026. Some games are released; others remain coming soon or undated. Audience notes are GAME NOTE editorial inferences from gameplay descriptions. Screenshots come from the supplied Chinese-dubbed Bilibili version, with on-screen marks retained; the original video creator is Demogist.",
+        "Names and release status were checked against Steam’s Simplified Chinese store on October 21, 2026: five games are released and five are not. English names are retained where no official Chinese title is confirmed; an available demo does not count as a full release.",
+        "Rechecked October 21, 2026: A Sister’s Journey launched on Steam on October 20. This article and its catalog profile have been updated together. The other five unreleased games still have no specific date announced."
       ]
     },
     "recommendations": [
@@ -117,7 +119,7 @@
           "type": "跑枪动作／精准平台／银河恶魔城",
           "play": "Violet 寻找失踪的 Rena，以枪械、闪避和精准跳跃探索像素世界，收集武器升级与新能力。",
           "appeal": "喜欢射击与高要求平台挑战的玩家；官方也介绍了辅助模式。",
-          "status": "未发售；计划发售：2026-10-20",
+          "status": "已发售：2026-10-20",
           "name": "A Sister's Journey",
           "nameNote": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。"
         },
@@ -125,7 +127,7 @@
           "type": "Run-and-gun / precision platforming / Metroidvania",
           "play": "Violet searches for Rena using guns, dodges and precise jumps, collecting weapon upgrades and abilities across a pixel-art world.",
           "appeal": "Players who enjoy shooting and demanding platforming; the developer also describes an assist mode.",
-          "status": "Not released; planned: October 20, 2026",
+          "status": "Released: October 20, 2026",
           "name": "A Sister's Journey",
           "nameNote": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed."
         }
@@ -555,6 +557,7 @@
       ],
       "experience": "Played on PC and mobile; both versions completed. Mechanics and figures reflect the author’s experience with the versions played.",
       "spoilers": "Discusses late-game abilities, bosses and the story ending."
-    }
+    },
+    "game": "prince-of-persia-the-lost-crown"
   }
 ]

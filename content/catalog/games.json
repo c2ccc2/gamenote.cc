@@ -569,13 +569,14 @@
     "news": "/news/metroidvania-2026-video-watchlist/",
     "status": "released",
     "steamRelease": {
-      "checked": "2026-10-13",
+      "checked": "2026-10-21",
       "zh": "已发售：2026-09-22",
       "en": "Released: September 22, 2026",
       "nameNoteZh": "Steam 官方中文名：黯井微光",
       "nameNoteEn": "Official Simplified Chinese title: 黯井微光",
       "source": "https://store.steampowered.com/app/3699590/?l=schinese"
-    }
+    },
+    "releaseDate": "2026-09-22"
   },
   {
     "slug": "silver-pines",
@@ -596,13 +597,14 @@
     "status": "released",
     "news": "/news/metroidvania-2026-video-watchlist/",
     "steamRelease": {
-      "checked": "2026-10-13",
+      "checked": "2026-10-21",
       "zh": "已发售：2026-10-08",
       "en": "Released: October 8, 2026",
       "nameNoteZh": "Steam 官方中文名：银松镇",
       "nameNoteEn": "Official Simplified Chinese title: 银松镇",
       "source": "https://store.steampowered.com/app/2333000/?l=schinese"
-    }
+    },
+    "releaseDate": "2026-10-08"
   },
   {
     "slug": "a-sisters-journey",
@@ -620,17 +622,17 @@
     ],
     "source": "https://store.steampowered.com/app/1730790/",
     "store": "https://store.steampowered.com/app/1730790/",
-    "status": "upcoming",
+    "status": "released",
     "news": "/news/metroidvania-2026-video-watchlist/",
     "steamRelease": {
-      "checked": "2026-10-13",
-      "zh": "未发售；计划发售：2026-10-20",
-      "en": "Not released; planned: October 20, 2026",
+      "checked": "2026-10-21",
+      "zh": "已发售：2026-10-20",
+      "en": "Released: October 20, 2026",
       "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
       "nameNoteEn": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed.",
       "source": "https://store.steampowered.com/app/1730790/?l=schinese"
     },
-    "expectedReleaseDate": "2026-10-20"
+    "releaseDate": "2026-10-20"
   },
   {
     "slug": "sinweaver",
@@ -651,7 +653,7 @@
     "status": "upcoming",
     "news": "/news/metroidvania-2026-video-watchlist/",
     "steamRelease": {
-      "checked": "2026-10-13",
+      "checked": "2026-10-21",
       "zh": "未发售；Steam 标注“即将宣布”，日期待公布",
       "en": "Not released; date to be announced",
       "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
@@ -678,13 +680,14 @@
     "status": "released",
     "news": "/news/metroidvania-2026-video-watchlist/",
     "steamRelease": {
-      "checked": "2026-10-13",
+      "checked": "2026-10-21",
       "zh": "已发售：2026-06-19",
       "en": "Released: June 19, 2026",
       "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
       "nameNoteEn": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed.",
       "source": "https://store.steampowered.com/app/2938870/?l=schinese"
-    }
+    },
+    "releaseDate": "2026-06-19"
   },
   {
     "slug": "lucid",
@@ -705,7 +708,7 @@
     "status": "upcoming",
     "news": "/news/metroidvania-2026-video-watchlist/",
     "steamRelease": {
-      "checked": "2026-10-13",
+      "checked": "2026-10-21",
       "zh": "未发售；Steam 标注“即将推出”，日期待公布",
       "en": "Not released; coming soon, no date announced",
       "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
@@ -732,7 +735,7 @@
     "status": "upcoming",
     "news": "/news/metroidvania-2026-video-watchlist/",
     "steamRelease": {
-      "checked": "2026-10-13",
+      "checked": "2026-10-21",
       "zh": "未发售；Steam 标注“即将推出”，日期待公布",
       "en": "Not released; coming soon, no date announced",
       "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
@@ -759,7 +762,7 @@
     "status": "upcoming",
     "news": "/news/metroidvania-2026-video-watchlist/",
     "steamRelease": {
-      "checked": "2026-10-13",
+      "checked": "2026-10-21",
       "zh": "未发售；Steam 标注“即将宣布”，日期待公布",
       "en": "Not released; date to be announced",
       "nameNoteZh": "Steam 官方中文名：米拉与灯灵传奇",
@@ -786,7 +789,7 @@
     "status": "upcoming",
     "news": "/news/metroidvania-2026-video-watchlist/",
     "steamRelease": {
-      "checked": "2026-10-13",
+      "checked": "2026-10-21",
       "zh": "未发售；Steam 标注“即将推出”，日期待公布",
       "en": "Not released; coming soon, no date announced",
       "nameNoteZh": "Steam 官方中文名：赛博战魂",
@@ -813,14 +816,15 @@
     "status": "released",
     "news": "/news/metroidvania-2026-video-watchlist/",
     "steamRelease": {
-      "checked": "2026-10-13",
+      "checked": "2026-10-21",
       "zh": "已发售：2026-08-27",
       "en": "Released: August 27, 2026",
       "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
       "nameNoteEn": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed.",
       "source": "https://store.steampowered.com/app/2864290/?l=schinese"
     },
-    "series": "aggelos"
+    "series": "aggelos",
+    "releaseDate": "2026-08-27"
   },
   {
     "slug": "grime",
@@ -946,5 +950,39 @@
       "nameNoteEn": "Official Simplified Chinese title: 神之天平（ASTLIBRA Revision）.",
       "source": "https://store.steampowered.com/app/1718570/?l=schinese"
     }
+  },
+  {
+    "slug": "prince-of-persia-the-lost-crown",
+    "name": "波斯王子：失落的王冠",
+    "nameEn": "Prince of Persia: The Lost Crown",
+    "aliases": [
+      "失落的王冠",
+      "The Lost Crown",
+      "波斯王子"
+    ],
+    "category": "metroidvania",
+    "difficulty": "challenging",
+    "year": "2024",
+    "platform": "PC / Nintendo Switch / PlayStation 4 / PlayStation 5 / Xbox One / Xbox Series X|S / iOS / Android",
+    "creator": "Ubisoft Montpellier / Ubisoft",
+    "cover": "/assets/catalog/prince-of-persia-the-lost-crown.jpg",
+    "summary": "扮演不死军战士萨尔贡，探索时间失序的卡夫山，以双剑、弓箭和时间能力应对战斗、机关与平台跳跃，并用新能力回访旧区域。",
+    "features": [
+      "时间能力",
+      "连通地图",
+      "精准平台跳跃",
+      "动作战斗"
+    ],
+    "source": "https://www.ubisoft.com/en-us/game/Prince-of-Persia/The-Lost-Crown",
+    "store": "https://store.steampowered.com/app/2751000/",
+    "status": "released",
+    "releaseStatusZh": "已发售",
+    "releaseStatusEn": "Released",
+    "releaseDateZh": "2024-01-18（首发）；2024-08-08（Steam）",
+    "releaseDateEn": "January 18, 2024 (original launch); August 8, 2024 (Steam)",
+    "releaseChecked": "2026-10-21",
+    "news": "/news/prince-of-persia-the-lost-crown-review/",
+    "newsTitle": "双端通关评测：看得见用心，却总觉得不够尽兴",
+    "newsTitleEn": "PC and mobile review: impressive craft, constrained enjoyment"
   }
 ]
