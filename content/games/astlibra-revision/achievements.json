@@ -1,0 +1,1063 @@
+{
+  "checkedAt": "2026-10-21",
+  "scope": "Revision 本体及新章",
+  "baseCount": 84,
+  "dlcCount": 15,
+  "sources": [
+    {
+      "title": "Steam 官方成就清单",
+      "url": "https://steamcommunity.com/achievements/1718570?l=schinese"
+    },
+    {
+      "title": "ASTLIBRA Wiki：Revision 成就条件核对",
+      "url": "https://w.atwiki.jp/astlibra/pages/71.html"
+    },
+    {
+      "title": "Arioth：实玩基础指南与难度说明",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3310300881"
+    },
+    {
+      "title": "ASTLIBRA Wiki：六名隐藏首领入口",
+      "url": "https://w.atwiki.jp/astlibra/pages/66.html"
+    }
+  ],
+  "records": [
+    {
+      "id": "ACHI_001",
+      "name": "扭蛋清单",
+      "officialDescription": "有好多小徽章嗼啾！",
+      "group": "收集与成长",
+      "condition": "收集 20 枚小徽章，并在嗼啾商店兑换。",
+      "tip": "沿主线收集，兑换顺序固定；不要只持有徽章而未兑换。",
+      "route": "systems/medals/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_002",
+      "name": "扭蛋大师",
+      "officialDescription": "太赞了嗼啾！",
+      "group": "收集与成长",
+      "condition": "集齐并兑换本体与新章的 37 枚小徽章。",
+      "tip": "按区域核对徽章位置，再查看兑换奖励末项；达标未弹出时可保存后重启游戏。",
+      "route": "systems/medals/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_003",
+      "name": "学者",
+      "officialDescription": "获得所有道具。",
+      "group": "收集与成长",
+      "condition": "填满自制道具图鉴，取得本体的全部道具。",
+      "tip": "按图鉴空位逐项补齐；注意十种封印奥义卷轴、装水的三种瓶、佩可奇拉滴露，以及最终武器精通的电池。",
+      "route": "equipment/database/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_004",
+      "name": "召唤师",
+      "officialDescription": "使用凭依技超过1000次。",
+      "group": "战历累计",
+      "condition": "使用凭依技超过1000次。",
+      "tip": "多在正常战斗中使用低消耗凭依技；次数到达阈值后检查战历。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_005",
+      "name": "召唤大师",
+      "officialDescription": "使用凭依技超过3000次。",
+      "group": "战历累计",
+      "condition": "使用凭依技超过3000次。",
+      "tip": "与杀敌、伙伴同行一起积累，先补最接近的累计目标。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_006",
+      "name": "小有积蓄",
+      "officialDescription": "总计获得金额超过20万。",
+      "group": "战历累计",
+      "condition": "总计获得金额超过20万。",
+      "tip": "按累计收入核对，花钱不会等于清空累计收入。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_007",
+      "name": "腰缠万贯",
+      "officialDescription": "总计获得金额超过60万。",
+      "group": "战历累计",
+      "condition": "总计获得金额超过60万。",
+      "tip": "先做收集和新章路线，不必为保留现金而停止购买装备。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_008",
+      "name": "旅行者",
+      "officialDescription": "步数超过2万。",
+      "group": "战历累计",
+      "condition": "步数超过2万。",
+      "tip": "跳跃和空步多的玩家注意实际步行统计。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_009",
+      "name": "运动员",
+      "officialDescription": "步数超过5万。",
+      "group": "战历累计",
+      "condition": "步数超过5万。",
+      "tip": "最后核对战历步数，缺少时用普通步行探索或回收地图。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_010",
+      "name": "丰富的战斗经验",
+      "officialDescription": "等级超过40级。",
+      "group": "战历累计",
+      "condition": "等级超过40级。",
+      "tip": "通过战斗积累经验，兼顾装备精通。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_011",
+      "name": "神之天平计划",
+      "officialDescription": "等级超过80级。",
+      "group": "战历累计",
+      "condition": "等级超过80级。",
+      "tip": "通常留到新章与深渊探索补足。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_012",
+      "name": "沉溺魔素",
+      "officialDescription": "总计获得力量晶体数量超过20万。",
+      "group": "战历累计",
+      "condition": "总计获得力量晶体数量超过20万。",
+      "tip": "通过战斗、探索积累，区别于嘉隆配置用的魔导水晶。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_013",
+      "name": "魔素成瘾",
+      "officialDescription": "总计获得力量晶体数量超过65万。",
+      "group": "战历累计",
+      "condition": "总计获得力量晶体数量超过65万。",
+      "tip": "与成长盘及新章强化一起推进，按战历统计核对。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_014",
+      "name": "连击大师",
+      "officialDescription": "最大连击数超过1000次。",
+      "group": "战历累计",
+      "condition": "最大连击数超过1000次。",
+      "tip": "选择敌人密集且能持续攻击的场景，先保持连段再补输出；累计打击数不能替代本条。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_015",
+      "name": "战斗狂人",
+      "officialDescription": "杀敌数超过5000。",
+      "group": "战历累计",
+      "condition": "杀敌数超过5000。",
+      "tip": "与伙伴好感、精通和其他战历目标合并完成。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_016",
+      "name": "杀戮成性",
+      "officialDescription": "杀敌数超过15000。",
+      "group": "战历累计",
+      "condition": "杀敌数超过15000。",
+      "tip": "先完成路线与收集，再补累计数量。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_017",
+      "name": "狂殴乱打",
+      "officialDescription": "打击数超过10万次。",
+      "group": "战历累计",
+      "condition": "打击数超过10万次。",
+      "tip": "连续命中与杀敌是两个计数，耐久较高的敌人也能贡献命中数。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_018",
+      "name": "痛快淋漓",
+      "officialDescription": "打击数超过20万次。",
+      "group": "战历累计",
+      "condition": "打击数超过20万次。",
+      "tip": "装备自动连击等操作辅助，在正常战斗中累计。",
+      "route": "achievements/#statistics",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_019",
+      "name": "魔法使",
+      "officialDescription": "学会40个嘉隆魔法。",
+      "group": "收集与成长",
+      "condition": "学会40个嘉隆魔法。",
+      "tip": "精通装备、成长盘解锁能力后核对嘉隆列表。",
+      "route": "skills/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_020",
+      "name": "大魔导师",
+      "officialDescription": "学会全部嘉隆魔法。",
+      "group": "收集与成长",
+      "condition": "习得全部嘉隆能力。",
+      "tip": "先检查所有武器、盾牌、防具的精通奖励，再核对成长盘与特殊奖励；习得和装备是两回事。",
+      "route": "skills/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_021",
+      "name": "天平的潜力",
+      "officialDescription": "至少强化一次天平挂盘。",
+      "group": "收集与成长",
+      "condition": "新章中强化至少一个天平挂盘。",
+      "tip": "再次取得天平后，在天平菜单选择挂盘强化。一次需要 50000 金币；先强化一侧，检查两侧效果是否抵消。",
+      "route": "systems/libra/#upgrade",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_022",
+      "name": "强者",
+      "officialDescription": "通关“困难”难度。",
+      "group": "难度与挑战",
+      "condition": "以“困难”或更高难度完成新章。",
+      "tip": "第二章出发前确认难度。之后可以调低，但不能随意调高；以全成就为目标时保留困难存档，不采用修改存档的方式补条件。",
+      "route": "systems/beginners/#difficulty",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_023",
+      "name": "选择困难症",
+      "officialDescription": "获得50块魔导水晶。",
+      "group": "收集与成长",
+      "condition": "获得50块魔导水晶。",
+      "tip": "通过装备精通与宝箱扩充配置容量，不要与彩色力量晶体混淆。",
+      "route": "collectibles/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_024",
+      "name": "随性任选",
+      "officialDescription": "获得100块魔导水晶。",
+      "group": "收集与成长",
+      "condition": "获得100块魔导水晶。",
+      "tip": "继续核对精通奖励和地图宝箱，容量不够时先回收遗漏。",
+      "route": "collectibles/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_025",
+      "name": "奥义·飞剑",
+      "officialDescription": "学会飞剑。",
+      "group": "奥义学习",
+      "condition": "取得并使用飞剑的奥义卷轴。",
+      "tip": "在初始周边地图的固定宝箱回收卷轴。",
+      "route": "equipment/books-cards/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_026",
+      "name": "奥义·反击",
+      "officialDescription": "学会弹反重击。",
+      "group": "奥义学习",
+      "condition": "取得并使用反击的奥义卷轴。",
+      "tip": "在贝尔克多火山回收相应卷轴。",
+      "route": "equipment/books-cards/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_027",
+      "name": "奥义·闪避",
+      "officialDescription": "学会后跳。",
+      "group": "奥义学习",
+      "condition": "取得并使用闪避的奥义卷轴。",
+      "tip": "按第一章宝箱图回收后跳卷轴。",
+      "route": "equipment/books-cards/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_028",
+      "name": "奥义·升剑",
+      "officialDescription": "学会跳劈。",
+      "group": "奥义学习",
+      "condition": "取得并使用升剑的奥义卷轴。",
+      "tip": "在布里帝恩湿地回收对应固定宝箱中的卷轴。",
+      "route": "equipment/books-cards/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_029",
+      "name": "奥义·盾冲",
+      "officialDescription": "学会盾冲。",
+      "group": "奥义学习",
+      "condition": "取得并使用盾冲的奥义卷轴。",
+      "tip": "在艾里泽斯东海岸的固定宝箱取得，使用卷轴学习。",
+      "route": "equipment/books-cards/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_030",
+      "name": "奥义·空剑",
+      "officialDescription": "学会空剑。",
+      "group": "奥义学习",
+      "condition": "取得并使用空剑的奥义卷轴。",
+      "tip": "魔王城阶段核对卷轴图表与宝箱位置。",
+      "route": "equipment/books-cards/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_031",
+      "name": "奥义·空步",
+      "officialDescription": "学会空中快步。",
+      "group": "奥义学习",
+      "condition": "取得并使用空步的奥义卷轴。",
+      "tip": "雪山与遗迹阶段核对卷轴图表。",
+      "route": "equipment/books-cards/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_032",
+      "name": "奥义·龙卷",
+      "officialDescription": "学会龙卷斩。",
+      "group": "奥义学习",
+      "condition": "取得并使用龙卷的奥义卷轴。",
+      "tip": "在阿涅斯塔回收对应固定宝箱，使用卷轴学习；持有卷轴还不等于已学会。",
+      "route": "equipment/books-cards/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_033",
+      "name": "奥义·失重",
+      "officialDescription": "学会失重。",
+      "group": "奥义学习",
+      "condition": "在研究所用门卡取得并使用失重卷轴。",
+      "tip": "取得后能显著拓展跳跃与探索。",
+      "route": "walkthrough/chapter-8/#zero-gravity",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_034",
+      "name": "第一头大猎物",
+      "officialDescription": "打倒大史莱姆。",
+      "group": "主线流程",
+      "condition": "打倒大史莱姆。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-1/#torch",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_035",
+      "name": "邪鬼之王",
+      "officialDescription": "打倒哥布林王。",
+      "group": "主线流程",
+      "condition": "打倒哥布林王。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-2/#bosses",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_036",
+      "name": "火山的守护兽",
+      "officialDescription": "打倒风龙。",
+      "group": "主线流程",
+      "condition": "打倒风龙。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-3/#boots",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_037",
+      "name": "发育期",
+      "officialDescription": "打倒蛇神之子。",
+      "group": "主线流程",
+      "condition": "打倒蛇神之子。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-4/#shrine",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_038",
+      "name": "无敌巨树",
+      "officialDescription": "打倒树人。",
+      "group": "主线流程",
+      "condition": "打倒树人。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-5/#well",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_039",
+      "name": "未确认动物",
+      "officialDescription": "打倒大脚怪。",
+      "group": "主线流程",
+      "condition": "打倒大脚怪。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-6/#snow-boss",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_040",
+      "name": "冥界魔物",
+      "officialDescription": "打倒上级恶魔。",
+      "group": "主线流程",
+      "condition": "打倒上级恶魔。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-7/#mountain",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_041",
+      "name": "讨伐青蛙",
+      "officialDescription": "打倒青蛙大佐。",
+      "group": "主线流程",
+      "condition": "打倒青蛙大佐。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-8/#missiles",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_042",
+      "name": "打倒最强人形机械兵器",
+      "officialDescription": "打倒冒牌货。",
+      "group": "主线流程",
+      "condition": "打倒冒牌货。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-8/#card",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_043",
+      "name": "打倒会长",
+      "officialDescription": "再会！",
+      "group": "难度与挑战",
+      "condition": "打完斗技场全部杯赛后，击败追加的会长挑战。",
+      "tip": "先按杯赛列表清掉各项挑战，再进行会长战；保留补给与整备存档。",
+      "route": "systems/arena/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_044",
+      "name": "通关正传",
+      "officialDescription": "通关神之天平正传。",
+      "group": "主线流程",
+      "condition": "通关神之天平正传。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/final-chapter/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_045",
+      "name": "崭新的故事",
+      "officialDescription": "进入新章。",
+      "group": "新章流程",
+      "condition": "进入新章。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/awakening/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_046",
+      "name": "一同散步的朋友",
+      "officialDescription": "看完所有泊灵的事件。",
+      "group": "伙伴与结局",
+      "condition": "看完泊灵的两次同行事件。",
+      "tip": "新章开放同行后，带泊灵战斗提高好感；领取第一份爱情后再次同行，领取第二份并完成事件。",
+      "route": "postgame/gaia/#companions",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_047",
+      "name": "红发挚友",
+      "officialDescription": "看完所有盖乌的事件。",
+      "group": "伙伴与结局",
+      "condition": "看完盖乌的两次同行事件。",
+      "tip": "新章带盖乌同行战斗，分两轮领取爱情；不要在取得第一份爱情后就停止。",
+      "route": "postgame/gaia/#companions",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_048",
+      "name": "空前绝后的女孩",
+      "officialDescription": "看完所有白的事件。",
+      "group": "伙伴与结局",
+      "condition": "看完白的两次同行事件。",
+      "tip": "带白同行，完成两轮好感与爱情事件；此前章节的选择不替代新章同行事件。",
+      "route": "postgame/gaia/#companions",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_049",
+      "name": "一本正经的女孩",
+      "officialDescription": "看完所有黑的事件。",
+      "group": "伙伴与结局",
+      "condition": "看完黑的两次同行事件。",
+      "tip": "带黑同行战斗，分别领取两份爱情并读完事件对话。",
+      "route": "postgame/gaia/#companions",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_050",
+      "name": "昨日的敌人就是今日的朋友",
+      "officialDescription": "看完所有凯的事件。",
+      "group": "伙伴与结局",
+      "condition": "看完凯的两次同行事件。",
+      "tip": "带凯同行战斗并完成两次好感事件；累计获得两份爱情。",
+      "route": "postgame/gaia/#companions",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_051",
+      "name": "胜过守护兽的男人",
+      "officialDescription": "打倒金龙。",
+      "group": "主线流程",
+      "condition": "打倒金龙。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-1/#golden-dragon",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_052",
+      "name": "胜过军队的男人",
+      "officialDescription": "打倒沼泽之王大地巨兽。",
+      "group": "主线流程",
+      "condition": "打倒沼泽之王大地巨兽。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-2/#bosses",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_053",
+      "name": "胜过魔神的男人",
+      "officialDescription": "打倒魔神阿耆尼。",
+      "group": "主线流程",
+      "condition": "打倒魔神阿耆尼。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-3/#agni",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_054",
+      "name": "胜过神的男人",
+      "officialDescription": "打倒蛇神美瑠姬奴。",
+      "group": "主线流程",
+      "condition": "打倒蛇神美瑠姬奴。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-4/#serpent",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_055",
+      "name": "胜过魔王的男人",
+      "officialDescription": "打倒魔王机械降神。",
+      "group": "主线流程",
+      "condition": "打倒魔王机械降神。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-5/#demon-king",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_056",
+      "name": "胜过古代兵器的男人",
+      "officialDescription": "打倒最终决战兵器拉达曼迪斯。",
+      "group": "主线流程",
+      "condition": "打倒最终决战兵器拉达曼迪斯。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-6/#ruins",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_057",
+      "name": "胜过黑龙的男人",
+      "officialDescription": "打倒黑红龙米拉巴哈姆特。",
+      "group": "主线流程",
+      "condition": "打倒黑红龙米拉巴哈姆特。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-7/#karon",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_058",
+      "name": "胜过未来兵器的男人",
+      "officialDescription": "打倒时空干涉装置阿努比斯。",
+      "group": "主线流程",
+      "condition": "打倒时空干涉装置阿努比斯。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/chapter-8/#final-fights",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_059",
+      "name": "胜过命运的男人",
+      "officialDescription": "打倒命运女神阿斯特赖亚。",
+      "group": "主线流程",
+      "condition": "打倒命运女神阿斯特赖亚。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/final-chapter/#final-fights",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_060",
+      "name": "胜过梦境的男人",
+      "officialDescription": "打倒嗜烟之灵。",
+      "group": "新章流程",
+      "condition": "打倒嗜烟之灵。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/awakening/#dream",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_061",
+      "name": "胜过失控守护兽的男人",
+      "officialDescription": "打倒变异金龙。",
+      "group": "新章流程",
+      "condition": "打倒变异金龙。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/awakening/#libra",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_062",
+      "name": "胜过暴走王者的男人",
+      "officialDescription": "打倒变异哥布林王。",
+      "group": "新章流程",
+      "condition": "打倒变异哥布林王。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/wetland/#bosses",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_063",
+      "name": "胜过活着的传说的男人",
+      "officialDescription": "打倒大贤者。",
+      "group": "新章流程",
+      "condition": "打倒大贤者。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/volcano/#tower",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_064",
+      "name": "胜过暴走的神的男人",
+      "officialDescription": "打倒变异美瑠姬奴。",
+      "group": "新章流程",
+      "condition": "打倒变异美瑠姬奴。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/coast/#serpent",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_065",
+      "name": "胜过勇者小队的男人",
+      "officialDescription": "打倒勇者小队。",
+      "group": "新章流程",
+      "condition": "打倒勇者小队。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/castle/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_066",
+      "name": "胜过对抗誓戒兵器的男人",
+      "officialDescription": "打倒古代兵器。",
+      "group": "新章流程",
+      "condition": "打倒古代兵器。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/snow-ruins/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_067",
+      "name": "胜过因缘之敌的男人",
+      "officialDescription": "打倒真正的阿努比斯。",
+      "group": "新章流程",
+      "condition": "打倒真正的阿努比斯。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/future/#bosses",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_068",
+      "name": "胜过宇宙飞船的男人",
+      "officialDescription": "打倒诺亚方舟。",
+      "group": "新章流程",
+      "condition": "打倒诺亚方舟。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/gaia/#gauntlet",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_069",
+      "name": "胜过誓戒的男人",
+      "officialDescription": "打倒司掌疏伐规则之物。",
+      "group": "新章流程",
+      "condition": "打倒司掌疏伐规则之物。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/gaia/#gauntlet",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_070",
+      "name": "胜过斗神的男人",
+      "officialDescription": "打倒斗神杰拉丁。",
+      "group": "隐藏首领",
+      "condition": "击败斗神杰拉丁。",
+      "tip": "第三章火山传送起点向左、再向下；破坏该场景右下岩石后进入隐藏区域。先处理两名守卫，再集中输出首领。",
+      "route": "achievements/#hidden-route",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3310300881",
+        "https://w.atwiki.jp/astlibra/pages/66.html"
+      ]
+    },
+    {
+      "id": "ACHI_071",
+      "name": "胜过洛丽塔的男人",
+      "officialDescription": "打倒大魔女莉泽洛特。",
+      "group": "隐藏首领",
+      "condition": "打倒大魔女莉泽洛特。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "bosses/loretta/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_072",
+      "name": "胜过被封印之神的男人",
+      "officialDescription": "打倒暴君阿道弗斯。",
+      "group": "隐藏首领",
+      "condition": "打倒暴君阿道弗斯。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "bosses/adolphus/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_073",
+      "name": "胜过女王的男人",
+      "officialDescription": "打倒妖精王贝阿朵莉切。",
+      "group": "隐藏首领",
+      "condition": "打倒妖精王贝阿朵莉切。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "bosses/beatrice/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_074",
+      "name": "胜过未知生物的男人",
+      "officialDescription": "打倒宇宙生物雷基翁。",
+      "group": "隐藏首领",
+      "condition": "打倒宇宙生物雷基翁。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "bosses/unknown-creature/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_075",
+      "name": "胜过龙王的男人",
+      "officialDescription": "打倒邪龙阿尔哈米斯。",
+      "group": "隐藏首领",
+      "condition": "打倒邪龙阿尔哈米斯。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "bosses/al-khamis/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_076",
+      "name": "胜过造物主的男人",
+      "officialDescription": "打倒伊利沙·阿基里尔。",
+      "group": "新章流程",
+      "condition": "打倒伊利沙·阿基里尔。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/gaia/#final-boss",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_077",
+      "name": "真正的大地",
+      "officialDescription": "抵达盖亚。",
+      "group": "新章流程",
+      "condition": "抵达盖亚。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/gaia/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_078",
+      "name": "无人涉足之地",
+      "officialDescription": "抵达深渊最底层。",
+      "group": "新章流程",
+      "condition": "抵达深渊最底层。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "postgame/gaia/#maze",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_079",
+      "name": "启程",
+      "officialDescription": "我们的冒险才刚刚开始。",
+      "group": "新章流程",
+      "condition": "完成新章的最终战与结尾剧情。",
+      "tip": "进入最终战前留存档，逐场完成连战并看完结尾；本条与“通关正传”分别计算。",
+      "route": "postgame/gaia/#final-boss",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_080",
+      "name": "解放",
+      "officialDescription": "直到最后都不放弃。",
+      "group": "伙伴与结局",
+      "condition": "向阿努莉斯交付 13 份爱情，出现结局变化提示。",
+      "tip": "13 份触发“解放”；若爱情用于合成蛋糕，可先分解取回。后续第 14 份用于酒馆事件与最终武器。",
+      "route": "postgame/love/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_081",
+      "name": "恶作剧",
+      "officialDescription": "这……是什么？",
+      "group": "伙伴与结局",
+      "condition": "交付第 14 份爱情后，在酒馆紧贴阿努莉斯使用“面包？”。",
+      "tip": "先完成结局变化与后续入会事件。触发失败时，暂时卸下金蝉脱壳、超级护甲等受击触发的嘉隆能力，再站到她身边使用。",
+      "route": "postgame/love/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_082",
+      "name": "胜过M字腿的男人",
+      "officialDescription": "打倒提线木偶。",
+      "group": "主线流程",
+      "condition": "击败提线木偶。",
+      "tip": "第五章不带小百入城，并在与盖乌会合后回入口对话；主线错过时，新章魔王城再战也可补成就。",
+      "route": "side-quests/ciro/",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    },
+    {
+      "id": "ACHI_083",
+      "name": "打倒使徒",
+      "officialDescription": "打倒精英驾驶员克里希那。",
+      "group": "主线流程",
+      "condition": "打倒精英驾驶员克里希那。",
+      "tip": "跟随对应流程完成该场战斗，并看完战后剧情。",
+      "route": "walkthrough/final-chapter/#trials",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese"
+      ]
+    },
+    {
+      "id": "ACHI_084",
+      "name": "神之天平圣手",
+      "officialDescription": "获得神之天平正传的所有成就。",
+      "group": "总完成",
+      "condition": "取得本体其余 83 项成就。",
+      "tip": "含新章、六名隐藏首领、全道具、全嘉隆与困难通关；不要求外传的 15 项。",
+      "route": "achievements/#roadmap",
+      "sources": [
+        "https://steamcommunity.com/achievements/1718570?l=schinese",
+        "https://w.atwiki.jp/astlibra/pages/71.html"
+      ]
+    }
+  ]
+}

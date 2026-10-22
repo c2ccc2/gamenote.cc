@@ -136,6 +136,13 @@ module.exports = function loadGuide(root) {
     return {...task,slug:task.id,status:'published',steps,points:steps.flatMap(s=>s.points)};
   });
   if (usedPages.size !== 285 || normalized.filter(t=>t.kind==='main').length!==16 || normalized.filter(t=>t.kind==='side').length!==24) throw Error('Incomplete task coverage');
+  // Supplemental records share the normal filter, route anchors and bilingual location tables.
+  for(const record of require('../../content/games/the-first-berserker-khazan/supplemental-records.json')){
+    const task=normalized.find(t=>t.id===record.taskId),step=task?.steps.find(s=>s.sourcePage===record.sourcePage);
+    if(!step?.blocks[record.blockIndex]?.text?.includes(record.name.zh))throw Error('Supplemental pickup has no matching instruction: '+record.id);
+    const point={...record,type:'records',kind:task.kind,order:task.points.filter(p=>p.type==='records').length+1,stepId:step.id,routeAnchor:'pickup-'+record.id,image:null,supplementSource:record.source};
+    step.points.push(point);task.points.push(point);allPoints.push(point);
+  }
   const pointIds=allPoints.map(p=>p.id);
   if (new Set(pointIds).size!==pointIds.length) throw Error('Duplicate Khazan collectible');
   const english=require('./khazan-english.cjs');

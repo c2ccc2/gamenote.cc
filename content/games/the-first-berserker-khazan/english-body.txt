@@ -2243,3 +2243,6 @@
 285|14|Inspect the portrait and offer a flower to reach the ending.
 285|15|This concludes the campaign walkthrough.
 285|18|You can begin New Game+ after completing the campaign.
+70|10|Attack ②: repeated cannon fire. Rangkus raises his weapon at range and fires toward Khazan as the muzzle flashes. Move sideways and dodge as each shot approaches. Do not stop to heal or rush in after the first projectile; wait for the firing sequence to finish before closing the distance.
+284|32|Attack ③: healing crystal. Ozma summons a purple crystal in front of him and prepares to absorb it to restore health. Switch attention to the crystal and destroy it rather than attacking only the boss. The crystal emits area pulses: dodge the outward energy wave, then resume attacking it instead of committing through the pulse.
+119|14|Supplemental pickup: The Day the Black Moon Rose II. If it is missing, turn back from the Sector No. 4 laboratory Nexus and drop through the railing gap into the room. Turn left into the passage, go up the steps and through the room on the right, then descend the ladder into the laboratory hall. Follow the right wall of the large specimen-container room and collect the record beside the desk. Return to the current mission route afterward.

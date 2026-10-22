@@ -31,13 +31,13 @@ window.GAMENOTE_CONTENT = {
     },
     {
       id: 'the-first-berserker-khazan', slug: 'the-first-berserker-khazan', title: 'The First Berserker: Khazan', titleZh: '第一狂战士：卡赞',
-      cover: '/assets/catalog/the-first-berserker-khazan.jpg', status: 'in-progress', type: 'directory',
+      cover: '/assets/catalog/the-first-berserker-khazan.jpg', status: 'Complete', completionLabel: { zh: '主体已完成', en: 'Core guide complete' }, type: 'directory',
       guideUrl: '/games/the-first-berserker-khazan/',
-      description: '任务流程与首领战攻略正在整理；先从开场的雪地路线和基础战斗开始。',
+      description: '主体内容已完成：主支线流程、首领、装备与收集资料可查，支持收集进度保存；操作补图与数值实机核验持续完善。',
       platforms: ['PC', 'PlayStation 5', 'Xbox Series X|S'],
       genres: ['动作角色扮演', '类魂动作'],
-      sections: ['Walkthrough', 'Bosses', 'Collectibles'],
-      lastUpdated: '2026-10-13', featured: true, order: 4
+      sections: ['Walkthrough', 'Bosses', 'Equipment', 'Collectibles', 'Systems'],
+      lastUpdated: '2026-10-22', featured: true, order: 4
     },
     {
       id: 'astlibra-revision', slug: 'astlibra-revision', title: 'ASTLIBRA Revision', titleZh: '神之天平',

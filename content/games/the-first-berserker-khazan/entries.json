@@ -10,7 +10,8 @@
     "en": {
       "title": "Dual Wield",
       "description": "One of the weapon classes, introduced in the opening mission."
-    }
+    },
+    "href": "systems/builds/dual-wield/"
   },
   {
     "category": "equipment",
@@ -23,7 +24,8 @@
     "en": {
       "title": "Greatsword",
       "description": "One of the three weapon classes."
-    }
+    },
+    "href": "systems/builds/greatsword/"
   },
   {
     "category": "equipment",
@@ -36,20 +38,22 @@
     "en": {
       "title": "Spear",
       "description": "One of the three weapon classes."
-    }
+    },
+    "href": "systems/builds/spear/"
   },
   {
     "category": "equipment",
     "id": "gear-sets",
-    "source": "https://store.steampowered.com/app/2680010/The_First_Berserker_Khazan/",
+    "source": "https://gamingbolt.com/the-first-berserker-khazan-9-extremely-powerful-gear-sets-and-how-to-get-them",
     "zh": {
-      "title": "装备套装",
-      "description": "游戏支持整套装备效果与混搭配装。"
+      "title": "常用套装：用途与获取",
+      "description": "以下是常用套装速查，不是全部装备图鉴。英文名用于对照物品栏，中文译名以游戏内显示为准。"
     },
     "en": {
-      "title": "Gear sets",
-      "description": "Full sets and mixed loadouts are supported."
-    }
+      "title": "Useful gear sets: roles and acquisition",
+      "description": "This is a selection of useful sets, not a complete equipment catalogue. English names help match inventory entries."
+    },
+    "detailHref": "equipment/sets/"
   },
   {
     "category": "equipment",
@@ -65,17 +69,32 @@
     }
   },
   {
+    "id": "combat-basics",
     "category": "systems",
-    "id": "skills",
-    "source": "https://store.steampowered.com/app/2680010/The_First_Berserker_Khazan/",
+    "detailHref": "systems/combat-basics/",
+    "source": "https://www.3dmgame.com/gl/3964895.html",
     "zh": {
-      "title": "武器技能",
-      "description": "技能点可用于解锁不同武器的技能。"
+      "title": "基础战斗：防御、闪避与资源管理",
+      "description": "从精力和斗志开始，区分普通防御、即时防御、闪避、反击与反射，并按步骤练习。"
     },
     "en": {
-      "title": "Weapon skills",
-      "description": "Skill Points unlock abilities for different weapon classes."
+      "title": "Combat basics: defense, evasion and resources",
+      "description": "Learn stamina and Spirit, distinguish defensive actions, and follow a practical training order."
     }
+  },
+  {
+    "category": "systems",
+    "id": "skills",
+    "source": "https://steamcommunity.com/games/2680010/announcements/detail/655950199566369724",
+    "zh": {
+      "title": "技能选择与重置",
+      "description": "先区分武器专属技能与通用能力。树上的前置连线、等级要求、技能点与装备附加效果需要分别检查；装备提供的招式不代表所有角色都已永久学会。"
+    },
+    "en": {
+      "title": "Skill selection and resets",
+      "description": "Distinguish weapon-specific skills from shared abilities. Check prerequisite links, level requirements, points and gear-granted effects separately; a move supplied by equipment is not necessarily permanently learned."
+    },
+    "detailHref": "systems/skills/"
   },
   {
     "category": "systems",
@@ -119,14 +138,113 @@
   {
     "category": "systems",
     "id": "new-game-plus",
-    "source": "https://store.steampowered.com/app/2680010/The_First_Berserker_Khazan/",
+    "source": "https://www.neoseeker.com/the-first-berserker-khazan/Imperial_Palace",
     "zh": {
-      "title": "新游戏＋与终极挑战",
-      "description": "通关后可进入新游戏＋，另有终极挑战模式。"
+      "title": "新游戏＋：进入前检查与继承",
+      "description": "通关后可以先回到裂隙继续处理原周目的内容。想补任务、收集或成就时，先完成清理，再与 Blade Phantom 交互开始新游戏＋。"
     },
     "en": {
-      "title": "New Game+ and Ultimate Challenge",
-      "description": "The game offers New Game+ and Ultimate Challenge."
+      "title": "New Game+: preparation and carryover",
+      "description": "After the ending, return to the Crevice to finish remaining content in the current journey. When ready, interact with the Blade Phantom to begin New Game+."
+    },
+    "detailHref": "systems/new-game-plus/"
+  },
+  {
+    "id": "gear-upgrade",
+    "category": "equipment",
+    "detailHref": "equipment/upgrade/",
+    "source": "https://steamcommunity.com/games/2680010/announcements/detail/516335980136890438",
+    "zh": {
+      "title": "装备养成与预设",
+      "description": "优先检查武器的实际攻击、等级和适合自己的动作，再比较稀有度。防具同时检查重量带来的负担，避免为套装效果牺牲已经适应的闪避节奏。"
+    },
+    "en": {
+      "title": "Equipment progression and presets",
+      "description": "Compare weapon attack, level and usable moves before rarity alone. Check armor weight and its effect on your preferred dodge rhythm."
+    }
+  },
+  {
+    "id": "builds",
+    "category": "systems",
+    "detailHref": "systems/builds/",
+    "source": "https://gamingbolt.com/the-first-berserker-khazan-9-extremely-powerful-gear-sets-and-how-to-get-them",
+    "zh": {
+      "title": "三种武器的配装思路",
+      "description": "先判断当前失败原因：伤害不足、精力不够、防御不熟，还是贪刀。属性、套装、技能分别解决不同问题，不宜直接照抄只展示面板伤害的方案。"
+    },
+    "en": {
+      "title": "Build directions for all three weapons",
+      "description": "Identify whether the issue is damage, stamina, defensive timing or overcommitting. Stats, gear and skills solve different problems."
+    }
+  },
+  {
+    "id": "ultimate-challenge",
+    "category": "systems",
+    "detailHref": "systems/ultimate-challenge/",
+    "source": "https://steamcommunity.com/games/2680010/announcements/detail/516335980136890438",
+    "zh": {
+      "title": "终极挑战：两种模式与奖励",
+      "description": "完成游戏一次后，从标题画面进入 Ultimate Challenge。这里使用模式提供的等级、技能与装备，不直接沿用战役背包；无法召唤幻影同伴，也不能在这里获取 Mastery 成长。"
+    },
+    "en": {
+      "title": "Ultimate Challenge: modes and rewards",
+      "description": "Finish the game once, then enter Ultimate Challenge from the title screen. It uses mode-provided progression and equipment, with no Phantom companions or Mastery gain."
+    }
+  },
+  {
+    "id": "skill-progression",
+    "category": "systems",
+    "detailHref": "systems/skill-progression/",
+    "source": "https://egamersworld.com/blog/the-first-berserker-khazan-skill-guide-KjbwPVwdZQ",
+    "zh": {
+      "title": "技能成长：熟练度、前置与投入顺序",
+      "description": "角色属性等级、熟练等级、技能树前置和套装解锁是不同条件。加属性不一定能解锁技能；拿到套装技能也不代表学会了整条分支。"
+    },
+    "en": {
+      "title": "Skill progression: mastery, prerequisites and priorities",
+      "description": "Character attributes, Mastery, prerequisite nodes and set-granted moves are different requirements. Attribute levels do not necessarily unlock a skill, and a set-granted move does not unlock its whole branch."
+    }
+  },
+  {
+    "id": "set-crafting",
+    "category": "equipment",
+    "detailHref": "equipment/set-crafting/",
+    "source": "https://khazan.tzrain.wiki/archive/items",
+    "zh": {
+      "title": "套装制作：专属材料与卷轴路线",
+      "description": "完成“铁匠的传家宝”开放制作，再取得并登记对应卷轴。"
+    },
+    "en": {
+      "title": "Set crafting: special materials and scroll routes",
+      "description": "Unlock crafting through Blacksmith’s Heirloom and register the corresponding scroll."
+    }
+  },
+  {
+    "id": "phantom-abilities",
+    "category": "systems",
+    "detailHref": "systems/phantom-abilities/",
+    "source": "https://www.neoseeker.com/the-first-berserker-khazan/Phantoms",
+    "zh": {
+      "title": "8 位鬼神：能力、成长与觉醒材料",
+      "description": "鬼神能力是在魔剑的对应菜单装备、随同行成长的被动能力；幻影形态是量表变身；助力之魂是首领战前的金色召唤。三者不能混为一谈。"
+    },
+    "en": {
+      "title": "All eight phantoms: abilities, growth and relics",
+      "description": "Phantom abilities are equipped passive companions that grow with use. Phantom Form is a gauge transformation; Spirit of Advocacy is the golden boss assistance summon."
+    }
+  },
+  {
+    "id": "consumables",
+    "category": "systems",
+    "detailHref": "systems/consumables/",
+    "source": "https://www.pcgamer.com/games/action/the-first-berserker-khazan-tips/",
+    "zh": {
+      "title": "常用消耗品：净化、抗性与战前准备",
+      "description": "恢复生命、恢复战斗资源、针对本区域的净化、针对敌人的抗性或强化，分别解决不同问题。快捷栏优先放这次任务真正会用到的物品。"
+    },
+    "en": {
+      "title": "Consumables: cleansing, resistance and preparation",
+      "description": "Separate health recovery, combat-resource recovery, relevant cleanses and resistance or enhancement items. Put what this mission needs on shortcuts."
     }
   }
 ]

@@ -35,7 +35,92 @@ for(const prefix of ['', '/en']){
   assert(page('#location p').text(),'Boss needs a location');
   const expected=load(base+'walkthrough/'+boss.task.id+'/');
   assert.deepEqual(page('#'+boss.step.id+' img').map((_,el)=>page(el).attr('src')).get(),expected('[data-source-page="'+boss.step.sourcePage+'"] img').map((_,el)=>expected(el).attr('src')).get(),'Keep all boss fight images');
-  assert.equal(page('#drops').length,boss.drops?1:0,'Only explicitly recorded drops should be listed');
+  assert.equal(page('#drops').length,1,'Every main boss needs the current material-drop rules');
+  assert(page('#drops a[href*="bosses/drops/"]').length,'Boss rewards must link to the shared farming table');
+ }
+ const referenceGuides=require('../content/games/the-first-berserker-khazan/reference-guides.json');
+ assert.equal(new Set(referenceGuides.map(p=>p.route)).size,referenceGuides.length,'Reference routes must not overwrite one another');
+ for(const reference of referenceGuides){
+  const page=load(base+reference.route);
+  assert.equal(page('h1').text(),normalizeName(reference[locale].title,locale),'Reference title must match its language');
+  assert.equal(new Set(reference.sections.map(s=>s.id)).size,reference.sections.length,'Section IDs must be unique');
+  for(const section of reference.sections){
+   const body=page('#'+section.id);
+   assert.equal(body.length,1,'Reference sections must be reachable');
+   if(prefix)assert(!/[\u4e00-\u9fff]/.test(body.text()),'Reference prose, tables and links need English text');
+  }
+  for(const a of page('article a[href^="'+base+'"]').toArray()){
+   const [route,anchor]=page(a).attr('href').split('#');
+   if(/\.(jpg|jpeg|png|gif|webp)$/.test(route)){assert(fs.existsSync(path.join(root,route.slice(1))),'Reference images must be local');continue;}
+   const target=load(route);
+   if(anchor)assert.equal(target('[id="'+anchor+'"]').length,1,'Reference links must reach existing instructions');
+  }
+ }
+ const setDetails=require('../content/games/the-first-berserker-khazan/set-details.json');
+ for(const set of setDetails){
+  if(set.recipe)assert(guide.points.some(p=>p.id===set.recipe&&p.type==='scrolls'),'Set recipes must resolve to real scroll pickups');
+  const page=load(base+'equipment/sets/'+set.id+'/');
+  assert.equal(page('#bonuses tbody tr').length,set.bonuses.length,'Do not lose a set bonus threshold during rendering');
+  assert(set.bonuses.every((r,i)=>r[0]>=2&&(!i||r[0]>set.bonuses[i-1][0])),'Set thresholds must ascend without duplicates');
+ }
+ const ledger=require('../content/games/the-first-berserker-khazan/set-value-verification.json');
+ assert.equal(ledger.length,setDetails.reduce((n,s)=>n+s.bonuses.length,0),'Every threshold needs a verification record');
+ for(const row of ledger){assert(setDetails.some(s=>s.id===row.set&&s.bonuses.some(b=>b[0]===row.pieces)),'Verification must refer to a real threshold');if(row.inGameChecked)assert(row.evidence,'In-game verification needs evidence');}
+ const sideEncounters=require('./lib/khazan-side-bosses.cjs')(guide);
+ assert.equal(sideEncounters.length,23,'Every combat side mission needs an index entry');
+ assert(!sideEncounters.some(b=>b.task.id==='jar-enthusiast'),'The jar collection mission is not a boss encounter');
+ for(const {task,step,startBlock} of sideEncounters){
+  const page=load(base+'bosses/side/'+task.id+'/');
+  const expected=step.blocks.slice(startBlock).filter(b=>b.kind==='image').map(b=>b.src);
+  assert.deepEqual(page('#strategy img').map((_,el)=>page(el).attr('src')).get(),expected,'Keep every image in the selected battle sequence');
+  assert.equal(page('#location a').attr('href'),base+'side-quests/'+task.id+'/#'+step.id);
+  assert(load(base+'side-quests/'+task.id+'/')('article a[href="'+base+'bosses/side/'+task.id+'/"]').length,'Mission pages must link back to their independent boss guide');
+ }
+ for(const type of guide.types){const page=load(base+'collectibles/'+type.id+'/');
+  assert.equal(page('[data-collection-check]').length,guide.points.filter(p=>p.type===type.id).length);
+  assert.equal(page('[data-collection-progress]').length,1);
+ }
+ const materials=require('../content/games/the-first-berserker-khazan/crafting-materials.json');
+ assert.deepEqual(materials.map(m=>m.boss),require('./lib/khazan-bosses.cjs')(guide).map(b=>b.id),'Every main boss must have one matched crafting material');
+ for(const material of materials)assert(guide.points.some(p=>p.id===material.recipe&&p.type==='scrolls'),'A material recipe must resolve to a scroll');
+ const phantomData=require('../content/games/the-first-berserker-khazan/phantom-abilities.json');
+ assert.equal(phantomData.length,8,'All eight phantoms must be included');
+ for(const phantom of phantomData){
+  assert(guide.points.some(p=>p.type==='relics'&&p.name.zh===phantom.relic),'Each phantom needs real matching relic locations');
+  assert(load(base+'systems/phantom-abilities/')('#'+phantom.id+' a').length,'Phantom entries need acquisition links');
+ }
+ for(const weapon of ['dual-wield','greatsword','spear'])assert(load(base+'systems/builds/'+weapon+'/')('#skills table').length,'Every weapon setup needs a usable skill-priority table');
+ const rewardIndex=load(base+'bosses/drops/');
+ assert.equal(rewardIndex('[data-boss-reward]').length,16,'The reward table must cover all main bosses');
+ const golden=load(base+'collectibles/ozma-records/');
+ assert.equal(golden('[data-golden-record]').length,15,'All fifteen golden records must be represented');
+ assert.equal(new Set(golden('[data-golden-record]').map((_,el)=>golden(el).attr('id')).get()).size,15,'Golden records must not be duplicated');
+ assert(golden('#golden-black-moon-ii a[href*="why-abandon-us"]').length,'The formerly missing Black Moon II must link to its mission');
+ const supplemental=guide.points.find(p=>p.id==='why-abandon-us-records-black-moon-ii');
+ assert(supplemental,'Missing Black Moon II in shared collection data');
+ const recordList=load(base+'collectibles/records/'),pickupRoute=base+'side-quests/why-abandon-us/';
+ assert.equal(recordList('[data-collection-item][id="'+supplemental.id+'"]').length,1,'The supplemental record must be searchable in the ordinary records list');
+ const pickupHref=pickupRoute+'#'+supplemental.routeAnchor;
+ assert.equal(recordList('#'+supplemental.id+' a').attr('href'),pickupHref,'Ordinary records must reach the exact supplemental instruction');
+ assert.equal(golden('#golden-black-moon-ii a').first().attr('href'),pickupHref,'Both indexes must share one exact pickup anchor');
+ assert.equal(guide.points.find(p=>p.id==='why-abandon-us-records-2').name.zh,'生命创造之旅','Existing record IDs must survive additions');
+ const combat=load(base+'systems/combat-basics/');
+ for(const id of ['resources','defense-choice','burst-and-grabs','reflection','exhaustion','practice','troubleshooting'])assert.equal(combat('#'+id).length,1,'Basic combat topics must be accessible');
+ assert.equal(combat('#resources tbody tr').length,3,'Combat resource comparison must be present');
+ assert.equal(combat('#defense-choice tbody tr').length,5,'Defensive action comparison must be present');
+ if(prefix)assert(!/[\u4e00-\u9fff]/.test(combat('article section').not(':has(h2:contains("Sources"))').text()),'Combat guide body must be translated');
+ for(const [pageNumber,label,occurrence] of [[70,'Attack ②',0],[284,'Attack ③',1]]){
+  const task=guide.main.find(t=>t.steps.some(s=>s.sourcePage===pageNumber)),step=task.steps.find(s=>s.sourcePage===pageNumber);
+  const labels=step.blocks.filter(b=>b.text?.startsWith(pageNumber===70?'攻击方式②：':'攻击方式③：'));
+  assert(labels[occurrence].text.length>40,'Attack demonstrations need actual response instructions');
+ }
+ const roadmap=load(base+'achievements/roadmap/');
+ for(const id of ['before-start','early-game','during-story','palace-choice','after-ending','version-notes'])assert.equal(roadmap('#'+id).length,1,'Roadmap must cover the complete journey');
+ for(const document of [golden,roadmap,rewardIndex,combat]){
+  for(const a of document('article a[href^="'+base+'"]').toArray()){
+   const [route,anchor]=document(a).attr('href').split('#'),target=load(route);
+   if(anchor)assert.equal(target('[id="'+anchor+'"]').length,1,'New reference links must reach real destinations');
+  }
  }
  const lists=new Map(guide.types.map(t=>[t.id,load(base+'collectibles/'+t.id+'/')]));
  const side=load(base+'side-quests/');
@@ -80,3 +165,5 @@ for(const prefix of ['', '/en']){
  for(const type of guide.types)assert.equal(lists.get(type.id)('[data-collection-item]').length,guide.points.filter(p=>p.type===type.id).length,'Collection totals must match the task data');
 }
 console.log(`Verified 40 bilingual mission routes, ${guide.tasks.reduce((n,t)=>n+t.routeSections.length,0)} landmark sections, 285 source steps, ${guide.points.length} collectible locations and ${imageCount} local image placements.`);
+
+require('./verify-khazan-collections.cjs');

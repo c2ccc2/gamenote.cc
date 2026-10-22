@@ -1,0 +1,5648 @@
+[
+  {
+    "id": "combat-basics",
+    "route": "systems/combat-basics/",
+    "zh": {
+      "title": "基础战斗：防御、闪避与资源管理"
+    },
+    "en": {
+      "title": "Combat basics: defense, evasion and resources"
+    },
+    "sections": [
+      {
+        "id": "resources",
+        "zh": {
+          "title": "先分清精力、斗志和生命",
+          "items": [
+            "精力用于普通攻击、防御、闪避等行动。连续进攻、连续翻滚或长时间硬接连段，都可能让下一次防守没有余量。先用能稳定收手的短连段，再根据破绽延长。",
+            "斗志（Spirit）是另一种战斗资源，用来释放标枪和消耗斗志的技能。通过战斗积累，具体防御动作能否额外回斗志，要看已经学习的技能或装备效果。",
+            "不要把“消耗斗志的技能”理解为整段动作必定不涉及精力。例如能自动触发防御的技能，防御触发时仍可能产生精力消耗；以技能说明和当前版本为准。",
+            "生命决定还能承受多少伤害；精力决定还能进行多少行动。生命尚多却频繁破防，先检查攻击、防御和回避的用量，再考虑增加输出。"
+          ],
+          "table": {
+            "headers": [
+              "资源",
+              "主要用途",
+              "新手检查重点"
+            ],
+            "rows": [
+              [
+                "生命",
+                "承受伤害、决定生存",
+                "受伤后先找安全恢复窗口"
+              ],
+              [
+                "精力",
+                "普通攻击、防御、闪避等行动",
+                "收招后是否还够防守或脱离"
+              ],
+              [
+                "斗志（Spirit）",
+                "标枪和特定技能",
+                "技能消耗、触发条件与回收方式"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Stamina, Spirit and health",
+          "items": [
+            "Stamina supports ordinary attacks, guards and dodges. Long strings, repeated rolls or blocking an entire combo can leave too little for the next response. Start with a short sequence you can stop safely.",
+            "Spirit is a separate resource for the Javelin and Spirit-consuming skills. Build it through combat; extra Spirit from particular defensive actions depends on learned skills or equipment.",
+            "A Spirit-consuming skill does not guarantee that every part of its effect is stamina-free. A skill that triggers guards can still involve stamina costs. Read its tooltip and current balance notes.",
+            "Health measures damage you can survive; stamina measures actions you can sustain. If you repeatedly become exhausted with health remaining, review action costs before adding damage."
+          ],
+          "table": {
+            "headers": [
+              "Resource",
+              "Main role",
+              "What to check"
+            ],
+            "rows": [
+              [
+                "Health",
+                "Surviving damage",
+                "A safe window to heal"
+              ],
+              [
+                "Stamina",
+                "Ordinary attacks, guards and dodges",
+                "Enough remaining for defense or escape"
+              ],
+              [
+                "Spirit",
+                "Javelin and specific skills",
+                "Costs, activation conditions and recovery"
+              ]
+            ]
+          }
+        },
+        "links": [],
+        "images": [
+          {
+            "src": "/kazan/images/img_094.jpg",
+            "sourcePage": 10,
+            "sourceBlock": 9,
+            "zh": "战斗成长教学：获得技能点后进入技能树。",
+            "en": "Combat progression tutorial: open the skill tree after earning skill points."
+          }
+        ]
+      },
+      {
+        "id": "defense-choice",
+        "zh": {
+          "title": "防御动作速查",
+          "items": [
+            "按键名称与默认键位可能因平台和自定义设置不同。先在操作设置中确认防御、闪避、反击与反射的动作，再练习时机。",
+            "普通防御可作为观察可防御连段的起点，但不能一直按住等待敌人结束。每次交手都检查精力，并留意属性伤害和异常积累。",
+            "即时防御（Brink Guard，常被称为精准防御）是在攻击即将命中时防御。相较普通防御，精力损失更少，也能削减敌方精力；这不等于所有攻击都能挡住，或完全不消耗资源。",
+            "即时闪避（Brink Dodge）是在合适时机闪避，并短暂强化闪避攻击。闪避后的输出仍要服从破绽长度；触发成功不代表可以无视下一段攻击。"
+          ],
+          "table": {
+            "headers": [
+              "动作",
+              "如何判断时机",
+              "主要用途",
+              "容易犯的错误"
+            ],
+            "rows": [
+              [
+                "普通防御",
+                "在可防御攻击命中前保持防御",
+                "观察招式、接住不熟悉的攻击",
+                "精力快空仍硬接整套连段"
+              ],
+              [
+                "即时防御",
+                "临近命中时防御",
+                "减少防守精力损失并削韧",
+                "把起手动作当成命中时刻"
+              ],
+              [
+                "闪避／即时闪避",
+                "看攻击轨迹，在命中前回避",
+                "避开危险范围、调整站位",
+                "连续翻滚耗空精力"
+              ],
+              [
+                "反击 Counterattack",
+                "识别爆发攻击提示，等待实际命中时刻",
+                "应对爆发攻击并争取反攻",
+                "提示刚出现就提前输入"
+              ],
+              [
+                "反射 Reflection",
+                "解锁对应技能后，让自身动作迎上敌招",
+                "对熟悉的可应对招式制造破绽",
+                "与即时防御、爆发反击混为一谈"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Defensive options at a glance",
+          "items": [
+            "Button assignments vary by platform and custom controls. Identify Guard, Dodge, Counterattack and Reflection in the controls menu before practising their timing.",
+            "Ordinary guard can help you observe a blockable string, but do not hold it indefinitely. Check stamina after each exchange, including elemental damage and ailment buildup.",
+            "Brink Guard is a guard timed just before impact. It reduces stamina loss relative to ordinary guarding and damages enemy stamina; it does not block every move or make defense universally free.",
+            "Brink Dodge is a well-timed dodge that briefly enhances dodge attacks. The resulting opening still determines whether a follow-up is safe."
+          ],
+          "table": {
+            "headers": [
+              "Action",
+              "Timing cue",
+              "Purpose",
+              "Common mistake"
+            ],
+            "rows": [
+              [
+                "Guard",
+                "Hold before a blockable hit",
+                "Observe unfamiliar attacks",
+                "Blocking a whole string with little stamina"
+              ],
+              [
+                "Brink Guard",
+                "Guard just before impact",
+                "Efficient defense and stamina damage",
+                "Reacting to the windup instead of impact"
+              ],
+              [
+                "Dodge / Brink Dodge",
+                "Read the path and evade before impact",
+                "Escape danger and adjust position",
+                "Spending all stamina on repeated rolls"
+              ],
+              [
+                "Counterattack",
+                "Read the Burst cue and wait for impact",
+                "Answer a Burst Attack and create an opening",
+                "Inputting as soon as the warning appears"
+              ],
+              [
+                "Reflection",
+                "After unlocking it, meet an attack with the skill’s animation",
+                "Create an opening against a learned move",
+                "Confusing it with Brink Guard or Counterattack"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "burst-and-grabs",
+        "zh": {
+          "title": "爆发攻击、抓取与反击",
+          "items": [
+            "看到爆发攻击的特殊图标、声效或红光时，先识别敌人接下来真正命中的动作。提示出现是提醒准备，不是要求立即按反击。",
+            "爆发攻击不能靠普通防御或即时防御硬接。可以回避危险轨迹，或按已解锁的 Counterattack 动作，在命中时反制；成功的爆发反击能恢复精力并制造输出窗口。",
+            "抓取也不要默认能用普通防御处理。先离开抓取范围或闪避，不要把所有带特殊光效的招式都当成可以反击的同一种攻击。",
+            "反击普通攻击不等同于反击爆发攻击，不能期待完全相同的恢复和打断收益。新手先用它应对明确的爆发提示。"
+          ]
+        },
+        "en": {
+          "title": "Burst Attacks, grabs and Counterattack",
+          "items": [
+            "A Burst warning gives you time to prepare. Watch the actual incoming move rather than countering the moment the icon, sound or red flash appears.",
+            "Ordinary guard and Brink Guard do not stop Burst Attacks. Evade their path or time the unlocked Counterattack action at impact. A successful Burst counter restores stamina and creates an opening.",
+            "Do not assume grabs can be guarded. Move out of reach or dodge, and do not treat every special visual effect as the same counterable attack type.",
+            "Countering an ordinary attack does not promise the same recovery or interruption as a Burst counter. Beginners should first practise against clear Burst warnings."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/snow-mountain-trial/#route-12",
+            "zh": "第二章巨熊反击教学",
+            "en": "Chapter 2 bear counter tutorial"
+          }
+        ]
+      },
+      {
+        "id": "reflection",
+        "zh": {
+          "title": "反射不是即时防御",
+          "items": [
+            "Reflection 是需要查看技能解锁条件的主动动作。它要求自身迎击动作与敌招相交，时机与单纯临近命中按防御不同。",
+            "先在熟悉的慢招上练习，不要首次见到多段连击就连续尝试。失败可能损失生命和精力；普通防御、即时防御、闪避仍是需要搭配的基本动作。",
+            "巨剑的 Counterstrike 等武器技能也有自己的消耗和条件，不能只因为中文都有“反”字，就当作通用 Counterattack 或 Reflection。"
+          ]
+        },
+        "en": {
+          "title": "Reflection is not Brink Guard",
+          "items": [
+            "Reflection is an active skill with unlock requirements. Its interception animation must meet the incoming attack; that differs from simply timing a guard before impact.",
+            "Practise on a familiar slower move before attempting it against a new multi-hit string. Failure can cost health and stamina, so keep using the other defensive options.",
+            "Weapon-specific skills such as Greatsword’s Counterstrike have their own costs and conditions. Do not treat similarly named actions as interchangeable."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/skills/",
+            "zh": "技能选择与重置",
+            "en": "Skill selection and resets"
+          }
+        ]
+      },
+      {
+        "id": "exhaustion",
+        "zh": {
+          "title": "削韧、精疲力竭与致命攻击",
+          "items": [
+            "进攻不能只看生命伤害。攻击和有效防御逐步削减敌方精力，能为精疲力竭与致命攻击创造机会；自身精力见底则可能先陷入无法行动的危险状态。",
+            "敌人出现可致命攻击的红色提示后，确认站位并在窗口结束前使用 Brutal Attack。若要先补普通攻击，必须给最后的致命攻击留下时间，不能为了多打一刀错过提示。",
+            "致命攻击既造成伤害，也能恢复精力。新手先保证成功发动，再练习在窗口内增加输出。",
+            "精疲力竭窗口随敌人与版本而异。例如 2025 年 6 月调整过前三位主线首领的持续时间，不能按同一个秒数处理所有首领。"
+          ]
+        },
+        "en": {
+          "title": "Stamina damage, exhaustion and Brutal Attacks",
+          "items": [
+            "Health damage is only part of an exchange. Attacks and effective defense can wear down enemy stamina toward exhaustion; running out yourself can leave you unable to act.",
+            "When the red Brutal Attack prompt appears, position correctly and act before its window ends. Extra normal hits must leave enough time to perform the finisher.",
+            "A Brutal Attack damages the target and restores stamina. Secure the finisher first, then practise adding damage before it.",
+            "Exhaustion windows vary by enemy and version. The first three main bosses received duration changes in June 2025; do not use one fixed timer for every boss."
+          ]
+        },
+        "links": []
+      },
+      {
+        "id": "practice",
+        "zh": {
+          "title": "按这个顺序练习",
+          "items": [
+            "第一步：选一种武器，对普通敌人只用短连段，确认收手后还剩多少精力。",
+            "第二步：选一套可防御的慢连段，先观察最后一击，再练即时防御；每次失败只调整一个输入时机。",
+            "第三步：把回避用于需要离开攻击范围或不适合硬挡的动作。不要为了追求全程格挡，忽略抓取和属性威胁。",
+            "第四步：在第二章巨熊等明确教学场景中练爆发反击。先认提示，再看落点和实际命中时刻。",
+            "第五步：出现精疲力竭提示时稳定完成致命攻击，之后才延长自己的连段、加入斗志技能和反射。"
+          ]
+        },
+        "en": {
+          "title": "A practical learning order",
+          "items": [
+            "First, use one weapon and a short string against ordinary enemies. Check the stamina left when you stop.",
+            "Second, learn a slower blockable string and its final hit before practising Brink Guard. Change one timing at a time.",
+            "Third, dodge when you need to leave an attack’s range or avoid a poor guarding matchup. Do not ignore grabs or elemental threats to force an all-guard approach.",
+            "Fourth, practise Burst counters at clear teaching encounters such as the Chapter 2 bear. Read the warning, then the path and impact.",
+            "Fifth, secure Brutal Attacks consistently before extending strings with Spirit skills and Reflection."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/banished-hero/",
+            "zh": "第一章基础操作教学",
+            "en": "Chapter 1 basics"
+          },
+          {
+            "href": "walkthrough/snow-mountain-trial/",
+            "zh": "第二章武器与反击教学",
+            "en": "Chapter 2 weapons and counters"
+          }
+        ]
+      },
+      {
+        "id": "troubleshooting",
+        "zh": {
+          "title": "打不过时，先检查哪一环出错",
+          "items": [
+            "精力总是不够：缩短连段，减少无目的翻滚，检查装备重量与已点技能，不要只增加生命。",
+            "明明防御了仍然受伤：先确认是不是爆发攻击、抓取、属性伤害或已经被破防；再调整应对动作。",
+            "总在喝药时被追击：先避完远程连射或整套连段，再用收招窗口恢复；拉开距离不一定意味着安全。",
+            "有斗志却不敢用：先选一项能稳定命中的技能，在明确破绽中使用，检查消耗后是否还具备防守和退路。",
+            "按键正确却反击失败：先分清 Counterattack、Reflection、Brink Guard 和武器技能，再确认技能是否解锁、动作是否来得及命中。"
+          ]
+        },
+        "en": {
+          "title": "Troubleshooting failed attempts",
+          "items": [
+            "Always out of stamina: shorten strings, reduce aimless rolls and check weight and learned skills instead of adding health alone.",
+            "Damaged while guarding: identify a Burst Attack, grab, elemental effect or guard break before choosing a different response.",
+            "Punished while healing: wait out the full projectile sequence or combo, then heal during recovery. Distance alone is not a safe window.",
+            "Unused Spirit: choose one reliable skill and test it in a clear opening while retaining a defensive exit.",
+            "Correct buttons but failed counters: distinguish Counterattack, Reflection, Brink Guard and weapon skills, then check unlocks and animation timing."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "三种武器配装方向",
+            "en": "Build directions"
+          },
+          {
+            "href": "equipment/upgrade/",
+            "zh": "装备养成与预设",
+            "en": "Equipment progression and presets"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "本地流程中的操作教学 / Local combat tutorials",
+        "url": "https://www.3dmgame.com/gl/3964895.html"
+      },
+      {
+        "title": "第二章爆发反击教学 / Chapter 2 Burst counter tutorial",
+        "url": "https://www.3dmgame.com/gl/3964895_12.html"
+      },
+      {
+        "title": "Counterattack examples and timing",
+        "url": "https://primagames.com/tips/how-to-effectively-counterattack-in-the-first-berserker-khazan"
+      },
+      {
+        "title": "Reflection demonstration",
+        "url": "https://www.noobfeed.com/articles/the-first-berserker-khazan-beginner-s-guide"
+      },
+      {
+        "title": "June 26: exhaustion duration and combat adjustments",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      }
+    ]
+  },
+  {
+    "id": "gear-sets",
+    "route": "equipment/sets/",
+    "zh": {
+      "title": "常用套装：用途与获取"
+    },
+    "en": {
+      "title": "Useful gear sets: roles and acquisition"
+    },
+    "sections": [
+      {
+        "id": "detailed-sets",
+        "zh": {
+          "title": "件数效果与获取详页",
+          "items": [
+            "以下 14 套已有件数效果详表；其余条目仍按常用方向概览展示，不将其混称为全装备图鉴。"
+          ]
+        },
+        "en": {
+          "title": "Detailed set pages",
+          "items": [
+            "Eight sets below have threshold tables; the other entries remain practical overviews rather than a complete equipment catalogue."
+          ]
+        },
+        "links": [
+          {
+            "href": "equipment/sets/crimson-fiend/",
+            "zh": "猩红恶鬼",
+            "en": "Crimson Fiend"
+          },
+          {
+            "href": "equipment/sets/fallen-guardian/",
+            "zh": "堕落守护神",
+            "en": "Fallen Guardian"
+          },
+          {
+            "href": "equipment/sets/fallen-lord/",
+            "zh": "没落君主",
+            "en": "Fallen Lord"
+          },
+          {
+            "href": "equipment/sets/golden/",
+            "zh": "鎏金",
+            "en": "Golden"
+          },
+          {
+            "href": "equipment/sets/deep-shadow/",
+            "zh": "深邃无光",
+            "en": "Deep Shadow"
+          },
+          {
+            "href": "equipment/sets/radiant-darkness/",
+            "zh": "璀璨黑暗",
+            "en": "Radiant Darkness"
+          },
+          {
+            "href": "equipment/sets/defier/",
+            "zh": "反抗者",
+            "en": "Defier"
+          },
+          {
+            "href": "equipment/sets/netherworld-abyss/",
+            "zh": "冥界深渊",
+            "en": "Netherworld Abyss"
+          },
+          {
+            "href": "equipment/sets/soul-eater/",
+            "zh": "噬魂者",
+            "en": "Soul Eater"
+          },
+          {
+            "href": "equipment/sets/fugitive-mage/",
+            "zh": "逃亡魔法师",
+            "en": "Fugitive Mage"
+          },
+          {
+            "href": "equipment/sets/unending-tragedy/",
+            "zh": "无尽悲剧",
+            "en": "Unending Tragedy"
+          },
+          {
+            "href": "equipment/sets/fleshripper/",
+            "zh": "屠戮者",
+            "en": "Fleshripper"
+          },
+          {
+            "href": "equipment/sets/faded-memories/",
+            "zh": "褪色回忆",
+            "en": "Faded Memories"
+          },
+          {
+            "href": "equipment/sets/master-of-chaos/",
+            "zh": "混沌之主",
+            "en": "Master of Chaos"
+          }
+        ]
+      },
+      {
+        "id": "section-1",
+        "zh": {
+          "title": "先按打法选择套装",
+          "items": [
+            "以下是常用套装速查，不是全部装备图鉴。英文名用于对照物品栏，中文译名以游戏内显示为准。",
+            "先确定常用的伤害技能，再选择能强化它的套装；查看已激活的套装档位，不能只看套装名称。随机掉落不保证一次凑齐，重复挑战前先检查铁匠是否已经可以制作。"
+          ]
+        },
+        "en": {
+          "title": "Choose a play style first",
+          "items": [
+            "This is a selection of useful sets, not a complete equipment catalogue. English names help match inventory entries.",
+            "Choose your main damage skill before committing to a set. Check the active piece bonuses; random boss loot may require repeat clears, while an unlocked crafting recipe offers another route."
+          ]
+        }
+      },
+      {
+        "id": "section-2",
+        "zh": {
+          "title": "巨剑套装",
+          "items": [
+            "Crimson Fiend：围绕蓄力与 Mortal Blow 选择；通过掉落及对应卷轴制作补齐。",
+            "Fugitive Mage：与 Bellerian、Rephalan Mountains 相关，适合围绕 Armor Breaker、Heart Piercer 组织攻击。",
+            "Chaos-Ridden：与 Maluca、Nadin Quarry 相关，可考虑 Brink Guard 与 Volcanic Wrath 路线。",
+            "Devourer of Darkness：与 Aratra、Skoffa Cave 相关，可通过 Man-Eating Spider 卷轴制作；重点查看 Ghost Arm: Block 与毒相关效果。"
+          ]
+        },
+        "en": {
+          "title": "Greatsword sets",
+          "items": [
+            "Crimson Fiend supports a charged-attack and Mortal Blow direction; check drops and its crafting scroll.",
+            "Fugitive Mage is associated with Bellerian in Rephalan Mountains and an Armor Breaker / Heart Piercer direction.",
+            "Chaos-Ridden is associated with Maluca in Nadin Quarry; consider a Brink Guard / Volcanic Wrath approach.",
+            "Devourer of Darkness is associated with Aratra in Skoffa Cave and the Man-Eating Spider scroll; inspect its Ghost Arm: Block and poison effects."
+          ]
+        }
+      },
+      {
+        "id": "section-3",
+        "zh": {
+          "title": "长枪与双持套装",
+          "items": [
+            "Golden：长枪路线，关注 Moonlight、Trance 的联动；可通过掉落或对应卷轴制作。",
+            "Fallen Lord：与 Viper、Embars Ruins 相关，适合查看 Full Moon、Spiral Thrust 的强化。",
+            "Deep Shadow：长枪 Assault、Afterimage Thrust 路线，检查掉落与制作配方。",
+            "Master of Chaos：与 Imperial Palace 的 Ozma 相关，双持 Phantom Sword Dance 路线。2025 年 6 月更新调整过相关装备名称，旧攻略名称可能不同。",
+            "Unending Tragedy（无尽悲剧）：与皇女及剧院相关，侧重刀斧连续命中和闪避后的资源回复。"
+          ]
+        },
+        "en": {
+          "title": "Spear and Dual Wield sets",
+          "items": [
+            "Golden is a Spear option to inspect for Moonlight and Trance synergy; look for drops or its crafting scroll.",
+            "Fallen Lord is associated with Viper in Embars Ruins; inspect Full Moon and Spiral Thrust bonuses.",
+            "Deep Shadow is a Spear option for Assault and Afterimage Thrust; check drops and its recipe.",
+            "Master of Chaos is associated with Ozma in Imperial Palace and a Dual Wield / Phantom Sword Dance direction. The June 2025 update renamed related equipment, so older guides may differ.",
+            "Unending Tragedy is associated with the princess and theatre, supporting Dual Wield hits and resource recovery around dodging."
+          ]
+        }
+      },
+      {
+        "id": "section-4",
+        "zh": {
+          "title": "挑战奖励与周年装备",
+          "items": [
+            "Radiant Darkness：2025 年 6 月调整后的效果包含 Brink Guard、Brink Dodge 的限时增伤；依靠对应防御动作触发，适合已经熟悉敌人节奏后再配装。",
+            "Defier：调整后的效果包含 Brink Dodge 回复生命，以及 Potent Blow 命中后的叠层增伤。Netherworld Abyss：关注反击补充 Spirit、蓄力与 Spirit 技能削韧相关效果。具体激活档位以物品栏为准。",
+            "以上挑战奖励装备通过终极挑战代币兑换取得。不要与 Berserker’s Bloodshed 内商店出售的 Stalker、Doom、Wrath 混淆，后者使用挑战专属随机词条。",
+            "Immortal Fury：2026 年周年装备，拥有本体的玩家完成第 2 个任务后，在裂隙邮箱领取；包含一套防具与三种武器。官方公告未列出完整套装数值，本文不据外观推断强度。"
+          ]
+        },
+        "en": {
+          "title": "Challenge rewards and anniversary gear",
+          "items": [
+            "Radiant Darkness received timed damage bonuses tied to Brink Guard and Brink Dodge in June 2025. It suits players who can trigger those defensive actions consistently.",
+            "Defier includes Brink Dodge healing and stacking Potent Blow damage effects. Netherworld Abyss has counterattack Spirit recovery, charged-attack and Spirit-skill stamina-damage effects. Check the inventory for active piece thresholds.",
+            "These reward sets use Ultimate Challenge tokens. Stalker, Doom and Wrath sold inside Berserker’s Bloodshed instead use challenge-specific random options.",
+            "Immortal Fury is the 2026 anniversary gift for main-game owners: collect it from the Crevice mailbox after Mission 2. It contains armor and all three weapon types. The announcement does not provide a complete numerical bonus table."
+          ]
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "装备获取与套装用途 / Gear acquisition and roles",
+        "url": "https://gamingbolt.com/the-first-berserker-khazan-9-extremely-powerful-gear-sets-and-how-to-get-them"
+      },
+      {
+        "title": "June 26 balance update",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      },
+      {
+        "title": "Ultimate Challenge rewards",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/516335980136890438"
+      },
+      {
+        "title": "2026 anniversary gift",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/515238799139144921"
+      }
+    ]
+  },
+  {
+    "id": "gear-upgrade",
+    "route": "equipment/upgrade/",
+    "zh": {
+      "title": "装备养成与预设"
+    },
+    "en": {
+      "title": "Equipment progression and presets"
+    },
+    "sections": [
+      {
+        "id": "section-1",
+        "zh": {
+          "title": "一周目的更换顺序",
+          "items": [
+            "优先检查武器的实际攻击、等级和适合自己的动作，再比较稀有度。防具同时检查重量带来的负担，避免为套装效果牺牲已经适应的闪避节奏。",
+            "初期不必反复刷齐整套。到手的新装备先与当前装备比较，保留有用的抗性饰品；确认无用后再分解，给后续制作准备材料。"
+          ]
+        },
+        "en": {
+          "title": "First-playthrough priorities",
+          "items": [
+            "Compare weapon attack, level and usable moves before rarity alone. Check armor weight and its effect on your preferred dodge rhythm.",
+            "Do not stop early progression just to complete a set. Compare new drops, retain useful resistance accessories, and dismantle unwanted equipment for crafting materials."
+          ]
+        },
+        "images": [
+          {
+            "src": "/kazan/images/img_662.jpg",
+            "sourcePage": 78,
+            "sourceBlock": 3,
+            "zh": "养成菜单说明：区分装备改造与继承。",
+            "en": "Upgrade tutorial: distinguish equipment augmentation from inheritance."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "zh": {
+          "title": "铁匠与外观解锁",
+          "items": [
+            "推进 Blacksmith’s Heirloom 相关任务以开放铁匠功能；制作时同时检查配方、材料和成品预览。",
+            "2025 年 5 月更新后，完成 Blacksmith’s Heirloom 即可在一周目开放 Change Appearance。把幻化限定为二周目的旧说明已经过时。",
+            "2025 年 6 月更新后，主线首领会必定掉落套装制作材料。这不等于必定掉落指定部位的成品装备。"
+          ]
+        },
+        "en": {
+          "title": "Blacksmith and appearance",
+          "items": [
+            "Progress through Blacksmith’s Heirloom to access the blacksmith. Check the recipe, materials and resulting item before crafting.",
+            "Since the May 2025 update, Change Appearance can unlock during the first playthrough through Blacksmith’s Heirloom. Older NG+-only instructions are outdated.",
+            "The June 2025 update guarantees set-crafting materials from main bosses. That does not guarantee a particular finished armor piece."
+          ]
+        }
+      },
+      {
+        "id": "section-3",
+        "zh": {
+          "title": "强化时注意材料品质",
+          "items": [
+            "2025 年 6 月 26 日更新后的 Augment 等级取决于材料装备品质：Uncommon +1、Rare +2、Unique +3、Epic +4、Legendary +5。不要把目标装备的品质当作这项规则的判断依据。",
+            "先确认要长期使用的装备，再投入高品质材料。不同锻造菜单消耗与作用不同，以上数值不表示所有升级功能共用同一公式。"
+          ]
+        },
+        "en": {
+          "title": "Material quality matters",
+          "items": [
+            "After the June 26, 2025 update, Augment levels depend on material gear quality: Uncommon +1, Rare +2, Unique +3, Epic +4, Legendary +5. This rule refers to the material, not the target item.",
+            "Commit valuable materials after choosing equipment you intend to keep. Other smithing functions have separate costs and rules; this is not a universal upgrade formula."
+          ]
+        }
+      },
+      {
+        "id": "section-4",
+        "zh": {
+          "title": "保存配装",
+          "items": [
+            "技能预设和装备预设分别最多保存 10 组；装备预设可以关联技能预设，便于同时切换武器、装备与技能配置。",
+            "建议保留日常探索、当前首领、抗性应对三类配置。使用技能期间不能切换预设；终极挑战中不能使用装备预设。"
+          ]
+        },
+        "en": {
+          "title": "Save loadouts",
+          "items": [
+            "Save up to ten skill presets and ten gear presets. A gear preset can reference a skill preset to coordinate equipment and skills.",
+            "Keep exploration, current-boss and resistance loadouts. Presets cannot be switched while using a skill, and gear presets are unavailable in Ultimate Challenge."
+          ]
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "May 15 update",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/516335980136890438"
+      },
+      {
+        "title": "June 16 systems update",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/655950199566369724"
+      },
+      {
+        "title": "June 26 augment rules",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      },
+      {
+        "title": "Progression advice",
+        "url": "https://bai-gaming.com/the-first-berserker-khazan-essential-tips/"
+      }
+    ]
+  },
+  {
+    "id": "skills",
+    "route": "systems/skills/",
+    "zh": {
+      "title": "技能选择与重置"
+    },
+    "en": {
+      "title": "Skill selection and resets"
+    },
+    "sections": [
+      {
+        "id": "section-1",
+        "zh": {
+          "title": "如何阅读技能树",
+          "items": [
+            "先区分武器专属技能与通用能力。树上的前置连线、等级要求、技能点与装备附加效果需要分别检查；装备提供的招式不代表所有角色都已永久学会。",
+            "以下以英文技能名对照菜单，说明学习方向，不把后期配装截图当作开局就能照抄的技能树。解锁技能后，百科中可以查看对应连招指南。"
+          ]
+        },
+        "en": {
+          "title": "Reading the trees",
+          "items": [
+            "Distinguish weapon-specific skills from shared abilities. Check prerequisite links, level requirements, points and gear-granted effects separately; a move supplied by equipment is not necessarily permanently learned.",
+            "Use the English skill names to match the menu. These are progression directions rather than a late-game tree to copy at the start. The encyclopedia adds combo guidance as weapon skills unlock."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/skill-progression/",
+            "zh": "技能前置与熟练度进度",
+            "en": "Prerequisites and Mastery progression"
+          }
+        ],
+        "images": [
+          {
+            "src": "/kazan/images/img_095.jpg",
+            "sourcePage": 10,
+            "sourceBlock": 11,
+            "zh": "技能树：选择技能并查看右侧说明；重置后可重新分配。",
+            "en": "Skill tree: select a skill and inspect its description before reallocating."
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "zh": {
+          "title": "刀斧／双持：短连段与追击",
+          "items": [
+            "先练习普通连段结束后及时停手，再考虑增加段数的 Blazing Assault；后续按需要查看 Whirlwind 与追击方向。",
+            "跑图中用接近目标的动作压缩距离；首领战先观察反击窗口，不要因为攻击快就默认一套连段能安全打完。优先点能稳定使用的动作，再补伤害。"
+          ]
+        },
+        "en": {
+          "title": "Dual Wield: short strings and pursuit",
+          "items": [
+            "Practise stopping a basic string safely before extending it with Blazing Assault. Inspect Whirlwind and pursuit options as your available points grow.",
+            "Use gap-closing moves during exploration. Against bosses, learn retaliation windows before committing to long strings; invest first in moves you can land consistently."
+          ]
+        }
+      },
+      {
+        "id": "section-3",
+        "zh": {
+          "title": "巨剑：蓄力与防御反击",
+          "items": [
+            "Savage Momentum、Mortal Blow 是值得先熟悉的蓄力方向。学习敌人出招后，再加入 Armor Breaker、Heart Piercer 等防御后续动作。",
+            "Combat Cadence 与 Savage Momentum 的衔接涉及持续按键；先在安全位置练习输入。不要在每个短破绽都尝试完整蓄力。"
+          ]
+        },
+        "en": {
+          "title": "Greatsword: charging and guard follow-ups",
+          "items": [
+            "Learn the charged-attack direction through Savage Momentum and Mortal Blow. Add Armor Breaker and Heart Piercer once you can read the enemy attacks that create their openings.",
+            "Practise the held input connecting Combat Cadence and Savage Momentum in a safe area. A short opening does not necessarily allow a full charge."
+          ]
+        }
+      },
+      {
+        "id": "section-4",
+        "zh": {
+          "title": "长枪：Moonlight 与 Spirit 循环",
+          "items": [
+            "先熟悉 Moonlight，再根据已解锁节点考虑 Full Moon、Trance 等联动。保持距离，确认攻击实际命中，再决定是否接 Spirit 技能。",
+            "2025 年 5 月 27 日调整后，Trance: Spirit 的后续 Spirit 技能减耗要求 Trance 命中；其消耗返还持续 8 秒且不叠加。不能按旧攻略把它理解为无条件连续减耗。",
+            "Assault: Descent 对一次精疲力竭目标只能使用一次；动作期间暂停该目标的精疲力竭计时。用它延长有效输出窗口，不要计划对同一次倒地反复使用。"
+          ]
+        },
+        "en": {
+          "title": "Spear: Moonlight and Spirit flow",
+          "items": [
+            "Learn Moonlight first, then consider Full Moon and Trance as their prerequisites become available. Confirm a hit before committing Spirit to a follow-up.",
+            "Since May 27, 2025, Trance: Spirit requires Trance to hit before the follow-up Spirit-skill cost reduction applies. Its refund runs over eight seconds and does not stack.",
+            "Assault: Descent can be used once per exhausted target; the exhaustion timer pauses during the move. Do not plan repeated uses during the same exhaustion."
+          ]
+        }
+      },
+      {
+        "id": "section-5",
+        "zh": {
+          "title": "重置、洗点和预设",
+          "items": [
+            "技能点可以重置，因此可以先试招，再保存适合自己的方案；角色属性重分配与技能重置是不同功能，不应混为一谈。",
+            "预设最多保存 10 组。先记录一套能稳定打赢当前任务的技能，再试另一把武器；保留回退方案，比在首领门口一次改动所有节点更容易判断效果。",
+            "Hardcore 对属性调整、幻影形态与召唤有额外限制，常规难度的养成建议不能全部照搬。"
+          ]
+        },
+        "en": {
+          "title": "Resets and presets",
+          "items": [
+            "Skill points can be reset, so test moves before keeping a setup. Attribute redistribution is a separate system from resetting weapon skills.",
+            "Store up to ten skill presets. Save a reliable configuration before testing another weapon so the effects of each change remain clear.",
+            "Hardcore restricts attribute changes, Phantom Form and assistance. Normal progression advice does not apply unchanged."
+          ]
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "June systems and presets",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/655950199566369724"
+      },
+      {
+        "title": "May 27 skill balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/516336075474470254"
+      },
+      {
+        "title": "Skill reset overview",
+        "url": "https://www.digitaltrends.com/gaming/the-first-berserker-khazan-best-skills/"
+      }
+    ]
+  },
+  {
+    "id": "builds",
+    "route": "systems/builds/",
+    "zh": {
+      "title": "三种武器的配装思路"
+    },
+    "en": {
+      "title": "Build directions for all three weapons"
+    },
+    "sections": [
+      {
+        "id": "specific-builds",
+        "zh": {
+          "title": "打开具体配装与操作方案",
+          "items": [
+            "每套方案列装备目标、学习顺序、建议技能等级和不同破绽下的操作。"
+          ]
+        },
+        "en": {
+          "title": "Open a practical setup",
+          "items": [
+            "Each setup covers equipment, learning order, target ranks and sequences for different openings."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/dual-wield/",
+            "zh": "刀斧：堕落守护神",
+            "en": "Dual Wield: Fallen Guardian"
+          },
+          {
+            "href": "systems/builds/greatsword/",
+            "zh": "巨剑：猩红恶鬼",
+            "en": "Greatsword: Crimson Fiend"
+          },
+          {
+            "href": "systems/builds/spear/",
+            "zh": "长枪：没落君主",
+            "en": "Spear: Fallen Lord"
+          }
+        ]
+      },
+      {
+        "id": "section-1",
+        "zh": {
+          "title": "配装前先确定问题",
+          "items": [
+            "先判断当前失败原因：伤害不足、精力不够、防御不熟，还是贪刀。属性、套装、技能分别解决不同问题，不宜直接照抄只展示面板伤害的方案。",
+            "以下是本站整理的实用方向，不是唯一最优解。属性加点按武器当前补正与实际生存需求调整；本文不编造适用于所有等级的固定点数。"
+          ]
+        },
+        "en": {
+          "title": "Diagnose the problem first",
+          "items": [
+            "Identify whether the issue is damage, stamina, defensive timing or overcommitting. Stats, gear and skills solve different problems.",
+            "These are practical editorial build directions, not a single optimal answer. Allocate attributes using your current weapon scaling and survival needs; there is no invented universal level-by-level point plan."
+          ]
+        }
+      },
+      {
+        "id": "section-2",
+        "zh": {
+          "title": "双持：先稳定输出，再延长连段",
+          "items": [
+            "前期：以短连段和及时回避为主，把技能点投入实际能命中的动作，保留回避所需精力。",
+            "中期：选定一项主要 Spirit 输出技能，再找相应套装，例如 Phantom Sword Dance 对应 Master of Chaos 方向，Crimson Tempest 对应 Unending Tragedy 方向。",
+            "后期：围绕主要技能配置套装与词条，测试完整连段后的精力余量；如果每次都在收招时挨打，先缩短连段而非继续堆伤害。"
+          ]
+        },
+        "en": {
+          "title": "Dual Wield: reliability before longer strings",
+          "items": [
+            "Early: use short strings and leave stamina for evasive movement. Invest in moves you can reliably connect.",
+            "Midgame: choose a main Spirit damage skill before its set, such as Master of Chaos for a Phantom Sword Dance direction or Unending Tragedy for Crimson Tempest.",
+            "Later: match gear options to the chosen skill, then test stamina after a full string. Shorten unsafe strings before adding more damage."
+          ]
+        }
+      },
+      {
+        "id": "section-3",
+        "zh": {
+          "title": "巨剑：每次出手都要有窗口",
+          "items": [
+            "前期：熟悉蓄力长度和收招，短破绽用较短攻击，长破绽再考虑 Savage Momentum、Mortal Blow。",
+            "中期：若偏向蓄力，查看 Crimson Fiend；若已经能稳定防御反击，查看 Fugitive Mage 的 Armor Breaker、Heart Piercer 方向。",
+            "后期：把首领破绽、削韧与爆发串起来。不要把示范连招当作必须每次完整执行的固定程序；被打断时应优先恢复精力和站位。"
+          ]
+        },
+        "en": {
+          "title": "Greatsword: earn the opening",
+          "items": [
+            "Early: learn charge length and recovery. Use shorter attacks in small openings, reserving Savage Momentum or Mortal Blow for longer ones.",
+            "Midgame: inspect Crimson Fiend for charged attacks, or Fugitive Mage for an Armor Breaker / Heart Piercer direction after consistent guard timings.",
+            "Later: coordinate openings, stamina damage and burst. A demonstration combo is not a mandatory sequence; recover stamina and positioning when interrupted."
+          ]
+        }
+      },
+      {
+        "id": "section-4",
+        "zh": {
+          "title": "长枪：确认命中再投入资源",
+          "items": [
+            "前期：利用攻击距离保持安全，先练 Moonlight，不要为了追击越过自己的有效距离。",
+            "中期：按技能选择 Golden、Fallen Lord 或 Deep Shadow。先读清套装强化的具体技能，再决定是否更换已经顺手的攻击循环。",
+            "后期：围绕命中后的 Trance 与 Spirit 后续技形成循环，保留应对失误的资源；使用当前版本规则，不依赖旧版无限连用的描述。"
+          ]
+        },
+        "en": {
+          "title": "Spear: confirm hits before spending resources",
+          "items": [
+            "Early: use reach to maintain spacing and learn Moonlight without chasing beyond useful range.",
+            "Midgame: compare Golden, Fallen Lord and Deep Shadow against your chosen skills before changing an established rotation.",
+            "Later: build around a confirmed Trance hit and Spirit follow-ups, retaining resources for recovery. Follow current balance rules rather than obsolete descriptions of repeated chaining."
+          ]
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set roles and acquisition",
+        "url": "https://gamingbolt.com/the-first-berserker-khazan-9-extremely-powerful-gear-sets-and-how-to-get-them"
+      },
+      {
+        "title": "Current Spear balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/516336075474470254"
+      }
+    ]
+  },
+  {
+    "id": "new-game-plus",
+    "route": "systems/new-game-plus/",
+    "zh": {
+      "title": "新游戏＋：进入前检查与继承"
+    },
+    "en": {
+      "title": "New Game+: preparation and carryover"
+    },
+    "sections": [
+      {
+        "id": "section-1",
+        "zh": {
+          "title": "先清理，再开始下一周目",
+          "items": [
+            "通关后可以先回到裂隙继续处理原周目的内容。想补任务、收集或成就时，先完成清理，再与 Blade Phantom 交互开始新游戏＋。",
+            "进入下一周目会重开任务进度。不要把“通关后还能选任务”理解为进入 NG+ 后仍能随时回到上一周目的任务状态。"
+          ]
+        },
+        "en": {
+          "title": "Clean up before starting again",
+          "items": [
+            "After the ending, return to the Crevice to finish remaining content in the current journey. When ready, interact with the Blade Phantom to begin New Game+.",
+            "Starting the next journey resets mission progression. Post-ending mission access does not mean the previous journey remains available after entering NG+."
+          ]
+        }
+      },
+      {
+        "id": "section-2",
+        "zh": {
+          "title": "继承与重置",
+          "items": [
+            "角色养成、技能和已持有装备可以带入下一周目；任务流程需要重新推进。",
+            "进入前整理装备、保留抗性饰品，记录还想完成的收集与成就。对与特定任务阶段有关的目标，最好在当前周目确认是否已经达成。",
+            "任务进度、任务解锁与角色成长是不同层面的数据。本文没有逐项验证所有钥匙和任务物品，不把“所有物品继承”当作无例外承诺。"
+          ]
+        },
+        "en": {
+          "title": "Carryover and resets",
+          "items": [
+            "Character progression, skills and held equipment carry into the next journey, while mission progression restarts.",
+            "Sort equipment, retain useful resistance accessories and list unfinished collectibles or achievements before proceeding. Check mission-stage objectives while the current journey remains accessible.",
+            "Mission unlocks and character growth are different kinds of progress. This guide has not verified every key and quest item and does not promise exception-free carryover of all items."
+          ]
+        }
+      },
+      {
+        "id": "section-3",
+        "zh": {
+          "title": "不要混淆三个入口",
+          "items": [
+            "新游戏＋：在养成基础上重新推进任务。",
+            "终极挑战：通关一次后由标题画面进入，使用模式提供的装备与规则；不是继续推进下一周目的地图。",
+            "Hardcore：完成 Expert 旅程后从主菜单 New Game 选择的独立规则。不能自由改难度，不能使用幻影形态和 Spirit of Advocacy，也不能让 Oksana 调整属性；普通 NG+ 配装经验需要重新评估。"
+          ]
+        },
+        "en": {
+          "title": "Three different options",
+          "items": [
+            "New Game+ restarts missions with carried character progression.",
+            "Ultimate Challenge opens from the title screen after completing the game once, using mode-provided equipment and separate rules.",
+            "Hardcore unlocks after an Expert journey and is selected through New Game on the main menu. It restricts difficulty changes, Phantom Form, Spirit of Advocacy and Oksana attribute changes. Reassess normal NG+ advice accordingly."
+          ]
+        }
+      },
+      {
+        "id": "section-4",
+        "zh": {
+          "title": "进入前检查单",
+          "items": [
+            "处理当前已经解锁的主支线与收集；把缺项记入自己的清单。",
+            "保存当前好用的装备和技能预设，整理仓库与制作材料。",
+            "准备好重新推进任务后，再确认开始新游戏＋；只是想试首领连战时，使用终极挑战入口。"
+          ]
+        },
+        "en": {
+          "title": "Before you confirm",
+          "items": [
+            "Finish currently accessible missions and collectibles, recording anything still missing.",
+            "Save reliable gear and skill presets, then organize storage and crafting materials.",
+            "Confirm NG+ when ready to replay mission progression. Choose Ultimate Challenge if your immediate goal is a separate boss sequence."
+          ]
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ending and next journey",
+        "url": "https://www.neoseeker.com/the-first-berserker-khazan/Imperial_Palace"
+      },
+      {
+        "title": "Post-story cleanup",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-trophy-guide-roadmap/"
+      },
+      {
+        "title": "Hardcore rules",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/655950199566369724"
+      },
+      {
+        "title": "Challenge unlock",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/516335980136890438"
+      }
+    ]
+  },
+  {
+    "id": "ultimate-challenge",
+    "route": "systems/ultimate-challenge/",
+    "zh": {
+      "title": "终极挑战：两种模式与奖励"
+    },
+    "en": {
+      "title": "Ultimate Challenge: modes and rewards"
+    },
+    "sections": [
+      {
+        "id": "section-1",
+        "zh": {
+          "title": "解锁与共同规则",
+          "items": [
+            "完成游戏一次后，从标题画面进入 Ultimate Challenge。这里使用模式提供的等级、技能与装备，不直接沿用战役背包；无法召唤幻影同伴，也不能在这里获取 Mastery 成长。",
+            "挑战中不使用战役装备预设。先查看当前提供的技能和道具，再开始战斗，不要预期原来的套装循环仍然成立。"
+          ]
+        },
+        "en": {
+          "title": "Unlock and shared rules",
+          "items": [
+            "Finish the game once, then enter Ultimate Challenge from the title screen. It uses mode-provided progression and equipment, with no Phantom companions or Mastery gain.",
+            "Campaign gear presets are unavailable here. Inspect the supplied skills and items before assuming a campaign build still works."
+          ]
+        }
+      },
+      {
+        "id": "section-2",
+        "zh": {
+          "title": "Great General’s Crucible：分组连战",
+          "items": [
+            "按顺序解锁五组：Tides of Ruin、Earthshaking Roar、Unyielding Foes、Corruptors、Nightmare of Chaos。提供固定的等级、装备与资源，重点是用同一套条件稳定完成整组。",
+            "组内打败首领会恢复生命、清除异常，但 Netherworld Energy 治疗次数不会在首领之间补充；不要因为血量恢复就把治疗随意用完。",
+            "移动到下一区域时增益会移除。击败首领后约 15 秒进入下一挑战，利用过渡时间确认资源，不要把长时间增益当作跨场必定保留。"
+          ]
+        },
+        "en": {
+          "title": "Great General’s Crucible: grouped fights",
+          "items": [
+            "Unlock five groups in sequence: Tides of Ruin, Earthshaking Roar, Unyielding Foes, Corruptors and Nightmare of Chaos. Levels, gear and resources are provided.",
+            "Defeating a boss restores health and clears ailments, but Netherworld Energy healing uses do not recharge between bosses within the group.",
+            "Buffs are removed on moving to the next area. The next encounter begins after about fifteen seconds, so use the transition to check resources."
+          ]
+        }
+      },
+      {
+        "id": "section-3",
+        "zh": {
+          "title": "Berserker’s Bloodshed：边战斗边成长",
+          "items": [
+            "每次击败首领取得奖励，在书册与商店之间安排属性提升、装备与消耗品，再进入下一战。商店库存会随首领推进更新。",
+            "每场结束后生命恢复、异常清除、Spirit 重设为 50%，Netherworld Energy 补充。与 Crucible 的组内治疗规则不同。",
+            "死亡或主动放弃后没有继续功能，需要从第一个首领重新开始。采购时兼顾下一场生存，避免只为远期收益放弃当前必要的装备。",
+            "商店中的 Stalker、Doom、Wrath 与 Bloodshed 饰品等使用挑战专属随机词条，不按战役常规套装效果运作。"
+          ]
+        },
+        "en": {
+          "title": "Berserker’s Bloodshed: grow during the run",
+          "items": [
+            "Earn rewards after bosses, then use the tome and shop to improve stats, purchase gear and consumables, and proceed. Shop inventory updates with progression.",
+            "After each boss, health returns, ailments clear, Spirit resets to 50% and Netherworld Energy recharges. This differs from Crucible healing rules.",
+            "Death or giving up ends the run without Continue; restart from the first boss. Balance future upgrades against what you need to survive the next encounter.",
+            "Shop items including Stalker, Doom, Wrath and Bloodshed accessories use challenge-specific random options rather than ordinary campaign set bonuses."
+          ]
+        }
+      },
+      {
+        "id": "section-4",
+        "zh": {
+          "title": "兑换奖励与选择建议",
+          "items": [
+            "挑战代币会送到裂隙邮箱，再找 Blade Phantom 兑换。奖励包括 Dual Wield of Reaping、Greatsword of Execution、Spear of Retribution，以及 Bloodshed 对应的 Transmuted 版本。",
+            "防具奖励包括 Defier、Radiant Darkness、Netherworld Abyss。先查看套装适合的防御与攻击触发条件，再决定兑换方向。",
+            "想集中练某组首领，先试 Crucible；想体验逐场采购和成长规划，再试 Bloodshed。两种模式都需要先适应模式装备，而非单纯比较战役面板。"
+          ]
+        },
+        "en": {
+          "title": "Rewards and a starting recommendation",
+          "items": [
+            "Tokens are delivered to the Crevice mailbox and exchanged with the Blade Phantom. Weapons include Dual Wield of Reaping, Greatsword of Execution and Spear of Retribution, with Transmuted versions tied to Bloodshed.",
+            "Armor rewards include Defier, Radiant Darkness and Netherworld Abyss. Inspect their defensive and offensive triggers before choosing a reward.",
+            "Start with Crucible to practise a boss group, or Bloodshed for between-fight purchases and growth decisions. Learn the supplied equipment before comparing campaign damage numbers."
+          ]
+        }
+      }
+    ],
+    "sources": [
+      {
+        "title": "Official May 15 mode rules and rewards",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/516335980136890438"
+      },
+      {
+        "title": "June preset restrictions",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/655950199566369724"
+      },
+      {
+        "title": "June reward-set balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      }
+    ]
+  },
+  {
+    "id": "achievement-roadmap",
+    "route": "achievements/roadmap/",
+    "zh": {
+      "title": "全成就路线与易漏条件"
+    },
+    "en": {
+      "title": "Achievement roadmap and missable conditions"
+    },
+    "sections": [
+      {
+        "id": "before-start",
+        "zh": {
+          "title": "开局：先决定本周目的目标",
+          "items": [
+            "全成就清单有 57 项；PlayStation 另有白金奖杯。先规划难度、助力召唤和结局，再随主线完成养成与支线，避免最后才发现某项条件必须重新跑一周目。",
+            "想把高难通关与无助力合并：从开局选择 Expert，并在本周目保持难度、不召唤金色助力之魂。这条路线战斗压力较大，适合愿意独立练习首领的玩家。",
+            "想分开完成：先用适合自己的难度熟悉流程；另一个周目再安排 Expert 或无助力目标。2025 年 4 月 22 日后，“独当一面”按当前周目判断，之前周目召唤过不妨碍后续周目完成。",
+            "通关普通难度与 Expert 的成就请分别核对平台是否解锁，本文不保证一场结局必然同时跳两项。不要为了补普通通关成就，在尚未完成 Expert 目标时降难度。"
+          ]
+        },
+        "en": {
+          "title": "At the start: choose this journey’s goals",
+          "items": [
+            "There are 57 achievements, plus a separate PlayStation platinum trophy. Plan difficulty, assistance and the ending before working through mission and progression objectives.",
+            "To combine the difficult journey with no assistance, start on Expert, retain it and avoid golden Spirits of Advocacy for this journey. This is the more demanding combat route.",
+            "For separate goals, learn the campaign on a comfortable difficulty and assign Expert or no-assistance completion to another journey. Since April 22, 2025, Standing Alone checks the current playthrough, so earlier summons do not invalidate a later clean journey.",
+            "Check whether your platform unlocked both ordinary and Expert completion achievements. Do not assume both always unlock together, or lower difficulty before finishing your Expert goal."
+          ]
+        },
+        "links": [
+          {
+            "href": "achievements/ending/",
+            "zh": "结局与通关挑战清单",
+            "en": "Ending and challenge checklist"
+          }
+        ]
+      },
+      {
+        "id": "early-game",
+        "zh": {
+          "title": "前期：把一次性操作顺手完成",
+          "items": [
+            "前两项任务中完成普通战斗教学：使用消耗品、学习技能、标枪、致命攻击和高处落斩；有死亡记录后再取回拉克里玛，不必为成就反复主动送死。",
+            "开放裂隙后填满装备栏，并分别完成商人买卖、奥克萨娜提取拉克里玛等操作。装备分解和提取拉克里玛是不同功能，不要只做其中一种。",
+            "“铁匠的传家宝”后检查制作和分解；“寂静神庙”后检查改特性与装备强化。拿到卷轴不等于已经制作过装备。",
+            "完成“斯顿雪域的斗鬼”后，记得实际装备鬼神能力。正在做无助力通关时，注意区分可装备的鬼神能力与首领门口的金色助力召唤。"
+          ]
+        },
+        "en": {
+          "title": "Early game: clear simple actions naturally",
+          "items": [
+            "Complete combat tutorials for consumables, skills, the Javelin, Brutal Attacks and drop attacks. Recover lost Lacrima after a natural death rather than repeatedly dying just for the objective.",
+            "Once the Crevice opens, fill equipment slots, buy and sell with the merchant and extract Lacrima through Oksana. Extraction and dismantling are separate actions.",
+            "After Blacksmith’s Heirloom, check crafting and dismantling. After Silent Temple, check trait changes and augmentation. Owning a scroll is not the same as crafting equipment.",
+            "After Stormpass’ Phantom of Combat, actually equip a phantom ability. Distinguish that ability from the golden assistance summon outside a boss arena."
+          ]
+        },
+        "links": [
+          {
+            "href": "achievements/combat/",
+            "zh": "战斗与养成操作清单",
+            "en": "Combat and progression actions"
+          },
+          {
+            "href": "equipment/upgrade/",
+            "zh": "装备养成步骤",
+            "en": "Equipment progression"
+          }
+        ]
+      },
+      {
+        "id": "during-story",
+        "zh": {
+          "title": "主线途中：同步清支线和收集",
+          "items": [
+            "每次主线结束回裂隙，与出现新对话的人物交谈，检查新增支线。当前攻略按 16 项主线、24 项支线排列，不要只推进主线旗帜。",
+            "鬼石 100 块、罐子精灵 44 只、奥兹玛剧情文书 15 份是不同目标。先按任务对照位置，未完成的留在个人清单，重复刷随机装备不会补齐这些收集。",
+            "吟游诗人迪戈尔需要五处会面：神庙、洞穴、山脉、剧院、皇都。路过时完成对话，回人物页逐项核对。",
+            "有些支线由其他支线或圆盘碎片解锁。优先检查“超越者之剑”“卡隆的锁链”“誓约”；准备全成就时仍需清完全部支线。"
+          ]
+        },
+        "en": {
+          "title": "During the story: pair missions with collection",
+          "items": [
+            "After main missions, return to the Crevice and check new NPC dialogue and bonus missions. The guide covers sixteen main missions and twenty-four bonus missions.",
+            "The targets are 100 Soulstones, 44 Jarlings and fifteen Ozma story records. Track them by mission rather than hoping repeated gear farming will complete collection objectives.",
+            "Meet Digor in the temple, cave, mountains, theatre and capital. Complete his dialogue and use his character page to check the encounters.",
+            "Some bonus missions require earlier missions or disc fragments. Check Transcendental Sword, Charon’s Chains and The Vow before the finale; full achievement completion still requires every bonus mission."
+          ]
+        },
+        "links": [
+          {
+            "href": "side-quests/",
+            "zh": "24 项支线任务",
+            "en": "All 24 bonus missions"
+          },
+          {
+            "href": "collectibles/ozma-records/",
+            "zh": "15 份金色剧情文书",
+            "en": "All fifteen golden story records"
+          },
+          {
+            "href": "characters/bard/",
+            "zh": "迪戈尔的会面位置",
+            "en": "Digor encounters"
+          }
+        ]
+      },
+      {
+        "id": "palace-choice",
+        "zh": {
+          "title": "皇宫对话前：结局检查",
+          "items": [
+            "在“混沌之主”皇宫流程中，与达芙罗娜作结局选择前，先核对 15 份金色剧情文书和关联支线。特别检查“为何要抛弃我们”的《黑月升起之日》两份，以及“超越者之剑”的隐藏区域。",
+            "想达成 THE FIRST BERSERKER 时，选择表达“必须知道真相”的对话选项；以选项含义为准，不只记左右或第几个位置。若没有出现该选项，先停下核对条件。",
+            "结局对话与打完首领后补收集是两回事。不要把本周目已经选择过的结局分支，当作能靠重打最终首领随意更改。",
+            "鬼石和罐子精灵用于各自的收集成就；不要将找齐它们写成真结局的额外前提。"
+          ]
+        },
+        "en": {
+          "title": "Before the palace dialogue: verify the ending",
+          "items": [
+            "Before Daphrona’s ending choice in the Imperial Palace, verify all fifteen golden records and related bonus missions. Check both Black Moon records in Why Have You Forsaken Us and the hidden area in Transcendental Sword.",
+            "For THE FIRST BERSERKER, choose the response meaning that you must know the truth. Follow the wording rather than an option position. If it is unavailable, stop and check requirements.",
+            "Collecting missing items after a boss is different from choosing an ending branch. Do not assume replaying the final boss freely changes a choice already made in this journey.",
+            "Soulstones and Jarlings have their own achievements; collecting them all is not an additional true-ending requirement."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/lord-of-chaos/#route-279",
+            "zh": "皇宫达芙罗娜对话位置",
+            "en": "Daphrona’s palace dialogue"
+          },
+          {
+            "href": "collectibles/ozma-records/",
+            "zh": "金色剧情文书核对表",
+            "en": "Golden record checklist"
+          }
+        ]
+      },
+      {
+        "id": "after-ending",
+        "zh": {
+          "title": "通关后：先补缺项，再开新游戏＋",
+          "items": [
+            "先查看平台实际未解锁的成就，再分成缺任务、缺收集、缺操作和需要另一周目的条件；不要因为已经通关就默认全部任务成就都已触发。",
+            "当前周目仍可清理的收集与支线先完成，再开始新游戏＋。“新的篇章”在开启下一旅程时完成，进入后任务进度会重开。",
+            "若本周目已经召唤过助力，把“独当一面”安排到下一周目，并从该周目开始全程不召唤。已解锁的成就不要求为了这一项另开角色。",
+            "普通成就清单不要求完成终极挑战或 Hardcore。想继续挑战可另作目标，不要把这些模式混进基础 57 项的必做路线。"
+          ]
+        },
+        "en": {
+          "title": "After the ending: cleanup before NG+",
+          "items": [
+            "Inspect the platform’s remaining achievements and separate missing missions, pickups, actions and goals requiring another journey.",
+            "Finish accessible collection and bonus-mission cleanup before starting New Game+. A New Path is tied to beginning the next journey, which restarts mission progression.",
+            "If you used assistance this journey, assign Standing Alone to the next one and avoid all assistance summons there. This objective does not require a new character solely because of an earlier journey’s summons.",
+            "The base achievement list does not require Ultimate Challenge or Hardcore completion. Treat those as additional personal goals."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/new-game-plus/",
+            "zh": "新游戏＋继承与进入前检查",
+            "en": "NG+ carryover and preparation"
+          }
+        ]
+      },
+      {
+        "id": "version-notes",
+        "zh": {
+          "title": "旧攻略中需要避开的要求",
+          "items": [
+            "“召唤过一次就永久失去独当一面，必须新存档”：已过时。官方 2025 年 4 月 22 日改为按当前周目判断。",
+            "“所有支线必须连续做完，中途不能退出游戏”：这是首发时期成就计数故障的应对方式。官方 4 月更新已修复多条件成就重启后计数丢失的问题，不作为当前正常流程的要求。",
+            "“普通难度”一词需要结合版本理解：2025 年 6 月原 Easy 改为 Normal，原 Normal 改为 Expert。准备熟练者之旅时，按当前菜单 Expert 核对，不能照搬旧攻略中的 Normal。"
+          ]
+        },
+        "en": {
+          "title": "Outdated instructions to avoid",
+          "items": [
+            "“A summon permanently blocks Standing Alone and forces a new save” is obsolete: the April 22, 2025 update changed the check to the current journey.",
+            "“Finish all bonus missions in one uninterrupted session” was a workaround for launch-era achievement tracking. The April update fixed lost multi-condition progress after restarting; it is not a current normal-play requirement.",
+            "Difficulty names changed in June 2025: the former Easy became Normal, and the former Normal became Expert. Match the current Expert menu entry when planning The Expert’s Journey."
+          ]
+        },
+        "links": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "Steam achievement list",
+        "url": "https://steamcommunity.com/stats/2680010/achievements/?l=english"
+      },
+      {
+        "title": "April 22: current-journey summon rules and achievement fixes",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543355041065468582"
+      },
+      {
+        "title": "June 16: difficulty renaming",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/655950199566369724"
+      },
+      {
+        "title": "Ending demonstration and collection guide",
+        "url": "https://www.youtube.com/watch?v=OjVqX1Ud6SA"
+      },
+      {
+        "title": "Post-story mission access (older summon advice superseded by official patch)",
+        "url": "https://www.powerpyx.com/the-first-berserker-khazan-trophy-guide-roadmap/"
+      }
+    ]
+  },
+  {
+    "id": "skill-progression",
+    "route": "systems/skill-progression/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "技能成长：熟练度、前置与投入顺序"
+    },
+    "en": {
+      "title": "Skill progression: mastery, prerequisites and priorities"
+    },
+    "sections": [
+      {
+        "id": "unlock",
+        "zh": {
+          "title": "先检查四种条件",
+          "items": [
+            "角色属性等级、熟练等级、技能树前置和套装解锁是不同条件。加属性不一定能解锁技能；拿到套装技能也不代表学会了整条分支。",
+            "在第二章解锁技能树后，先选当前使用的武器。灰色节点先看熟练度和前置连线，再看点数；已学但无法发动时，检查激活条件与技能管理中的启用状态。"
+          ]
+        },
+        "en": {
+          "title": "Four separate checks",
+          "items": [
+            "Character attributes, Mastery, prerequisite nodes and set-granted moves are different requirements. Attribute levels do not necessarily unlock a skill, and a set-granted move does not unlock its whole branch.",
+            "After the Chapter 2 skill-tree introduction, choose your current weapon. For a locked node, check Mastery and prerequisites before points. For an unusable learned skill, check activation conditions and Skill Management."
+          ]
+        },
+        "links": [],
+        "images": [
+          {
+            "src": "/kazan/images/img_094.jpg",
+            "sourcePage": 10,
+            "sourceBlock": 9,
+            "zh": "技能点与技能树解锁提示。",
+            "en": "Skill points and skill-tree unlock tutorial."
+          }
+        ]
+      },
+      {
+        "id": "story-gates",
+        "zh": {
+          "title": "早期熟练度进度参考",
+          "items": [
+            "实战会推进熟练度，但早期上限也随主线开放。遇到成长停滞时先核对任务，不要只在同一处刷敌人。下表是早期主线对应的熟练度进度参考，不是角色属性等级要求。"
+          ],
+          "table": {
+            "headers": [
+              "熟练度进度",
+              "完成主线／首领"
+            ],
+            "rows": [
+              [
+                "12",
+                "试炼雪山／布雷德"
+              ],
+              [
+                "16",
+                "被遗忘的神庙／蝰蛇"
+              ],
+              [
+                "20",
+                "复仇序章／沃尔巴依诺"
+              ],
+              [
+                "24",
+                "可疑的恶臭／阿拉特拉"
+              ],
+              [
+                "28",
+                "叛徒的真面目／朗格斯"
+              ],
+              [
+                "32",
+                "刃指账幕／玛路卡"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Early story progression",
+          "items": [
+            "Combat advances Mastery, while early caps also depend on story progress. If progress stops, check the next main mission. These are Mastery progression milestones, not attribute-level requirements."
+          ],
+          "table": {
+            "headers": [
+              "Mastery milestone",
+              "Main mission / boss"
+            ],
+            "rows": [
+              [
+                "12",
+                "Snow Mountain Trial / Blade Phantom"
+              ],
+              [
+                "16",
+                "Forgotten Temple / Viper"
+              ],
+              [
+                "20",
+                "First Act of Revenge / Volbaino"
+              ],
+              [
+                "24",
+                "Strange Stench / Aratra"
+              ],
+              [
+                "28",
+                "Traitor Revealed / Rangkus"
+              ],
+              [
+                "32",
+                "Veiled Knives / Maluca"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "spend",
+        "zh": {
+          "title": "点数怎样分配",
+          "items": [
+            "先投入能改变操作的基础节点，再提升经常命中的多级主力技能，最后补套装专属与条件增伤。一次只换一组节点，便于判断效果。",
+            "三套方案中的“目标等级”是本站建议的学习目标，不是节点消耗点数，也不包含所有前置成本。不要把角色等级当成能照抄终盘技能树的保证。",
+            "建议先各解锁一项稳定输出和防守后续动作，再考虑第二项昂贵的斗志技能。没有技能位或尚未学会对应操作时，先保留点数。"
+          ]
+        },
+        "en": {
+          "title": "Point allocation",
+          "items": [
+            "Unlock moves that change your available actions, then improve frequently used multi-rank skills, and finally add set-specific or conditional bonuses. Change one group at a time.",
+            "Target ranks in the build pages are editorial learning targets, not skill-point costs or full prerequisite budgets. Character level alone does not guarantee access to an endgame tree.",
+            "Start with a reliable damage option and a defensive follow-up before adding a second expensive Spirit skill. Retain points if a skill slot or practical use is not yet available."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/dual-wield/",
+            "zh": "刀斧实用方案",
+            "en": "Dual Wield setup"
+          },
+          {
+            "href": "systems/builds/greatsword/",
+            "zh": "巨剑实用方案",
+            "en": "Greatsword setup"
+          },
+          {
+            "href": "systems/builds/spear/",
+            "zh": "长枪实用方案",
+            "en": "Spear setup"
+          }
+        ]
+      },
+      {
+        "id": "manage",
+        "zh": {
+          "title": "学会之后还要装备与启用",
+          "items": [
+            "斗志技能学会后，要放入可用输入槽；被动与派生动作也应检查启用状态。相同输入上的动作冲突时，通过技能管理关闭暂时不用的派生，再练习。",
+            "技能可以重置。使用预设保存当前顺手的配置后再试另一把武器，避免把技能重置与需要返本归元道具的属性重置混为一谈。",
+            "百科中的技能连招指南会随解锁开放；2025 年 6 月后可更方便地在技能树与百科间切换。先按游戏内演示确认动作，再使用本站的实战顺序。"
+          ]
+        },
+        "en": {
+          "title": "Equip and activate learned moves",
+          "items": [
+            "Assign learned Spirit skills to available input slots and check the activation state of passives and derived moves. Disable an unwanted conflicting action in Skill Management before practising.",
+            "Skills can be reset. Save a reliable preset before testing a different weapon, and distinguish skill resets from attribute resets using a Primeval Regression Orb.",
+            "The encyclopedia adds combo guidance as skills unlock. The June 2025 updates improved navigation between it and the skill tree; confirm inputs there before applying the practical sequences here."
+          ]
+        },
+        "links": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mastery and skill management",
+        "url": "https://egamersworld.com/blog/the-first-berserker-khazan-skill-guide-KjbwPVwdZQ"
+      },
+      {
+        "title": "Official presets and encyclopedia update",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/655950199566369724"
+      }
+    ]
+  },
+  {
+    "id": "build-dual-wield",
+    "route": "systems/builds/dual-wield/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "刀斧配装：堕落守护神与短连段"
+    },
+    "en": {
+      "title": "Dual Wield build: Fallen Guardian and short strings"
+    },
+    "sections": [
+      {
+        "id": "equipment",
+        "zh": {
+          "title": "装备与适用阶段",
+          "items": [
+            "这是一套以堕落守护神为核心的战役实用方案，适合熟悉刀斧后，从短连段逐步过渡到血雨腥风（Ruthless）。不要求开局就刷齐六件。",
+            "目标装备为堕落守护神的刀斧、头部、上装、护手、下装与鞋，共六件。缺件阶段优先保持当前武器等级与防守所需精力，先用已到手部位。",
+            "制作卷轴在“悲惨之夜”，套装材料守护神的兽蹄关联普拉乌村庄与万卡乌居所。获取路线与件数效果可在下方详页查看。",
+            "饰品先选当前首领需要的抗性，再考虑精力恢复或常用攻击增伤。鬼神可先用凯斯塔；更擅长闪避时可改用康拉德。"
+          ]
+        },
+        "en": {
+          "title": "Equipment and stage",
+          "items": [
+            "This campaign setup uses Fallen Guardian to develop from short strings into Ruthless. It is not an instruction to farm six pieces at the start.",
+            "Target the set’s Dual Wield weapon, headgear, top, gauntlets, pants and footwear. While pieces are missing, prioritize weapon level and stamina for defense.",
+            "The scroll is in Night of Tragedy. Guardian’s Hoof is associated with Phraugh Village and Wankaul’s Quarters. Follow the linked recipe and bonus guide.",
+            "Use the resistance accessories needed for the current boss, then stamina recovery or frequently used attack bonuses. Start with Keshta, or try Conrad for a dodge-focused style."
+          ]
+        },
+        "links": [
+          {
+            "href": "equipment/sets/fallen-guardian/",
+            "zh": "套装与配方位置",
+            "en": "Set and recipe"
+          }
+        ]
+      },
+      {
+        "id": "skills",
+        "zh": {
+          "title": "技能投入顺序",
+          "items": [
+            "先解锁能稳定使用的基础派生，再提高 Howling Blade；有精力余量后才延长 Ruthless。表中等级是推荐目标，多级技能逐级学习，不表示所有前置已自动满足。",
+            "可先给 Outrage、Massive Blow、Deftness、Aggressive Action 四个基础节点各留 1 级预算；额外前置与熟练度仍按当前菜单检查。"
+          ],
+          "table": {
+            "headers": [
+              "顺序",
+              "节点",
+              "建议目标",
+              "用途"
+            ],
+            "rows": [
+              [
+                "1",
+                "Outrage／Massive Blow",
+                "先各 1 级",
+                "接近目标与基础重击派生"
+              ],
+              [
+                "2",
+                "Deftness／Aggressive Action",
+                "先各 1 级",
+                "闪避后的衔接"
+              ],
+              [
+                "3",
+                "Howling Blade",
+                "逐步到 3 级",
+                "主力连段"
+              ],
+              [
+                "4",
+                "Ruthless",
+                "先解锁，再按精力余量升级",
+                "明确长破绽输出"
+              ],
+              [
+                "5",
+                "Howling Blade: Resolve",
+                "开放后学习",
+                "缩短收尾所需的连段"
+              ],
+              [
+                "6",
+                "Phantom: Sword Dance",
+                "有可用槽位后加入",
+                "强化对应攻击循环"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Skill priorities",
+          "items": [
+            "Unlock usable basic derivatives before improving Howling Blade. Extend Ruthless only when stamina permits. Ranks are recommended targets and do not bypass prerequisites.",
+            "An early core can reserve one rank each for Outrage, Massive Blow, Deftness and Aggressive Action; check any extra prerequisites and Mastery gates in the current menu."
+          ],
+          "table": {
+            "headers": [
+              "Order",
+              "Node",
+              "Target",
+              "Purpose"
+            ],
+            "rows": [
+              [
+                "1",
+                "Outrage / Massive Blow",
+                "One rank each first",
+                "Approach and basic Potent derivatives"
+              ],
+              [
+                "2",
+                "Deftness / Aggressive Action",
+                "One rank each first",
+                "Dodge transitions"
+              ],
+              [
+                "3",
+                "Howling Blade",
+                "Work toward rank 3",
+                "Main string"
+              ],
+              [
+                "4",
+                "Ruthless",
+                "Unlock, then upgrade for usable stamina",
+                "Long-opening damage"
+              ],
+              [
+                "5",
+                "Howling Blade: Resolve",
+                "Learn when available",
+                "Earlier string finisher"
+              ],
+              [
+                "6",
+                "Phantom: Sword Dance",
+                "Add with an available slot",
+                "Enhance supported attack sequences"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "sequence",
+        "zh": {
+          "title": "两种实战顺序",
+          "items": [
+            "短破绽：接近或闪避攻击后，只接自己能够安全收尾的 Howling Blade 短段；敌人恢复动作就停手，别把整套重击当作必须执行。",
+            "长破绽：确认敌人失衡或精疲力竭后，再使用 Ruthless 连续输入；留出致命攻击的时间和下一次脱离的精力。",
+            "Phantom: Sword Dance 放入实际使用的技能槽，在有安全起手空间时开启。它不是无条件延长所有攻击的许可。"
+          ]
+        },
+        "en": {
+          "title": "Practical sequences",
+          "items": [
+            "Short opening: approach or use a dodge attack, then a Howling Blade segment you can finish safely. Stop when the enemy recovers instead of forcing a complete string.",
+            "Long opening: confirm stagger or exhaustion before repeated Ruthless inputs. Leave time for the Brutal Attack and stamina to disengage.",
+            "Equip Phantom: Sword Dance in a usable slot and activate it from a safe opening. Its buff does not make every string safe to extend."
+          ]
+        },
+        "links": []
+      },
+      {
+        "id": "mistakes",
+        "zh": {
+          "title": "什么时候该换方案",
+          "items": [
+            "如果总在 Ruthless 收尾前被打断，先缩短连段。堕落守护神的减伤有触发和时限，不保证能硬吃首领所有攻击。",
+            "当实际主力已经换成其他斗志技能时，重新检查套装增伤是否仍作用于它，不能只因六件齐全就一直穿。"
+          ]
+        },
+        "en": {
+          "title": "When to adjust",
+          "items": [
+            "If Ruthless is repeatedly interrupted, shorten it. Fallen Guardian’s damage reduction is conditional and timed, not permission to tank every attack.",
+            "When your main Spirit skill changes, verify that the set still benefits what you use rather than keeping it solely because all pieces match."
+          ]
+        },
+        "links": []
+      },
+      {
+        "id": "testing",
+        "zh": {
+          "title": "保存前做一次检查",
+          "items": [
+            "在同一敌人、同一难度下试短连段和长破绽输出；记录能否安全收招，而不是只看单次最高伤害。",
+            "确认套装激活件数、装备重量、饰品抗性、鬼神能力和技能启用状态，再存为装备预设。终极挑战使用模式装备，不能照搬此战役配装。"
+          ]
+        },
+        "en": {
+          "title": "Before saving the preset",
+          "items": [
+            "Test a short sequence and a long-opening sequence against the same enemy on the same difficulty. Track safe recovery rather than only peak damage.",
+            "Check active set thresholds, weight, resistance accessories, phantom ability and skill activation before saving. Ultimate Challenge provides its own equipment, so this campaign loadout does not transfer directly."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/phantom-abilities/",
+            "zh": "选择鬼神能力",
+            "en": "Choose a phantom"
+          },
+          {
+            "href": "systems/consumables/",
+            "zh": "准备消耗品",
+            "en": "Prepare consumables"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Early Dual Wield practice",
+        "url": "https://www.reddit.com/r/TheFirstBerserker/comments/1jno75f/for_every_new_player_that_seems_to_be_struggling/"
+      },
+      {
+        "title": "Dual Wield progression",
+        "url": "https://www.rpgael.com/the-first-berserker-khazan/dual-wield-build-khazan/"
+      },
+      {
+        "title": "Ruthless and skill roles",
+        "url": "https://www.noobfeed.com/articles/the-first-berserker-khazan-guide-best-dual-wield-build"
+      },
+      {
+        "title": "Official skill balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/516336075474470254"
+      }
+    ]
+  },
+  {
+    "id": "build-greatsword",
+    "route": "systems/builds/greatsword/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "巨剑配装：猩红恶鬼与蓄力衔接"
+    },
+    "en": {
+      "title": "Greatsword build: Crimson Fiend and charged chains"
+    },
+    "sections": [
+      {
+        "id": "equipment",
+        "zh": {
+          "title": "装备与投入方向",
+          "items": [
+            "核心套装为猩红恶鬼，卷轴在隐士山脉流程。目标六件为护卫军巨剑、猩红恶鬼面具、护腕、上装、下装、脚镣。未到该章节时先使用当前等级合适的巨剑，不提前要求终盘套装。",
+            "属性先满足生存和精力需要，再按当前武器实际补正选择输出属性。能够转换武器补正后，不能只根据“巨剑”两个字断言必须把所有输出点加力量。",
+            "饰品优先填补精力与当前首领抗性；鬼神先用凯斯塔练习蓄力循环，习惯正面应对后可试沃弗瑞。"
+          ]
+        },
+        "en": {
+          "title": "Equipment and investment",
+          "items": [
+            "Use Crimson Fiend after reaching its scroll in Hermit’s Mountains: Sentinel’s Greatsword plus the set’s mask, gauntlets, top, pants and footwear. Before that, use a level-appropriate Greatsword.",
+            "Meet survival and stamina needs before investing in the current weapon’s actual scaling. Once scaling conversion is available, the weapon class alone does not mandate Strength for every damage point.",
+            "Use accessories for stamina needs and the boss’s relevant resistance. Start with Keshta, then consider Wulfric for a frontal play style."
+          ]
+        },
+        "links": [
+          {
+            "href": "equipment/sets/crimson-fiend/",
+            "zh": "猩红恶鬼件数效果与路线",
+            "en": "Crimson Fiend bonuses and route"
+          },
+          {
+            "href": "equipment/upgrade/",
+            "zh": "装备养成",
+            "en": "Equipment progression"
+          }
+        ]
+      },
+      {
+        "id": "skills",
+        "zh": {
+          "title": "先形成基础循环，再加斗志技能",
+          "items": [
+            "先学会 Savage Momentum 与 Mortal Blow，再处理蓄力衔接和防守后续。所有可多级技能先测试基础级；不要为堆满一个尚不能命中的技能，放弃必要的前置动作。"
+          ],
+          "table": {
+            "headers": [
+              "顺序",
+              "节点",
+              "建议目标",
+              "学习条件／作用"
+            ],
+            "rows": [
+              [
+                "1",
+                "Savage Momentum",
+                "先解锁",
+                "轻击分支：蓄力起手"
+              ],
+              [
+                "2",
+                "Mortal Blow",
+                "基础级起步",
+                "接在已开放的轻击派生后"
+              ],
+              [
+                "3",
+                "Armor Breaker",
+                "1 级",
+                "防御后轻击双斩；节点资料标示需求 2"
+              ],
+              [
+                "4",
+                "Combat Cadence",
+                "先解锁",
+                "闪避攻击进入蓄力衔接"
+              ],
+              [
+                "5",
+                "Heavy Pressure",
+                "开放后学习",
+                "缩短后续蓄力的压力"
+              ],
+              [
+                "6",
+                "Phantom: Night’s Veil",
+                "有槽位后加入",
+                "在安全窗口准备斗志强化"
+              ],
+              [
+                "7",
+                "Mortal Blow 后续节点",
+                "按可用前置逐步补齐",
+                "先在训练中确认新增动作"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Build the basic loop first",
+          "items": [
+            "Learn Savage Momentum and Mortal Blow before extending charge chains and defensive follow-ups. Test a multi-rank skill at its base rank before investing more into a move you cannot land."
+          ],
+          "table": {
+            "headers": [
+              "Order",
+              "Node",
+              "Target",
+              "Condition / role"
+            ],
+            "rows": [
+              [
+                "1",
+                "Savage Momentum",
+                "Unlock first",
+                "Swift branch: charged opening"
+              ],
+              [
+                "2",
+                "Mortal Blow",
+                "Start at base rank",
+                "Follow an unlocked Swift derivative"
+              ],
+              [
+                "3",
+                "Armor Breaker",
+                "Rank 1",
+                "Guard follow-up double slash; node reference lists requirement 2"
+              ],
+              [
+                "4",
+                "Combat Cadence",
+                "Unlock",
+                "Dodge attack into charge transition"
+              ],
+              [
+                "5",
+                "Heavy Pressure",
+                "Learn when available",
+                "Support later charging transitions"
+              ],
+              [
+                "6",
+                "Phantom: Night’s Veil",
+                "Add with a skill slot",
+                "Prepare the Spirit buff in a safe window"
+              ],
+              [
+                "7",
+                "Mortal Blow follow-ups",
+                "Add as prerequisites open",
+                "Confirm the added move in training"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "sequence",
+        "zh": {
+          "title": "按破绽选择长度",
+          "items": [
+            "最短反攻：挡住已知的最后一击后，用 Armor Breaker，随后立即观察敌人是否恢复行动。",
+            "标准循环：在足够长的破绽中，蓄力轻击 Savage Momentum → Mortal Blow。熟练后再用闪避攻击与 Combat Cadence 进入这条循环。",
+            "长破绽或精疲力竭：先确认能覆盖蓄力和收招，再考虑加入斗志强化与后续重击；敌人离开有效范围时应停手。"
+          ]
+        },
+        "en": {
+          "title": "Match the sequence to the opening",
+          "items": [
+            "Shortest punish: guard a known final hit, use Armor Breaker and reassess whether the enemy has recovered.",
+            "Standard loop: in a sufficient opening, use charged Swift Attack / Savage Momentum into Mortal Blow. Add a dodge attack and Combat Cadence transition once comfortable.",
+            "Long opening or exhaustion: confirm that charging and recovery fit before adding a Spirit buff or further heavy attack. Stop if the target leaves effective range."
+          ]
+        },
+        "links": []
+      },
+      {
+        "id": "conditions",
+        "zh": {
+          "title": "套装条件必须真正触发",
+          "items": [
+            "猩红恶鬼的热血效果与蓄力、绝息斩效果分别有条件。不要把所有档位的面板加成当成始终同时生效。",
+            "如果每次都因蓄力过久受击，先减少循环长度，再检查精力和装备重量。套装恢复不等于无限精力。"
+          ]
+        },
+        "en": {
+          "title": "Respect the set triggers",
+          "items": [
+            "Crimson Fiend’s Vigor, charged-attack and Mortal Blow effects have separate conditions. Do not assume all displayed bonuses are permanently active together.",
+            "If charging repeatedly gets you hit, shorten the loop before adjusting stamina and weight. Set recovery is not infinite stamina."
+          ]
+        },
+        "links": []
+      },
+      {
+        "id": "testing",
+        "zh": {
+          "title": "保存前做一次检查",
+          "items": [
+            "在同一敌人、同一难度下试短连段和长破绽输出；记录能否安全收招，而不是只看单次最高伤害。",
+            "确认套装激活件数、装备重量、饰品抗性、鬼神能力和技能启用状态，再存为装备预设。终极挑战使用模式装备，不能照搬此战役配装。"
+          ]
+        },
+        "en": {
+          "title": "Before saving the preset",
+          "items": [
+            "Test a short sequence and a long-opening sequence against the same enemy on the same difficulty. Track safe recovery rather than only peak damage.",
+            "Check active set thresholds, weight, resistance accessories, phantom ability and skill activation before saving. Ultimate Challenge provides its own equipment, so this campaign loadout does not transfer directly."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/phantom-abilities/",
+            "zh": "选择鬼神能力",
+            "en": "Choose a phantom"
+          },
+          {
+            "href": "systems/consumables/",
+            "zh": "准备消耗品",
+            "en": "Prepare consumables"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Greatsword practical sequences",
+        "url": "https://www.noobfeed.com/articles/the-first-berserker-khazan-guide-best-greatsword-build-and-ways-to-play"
+      },
+      {
+        "title": "Armor Breaker node reference",
+        "url": "https://khazan.fandom.com/wiki/Armor_Breaker"
+      },
+      {
+        "title": "Greatsword branch names",
+        "url": "https://progameguides.com/the-first-berserker-khazan/the-first-berserker-khazan-best-greatsword-build/"
+      },
+      {
+        "title": "Current Crimson Fiend data",
+        "url": "https://khazan.tzrain.wiki/archive/sets/50604?lang=zh"
+      }
+    ]
+  },
+  {
+    "id": "build-spear",
+    "route": "systems/builds/spear/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "长枪配装：没落君主与月光姿态"
+    },
+    "en": {
+      "title": "Spear build: Fallen Lord and Moonlight Stance"
+    },
+    "sections": [
+      {
+        "id": "equipment",
+        "zh": {
+          "title": "武器与套装目标",
+          "items": [
+            "目标为没落君主的长枪加五件防具，共六件。卷轴在寂静神庙，专属材料没落君主的尖爪可从恩巴斯遗迹等对应区域取得。",
+            "尚未凑齐时先保留能稳定命中的月光循环；不要为旧版套装表中的档位特意牺牲精力。当前资料中没落君主的件数效果已与部分首发攻略不同。",
+            "饰品优先精力、回复和当前首领抗性；鬼神可选凯斯塔或康拉德。若主力改为远程标枪，再考虑亚特兰特。"
+          ]
+        },
+        "en": {
+          "title": "Weapon and set target",
+          "items": [
+            "Target the Fallen Lord Spear and five armor pieces. The scroll is in Silent Temple; Fallen Lord’s Claw comes from relevant areas including Embars Ruins.",
+            "While pieces are missing, keep a Moonlight loop you can land reliably. Do not sacrifice usable stamina for thresholds copied from launch guides; current recorded bonuses differ.",
+            "Use accessories for stamina, recovery and relevant resistance. Start with Keshta or Conrad; consider Atlante if Javelin damage becomes your main focus."
+          ]
+        },
+        "links": [
+          {
+            "href": "equipment/sets/fallen-lord/",
+            "zh": "当前件数效果与获取",
+            "en": "Current bonuses and acquisition"
+          }
+        ]
+      },
+      {
+        "id": "skills",
+        "zh": {
+          "title": "学习顺序与目标等级",
+          "items": [
+            "先开放 Moonlight，再学习 Moonlight Stance 与满月斩；表中的顺序是学习建议，是否可点仍由熟练度、连线和已装备套装决定。",
+            "先让姿态稳定发动，再提高多级主力技能。多级节点逐级投入，不必同时点满所有分支。"
+          ],
+          "table": {
+            "headers": [
+              "顺序",
+              "技能",
+              "建议目标",
+              "用途"
+            ],
+            "rows": [
+              [
+                "1",
+                "Moonlight",
+                "先解锁",
+                "以轻击中的月光斩进入后续"
+              ],
+              [
+                "2",
+                "Moonlight Stance",
+                "逐步到 3 级",
+                "命中月光斩后形成姿态循环"
+              ],
+              [
+                "3",
+                "Moonlight Stance: Vitality／Persistence",
+                "前置满足后学习",
+                "姿态中的精力与持续时间"
+              ],
+              [
+                "4",
+                "Full Moon",
+                "逐步到 3 级",
+                "姿态内按住重击蓄力"
+              ],
+              [
+                "5",
+                "Spiral Thrust",
+                "逐步到 3 级",
+                "长破绽与套装强化方向"
+              ],
+              [
+                "6",
+                "Opportunistic Spirit",
+                "按闪避习惯逐级补足",
+                "即时闪避后的资源回收"
+              ],
+              [
+                "7",
+                "Trance／Phantom: Heatwave",
+                "后续按需要加入",
+                "先检查当前消耗与命中条件"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Learning order and target ranks",
+          "items": [
+            "Open Moonlight before Moonlight Stance and Full Moon. This is a learning order; Mastery, prerequisite links and equipped sets still determine availability.",
+            "Make stance activation consistent before improving multi-rank damage skills. Upgrade gradually rather than trying to max every branch at once."
+          ],
+          "table": {
+            "headers": [
+              "Order",
+              "Skill",
+              "Target",
+              "Purpose"
+            ],
+            "rows": [
+              [
+                "1",
+                "Moonlight",
+                "Unlock",
+                "Swift-chain Moonlight slash"
+              ],
+              [
+                "2",
+                "Moonlight Stance",
+                "Work toward rank 3",
+                "Stance loop after a Moonlight hit"
+              ],
+              [
+                "3",
+                "Moonlight Stance: Vitality / Persistence",
+                "Learn after prerequisites",
+                "Stamina and duration during stance"
+              ],
+              [
+                "4",
+                "Full Moon",
+                "Work toward rank 3",
+                "Hold Potent Blow during stance"
+              ],
+              [
+                "5",
+                "Spiral Thrust",
+                "Work toward rank 3",
+                "Long openings and set synergy"
+              ],
+              [
+                "6",
+                "Opportunistic Spirit",
+                "Upgrade for your dodge usage",
+                "Resource return from Brink Dodge"
+              ],
+              [
+                "7",
+                "Trance / Phantom: Heatwave",
+                "Add as needed later",
+                "Check current costs and hit requirements"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "sequence",
+        "zh": {
+          "title": "实战按三个窗口操作",
+          "items": [
+            "建立姿态：确认月光斩命中，观察姿态状态是否已经出现，再继续追击。挥空时不要默认姿态已经发动。",
+            "短破绽：用安全长度的轻击维持距离，及时闪避；长破绽：在姿态中使用满月斩，或选择螺旋刺，不必两项每次都接完。",
+            "敌人精疲力竭时再延长输出，并给致命攻击留时间。若姿态结束、斗志不足或目标离开攻击距离，重新回到建立姿态的步骤。"
+          ]
+        },
+        "en": {
+          "title": "Three practical windows",
+          "items": [
+            "Establish the stance: confirm Moonlight connects and the stance indicator appears before pursuing. A whiff does not guarantee activation.",
+            "Short opening: use a safe Swift string and maintain spacing. Long opening: choose Full Moon in stance or Spiral Thrust; both are not mandatory every time.",
+            "Extend only after exhaustion is confirmed, leaving time for the Brutal Attack. Re-establish stance if it ends, Spirit is insufficient or the target moves out of range."
+          ]
+        },
+        "links": []
+      },
+      {
+        "id": "patch",
+        "zh": {
+          "title": "避开旧版无限循环描述",
+          "items": [
+            "2025 年 5 月调整后的 Trance: Spirit 需要命中后才给后续斗志技能减耗，返还也有持续时间与不叠加限制。",
+            "Phantom: Heatwave 不能简单视为“一个斗志全程无消耗无敌”；官方已调整其资源消耗，主动防御仍需检查精力。"
+          ]
+        },
+        "en": {
+          "title": "Avoid obsolete infinite-loop claims",
+          "items": [
+            "After the May 2025 adjustment, Trance: Spirit requires a hit for the follow-up cost reduction; its refund is timed and does not stack.",
+            "Do not treat Phantom: Heatwave as unlimited invulnerability for one Spirit. Official balance changes addressed its resource costs, including stamina during guards."
+          ]
+        },
+        "links": []
+      },
+      {
+        "id": "testing",
+        "zh": {
+          "title": "保存前做一次检查",
+          "items": [
+            "在同一敌人、同一难度下试短连段和长破绽输出；记录能否安全收招，而不是只看单次最高伤害。",
+            "确认套装激活件数、装备重量、饰品抗性、鬼神能力和技能启用状态，再存为装备预设。终极挑战使用模式装备，不能照搬此战役配装。"
+          ]
+        },
+        "en": {
+          "title": "Before saving the preset",
+          "items": [
+            "Test a short sequence and a long-opening sequence against the same enemy on the same difficulty. Track safe recovery rather than only peak damage.",
+            "Check active set thresholds, weight, resistance accessories, phantom ability and skill activation before saving. Ultimate Challenge provides its own equipment, so this campaign loadout does not transfer directly."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/phantom-abilities/",
+            "zh": "选择鬼神能力",
+            "en": "Choose a phantom"
+          },
+          {
+            "href": "systems/consumables/",
+            "zh": "准备消耗品",
+            "en": "Prepare consumables"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Spear skill ranks and inputs; old set values superseded",
+        "url": "https://gamesfuze.com/guides/the-first-berserker-khazan-best-spear-build-apr-2025/"
+      },
+      {
+        "title": "Official Spear balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/516336075474470254"
+      },
+      {
+        "title": "Current set-data version",
+        "url": "https://khazan.tzrain.wiki/archive/sets?lang=zh"
+      }
+    ]
+  },
+  {
+    "id": "set-crimson-fiend",
+    "route": "equipment/sets/crimson-fiend/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "猩红恶鬼：件数效果与获取"
+    },
+    "en": {
+      "title": "Crimson Fiend: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "件数效果",
+          "items": [
+            "下表列出各档新增效果。按装备栏实际激活件数检查；同一档有触发条件或持续时间时，不当作常驻加成。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "热血：伤害增加 15%"
+              ],
+              [
+                "3",
+                "蓄力攻击：伤害增加 10%"
+              ],
+              [
+                "4",
+                "绝息斩与蓄力攻击：精力恢复 100"
+              ],
+              [
+                "5",
+                "热血：所受伤害减少 30%"
+              ],
+              [
+                "6",
+                "绝息斩：伤害增加 20%"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Each row is the effect added at that threshold. Check the active inventory count and respect triggers and durations.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Vigor: damage +15%"
+              ],
+              [
+                "3",
+                "Charged attack damage +10%"
+              ],
+              [
+                "4",
+                "Mortal Blow and charged attacks: stamina recovery +100"
+              ],
+              [
+                "5",
+                "Vigor: damage received -30%"
+              ],
+              [
+                "6",
+                "Mortal Blow damage +20%"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "卷轴路线：隐士山脉。",
+            "材料／兑换方式：按铁匠成品预览准备通用材料。",
+            "制作前检查已登记配方、当前材料、金币与单件预览。不同部位和品质需求可能不同，不用整套统一数量代替实际配方。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Scroll mission: Hermit Mountains.",
+            "Materials / exchange: Generic materials shown in the smithing preview.",
+            "Before crafting, inspect the registered recipe, materials, Gold and individual item preview. Requirements can differ by slot and grade."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/hermits-mountains/#pickup-hermits-mountains-scrolls-1",
+            "zh": "打开卷轴的精确拾取步骤",
+            "en": "Open the exact scroll pickup"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "材料与制作速查",
+            "en": "Materials and crafting reference"
+          }
+        ],
+        "images": [
+          {
+            "src": "/games/the-first-berserker-khazan/images/source/485b7ddb238c0ac04f57.jpg",
+            "zh": "猩红恶鬼卷轴获取路线（原流程截图）",
+            "en": "Crimson Fiend scroll acquisition route (original walkthrough image)"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "使用建议",
+          "items": [
+            "先练蓄力轻击与绝息斩衔接，再延长循环。",
+            "先在同一敌人身上检查效果是否真正触发，再保存预设。换武器或更换主力技能后，应重新检查套装的技能限定。"
+          ]
+        },
+        "en": {
+          "title": "Practical use",
+          "items": [
+            "Practise charged Swift Attack into Mortal Blow before extending the loop.",
+            "Test whether the effect actually triggers against the same enemy before saving. Recheck skill-specific restrictions when changing weapon or main attack."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "查看武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and piece thresholds",
+        "url": "https://khazan.tzrain.wiki/archive/sets/50604?lang=zh"
+      },
+      {
+        "title": "Current material descriptions",
+        "url": "https://khazan.tzrain.wiki/archive/items"
+      },
+      {
+        "title": "Official June 26 balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      }
+    ]
+  },
+  {
+    "id": "set-fallen-guardian",
+    "route": "equipment/sets/fallen-guardian/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "堕落守护神：件数效果与获取"
+    },
+    "en": {
+      "title": "Fallen Guardian: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "件数效果",
+          "items": [
+            "下表列出各档新增效果。按装备栏实际激活件数检查；同一档有触发条件或持续时间时，不当作常驻加成。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "火攻击力 +15"
+              ],
+              [
+                "3",
+                "敌人火焰：伤害增加 15%"
+              ],
+              [
+                "4",
+                "发动血雨腥风：3 秒内所受伤害减少 35%"
+              ],
+              [
+                "5",
+                "即时防御：赋予火属性 10 秒"
+              ],
+              [
+                "6",
+                "血雨腥风：15 秒内伤害增加 1%，最多 20 层"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Each row is the effect added at that threshold. Check the active inventory count and respect triggers and durations.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Fire attack +15"
+              ],
+              [
+                "3",
+                "Damage against Flame-afflicted enemies +15%"
+              ],
+              [
+                "4",
+                "Ruthless activation: damage received -35% for 3s"
+              ],
+              [
+                "5",
+                "Brink Guard: fire attribute for 10s"
+              ],
+              [
+                "6",
+                "Ruthless: damage +1% for 15s, up to 20 stacks"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "卷轴路线：悲惨之夜。",
+            "材料／兑换方式：守护神的兽蹄：普拉乌村庄／万卡乌居所。",
+            "制作前检查已登记配方、当前材料、金币与单件预览。不同部位和品质需求可能不同，不用整套统一数量代替实际配方。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Scroll mission: Tragic Night.",
+            "Materials / exchange: Guardian's Hoof: Phraugh Village / Wankaul's Quarters.",
+            "Before crafting, inspect the registered recipe, materials, Gold and individual item preview. Requirements can differ by slot and grade."
+          ]
+        },
+        "links": [
+          {
+            "href": "side-quests/tragic-night/#pickup-tragic-night-scrolls-2",
+            "zh": "打开卷轴的精确拾取步骤",
+            "en": "Open the exact scroll pickup"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "材料与制作速查",
+            "en": "Materials and crafting reference"
+          }
+        ],
+        "images": [
+          {
+            "src": "/kazan/images/img_490.jpg",
+            "zh": "堕落守护神卷轴获取路线（原流程截图）",
+            "en": "Fallen Guardian scroll acquisition route (original walkthrough image)"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "使用建议",
+          "items": [
+            "血雨腥风的长连段必须有足够破绽；减伤并不意味着动作不会被打断。",
+            "先在同一敌人身上检查效果是否真正触发，再保存预设。换武器或更换主力技能后，应重新检查套装的技能限定。"
+          ]
+        },
+        "en": {
+          "title": "Practical use",
+          "items": [
+            "Ruthless needs a long enough opening; damage reduction does not guarantee an uninterrupted string.",
+            "Test whether the effect actually triggers against the same enemy before saving. Recheck skill-specific restrictions when changing weapon or main attack."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "查看武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and piece thresholds",
+        "url": "https://www.neoseeker.com/the-first-berserker-khazan/Gear_Sets"
+      },
+      {
+        "title": "Current material descriptions",
+        "url": "https://khazan.tzrain.wiki/archive/items"
+      },
+      {
+        "title": "Official June 26 balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      }
+    ]
+  },
+  {
+    "id": "set-fallen-lord",
+    "route": "equipment/sets/fallen-lord/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "没落君主：件数效果与获取"
+    },
+    "en": {
+      "title": "Fallen Lord: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "件数效果",
+          "items": [
+            "下表列出各档新增效果。按装备栏实际激活件数检查；同一档有触发条件或持续时间时，不当作常驻加成。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "即时闪避：15 秒内精力恢复速度增加 25%"
+              ],
+              [
+                "3",
+                "即时闪避：15 秒内伤害增加 15%"
+              ],
+              [
+                "4",
+                "蓄力攻击：伤害增加 15%"
+              ],
+              [
+                "5",
+                "满月斩：伤害增加 15%"
+              ],
+              [
+                "6",
+                "螺旋刺：伤害增加 25%"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Each row is the effect added at that threshold. Check the active inventory count and respect triggers and durations.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Brink Dodge: stamina recovery +25% for 15s"
+              ],
+              [
+                "3",
+                "Brink Dodge: damage +15% for 15s"
+              ],
+              [
+                "4",
+                "Charged attack damage +15%"
+              ],
+              [
+                "5",
+                "Full Moon damage +15%"
+              ],
+              [
+                "6",
+                "Spiral Thrust damage +25%"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "卷轴路线：寂静神庙。",
+            "材料／兑换方式：没落君主的尖爪：恩巴斯遗迹／无名空洞／废弃城堡。",
+            "制作前检查已登记配方、当前材料、金币与单件预览。不同部位和品质需求可能不同，不用整套统一数量代替实际配方。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Scroll mission: Silent Temple.",
+            "Materials / exchange: Fallen Lord's Claw: Embars Ruins / Nameless Cavern / Abandoned Citadel.",
+            "Before crafting, inspect the registered recipe, materials, Gold and individual item preview. Requirements can differ by slot and grade."
+          ]
+        },
+        "links": [
+          {
+            "href": "side-quests/silent-temple/#pickup-silent-temple-scrolls-1",
+            "zh": "打开卷轴的精确拾取步骤",
+            "en": "Open the exact scroll pickup"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "材料与制作速查",
+            "en": "Materials and crafting reference"
+          }
+        ],
+        "images": [
+          {
+            "src": "/kazan/images/img_669.jpg",
+            "zh": "没落君主卷轴获取路线（原流程截图）",
+            "en": "Fallen Lord scroll acquisition route (original walkthrough image)"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "使用建议",
+          "items": [
+            "先确认月光、满月或该套装强化技能是否实际命中，再追加输出。",
+            "先在同一敌人身上检查效果是否真正触发，再保存预设。换武器或更换主力技能后，应重新检查套装的技能限定。"
+          ]
+        },
+        "en": {
+          "title": "Practical use",
+          "items": [
+            "Confirm that Moonlight, Full Moon or the set-supported move connects before extending.",
+            "Test whether the effect actually triggers against the same enemy before saving. Recheck skill-specific restrictions when changing weapon or main attack."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "查看武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and piece thresholds",
+        "url": "https://khazan.tzrain.wiki/archive/sets?lang=zh"
+      },
+      {
+        "title": "Current material descriptions",
+        "url": "https://khazan.tzrain.wiki/archive/items"
+      },
+      {
+        "title": "Official June 26 balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      }
+    ]
+  },
+  {
+    "id": "set-golden",
+    "route": "equipment/sets/golden/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "鎏金：件数效果与获取"
+    },
+    "en": {
+      "title": "Golden: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "件数效果",
+          "items": [
+            "下表列出各档新增效果。按装备栏实际激活件数检查；同一档有触发条件或持续时间时，不当作常驻加成。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "闪避所耗精力减少 15%"
+              ],
+              [
+                "3",
+                "背后袭击：精力攻击力增加 10%"
+              ],
+              [
+                "4",
+                "无我之境：伤害增加 20%"
+              ],
+              [
+                "5",
+                "背后袭击：伤害增加 10%"
+              ],
+              [
+                "6",
+                "习得月光斩：觉醒"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Each row is the effect added at that threshold. Check the active inventory count and respect triggers and durations.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Dodge stamina cost -15%"
+              ],
+              [
+                "3",
+                "Rear assault stamina damage +10%"
+              ],
+              [
+                "4",
+                "Trance damage +20%"
+              ],
+              [
+                "5",
+                "Rear assault damage +10%"
+              ],
+              [
+                "6",
+                "Learn Moonlight: Awakening"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "卷轴路线：诡异的旋律。",
+            "材料／兑换方式：按铁匠成品预览准备通用材料。",
+            "制作前检查已登记配方、当前材料、金币与单件预览。不同部位和品质需求可能不同，不用整套统一数量代替实际配方。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Scroll mission: Strange Melody.",
+            "Materials / exchange: Generic materials shown in the smithing preview.",
+            "Before crafting, inspect the registered recipe, materials, Gold and individual item preview. Requirements can differ by slot and grade."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/strange-melody/#pickup-strange-melody-scrolls-1",
+            "zh": "打开卷轴的精确拾取步骤",
+            "en": "Open the exact scroll pickup"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "材料与制作速查",
+            "en": "Materials and crafting reference"
+          }
+        ],
+        "images": [
+          {
+            "src": "/games/the-first-berserker-khazan/images/source/458c118138eb9c27c10f.jpg",
+            "zh": "鎏金卷轴获取路线（原流程截图）",
+            "en": "Golden scroll acquisition route (original walkthrough image)"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "使用建议",
+          "items": [
+            "先确认月光、满月或该套装强化技能是否实际命中，再追加输出。",
+            "先在同一敌人身上检查效果是否真正触发，再保存预设。换武器或更换主力技能后，应重新检查套装的技能限定。"
+          ]
+        },
+        "en": {
+          "title": "Practical use",
+          "items": [
+            "Confirm that Moonlight, Full Moon or the set-supported move connects before extending.",
+            "Test whether the effect actually triggers against the same enemy before saving. Recheck skill-specific restrictions when changing weapon or main attack."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "查看武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and piece thresholds",
+        "url": "https://khazan.tzrain.wiki/archive/sets?lang=zh"
+      },
+      {
+        "title": "Current material descriptions",
+        "url": "https://khazan.tzrain.wiki/archive/items"
+      },
+      {
+        "title": "Official June 26 balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      }
+    ]
+  },
+  {
+    "id": "set-deep-shadow",
+    "route": "equipment/sets/deep-shadow/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "深邃无光：件数效果与获取"
+    },
+    "en": {
+      "title": "Deep Shadow: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "件数效果",
+          "items": [
+            "下表列出各档新增效果。按装备栏实际激活件数检查；同一档有触发条件或持续时间时，不当作常驻加成。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "防御穿透 +90%"
+              ],
+              [
+                "3",
+                "敌人虚弱：伤害增加 15%"
+              ],
+              [
+                "4",
+                "强袭重踢：精力攻击力增加 50%"
+              ],
+              [
+                "5",
+                "强袭重踢：10 秒内伤害增加 15%"
+              ],
+              [
+                "6",
+                "残影追刺：伤害增加 25%"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Each row is the effect added at that threshold. Check the active inventory count and respect triggers and durations.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Guard penetration +90%"
+              ],
+              [
+                "3",
+                "Damage against exhausted enemies +15%"
+              ],
+              [
+                "4",
+                "Assault stamina damage +50%"
+              ],
+              [
+                "5",
+                "Assault: damage +15% for 10s"
+              ],
+              [
+                "6",
+                "Afterimage Thrust damage +25%"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "卷轴路线：被吞噬的村庄。",
+            "材料／兑换方式：按铁匠成品预览准备通用材料。",
+            "制作前检查已登记配方、当前材料、金币与单件预览。不同部位和品质需求可能不同，不用整套统一数量代替实际配方。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Scroll mission: Devoured Village.",
+            "Materials / exchange: Generic materials shown in the smithing preview.",
+            "Before crafting, inspect the registered recipe, materials, Gold and individual item preview. Requirements can differ by slot and grade."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/devoured-village/#pickup-devoured-village-scrolls-1",
+            "zh": "打开卷轴的精确拾取步骤",
+            "en": "Open the exact scroll pickup"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "材料与制作速查",
+            "en": "Materials and crafting reference"
+          }
+        ],
+        "images": [
+          {
+            "src": "/kazan/images/img_724.jpg",
+            "zh": "深邃无光卷轴获取路线（原流程截图）",
+            "en": "Deep Shadow scroll acquisition route (original walkthrough image)"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "使用建议",
+          "items": [
+            "先确认月光、满月或该套装强化技能是否实际命中，再追加输出。",
+            "先在同一敌人身上检查效果是否真正触发，再保存预设。换武器或更换主力技能后，应重新检查套装的技能限定。"
+          ]
+        },
+        "en": {
+          "title": "Practical use",
+          "items": [
+            "Confirm that Moonlight, Full Moon or the set-supported move connects before extending.",
+            "Test whether the effect actually triggers against the same enemy before saving. Recheck skill-specific restrictions when changing weapon or main attack."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "查看武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and piece thresholds",
+        "url": "https://khazan.tzrain.wiki/archive/sets?lang=zh"
+      },
+      {
+        "title": "Current material descriptions",
+        "url": "https://khazan.tzrain.wiki/archive/items"
+      },
+      {
+        "title": "Official June 26 balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      }
+    ]
+  },
+  {
+    "id": "set-radiant-darkness",
+    "route": "equipment/sets/radiant-darkness/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "璀璨黑暗：件数效果与获取"
+    },
+    "en": {
+      "title": "Radiant Darkness: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "件数效果",
+          "items": [
+            "下表列出各档新增效果。按装备栏实际激活件数检查；同一档有触发条件或持续时间时，不当作常驻加成。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "气竭：20 秒内精力恢复速度增加 50%"
+              ],
+              [
+                "3",
+                "即时防御：20 秒内伤害增加 8%，最多 3 层"
+              ],
+              [
+                "4",
+                "轻击：获得斗志 0.06"
+              ],
+              [
+                "5",
+                "即时闪避：20 秒内伤害增加 15%，最多 3 层"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Each row is the effect added at that threshold. Check the active inventory count and respect triggers and durations.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Depleted: stamina recovery +50% for 20s"
+              ],
+              [
+                "3",
+                "Brink Guard: damage +8% for 20s, up to 3 stacks"
+              ],
+              [
+                "4",
+                "Swift Attack: Spirit gain +0.06"
+              ],
+              [
+                "5",
+                "Brink Dodge: damage +15% for 20s, up to 3 stacks"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "此套装按终极挑战奖励兑换取得，不按普通流程卷轴处理。",
+            "材料／兑换方式：终极挑战代币兑换；在裂隙邮箱取代币后与幽魂之布雷德交互。",
+            "制作前检查已登记配方、当前材料、金币与单件预览。不同部位和品质需求可能不同，不用整套统一数量代替实际配方。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Obtain this as an Ultimate Challenge exchange reward rather than a normal campaign scroll.",
+            "Materials / exchange: Ultimate Challenge token exchange with Blade Phantom after collecting tokens from the Crevice mailbox.",
+            "Before crafting, inspect the registered recipe, materials, Gold and individual item preview. Requirements can differ by slot and grade."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/ultimate-challenge/",
+            "zh": "终极挑战代币与兑换",
+            "en": "Challenge tokens and exchange"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "材料与制作速查",
+            "en": "Materials and crafting reference"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "使用建议",
+          "items": [
+            "先练稳定触发该套装要求的防御动作，再用限时增益输出。",
+            "先在同一敌人身上检查效果是否真正触发，再保存预设。换武器或更换主力技能后，应重新检查套装的技能限定。"
+          ]
+        },
+        "en": {
+          "title": "Practical use",
+          "items": [
+            "Practise the defensive trigger consistently before spending its timed damage window.",
+            "Test whether the effect actually triggers against the same enemy before saving. Recheck skill-specific restrictions when changing weapon or main attack."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "查看武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and piece thresholds",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      },
+      {
+        "title": "Current material descriptions",
+        "url": "https://khazan.tzrain.wiki/archive/items"
+      },
+      {
+        "title": "Official June 26 balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      }
+    ]
+  },
+  {
+    "id": "set-defier",
+    "route": "equipment/sets/defier/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "反抗者：件数效果与获取"
+    },
+    "en": {
+      "title": "Defier: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "件数效果",
+          "items": [
+            "下表列出各档新增效果。按装备栏实际激活件数检查；同一档有触发条件或持续时间时，不当作常驻加成。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "即时闪避：生命值恢复 10%"
+              ],
+              [
+                "3",
+                "重击：15 秒内伤害增加 1.5%，最多 10 层"
+              ],
+              [
+                "4",
+                "即时闪避：20 秒内伤害增加 15%"
+              ],
+              [
+                "5",
+                "逐影挥刺：20 秒内伤害增加 35%"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Each row is the effect added at that threshold. Check the active inventory count and respect triggers and durations.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Brink Dodge: health recovery +10%"
+              ],
+              [
+                "3",
+                "Potent Blow: damage +1.5% for 15s, up to 10 stacks"
+              ],
+              [
+                "4",
+                "Brink Dodge: damage +15% for 20s"
+              ],
+              [
+                "5",
+                "Shadow Reversal: damage +35% for 20s"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "此套装按终极挑战奖励兑换取得，不按普通流程卷轴处理。",
+            "材料／兑换方式：终极挑战代币兑换。",
+            "制作前检查已登记配方、当前材料、金币与单件预览。不同部位和品质需求可能不同，不用整套统一数量代替实际配方。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Obtain this as an Ultimate Challenge exchange reward rather than a normal campaign scroll.",
+            "Materials / exchange: Ultimate Challenge token exchange.",
+            "Before crafting, inspect the registered recipe, materials, Gold and individual item preview. Requirements can differ by slot and grade."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/ultimate-challenge/",
+            "zh": "终极挑战代币与兑换",
+            "en": "Challenge tokens and exchange"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "材料与制作速查",
+            "en": "Materials and crafting reference"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "使用建议",
+          "items": [
+            "先练稳定触发该套装要求的防御动作，再用限时增益输出。",
+            "先在同一敌人身上检查效果是否真正触发，再保存预设。换武器或更换主力技能后，应重新检查套装的技能限定。"
+          ]
+        },
+        "en": {
+          "title": "Practical use",
+          "items": [
+            "Practise the defensive trigger consistently before spending its timed damage window.",
+            "Test whether the effect actually triggers against the same enemy before saving. Recheck skill-specific restrictions when changing weapon or main attack."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "查看武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and piece thresholds",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      },
+      {
+        "title": "Current material descriptions",
+        "url": "https://khazan.tzrain.wiki/archive/items"
+      },
+      {
+        "title": "Official June 26 balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      }
+    ]
+  },
+  {
+    "id": "set-netherworld-abyss",
+    "route": "equipment/sets/netherworld-abyss/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "冥界深渊：件数效果与获取"
+    },
+    "en": {
+      "title": "Netherworld Abyss: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "件数效果",
+          "items": [
+            "下表列出各档新增效果。按装备栏实际激活件数检查；同一档有触发条件或持续时间时，不当作常驻加成。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "反制成功：获得斗志 1"
+              ],
+              [
+                "3",
+                "蓄力攻击：伤害倍率增加 25%"
+              ],
+              [
+                "4",
+                "斗志技能：20 秒内精力攻击力增加 10%，最多 3 层"
+              ],
+              [
+                "5",
+                "反攻破敌：20 秒内伤害增加 35%"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Each row is the effect added at that threshold. Check the active inventory count and respect triggers and durations.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Successful Counterattack: Spirit +1"
+              ],
+              [
+                "3",
+                "Charged attack damage multiplier +25%"
+              ],
+              [
+                "4",
+                "Spirit skill: stamina damage +10% for 20s, up to 3 stacks"
+              ],
+              [
+                "5",
+                "Counterstrike: damage +35% for 20s"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "此套装按终极挑战奖励兑换取得，不按普通流程卷轴处理。",
+            "材料／兑换方式：终极挑战代币兑换。",
+            "制作前检查已登记配方、当前材料、金币与单件预览。不同部位和品质需求可能不同，不用整套统一数量代替实际配方。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Obtain this as an Ultimate Challenge exchange reward rather than a normal campaign scroll.",
+            "Materials / exchange: Ultimate Challenge token exchange.",
+            "Before crafting, inspect the registered recipe, materials, Gold and individual item preview. Requirements can differ by slot and grade."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/ultimate-challenge/",
+            "zh": "终极挑战代币与兑换",
+            "en": "Challenge tokens and exchange"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "材料与制作速查",
+            "en": "Materials and crafting reference"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "使用建议",
+          "items": [
+            "先练稳定触发该套装要求的防御动作，再用限时增益输出。",
+            "先在同一敌人身上检查效果是否真正触发，再保存预设。换武器或更换主力技能后，应重新检查套装的技能限定。"
+          ]
+        },
+        "en": {
+          "title": "Practical use",
+          "items": [
+            "Practise the defensive trigger consistently before spending its timed damage window.",
+            "Test whether the effect actually triggers against the same enemy before saving. Recheck skill-specific restrictions when changing weapon or main attack."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "查看武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and piece thresholds",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      },
+      {
+        "title": "Current material descriptions",
+        "url": "https://khazan.tzrain.wiki/archive/items"
+      },
+      {
+        "title": "Official June 26 balance",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      }
+    ]
+  },
+  {
+    "id": "set-crafting",
+    "route": "equipment/set-crafting/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "套装制作：专属材料与卷轴路线"
+    },
+    "en": {
+      "title": "Set crafting: special materials and scroll routes"
+    },
+    "sections": [
+      {
+        "id": "steps",
+        "zh": {
+          "title": "制作前的四步",
+          "items": [
+            "完成“铁匠的传家宝”开放制作，再取得并登记对应卷轴。",
+            "选择要制作的具体部位，检查专属材料、通用材料和金币；部位、等级或品质变化时，重新核对预览。",
+            "2025 年 6 月 16 日后，主线首领必定掉落套装制作材料。此规则不能等同于指定部位、完整套装或卷轴必掉。",
+            "材料来源区域与卷轴位置是两套信息。缺卷轴时去拾取路线，缺专属材料时再考虑对应区域与首领。"
+          ]
+        },
+        "en": {
+          "title": "Four checks before crafting",
+          "items": [
+            "Unlock crafting through Blacksmith’s Heirloom and register the corresponding scroll.",
+            "Select the individual slot and inspect special materials, generic materials and Gold. Recheck when slot, level or grade changes.",
+            "Since June 16, 2025, main bosses guarantee set-crafting materials. This does not guarantee a particular finished piece, complete set or scroll.",
+            "Material regions and scroll locations are separate. Follow the scroll route for a missing recipe and the relevant area or boss for a missing material."
+          ]
+        },
+        "links": [
+          {
+            "href": "side-quests/blacksmith-heirloom/",
+            "zh": "铁匠解锁任务",
+            "en": "Unlock the blacksmith"
+          }
+        ],
+        "images": [
+          {
+            "src": "/kazan/images/img_475.jpg",
+            "sourcePage": 56,
+            "sourceBlock": 10,
+            "zh": "铁匠解锁后的对话入口；选择装备制作，再检查部位配方。",
+            "en": "Smith interaction after unlocking: choose crafting, then inspect the slot recipe."
+          }
+        ]
+      },
+      {
+        "id": "materials",
+        "zh": {
+          "title": "16 组专属材料速查",
+          "items": [
+            "中文材料名用于对照当前物品栏；英文为检索对应名称。下表列区域来源，不把区域中每只敌人都视为材料必掉。"
+          ],
+          "table": {
+            "headers": [
+              "套装",
+              "专属材料",
+              "来源区域"
+            ],
+            "rows": [
+              [
+                "冰封雪山",
+                "雪山主宰的犄角",
+                "哈因马赫／里侬第二矿山"
+              ],
+              [
+                "噬魂者",
+                "冥界矿物",
+                "斯顿雪域／斯顿雪域顶峰"
+              ],
+              [
+                "没落君主",
+                "没落君主的尖爪",
+                "恩巴斯遗迹／无名空洞／废弃城堡"
+              ],
+              [
+                "堕落守护神",
+                "守护神的兽蹄",
+                "普拉乌村庄／万卡乌居所"
+              ],
+              [
+                "黑暗掠食者",
+                "食人蛛的腿",
+                "斯科帕洞穴／维塔隆地下通道"
+              ],
+              [
+                "愤怒盗贼",
+                "盗贼的赃物",
+                "帕莱密恩城堡／账幕之刃据点"
+              ],
+              [
+                "混沌蚕食者",
+                "混沌弥漫的鳞爪",
+                "纳丁采石场／长春藤别院"
+              ],
+              [
+                "梦殇之影",
+                "北部战士的刀刃",
+                "埃拉瓦卡村庄／达里温城堡"
+              ],
+              [
+                "野兽虐杀者",
+                "野兽的颚骨",
+                "里侬矿山／埃拉瓦卡第四区"
+              ],
+              [
+                "沉水魔女",
+                "魔女的触手",
+                "阿尔戴比勒"
+              ],
+              [
+                "逃亡魔法师",
+                "隐士的魔法石",
+                "莱帕兰山脉"
+              ],
+              [
+                "嗜血狂徒",
+                "血染的石片",
+                "瓦尔萨勒关门"
+              ],
+              [
+                "无尽悲剧",
+                "皇女之镜",
+                "罗维利恩中央大剧院"
+              ],
+              [
+                "屠戮者",
+                "狂龙的犄角",
+                "维塔隆皇都"
+              ],
+              [
+                "褪色回忆",
+                "离别之泪",
+                "大神殿"
+              ],
+              [
+                "混沌之主",
+                "混沌之眼",
+                "皇宫"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Sixteen special materials",
+          "items": [
+            "Use Chinese material names to match the inventory and English names as search references. Listed regions do not imply that every enemy there drops the material."
+          ],
+          "table": {
+            "headers": [
+              "Set",
+              "Special material",
+              "Source region"
+            ],
+            "rows": [
+              [
+                "Frozen Mountain",
+                "Frozen Mountain Ruler's Horn",
+                "Heinmach / Linon second mine"
+              ],
+              [
+                "Soul Eater",
+                "Netherworld Mineral",
+                "Stormpass / Stormpass summit"
+              ],
+              [
+                "Fallen Lord",
+                "Fallen Lord's Claw",
+                "Embars Ruins / Nameless Cavern / Abandoned Citadel"
+              ],
+              [
+                "Fallen Guardian",
+                "Guardian's Hoof",
+                "Phraugh Village / Wankaul's Quarters"
+              ],
+              [
+                "Devourer of Darkness",
+                "Maneater Spider's Leg",
+                "Skoffa Cave / Vitalon underground passage"
+              ],
+              [
+                "Furious Bandit",
+                "Bandit's Loot",
+                "Palemion Citadel / Knivesveil Hideout"
+              ],
+              [
+                "Chaos-Ridden",
+                "Chaos-infused Claw",
+                "Nadin Quarry / Ivy Annex"
+              ],
+              [
+                "Crushed Dreams",
+                "Northern Warrior's Blade",
+                "El Ravaca Village / Darion Castle"
+              ],
+              [
+                "Beastslayer",
+                "Beast's Jawbone",
+                "Linon Mine / El Ravaca Sector No. 4"
+              ],
+              [
+                "Drowned Witch",
+                "Witch's Tentacle",
+                "Aldevir"
+              ],
+              [
+                "Fugitive Mage",
+                "Hermit's Magic Stone",
+                "Rephalan Mountains"
+              ],
+              [
+                "Bloodthirsty Fiend",
+                "Bloodstained Stone Fragment",
+                "Vaisar Gate"
+              ],
+              [
+                "Unending Tragedy",
+                "Princess's Mirror",
+                "Rovelion Imperial Theatre"
+              ],
+              [
+                "Fleshripper",
+                "Berserk Dragon's Horn",
+                "Capital City Vitalon"
+              ],
+              [
+                "Faded Memories",
+                "Tear of Farewell",
+                "Great Temple"
+              ],
+              [
+                "Master of Chaos",
+                "Eye of Chaos",
+                "Imperial Palace"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "recipes",
+        "zh": {
+          "title": "逐项打开卷轴位置",
+          "items": [
+            "以下入口对应现有图文流程中的精确拾取段落。卷轴只负责开放制作，不能代替实际材料。"
+          ]
+        },
+        "en": {
+          "title": "Open each scroll location",
+          "items": [
+            "These links reach exact pickup paragraphs in the illustrated routes. A scroll unlocks crafting but does not replace the required materials."
+          ]
+        },
+        "links": [
+          {
+            "href": "side-quests/escaping-linon-mine/#pickup-escaping-linon-mine-scrolls-1",
+            "zh": "冰封雪山卷轴",
+            "en": "Frozen Mountain scroll"
+          },
+          {
+            "href": "side-quests/lacrima/#pickup-lacrima-scrolls-1",
+            "zh": "噬魂者卷轴",
+            "en": "Soul Eater scroll"
+          },
+          {
+            "href": "side-quests/silent-temple/#pickup-silent-temple-scrolls-1",
+            "zh": "没落君主卷轴",
+            "en": "Fallen Lord scroll"
+          },
+          {
+            "href": "side-quests/tragic-night/#pickup-tragic-night-scrolls-2",
+            "zh": "堕落守护神卷轴",
+            "en": "Fallen Guardian scroll"
+          },
+          {
+            "href": "walkthrough/blade-to-the-curtain/#pickup-blade-to-the-curtain-scrolls-1",
+            "zh": "黑暗掠食者卷轴",
+            "en": "Devourer of Darkness scroll"
+          },
+          {
+            "href": "side-quests/pavels-final-words/#pickup-pavels-final-words-scrolls-1",
+            "zh": "愤怒盗贼卷轴",
+            "en": "Furious Bandit scroll"
+          },
+          {
+            "href": "side-quests/final-subjugation/#pickup-final-subjugation-scrolls-1",
+            "zh": "混沌蚕食者卷轴",
+            "en": "Chaos-Ridden scroll"
+          },
+          {
+            "href": "side-quests/transcendental-sword/#pickup-transcendental-sword-scrolls-1",
+            "zh": "梦殇之影卷轴",
+            "en": "Crushed Dreams scroll"
+          },
+          {
+            "href": "side-quests/why-abandon-us/#pickup-why-abandon-us-scrolls-2",
+            "zh": "野兽虐杀者卷轴",
+            "en": "Beastslayer scroll"
+          },
+          {
+            "href": "side-quests/unrequited-love/#pickup-unrequited-love-scrolls-1",
+            "zh": "沉水魔女卷轴",
+            "en": "Drowned Witch scroll"
+          },
+          {
+            "href": "side-quests/atlante-the-precise/#pickup-atlante-the-precise-scrolls-1",
+            "zh": "逃亡魔法师卷轴",
+            "en": "Fugitive Mage scroll"
+          },
+          {
+            "href": "side-quests/last-guard/#pickup-last-guard-scrolls-1",
+            "zh": "嗜血狂徒卷轴",
+            "en": "Bloodthirsty Fiend scroll"
+          },
+          {
+            "href": "side-quests/residual-chaos/#pickup-residual-chaos-scrolls-1",
+            "zh": "无尽悲剧卷轴",
+            "en": "Unending Tragedy scroll"
+          },
+          {
+            "href": "walkthrough/empires-end/#pickup-empires-end-scrolls-1",
+            "zh": "屠戮者卷轴",
+            "en": "Fleshripper scroll"
+          },
+          {
+            "href": "walkthrough/bloodstained-sanctuary/#pickup-bloodstained-sanctuary-scrolls-3",
+            "zh": "褪色回忆卷轴",
+            "en": "Faded Memories scroll"
+          },
+          {
+            "href": "walkthrough/lord-of-chaos/#pickup-lord-of-chaos-scrolls-1",
+            "zh": "混沌之主卷轴",
+            "en": "Master of Chaos scroll"
+          }
+        ]
+      },
+      {
+        "id": "generic",
+        "zh": {
+          "title": "通用材料怎样分",
+          "items": [
+            "武器、防具、饰品各有对应的刀刃、碎片、原石等通用材料系列；不同品质配方需要的材料等级可能不同。",
+            "先在铁匠处看缺项，再分解不需要的装备补资源。不要把专属材料数量、整套件数和单件配方消耗混为一谈。",
+            "材料不足时先完成可推进的任务；只有明确想制作的部位和效果后，再投入重复刷取。"
+          ]
+        },
+        "en": {
+          "title": "Generic materials",
+          "items": [
+            "Weapons, armor and accessories use different generic material families such as blades, fragments and stones, with grade-dependent requirements.",
+            "Inspect the missing ingredients at the blacksmith before dismantling unwanted gear. Distinguish special-material counts, set thresholds and individual recipe costs.",
+            "Continue available missions while resources are short. Farm repeatedly after choosing the exact item and effect you need."
+          ]
+        },
+        "links": [
+          {
+            "href": "equipment/upgrade/",
+            "zh": "强化与预设",
+            "en": "Augmentation and presets"
+          },
+          {
+            "href": "bosses/drops/",
+            "zh": "首领奖励规则",
+            "en": "Boss reward rules"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Game-data material descriptions",
+        "url": "https://khazan.tzrain.wiki/archive/items"
+      },
+      {
+        "title": "Official guaranteed-material update",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/655950199566369724"
+      }
+    ]
+  },
+  {
+    "id": "phantom-abilities",
+    "route": "systems/phantom-abilities/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "8 位鬼神：能力、成长与觉醒材料"
+    },
+    "en": {
+      "title": "All eight phantoms: abilities, growth and relics"
+    },
+    "sections": [
+      {
+        "id": "distinction",
+        "zh": {
+          "title": "先分清三种系统",
+          "items": [
+            "鬼神能力是在魔剑的对应菜单装备、随同行成长的被动能力；幻影形态是量表变身；助力之魂是首领战前的金色召唤。三者不能混为一谈。",
+            "完成“斯顿雪域的斗鬼”后，实际打开魔剑的能力菜单并选择同行。解锁记录出现不等于已经装备。",
+            "“独当一面”检查本周目是否召唤助力之魂，不要因此放弃正常的能力选择。Hardcore 对变身与助力有额外限制，按该难度规则另行核对。"
+          ]
+        },
+        "en": {
+          "title": "Three different systems",
+          "items": [
+            "Phantom abilities are equipped passive companions that grow with use. Phantom Form is a gauge transformation; Spirit of Advocacy is the golden boss assistance summon.",
+            "After Stormpass’ Phantom of Combat, open the abilities menu at a Blade Nexus and select a companion. Unlocking one does not automatically equip it.",
+            "Standing Alone tracks assistance summons during the current journey. Do not confuse passive choices with that summon. Check Hardcore’s separate transformation and assistance restrictions."
+          ]
+        },
+        "links": [
+          {
+            "href": "side-quests/ston-snowfield-spirit/",
+            "zh": "能力系统解锁",
+            "en": "Unlock the ability system"
+          }
+        ],
+        "images": [
+          {
+            "src": "/kazan/images/img_201.jpg",
+            "sourcePage": 21,
+            "sourceBlock": 11,
+            "zh": "鬼神装备界面：先查看已解锁鬼神，再选择装备。",
+            "en": "Phantom equipment menu: inspect an unlocked Phantom before equipping it."
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "zh": {
+          "title": "成长、材料与觉醒",
+          "items": [
+            "同行能推进能力成长；收集对应的鬼气物品用于解锁或觉醒。不同角色的初次解锁途径不同，不能一律当作交两件材料就完成所有等级。",
+            "2025 年 4 月更新后，鬼神成长速度会随已解锁数量提升。先完成能开启新能力的任务，再按实际打法选择同行。",
+            "下方列基础方向与觉醒后的联动方向，不把随等级变化的数值写成固定满级常驻加成。"
+          ]
+        },
+        "en": {
+          "title": "Growth and awakening",
+          "items": [
+            "Accompanying you advances growth; matching Ghostly items unlock or awaken abilities. Initial unlock methods differ, so do not assume two items finish every level for every phantom.",
+            "The April 2025 update made growth faster as more phantoms are unlocked. Open available abilities, then select one that fits your play style.",
+            "The following entries summarize base and awakened roles rather than presenting level-dependent values as fixed maximum bonuses."
+          ]
+        },
+        "links": []
+      },
+      {
+        "id": "keshta",
+        "zh": {
+          "title": "元气之凯斯塔 · Keshta the Unyielding",
+          "items": [
+            "基础方向：精力恢复。",
+            "觉醒联动：敌人虚弱时回复精力。",
+            "对应物品：鬼气弥漫的兽牙护链。下列入口包括当前流程已记录的获取点，按背包与能力菜单确认还需要几件。"
+          ]
+        },
+        "en": {
+          "title": "Keshta the Unyielding",
+          "items": [
+            "Base role: Stamina recovery.",
+            "Awakened synergy: Stamina recovery on enemy exhaustion.",
+            "Use the linked relic locations and check your inventory and ability menu for the remaining requirements."
+          ]
+        },
+        "links": [
+          {
+            "href": "side-quests/ston-snowfield-spirit/",
+            "zh": "斯顿雪域的斗鬼",
+            "en": "Spirit of the Ston Snowfield"
+          },
+          {
+            "href": "walkthrough/city-of-witches/#pickup-city-of-witches-relics-1",
+            "zh": "魔女之城：鬼气弥漫的兽牙护链",
+            "en": "Witch’s Castle — relic location"
+          },
+          {
+            "href": "walkthrough/bloodstained-sanctuary/#pickup-bloodstained-sanctuary-relics-1",
+            "zh": "血染的圣所：鬼气弥漫的兽牙护链",
+            "en": "Bloodied Sanctuary — relic location"
+          }
+        ]
+      },
+      {
+        "id": "veronika",
+        "zh": {
+          "title": "援助之贝罗妮卡 · Veronika the Advocate",
+          "items": [
+            "基础方向：助力之魂伤害。",
+            "觉醒联动：与助力之魂、冥界气息联动。",
+            "对应物品：鬼气弥漫的宝石。下列入口包括当前流程已记录的获取点，按背包与能力菜单确认还需要几件。"
+          ]
+        },
+        "en": {
+          "title": "Veronika the Advocate",
+          "items": [
+            "Base role: Spirit of Advocacy damage.",
+            "Awakened synergy: Assistance and healing synergy.",
+            "Use the linked relic locations and check your inventory and ability menu for the remaining requirements."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/city-of-witches/#pickup-city-of-witches-relics-2",
+            "zh": "魔女之城：鬼气弥漫的宝石",
+            "en": "Witch’s Castle — relic location"
+          },
+          {
+            "href": "side-quests/birth-of-evil/#pickup-birth-of-evil-relics-1",
+            "zh": "恶的诞生：鬼气弥漫的宝石",
+            "en": "The Birth of Evil — relic location"
+          }
+        ]
+      },
+      {
+        "id": "wulfric",
+        "zh": {
+          "title": "战斗之沃弗瑞 · Wulfric the Resilient",
+          "items": [
+            "基础方向：正面攻击伤害。",
+            "觉醒联动：反制与致命攻击回斗志。",
+            "对应物品：鬼气弥漫的锤子。下列入口包括当前流程已记录的获取点，按背包与能力菜单确认还需要几件。"
+          ]
+        },
+        "en": {
+          "title": "Wulfric the Resilient",
+          "items": [
+            "Base role: Frontal damage.",
+            "Awakened synergy: Spirit from counters and Brutal Attacks.",
+            "Use the linked relic locations and check your inventory and ability menu for the remaining requirements."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/hermits-mountains/#pickup-hermits-mountains-relics-1",
+            "zh": "隐士山脉：鬼气弥漫的锤子",
+            "en": "Hermit Mountains — relic location"
+          },
+          {
+            "href": "walkthrough/empires-end/#pickup-empires-end-relics-1",
+            "zh": "帝国的末日：鬼气弥漫的锤子",
+            "en": "Fall of the Empire — relic location"
+          }
+        ]
+      },
+      {
+        "id": "adelhaide",
+        "zh": {
+          "title": "慈爱之阿德莱德 · Adelhaide the Philanthropic",
+          "items": [
+            "基础方向：生命回复量。",
+            "觉醒联动：冥界气息与生存续航。",
+            "对应物品：鬼气弥漫的圣物。下列入口包括当前流程已记录的获取点，按背包与能力菜单确认还需要几件。"
+          ]
+        },
+        "en": {
+          "title": "Adelhaide the Philanthropic",
+          "items": [
+            "Base role: Healing amount.",
+            "Awakened synergy: Healing-charge sustain.",
+            "Use the linked relic locations and check your inventory and ability menu for the remaining requirements."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/traitors-face/#pickup-traitors-face-relics-1",
+            "zh": "叛徒的真面目：鬼气弥漫的圣物",
+            "en": "Traitor Revealed — relic location"
+          },
+          {
+            "href": "side-quests/varus-axe/#pickup-varus-axe-relics-1",
+            "zh": "巴鲁斯的斧头：鬼气弥漫的圣物",
+            "en": "Varus’s Axe — relic location"
+          },
+          {
+            "href": "side-quests/the-vow/#pickup-the-vow-relics-2",
+            "zh": "誓约：鬼气弥漫的圣物",
+            "en": "The Vow — relic location"
+          }
+        ]
+      },
+      {
+        "id": "constantine",
+        "zh": {
+          "title": "奉献之康斯坦丁 · Constantine the Devoted",
+          "items": [
+            "基础方向：幻影形态量表获取。",
+            "觉醒联动：斗志消耗与变身量表联动。",
+            "对应物品：鬼气弥漫的剑柄。下列入口包括当前流程已记录的获取点，按背包与能力菜单确认还需要几件。"
+          ]
+        },
+        "en": {
+          "title": "Constantine the Devoted",
+          "items": [
+            "Base role: Phantom Form gauge gain.",
+            "Awakened synergy: Spirit expenditure and transformation synergy.",
+            "Use the linked relic locations and check your inventory and ability menu for the remaining requirements."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/devoured-village/#pickup-devoured-village-relics-1",
+            "zh": "被吞噬的村庄：鬼气弥漫的剑柄",
+            "en": "Devoured Village — relic location"
+          },
+          {
+            "href": "side-quests/lacrima/#pickup-lacrima-relics-1",
+            "zh": "拉克里玛：鬼气弥漫的剑柄",
+            "en": "Lacrima — relic location"
+          },
+          {
+            "href": "side-quests/transcendental-sword/#pickup-transcendental-sword-relics-2",
+            "zh": "超越者之剑：鬼气弥漫的剑柄",
+            "en": "Transcendental Sword — relic location"
+          }
+        ]
+      },
+      {
+        "id": "conrad",
+        "zh": {
+          "title": "迅捷之康拉德 · Conrad the Swift",
+          "items": [
+            "基础方向：减少闪避精力消耗。",
+            "觉醒联动：即时闪避增伤。",
+            "对应物品：鬼气弥漫的双剑。下列入口包括当前流程已记录的获取点，按背包与能力菜单确认还需要几件。"
+          ]
+        },
+        "en": {
+          "title": "Conrad the Swift",
+          "items": [
+            "Base role: Lower dodge stamina cost.",
+            "Awakened synergy: Brink Dodge damage bonuses.",
+            "Use the linked relic locations and check your inventory and ability menu for the remaining requirements."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/empires-end/#pickup-empires-end-relics-2",
+            "zh": "帝国的末日：鬼气弥漫的双剑",
+            "en": "Fall of the Empire — relic location"
+          },
+          {
+            "href": "side-quests/why-abandon-us/#pickup-why-abandon-us-relics-1",
+            "zh": "为何要抛弃我们：鬼气弥漫的双剑",
+            "en": "Why Did You Abandon Us — relic location"
+          },
+          {
+            "href": "side-quests/transcendental-sword/#pickup-transcendental-sword-relics-1",
+            "zh": "超越者之剑：鬼气弥漫的双剑",
+            "en": "Transcendental Sword — relic location"
+          }
+        ]
+      },
+      {
+        "id": "maximilian",
+        "zh": {
+          "title": "无懈之迈西米利安 · Maximilian the Impenetrable",
+          "items": [
+            "基础方向：减少防御精力损失。",
+            "觉醒联动：即时防御恢复与削韧。",
+            "对应物品：鬼气弥漫的盾牌。下列入口包括当前流程已记录的获取点，按背包与能力菜单确认还需要几件。"
+          ]
+        },
+        "en": {
+          "title": "Maximilian the Impenetrable",
+          "items": [
+            "Base role: Lower guard stamina damage.",
+            "Awakened synergy: Brink Guard recovery and stamina damage.",
+            "Use the linked relic locations and check your inventory and ability menu for the remaining requirements."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/cursed-fortress/#pickup-cursed-fortress-relics-1",
+            "zh": "受诅咒者的要塞：鬼气弥漫的盾牌",
+            "en": "Corruptors’ Fortress — relic location"
+          },
+          {
+            "href": "side-quests/escaping-linon-mine/#pickup-escaping-linon-mine-relics-1",
+            "zh": "里侬矿山逃脱记：鬼气弥漫的盾牌",
+            "en": "Escaping Linon Mine — relic location"
+          },
+          {
+            "href": "side-quests/disobedience/#pickup-disobedience-relics-1",
+            "zh": "抗命：鬼气弥漫的盾牌",
+            "en": "Disobedience — relic location"
+          }
+        ]
+      },
+      {
+        "id": "atlante",
+        "zh": {
+          "title": "精准之亚特兰特 · Atlante the Precise",
+          "items": [
+            "基础方向：远程攻击伤害。",
+            "觉醒联动：标枪击杀与弱点命中。",
+            "对应物品：鬼气弥漫的枪刃。下列入口包括当前流程已记录的获取点，按背包与能力菜单确认还需要几件。"
+          ]
+        },
+        "en": {
+          "title": "Atlante the Precise",
+          "items": [
+            "Base role: Ranged damage.",
+            "Awakened synergy: Javelin kills and weak-point hits.",
+            "Use the linked relic locations and check your inventory and ability menu for the remaining requirements."
+          ]
+        },
+        "links": [
+          {
+            "href": "side-quests/atlante-the-precise/",
+            "zh": "精准之亚特兰特",
+            "en": "Atlante the Precise"
+          },
+          {
+            "href": "walkthrough/strange-melody/#pickup-strange-melody-relics-1",
+            "zh": "诡异的旋律：鬼气弥漫的枪刃",
+            "en": "Strange Melody — relic location"
+          },
+          {
+            "href": "side-quests/the-vow/#pickup-the-vow-relics-1",
+            "zh": "誓约：鬼气弥漫的枪刃",
+            "en": "The Vow — relic location"
+          }
+        ]
+      },
+      {
+        "id": "choice",
+        "zh": {
+          "title": "怎样选择当前同行",
+          "items": [
+            "精力不够先试凯斯塔；偏闪避可试康拉德，偏即时防御可试迈西米利安；需要更强回复可试阿德莱德。",
+            "使用标枪为主时再考虑亚特兰特；经常使用幻影形态可研究康斯坦丁；主打正面反攻可试沃弗瑞。",
+            "贝罗妮卡的方向围绕助力之魂；正在做无召唤通关时，没有必要为了这类收益使用金色助力。"
+          ]
+        },
+        "en": {
+          "title": "Choosing a companion",
+          "items": [
+            "Try Keshta for stamina, Conrad for dodging, Maximilian for Brink Guard or Adelhaide for healing.",
+            "Consider Atlante for Javelins, Constantine for Phantom Form and Wulfric for frontal retaliation.",
+            "Veronika emphasizes assistance. Do not summon golden help for those benefits during a no-assistance journey."
+          ]
+        },
+        "links": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "Phantom ability reference",
+        "url": "https://www.neoseeker.com/the-first-berserker-khazan/Phantoms"
+      },
+      {
+        "title": "Official growth update",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543355041065468582"
+      },
+      {
+        "title": "Additional phantom effects and acquisition examples",
+        "url": "https://selphie1999gaming.com/game-guides/the-first-berserker-khazan/the-first-berserker-khazan-phantoms-how-to-unlock-them-all/"
+      }
+    ]
+  },
+  {
+    "id": "consumables",
+    "route": "systems/consumables/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "常用消耗品：净化、抗性与战前准备"
+    },
+    "en": {
+      "title": "Consumables: cleansing, resistance and preparation"
+    },
+    "sections": [
+      {
+        "id": "prepare",
+        "zh": {
+          "title": "每次出发先准备四类物品",
+          "items": [
+            "恢复生命、恢复战斗资源、针对本区域的净化、针对敌人的抗性或强化，分别解决不同问题。快捷栏优先放这次任务真正会用到的物品。",
+            "购买或制作后检查快捷栏与背包库存。魔剑处的快捷补充不等于无限生成消耗品；来源、库存和次数型恢复道具要分开看。"
+          ]
+        },
+        "en": {
+          "title": "Prepare four roles",
+          "items": [
+            "Separate health recovery, combat-resource recovery, relevant cleanses and resistance or enhancement items. Put what this mission needs on shortcuts.",
+            "After buying or crafting, check shortcuts and inventory. Shortcut refilling at a Nexus does not generate unlimited consumables; distinguish stored items from charged healing supplies."
+          ]
+        },
+        "links": []
+      },
+      {
+        "id": "recovery",
+        "zh": {
+          "title": "恢复与资源",
+          "items": [
+            "意志药丸会消耗斗志；需要斗志技能防守或反攻时，先判断是否能承受这笔消耗。",
+            "恢复动作也需要安全窗口。远离首领但仍在连射范围内时，先处理整轮攻击，再使用道具。"
+          ],
+          "table": {
+            "headers": [
+              "物品",
+              "作用"
+            ],
+            "rows": [
+              [
+                "冥界气息",
+                "主要恢复生命；次数型补给"
+              ],
+              [
+                "灵魂泪石类",
+                "消耗品回复，兼有拉克里玛收益"
+              ],
+              [
+                "意志药丸",
+                "消耗斗志换取生命"
+              ],
+              [
+                "斗志碎片",
+                "回复斗志"
+              ],
+              [
+                "斗志恢复药丸",
+                "一段时间内恢复斗志"
+              ],
+              [
+                "活力晶丸",
+                "短时间提高精力恢复速度"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Recovery and resources",
+          "items": [
+            "Willpower Orb spends Spirit; decide whether that leaves enough for your defensive or offensive skill.",
+            "Recovery actions need safe openings. Being far from a boss is not safe if a projectile sequence is still active."
+          ],
+          "table": {
+            "headers": [
+              "Item",
+              "Role"
+            ],
+            "rows": [
+              [
+                "Netherworld Energy",
+                "Main charged healing supply"
+              ],
+              [
+                "Soul Tearstones",
+                "Consumable healing with Lacrima value"
+              ],
+              [
+                "Willpower Orb",
+                "Spend Spirit to recover health"
+              ],
+              [
+                "Spirit Ore",
+                "Restore Spirit"
+              ],
+              [
+                "Spirit Recovery Pill",
+                "Recover Spirit over time"
+              ],
+              [
+                "Vitality Sphere",
+                "Temporarily improve stamina recovery"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "cleansing",
+        "zh": {
+          "title": "净化与抗性的区别",
+          "items": [
+            "净化用于已经出现的异常；抗性药剂与抗性饰品用于降低相应威胁。不要只因名字相近就互相替代。",
+            "检查当前异常的类型后再用净化，特殊净化剂也不等于能解除所有关卡机关与剧情限制。"
+          ],
+          "table": {
+            "headers": [
+              "净化物品",
+              "对应异常"
+            ],
+            "rows": [
+              [
+                "火净化剂",
+                "火焰／灼烧"
+              ],
+              [
+                "水净化剂",
+                "寒霜／冻伤"
+              ],
+              [
+                "闪电净化剂",
+                "触电／麻痹"
+              ],
+              [
+                "大地净化剂",
+                "笨拙／石化"
+              ],
+              [
+                "毒素净化剂",
+                "中毒／剧毒"
+              ],
+              [
+                "瘟疫净化剂",
+                "瘟疫"
+              ],
+              [
+                "幻觉净化剂",
+                "幻觉"
+              ],
+              [
+                "混沌净化剂",
+                "混沌"
+              ],
+              [
+                "特殊净化剂",
+                "多种属性异常"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Cleansing versus resistance",
+          "items": [
+            "A cleanse treats an active ailment; resistance items and accessories address the corresponding threat. Similar names do not make them interchangeable.",
+            "Identify the ailment before using an item. Even Special Cleanse is not a promise to remove every environmental or story restriction."
+          ],
+          "table": {
+            "headers": [
+              "Cleanse",
+              "Ailment"
+            ],
+            "rows": [
+              [
+                "Fire Cleanse Potion",
+                "Flame / burn"
+              ],
+              [
+                "Water Cleanse Potion",
+                "Frost / frostbite"
+              ],
+              [
+                "Lightning Cleanse Potion",
+                "Shock / paralysis"
+              ],
+              [
+                "Earth Cleanse Potion",
+                "Sluggishness / petrification"
+              ],
+              [
+                "Poison Cleanse Potion",
+                "Poison / severe poison"
+              ],
+              [
+                "Plague Cleanse Potion",
+                "Plague"
+              ],
+              [
+                "Hallucination Cleanse Potion",
+                "Hallucination"
+              ],
+              [
+                "Chaos Cleanse Potion",
+                "Chaos"
+              ],
+              [
+                "Special Cleanse Potion",
+                "Multiple elemental ailments"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "attack",
+        "zh": {
+          "title": "属性强化与投掷物",
+          "items": [
+            "火、水、闪电、大地、毒素强化剂用于给武器添加相应属性；精灵之核与凝息类则是投掷使用，不能当作同一类附魔。",
+            "先查达芙罗娜图鉴中的属性效果，再选择是否使用。面对免疫或效果弱的目标，不应只凭视觉颜色消耗材料。",
+            "净化、抗性、强化可以分工，但不会让原本需要回避或反击的攻击自动变为安全。"
+          ]
+        },
+        "en": {
+          "title": "Enhancements and throwables",
+          "items": [
+            "Fire, Water, Lightning, Earth and Poison enhancers apply a matching weapon attribute. Spirit fuels and concentrated essences are thrown items, not the same weapon enchantment.",
+            "Check Daphrona’s Codex before choosing an element. Do not spend materials based solely on color against a resistant or immune target.",
+            "Cleanses, resistance and enhancements have separate roles and do not remove the need to evade or counter dangerous attacks."
+          ]
+        },
+        "links": []
+      },
+      {
+        "id": "recipes",
+        "zh": {
+          "title": "制作材料与配方入口",
+          "items": [
+            "开放铁匠后切到消耗品分类。炼制碎片用于消耗品的通用制作，元素精华对应属性类，心灵精粹对应战斗资源，炼制之雾用于较特殊的配方。",
+            "配方既有流程拾取，也有图鉴挑战解锁；没有显示可制作时先检查配方，再确认材料和金币，不要默认所有道具都能从开局制作。",
+            "下方链接是目前已收录的净化与强化卷轴位置。未列出的位置不当作不存在，也不把其他种类卷轴套用过来。"
+          ]
+        },
+        "en": {
+          "title": "Crafting and recipe routes",
+          "items": [
+            "After unlocking the blacksmith, select the consumables category. Transmutation Shards are generic consumable materials; Spirit Orbs support elemental items, Inner Essence supports combat resources, and Transmutation Mist supports special recipes.",
+            "Recipes come from pickups and Codex challenges. If crafting is unavailable, inspect the recipe before materials and Gold rather than assuming every item is craftable from the start.",
+            "The links below reach recorded cleanse and enhancer scroll locations. Missing entries do not imply that a recipe does not exist."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/devoured-village/#pickup-devoured-village-scrolls-2",
+            "zh": "闪电净化卷轴",
+            "en": "Lightning cleanse scroll"
+          },
+          {
+            "href": "walkthrough/city-of-witches/#pickup-city-of-witches-scrolls-2",
+            "zh": "水净化卷轴",
+            "en": "Water cleanse scroll"
+          },
+          {
+            "href": "walkthrough/hermits-mountains/#pickup-hermits-mountains-scrolls-2",
+            "zh": "幻觉净化卷轴",
+            "en": "Hallucination cleanse scroll"
+          },
+          {
+            "href": "walkthrough/bloodstained-sanctuary/#pickup-bloodstained-sanctuary-scrolls-2",
+            "zh": "大地净化卷轴",
+            "en": "Earth cleanse scroll"
+          },
+          {
+            "href": "side-quests/tragic-night/#pickup-tragic-night-scrolls-1",
+            "zh": "火强化卷轴",
+            "en": "Fire enhancer scroll"
+          },
+          {
+            "href": "walkthrough/blade-to-the-curtain/#pickup-blade-to-the-curtain-scrolls-2",
+            "zh": "毒素强化卷轴",
+            "en": "Poison enhancer scroll"
+          }
+        ]
+      },
+      {
+        "id": "utility",
+        "zh": {
+          "title": "探索与补救物品",
+          "items": [
+            "这些物品作用不同；返回魔剑、退出任务、回收遗失拉克里玛、属性洗点不能混为一谈。使用前读确认提示。",
+            "胆小鬼明灯的具体购买与使用，可查看罐子商人页面和罐子爱好者任务。"
+          ],
+          "table": {
+            "headers": [
+              "物品",
+              "用途"
+            ],
+            "rows": [
+              [
+                "胆小鬼明灯",
+                "侦测隐藏敌人"
+              ],
+              [
+                "眼泪召唤石",
+                "收回死亡遗留拉克里玛"
+              ],
+              [
+                "鬼剑碎片",
+                "回到最后选择的魔剑"
+              ],
+              [
+                "回城石",
+                "中止任务并返回裂隙"
+              ],
+              [
+                "返本归元",
+                "重置属性并返还拉克里玛"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Exploration and recovery tools",
+          "items": [
+            "Returning to a Nexus, leaving a mission, recovering lost Lacrima and resetting attributes are different actions. Read the confirmation before using an item.",
+            "For the lantern’s purchase and use, consult Danjin and Jar Enthusiast."
+          ],
+          "table": {
+            "headers": [
+              "Item",
+              "Use"
+            ],
+            "rows": [
+              [
+                "Coward’s Lantern",
+                "Reveal hidden enemies"
+              ],
+              [
+                "Tear Summon Stone",
+                "Recover lost Lacrima"
+              ],
+              [
+                "Blade Nexus Shard",
+                "Return to the last selected Nexus"
+              ],
+              [
+                "Return Stone",
+                "Leave the mission for the Crevice"
+              ],
+              [
+                "Primeval Regression Orb",
+                "Reset attributes and refund Lacrima"
+              ]
+            ]
+          }
+        },
+        "links": [
+          {
+            "href": "characters/danjin/",
+            "zh": "罐子商人与明灯",
+            "en": "Danjin and the lantern"
+          },
+          {
+            "href": "side-quests/jar-enthusiast/",
+            "zh": "罐子爱好者任务",
+            "en": "Jar Enthusiast mission"
+          }
+        ]
+      },
+      {
+        "id": "loadouts",
+        "zh": {
+          "title": "按首领准备快捷栏",
+          "items": [
+            "阿拉特拉：先准备回复、毒素净化与相应抗性；朗格斯：关注火相关威胁；沙克图卡：关注瘟疫；奥兹玛：关注混沌与长战斗续航。",
+            "每次只放自己已经认识的几种道具，避免危险时刻还在翻找。失败后先判断缺的是净化、抗性、精力还是安全使用时机。"
+          ]
+        },
+        "en": {
+          "title": "Boss-oriented shortcuts",
+          "items": [
+            "For Aratra, prepare healing, poison cleansing and resistance. For Rangkus, consider fire threats; Shactuka, plague; Ozma, chaos and endurance across a longer fight.",
+            "Keep a small familiar selection on shortcuts. After a failed attempt, distinguish missing cleansing, resistance, stamina and a safe item-use window."
+          ]
+        },
+        "links": [
+          {
+            "href": "bosses/",
+            "zh": "查看首领图文打法",
+            "en": "Boss strategies"
+          },
+          {
+            "href": "systems/combat-basics/",
+            "zh": "基础战斗机制",
+            "en": "Combat basics"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Consumable crafting and resistance advice",
+        "url": "https://www.pcgamer.com/games/action/the-first-berserker-khazan-tips/"
+      },
+      {
+        "title": "Game-data item definitions",
+        "url": "https://khazan.tzrain.wiki/archive/items"
+      },
+      {
+        "title": "Official crafting-material changes",
+        "url": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259"
+      },
+      {
+        "title": "Attribute reset item",
+        "url": "https://comicbook.com/gaming/news/the-first-berserker-khazan-stats-reset/"
+      }
+    ]
+  },
+  {
+    "id": "set-soul-eater",
+    "route": "equipment/sets/soul-eater/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "噬魂者：套装效果与获取"
+    },
+    "en": {
+      "title": "Soul Eater: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "套装效果",
+          "items": [
+            "按已激活件数读取对应门槛；触发条件、持续时间和叠层上限不能省略。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "最大精力 +200"
+              ],
+              [
+                "3",
+                "重击：精力攻击力 +15%"
+              ],
+              [
+                "4",
+                "敌人虚弱时攻击：30 秒内伤害 +6%，最多 5 层"
+              ],
+              [
+                "5",
+                "致命攻击：伤害 +15%"
+              ],
+              [
+                "6",
+                "习得鬼神裁决"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Read the active piece threshold together with its trigger, duration and stack limit.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Maximum stamina +200"
+              ],
+              [
+                "3",
+                "Potent Blow stamina damage +15%"
+              ],
+              [
+                "4",
+                "Attacking an exhausted enemy: damage +6% for 30 seconds, up to 5 stacks"
+              ],
+              [
+                "5",
+                "Brutal Attack damage +15%"
+              ],
+              [
+                "6",
+                "Unlocks Phantom Judgment"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "先取得卷轴，再到铁匠检查已登记配方、缺少材料、金币和部位。首领的材料必掉规则不等于指定成品或卷轴必掉。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Obtain the scroll, then inspect the registered recipe, materials, Gold and slot at the smith. Guaranteed boss materials do not guarantee a finished piece or a scroll."
+          ]
+        },
+        "links": [
+          {
+            "href": "side-quests/lacrima/#pickup-lacrima-scrolls-1",
+            "zh": "卷轴精确拾取位置",
+            "en": "Exact scroll pickup"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "制作材料速查",
+            "en": "Crafting material reference"
+          }
+        ],
+        "images": [
+          {
+            "src": "/games/the-first-berserker-khazan/images/source/8f56fd294bd29ade0b1b.jpg",
+            "zh": "噬魂者卷轴获取路线（原流程截图）",
+            "en": "Soul Eater scroll acquisition route (original walkthrough image)"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "搭配检查",
+          "items": [
+            "先检查需要的武器和技能是否已经解锁，再比较实装备的触发效果。不要仅按面板攻击力替换关键套装部位。"
+          ]
+        },
+        "en": {
+          "title": "Build checks",
+          "items": [
+            "Check the weapon and required skills before comparing the active effects. Keep essential set thresholds when replacing individual pieces."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "三武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and thresholds",
+        "url": "https://khazan.tzrain.wiki/archive/sets?lang=zh"
+      }
+    ]
+  },
+  {
+    "id": "set-fugitive-mage",
+    "route": "equipment/sets/fugitive-mage/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "逃亡魔法师：套装效果与获取"
+    },
+    "en": {
+      "title": "Fugitive Mage: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "套装效果",
+          "items": [
+            "按已激活件数读取对应门槛；触发条件、持续时间和叠层上限不能省略。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "蓄力攻击：伤害 +10%"
+              ],
+              [
+                "3",
+                "即时防御：10 秒内精力攻击力 +15%"
+              ],
+              [
+                "4",
+                "磐石斩：斗志／怒气 +0.2"
+              ],
+              [
+                "5",
+                "即时防御：精力恢复 200"
+              ],
+              [
+                "6",
+                "穿心绝击：伤害 +40%"
+              ],
+              [
+                "7",
+                "即时防御：10 秒内伤害 +20%"
+              ],
+              [
+                "8",
+                "习得穿心绝击：激愤"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Read the active piece threshold together with its trigger, duration and stack limit.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Charged attack damage +10%"
+              ],
+              [
+                "3",
+                "Brink Guard: stamina damage +15% for 10 seconds"
+              ],
+              [
+                "4",
+                "Armor Breaker: Spirit +0.2"
+              ],
+              [
+                "5",
+                "Brink Guard: stamina recovery +200"
+              ],
+              [
+                "6",
+                "Heart Piercer damage +40%"
+              ],
+              [
+                "7",
+                "Brink Guard: damage +20% for 10 seconds"
+              ],
+              [
+                "8",
+                "Unlocks the Heart Piercer set variant"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "先取得卷轴，再到铁匠检查已登记配方、缺少材料、金币和部位。首领的材料必掉规则不等于指定成品或卷轴必掉。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Obtain the scroll, then inspect the registered recipe, materials, Gold and slot at the smith. Guaranteed boss materials do not guarantee a finished piece or a scroll."
+          ]
+        },
+        "links": [
+          {
+            "href": "side-quests/atlante-the-precise/#pickup-atlante-the-precise-scrolls-1",
+            "zh": "卷轴精确拾取位置",
+            "en": "Exact scroll pickup"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "制作材料速查",
+            "en": "Crafting material reference"
+          }
+        ],
+        "images": [
+          {
+            "src": "/games/the-first-berserker-khazan/images/source/62435ba392fec99c144f.jpg",
+            "zh": "逃亡魔法师卷轴获取路线（原流程截图）",
+            "en": "Fugitive Mage scroll acquisition route (original walkthrough image)"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "搭配检查",
+          "items": [
+            "先检查需要的武器和技能是否已经解锁，再比较实装备的触发效果。不要仅按面板攻击力替换关键套装部位。"
+          ]
+        },
+        "en": {
+          "title": "Build checks",
+          "items": [
+            "Check the weapon and required skills before comparing the active effects. Keep essential set thresholds when replacing individual pieces."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "三武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and thresholds",
+        "url": "https://khazan.tzrain.wiki/archive/sets?lang=zh"
+      }
+    ]
+  },
+  {
+    "id": "set-unending-tragedy",
+    "route": "equipment/sets/unending-tragedy/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "无尽悲剧：套装效果与获取"
+    },
+    "en": {
+      "title": "Unending Tragedy: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "套装效果",
+          "items": [
+            "按已激活件数读取对应门槛；触发条件、持续时间和叠层上限不能省略。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "冷静：伤害 +15%"
+              ],
+              [
+                "3",
+                "攻击：7 秒内精力恢复速度 +1.5%，最多 20 层"
+              ],
+              [
+                "4",
+                "闪避精力消耗 −15%"
+              ],
+              [
+                "5",
+                "即时闪避：精力恢复 100"
+              ],
+              [
+                "6",
+                "习得血刃斩"
+              ],
+              [
+                "7",
+                "攻击：7 秒内伤害 +1%，最多 20 层"
+              ],
+              [
+                "8",
+                "习得血刃斩：狂风"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Read the active piece threshold together with its trigger, duration and stack limit.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Coolheaded damage +15%"
+              ],
+              [
+                "3",
+                "Attack: stamina recovery speed +1.5% for 7 seconds, up to 20 stacks"
+              ],
+              [
+                "4",
+                "Dodge stamina cost -15%"
+              ],
+              [
+                "5",
+                "Brink Dodge: stamina recovery +100"
+              ],
+              [
+                "6",
+                "Unlocks Blood Slash"
+              ],
+              [
+                "7",
+                "Attack: damage +1% for 7 seconds, up to 20 stacks"
+              ],
+              [
+                "8",
+                "Unlocks the Blood Slash set variant"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "先取得卷轴，再到铁匠检查已登记配方、缺少材料、金币和部位。首领的材料必掉规则不等于指定成品或卷轴必掉。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Obtain the scroll, then inspect the registered recipe, materials, Gold and slot at the smith. Guaranteed boss materials do not guarantee a finished piece or a scroll."
+          ]
+        },
+        "links": [
+          {
+            "href": "side-quests/residual-chaos/#pickup-residual-chaos-scrolls-1",
+            "zh": "卷轴精确拾取位置",
+            "en": "Exact scroll pickup"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "制作材料速查",
+            "en": "Crafting material reference"
+          }
+        ],
+        "images": [
+          {
+            "src": "/games/the-first-berserker-khazan/images/source/b70c0bf8122163e5a202.jpg",
+            "zh": "无尽悲剧卷轴获取路线（原流程截图）",
+            "en": "Unending Tragedy scroll acquisition route (original walkthrough image)"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "搭配检查",
+          "items": [
+            "先检查需要的武器和技能是否已经解锁，再比较实装备的触发效果。不要仅按面板攻击力替换关键套装部位。"
+          ]
+        },
+        "en": {
+          "title": "Build checks",
+          "items": [
+            "Check the weapon and required skills before comparing the active effects. Keep essential set thresholds when replacing individual pieces."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "三武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and thresholds",
+        "url": "https://khazan.tzrain.wiki/archive/sets?lang=zh"
+      }
+    ]
+  },
+  {
+    "id": "set-fleshripper",
+    "route": "equipment/sets/fleshripper/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "屠戮者：套装效果与获取"
+    },
+    "en": {
+      "title": "Fleshripper: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "套装效果",
+          "items": [
+            "按已激活件数读取对应门槛；触发条件、持续时间和叠层上限不能省略。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "重击：伤害 +15%"
+              ],
+              [
+                "3",
+                "蓄力攻击：斗志／怒气 +0.3"
+              ],
+              [
+                "4",
+                "正面攻击：伤害 +15%"
+              ],
+              [
+                "5",
+                "蓄力攻击：伤害 +20%"
+              ],
+              [
+                "6",
+                "习得突破极限：巅峰"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Read the active piece threshold together with its trigger, duration and stack limit.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Potent Blow damage +15%"
+              ],
+              [
+                "3",
+                "Charged attack: Spirit +0.3"
+              ],
+              [
+                "4",
+                "Frontal attack damage +15%"
+              ],
+              [
+                "5",
+                "Charged attack damage +20%"
+              ],
+              [
+                "6",
+                "Unlocks Limit Break: Apex"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "先取得卷轴，再到铁匠检查已登记配方、缺少材料、金币和部位。首领的材料必掉规则不等于指定成品或卷轴必掉。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Obtain the scroll, then inspect the registered recipe, materials, Gold and slot at the smith. Guaranteed boss materials do not guarantee a finished piece or a scroll."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/empires-end/#pickup-empires-end-scrolls-1",
+            "zh": "卷轴精确拾取位置",
+            "en": "Exact scroll pickup"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "制作材料速查",
+            "en": "Crafting material reference"
+          }
+        ],
+        "images": [
+          {
+            "src": "/games/the-first-berserker-khazan/images/source/4340030c4e2a2bdb266a.jpg",
+            "zh": "屠戮者卷轴获取路线（原流程截图）",
+            "en": "Fleshripper scroll acquisition route (original walkthrough image)"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "搭配检查",
+          "items": [
+            "先检查需要的武器和技能是否已经解锁，再比较实装备的触发效果。不要仅按面板攻击力替换关键套装部位。"
+          ]
+        },
+        "en": {
+          "title": "Build checks",
+          "items": [
+            "Check the weapon and required skills before comparing the active effects. Keep essential set thresholds when replacing individual pieces."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "三武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and thresholds",
+        "url": "https://khazan.tzrain.wiki/archive/sets?lang=zh"
+      }
+    ]
+  },
+  {
+    "id": "set-faded-memories",
+    "route": "equipment/sets/faded-memories/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "褪色回忆：套装效果与获取"
+    },
+    "en": {
+      "title": "Faded Memories: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "套装效果",
+          "items": [
+            "按已激活件数读取对应门槛；触发条件、持续时间和叠层上限不能省略。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "即时闪避：斗志／怒气 +0.3"
+              ],
+              [
+                "3",
+                "背后袭击：伤害倍率 +15%"
+              ],
+              [
+                "4",
+                "敌人虚弱：伤害 +15%"
+              ],
+              [
+                "5",
+                "重击：斗志／怒气 +0.05"
+              ],
+              [
+                "6",
+                "回风连击：10 秒内伤害 +15%"
+              ],
+              [
+                "7",
+                "习得狂暴斩"
+              ],
+              [
+                "8",
+                "重击：15 秒内伤害 +1.5%，最多 20 层"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Read the active piece threshold together with its trigger, duration and stack limit.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Brink Dodge: Spirit +0.3"
+              ],
+              [
+                "3",
+                "Rear attack damage multiplier +15%"
+              ],
+              [
+                "4",
+                "Damage against exhausted enemies +15%"
+              ],
+              [
+                "5",
+                "Potent Blow: Spirit +0.05"
+              ],
+              [
+                "6",
+                "Shadow Strike: damage +15% for 10 seconds"
+              ],
+              [
+                "7",
+                "Unlocks Frenzied Cleave"
+              ],
+              [
+                "8",
+                "Potent Blow: damage +1.5% for 15 seconds, up to 20 stacks"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "先取得卷轴，再到铁匠检查已登记配方、缺少材料、金币和部位。首领的材料必掉规则不等于指定成品或卷轴必掉。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Obtain the scroll, then inspect the registered recipe, materials, Gold and slot at the smith. Guaranteed boss materials do not guarantee a finished piece or a scroll."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/bloodstained-sanctuary/#pickup-bloodstained-sanctuary-scrolls-3",
+            "zh": "卷轴精确拾取位置",
+            "en": "Exact scroll pickup"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "制作材料速查",
+            "en": "Crafting material reference"
+          }
+        ],
+        "images": [
+          {
+            "src": "/games/the-first-berserker-khazan/images/source/c055dd7257cc1dc83835.jpg",
+            "zh": "褪色回忆卷轴获取路线（原流程截图）",
+            "en": "Faded Memories scroll acquisition route (original walkthrough image)"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "搭配检查",
+          "items": [
+            "先检查需要的武器和技能是否已经解锁，再比较实装备的触发效果。不要仅按面板攻击力替换关键套装部位。"
+          ]
+        },
+        "en": {
+          "title": "Build checks",
+          "items": [
+            "Check the weapon and required skills before comparing the active effects. Keep essential set thresholds when replacing individual pieces."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "三武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and thresholds",
+        "url": "https://khazan.tzrain.wiki/archive/sets?lang=zh"
+      }
+    ]
+  },
+  {
+    "id": "set-master-of-chaos",
+    "route": "equipment/sets/master-of-chaos/",
+    "checkedAt": "2026-10-22",
+    "zh": {
+      "title": "混沌之主：套装效果与获取"
+    },
+    "en": {
+      "title": "Master of Chaos: bonuses and acquisition"
+    },
+    "sections": [
+      {
+        "id": "bonuses",
+        "zh": {
+          "title": "套装效果",
+          "items": [
+            "按已激活件数读取对应门槛；触发条件、持续时间和叠层上限不能省略。",
+            "核验状态：已与标注 Build 24447756 / Revision 578943 的数据资料核对；尚未逐项实机复测。下方路线截图只证明获取流程，不证明当前版本数值。"
+          ],
+          "table": {
+            "headers": [
+              "件数",
+              "效果"
+            ],
+            "rows": [
+              [
+                "2",
+                "混沌抗性 +500"
+              ],
+              [
+                "3",
+                "鬼神剑舞：15 秒内精力攻击力 +20%"
+              ],
+              [
+                "4",
+                "鬼神剑舞：伤害 +15%"
+              ],
+              [
+                "5",
+                "敌人虚弱：伤害 +20%"
+              ],
+              [
+                "6",
+                "习得鬼神血色剑舞"
+              ]
+            ]
+          }
+        },
+        "en": {
+          "title": "Piece bonuses",
+          "items": [
+            "Read the active piece threshold together with its trigger, duration and stack limit.",
+            "Verification: checked against the dataset labeled Build 24447756 / Revision 578943; individual values have not been retested in-game. Route images document acquisition, not current balance values."
+          ],
+          "table": {
+            "headers": [
+              "Pieces",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2",
+                "Chaos resistance +500"
+              ],
+              [
+                "3",
+                "Phantom Sword Dance: stamina damage +20% for 15 seconds"
+              ],
+              [
+                "4",
+                "Phantom Sword Dance damage +15%"
+              ],
+              [
+                "5",
+                "Damage against exhausted enemies +20%"
+              ],
+              [
+                "6",
+                "Unlocks Phantom: Blood Sword Dance"
+              ]
+            ]
+          }
+        },
+        "links": []
+      },
+      {
+        "id": "acquisition",
+        "zh": {
+          "title": "获取与制作",
+          "items": [
+            "先取得卷轴，再到铁匠检查已登记配方、缺少材料、金币和部位。首领的材料必掉规则不等于指定成品或卷轴必掉。"
+          ]
+        },
+        "en": {
+          "title": "Acquisition and crafting",
+          "items": [
+            "Obtain the scroll, then inspect the registered recipe, materials, Gold and slot at the smith. Guaranteed boss materials do not guarantee a finished piece or a scroll."
+          ]
+        },
+        "links": [
+          {
+            "href": "walkthrough/lord-of-chaos/#pickup-lord-of-chaos-scrolls-1",
+            "zh": "卷轴精确拾取位置",
+            "en": "Exact scroll pickup"
+          },
+          {
+            "href": "equipment/set-crafting/",
+            "zh": "制作材料速查",
+            "en": "Crafting material reference"
+          }
+        ],
+        "images": [
+          {
+            "src": "/games/the-first-berserker-khazan/images/source/660db238c5e1845f0db3.jpg",
+            "zh": "混沌之主卷轴获取路线（原流程截图）",
+            "en": "Master of Chaos scroll acquisition route (original walkthrough image)"
+          }
+        ]
+      },
+      {
+        "id": "usage",
+        "zh": {
+          "title": "搭配检查",
+          "items": [
+            "先检查需要的武器和技能是否已经解锁，再比较实装备的触发效果。不要仅按面板攻击力替换关键套装部位。"
+          ]
+        },
+        "en": {
+          "title": "Build checks",
+          "items": [
+            "Check the weapon and required skills before comparing the active effects. Keep essential set thresholds when replacing individual pieces."
+          ]
+        },
+        "links": [
+          {
+            "href": "systems/builds/",
+            "zh": "三武器配装方向",
+            "en": "Weapon build directions"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Set data and thresholds",
+        "url": "https://khazan.tzrain.wiki/archive/sets?lang=zh"
+      }
+    ]
+  }
+]

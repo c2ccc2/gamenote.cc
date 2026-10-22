@@ -82,3 +82,9 @@
 
 .astlibra-title-note{font-size:14px;letter-spacing:.15em;vertical-align:middle;border:1px solid #c5ae735c;padding:5px 9px;margin-left:12px}
 [data-theme="classic"].astlibra-home .astlibra-chapter:visited{color:#ffefcd;text-decoration:none}
+[data-theme="classic"] .astlibra-stat{display:inline-block;margin:0 12px 4px 0;font-size:13px;line-height:1.7}
+[data-theme="classic"] .astlibra-item-table{min-width:720px}
+[data-theme="classic"] .astlibra-item-table th:first-child{width:150px}
+[data-theme="classic"] .astlibra-item-table td:last-child{min-width:170px}
+.astlibra-home-reading{display:flex;gap:14px;flex-wrap:wrap;margin:18px 0 30px}
+.astlibra-home-reading a{font-size:14px;padding:9px 12px;border-bottom:1px solid #c7b484;background:#f5f1e6}

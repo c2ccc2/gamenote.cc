@@ -25,10 +25,10 @@
   },
   "gear-sets": {
     "zh": [
-      "官方说明称，穿戴完整套装可获得特殊属性或技能，也可以混搭不同套装。"
+      "Crimson Fiend：围绕蓄力与 Mortal Blow 选择；通过掉落及对应卷轴制作补齐。"
     ],
     "en": [
-      "The official store page describes full-set bonuses and mixed loadouts."
+      "Crimson Fiend supports a charged-attack and Mortal Blow direction; check drops and its crafting scroll."
     ]
   },
   "hero-set": {
@@ -43,10 +43,10 @@
   },
   "skills": {
     "zh": [
-      "技能点可用于解锁技能，不同武器拥有各自的技能。"
+      "先练习普通连段结束后及时停手，再考虑增加段数的 Blazing Assault；后续按需要查看 Whirlwind 与追击方向。"
     ],
     "en": [
-      "Skill Points unlock abilities, with distinct skills for each weapon class."
+      "Practise stopping a basic string safely before extending it with Blazing Assault. Inspect Whirlwind and pursuit options as your available points grow."
     ]
   },
   "respec": {
@@ -77,10 +77,74 @@
   },
   "new-game-plus": {
     "zh": [
-      ""
+      "角色养成、技能和已持有装备可以带入下一周目；任务流程需要重新推进。"
     ],
     "en": [
-      "The official store page lists New Game+ and Ultimate Challenge as postgame options."
+      "Character progression, skills and held equipment carry into the next journey, while mission progression restarts."
+    ]
+  },
+  "gear-upgrade": {
+    "zh": [
+      "推进 Blacksmith’s Heirloom 相关任务以开放铁匠功能；制作时同时检查配方、材料和成品预览。"
+    ],
+    "en": [
+      "Progress through Blacksmith’s Heirloom to access the blacksmith. Check the recipe, materials and resulting item before crafting."
+    ]
+  },
+  "builds": {
+    "zh": [
+      "前期：以短连段和及时回避为主，把技能点投入实际能命中的动作，保留回避所需精力。"
+    ],
+    "en": [
+      "Early: use short strings and leave stamina for evasive movement. Invest in moves you can reliably connect."
+    ]
+  },
+  "ultimate-challenge": {
+    "zh": [
+      "按顺序解锁五组：Tides of Ruin、Earthshaking Roar、Unyielding Foes、Corruptors、Nightmare of Chaos。提供固定的等级、装备与资源，重点是用同一套条件稳定完成整组。"
+    ],
+    "en": [
+      "Unlock five groups in sequence: Tides of Ruin, Earthshaking Roar, Unyielding Foes, Corruptors and Nightmare of Chaos. Levels, gear and resources are provided."
+    ]
+  },
+  "combat-basics": {
+    "zh": [
+      "包含防御动作速查表、爆发攻击与抓取处理、削韧和致命攻击，以及常见失败原因。"
+    ],
+    "en": [
+      "Includes defensive action tables, Burst Attacks and grabs, exhaustion and Brutal Attacks, and troubleshooting."
+    ]
+  },
+  "skill-progression": {
+    "zh": [
+      "在第二章解锁技能树后，先选当前使用的武器。灰色节点先看熟练度和前置连线，再看点数；已学但无法发动时，检查激活条件与技能管理中的启用状态。"
+    ],
+    "en": [
+      "After the Chapter 2 skill-tree introduction, choose your current weapon. For a locked node, check Mastery and prerequisites before points. For an unusable learned skill, check activation conditions and Skill Management."
+    ]
+  },
+  "set-crafting": {
+    "zh": [
+      "选择要制作的具体部位，检查专属材料、通用材料和金币；部位、等级或品质变化时，重新核对预览。"
+    ],
+    "en": [
+      "Select the individual slot and inspect special materials, generic materials and Gold. Recheck when slot, level or grade changes."
+    ]
+  },
+  "phantom-abilities": {
+    "zh": [
+      "完成“斯顿雪域的斗鬼”后，实际打开魔剑的能力菜单并选择同行。解锁记录出现不等于已经装备。"
+    ],
+    "en": [
+      "After Stormpass’ Phantom of Combat, open the abilities menu at a Blade Nexus and select a companion. Unlocking one does not automatically equip it."
+    ]
+  },
+  "consumables": {
+    "zh": [
+      "购买或制作后检查快捷栏与背包库存。魔剑处的快捷补充不等于无限生成消耗品；来源、库存和次数型恢复道具要分开看。"
+    ],
+    "en": [
+      "After buying or crafting, check shortcuts and inventory. Shortcut refilling at a Nexus does not generate unlimited consumables; distinguish stored items from charged healing supplies."
     ]
   }
 }

@@ -1,5 +1,7 @@
 // Reader-facing edits retain route facts and remove the source author's diary/jokes.
 module.exports={
+ 'systems:557':'铁矿石+冶炼套件=铁锭',
+ 'systems:614':'冶炼套件+铁锭=炸弹',
  'flow-upper:45':'家中间的门可传送到之前的章节。任务出发前可回访；若暂时无法进入，先推进当前剧情，再在与弥露确认出发前尝试。旧区域初始位置的传送阵可以返回自己的房子。火山区域编号见本页路线图。',
  'flow-upper:46':'与弥露对话后回家推进剧情，房间右侧的门会打开。前往酒馆领取回收遗物的任务，再次对话即会出发，先完成补给。',
  'flow-upper:61':'本章开始敌人强度上升。出发前检查回复物品、盾牌与嘉隆配置。',

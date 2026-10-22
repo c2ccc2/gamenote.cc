@@ -1,0 +1,619 @@
+[
+  {
+    "id": "crimson-fiend",
+    "zh": "猩红恶鬼",
+    "en": "Crimson Fiend",
+    "weapon": "greatsword",
+    "recipe": "hermits-mountains-scrolls-1",
+    "materialZh": "按铁匠成品预览准备通用材料",
+    "materialEn": "Generic materials shown in the smithing preview",
+    "source": "https://khazan.tzrain.wiki/archive/sets/50604?lang=zh",
+    "bonuses": [
+      [
+        2,
+        "热血：伤害增加 15%",
+        "Vigor: damage +15%"
+      ],
+      [
+        3,
+        "蓄力攻击：伤害增加 10%",
+        "Charged attack damage +10%"
+      ],
+      [
+        4,
+        "绝息斩与蓄力攻击：精力恢复 100",
+        "Mortal Blow and charged attacks: stamina recovery +100"
+      ],
+      [
+        5,
+        "热血：所受伤害减少 30%",
+        "Vigor: damage received -30%"
+      ],
+      [
+        6,
+        "绝息斩：伤害增加 20%",
+        "Mortal Blow damage +20%"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "fallen-guardian",
+    "zh": "堕落守护神",
+    "en": "Fallen Guardian",
+    "weapon": "dual-wield",
+    "recipe": "tragic-night-scrolls-2",
+    "materialZh": "守护神的兽蹄：普拉乌村庄／万卡乌居所",
+    "materialEn": "Guardian's Hoof: Phraugh Village / Wankaul's Quarters",
+    "source": "https://www.neoseeker.com/the-first-berserker-khazan/Gear_Sets",
+    "bonuses": [
+      [
+        2,
+        "火攻击力 +15",
+        "Fire attack +15"
+      ],
+      [
+        3,
+        "敌人火焰：伤害增加 15%",
+        "Damage against Flame-afflicted enemies +15%"
+      ],
+      [
+        4,
+        "发动血雨腥风：3 秒内所受伤害减少 35%",
+        "Ruthless activation: damage received -35% for 3s"
+      ],
+      [
+        5,
+        "即时防御：赋予火属性 10 秒",
+        "Brink Guard: fire attribute for 10s"
+      ],
+      [
+        6,
+        "血雨腥风：15 秒内伤害增加 1%，最多 20 层",
+        "Ruthless: damage +1% for 15s, up to 20 stacks"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "fallen-lord",
+    "zh": "没落君主",
+    "en": "Fallen Lord",
+    "weapon": "spear",
+    "recipe": "silent-temple-scrolls-1",
+    "materialZh": "没落君主的尖爪：恩巴斯遗迹／无名空洞／废弃城堡",
+    "materialEn": "Fallen Lord's Claw: Embars Ruins / Nameless Cavern / Abandoned Citadel",
+    "source": "https://khazan.tzrain.wiki/archive/sets?lang=zh",
+    "bonuses": [
+      [
+        2,
+        "即时闪避：15 秒内精力恢复速度增加 25%",
+        "Brink Dodge: stamina recovery +25% for 15s"
+      ],
+      [
+        3,
+        "即时闪避：15 秒内伤害增加 15%",
+        "Brink Dodge: damage +15% for 15s"
+      ],
+      [
+        4,
+        "蓄力攻击：伤害增加 15%",
+        "Charged attack damage +15%"
+      ],
+      [
+        5,
+        "满月斩：伤害增加 15%",
+        "Full Moon damage +15%"
+      ],
+      [
+        6,
+        "螺旋刺：伤害增加 25%",
+        "Spiral Thrust damage +25%"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "golden",
+    "zh": "鎏金",
+    "en": "Golden",
+    "weapon": "spear",
+    "recipe": "strange-melody-scrolls-1",
+    "materialZh": "按铁匠成品预览准备通用材料",
+    "materialEn": "Generic materials shown in the smithing preview",
+    "source": "https://khazan.tzrain.wiki/archive/sets?lang=zh",
+    "bonuses": [
+      [
+        2,
+        "闪避所耗精力减少 15%",
+        "Dodge stamina cost -15%"
+      ],
+      [
+        3,
+        "背后袭击：精力攻击力增加 10%",
+        "Rear assault stamina damage +10%"
+      ],
+      [
+        4,
+        "无我之境：伤害增加 20%",
+        "Trance damage +20%"
+      ],
+      [
+        5,
+        "背后袭击：伤害增加 10%",
+        "Rear assault damage +10%"
+      ],
+      [
+        6,
+        "习得月光斩：觉醒",
+        "Learn Moonlight: Awakening"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "deep-shadow",
+    "zh": "深邃无光",
+    "en": "Deep Shadow",
+    "weapon": "spear",
+    "recipe": "devoured-village-scrolls-1",
+    "materialZh": "按铁匠成品预览准备通用材料",
+    "materialEn": "Generic materials shown in the smithing preview",
+    "source": "https://khazan.tzrain.wiki/archive/sets?lang=zh",
+    "bonuses": [
+      [
+        2,
+        "防御穿透 +90%",
+        "Guard penetration +90%"
+      ],
+      [
+        3,
+        "敌人虚弱：伤害增加 15%",
+        "Damage against exhausted enemies +15%"
+      ],
+      [
+        4,
+        "强袭重踢：精力攻击力增加 50%",
+        "Assault stamina damage +50%"
+      ],
+      [
+        5,
+        "强袭重踢：10 秒内伤害增加 15%",
+        "Assault: damage +15% for 10s"
+      ],
+      [
+        6,
+        "残影追刺：伤害增加 25%",
+        "Afterimage Thrust damage +25%"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "radiant-darkness",
+    "zh": "璀璨黑暗",
+    "en": "Radiant Darkness",
+    "weapon": "any",
+    "recipe": null,
+    "materialZh": "终极挑战代币兑换；在裂隙邮箱取代币后与幽魂之布雷德交互",
+    "materialEn": "Ultimate Challenge token exchange with Blade Phantom after collecting tokens from the Crevice mailbox",
+    "source": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259",
+    "bonuses": [
+      [
+        2,
+        "气竭：20 秒内精力恢复速度增加 50%",
+        "Depleted: stamina recovery +50% for 20s"
+      ],
+      [
+        3,
+        "即时防御：20 秒内伤害增加 8%，最多 3 层",
+        "Brink Guard: damage +8% for 20s, up to 3 stacks"
+      ],
+      [
+        4,
+        "轻击：获得斗志 0.06",
+        "Swift Attack: Spirit gain +0.06"
+      ],
+      [
+        5,
+        "即时闪避：20 秒内伤害增加 15%，最多 3 层",
+        "Brink Dodge: damage +15% for 20s, up to 3 stacks"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "defier",
+    "zh": "反抗者",
+    "en": "Defier",
+    "weapon": "any",
+    "recipe": null,
+    "materialZh": "终极挑战代币兑换",
+    "materialEn": "Ultimate Challenge token exchange",
+    "source": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259",
+    "bonuses": [
+      [
+        2,
+        "即时闪避：生命值恢复 10%",
+        "Brink Dodge: health recovery +10%"
+      ],
+      [
+        3,
+        "重击：15 秒内伤害增加 1.5%，最多 10 层",
+        "Potent Blow: damage +1.5% for 15s, up to 10 stacks"
+      ],
+      [
+        4,
+        "即时闪避：20 秒内伤害增加 15%",
+        "Brink Dodge: damage +15% for 20s"
+      ],
+      [
+        5,
+        "逐影挥刺：20 秒内伤害增加 35%",
+        "Shadow Reversal: damage +35% for 20s"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "netherworld-abyss",
+    "zh": "冥界深渊",
+    "en": "Netherworld Abyss",
+    "weapon": "any",
+    "recipe": null,
+    "materialZh": "终极挑战代币兑换",
+    "materialEn": "Ultimate Challenge token exchange",
+    "source": "https://steamcommunity.com/games/2680010/announcements/detail/543361383085900259",
+    "bonuses": [
+      [
+        2,
+        "反制成功：获得斗志 1",
+        "Successful Counterattack: Spirit +1"
+      ],
+      [
+        3,
+        "蓄力攻击：伤害倍率增加 25%",
+        "Charged attack damage multiplier +25%"
+      ],
+      [
+        4,
+        "斗志技能：20 秒内精力攻击力增加 10%，最多 3 层",
+        "Spirit skill: stamina damage +10% for 20s, up to 3 stacks"
+      ],
+      [
+        5,
+        "反攻破敌：20 秒内伤害增加 35%",
+        "Counterstrike: damage +35% for 20s"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "soul-eater",
+    "zh": "噬魂者",
+    "en": "Soul Eater",
+    "weapon": "all",
+    "recipe": "lacrima-scrolls-1",
+    "materialZh": "以铁匠的部位配方预览为准",
+    "materialEn": "Check the smithing preview for each slot",
+    "source": "https://khazan.tzrain.wiki/archive/sets?lang=zh",
+    "bonuses": [
+      [
+        2,
+        "最大精力 +200",
+        "Maximum stamina +200"
+      ],
+      [
+        3,
+        "重击：精力攻击力 +15%",
+        "Potent Blow stamina damage +15%"
+      ],
+      [
+        4,
+        "敌人虚弱时攻击：30 秒内伤害 +6%，最多 5 层",
+        "Attacking an exhausted enemy: damage +6% for 30 seconds, up to 5 stacks"
+      ],
+      [
+        5,
+        "致命攻击：伤害 +15%",
+        "Brutal Attack damage +15%"
+      ],
+      [
+        6,
+        "习得鬼神裁决",
+        "Unlocks Phantom Judgment"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "fugitive-mage",
+    "zh": "逃亡魔法师",
+    "en": "Fugitive Mage",
+    "weapon": "greatsword",
+    "recipe": "atlante-the-precise-scrolls-1",
+    "materialZh": "以铁匠的部位配方预览为准",
+    "materialEn": "Check the smithing preview for each slot",
+    "source": "https://khazan.tzrain.wiki/archive/sets?lang=zh",
+    "bonuses": [
+      [
+        2,
+        "蓄力攻击：伤害 +10%",
+        "Charged attack damage +10%"
+      ],
+      [
+        3,
+        "即时防御：10 秒内精力攻击力 +15%",
+        "Brink Guard: stamina damage +15% for 10 seconds"
+      ],
+      [
+        4,
+        "磐石斩：斗志／怒气 +0.2",
+        "Armor Breaker: Spirit +0.2"
+      ],
+      [
+        5,
+        "即时防御：精力恢复 200",
+        "Brink Guard: stamina recovery +200"
+      ],
+      [
+        6,
+        "穿心绝击：伤害 +40%",
+        "Heart Piercer damage +40%"
+      ],
+      [
+        7,
+        "即时防御：10 秒内伤害 +20%",
+        "Brink Guard: damage +20% for 10 seconds"
+      ],
+      [
+        8,
+        "习得穿心绝击：激愤",
+        "Unlocks the Heart Piercer set variant"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "unending-tragedy",
+    "zh": "无尽悲剧",
+    "en": "Unending Tragedy",
+    "weapon": "dual-wield",
+    "recipe": "residual-chaos-scrolls-1",
+    "materialZh": "以铁匠的部位配方预览为准",
+    "materialEn": "Check the smithing preview for each slot",
+    "source": "https://khazan.tzrain.wiki/archive/sets?lang=zh",
+    "bonuses": [
+      [
+        2,
+        "冷静：伤害 +15%",
+        "Coolheaded damage +15%"
+      ],
+      [
+        3,
+        "攻击：7 秒内精力恢复速度 +1.5%，最多 20 层",
+        "Attack: stamina recovery speed +1.5% for 7 seconds, up to 20 stacks"
+      ],
+      [
+        4,
+        "闪避精力消耗 −15%",
+        "Dodge stamina cost -15%"
+      ],
+      [
+        5,
+        "即时闪避：精力恢复 100",
+        "Brink Dodge: stamina recovery +100"
+      ],
+      [
+        6,
+        "习得血刃斩",
+        "Unlocks Blood Slash"
+      ],
+      [
+        7,
+        "攻击：7 秒内伤害 +1%，最多 20 层",
+        "Attack: damage +1% for 7 seconds, up to 20 stacks"
+      ],
+      [
+        8,
+        "习得血刃斩：狂风",
+        "Unlocks the Blood Slash set variant"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "fleshripper",
+    "zh": "屠戮者",
+    "en": "Fleshripper",
+    "weapon": "greatsword",
+    "recipe": "empires-end-scrolls-1",
+    "materialZh": "以铁匠的部位配方预览为准",
+    "materialEn": "Check the smithing preview for each slot",
+    "source": "https://khazan.tzrain.wiki/archive/sets?lang=zh",
+    "bonuses": [
+      [
+        2,
+        "重击：伤害 +15%",
+        "Potent Blow damage +15%"
+      ],
+      [
+        3,
+        "蓄力攻击：斗志／怒气 +0.3",
+        "Charged attack: Spirit +0.3"
+      ],
+      [
+        4,
+        "正面攻击：伤害 +15%",
+        "Frontal attack damage +15%"
+      ],
+      [
+        5,
+        "蓄力攻击：伤害 +20%",
+        "Charged attack damage +20%"
+      ],
+      [
+        6,
+        "习得突破极限：巅峰",
+        "Unlocks Limit Break: Apex"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "faded-memories",
+    "zh": "褪色回忆",
+    "en": "Faded Memories",
+    "weapon": "spear",
+    "recipe": "bloodstained-sanctuary-scrolls-3",
+    "materialZh": "以铁匠的部位配方预览为准",
+    "materialEn": "Check the smithing preview for each slot",
+    "source": "https://khazan.tzrain.wiki/archive/sets?lang=zh",
+    "bonuses": [
+      [
+        2,
+        "即时闪避：斗志／怒气 +0.3",
+        "Brink Dodge: Spirit +0.3"
+      ],
+      [
+        3,
+        "背后袭击：伤害倍率 +15%",
+        "Rear attack damage multiplier +15%"
+      ],
+      [
+        4,
+        "敌人虚弱：伤害 +15%",
+        "Damage against exhausted enemies +15%"
+      ],
+      [
+        5,
+        "重击：斗志／怒气 +0.05",
+        "Potent Blow: Spirit +0.05"
+      ],
+      [
+        6,
+        "回风连击：10 秒内伤害 +15%",
+        "Shadow Strike: damage +15% for 10 seconds"
+      ],
+      [
+        7,
+        "习得狂暴斩",
+        "Unlocks Frenzied Cleave"
+      ],
+      [
+        8,
+        "重击：15 秒内伤害 +1.5%，最多 20 层",
+        "Potent Blow: damage +1.5% for 15 seconds, up to 20 stacks"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  },
+  {
+    "id": "master-of-chaos",
+    "zh": "混沌之主",
+    "en": "Master of Chaos",
+    "weapon": "dual-wield",
+    "recipe": "lord-of-chaos-scrolls-1",
+    "materialZh": "以铁匠的部位配方预览为准",
+    "materialEn": "Check the smithing preview for each slot",
+    "source": "https://khazan.tzrain.wiki/archive/sets?lang=zh",
+    "bonuses": [
+      [
+        2,
+        "混沌抗性 +500",
+        "Chaos resistance +500"
+      ],
+      [
+        3,
+        "鬼神剑舞：15 秒内精力攻击力 +20%",
+        "Phantom Sword Dance: stamina damage +20% for 15 seconds"
+      ],
+      [
+        4,
+        "鬼神剑舞：伤害 +15%",
+        "Phantom Sword Dance damage +15%"
+      ],
+      [
+        5,
+        "敌人虚弱：伤害 +20%",
+        "Damage against exhausted enemies +20%"
+      ],
+      [
+        6,
+        "习得鬼神血色剑舞",
+        "Unlocks Phantom: Blood Sword Dance"
+      ]
+    ],
+    "verification": {
+      "status": "source-only",
+      "build": "24447756",
+      "revision": "578943",
+      "inGameChecked": false
+    }
+  }
+]

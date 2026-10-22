@@ -608,7 +608,7 @@
   },
   {
     "slug": "a-sisters-journey",
-    "name": "A Sister's Journey",
+    "name": "姐妹之旅（暂译）",
     "nameEn": "A Sister's Journey",
     "category": "metroidvania",
     "difficulty": "pending",
@@ -628,11 +628,14 @@
       "checked": "2026-10-21",
       "zh": "已发售：2026-10-20",
       "en": "Released: October 20, 2026",
-      "nameNoteZh": "Steam 简体中文商店仍使用英文名；暂未确认官方中文名。",
-      "nameNoteEn": "Steam’s Simplified Chinese store still uses the English title; no official Chinese title confirmed.",
+      "nameNoteZh": "本站暂译“姐妹之旅”；Steam 官方名称仍为 A Sister’s Journey，暂未确认官方中文名。",
+      "nameNoteEn": "The site uses the provisional Chinese translation 姐妹之旅; Steam still lists A Sister’s Journey, with no official Chinese title confirmed.",
       "source": "https://store.steampowered.com/app/1730790/?l=schinese"
     },
-    "releaseDate": "2026-10-20"
+    "releaseDate": "2026-10-20",
+    "aliases": [
+      "姐妹之旅"
+    ]
   },
   {
     "slug": "sinweaver",

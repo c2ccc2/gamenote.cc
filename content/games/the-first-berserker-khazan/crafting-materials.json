@@ -1,0 +1,162 @@
+[
+  {
+    "boss": "snow-yeti-king",
+    "setZh": "冰封雪山",
+    "setEn": "Frozen Mountain",
+    "zh": "雪山主宰的犄角",
+    "en": "Frozen Mountain Ruler's Horn",
+    "areaZh": "哈因马赫／里侬第二矿山",
+    "areaEn": "Heinmach / Linon second mine",
+    "recipe": "escaping-linon-mine-scrolls-1"
+  },
+  {
+    "boss": "blade-phantom-boss",
+    "setZh": "噬魂者",
+    "setEn": "Soul Eater",
+    "zh": "冥界矿物",
+    "en": "Netherworld Mineral",
+    "areaZh": "斯顿雪域／斯顿雪域顶峰",
+    "areaEn": "Stormpass / Stormpass summit",
+    "recipe": "lacrima-scrolls-1"
+  },
+  {
+    "boss": "viper",
+    "setZh": "没落君主",
+    "setEn": "Fallen Lord",
+    "zh": "没落君主的尖爪",
+    "en": "Fallen Lord's Claw",
+    "areaZh": "恩巴斯遗迹／无名空洞／废弃城堡",
+    "areaEn": "Embars Ruins / Nameless Cavern / Abandoned Citadel",
+    "recipe": "silent-temple-scrolls-1"
+  },
+  {
+    "boss": "volbaino",
+    "setZh": "堕落守护神",
+    "setEn": "Fallen Guardian",
+    "zh": "守护神的兽蹄",
+    "en": "Guardian's Hoof",
+    "areaZh": "普拉乌村庄／万卡乌居所",
+    "areaEn": "Phraugh Village / Wankaul's Quarters",
+    "recipe": "tragic-night-scrolls-2"
+  },
+  {
+    "boss": "aratra",
+    "setZh": "黑暗掠食者",
+    "setEn": "Devourer of Darkness",
+    "zh": "食人蛛的腿",
+    "en": "Maneater Spider's Leg",
+    "areaZh": "斯科帕洞穴／维塔隆地下通道",
+    "areaEn": "Skoffa Cave / Vitalon underground passage",
+    "recipe": "blade-to-the-curtain-scrolls-1"
+  },
+  {
+    "boss": "rangkus",
+    "setZh": "愤怒盗贼",
+    "setEn": "Furious Bandit",
+    "zh": "盗贼的赃物",
+    "en": "Bandit's Loot",
+    "areaZh": "帕莱密恩城堡／账幕之刃据点",
+    "areaEn": "Palemion Citadel / Knivesveil Hideout",
+    "recipe": "pavels-final-words-scrolls-1"
+  },
+  {
+    "boss": "maluca",
+    "setZh": "混沌蚕食者",
+    "setEn": "Chaos-Ridden",
+    "zh": "混沌弥漫的鳞爪",
+    "en": "Chaos-infused Claw",
+    "areaZh": "纳丁采石场／长春藤别院",
+    "areaEn": "Nadin Quarry / Ivy Annex",
+    "recipe": "final-subjugation-scrolls-1"
+  },
+  {
+    "boss": "elamein",
+    "setZh": "梦殇之影",
+    "setEn": "Crushed Dreams",
+    "zh": "北部战士的刀刃",
+    "en": "Northern Warrior's Blade",
+    "areaZh": "埃拉瓦卡村庄／达里温城堡",
+    "areaEn": "El Ravaca Village / Darion Castle",
+    "recipe": "transcendental-sword-scrolls-1"
+  },
+  {
+    "boss": "shactuka",
+    "setZh": "野兽虐杀者",
+    "setEn": "Beastslayer",
+    "zh": "野兽的颚骨",
+    "en": "Beast's Jawbone",
+    "areaZh": "里侬矿山／埃拉瓦卡第四区",
+    "areaEn": "Linon Mine / El Ravaca Sector No. 4",
+    "recipe": "why-abandon-us-scrolls-2"
+  },
+  {
+    "boss": "trokka",
+    "setZh": "沉水魔女",
+    "setEn": "Drowned Witch",
+    "zh": "魔女的触手",
+    "en": "Witch's Tentacle",
+    "areaZh": "阿尔戴比勒",
+    "areaEn": "Aldevir",
+    "recipe": "unrequited-love-scrolls-1"
+  },
+  {
+    "boss": "bellerian",
+    "setZh": "逃亡魔法师",
+    "setEn": "Fugitive Mage",
+    "zh": "隐士的魔法石",
+    "en": "Hermit's Magic Stone",
+    "areaZh": "莱帕兰山脉",
+    "areaEn": "Rephalan Mountains",
+    "recipe": "atlante-the-precise-scrolls-1"
+  },
+  {
+    "boss": "skalpel",
+    "setZh": "嗜血狂徒",
+    "setEn": "Bloodthirsty Fiend",
+    "zh": "血染的石片",
+    "en": "Bloodstained Stone Fragment",
+    "areaZh": "瓦尔萨勒关门",
+    "areaEn": "Vaisar Gate",
+    "recipe": "last-guard-scrolls-1"
+  },
+  {
+    "boss": "princess-ilyna",
+    "setZh": "无尽悲剧",
+    "setEn": "Unending Tragedy",
+    "zh": "皇女之镜",
+    "en": "Princess's Mirror",
+    "areaZh": "罗维利恩中央大剧院",
+    "areaEn": "Rovelion Imperial Theatre",
+    "recipe": "residual-chaos-scrolls-1"
+  },
+  {
+    "boss": "hismar",
+    "setZh": "屠戮者",
+    "setEn": "Fleshripper",
+    "zh": "狂龙的犄角",
+    "en": "Berserk Dragon's Horn",
+    "areaZh": "维塔隆皇都",
+    "areaEn": "Capital City Vitalon",
+    "recipe": "empires-end-scrolls-1"
+  },
+  {
+    "boss": "reese",
+    "setZh": "褪色回忆",
+    "setEn": "Faded Memories",
+    "zh": "离别之泪",
+    "en": "Tear of Farewell",
+    "areaZh": "大神殿",
+    "areaEn": "Great Temple",
+    "recipe": "bloodstained-sanctuary-scrolls-3"
+  },
+  {
+    "boss": "ozma-boss",
+    "setZh": "混沌之主",
+    "setEn": "Master of Chaos",
+    "zh": "混沌之眼",
+    "en": "Eye of Chaos",
+    "areaZh": "皇宫",
+    "areaEn": "Imperial Palace",
+    "recipe": "lord-of-chaos-scrolls-1"
+  }
+]

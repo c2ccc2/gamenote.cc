@@ -1,0 +1,47 @@
+{
+  "viper": {
+    "name": "Fallen Lord",
+    "zh": "长枪：Full Moon、Spiral Thrust 方向。",
+    "en": "Spear: Full Moon and Spiral Thrust."
+  },
+  "volbaino": {
+    "name": "Fallen Guardian",
+    "zh": "双持：火属性与 Ruthless 方向。",
+    "en": "Dual Wield: fire and Ruthless."
+  },
+  "aratra": {
+    "name": "Devourer of Darkness",
+    "zh": "巨剑：Ghost Arm: Block 与毒相关方向。",
+    "en": "Greatsword: Ghost Arm: Block and poison."
+  },
+  "maluca": {
+    "name": "Chaos-Ridden",
+    "zh": "巨剑：Brink Guard、Volcanic Wrath 方向。",
+    "en": "Greatsword: Brink Guard and Volcanic Wrath."
+  },
+  "bellerian": {
+    "name": "Fugitive Mage",
+    "zh": "巨剑：Armor Breaker、Heart Piercer 方向。",
+    "en": "Greatsword: Armor Breaker and Heart Piercer."
+  },
+  "princess-ilyna": {
+    "name": "Unending Tragedy",
+    "zh": "刀斧：连续命中与闪避后的资源回复。",
+    "en": "Dual Wield: repeated hits and resource recovery around dodging."
+  },
+  "hismar": {
+    "name": "Fleshripper",
+    "zh": "巨剑：蓄力攻击方向。",
+    "en": "Greatsword: charged attacks."
+  },
+  "reese": {
+    "name": "Faded Memories",
+    "zh": "长枪：Shadow Strike 方向。",
+    "en": "Spear: Shadow Strike."
+  },
+  "ozma-boss": {
+    "name": "Master of Chaos",
+    "zh": "双持：Phantom Sword Dance 方向。",
+    "en": "Dual Wield: Phantom Sword Dance."
+  }
+}

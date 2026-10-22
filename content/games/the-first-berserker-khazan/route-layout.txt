@@ -464,3 +464,5 @@
 284|24|奥兹玛第二形态：连击、下砸与范围爆炸|Ozma's second form: combos, slams and area blasts
 284|43|决战结束：卷轴奖励与结局分支|After the final battle: scroll reward and ending branches
 285|0|奥兹玛的住所：逐层查看回忆，向肖像献花|Ozma's residence: explore the memories and lay a flower at the portrait
+
+119|14|实验楼回访：黑月升起之日（二）|Laboratory revisit: The Day the Black Moon Rose II

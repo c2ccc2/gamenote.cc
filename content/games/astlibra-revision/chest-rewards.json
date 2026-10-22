@@ -1,0 +1,1687 @@
+{
+  "checked": "2026-10-22",
+  "method": "本地取得提示截图逐项阅读；缺少取得提示时交叉核对本地主线或 KH/TWRoxas 的同场景实玩收集指南。",
+  "records": [
+    {
+      "id": "chest-chapter-1-01",
+      "rewards": [
+        {
+          "name": "飞剑的奥义卷轴",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 4
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-1-02",
+      "rewards": [
+        {
+          "name": "木弓",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 7
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-1-03",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 10
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-1-04",
+      "rewards": [
+        {
+          "name": "铜宝箱的钥匙",
+          "quantity": 5
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 12
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-1-05",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 14
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-1-06",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 16
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-1-07",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 18
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-1-08",
+      "rewards": [
+        {
+          "name": "闪避的奥义卷轴",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 20
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-2-01",
+      "rewards": [
+        {
+          "name": "世界树之花",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 23
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-2-02",
+      "rewards": [
+        {
+          "name": "勇气八音盒",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 26
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-2-03",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 29
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-2-04",
+      "rewards": [
+        {
+          "name": "环境卡",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 33
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-2-05",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 36
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-2-06",
+      "rewards": [
+        {
+          "name": "升剑的奥义卷轴",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "text",
+          "doc": "flow-upper",
+          "block": 23
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-2-07",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 41
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-2-08",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 44
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-2-09",
+      "rewards": [
+        {
+          "name": "天平挂盘",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 47
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-2-10",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 49
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-3-01",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 55
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-3-02",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 58
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-3-03",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 61
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-3-04",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 64
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-3-05",
+      "rewards": [
+        {
+          "name": "反击的奥义卷轴",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 66
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-3-06",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 69
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-3-07",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 72
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-3-08",
+      "rewards": [
+        {
+          "name": "防御卡",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 74
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-3-09",
+      "rewards": [
+        {
+          "name": "天平挂盘",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 76
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-3-10",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 79
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-4-01",
+      "rewards": [
+        {
+          "name": "血清",
+          "quantity": 3
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 85
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-4-02",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 88
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-4-03",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 91
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-4-04",
+      "rewards": [
+        {
+          "name": "盾冲的奥义卷轴",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 94
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-4-05",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 97
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-4-06",
+      "rewards": [
+        {
+          "name": "环境卡",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 99
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-4-07",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 104
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-4-08",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 106
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-4-09",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 109
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-4-10",
+      "rewards": [
+        {
+          "name": "蝎子旃那",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 112
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-4-11",
+      "rewards": [
+        {
+          "name": "天平挂盘",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 114
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-01",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 120
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-02",
+      "rewards": [
+        {
+          "name": "空剑的奥义卷轴",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 122
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-03",
+      "rewards": [
+        {
+          "name": "火药",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 124
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-04",
+      "rewards": [
+        {
+          "name": "火药",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 127
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-05",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 130
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-06",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 133
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-07",
+      "rewards": [
+        {
+          "name": "环境卡",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 136
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-08",
+      "rewards": [
+        {
+          "name": "火药",
+          "quantity": 2,
+          "position": "08A：门上方高台"
+        },
+        {
+          "name": "魔导水晶",
+          "quantity": 1,
+          "position": "08B：墙壁遮挡房间"
+        },
+        {
+          "name": "魔导水晶",
+          "quantity": 1,
+          "position": "08C：最右侧岩石后"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 140
+        },
+        {
+          "type": "external",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2888133558",
+          "location": "Ruined Town: three chests after the green arrow"
+        }
+      ],
+      "note": "原稿编号 08 合并了三只宝箱；按 A／B／C 分别列奖励，104 为位置记录数。"
+    },
+    {
+      "id": "chest-chapter-5-09",
+      "rewards": [
+        {
+          "name": "攻击卡",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "external",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2888133558",
+          "location": "Ruined Town Well"
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-10",
+      "rewards": [
+        {
+          "name": "精力卡",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 148
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-11",
+      "rewards": [
+        {
+          "name": "2000枚硬币",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 150
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-12",
+      "rewards": [
+        {
+          "name": "大地盔甲",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 152
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-13",
+      "rewards": [
+        {
+          "name": "体力卡",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "external",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2888133558",
+          "location": "Stairwell between 2nd and 3rd floor"
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-14",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 156
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-5-15",
+      "rewards": [
+        {
+          "name": "天平挂盘",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-upper",
+          "block": 158
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-6-01",
+      "rewards": [
+        {
+          "name": "环境卡",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 3
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-6-02",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 6
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-6-03",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 9
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-6-04",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 14
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-6-05",
+      "rewards": [
+        {
+          "name": "空步的奥义卷轴",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 17
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-6-06",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 19
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-6-07",
+      "rewards": [
+        {
+          "name": "防御卡",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 22
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-6-08",
+      "rewards": [
+        {
+          "name": "体力卡",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 24
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-6-09",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 27
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-6-10",
+      "rewards": [
+        {
+          "name": "天平挂盘",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 30
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-6-11",
+      "rewards": [
+        {
+          "name": "悠久的高卢·申",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 32
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-01",
+      "rewards": [
+        {
+          "name": "环境卡",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 37
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-02",
+      "rewards": [
+        {
+          "name": "天平挂盘",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 40
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-03",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 43
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-04",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "external",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2888133558",
+          "location": "Anesta Inn"
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-05",
+      "rewards": [
+        {
+          "name": "攻击卡",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 47
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-06",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 49
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-07",
+      "rewards": [
+        {
+          "name": "龙卷的奥义卷轴",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 51
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-08",
+      "rewards": [
+        {
+          "name": "防御卡",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 55
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-09",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 57
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-10",
+      "rewards": [
+        {
+          "name": "精灵之弓乌莎斯",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 60
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-11",
+      "rewards": [
+        {
+          "name": "体力卡",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 62
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-12",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 64
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-7-13",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 67
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-8-01",
+      "rewards": [
+        {
+          "name": "攻击卡",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "external",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2888133558",
+          "location": "Toward the Facility 1"
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-8-02",
+      "rewards": [
+        {
+          "name": "防御卡",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 74
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-8-03",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "external",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2888133558",
+          "location": "Toward the Facility 6"
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-8-04",
+      "rewards": [
+        {
+          "name": "天平挂盘",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 79
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-8-05",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 82
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-8-06",
+      "rewards": [
+        {
+          "name": "攻击卡",
+          "quantity": 3
+        }
+      ],
+      "evidence": [
+        {
+          "type": "external",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2888133558",
+          "location": "3rd Floor: Left Corridor 2"
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-8-07",
+      "rewards": [
+        {
+          "name": "防御卡",
+          "quantity": 3
+        }
+      ],
+      "evidence": [
+        {
+          "type": "external",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2888133558",
+          "location": "4th Floor: Data Console Room"
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-8-08",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "external",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2888133558",
+          "location": "3rd Floor: Right Corridor 2"
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-8-09",
+      "rewards": [
+        {
+          "name": "精力卡",
+          "quantity": 2
+        }
+      ],
+      "evidence": [
+        {
+          "type": "external",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2888133558",
+          "location": "2nd Floor: Magma Chamber"
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-8-10",
+      "rewards": [
+        {
+          "name": "失重的奥义卷轴",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 94
+        }
+      ]
+    },
+    {
+      "id": "chest-chapter-8-11",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 97
+        }
+      ]
+    },
+    {
+      "id": "chest-final-chapter-01",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 101
+        }
+      ]
+    },
+    {
+      "id": "chest-final-chapter-02",
+      "rewards": [
+        {
+          "name": "力量晶体勋章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 104
+        }
+      ]
+    },
+    {
+      "id": "chest-final-chapter-03",
+      "rewards": [
+        {
+          "name": "硬币勋章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 106
+        }
+      ]
+    },
+    {
+      "id": "chest-final-chapter-04",
+      "rewards": [
+        {
+          "name": "攻击卡",
+          "quantity": 10
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 110
+        }
+      ]
+    },
+    {
+      "id": "chest-final-chapter-05",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 112
+        }
+      ]
+    },
+    {
+      "id": "chest-final-chapter-06",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 115
+        }
+      ]
+    },
+    {
+      "id": "chest-postscript-01",
+      "rewards": [
+        {
+          "name": "魔导水晶",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 118
+        }
+      ]
+    },
+    {
+      "id": "chest-postscript-02",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 121
+        }
+      ]
+    },
+    {
+      "id": "chest-postscript-03",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 124
+        }
+      ]
+    },
+    {
+      "id": "chest-postscript-04",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 127
+        }
+      ]
+    },
+    {
+      "id": "chest-postscript-05",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 129
+        }
+      ]
+    },
+    {
+      "id": "chest-postscript-06",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 132
+        }
+      ]
+    },
+    {
+      "id": "chest-postscript-07",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 135
+        }
+      ]
+    },
+    {
+      "id": "chest-postscript-08",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 138
+        }
+      ]
+    },
+    {
+      "id": "chest-postscript-09",
+      "rewards": [
+        {
+          "name": "小徽章",
+          "quantity": 1
+        }
+      ],
+      "evidence": [
+        {
+          "type": "image",
+          "doc": "collect-lower",
+          "block": 141
+        }
+      ]
+    }
+  ]
+}

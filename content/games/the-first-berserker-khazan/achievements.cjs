@@ -21,7 +21,7 @@ const rows=[
 ['combat','巧手铁匠','Skilled Blacksmith','让科兹玛卡制作一件装备。','Craft gear through Qazumaka.','side-quests/blacksmith-heirloom/'],
 ['combat','商人的智慧',"Merchant's Wisdom",'向杜伊穆克出售物品。','Sell an item to Duimuk.','characters/duimuk/'],
 ['combat','卡莱多','Kaleido','完成寂静神庙后，通过奥克萨娜更改装备特性。','Alter a gear trait through Oksana after Silent Temple.','side-quests/silent-temple/'],
-['combat','不屈的意志','Indomitable','通过奥克萨娜完成装备继承。','Use Oksana’s gear inheritance service.','characters/oksana/'],
+['combat','不屈的意志','Indomitable','通过奥克萨娜完成装备强化（Augment Gear）。','Augment gear through Oksana.','characters/oksana/'],
 ['collect','吟诵复仇之人',"The Bard's Lamentations",'完成迪戈尔沿途五处会面：神庙、洞穴、山脉、剧院、皇都。','Meet Digor at the temple, cave, mountains, theatre and capital.','characters/bard/'],
 ['collect','罐子爱好者','Jar Enthusiast','找齐全部44只罐子精灵。','Locate all 44 Jarlings.','collectibles/jarlings/'],
 ['collect','冥界助力者','Agent of the Netherworld','破坏全部100块鬼石。','Destroy all 100 Soulstones.','collectibles/soulstones/'],
@@ -29,8 +29,8 @@ const rows=[
 ['ending','无尽的故事','Countless Tales','完成全部支线任务。','Finish every bonus mission.','side-quests/'],
 ['ending','挑战者之旅',"The Challenger's Journey",'通关并迎来结局。','Finish the campaign.','walkthrough/lord-of-chaos/'],
 ['ending','熟练者之旅',"The Expert's Journey",'以专家难度完成旅程；通关前不要降低难度。','Complete an Expert journey without lowering difficulty.','walkthrough/lord-of-chaos/'],
-['ending','新的篇章','A New Path','通关后开启第二次旅程（新游戏＋）。','Begin New Game+ after the ending.','systems/#new-game-plus'],
-['ending','独当一面','Standing Alone','在从未召唤助力之魂的情况下通关；红色敌对怨魂不属于助力之魂。','Reach the ending without using a Spirit of Advocacy; hostile red revenants are separate.','walkthrough/lord-of-chaos/'],
+['ending','新的篇章','A New Path','通关后开启第二次旅程（新游戏＋）。','Begin New Game+ after the ending.','systems/new-game-plus/'],
+['ending','独当一面','Standing Alone','当前周目不召唤助力之魂并通关；以前周目召唤过不影响，红色敌对怨魂也不计入。','Finish the current journey without a Spirit of Advocacy; summons in earlier journeys and hostile red revenants do not count.','walkthrough/lord-of-chaos/'],
 ['ending','THE FIRST BERSERKER','THE FIRST BERSERKER','达成同名结局；提前完成金色剧情收集，并在皇宫达芙罗娜处选择追查真相的分支。','Reach the namesake ending; finish the golden story collection and choose the truth branch with Daphrona in the palace.','walkthrough/lord-of-chaos/#route-279'],
 ];
 const bosses=[

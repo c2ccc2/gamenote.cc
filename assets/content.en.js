@@ -5,7 +5,7 @@
   islets:['Islets','Travel between broken islands, find magnetic cores and reconnect the world.'],
   'ender-lilies':['ENDER LILIES','Explore a kingdom beneath the rain of death and purify blighted spirits.'],
   'an-jing-wei-guang':['Well Dweller','Area, boss, ability, collectible, quest and achievement directories are ready. Detailed guides remain under verification.'],
-  'the-first-berserker-khazan':['The First Berserker: Khazan','A mission and boss guide is being prepared, beginning with the opening snowfield and combat basics.'],
+  'the-first-berserker-khazan':['The First Berserker: Khazan','The core guide is complete: main and side missions, bosses, equipment and collectibles, with saved collection progress. More operation screenshots and in-game value verification remain ongoing.'],
   'astlibra-revision':['ASTLIBRA Revision','Chinese illustrated walkthroughs, chest maps, equipment charts, KARON skills and system references.']
  };
  c.games=c.games.map(g=>games[g.id]?({...g,titleZh:games[g.id][0],description:games[g.id][1],...(['an-jing-wei-guang','the-first-berserker-khazan'].includes(g.id)?{guideUrl:'/en/games/'+g.slug+'/'}:{})}):g);

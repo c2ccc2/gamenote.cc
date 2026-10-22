@@ -5200,7 +5200,7 @@
         },
         {
           "kind": "text",
-          "text": "攻击方式②："
+          "text": "攻击方式②：火铳连续射击。朗格斯在远处抬起武器，炮口亮起后连续向卡赞所在方向开火。留意每次出膛的火光，横向移动并在炮弹逼近时闪避；第一发过去后不要立刻停下喝药或冲上去，确认这一轮射击结束再靠近。"
         },
         {
           "kind": "image",
@@ -9080,6 +9080,11 @@
         {
           "kind": "image",
           "src": "/games/the-first-berserker-khazan/images/source/2468fd5e17520ecc742e.jpg"
+        },
+        {
+          "kind": "text",
+          "text": "补充收集：黑月升起之日（二）。若尚未取得，可从第四区实验楼魔剑处回身，经栏杆缺口下到房间，左转进入通道，上台阶后穿过右侧房间，再沿梯子下到实验大厅。沿大型实验容器房的右墙检查，在右侧书桌旁拾取这份文书；完成后返回当前任务路线继续前进。",
+          "supplementSource": "https://www.youtube.com/watch?v=DmhKHqokGdM&t=968s"
         }
       ]
     },
@@ -20906,7 +20911,8 @@
         },
         {
           "kind": "text",
-          "text": "攻击方式③："
+          "text": "攻击方式③：召唤治疗结晶。奥兹玛在身前召出紫色结晶，并准备吸收它恢复生命。优先转向结晶并尽快破坏，不要只追着本体攻击。结晶会释放范围脉冲，看到能量向外扩散时先闪避，避开后继续攻击结晶；不要为了抢伤害在脉冲中连续贪刀。",
+          "supplementSource": "https://bai-gaming.com/how-to-beat-ozma-the-first-berserker-khazan/"
         },
         {
           "kind": "image",

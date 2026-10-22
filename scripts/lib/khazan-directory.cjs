@@ -11,13 +11,13 @@ module.exports = function directory({en, locale, base, current, library, entries
       : section.id === 'side-quests' && guide
         ? guide.side.map(task => link(task[locale].title, base + 'side-quests/' + task.id + '/')).join('')
       : section.id === 'collectibles' && guide
-        ? guide.types.map(type => link(type[locale], base + 'collectibles/' + type.id + '/')).join('')
+        ? link(en?'Golden story records':'金色剧情文书',base+'collectibles/ozma-records/') + guide.types.map(type => link(type[locale], base + 'collectibles/' + type.id + '/')).join('')
       : section.id === 'bosses' && guide
-        ? bossPages.map(boss => link(boss.title[locale], base + 'bosses/' + boss.id + '/')).join('')
+        ? link(en?'Side-mission bosses':'支线首领索引',base+'bosses/side/') + link(en?'Rewards and farming':'奖励与刷取说明',base+'bosses/drops/') + bossPages.map(boss => link(boss.title[locale], base + 'bosses/' + boss.id + '/')).join('')
       : section.id === 'achievements'
-        ? [['boss',en?'Story bosses':'剧情BOSS'],['side',en?'Side stories':'支线剧情'],['combat',en?'Combat and progression':'战斗与养成'],['collect',en?'Collecting':'探索收集'],['ending',en?'Endings and challenges':'结局与通关挑战']].map(([id,title])=>link(title,base+'achievements/'+id+'/')).join('')
+        ? link(en?'Achievement roadmap':'全成就路线',base+'achievements/roadmap/') + [['boss',en?'Story bosses':'剧情BOSS'],['side',en?'Side stories':'支线剧情'],['combat',en?'Combat and progression':'战斗与养成'],['collect',en?'Collecting':'探索收集'],['ending',en?'Endings and challenges':'结局与通关挑战']].map(([id,title])=>link(title,base+'achievements/'+id+'/')).join('')
       : section.status === 'available'
-        ? entries.filter(entry => entry.category === section.id).map(entry => link(entry[locale].title, section.id === 'characters' ? base + 'characters/' + entry.id + '/' : base + section.href + '#' + entry.id)).join('')
+        ? entries.filter(entry => entry.category === section.id).map(entry => link(entry[locale].title, (entry.detailHref || entry.href) ? base + (entry.detailHref || entry.href) : section.id === 'characters' ? base + 'characters/' + entry.id + '/' : base + section.href + '#' + entry.id)).join('')
         : `<span class="khazan-nav-pending">${en ? 'Content in progress' : '内容整理中'}</span>`;
     return `<section class="classic-nav-group"><div class="classic-nav-group-heading"><h2>${heading}</h2><button class="classic-group-toggle" type="button" aria-expanded="true" aria-controls="${id}" aria-label="${en ? 'Collapse ' : '收起'}${esc(title)}">−</button></div><div class="classic-nav-group-items" id="${id}">${items}</div></section>`;
   }).join('');

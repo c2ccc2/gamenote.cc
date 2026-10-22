@@ -1,0 +1,497 @@
+[
+  {
+    "id": "ACHI_001",
+    "name": "扭蛋清单",
+    "description": "有好多小徽章嗼啾！"
+  },
+  {
+    "id": "ACHI_002",
+    "name": "扭蛋大师",
+    "description": "太赞了嗼啾！"
+  },
+  {
+    "id": "ACHI_003",
+    "name": "学者",
+    "description": "获得所有道具。"
+  },
+  {
+    "id": "ACHI_004",
+    "name": "召唤师",
+    "description": "使用凭依技超过1000次。"
+  },
+  {
+    "id": "ACHI_005",
+    "name": "召唤大师",
+    "description": "使用凭依技超过3000次。"
+  },
+  {
+    "id": "ACHI_006",
+    "name": "小有积蓄",
+    "description": "总计获得金额超过20万。"
+  },
+  {
+    "id": "ACHI_007",
+    "name": "腰缠万贯",
+    "description": "总计获得金额超过60万。"
+  },
+  {
+    "id": "ACHI_008",
+    "name": "旅行者",
+    "description": "步数超过2万。"
+  },
+  {
+    "id": "ACHI_009",
+    "name": "运动员",
+    "description": "步数超过5万。"
+  },
+  {
+    "id": "ACHI_010",
+    "name": "丰富的战斗经验",
+    "description": "等级超过40级。"
+  },
+  {
+    "id": "ACHI_011",
+    "name": "神之天平计划",
+    "description": "等级超过80级。"
+  },
+  {
+    "id": "ACHI_012",
+    "name": "沉溺魔素",
+    "description": "总计获得力量晶体数量超过20万。"
+  },
+  {
+    "id": "ACHI_013",
+    "name": "魔素成瘾",
+    "description": "总计获得力量晶体数量超过65万。"
+  },
+  {
+    "id": "ACHI_014",
+    "name": "连击大师",
+    "description": "最大连击数超过1000次。"
+  },
+  {
+    "id": "ACHI_015",
+    "name": "战斗狂人",
+    "description": "杀敌数超过5000。"
+  },
+  {
+    "id": "ACHI_016",
+    "name": "杀戮成性",
+    "description": "杀敌数超过15000。"
+  },
+  {
+    "id": "ACHI_017",
+    "name": "狂殴乱打",
+    "description": "打击数超过10万次。"
+  },
+  {
+    "id": "ACHI_018",
+    "name": "痛快淋漓",
+    "description": "打击数超过20万次。"
+  },
+  {
+    "id": "ACHI_019",
+    "name": "魔法使",
+    "description": "学会40个嘉隆魔法。"
+  },
+  {
+    "id": "ACHI_020",
+    "name": "大魔导师",
+    "description": "学会全部嘉隆魔法。"
+  },
+  {
+    "id": "ACHI_021",
+    "name": "天平的潜力",
+    "description": "至少强化一次天平挂盘。"
+  },
+  {
+    "id": "ACHI_022",
+    "name": "强者",
+    "description": "通关“困难”难度。"
+  },
+  {
+    "id": "ACHI_023",
+    "name": "选择困难症",
+    "description": "获得50块魔导水晶。"
+  },
+  {
+    "id": "ACHI_024",
+    "name": "随性任选",
+    "description": "获得100块魔导水晶。"
+  },
+  {
+    "id": "ACHI_025",
+    "name": "奥义·飞剑",
+    "description": "学会飞剑。"
+  },
+  {
+    "id": "ACHI_026",
+    "name": "奥义·反击",
+    "description": "学会弹反重击。"
+  },
+  {
+    "id": "ACHI_027",
+    "name": "奥义·闪避",
+    "description": "学会后跳。"
+  },
+  {
+    "id": "ACHI_028",
+    "name": "奥义·升剑",
+    "description": "学会跳劈。"
+  },
+  {
+    "id": "ACHI_029",
+    "name": "奥义·盾冲",
+    "description": "学会盾冲。"
+  },
+  {
+    "id": "ACHI_030",
+    "name": "奥义·空剑",
+    "description": "学会空剑。"
+  },
+  {
+    "id": "ACHI_031",
+    "name": "奥义·空步",
+    "description": "学会空中快步。"
+  },
+  {
+    "id": "ACHI_032",
+    "name": "奥义·龙卷",
+    "description": "学会龙卷斩。"
+  },
+  {
+    "id": "ACHI_033",
+    "name": "奥义·失重",
+    "description": "学会失重。"
+  },
+  {
+    "id": "ACHI_034",
+    "name": "第一头大猎物",
+    "description": "打倒大史莱姆。"
+  },
+  {
+    "id": "ACHI_035",
+    "name": "邪鬼之王",
+    "description": "打倒哥布林王。"
+  },
+  {
+    "id": "ACHI_036",
+    "name": "火山的守护兽",
+    "description": "打倒风龙。"
+  },
+  {
+    "id": "ACHI_037",
+    "name": "发育期",
+    "description": "打倒蛇神之子。"
+  },
+  {
+    "id": "ACHI_038",
+    "name": "无敌巨树",
+    "description": "打倒树人。"
+  },
+  {
+    "id": "ACHI_039",
+    "name": "未确认动物",
+    "description": "打倒大脚怪。"
+  },
+  {
+    "id": "ACHI_040",
+    "name": "冥界魔物",
+    "description": "打倒上级恶魔。"
+  },
+  {
+    "id": "ACHI_041",
+    "name": "讨伐青蛙",
+    "description": "打倒青蛙大佐。"
+  },
+  {
+    "id": "ACHI_042",
+    "name": "打倒最强人形机械兵器",
+    "description": "打倒冒牌货。"
+  },
+  {
+    "id": "ACHI_043",
+    "name": "打倒会长",
+    "description": "再会！"
+  },
+  {
+    "id": "ACHI_044",
+    "name": "通关正传",
+    "description": "通关神之天平正传。"
+  },
+  {
+    "id": "ACHI_045",
+    "name": "崭新的故事",
+    "description": "进入新章。"
+  },
+  {
+    "id": "ACHI_046",
+    "name": "一同散步的朋友",
+    "description": "看完所有泊灵的事件。"
+  },
+  {
+    "id": "ACHI_047",
+    "name": "红发挚友",
+    "description": "看完所有盖乌的事件。"
+  },
+  {
+    "id": "ACHI_048",
+    "name": "空前绝后的女孩",
+    "description": "看完所有白的事件。"
+  },
+  {
+    "id": "ACHI_049",
+    "name": "一本正经的女孩",
+    "description": "看完所有黑的事件。"
+  },
+  {
+    "id": "ACHI_050",
+    "name": "昨日的敌人就是今日的朋友",
+    "description": "看完所有凯的事件。"
+  },
+  {
+    "id": "ACHI_051",
+    "name": "胜过守护兽的男人",
+    "description": "打倒金龙。"
+  },
+  {
+    "id": "ACHI_052",
+    "name": "胜过军队的男人",
+    "description": "打倒沼泽之王大地巨兽。"
+  },
+  {
+    "id": "ACHI_053",
+    "name": "胜过魔神的男人",
+    "description": "打倒魔神阿耆尼。"
+  },
+  {
+    "id": "ACHI_054",
+    "name": "胜过神的男人",
+    "description": "打倒蛇神美瑠姬奴。"
+  },
+  {
+    "id": "ACHI_055",
+    "name": "胜过魔王的男人",
+    "description": "打倒魔王机械降神。"
+  },
+  {
+    "id": "ACHI_056",
+    "name": "胜过古代兵器的男人",
+    "description": "打倒最终决战兵器拉达曼迪斯。"
+  },
+  {
+    "id": "ACHI_057",
+    "name": "胜过黑龙的男人",
+    "description": "打倒黑红龙米拉巴哈姆特。"
+  },
+  {
+    "id": "ACHI_058",
+    "name": "胜过未来兵器的男人",
+    "description": "打倒时空干涉装置阿努比斯。"
+  },
+  {
+    "id": "ACHI_059",
+    "name": "胜过命运的男人",
+    "description": "打倒命运女神阿斯特赖亚。"
+  },
+  {
+    "id": "ACHI_060",
+    "name": "胜过梦境的男人",
+    "description": "打倒嗜烟之灵。"
+  },
+  {
+    "id": "ACHI_061",
+    "name": "胜过失控守护兽的男人",
+    "description": "打倒变异金龙。"
+  },
+  {
+    "id": "ACHI_062",
+    "name": "胜过暴走王者的男人",
+    "description": "打倒变异哥布林王。"
+  },
+  {
+    "id": "ACHI_063",
+    "name": "胜过活着的传说的男人",
+    "description": "打倒大贤者。"
+  },
+  {
+    "id": "ACHI_064",
+    "name": "胜过暴走的神的男人",
+    "description": "打倒变异美瑠姬奴。"
+  },
+  {
+    "id": "ACHI_065",
+    "name": "胜过勇者小队的男人",
+    "description": "打倒勇者小队。"
+  },
+  {
+    "id": "ACHI_066",
+    "name": "胜过对抗誓戒兵器的男人",
+    "description": "打倒古代兵器。"
+  },
+  {
+    "id": "ACHI_067",
+    "name": "胜过因缘之敌的男人",
+    "description": "打倒真正的阿努比斯。"
+  },
+  {
+    "id": "ACHI_068",
+    "name": "胜过宇宙飞船的男人",
+    "description": "打倒诺亚方舟。"
+  },
+  {
+    "id": "ACHI_069",
+    "name": "胜过誓戒的男人",
+    "description": "打倒司掌疏伐规则之物。"
+  },
+  {
+    "id": "ACHI_070",
+    "name": "胜过斗神的男人",
+    "description": "打倒斗神杰拉丁。"
+  },
+  {
+    "id": "ACHI_071",
+    "name": "胜过洛丽塔的男人",
+    "description": "打倒大魔女莉泽洛特。"
+  },
+  {
+    "id": "ACHI_072",
+    "name": "胜过被封印之神的男人",
+    "description": "打倒暴君阿道弗斯。"
+  },
+  {
+    "id": "ACHI_073",
+    "name": "胜过女王的男人",
+    "description": "打倒妖精王贝阿朵莉切。"
+  },
+  {
+    "id": "ACHI_074",
+    "name": "胜过未知生物的男人",
+    "description": "打倒宇宙生物雷基翁。"
+  },
+  {
+    "id": "ACHI_075",
+    "name": "胜过龙王的男人",
+    "description": "打倒邪龙阿尔哈米斯。"
+  },
+  {
+    "id": "ACHI_076",
+    "name": "胜过造物主的男人",
+    "description": "打倒伊利沙·阿基里尔。"
+  },
+  {
+    "id": "ACHI_077",
+    "name": "真正的大地",
+    "description": "抵达盖亚。"
+  },
+  {
+    "id": "ACHI_078",
+    "name": "无人涉足之地",
+    "description": "抵达深渊最底层。"
+  },
+  {
+    "id": "ACHI_079",
+    "name": "启程",
+    "description": "我们的冒险才刚刚开始。"
+  },
+  {
+    "id": "ACHI_080",
+    "name": "解放",
+    "description": "直到最后都不放弃。"
+  },
+  {
+    "id": "ACHI_081",
+    "name": "恶作剧",
+    "description": "这……是什么？"
+  },
+  {
+    "id": "ACHI_082",
+    "name": "胜过M字腿的男人",
+    "description": "打倒提线木偶。"
+  },
+  {
+    "id": "ACHI_083",
+    "name": "打倒使徒",
+    "description": "打倒精英驾驶员克里希那。"
+  },
+  {
+    "id": "ACHI_084",
+    "name": "神之天平圣手",
+    "description": "获得神之天平正传的所有成就。"
+  },
+  {
+    "id": "ACHI_085",
+    "name": "妹妹的爱好",
+    "description": "外传：跟妹妹交换手枪。"
+  },
+  {
+    "id": "ACHI_086",
+    "name": "稻草人毁灭者",
+    "description": "外传：摧毁庭院里的稻草人。"
+  },
+  {
+    "id": "ACHI_087",
+    "name": "摇奖大师",
+    "description": "外传：将高级抽奖券的一等奖奖池抽空。"
+  },
+  {
+    "id": "ACHI_088",
+    "name": "天平的潜力（外传）",
+    "description": "外传：至少强化一次天平。"
+  },
+  {
+    "id": "ACHI_089",
+    "name": "我的姐姐风格多变",
+    "description": "外传：获得所有风格。"
+  },
+  {
+    "id": "ACHI_090",
+    "name": "我的姐姐是卓越魔法使",
+    "description": "外传：学会所有魔法。"
+  },
+  {
+    "id": "ACHI_091",
+    "name": "我的姐姐引领时尚潮流",
+    "description": "外传：获得所有服装和发型。"
+  },
+  {
+    "id": "ACHI_092",
+    "name": "间接接吻",
+    "description": "外传：获得舔舔糖果。"
+  },
+  {
+    "id": "ACHI_093",
+    "name": "世界不能没有狗狗",
+    "description": "外传：获得所有泊灵之力。"
+  },
+  {
+    "id": "ACHI_094",
+    "name": "一饱眼福",
+    "description": "外传：收集所有的小徽章并向弥露展示。"
+  },
+  {
+    "id": "ACHI_095",
+    "name": "斗技场的霸者",
+    "description": "外传：称霸斗技场。"
+  },
+  {
+    "id": "ACHI_096",
+    "name": "我最好的姐姐",
+    "description": "外传：拯救了妹妹的生命，并顺手拯救了整座城镇。"
+  },
+  {
+    "id": "ACHI_097",
+    "name": "两位英雄",
+    "description": "外传：只要有这二位在，我们便无所畏惧。"
+  },
+  {
+    "id": "ACHI_098",
+    "name": "凯撒",
+    "description": "外传：击败凯，与命运抗争。"
+  },
+  {
+    "id": "ACHI_099",
+    "name": "外传圣手",
+    "description": "外传：体验了外传的所有玩法。"
+  }
+]

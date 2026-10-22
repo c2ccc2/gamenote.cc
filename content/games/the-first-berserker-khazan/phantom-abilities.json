@@ -1,0 +1,90 @@
+[
+  {
+    "id": "keshta",
+    "zh": "元气之凯斯塔",
+    "en": "Keshta the Unyielding",
+    "relic": "鬼气弥漫的兽牙护链",
+    "baseZh": "精力恢复",
+    "baseEn": "Stamina recovery",
+    "awakenZh": "敌人虚弱时回复精力",
+    "awakenEn": "Stamina recovery on enemy exhaustion",
+    "mission": "ston-snowfield-spirit"
+  },
+  {
+    "id": "veronika",
+    "zh": "援助之贝罗妮卡",
+    "en": "Veronika the Advocate",
+    "relic": "鬼气弥漫的宝石",
+    "baseZh": "助力之魂伤害",
+    "baseEn": "Spirit of Advocacy damage",
+    "awakenZh": "与助力之魂、冥界气息联动",
+    "awakenEn": "Assistance and healing synergy",
+    "mission": null
+  },
+  {
+    "id": "wulfric",
+    "zh": "战斗之沃弗瑞",
+    "en": "Wulfric the Resilient",
+    "relic": "鬼气弥漫的锤子",
+    "baseZh": "正面攻击伤害",
+    "baseEn": "Frontal damage",
+    "awakenZh": "反制与致命攻击回斗志",
+    "awakenEn": "Spirit from counters and Brutal Attacks",
+    "mission": null
+  },
+  {
+    "id": "adelhaide",
+    "zh": "慈爱之阿德莱德",
+    "en": "Adelhaide the Philanthropic",
+    "relic": "鬼气弥漫的圣物",
+    "baseZh": "生命回复量",
+    "baseEn": "Healing amount",
+    "awakenZh": "冥界气息与生存续航",
+    "awakenEn": "Healing-charge sustain",
+    "mission": null
+  },
+  {
+    "id": "constantine",
+    "zh": "奉献之康斯坦丁",
+    "en": "Constantine the Devoted",
+    "relic": "鬼气弥漫的剑柄",
+    "baseZh": "幻影形态量表获取",
+    "baseEn": "Phantom Form gauge gain",
+    "awakenZh": "斗志消耗与变身量表联动",
+    "awakenEn": "Spirit expenditure and transformation synergy",
+    "mission": null
+  },
+  {
+    "id": "conrad",
+    "zh": "迅捷之康拉德",
+    "en": "Conrad the Swift",
+    "relic": "鬼气弥漫的双剑",
+    "baseZh": "减少闪避精力消耗",
+    "baseEn": "Lower dodge stamina cost",
+    "awakenZh": "即时闪避增伤",
+    "awakenEn": "Brink Dodge damage bonuses",
+    "mission": null
+  },
+  {
+    "id": "maximilian",
+    "zh": "无懈之迈西米利安",
+    "en": "Maximilian the Impenetrable",
+    "relic": "鬼气弥漫的盾牌",
+    "baseZh": "减少防御精力损失",
+    "baseEn": "Lower guard stamina damage",
+    "awakenZh": "即时防御恢复与削韧",
+    "awakenEn": "Brink Guard recovery and stamina damage",
+    "mission": null
+  },
+  {
+    "id": "atlante",
+    "zh": "精准之亚特兰特",
+    "en": "Atlante the Precise",
+    "relic": "鬼气弥漫的枪刃",
+    "baseZh": "远程攻击伤害",
+    "baseEn": "Ranged damage",
+    "awakenZh": "标枪击杀与弱点命中",
+    "awakenEn": "Javelin kills and weak-point hits",
+    "mission": "atlante-the-precise"
+  }
+]

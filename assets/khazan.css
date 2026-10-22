@@ -164,3 +164,12 @@
 .khazan-route-section>p{margin:22px 0 12px;text-align:left}
 .khazan-route-section .khazan-step-pickups{font-size:.9em;margin:24px 0 8px}
 .khazan-legacy-anchor{display:block;scroll-margin-top:24px}
+.khazan-collection-check { display:flex; align-items:flex-start; gap:.55rem; cursor:pointer; }
+.khazan-collection-check input { width:1.15rem; height:1.15rem; flex:none; margin-top:.2rem; accent-color:var(--classic-accent,#a33); }
+.khazan-location-table tr.is-collected th { color:var(--classic-muted,#687078); }
+.khazan-location-table tr.is-collected { background:rgba(88,125,93,.07); }
+.khazan-collection-backup { display:flex; flex-wrap:wrap; align-items:center; gap:.75rem 1rem; margin:1rem 0; padding:1rem; border:1px solid #cbd8dc; }
+.khazan-collection-backup label { display:flex; flex-wrap:wrap; align-items:center; gap:.5rem; }
+.khazan-collection-backup input { max-width:100%; }
+.khazan-collection-backup small,.khazan-collection-backup p { flex-basis:100%; margin:0; }
+.khazan-collection-backup button { cursor:pointer; padding:.4rem .7rem; }

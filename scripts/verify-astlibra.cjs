@@ -37,3 +37,60 @@ assert.equal(chestPage('[data-astlibra-row]').length,104);
 assert.equal(chestPage('input[type=checkbox], [data-astlibra-progress]').length,0);
 for(const page of g.collections)for(const chest of page.records)assert.ok(fs.readFileSync(path.join(root,page.href,'index.html'),'utf8').includes(`id="${chest.id}"`));
 console.log(`Verified ${routes.length} Astlibra pages, ${g.pickups.length} unique chest records, 96 skills, all source illustrations and their integrity.`);
+
+// Publication gates for the supplemental guide and transcribed item database.
+const itemData=require('../content/games/astlibra-revision/items.json').records;
+const achievementData=require('../content/games/astlibra-revision/achievements.json').records;
+const read=route=>cheerio.load(fs.readFileSync(path.join(root,'games/astlibra-revision',route,'index.html'),'utf8'));
+const database=read('equipment/database'),achievementPage=read('achievements'),beginner=read('systems/beginners');
+assert.equal(itemData.length,521);
+assert.equal(new Set(itemData.map(r=>r.id)).size,521);
+assert.equal(database('[data-lookup-row]').length,521);
+assert.equal(new Set(itemData.map(r=>r.image)).size,76,'All source item tables must have text records');
+for(const r of itemData){
+ assert.ok(r.name&&r.source,'A record needs a name and an acquisition reference: '+r.id);
+ assert.equal(g.docs.equipment.blocks[r.sourceBlock].src,r.image,'Item must trace to its source image');
+ assert.ok(database('#'+r.id).text().includes(r.name));
+ assert.ok(!/undefined|[口囗]{2}|芊|[0-9][COm]|回复[是昌]|精力提升[是昌]|缓悒|廣|袢|宣后|；i|\uFFFD/.test(JSON.stringify(r)),'Unreviewed transcription artifact: '+r.id);
+}
+assert.equal(achievementData.length,84);
+assert.deepEqual(achievementData.map(r=>r.id),Array.from({length:84},(_,i)=>'ACHI_'+String(i+1).padStart(3,'0')),'Cover the base game once, without DLC');
+assert.equal(achievementPage('[data-achievement-id]').length,84);
+assert.equal(achievementPage('[data-achievement-id=ACHI_085]').length,0);
+assert.ok(achievementPage('#achi_022').text().includes('困难'));
+assert.ok(achievementPage('#achi_080').text().includes('13'));
+assert.ok(achievementPage('#achi_081').text().includes('14'));
+for(const id of ['difficulty','growth','stats','mastery','karon','libra','combat','packing','first-route'])assert.equal(beginner('#'+id).length,1);
+assert.equal(database('input[type=checkbox]').length+achievementPage('input[type=checkbox]').length,0);
+console.log('Verified 84 base-game achievements, 521 source-linked item records, 76 table images and 9 beginner sections.');
+
+const combatPlans=require('../content/games/astlibra-revision/combat-plans.cjs');
+const buildsPage=read('equipment/builds'),tacticsPage=read('bosses/tactics'),rewardAudit=read('collectibles/reward-audit');
+for(const p of combatPlans.builds){
+ assert.equal(buildsPage('#'+p.id).length,1);
+ for(const name of p.items)assert.ok(itemData.some(r=>r.name===name),'Build item must exist: '+name);
+ for(const name of p.skills)assert.ok(g.skills.some(p=>p.sections.some(s=>s.title===name)),'Build skill must exist: '+name);
+}
+for(const [id] of combatPlans.tactics){assert.ok(g.encounters.some(r=>r.id===id));assert.equal(tacticsPage('#'+id).length,1);}
+assert.equal(rewardAudit('#records tbody tr').length,104);
+assert.equal(read('bosses/geraldin')('#combat-plan').length,1);
+assert.ok(read('systems/crafting')('article').text().includes('铁矿石+冶炼套件'));
+assert.equal(buildsPage('input[type=checkbox]').length+rewardAudit('input[type=checkbox]').length,0);
+console.log('Verified 4 build stages, 13 combat plans, Geraldin route and 104 reward audit rows.');
+const rewards=require('../content/games/astlibra-revision/chest-rewards.json').records;
+assert.equal(rewards.length,104);
+assert.deepEqual(new Set(rewards.map(r=>r.id)),new Set(g.pickups.map(p=>p.id)));
+for(const r of rewards){
+ assert.ok(r.rewards.length&&r.evidence.length);
+ for(const item of r.rewards)assert.ok(item.name&&Number.isInteger(item.quantity)&&item.quantity>0);
+ assert.ok(!g.pickups.find(p=>p.id===r.id).title.startsWith('宝箱'));
+}
+const reward=id=>rewards.find(r=>r.id==='chest-'+id).rewards;
+assert.equal(reward('chapter-7-06')[0].name,'魔导水晶');
+assert.equal(reward('chapter-7-07')[0].name,'龙卷的奥义卷轴');
+assert.deepEqual(reward('chapter-8-09'),[{name:'精力卡',quantity:2}]);
+assert.equal(reward('chapter-8-10')[0].name,'失重的奥义卷轴');
+assert.deepEqual(reward('final-chapter-04'),[{name:'攻击卡',quantity:10}]);
+assert.equal(reward('chapter-5-08').length,3);
+assert.ok(!rewardAudit('article').text().includes('原资料未注明奖励'));
+console.log('Verified rewards, quantities and evidence for all 104 location records, including three grouped chests and corrected scroll labels.');
