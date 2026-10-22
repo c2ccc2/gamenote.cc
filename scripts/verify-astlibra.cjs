@@ -76,7 +76,7 @@ assert.equal(rewardAudit('#records tbody tr').length,104);
 assert.equal(read('bosses/geraldin')('#combat-plan').length,1);
 assert.ok(read('systems/crafting')('article').text().includes('铁矿石+冶炼套件'));
 assert.equal(buildsPage('input[type=checkbox]').length+rewardAudit('input[type=checkbox]').length,0);
-console.log('Verified 4 build stages, 13 combat plans, Geraldin route and 104 reward audit rows.');
+console.log('Verified 4 build stages, 48 combat plans, Geraldin route and 104 reward audit rows.');
 const rewards=require('../content/games/astlibra-revision/chest-rewards.json').records;
 assert.equal(rewards.length,104);
 assert.deepEqual(new Set(rewards.map(r=>r.id)),new Set(g.pickups.map(p=>p.id)));
@@ -94,3 +94,34 @@ assert.deepEqual(reward('final-chapter-04'),[{name:'攻击卡',quantity:10}]);
 assert.equal(reward('chapter-5-08').length,3);
 assert.ok(!rewardAudit('article').text().includes('原资料未注明奖励'));
 console.log('Verified rewards, quantities and evidence for all 104 location records, including three grouped chests and corrected scroll labels.');
+
+const equipmentCosts=require('./lib/astlibra-equipment-costs.cjs').records;
+const craftingPage=read('equipment/crafting');
+assert.equal(equipmentCosts.length,221);
+assert.equal(craftingPage('[data-equipment-cost]').length,221);
+assert.equal(craftingPage('[data-material-source]').length,100);
+for(const r of equipmentCosts){
+ assert.ok(itemData.some(item=>item.id===r.id));
+ assert.ok(r.gold===null || Number.isInteger(r.gold)&&r.gold>=0);
+ for(const m of r.materials){assert.ok(itemData.some(item=>item.id===m.itemId));assert.ok(Number.isInteger(m.quantity)&&m.quantity>0);}
+}
+assert.equal(equipmentCosts.find(r=>r.name==='铜剑').gold,140);
+assert.deepEqual(equipmentCosts.find(r=>r.name==='铜剑').materials.map(m=>[m.name,m.quantity]),[['铜锭',1],['恶心的肉',1],['曼德拉',1]]);
+assert.equal(equipmentCosts.find(r=>r.name==='心天平').costType,'exchange');
+assert.equal(equipmentCosts.filter(r=>r.costType==='unlisted').length,1);
+assert.equal(new Set(combatPlans.tactics.map(p=>p[0])).size,48);
+assert.equal(tacticsPage('[data-combat-plan]').length,48);
+for(const r of g.encounters)assert.equal(tacticsPage('#'+r.id).length,1);
+const hiddenCombat=require('../content/games/astlibra-revision/hidden-combat.cjs');
+assert.equal(Object.keys(hiddenCombat).length,6);
+for(const [id,p] of Object.entries(hiddenCombat)){
+ const page=read('bosses/'+id);
+ assert.equal(page('#combat-plan').length,1);
+ assert.equal(page('#rewards').length,1);
+ assert.ok(p.moves.length>=3);
+ for(const name of p.rewards)assert.ok(itemData.some(r=>r.name===name));
+ const achievement=achievementData.find(r=>r.id.toLowerCase()===p.achievement);
+ assert.ok(achievement&&achievement.group==='隐藏首领');
+ if(id!=='geraldin')assert.equal(achievement.route,'bosses/'+id+'/');
+}
+console.log('Verified 221 equipment cost records, 100 material links, 48 detailed encounters and 6 hidden boss guides.');

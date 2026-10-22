@@ -5,7 +5,7 @@ const aliases={'无暇冰':'无瑕冰','虫脚':'虫腿','精金钢石':'精金�
 const records=equipment.map(item=>{
  const entry=item.name==='心天平'?{gold:null,materials:[{name:'变石',quantity:1}]}:costs.find(c=>c.id===item.id);
  const materials=(entry?.materials||[]).map(m=>{
-  const canonical=aliases[m.name]||m.name,record=items.find(r=>r.name===canonical&&['minerals','monster-materials','food','ingredients','misc'].includes(r.category));
+  const canonical=aliases[m.name]||m.name,record=items.find(r=>r.name===canonical&&['minerals','monster-materials','food','ingredients','misc','collection-items'].includes(r.category));
   if(!record)throw Error('No acquisition record for material '+m.name);
   return {...m,itemId:record.id,canonical,source:record.source,sourceHref:record.sourceHref};
  });

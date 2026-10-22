@@ -41,7 +41,7 @@ for(const [n,start,end]of [[1,464,470],[2,470,476],[3,476,482],[4,482,488],[5,48
 }
 const bosses=[
  ['loretta','女神洛丽塔：城镇壁画入口',628,631],['al-khamis','龙王阿尔哈米斯：城外地下路线',634,637],['unknown-creature','未知生物：井下隐藏区域',638,641],['beatrice','女神贝阿朵莉切：伊利西昂隐藏门',642,647],['adolphus','暴君阿道弗斯：贤者塔守卫',648,653]
-].map(([id,title,start,end])=>detail('bosses',id,title,'查看隐藏区域的进入条件和走法；此页资料以入口路线为主。','systems',start,end));
+].map(([id,title,start,end])=>detail('bosses',id,title,'查看隐藏区域入口、战前准备、招式应对与胜利奖励。','systems',start,end));
 const collectionSpecs=[
  ['chapter-1','边境、村庄与天平洞窟','collect-upper',1,22,'第一章'],['chapter-2','城镇与布里帝恩湿地','collect-upper',23,51,'第二章'],['chapter-3','贝尔克多火山','collect-upper',52,81,'第三章'],['chapter-4','渔村海岸与海蛇洞窟','collect-upper',82,116,'第四章'],['chapter-5','阿克拉希诺城外与魔王城','collect-upper',117,160,'第五章'],['chapter-6','雪山与伊利西昂','collect-lower',1,34,'第六章'],['chapter-7','故乡与贝尔克多矿镇','collect-lower',35,69,'第七章'],['chapter-8','东京战区与研究所','collect-lower',70,99,'第八章'],['final-chapter','城镇回收与铁娘子','collect-lower',100,117,'最终章'],['postscript','新章区域追加收集','collect-lower',118,143,'新章']
 ];
@@ -100,8 +100,9 @@ for(const record of [...supplements.gems,...supplements.reminders,...supplements
 }
 systems.unshift({category:'systems',id:'beginners',title:'新手入门：成长、加点与战斗配置',description:'从难度选择到成长盘、装备精通、嘉隆与天平，按第一次游玩的顺序理解系统。',indexType:'beginner',sources:[]});
 equipment.unshift({category:'equipment',id:'database',title:'装备与道具文字查询',description:'按名称、属性、精通奖励和来源检索 521 条装备与道具记录，并对照原图。',indexType:'items',sources:['equipment']});
+equipment.unshift({category:'equipment',id:'crafting',title:'装备制作：材料、数量与费用',description:'221 条装备记录的制作条件、材料来源与用途反查。',indexType:'crafting',sources:['equipment']});
 equipment.unshift({category:'equipment',id:'builds',title:'分阶段配装与嘉隆预算',description:'按主线到新章整理候选装备、获取入口、配置预算和换装时机。',indexType:'builds',sources:[]});
-bosses.unshift({category:'bosses',id:'tactics',title:'重点首领：招式、应对与卡点排查',description:'十三场重点战斗的准备、招式处理与常见失败原因。',indexType:'tactics',sources:[]});
+bosses.unshift({category:'bosses',id:'tactics',title:'首领打法：招式、应对与卡点排查',description:'48 场主线与新章遭遇的准备、招式处理与常见失败原因。',indexType:'tactics',sources:[]});
 bosses.push({category:'bosses',id:'geraldin',title:'斗神杰拉丁：火山入口与限时战',description:'从火山隐藏入口挑战守卫与杰拉丁，核对胜利奖励。',indexType:'geraldin',sources:[]});
 const rewardAudit={category:'collectibles',id:'reward-audit',title:'宝箱奖励与开启条件核对',description:'104 条位置记录的奖励、数量、开启条件与对应核对依据。',indexType:'collectionAudit',sources:[]};
 const pages=[...main,...postgame,...equipment,...skills,...systems,...bosses,...collections,...events,gemIndex,reminderIndex,rewardAudit];
@@ -113,7 +114,7 @@ const categories=[
  {id:'equipment',title:'装备与道具',description:'521 条文字记录与原图对照，按名称、属性和来源查询。',pages:equipment},
  {id:'skills',title:'嘉隆技能',description:'按战斗与探索用途查询 96 项技能的消耗、来源和效果。',pages:skills},
  {id:'systems',title:'天平、合成与斗技场',description:'查询天平效果、强化、配方、小徽章奖励与杯赛。',pages:systems},
- {id:'bosses',title:'首领与隐藏区域',description:'主线首领直达流程，隐藏首领查询入口路线。',pages:bosses},
+ {id:'bosses',title:'首领与隐藏区域',description:'48 场主线与新章遭遇打法，以及 6 名隐藏首领的入口、机制和奖励。',pages:bosses},
  {id:'side-quests',title:'人物事件与分支',description:'按进度检查易错过事项，单独查看人物选择和结局相关事件。',pages:[reminderIndex,...events]},
  {id:'achievements',title:'成就与常见问题',description:'本体与新章 84 项成就的条件、前置、完成顺序与对应路线。',pages:[]}
 ];

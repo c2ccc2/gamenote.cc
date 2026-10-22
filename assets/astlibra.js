@@ -34,6 +34,23 @@
     category?.addEventListener('change', apply);
     sort?.addEventListener('change', apply);
     apply();
+    const revealAnchor = (hash = location.hash) => {
+      let id;
+      try { id = decodeURIComponent(hash.slice(1)); } catch { return; }
+      const target = document.getElementById(id);
+      if (!target || !rows.includes(target) || !target.hidden) return;
+      search.value = '';
+      if (phase) phase.value = 'all';
+      if (category) category.value = 'all';
+      apply();
+      target.scrollIntoView({ block: 'start' });
+    };
+    window.addEventListener('hashchange', () => revealAnchor());
+    document.addEventListener('click', event => {
+      const anchor = event.target.closest('a[href]');
+      if (anchor && anchor.origin === location.origin && anchor.pathname === location.pathname && anchor.hash) revealAnchor(anchor.hash);
+    });
+    revealAnchor();
   });
   const form = document.querySelector('[data-astlibra-filter]');
   if (form) {
