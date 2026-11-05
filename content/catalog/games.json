@@ -987,5 +987,39 @@
     "news": "/news/prince-of-persia-the-lost-crown-review/",
     "newsTitle": "双端通关评测：看得见用心，却总觉得不够尽兴",
     "newsTitleEn": "PC and mobile review: impressive craft, constrained enjoyment"
+  },
+  {
+    "slug": "phantom-blade-zero",
+    "name": "影之刃零",
+    "nameEn": "Phantom Blade Zero",
+    "aliases": [
+      "影之刃",
+      "PBZ"
+    ],
+    "category": "soulslike",
+    "difficulty": "pending",
+    "year": "2026",
+    "platform": "PC / PlayStation 5",
+    "creator": "S-GAME",
+    "cover": "/assets/catalog/phantom-blade-zero.jpg",
+    "guide": "/games/phantom-blade-zero/",
+    "guideEn": "/en/games/phantom-blade-zero/",
+    "summary": "在暗黑武侠世界追查阴谋，交替使用主武器与副武器，通过攻防转换压制敌人，并沿支线探索新的故事路径。",
+    "features": [
+      "武侠动作 RPG",
+      "双主武器切换",
+      "首领武器",
+      "区域探索"
+    ],
+    "source": "https://store.steampowered.com/app/4115450/",
+    "store": "https://store.steampowered.com/app/4115450/",
+    "status": "released",
+    "steamRelease": {
+      "checked": "2026-11-04",
+      "zh": "已发售：2026-10-29（北京时间）",
+      "en": "Released October 29, 2026 (Beijing time)",
+      "nameNoteZh": "Steam 官方中文名：影之刃零",
+      "nameNoteEn": "Official Steam title: Phantom Blade Zero"
+    }
   }
 ]

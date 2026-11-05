@@ -6,9 +6,10 @@
   'ender-lilies':['ENDER LILIES','Explore a kingdom beneath the rain of death and purify blighted spirits.'],
   'an-jing-wei-guang':['Well Dweller','Area, boss, ability, collectible, quest and achievement directories are ready. Detailed guides remain under verification.'],
   'the-first-berserker-khazan':['The First Berserker: Khazan','The core guide is complete: main and side missions, bosses, equipment and collectibles, with saved collection progress. More operation screenshots and in-game value verification remain ongoing.'],
+  'phantom-blade-zero':['Phantom Blade Zero','An illustrated wuxia guide in progress, starting with combat, weapons and exploration.'],
   'astlibra-revision':['ASTLIBRA Revision','Chinese illustrated walkthroughs, chest maps, equipment charts, KARON skills and system references.']
  };
- c.games=c.games.map(g=>games[g.id]?({...g,titleZh:games[g.id][0],description:games[g.id][1],...(['an-jing-wei-guang','the-first-berserker-khazan'].includes(g.id)?{guideUrl:'/en/games/'+g.slug+'/'}:{})}):g);
+ c.games=c.games.map(g=>games[g.id]?({...g,titleZh:games[g.id][0],description:games[g.id][1],...(['an-jing-wei-guang','the-first-berserker-khazan','phantom-blade-zero'].includes(g.id)?{guideUrl:'/en/games/'+g.slug+'/'}:{})}):g);
  const notes={
   "adding-astlibra-revision-guide":["Organizing the Long Journey of ASTLIBRA Revision", "A new guide archive with clear entrances for story progress, return visits, collectibles and system references."],
   'why-organize-game-guides-again':['Why Organize Game Guides Again?','Finding an answer and finding the answer needed right now are two different things.'],

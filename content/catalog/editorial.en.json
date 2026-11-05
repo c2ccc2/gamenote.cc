@@ -377,5 +377,14 @@
     "hours": "Actual play time to be added",
     "replayStatus": "To be verified",
     "replay": "The review covers completion on both platforms; version-specific replay carryover and unlock rules have not been separately verified."
+  },
+  "phantom-blade-zero": {
+    "summary": "A dark wuxia action RPG built around fast weapon swaps, defense and exploration.",
+    "review": "First impressions from official demonstrations; hands-on review pending. Weapon switching during combat is the system we most want to explore.",
+    "fit": "Players who enjoy timing-based defense and experimenting with weapons.",
+    "caution": "Route and difficulty notes are still being verified.",
+    "hours": "To be verified",
+    "replayStatus": "To be verified",
+    "replay": "Replay and carryover rules are pending verification."
   }
 }

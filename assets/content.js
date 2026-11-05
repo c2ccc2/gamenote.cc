@@ -48,6 +48,7 @@ window.GAMENOTE_CONTENT = {
       sections: ['Walkthrough', 'Maps', 'Equipment', 'KARON', 'Collectibles', 'Systems'],
       lastUpdated: '2026-10-20', featured: true, order: 5
     }
+    ,{id:'phantom-blade-zero',slug:'phantom-blade-zero',title:'Phantom Blade Zero',titleZh:'影之刃零',cover:'/assets/catalog/phantom-blade-zero.jpg',status:'in-progress',type:'directory',guideUrl:'/games/phantom-blade-zero/',description:'武侠动作攻略：先收录攻防、武器与探索，逐步整理主支线、首领和收集路线。',sections:['Walkthrough','Bosses','Equipment','Collectibles','Systems'],lastUpdated:'2026-11-04',featured:true,order:6}
   ],
   notes: [
     {"slug": "adding-astlibra-revision-guide", "title": "把《神之天平》的漫长旅程，整理成随手可查的攻略", "description": "新增《神之天平》攻略专题：让主线推进、回访收集与系统查询，各自有清楚的入口。", "date": "2026-10-21", "updatedAt": "2026-10-21", "category": "behind-the-guide", "categoryLabel": "Behind the Guide / Site Note", "game": "astlibra-revision", "featured": true},
