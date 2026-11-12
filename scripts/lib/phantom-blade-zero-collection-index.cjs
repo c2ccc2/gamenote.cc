@@ -233,3 +233,5 @@ module.exports.push(
 module.exports.push(
  ['snow-edict','雪山文书：至高尊者法旨','Snow Mountain document: the edict','在雪中木屋之间探索，沿木架下的雪地走向覆雪大船。靠近船边积雪木板，调查拾取文书。书籍界面显示「圣母娘娘之谜」，副标题「至高尊者法旨」。','Follow the snow beneath the timber platforms toward the large snow-covered boat. Inspect the document at the planks beside it. The collection screen identifies an edict in the Holy Mother mystery records.','late-58','snow-swordsman','snow-edict']
 );
+
+module.exports.push(['pipa-head','幻术琵琶的琴头：荡秽战后道具','Pipa head: Danghui story item','在陆家村的幽蓝萤火之庙击败荡秽后取得。确认道具提示后，听完跪地的荡秽说明信物来历。后续交付位置仍待核对。','Defeat Danghui in the Temple of Blue Fireflies and check the story item prompt. Listen to the kneeling puppeteer explain the token. Its later hand-in location is pending verification.','lu-village','danghui','danghui-reward']);

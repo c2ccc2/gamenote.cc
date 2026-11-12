@@ -1596,22 +1596,32 @@ module.exports.equipment.push(['bone-chaos','刺骨混沌','Bone Chaos',[
 
 const zuoShang=['zuo-shang','左殇：夜庭与真龙之躯','Zuo Shang: night courtyard and dragon form',[
  ['在「大梦倾颓处」保存记忆后，沿浅色坡道进入金色光柱。转场后朝黑暗中的殿宇前进，在庭院听完左殇的对话后开始交战。','Save at the checkpoint below the golden pillar, then walk into the light. In the dark scene beyond it, approach the hall and finish the courtyard dialogue to start the fight.'],
+ ['开战前先敲黑湖边的断钟 Phantom of The Old House。倒下后会回到这口钟，沿湖走回亭前即可重试。湖心秘密已完成但龙柱未打齐时，左殇战在第一阶段结束。','Before the fight, ring the broken Phantom of The Old House bell by the lake. On defeat, return along the shore from that bell. If the lake quest is complete but the pillar trials are unfinished, the fight ends after phase one.'],
+ ['第一阶段 · 左殇升到水面上方聚起金光时先拉开距离。剑身拉成长刃时留出横向闪避空间，等直刺穿过去，再贴回去打一小段。金剑开始从空中落下时持续移动，等落剑结束再停下。','Phase one · Create space when Zuo Shang rises above the water and gathers gold light. Leave room to dodge sideways when he lengthens the blade, then close in for a short punish after the thrust passes. Keep moving while golden swords fall and wait for the last one before stopping.'],
  ['夜庭阶段的左殇会挥出贴地的蓝色环形剑光。看到环光在他身前成形时，先留在外侧观察扫过的范围，等光圈散开再接近。','In the night courtyard, Zuo Shang can send out a low blue ring. When it forms in front of him, stay outside its path and close in once it dissipates.',[
   ['zuo-blue','夜庭里的蓝色环形剑光','Blue ring in the night courtyard','友利奈绪大魔王 · P67 65:20']
  ]],
  ['过场后，血条变为「左殇：真龙之躯」。金色兵刃亮起时仍会接红色近身横斩。先给自己留侧闪空间，等刀弧扫过再打短连段。','After the transition, the health bar identifies Zuo Shang’s dragon form. He can follow the golden weapon effects with a red close-range slash. Leave room to evade sideways and counter briefly after the arc passes.',[
   ['zuo-fight','真龙之躯的红色近身斩击','Red close-range slash in dragon form','友利奈绪大魔王 · P67 35:00']
  ]],
+ ['第二阶段 · 看到金色光束沿水面射来，先横向离开它的路径。左殇举剑从空中俯冲时，留意落点。若俯冲接成双剑相抵，立刻按屏幕中央的提示解开拼刀。','Phase two · Move sideways out of the beam that travels across the lake. Track his landing point when he dives sword-first. If the dive ends in a blade lock, press the input displayed between the blades promptly.'],
  ['血条打空后继续看画面中央的按键提示。实录手柄显示 B，按自己设备上的提示完成终结，随后进入战后过场。','After emptying the health bar, watch for the onscreen input. The recording displays B on a controller. Follow the prompt for your device to finish the sequence and reach the cutscene.',[
   ['zuo-finish','终结演出中的手柄 B 提示','Controller B prompt in the finishing sequence','友利奈绪大魔王 · P67 39:20']
- ]]
-],null];
+ ]],
+ ['真结局奖励 · 字幕结束后回到幻境，确认收到单手剑 Aureate、用于给这把剑铸魂的 Broken Lóng Body，以及剧情道具 Radiant Heart。','Final Battle rewards · After the credits, return to the Realm of Mirage and check for the one-handed sword Aureate, its Soul Tempering material Broken Lóng Body and the story item Radiant Heart.']
+],'https://allthings.how/phantom-blade-zero-zuo-shang-final-boss-fight/'];
 module.exports.bosses.push(zuoShang);
 module.exports.walkthrough.push(zuoShang);
 const soulbreakFinale=module.exports.walkthrough.find(([id])=>id==='soulbreak-finale');
 soulbreakFinale[1]='终局：梦差与圣母娘娘';
 soulbreakFinale[2]='Finale: Mengcha and the Holy Mother';
 soulbreakFinale[3].pop();
+soulbreakFinale[3].push(
+ ['冰洞到山顶 · 在 The Last Chance 确认继续后，沿暴风雪中的山路往上，经过沿途友人，到 Soulrend Cliff 的钟休整。沿钟后的雪路前进，先打梦差，再打圣母娘娘。','Ice cave to summit · After choosing to continue at The Last Chance, follow the stormy path uphill past your allies and rest at the Soulrend Cliff bell. Follow the snowy path beyond it to face the Herald of the Veil, then the Merciful Lady of the Blossom Veil.'],
+ ['圣母娘娘战后 · 若结局演出直接开始，本轮终局到此结束。若仍可前进，沿山路到「大梦倾颓处」的钟，先休整，再到上方金色光柱互动。转场后从黑湖边朝亭子走，触发左殇战。','After the Lady · If the ending starts immediately, this is the final encounter for that route. If the path remains open, rest at The Fallen Dream bell and interact with the golden pillar farther uphill. After the transition, follow the dark lakeshore toward the pavilion to trigger Zuo Shang.'],
+ ['左殇战后 · 龙啸分支在击败左殇后进入结局。若进入真龙之躯阶段，继续打完并跟随最后的拼刀按键提示，直到出现 Final Battle 结局卡和 With Heart and Blood 成就。','After Zuo Shang · On the Lóng’s Roar route, the ending plays after defeating Zuo Shang. If he transforms into the True Lóng, finish the second phase and follow the final sword-clash prompt to reach the Final Battle ending card and With Heart and Blood achievement.']
+);
+soulbreakFinale[4]='https://allthings.how/phantom-blade-zero-endings/';
 
 module.exports.walkthrough.find(([id])=>id==='lu-village-route')[3].push([
  '地窖文书：从黑石红布台旁的石阶进入木结构大厅，找书架前摆有杯子和红烛的圆桌。调查桌上的「囚命」，收进人偶基地簿书。',
@@ -1660,3 +1670,189 @@ steel[3]=[
 ];
 module.exports.bosses.find(([id])=>id==='peng-meng')[1]='澎猛：据点外巨斧首领';
 module.exports.walkthrough.find(([id])=>id==='against-the-flow')[1]='章节「逆流而上」：溪谷至杀气塔';
+
+for (const [id,zh,en,area,section,positions] of [
+  [
+    "hua-qianxiao",
+    "花千笑：雾中木台",
+    "Hua Qianxiao: misty platform",
+    "forest-entry",
+    "forest-entry",
+    [
+      1,
+      2,
+      3
+    ]
+  ],
+  [
+    "jing-ye",
+    "荆野：红叶空地的骑战",
+    "Jing Ye: mounted fight",
+    "forest-entry",
+    "hanging-cage",
+    [
+      2,
+      3,
+      4
+    ]
+  ],
+  [
+    "tie-kuang",
+    "铁狂：镜林岩壁空地",
+    "Tie Kuang: Mirror Forest clearing",
+    "forest-entry",
+    "mirror-forest",
+    [
+      0,
+      1
+    ]
+  ],
+  [
+    "snowstorm-swordsman",
+    "风雪刀客：雪地战与白影",
+    "Snowstorm Swordsman: arena and Baiying",
+    "late-58",
+    "snow-swordsman",
+    [
+      2,
+      6,
+      7
+    ]
+  ],
+  [
+    "puppet-sweeper",
+    "活人偶清道夫：红房子浅水场",
+    "Living Puppet Sweeper: Red House shallows",
+    "against-the-flow",
+    "red-house-revisit",
+    [
+      0,
+      1,
+      2,
+      3
+    ]
+  ],
+  [
+    "strongman-and-sawyer",
+    "力者与锯者：断魂山冰窟",
+    "Strongman and Sawyer: ice cavern",
+    "late-66",
+    "soulbreak-pair",
+    [
+      0,
+      1
+    ]
+  ],
+  [
+    "holy-mother",
+    "圣母娘娘：红色异境",
+    "Holy Mother: red realm",
+    "late-66",
+    "soulbreak-finale",
+    [
+      1
+    ]
+  ]
+]) {
+ const [, , ,steps]=module.exports.walkthrough.find(([key])=>key===section);
+ module.exports.bosses.push([id,zh,en,positions.map(position=>steps[position]),'../../walkthrough/'+area+'/#'+section]);
+}
+
+const routeSteps=id=>module.exports.walkthrough.find(([key])=>key===id)[3];
+const valley=routeSteps('against-the-flow');
+const tower=routeSteps('tower-to-waterfall');
+module.exports.bosses.find(([id])=>id==='peng-meng')[3].unshift(valley[3]);
+module.exports.bosses.find(([id])=>id==='peng-meng')[3].push([
+ '战后把巨凶斧装备到「影之武装」，回到战场后路，用它破开铁链，继续去杀气塔。',
+ 'Equip the Dread Axe under Phantom Edges and break the chain beyond the arena to continue toward the tower.',
+ [['dread-axe','影之武装中的巨凶斧','Dread Axe in the Phantom Edges menu']]
+]);
+module.exports.bosses.find(([id])=>id==='hua')[3].unshift(routeSteps('flesh-lily')[0]);
+module.exports.bosses.find(([id])=>id==='hua')[3].push(routeSteps('flesh-lily')[1]);
+const pursuerSteps=module.exports.bosses.find(([id])=>id==='pursuer')[3];
+pursuerSteps.unshift(tower[0]);
+pursuerSteps.push(tower[1]);
+
+for (const [id,zh,en,area,section,positions] of [
+ ['tie-gui-and-yuyao','铁鬼与玉妖：杀气塔双首领','Tie Gui and Yuyao: tower encounter','forest-entry','forest-tower-revisit',[0,1]],
+ ['huang-xingzi','荒行子：撕裂锯轮','Huang Xingzi: saw-wheel form','late-55','cage-late-fight',[0,1]],
+ ['one-eyed-archer','独眼弓客：独眼之岛','One-Eyed Archer: island encounter','plum-lake','water-gang-route',[3,5]],
+ ['duanchang','断肠：白蛇屋与天煞双钺','Duanchang: White Snake House and twin axes','plum-lake','water-gang-route',[4,6,7]],
+ ['mengcha','梦差冷茶：红色异境','Leng Tu, Herald of the Veil','late-66','soulbreak-finale',[0]]
+]){
+ const steps=routeSteps(section);
+ module.exports.bosses.push([id,zh,en,positions.map(position=>steps[position]),'../../walkthrough/'+area+'/#'+section]);
+}
+
+const heraldFight=module.exports.bosses.find(([id])=>id==='mengcha')[3];
+heraldFight.push(
+ ['开场先打人偶清道夫。它撑起上身时准备扑砸，先侧移避开正面落点，再回身反击。金色友军吸引它时，可以从侧面打短连段。','The Puppet Scavenger opens the fight. Move sideways when it rears up for a body slam, then turn back for a short punish. Attack from the flank while the golden allies draw its attention.'],
+ ['清道夫之后还有人偶增援。玉鼎与玉璧两条血条同时出现时，沿雪路横移，让两者都留在视野里。等其中一个打完一轮，再抓另一侧的空档。','More puppets arrive after the Scavenger. When Yuding and Yubi are both active, move sideways along the snow road to keep them in view. Wait for an attack to end before stepping in.'],
+ ['梦差本体 · 红线束沿雪路直射时向侧边让开。木桩升起后绕开桩间拉起的红线，等他周围的红线旋涡散开再近身。','Leng Tu himself · Move sideways out of straight volleys of red thread. When posts rise from the snow, go around the lines strung between them. Wait for the thread vortex to clear before closing in.'],
+ ['战后核对 Herald’s Lingering Threads。这是人偶铃的铸魂材料，奖励提示可能等圣母娘娘战后才一起出现。','Check for Herald’s Lingering Threads, the Puppeteer’s Bell Soul Tempering material. Its reward card may appear alongside the Lady’s rewards after the next fight.']
+);
+
+const ladyFight=module.exports.bosses.find(([id])=>id==='holy-mother')[3];
+ladyFight.push(
+ ['远程压制 · 她在远处悬空时会投下红枪。雪地亮起红圈时立即离开圈内，后续可能同时落下数道光柱，横移时先看下一步的落脚点。','Ranged attacks · She rains down red lances while hovering at a distance. Leave glowing red circles before the pillars strike. Several can appear at once, so check where your next dodge will land.'],
+ ['近身应对 · 暗红扇刃横扫时先退出扇面，等扫完再打短连段。蓝色霜波会贴地向前扩散，从侧面离开扇形范围。她被友军打倒时，可趁倒地窗口集中输出。','Close range · Back out of the dark-red fan sweep and punish briefly after it passes. Move sideways out of the fan-shaped frost wave. If allies knock her down, use that opening to attack.'],
+ ['战后取得双持武器 The Lady’s Fan 和铸魂材料 The Lady’s Crown。若战后还能继续走山路，回断魂山流程查看金色光柱与左殇战的入口。','Victory awards the dual-wield weapon The Lady’s Fan and its Soul Tempering material, The Lady’s Crown. If the mountain path stays open, use the walkthrough for the golden pillar and Zuo Shang encounter.']
+);
+
+valley[0][2]=[['chapter-flow','开端之地出现章节题字「逆流而上」','Against the Flow title card','11的游戏世界 · P3 03:00']];
+
+const danghui=['danghui','荡秽：幽蓝萤火之庙','Danghui: Temple of Blue Fireflies',[
+ ['进入幽蓝萤火之庙后，沿蓝光岩壁旁的木板向洞内走。看到洞中石台旁成簇的红烛时，留意前方戴金色面具的人偶师。','Follow the planks by the blue-lit rock wall into the Temple of Blue Fireflies. The red candles clustered by the stone ledges mark the approach to the masked puppeteer.'],
+ ['开战后，除了荡秽的首领血条，还会看到周围人偶各自的血条。被多个敌人围住时，先退到开阔的碎石地，让人偶和荡秽都留在视野里。等近身一轮攻击结束，再回击，避免在洞壁边长时间连打。','The puppets have health bars of their own alongside Danghui’s. If several surround you, back into the open gravel and keep them in view. Counter after the immediate attacks finish and avoid committing to a long combo by the cave wall.',[
+  ['danghui-arena','荡秽与附近的人偶同时进攻','Danghui and the nearby puppets attacking together','11的游戏世界 · P25 05:30']
+ ]],
+ ['打完后检查「幻术琵琶的琴头」的剧情道具提示，并留在场内听完跪地的荡秽说明信物的来历。背板和琴弦到手后，带三件零件回庞镇地下酒馆找三师姐修复。','After the fight, confirm the pipa head story item and stay to hear the kneeling puppeteer explain the token. Once you have the backplate and strings, take all three parts to Myst in Pangzhen’s underground tavern.',[
+  ['danghui-reward','战后剧情道具「幻术琵琶的琴头」','Post-fight pipa head story item','11的游戏世界 · P25 07:45'],
+  ['danghui-after','战后跪地的荡秽说明信物来历','Danghui explaining the token after the fight','11的游戏世界 · P25 08:00']
+ ]]
+],'../../walkthrough/lu-village/#danghui'];
+module.exports.walkthrough.push([...danghui.slice(0,4),null]);
+module.exports.bosses.push(danghui);
+
+module.exports.equipment.push(['fanatics-broken-blade','花千笑的断剑与两枚铸魂碎片','The Fanatic’s Broken Blade and its two fragments',[
+ ['先拿武器 · 在血色森林击败花千笑，战后确认获得 The Fanatic’s Broken Blade。','Get the weapon · Defeat Hua Qianxiao in the Crimson Forest and check for The Fanatic’s Broken Blade.'],
+ ['庞镇碎片 · 从 Pond of Fading Song 的钟向西北进积水广场，沿纸钱找到红烛井，击败 Gu Wanyue，取得 Fixation。','Pangzhen fragment · Head northwest from Pond of Fading Song to the flooded square. Follow the paper offerings to the candle-ringed well and defeat Gu Wanyue for Fixation.'],
+ ['梅谷湖碎片 · 乘船收齐戏楼周边的六段水上记忆，回戏楼码头旁的岛上击败琴女 Yan Qiansui，取得 Attachment。两枚碎片齐全后会自动合成 Fanatic’s Obsession。','Meigu Lake fragment · Collect all six memories around the songhouse by boat, then defeat Yan Qiansui on the island by the dock for Attachment. Both fragments automatically form Fanatic’s Obsession.'],
+ ['铸魂 · 带断剑、Fanatic’s Obsession 和 5,000 Remnant Dust 回庞镇地下酒馆找三师姐。铸魂后武器变为 The Fanatic’s Drunken Sword，伤害不再随距离衰减。','Soul Tempering · Bring the broken blade, Fanatic’s Obsession and 5,000 Remnant Dust to Myst in Pangzhen’s underground tavern. The weapon becomes The Fanatic’s Drunken Sword and its damage no longer falls off with distance.']
+],'https://allthings.how/phantom-blade-zero-fanatics-obsession/']);
+
+module.exports.bosses.push(
+ ['wu-xuan','Wu Xuan：庞镇后街的披甲将军','Wu Xuan, the Fallen General',[
+  ['入口 · 从庞镇 Zhang’s Hideout 的钟休整后进入后街，找红灯笼下的圆形石院。交战时留在院内，避免从后沿跌到下层巷道。','Approach · Rest at Zhang’s Hideout in Pangzhen, then look for the round stone courtyard under red lanterns. Stay clear of the back edge, which drops to the lane below.'],
+  ['长柄锤连段 · 前几下可以格挡，看到蓝光可招架。末击闪红时闪避，等整套连段结束再回血或打短反击。看到他举锤砸地时，侧移离开碎石溅起的范围。','Mace combo · Guard the early swings and parry blue flashes. Dodge the red-flash finisher, then heal or take a short punish after the string ends. Sidestep the ground slam and the debris around it.'],
+  ['约剩七成生命时，他会开始使用带紫光的攻击。横扫比开场伸得更远，看到地面留下紫色区域时绕开，等锤头扫过再接近。战后获得能吸血的影之武装 Wolfjaw。','At around 70% HP he adds purple Blight attacks. Give his longer sweeps more room and circle around purple patches before closing in. Victory awards Wolfjaw, a life-draining Phantom Edge.']
+ ],'https://allthings.how/phantom-blade-zero-wu-xuan-boss-fight/'],
+ ['gu-wanyue','Gu Wanyue：积水广场与红烛井','Gu Wanyue, the Wailing Wraith',[
+  ['入口 · 从庞镇 Pond of Fading Song 的钟向西北进积水广场，沿散落的纸钱走向红烛围着的井，靠近即可触发战斗。','Approach · Head northwest from the Pond of Fading Song bell into the flooded square. Follow the scattered paper offerings to the candle-ringed well to start the fight.'],
+  ['长袖横扫的范围比她的站位看起来更远，看到她抬袖就留出闪避空间。双袖在身前交叉成 X 时向侧面让开，再从侧面打一小段。','Her sleeve sweep reaches well beyond her body. Leave room to dodge as she raises a sleeve. When both sleeves cross in an X, step out to the side and counter briefly.'],
+  ['她跃起旋转时先盯落点，等落地再接近。红光攻击用闪避，蓝光攻击可以招架。战后核对 Fanatic’s Fragment: Fixation。','Track her landing when she leaps and spins, then close in after she lands. Dodge red flashes and parry blue ones. Check for Fanatic’s Fragment: Fixation after victory.']
+ ],'https://allthings.how/phantom-blade-zero-gu-wanyue-boss-fight/']
+);
+
+module.exports.bosses.push(['yan-qiansui','琴女 Yan Qiansui：沉没戏楼','Yan Qiansui, the Zither Maiden',[
+ ['开战条件 · 收齐梅谷湖的六段水上记忆后，到戏楼码头的钟休整，再步行到岛上殿前庭院。她在庭院另一侧就会开始攻击，过钟后先做好准备。','Unlock · Collect the six memories on Meigu Lake, then rest at the Meigu Songhouse Dock bell and walk to the temple yard on the island. She can attack from across the yard as you approach.'],
+ ['远距离 · 红蓝音球会先排成一列，再朝你飞来。移动时看整排的来向，找空隙横移。脚下亮红时先离开原地，等爆炸过去再靠近。','At range · Red and blue notes line up before they fly. Watch the whole row and move laterally toward a gap. If the ground under you lights up red, move off it before closing in.'],
+ ['近距离 · 她会把琴当长刃横扫，也会打出贴地红色刀光。等挥琴结束再打短连段。身边升起红色火柱时先撤出范围，再找下一次反击机会。','Up close · She swings the zither like a blade and sends a red slash along the ground. Wait for the swing to end before a short counter. Move out of the red fire pillars before trying to punish again.'],
+ ['战后 · 核对幻术琵琶的琴弦和 Fanatic’s Fragment: Attachment。琴弦与琴头、背板凑齐后，回庞镇地下酒馆找三师姐修复。','Rewards · Check for the Illusory Pipa Strings and Fanatic’s Fragment: Attachment. Once you have all three pipa parts, return to Myst in Pangzhen’s underground tavern.']
+],'https://allthings.how/phantom-blade-zero-yan-qiansui-boss-fight/']);
+
+module.exports.equipment.push(
+ ['puppeteers-bell','人偶铃与 Abyssal Bell','Puppeteer’s Bell and Abyssal Bell',[
+  ['获取 · 在陆家村收齐六段萤火记忆，从幽蓝萤火之庙后门穿过雾区，到破碎人偶坑击败荡秽，取得召唤型影之武装人偶铃。','Acquisition · Collect all six Firefly memories in the Village of Lu, cross the mist behind the Temple of Blue Fireflies and defeat Dusk in the Broken Puppet Pit to obtain the summoning Phantom Edge.'],
+  ['铸魂 · 断魂山终局取得 Herald’s Lingering Threads，物品提示可能与圣母娘娘的奖励一起出现。回庞镇地下酒馆找三师姐，交材料和 5,000 Remnant Dust。升级后名称变为 Abyssal Bell，可多召唤一个强力人偶。','Soul Tempering · Pick up Herald’s Lingering Threads in the finale. Its reward card can appear alongside the Lady’s loot. Take it and 5,000 Remnant Dust to Myst in Pangzhen’s underground tavern to upgrade the bell and unlock a third, stronger puppet.']
+ ],'https://allthings.how/phantom-blade-zero-heralds-lingering-threads/'],
+ ['ladys-fan','圣母娘娘的扇与冠','The Lady’s Fan and The Lady’s Crown',[
+  ['获取 · 在断魂山击败圣母娘娘，领取双持武器 The Lady’s Fan 和对应铸魂材料 The Lady’s Crown。','Acquisition · Defeat Meng Hua on Mount Soulrend for the dual-wield weapon and its matching Soul Tempering material.'],
+  ['用法 · 用重击连段储存火、雷、冰符印，再用防御加重击消耗符印。爆发效果取决于当前储存的组合。','Usage · Store fire, lightning and ice sigils through heavy attack combos. Use block plus heavy attack to spend them, with the result determined by the stored combination.'],
+  ['铸魂 · 将冠和 5,000 Remnant Dust 交给庞镇地下酒馆的三师姐，解锁 Dark Sigil Burst。符印爆发效果增强，持续型效果的时长翻倍。','Soul Tempering · Bring the crown and 5,000 Remnant Dust to Myst in Pangzhen. Dark Sigil Burst strengthens the bursts and doubles the duration of sustained effects.']
+ ],'https://allthings.how/phantom-blade-zero-the-ladys-fan/'],
+ ['aureate','左殇的金剑 Aureate','Aureate, Zuo Shang’s golden sword',[
+  ['获取 · 在龙啸或真结局路线击败左殇后取得单手剑 Aureate。走真结局时，打完真龙之躯，字幕后回幻境核对金剑及铸魂材料 Broken Lóng Body。','Acquisition · Defeat Zuo Shang on the Lóng’s Roar or Final Battle route to earn Aureate. On Final Battle, finish the True Lóng phase and check for the sword and Broken Lóng Body after returning to the Realm of Mirage.'],
+  ['铸魂 · 将 Broken Lóng Body 和 5,000 Remnant Dust 交给庞镇地下酒馆的三师姐，解锁 The Grand Design。剑气爆发后，下一次对应的幻武召唤会得到强化。','Soul Tempering · Bring Broken Lóng Body and 5,000 Remnant Dust to Myst in Pangzhen to unlock The Grand Design. A Sword Energy Burst empowers the next Grand Design summon.']
+ ],'https://allthings.how/phantom-blade-zero-broken-long-body/']
+);
