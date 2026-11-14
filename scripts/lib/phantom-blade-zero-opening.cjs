@@ -1191,13 +1191,13 @@ for (const [area,section] of [
       "Red House revisit: beast door, Sweeper and completion",
       [
         [
-          "回访时找门中央伸出舌头的兽面，靠近与人偶「哑巴」对话。实录确认这次回访可以进入，最早开放条件仍待核对。",
-          "Approach the beast-faced door with the protruding tongue and speak to the puppet. The recording confirms this revisit enters the house; the earliest unlock is pending.",
+          "先从三道机关门后的六十六号人偶取得人偶舌，再回悲泣溪谷，从杀气塔底部乘隐藏升降台下到红房子。在兽面木门前把人偶舌装给「哑巴」开门。",
+          "Get the Puppet’s Tongue from Puppet No. 66 after opening the three illusion gates. Return to Weeping Creek Valley and take the hidden lift under Sha-Chi Tower. Fit the tongue into the Mute at the beast-faced door.",
           [
             [
               "red-house-door",
-              "回访时找门中央伸出舌头的兽面，靠近与人偶「哑巴」对话。实录确认这次回访可以进入，最早开放条件仍待核对。",
-              "Approach the beast-faced door with the protruding tongue and speak to the puppet. The recording confirms this revisit enters the house; the earliest unlock is pending.",
+              "红房子兽面门上的人偶「哑巴」",
+              "The Mute puppet lock on the Crimson Manor door",
               "友利奈绪大魔王 · P57 1:00"
             ]
           ]
@@ -1813,6 +1813,53 @@ const danghui=['danghui','荡秽：幽蓝萤火之庙','Danghui: Temple of Blue 
 ],'../../walkthrough/lu-village/#danghui'];
 module.exports.walkthrough.push([...danghui.slice(0,4),null]);
 module.exports.bosses.push(danghui);
+
+module.exports.equipment.push(['white-serpent-crimson-viper','白赤练双刃与四件蛇身材料','White Serpent & Crimson Viper: four tempering pieces',[
+ ['武器 · 在血色森林丝线巨树的钟休整，穿过蓝花地与雾门，击败白赤练取得双刃。','Weapon · Rest at the Threadbound Great Tree bell in Crimson Forest, cross the blue flower field and enter the mist to defeat Bai Chilian for the paired blades.'],
+ ['青蛇胆 · 到庞镇青蛇屋楼上，从放着四蛇屋文书的供桌走到房间另一端，低头看地面触发拾取提示。','Green gall · Go upstairs in the Green Serpent House in Pangzhen. Cross to the far end of the room from the letter altar and look down at the floor for the pickup prompt.'],
+ ['蛇的响尾·赤 · 拿到烈焰狮头后回血色森林赤蛇屋。从钟穿过院子，烧掉棚屋门口的荆棘，穿过棚屋再开双门。进屋后往左找红色蛇信所在的柜子，打开旁边的宝箱取得铸魂材料。','Red rattle · Return to the Red Serpent House in Crimson Forest after obtaining Flaming Mane. Cross the yard from the bell, burn the vines at the shed entrance and go through the double doors beyond it. Inside, look left for the cabinet holding the Red Serpent Tongue and open the chest beside it.'],
+ ['黑蛇毒囊 · 陆家村黑蛇屋，找到藏黑蛇牙的长柜台后，查旁边几步远的莲花碗座。','Black venom sac · In the Black Serpent House, check the lotus-bowl stand a few steps from the counter holding the Black Serpent Fang.'],
+ ['白蛇蜕 · 击败梅谷湖白蛇屋的 Heartpiercer 后，穿过庭院进放白蛇眼的建筑，在里面开箱。','White slough · Defeat Heartpiercer, cross the White Serpent House courtyard and open the chest inside the building holding the White Serpent Eye.'],
+ ['铸魂 · 四件齐全后合成 Serpent’s Memory。带材料和 5,000 Remnant Dust 回庞镇地下酒馆找三师姐。铸魂后用防御加重击召回赤蛇短刃时会召出蛇群，短刃离身越久，召出的蛇越多。','Soul Tempering · All four pieces form Serpent’s Memory. Take it and 5,000 Remnant Dust to Myst in Pangzhen. Once tempered, recall Crimson Viper with Block plus Heavy Attack to summon serpents. The longer the blade stayed away, the more serpents appear.']
+],'https://allthings.how/phantom-blade-zero-white-serpent-crimson-viper/']);
+
+module.exports.bosses.push(['heartpiercer','Heartpiercer：梅谷湖白蛇屋','Heartpiercer, Elite Shadow Warden',[
+ ['进门条件 · 在血色森林红蛇屋和陆家村黑蛇屋分别取得 Loong Emblem 的阴、阳两半。徽记自动合成后，乘船到梅谷湖白蛇屋码头。穿过竹院、上石阶，到白蛇屋的钟休整，再用徽记打开雕花格栅门。走近庭院中央蹲伏的首领开战。','Unlock · Collect the yin and yang halves of the Loong Emblem at the Red and Black Serpent Houses. Once they combine, sail to White Serpent House Dock, cross the bamboo yard and climb the stone stairs to the bell. Rest, unlock the lattice doors with the emblem and approach the crouching boss.'],
+ ['双斧与飞刃 · 他近身斩击后常向后跃起，连续抛出旋转飞刃。先留在原地格挡普通飞刃，等整轮结束再追。若这一轮有红光预警，等飞刃接近再闪避。','Axes and projectiles · A close slash often leads into a backward leap and a stream of spinning blades. Guard the ordinary blades and wait for the volley to end before pursuing. If the volley has a red flash, dodge as the projectiles approach.'],
+ ['反击窗口 · 留意杀气余量。双斧突进后先观察他是否后跳续招，等飞刃收尾再打短连段或回血。判断红光攻击时看招式预警，面具下的红眼一直亮着。','Punish window · Keep an eye on your Sha-Chi. After an axe lunge, check for the follow-up leap. Use the end of the projectile stream to heal or land a short counter. Watch for the attack flash, since his eyes glow red throughout the fight.'],
+ ['战后 · 确认取得 Sundering Dual Axes。穿过庭院进入后方大厅，拿到白蛇眼，再到大厅尽头的烛台旁拾取 Leng Tu 的第三段记忆。白蛇眼之后要带回庞镇青蛇屋装入蛇门。','After the fight · Check for Sundering Dual Axes. Continue to the hall beyond the courtyard for the White Serpent Eye, then inspect the candle shrine at the far end for Leng Tu’s third memory. Take the eye back to the serpent door at Pangzhen’s Green Serpent House.']
+],'https://allthings.how/phantom-blade-zero-heartpiercer-boss-fight/']);
+
+module.exports.collectibles.push(['leng-tu-memories','Leng Tu 的六段记忆','Leng Tu’s six Memory Flower petals',[
+ ['I · 梅谷湖白蛇屋。从存档钟走进附近点着蜡烛的大厅，调查祭桌上的蓝花。','I · At the White Serpent House bell on Meigu Lake, enter the nearby candlelit hall and inspect the blue flower on the altar.'],
+ ['II · 从白蛇屋存档房出来，沿山脊下坡，过绳板桥，到临崖平台的石桌旁拾取。最后一段路有白鬼从上方跳下，过桥前先补血。','II · Leave the bell house, descend along the ridge and cross the rope bridge. The flower is beside the stone table on the cliff terrace. Heal before crossing, as a White Ghost drops in just before the flower.'],
+ ['III · 在白蛇屋击败 Heartpiercer 后，进入存放白蛇眼的大厅，走到最深处的烛台旁拾取。','III · Defeat Heartpiercer at the White Serpent House, then enter the hall containing the White Serpent Eye and check the candle shrine at the far end.'],
+ ['IV · 戏梦山庄击败 Lei Dang 后，从 Perfect Vessel Pond 回到战场，找燃烧摊位间的圆形石台。蓝花在石台上。','IV · After defeating Lei Dang, return from Perfect Vessel Pond and look for the round stone dais among the burning stalls. The flower is on the dais.'],
+ ['V · 带人偶舌回悲泣溪谷，从杀气塔底下到红房子并开门。在屋内找上层阳台，沿栏杆查蓝花。','V · Bring the Puppet’s Tongue to the Crimson Manor beneath the Sha-Chi Tower in Weeping Creek Valley. Open the manor and look along the upper balcony railing for the flower.'],
+ ['VI · 戏梦山庄的 Lei Dang 战后，先和场地外侧地毯上的玉儿对话，再调查她原先位置旁出现的蓝花。六段收齐后，生命上限增加 10%。','VI · After Lei Dang, speak to Yu’er on the carpet at the edge of the arena. Inspect the flower that appears beside her former spot. Collect all six for 10% more maximum HP.']
+],'https://allthings.how/phantom-blade-zero-leng-tus-memory-flower/']);
+
+module.exports.bosses.push(['lei-dang','Lei Dang：虎炮与独臂虎','Lei Dang: Tiger Cannon and One-Armed Tiger',[
+ ['入口 · 在戏梦山庄 Perfect Vessel Pond 的钟休整，沿钟后的红灯笼大阶梯上行，靠近门楼开战。失败后从同一口钟返回。','Approach · Rest at the Perfect Vessel Pond bell, climb the broad red-lantern staircase behind it and approach the gatehouse. Retry from the same bell if defeated.'],
+ ['第一阶段 · 长红线是远炮的瞄准提示，横移离开射线。若多条细线呈扇形展开，等齐射打完再近身。重挥后突然侧步可能接抓投，先拉开距离。','Phase one · A long red line telegraphs the cannon shot. Move sideways out of its path. When several aim lines fan out, wait until the volley ends before closing in. Back away if he sidesteps after a heavy swing, as a grab can follow.'],
+ ['第一条血条见底时，地面冒红光、他向后跃起蓄炮。中断追击，先躲开这一发大范围炮击。','As the first bar runs low, the floor flashes red and he leaps backward to charge. Stop chasing and evade the large blast.'],
+ ['第二阶段 · 血条切为 One-Armed Tiger 后，升空会接落石，红光跳砸则会在落点引起火焰。先离开落点，等火焰范围看清后再回身打短连段。','Phase two · Once the bar switches to One-Armed Tiger, watch for falling rocks when he rises and fire where his red-glowing leap lands. Leave the impact area before stepping back in for a short punish.'],
+ ['战后 · 核对 Tiger Cannon 和 All Return to Dust 成就。回到战场，在外侧地毯上找玉儿并交谈，再调查她原先位置旁出现的蓝花，取得 Leng Tu 的第 VI 段记忆 Rift of Bones。','After the fight · Check for Tiger Cannon and the All Return to Dust achievement. Return to the arena, speak to Yu’er on the carpet at its outer edge and collect the blue flower that appears beside her former spot for Leng Tu’s Memory VI, Rift of Bones.']
+],'https://allthings.how/phantom-blade-zero-lei-dang-boss-fight/']);
+
+module.exports.equipment.push(['tiger-cannon','Tiger Cannon：戏梦山庄获取与破墙','Tiger Cannon: Mirage Estate and breakable walls',[
+ ['获取 · 在戏梦山庄的 Perfect Vessel Pond 存档钟休整，沿钟后的红灯笼石阶上行，击败 Lei Dang 后取得 Tiger Cannon。','Acquisition · Rest at the Perfect Vessel Pond bell in Mirage Estate. Climb the red-lantern stairs behind the bell and defeat Lei Dang for Tiger Cannon.'],
+ ['探索 · 拿到炮后，面对有裂纹的可破坏石墙，等互动提示出现再开炮。探索破墙无需把炮装到当前的影之武装栏。','Exploration · Once you own the cannon, face a weakened stone wall and use the interaction prompt to break it. The field action works with another Phantom Edge equipped.'],
+ ['战斗 · 长按影之武装键蓄力，最多三段，松开射击。蓄力越高伤害越高，每发消耗 1 点 Remnant Spark。','Combat · Hold the Phantom Edge input to charge up to three stages, then release to fire. Longer charge increases damage. A shot costs one Remnant Spark.']
+],'https://allthings.how/phantom-blade-zero-tiger-cannon/']);
+
+module.exports.equipment.push(['wolfjaw','Wolfjaw：吸血武装与铸魂','Wolfjaw: life drain and Soul Tempering',[
+ ['获取 · 从庞镇 Zhang’s Hideout 的钟进入后街，在挂红灯笼的圆形石院击败 Wu Xuan，战后领取 Wolfjaw。','Acquisition · From Zhang’s Hideout in Pangzhen, enter the backstreets and defeat Wu Xuan in the round stone courtyard under red lanterns.'],
+ ['用法 · 长按影之武装键挥锤，消耗 1 点 Remnant Spark，命中有效目标时吸取生命。人偶、金身和幻身无法提供吸血。升到 5 级后，优先在敌人破防时使用，能吸取更多生命。','Usage · Hold the Phantom Edge input to swing the mace for one Remnant Spark. Hits drain life from eligible targets. Puppets, Golden Bodies and Phantom Bodies do not provide healing. From level 5, use it on guard-broken enemies for more healing.'],
+ ['升级 · 10 级解锁提高吸血量的 Blood Feast。15 级后，在挥击收尾时再按一次影之武装键，可免费追加 Full-Power Strike。25 级后，长按防御和影之武装键发动旋转突刺，命中的敌人在 12 秒内受到更多伤害。','Upgrades · Level 10 unlocks Blood Feast for stronger life drain. At level 15, press the Phantom Edge input at the end of a swing for a free Full-Power Strike. At level 25, hold Block and Phantom Edge for a spinning thrust that increases damage taken by enemies hit for 12 seconds.'],
+ ['铸魂材料 · 从陆家村井底 Hidden Passage to Pangzhen 的钟沿矿道木平台走到底，落到下层。找入口卡着断木板的窄岩道，走到烛光和火盆照亮的小室开箱，取得 Border Poems。回程找落点旁木架里的短梯。若路上遇到出现破墙提示的裂石墙，可用 Tiger Cannon 打开。','Material · From Hidden Passage to Pangzhen, follow the mine decking to its end and drop to the lower floor. Take the narrow rock passage marked by broken planks to the chest in the candlelit room with a fire bowl. Return via the short ladder inside the scaffold. If a cracked wall presents a break prompt, use Tiger Cannon.'],
+ ['铸魂 · 带 Border Poems 和 5,000 Remnant Dust 去庞镇地下酒馆找三师姐，解锁 Ghostfire Wreath，让攻击产生持续削减生命和杀气的鬼火。','Soul Tempering · Take Border Poems and 5,000 Remnant Dust to Myst in Pangzhen to unlock Ghostfire Wreath, which drains enemy HP and Sha-Chi over time.']
+],'https://allthings.how/phantom-blade-zero-wolfjaw/']);
 
 module.exports.equipment.push(['fanatics-broken-blade','花千笑的断剑与两枚铸魂碎片','The Fanatic’s Broken Blade and its two fragments',[
  ['先拿武器 · 在血色森林击败花千笑，战后确认获得 The Fanatic’s Broken Blade。','Get the weapon · Defeat Hua Qianxiao in the Crimson Forest and check for The Fanatic’s Broken Blade.'],

@@ -96,8 +96,8 @@ module.exports.push(...[
     "red-house",
     "红房子：清道夫与任务收尾",
     "Red House: Sweeper and quest completion",
-    "回访悲泣溪谷时，在兽面木门前与人偶「哑巴」对话。沿橙灯回廊下楼，经红线密布的低层进入浅水场。击败活人偶清道夫后拾取超合金镰头，沿水边检查右上角「红房子 完成！」提示。最早开放时机待核对。",
-    "Speak to the puppet at the beast-faced door. Descend the lantern-lit gallery and follow the red cords into the shallows. Defeat the Sweeper, collect the alloy sickle head and check the completion prompt. The earliest unlock is pending.",
+    "从三道机关门后的六十六号人偶取得人偶舌后，回悲泣溪谷，用它开启红房子的兽面木门。沿橙灯回廊下楼，经红线密布的低层进入浅水场。击败活人偶清道夫后，拾取超合金镰头并核对任务完成提示。",
+    "After obtaining the tongue from Puppet No. 66 beyond the three illusion gates, use it at the beast-faced door. Descend the lantern-lit gallery and follow the red cords into the shallows. Defeat the Sweeper, collect the alloy sickle head and check the completion prompt.",
     "against-the-flow",
     "red-house-revisit",
     "red-pickup"

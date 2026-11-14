@@ -152,7 +152,37 @@ for(const [index,e] of areas.entries()){
 }
 page('maps/','地图目录','Well Dweller 区域地图参考目录。','<p>地图章节提供局部地图与地标定位；完整路线步骤仍在流程攻略中阅读。</p>'+list([['世界结构示意图',base+'maps/world/']])+heading('已补充区域')+table('可用地图资料',['区域','现有内容'],areas.filter(a=>regionalMapNotes.some(n=>n.id===a.id)).map(a=>[linkedName(a,'maps'),a.images.some(i=>approvedImage(i)&&/地图|区域图/.test(i.caption))?'局部地图与地标定位':'地标定位与区域结构视图']))+heading('后续区域')+catalogue(areas.filter(a=>!regionalMapNotes.some(n=>n.id===a.id)),'maps'));
 page('maps/world/','世界地图 · 区域结构示意','Well Dweller 原创区域结构示意与区域地图入口。',heading('可查看的局部地图')+list(mapCrops.crops.map(c=>[c.titleZh,base+'maps/'+c.id+'/']))+worldMap.markup()+heading('区域地图入口')+catalogue(areas,'maps')+'<p>'+link('区域资料参考：Gamer Guides',worldMap.graph.referenceUrl)+'</p>',{parent:['地图','maps']});
-for(const [slug,title] of [['hidden-paths','隐藏通道'],['breakable-walls','可破坏墙壁'],['locked-doors','反锁门']])page('maps/'+slug+'/',title,title+' 资料持续整理中。','<p class="classic-subtitle">尚无已确认的地图资料。</p>',{parent:['地图','maps'],noindex:true});
+page('maps/hidden-paths/','隐藏通道','通关后五处腾空入口与辨认地标。',
+ '<p>在存档帐篷的拾荒者商店可购买玻璃眼，标价 450。装备后可看见隐藏通道。寻找入口时可先装备它，再按各条路线准备攀爬或腾空等能力。</p>'+
+ '<p>'+link('玻璃眼获取与效果','https://gamersocialclub.ca/2026/09/21/well-dweller-all-trinket-locations-for-the-expert-collector-achievement-trophy-guide/')+'</p>'+
+ heading('主线途中')+table('隐藏入口',['区域','入口地标'],[
+  ['墓谷','学会攀爬后，检查灵魂所在房间的左上角，沿隐藏通道进去拾取。'],
+  ['秋日森林','击败森林之王后，进入放金羽毛的房间。找伊尔达右侧的隐藏通道，里面有一页故事。'],
+  ['埋葬墓穴','玩偶师故事页的房间可对照下方图文的 Story Page 18/23 地图。另一处暗道对应 Workshop Token 25/27。带上悬停、无限攀爬和墙壁弹射，进暗道后打破挡路的障碍。'],
+  ['玩偶师之家','对照下方图文的 Workshop Token 26/27 地图找到房间，带上弹弓与无限攀爬，爬入暗道取得代币。']
+ ])+list([
+  ['埋葬墓穴：故事页地图','https://gamersocialclub.ca/2026/09/22/well-dweller-100-collectibles-achievement-trophy-walkthrough/#:~:text=Story%20Page%2018%20%2F%2023'],
+  ['埋葬墓穴：工坊代币地图','https://gamersocialclub.ca/2026/09/22/well-dweller-100-collectibles-achievement-trophy-walkthrough/#:~:text=Workshop%20Token%2025%20%2F%2027'],
+  ['玩偶师之家：工坊代币地图','https://gamersocialclub.ca/2026/09/22/well-dweller-100-collectibles-achievement-trophy-walkthrough/#:~:text=Workshop%20Token%2026%20%2F%2027'],
+  ['收集实机图文','https://gamersocialclub.ca/2026/09/22/well-dweller-100-collectibles-achievement-trophy-walkthrough/']
+ ])+
+ heading('通关后的探索')+'<p>通关后在女王寝室解锁腾空，再到能力蛋所在鸟巢的上方拿神秘标记。地图标出的五处入口可按下列地标查找。</p>'+
+ table('腾空入口',['区域','入口地标'],[
+  ['玩偶师之家','最高一层通道的中央房间。向上腾空进入隐藏区。'],
+  ['夜之庭园','与沼泽相接的最西侧房间。腾空进入上方战斗房。'],
+  ['秋日森林','计时挑战房西侧的房间。向上腾空进入平台跳跃路线。'],
+  ['码头','低语者小屋旁的帐篷向东，到桥上腾空。'],
+  ['干涸城堡','东南角帐篷右侧的鸟巢。站在巢上腾空进入隐藏塔。']
+ ])+list([['五枚灵魂碎片路线',base+'collectibles/spirit-fragments/'],['通关后地图参考','https://www.gamerguides.com/well-dweller/routes/post-game-guide-and-how-to-unlock-the-true-ending']]),{parent:['地图','maps']});
+page('maps/locked-doors/','反锁门','沼泽帐篷捷径、下水道机关门与女王寝室的开门方法。',
+ heading('沼泽')+'<p>帐篷右侧的路被挡住时，先往左越过平台。进入有气泡的房间，借气泡升到顶层，向右经过飞虫，从右侧出口下落。到了路障另一边，打一下开关就能开通回帐篷的捷径。</p>'+
+ heading('下水道')+'<p>升降机抵达底层后一路向右，找聚在开关下方的青蛙。用弹弓击中上方的开关，打开右边的门。</p>'+
+ heading('女王城堡')+'<p>通关后回女王战场上方，与锁门旁的拾荒者对话，再敲天花板拉杆进入寝室。寝室西门要集齐 32 件饰物才能打开。</p>'+
+ list([['女王金币',base+'collectibles/key-items/the-queens-coin/'],['沼泽捷径参考','https://intoindiegames.com/walkthroughs/well-dweller-walkthrough-part-2-exploring-the-bog/'],['下水道开门参考','https://intoindiegames.com/walkthroughs/well-dweller-walkthrough-part-3-navigating-the-drains/']]),{parent:['地图','maps']});
+page('maps/breakable-walls/','可破坏墙壁','沼泽的两处可破坏墙壁与通过方法。',
+ heading('沼泽')+'<p>沿下层通道向左走，清掉沿路敌人。打破房间左下角的墙，从低矮缺口滑进下一间，继续左行可遇见被飞虫围攻的伊尔达。</p>'+
+ '<p>从存档帐篷向左越过平台，看到前方的可破坏墙壁时，同时检查头顶。打破面前的墙和上方的表面，再继续向左。</p>'+
+ list([['沼泽流程',base+'walkthrough/the-bog/'],['沼泽破墙实机路线','https://intoindiegames.com/walkthroughs/well-dweller-walkthrough-part-2-exploring-the-bog/']]),{parent:['地图','maps']});
 page('bosses/','Boss / encounter 目录','Well Dweller 首领与遭遇目录。',catalogue(bosses,'bosses'));
 for(const e of bosses)page('bosses/'+e.slug+'/',name(e),e.nameEn+' 已确认的遭遇资料。',facts(e)+(e.aliases?'<p class="classic-subtitle">名称存在来源差异：'+esc(e.aliases.join(' / '))+'</p>':'')+heading('相关攻略')+list([...(publicValue(e,'area')&&refs.has(publicValue(e,'area'))?[refs.get(publicValue(e,'area'))]:[]),['Boss 目录',base+'bosses/']]),{parent:['Boss / encounter','bosses'],entity:e});
 const referenceSources=item=>[...new Set([...item.effectSources,...item.locationSources])].map(id=>{const s=abilityReference.sources[id];return link(s.name,s.url)}).join('<br>');
@@ -174,7 +204,16 @@ page('achievements/','成就一览','黯井微光 41 项 Steam 官方中文版�
 for(const e of achievements)page('achievements/'+e.slug+'/',name(e),publicValue(e,'description','Steam 成就资料。'),facts(e)+heading('相关攻略')+list([['成就目录',base+'achievements/']]),{parent:['成就','achievements'],entity:e});
 page('challenges/','挑战目录','Well Dweller Time Trials 与解谜资料入口。',list([['计时挑战',base+'challenges/time-trials/'],['谜题解法',base+'challenges/puzzle-solutions/']]));
 page('challenges/time-trials/','计时挑战','Well Dweller 计时挑战目录。',catalogue(challenges,'challenges/time-trials'));
-for(const e of challenges)page('challenges/time-trials/'+e.slug+'/',name(e)+' · Time Trial','已确认计时挑战资料。',facts(e),{parent:['计时挑战','challenges/time-trials'],entity:e});
+const trialRewards={
+ 'night-garden':'trinket-slots','desiccated-castle':'trinket-slots','midnight-drench':'spirits',
+ 'hunters-cabin':'spirits','autumn-forest':'spirits','the-docks':'trinket-slots','the-bog':'spirits',
+ 'dollmakers-house':'workshop-tokens','graven-valley':'trinket-slots','the-drains':'trinkets'
+};
+for(const e of challenges){
+ const reward=trialRewards[e.slug.replace(/^time-trial-/,'')];
+ const related=reward?heading('奖励收集攻略')+list([['查看对应收集清单',base+'collectibles/'+reward+'/']]):'';
+ page('challenges/time-trials/'+e.slug+'/',name(e)+' · Time Trial','已确认计时挑战资料。',facts(e)+related,{parent:['计时挑战','challenges/time-trials'],entity:e});
+}
 const puzzleAreas=areas.filter(e=>confirmed(e.fields.referencePuzzle));
 page('challenges/puzzle-solutions/','谜题解法','Well Dweller 谜题资料。',puzzleAreas.map(e=>heading(name(e),e.id)+e.fields.referencePuzzle.value.map(text=>'<p>'+esc(text)+'</p>').join('')+list([[name(e),base+'walkthrough/'+e.slug+'/']])+heading('参考资料')+list(e.fields.referencePuzzle.sources.map(source=>[source.name,source.url]))).join(''),{parent:['挑战','challenges'],noindex:!puzzleAreas.length});
 page('systems/','系统说明','Well Dweller 游戏基础资料与系统目录。',
@@ -182,7 +221,7 @@ page('systems/','系统说明','Well Dweller 游戏基础资料与系统目录�
  heading('系统目录')+list(systemsReference.map(section=>[section.title,base+'systems/#'+section.id]))+
  systemsReference.map(section=>heading(section.title,section.id)+'<p>'+esc(section.text)+'</p><p>'+link(section.relatedLabel,base+section.related)+' · '+link('参考资料',section.source)+'</p>').join('')+
  heading('相关目录')+list([['能力与获取方式',base+'abilities/'],['收集目录',base+'collectibles/']]));
-page('secrets/','隐藏内容','Well Dweller 通关后的能力与灵魂碎片探索入口。',heading('通关后的探索','endings')+'<p>完成女王路线后，可继续回访收集。先检查腾空能力与神秘地图，再按灵魂碎片资料确认探索目标。</p>'+list([['女王',base+'bosses/the-queen/'],['腾空',base+'abilities/soar/'],['神秘标记',base+'collectibles/key-items/mysterious-markings/'],['灵魂碎片',base+'collectibles/spirit-fragments/'],['灵魂',base+'collectibles/spirits/']])+'<p>'+link('通关后参考','https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-together-at-last-achievement-trophy/')+'</p>');
+page('secrets/','隐藏内容','Well Dweller 通关后的能力与灵魂碎片探索入口。',heading('通关后的探索','endings')+'<p>击败女王后先到寝室拿金币。集齐 32 件饰物打开寝室西门，学会腾空，再拿神秘标记。找到五枚灵魂碎片后，回夜之庭园的灵魂鸟巢触发真结局。</p>'+list([['女王',base+'bosses/the-queen/'],['女王金币',base+'collectibles/key-items/the-queens-coin/'],['腾空',base+'abilities/soar/'],['神秘标记',base+'collectibles/key-items/mysterious-markings/'],['灵魂碎片',base+'collectibles/spirit-fragments/'],['灵魂',base+'collectibles/spirits/']])+'<p>'+link('通关后参考','https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-together-at-last-achievement-trophy/')+'</p>');
 page('updates/','更新记录','Well Dweller 攻略整理的真实更新记录。',updateList(updates.length),{status:'in-progress'});
 // Keep previously linked addresses usable without publishing archived research content.
 const aliases={'walkthrough/chapter-01/':'walkthrough/','walkthrough/chapter-02/':'walkthrough/the-bog/','walkthrough/chapter-03/':'walkthrough/the-drains/','walkthrough/chapter-04/':'walkthrough/graven-valley/','walkthrough/chapter-05/':'walkthrough/','walkthrough/chapter-06/':'walkthrough/the-docks/','walkthrough/chapter-07/':'walkthrough/the-deep/','walkthrough/final/':'walkthrough/','bosses/boss-01/':'bosses/the-groundskeeper/','bosses/boss-02/':'bosses/','bosses/boss-03/':'bosses/','bosses/boss-04/':'bosses/','maps/area-map/':'maps/','maps/hidden-area/':'maps/hidden-paths/'};

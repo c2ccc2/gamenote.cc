@@ -101,10 +101,14 @@ for(const file of files){
    if(!confirmed(record?.fields.referenceStrategy)){
     $('meta[name=robots]').remove();$('head').append('<meta name="robots" content="noindex,follow">');$('[data-pagefind-body]').removeAttr('data-pagefind-body');
    }else article.children('section[data-editorial]').first().find('.classic-notice').remove();
-   $('meta[name=description],meta[property="og:description"]').attr('content',en?'The Queen: evasion and battle achievements, preparation notes and an ongoing boss-guide draft.':'女王：躲避与战斗成就、遭遇前准备和持续整理中的首领攻略。');
+   const hasStrategy=confirmed(record?.fields.referenceStrategy);
+   $('meta[name=description],meta[property="og:description"]').attr('content',hasStrategy
+    ?(en?'The Queen: castle prerequisites, floor spikes, fireballs and raised-platform tactics.':'女王攻略：王城前置条件、地刺和火球的应对，以及后半段的升降平台走法。')
+    :(en?'The Queen: evasion and battle achievements and encounter preparation.':'女王：躲避与战斗成就，以及遭遇前准备。'));
   }
  }
  if(current==='/about/'){
+  $('main [data-notes]').after(`<p class="work-note" data-editorial><strong>${en?'Phantom Blade Zero guide complete':'《影之刃零》攻略已完成'}</strong> · ${en?'The guide covers the main route, side quests, boss strategies, weapons, key collectibles and the true ending.':'专题已整理主线流程、支线任务、首领打法、兵器、重点收集与真结局路线。'} <a href="${prefix}/games/phantom-blade-zero/">${en?'Open the guide':'查看攻略专题'} →</a></p>`);
   $('main').append(`<section class="section" data-editorial><h2>${en?'Who Writes GAME NOTE':'谁在整理 GAME NOTE'}</h2><p>${en?'GAME NOTE is an independent, player-made guide project. GAME NOTE editors organise routes, screenshots, bilingual text and corrections. The walkthrough videos referenced in the Well Dweller guide were created by 好吃的香草雪球; the video creator and this website’s guide editors are not presented as the same author.':'GAME NOTE 是玩家制作的独立攻略项目。本站攻略整理者负责路线编排、截图选取、中英文文字整理和勘误；《黯井微光》参考录像的原作者是好吃的香草雪球。攻略整理者与原视频作者分别署名，不将参考录像写成本站自行录制。'}</p><h2>${en?'How the Guides Are Prepared':'资料整理方法'}</h2><p>${en?'We compare gameplay footage, official game and Steam information, and referenced guides. Routes are organised by area, while maps, abilities and achievements have separate reference pages. Original evidence stays in the research archive; public pages show practical instructions and source links. Unresolved details remain drafts rather than invented conclusions.':'结合游戏画面、官方游戏与 Steam 资料以及注明来源的攻略进行对照，按区域整理路线，并将地图、能力和成就分别归档。原始依据保留在研究资料中；公开页面展示可用步骤与参考链接。尚未确定的信息保留为待补内容，不填充成结论。'}</p><h2>${en?'Corrections and Credits':'纠错与署名'}</h2><p>${en?'For corrections, include the page URL, region, problem and any supporting screenshot or source. Please use the contact page or open an issue in the GAME NOTE repository.':'反馈时请附页面地址、所在区域、具体问题及截图或参考资料。可通过联系方式页查看反馈渠道，或在 GAME NOTE 仓库提交 Issue。'}</p><p><a href="/contact.html">${en?'Contact and Corrections':'联系方式与纠错'}</a> · <a href="https://github.com/c2ccc2/gamenote.cc/issues" target="_blank" rel="noopener noreferrer">GAME NOTE Issues</a> · <a href="https://space.bilibili.com/3804625/" target="_blank" rel="noopener noreferrer">${en?'Original video creator: 好吃的香草雪球':'原视频作者：好吃的香草雪球'}</a></p></section>`);
  }
  if(article.length){

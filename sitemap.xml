@@ -38,6 +38,7 @@
   <url><loc>https://gamenote.cc/catalog/nine-sols/</loc></url>
   <url><loc>https://gamenote.cc/catalog/ori-and-the-blind-forest/</loc></url>
   <url><loc>https://gamenote.cc/catalog/ori-and-the-will-of-the-wisps/</loc></url>
+  <url><loc>https://gamenote.cc/catalog/phantom-blade-zero/</loc></url>
   <url><loc>https://gamenote.cc/catalog/prince-of-persia-the-lost-crown/</loc></url>
   <url><loc>https://gamenote.cc/catalog/silver-pines/</loc></url>
   <url><loc>https://gamenote.cc/catalog/sinweaver/</loc></url>
@@ -83,6 +84,7 @@
   <url><loc>https://gamenote.cc/en/catalog/nine-sols/</loc></url>
   <url><loc>https://gamenote.cc/en/catalog/ori-and-the-blind-forest/</loc></url>
   <url><loc>https://gamenote.cc/en/catalog/ori-and-the-will-of-the-wisps/</loc></url>
+  <url><loc>https://gamenote.cc/en/catalog/phantom-blade-zero/</loc></url>
   <url><loc>https://gamenote.cc/en/catalog/prince-of-persia-the-lost-crown/</loc></url>
   <url><loc>https://gamenote.cc/en/catalog/silver-pines/</loc></url>
   <url><loc>https://gamenote.cc/en/catalog/sinweaver/</loc></url>
@@ -195,11 +197,14 @@
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/collectibles/workshop-tokens/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/autumn-forest/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/breakable-walls/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/burial-vault/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/desiccated-castle/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/dollmakers-house/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/graven-valley/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/hidden-paths/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/locked-doors/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/lookout-tower/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/midnight-drench/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/maps/night-garden/</loc></url>
@@ -238,6 +243,139 @@
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-drains/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/the-well/</loc></url>
   <url><loc>https://gamenote.cc/en/games/an-jing-wei-guang/walkthrough/webdrench-inn/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/danghui/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/duanchang/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/gu-wanyue/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/heartpiercer/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/holy-mother/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/hua-qianxiao/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/hua/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/huang-xingzi/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/jagged-steel/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/jing-ye/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/lei-dang/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/mengcha/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/one-eyed-archer/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/peng-meng/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/puppet-sweeper/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/pursuer/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/qiufeng/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/snowstorm-swordsman/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/strongman-and-sawyer/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/three-faced-puppet/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/tie-gui-and-yuyao/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/tie-kuang/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/wu-xuan/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/yan-qiansui/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/yuding/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/bosses/zuo-shang/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/alloy-sickle/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/apparition-fan/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/baiying/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/cage-blackstone-fragment/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/cage-cavalry-charm/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/cage-pickups/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/cellar-blackstone-item/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/cellar-scripture/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/cellar-warrant/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/chaos-forging/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/dread-axe/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/duanchang-axes/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/experiment-memory/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/flesh-lily-item/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/four-snake-houses/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/leng-tu-memories/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/pang-amber-item/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/pipa-head/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/puppet-bone-blade/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/puppet-record/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/red-house/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/snow-edict/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/snow-forging-memory/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/snow-memory-six/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/three-memories/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/tower-pickups/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/training-medicine-item/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/training-medicine/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/valley-pickups/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/collectibles/yuding-crescent/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/apparition-fan/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/aureate/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/baiying/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/bone-chaos/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/dread-axe/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/duanchang-axes/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/fanatics-broken-blade/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/hua-loadout/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/ladys-fan/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/puppeteers-bell/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/tiger-cannon/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/valley-weapons/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/white-serpent-crimson-viper/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/wolfjaw/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/equipment/yuding-crescent/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/allure-of-vanity/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/apprentice-healer/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/bai-xue/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/baishan-secrets/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/bloodline-awakening/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/broad-saber/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/brother-once-more/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/cui-rescue/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/dahuang/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/daughter-of-dark-sect/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/dont-forget-me/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/ending-checkpoints/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/festering-secret/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/flesh-lily-item/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/four-fierce-axes/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/four-snake-houses/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/healers-mercy/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/heart-of-the-banyan/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/heart-of-the-fist/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/heart-of-the-lake/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/heros-lament/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/honor-among-thieves/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/illusory-pipa/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/journey-home/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/kin-against-kin/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/leave-none-alive/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/missable-quests/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/mothers-heart/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/puppet-wooden-heart/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/purge-the-sect/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/quick-hand-hideouts/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/quick-hand-treasures/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/red-house/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/remnant-spark-cube/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/severed-mindseal/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/sha-chi-powered-boat/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/star-performer/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/sword-and-way/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/three-memories/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/undying-heroic-spirit/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/use-it-against-them/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/xue-admirer/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/young-master-lan/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/side-quests/young-mistress/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/systems/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/systems/practice/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/walkthrough/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/walkthrough/against-the-flow/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/walkthrough/forest-entry/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/walkthrough/late-55/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/walkthrough/late-58/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/walkthrough/late-60/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/walkthrough/late-66/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/walkthrough/lu-village/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/walkthrough/orthodox-camp/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/walkthrough/pang-town/</loc></url>
+  <url><loc>https://gamenote.cc/en/games/phantom-blade-zero/walkthrough/plum-lake/</loc></url>
   <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/</loc></url>
   <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/achievements/</loc></url>
   <url><loc>https://gamenote.cc/en/games/the-first-berserker-khazan/achievements/boss/</loc></url>
@@ -423,6 +561,7 @@
   <url><loc>https://gamenote.cc/en/updates/gamenote-catalog-news-2026-10-13/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/islets-boss-notes/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/khazan-guide-v1-2026-10-13/</loc></url>
+  <url><loc>https://gamenote.cc/en/updates/phantom-blade-zero-guide-progress-2026-11-11/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/well-dweller-content-refresh-2026-10-13/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/well-dweller-guide-reading-update/</loc></url>
   <url><loc>https://gamenote.cc/en/updates/well-dweller-guide-scaffolding/</loc></url>
@@ -532,11 +671,14 @@
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/collectibles/workshop-tokens/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/autumn-forest/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/breakable-walls/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/burial-vault/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/desiccated-castle/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/dollmakers-house/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/graven-valley/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/hidden-paths/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/hunters-cabin/</loc></url>
+  <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/locked-doors/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/lookout-tower/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/midnight-drench/</loc></url>
   <url><loc>https://gamenote.cc/games/an-jing-wei-guang/maps/night-garden/</loc></url>
@@ -658,6 +800,139 @@
   <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/chapter-8/</loc></url>
   <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/final-chapter/</loc></url>
   <url><loc>https://gamenote.cc/games/astlibra-revision/walkthrough/postscript/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/danghui/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/duanchang/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/gu-wanyue/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/heartpiercer/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/holy-mother/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/hua-qianxiao/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/hua/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/huang-xingzi/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/jagged-steel/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/jing-ye/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/lei-dang/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/mengcha/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/one-eyed-archer/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/peng-meng/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/puppet-sweeper/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/pursuer/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/qiufeng/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/snowstorm-swordsman/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/strongman-and-sawyer/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/three-faced-puppet/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/tie-gui-and-yuyao/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/tie-kuang/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/wu-xuan/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/yan-qiansui/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/yuding/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/bosses/zuo-shang/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/alloy-sickle/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/apparition-fan/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/baiying/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/cage-blackstone-fragment/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/cage-cavalry-charm/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/cage-pickups/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/cellar-blackstone-item/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/cellar-scripture/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/cellar-warrant/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/chaos-forging/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/dread-axe/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/duanchang-axes/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/experiment-memory/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/flesh-lily-item/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/four-snake-houses/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/leng-tu-memories/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/pang-amber-item/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/pipa-head/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/puppet-bone-blade/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/puppet-record/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/red-house/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/snow-edict/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/snow-forging-memory/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/snow-memory-six/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/three-memories/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/tower-pickups/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/training-medicine-item/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/training-medicine/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/valley-pickups/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/collectibles/yuding-crescent/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/apparition-fan/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/aureate/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/baiying/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/bone-chaos/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/dread-axe/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/duanchang-axes/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/fanatics-broken-blade/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/hua-loadout/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/ladys-fan/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/puppeteers-bell/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/tiger-cannon/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/valley-weapons/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/white-serpent-crimson-viper/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/wolfjaw/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/equipment/yuding-crescent/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/allure-of-vanity/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/apprentice-healer/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/bai-xue/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/baishan-secrets/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/bloodline-awakening/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/broad-saber/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/brother-once-more/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/cui-rescue/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/dahuang/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/daughter-of-dark-sect/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/dont-forget-me/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/ending-checkpoints/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/festering-secret/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/flesh-lily-item/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/four-fierce-axes/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/four-snake-houses/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/healers-mercy/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/heart-of-the-banyan/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/heart-of-the-fist/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/heart-of-the-lake/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/heros-lament/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/honor-among-thieves/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/illusory-pipa/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/journey-home/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/kin-against-kin/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/leave-none-alive/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/missable-quests/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/mothers-heart/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/puppet-wooden-heart/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/purge-the-sect/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/quick-hand-hideouts/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/quick-hand-treasures/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/red-house/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/remnant-spark-cube/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/severed-mindseal/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/sha-chi-powered-boat/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/star-performer/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/sword-and-way/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/three-memories/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/undying-heroic-spirit/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/use-it-against-them/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/xue-admirer/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/young-master-lan/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/side-quests/young-mistress/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/systems/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/systems/practice/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/walkthrough/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/walkthrough/against-the-flow/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/walkthrough/forest-entry/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/walkthrough/late-55/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/walkthrough/late-58/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/walkthrough/late-60/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/walkthrough/late-66/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/walkthrough/lu-village/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/walkthrough/orthodox-camp/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/walkthrough/pang-town/</loc></url>
+  <url><loc>https://gamenote.cc/games/phantom-blade-zero/walkthrough/plum-lake/</loc></url>
   <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/</loc></url>
   <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/achievements/</loc></url>
   <url><loc>https://gamenote.cc/games/the-first-berserker-khazan/achievements/boss/</loc></url>
@@ -843,12 +1118,9 @@
   <url><loc>https://gamenote.cc/updates/gamenote-catalog-news-2026-10-13/</loc></url>
   <url><loc>https://gamenote.cc/updates/islets-boss-notes/</loc></url>
   <url><loc>https://gamenote.cc/updates/khazan-guide-v1-2026-10-13/</loc></url>
+  <url><loc>https://gamenote.cc/updates/phantom-blade-zero-guide-progress-2026-11-11/</loc></url>
   <url><loc>https://gamenote.cc/updates/well-dweller-content-refresh-2026-10-13/</loc></url>
   <url><loc>https://gamenote.cc/updates/well-dweller-guide-reading-update/</loc></url>
   <url><loc>https://gamenote.cc/updates/well-dweller-guide-scaffolding/</loc></url>
   <url><loc>https://gamenote.cc/updates/well-dweller-v1-database/</loc></url>
-  <url><loc>https://gamenote.cc/catalog/phantom-blade-zero/</loc></url>
-  <url><loc>https://gamenote.cc/en/catalog/phantom-blade-zero/</loc></url>
-<url><loc>https://gamenote.cc/updates/phantom-blade-zero-guide-progress-2026-11-11/</loc></url>
-<url><loc>https://gamenote.cc/en/updates/phantom-blade-zero-guide-progress-2026-11-11/</loc></url>
 </urlset>

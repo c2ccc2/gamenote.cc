@@ -10,4 +10,4 @@ function check(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true}))
  assert.equal(injected.length,1);assert.equal(injected[0].src,'https://www.googletagmanager.com/gtm.js?id='+id);assert.equal(context.window.dataLayer.length,1,'Single page initialization');
  count++;if($('body').hasClass('classic'))classic++;
 }}}
-check(root);assert.equal(classic,328);assert.ok(count>=365);console.log(`Verified GTM on ${count} public pages (${classic} Classic): single bootstrap, fallback and duplicate-safe initialization.`);
+check(root);assert.ok(classic>=328,'Classic page coverage fell below the existing baseline');assert.ok(count>=365);console.log(`Verified GTM on ${count} public pages (${classic} Classic): single bootstrap, fallback and duplicate-safe initialization.`);

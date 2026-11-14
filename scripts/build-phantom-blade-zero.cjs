@@ -28,7 +28,9 @@ const bossSections={
  qiufeng:'late-62',
  yuding:'yuding',
  'three-faced-puppet':'three-faced-puppet',
- 'zuo-shang':'zuo-shang'
+ 'zuo-shang':'zuo-shang',
+ heartpiercer:'water-gang-route',
+ 'lei-dang':'late-60'
 };
 for(const [id,,,,source] of opening.bosses){
  if(source?.startsWith('../../walkthrough/'))bossSections[id]=source.split('#')[1];
@@ -56,7 +58,7 @@ for(const en of [false,true]){
  const weaponIds=new Set(['dread-axe','yuding-crescent','baiying','apparition-fan','duanchang-axes']);
  const content={
   ...opening,
-  'side-quests':[...require('./lib/phantom-blade-zero-missables.cjs'),...entries.filter(([id])=>questIds.has(id))],
+  'side-quests':[...require('./lib/phantom-blade-zero-missables.cjs'),...entries.filter(([id])=>questIds.has(id)&&id!=='four-snake-houses')],
   collectibles:[...entries,...opening.collectibles],
   equipment:[...opening.equipment,...entries.filter(([id])=>weaponIds.has(id))]
  };
@@ -96,15 +98,24 @@ for(const en of [false,true]){
   const areaLink=bossSection?`<p><a href="${base}walkthrough/${movedAreas.get(bossSection)||bossSection}/#${bossSection}">${en?'Open the area walkthrough':'查看区域图文流程'} ↗</a></p>`:'';
   const rewardEquipment={
    danghui:'puppeteers-bell',mengcha:'puppeteers-bell','holy-mother':'ladys-fan','zuo-shang':'aureate',
-   'hua-qianxiao':'fanatics-broken-blade','gu-wanyue':'fanatics-broken-blade','yan-qiansui':'fanatics-broken-blade'
+   'hua-qianxiao':'fanatics-broken-blade','gu-wanyue':'fanatics-broken-blade','yan-qiansui':'fanatics-broken-blade',
+   'wu-xuan':'wolfjaw','lei-dang':'tiger-cannon','four-snake-houses':'white-serpent-crimson-viper'
   };
-  const reward=page?.[0]==='bosses'&&entry?content.equipment.find(([id])=>id===rewardEquipment[entry[0]]):null;
+  const reward=['bosses','side-quests'].includes(page?.[0])&&entry?content.equipment.find(([id])=>id===rewardEquipment[entry[0]]):null;
   const rewardLink=reward?`<p><a href="${base}equipment/${reward[0]}/">${label(reward)} →</a></p>`:'';
+  const memoryLink=page?.[0]==='bosses'&&['lei-dang','heartpiercer'].includes(entry?.[0])
+   ?`<p><a href="${base}collectibles/leng-tu-memories/">${en?'All six Leng Tu memories':'查看 Leng Tu 的六段记忆'} →</a></p>`
+   :'';
+  const tigerCannonLink=page?.[0]==='equipment'&&entry?.[0]==='wolfjaw'
+   ?`<p><a href="${base}equipment/tiger-cannon/">${en?'Tiger Cannon acquisition and wall breaking':'查看 Tiger Cannon 的获取与破墙方法'} →</a></p>`
+   :page?.[0]==='equipment'&&entry?.[0]==='tiger-cannon'
+    ?`<p><a href="${base}bosses/lei-dang/">${en?'Lei Dang boss guide':'查看 Lei Dang 两阶段打法'} →</a></p>`
+    :'';
   const linkedQuest=page?.[0]==='side-quests'&&entry
    ?content['side-quests'].find(([id])=>id===({'illusory-pipa':'allure-of-vanity','allure-of-vanity':'illusory-pipa'})[entry[0]])
    :null;
   const questLink=linkedQuest?`<p><a href="${base}side-quests/${linkedQuest[0]}/">${label(linkedQuest)} →</a></p>`:'';
-  const questBosses={'allure-of-vanity':['yan-qiansui'],'sha-chi-powered-boat':['wu-xuan','gu-wanyue']};
+  const questBosses={'allure-of-vanity':['yan-qiansui'],'sha-chi-powered-boat':['wu-xuan','gu-wanyue'],'four-snake-houses':['heartpiercer']};
   const questBossLinks=page?.[0]==='side-quests'&&entry
    ?(questBosses[entry[0]]||[]).map(id=>{
     const boss=opening.bosses.find(([bossId])=>bossId===id);
@@ -135,7 +146,7 @@ for(const en of [false,true]){
    'mirror-deep':['挑战白赤练前，先完成据点和飞贼营地的限时支线，并在大桥找兰兰接取白山派支线。','Before Bai Chilian, finish the timed outpost and camp tales and accept Secrets of the Baishan Sect from Lanlan on the bridge.'],
    'lu-village-route':['进庞镇前，先回报 The Journey Home 的开路委托，并完成 Young Master Lan 开路后的对话。','Before entering Pangzhen, report back for The Journey Home and speak to Young Master Lan after opening his route.'],
    'orthodox-camp-route':['白山派支线需先击败乌冷霜并调查花丛遗体，再挑战玉璧。首次遇见红衣女子时，击败她会使其支线失败。','For the Baishan tale, defeat Wu Lengshuang and inspect the body among the flowers before Yubi. Defeating Red on your first encounter fails her tale.'],
-   'pang-town-route':['通过青蛇屋蛇门进入戏梦山庄前，核对真结局所需的十项紫标任务。','Before entering Mirage Estate through the Green Serpent House, check the ten purple quests for the true ending.','ending-checkpoints'],
+   'pang-town-route':['进入戏梦山庄前，建议先核对湖心秘密及其前置任务。到断魂山最终冰洞前，再核对湖心仪式后的虚空对话与五处龙柱挑战。','Before entering Mirage Estate, check Secrets at the Heart of the Lake and its prerequisites. Before the final ice cave on Mount Soulrend, verify the post-ritual Inanis conversation and all five pillar trials.','ending-checkpoints'],
    'soulbreak-finale':['进入断魂山终局冰洞前，确认五处龙柱挑战完成，并在湖心仪式后与虚空交谈、领取 Violet Blossom。','Before entering the final ice cave on Mount Soulrend, confirm all five pillar trials are complete and you received Violet Blossom from Inanis after the lake ritual.','ending-checkpoints']
   };
   const renderCheckpoint=id=>{
@@ -177,7 +188,7 @@ for(const en of [false,true]){
    const routeLink=(relatedGuides[id]||[]).map(guide=>` <a href="${base}side-quests/${guide[0]}/">${label(guide)} →</a>`).join('');
    return `<aside class="pbz-info"><p>${en?english:zh}</p><p><a href="${base}side-quests/${target}/">${en?'View quest requirements':'查看任务条件'} →</a>${routeLink}</p></aside>`;
   };
-  const detail=entry?overview+cutoffLink+(entry[5]?entry[5].map(section=>`<section id="${section[0]}"><h2 class="classic-heading">${label(section)}</h2>${renderCheckpoint(section[0])}${renderBossLinks(section[0])}${renderContent(section)}${renderPickupLinks(section[0])}</section>`).join(''):areaLink+renderContent(entry[4]?.startsWith('../../walkthrough/')?[...entry.slice(0,4),null]:entry)+rewardLink+questBossLinks+questLink):'';
+  const detail=entry?overview+cutoffLink+(entry[5]?entry[5].map(section=>`<section id="${section[0]}"><h2 class="classic-heading">${label(section)}</h2>${renderCheckpoint(section[0])}${renderBossLinks(section[0])}${renderContent(section)}${renderPickupLinks(section[0])}</section>`).join(''):areaLink+renderContent(entry[4]?.startsWith('../../walkthrough/')?[...entry.slice(0,4),null]:entry)+rewardLink+memoryLink+questBossLinks+questLink+tigerCannonLink):'';
   const position=items.indexOf(entry);
   const adjacent=entry?`<nav class="pbz-grid" aria-label="${en?'Adjacent entries':'相邻条目'}">${[items[position-1],items[position+1]].map((item,i)=>item?`<a href="${base+category+item[0]}/">${i===0?'← ':''}${label(item)}${i===1?' →':''}</a>`:'').join('')}</nav>`:'';
   const facts=en?[['Developer','S-Game'],['Genre','Wuxia action'],['Platforms','PS5 / PC'],['Release','29 October 2026']]:[['开发商','灵游坊（S-Game）'],['类型','武侠动作'],['平台','PS5 / PC'],['发售日期','2026 年 10 月 29 日']];
