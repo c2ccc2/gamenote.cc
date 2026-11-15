@@ -48,7 +48,7 @@ window.GAMENOTE_CONTENT = {
       sections: ['Walkthrough', 'Maps', 'Equipment', 'KARON', 'Collectibles', 'Systems'],
       lastUpdated: '2026-10-20', featured: true, order: 5
     }
-    ,{id:'phantom-blade-zero',slug:'phantom-blade-zero',title:'Phantom Blade Zero',titleZh:'影之刃零',cover:'/assets/catalog/phantom-blade-zero.jpg',status:'in-progress',type:'directory',guideUrl:'/games/phantom-blade-zero/',description:'武侠动作攻略：先收录攻防、武器与探索，逐步整理主支线、首领和收集路线。',sections:['Walkthrough','Bosses','Equipment','Collectibles','Systems'],lastUpdated:'2026-11-04',featured:true,order:6}
+    ,{id:'phantom-blade-zero',slug:'phantom-blade-zero',title:'Phantom Blade Zero',titleZh:'影之刃零',cover:'/assets/catalog/phantom-blade-zero.jpg',status:'Complete',type:'directory',guideUrl:'/games/phantom-blade-zero/',description:'图文攻略涵盖主线流程、支线任务、首领打法、兵器、重点收集和真结局路线。',sections:['Walkthrough','Bosses','Equipment','Collectibles','Systems'],lastUpdated:'2026-11-15',featured:true,order:6}
   ],
   notes: [
     {"slug": "adding-astlibra-revision-guide", "title": "把《神之天平》的漫长旅程，整理成随手可查的攻略", "description": "新增《神之天平》攻略专题：让主线推进、回访收集与系统查询，各自有清楚的入口。", "date": "2026-10-21", "updatedAt": "2026-10-21", "category": "behind-the-guide", "categoryLabel": "Behind the Guide / Site Note", "game": "astlibra-revision", "featured": true},
@@ -75,17 +75,32 @@ window.GAMENOTE_CONTENT = {
   ],
   updates: [
     {
+      slug: 'phantom-blade-zero-guide-complete', date: '2026-11-15', game: 'phantom-blade-zero', type: 'Site',
+      title: '《影之刃零》攻略已完成',
+      relatedUrl: '/games/phantom-blade-zero/',
+      description: '专题已整理主线流程、支线任务、首领打法、兵器、重点收集与真结局路线。',
+      en: {
+        title: 'Phantom Blade Zero guide complete',
+        description: 'The guide covers the main walkthrough, side quests, boss strategies, weapons, key collectibles and the true ending route.'
+      }
+    },
+    {
       slug: 'astlibra-revision-guide-site-note', date: '2026-10-21', game: 'astlibra-revision', type: 'Site',
       title: '把《神之天平》的漫长旅程，整理成随手可查的攻略',
-      relatedUrl: '/notes/adding-astlibra-revision-guide/',
-      description: '新增《神之天平》攻略专题，主线推进、回访收集与系统查询各有入口。更新详情可打开原手记。',
-      en: {title: 'Organizing the Long Journey of ASTLIBRA Revision', description: 'The new ASTLIBRA Revision guide has separate entry points for story progress, return visits, collectibles and system references. Open the original notebook article for more.'}
+      noteSlug: 'adding-astlibra-revision-guide',
+      description: '新增《神之天平》攻略专题，主线推进、回访收集与系统查询各有入口。',
+      details: [{title: '《神之天平》攻略库', text: '查看主线图文流程、新章与结局、地图宝箱及装备道具。', url: '/games/astlibra-revision/'}],
+      en: {
+        title: 'Organizing the Long Journey of ASTLIBRA Revision',
+        description: 'The new ASTLIBRA Revision guide has separate entry points for story progress, return visits, collectibles and system references.',
+        details: [{title: 'ASTLIBRA Revision guide library', text: 'Browse the illustrated walkthrough, endings, maps, chests and equipment in Chinese.', url: 'https://gamenote.cc/games/astlibra-revision/'}]
+      }
     },
     {
       slug: 'why-organize-game-guides-site-note', date: '2026-09-26', game: null, type: 'Site',
       title: '为什么还要重新整理一份游戏攻略',
-      relatedUrl: '/notes/why-organize-game-guides-again/',
-      description: '这篇手记谈的是如何让玩家在当前进度更容易找到需要的答案。更新详情可打开原手记。',
+      noteSlug: 'why-organize-game-guides-again',
+      description: '这篇手记谈的是如何让玩家在当前进度更容易找到需要的答案。',
       en: {title: 'Why Organize Game Guides Again?', description: 'This notebook article looks at how guides can help players find the answer they need at their current point in the game.'}
     },
     {"slug":"phantom-blade-zero-guide-progress-2026-11-11","date":"2026-11-11","game":"phantom-blade-zero","type":"Site","title":"《影之刃零》攻略整理进展","relatedUrl":"/games/phantom-blade-zero/","description":"主线已整理为 10 个区域，首领图鉴已收录 20 个条目。支线、重点收集和兵器均可从相关流程小节跳转查阅。","details":[{"title":"主线与剧情章节","text":"主线从悲泣溪谷推进至断魂山，按区域整理路线、地标与实录截图。已核对「逆流而上」章节题字，后续章节名称和边界仍在核对。","url":"/games/phantom-blade-zero/walkthrough/"},{"title":"首领图鉴","text":"残钢、玉鼎、囚锋、左殇等条目已整理进场路线与已核对的招式应对，图鉴与主线小节可以双向跳转。","url":"/games/phantom-blade-zero/bosses/"},{"title":"支线与重点收集","text":"已整理血肉花、四大蛇屋、三面混沌与红房子。重点收集页记录记忆之花、铸魂材料与兵器的获取位置。终局分支条件、部分回访时机和收集点仍待核对。","url":"/games/phantom-blade-zero/side-quests/"}],"en":{"title":"Phantom Blade Zero guide progress","description":"The main walkthrough covers 10 areas and the boss archive has 20 entries. Related walkthrough sections link to side quests, key collectibles and weapons.","details":[{"title":"Main walkthrough and chapters","text":"Illustrated area routes run from Weeping Creek Valley to Soulbreak Mountain. The Against the Flow title card is confirmed. Later chapter names and boundaries are still being checked.","url":"/games/phantom-blade-zero/walkthrough/"},{"title":"Boss archive","text":"Jagged Steel, Yuding, Qiufeng, Zuo Shang and other entries cover approaches and verified attack responses. Boss entries link back to the relevant walkthrough sections.","url":"/games/phantom-blade-zero/bosses/"},{"title":"Side quests and key collectibles","text":"Flesh Lily, Four Snake Houses, the puppet memories and Red House have dedicated entries. Collectible pages cover memory flowers, forging materials and weapons. Ending requirements, some revisit timings and remaining pickups are still being checked.","url":"/games/phantom-blade-zero/side-quests/"}]}},

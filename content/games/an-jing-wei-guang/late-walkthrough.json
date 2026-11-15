@@ -1,6 +1,11 @@
 {
   "updatedAt":"2026-10-13",
   "sources":{
+    "castle-collectibles":{"name":"Game Checklists — Queen’s Castle Collectibles","url":"https://game-checklists.com/well-dweller/queens-castle-checklist/","type":"guide","accessedAt":"2026-11-15"},
+    "vault-tokens":{"name":"Gamer Social Club — Workshop Token Locations","url":"https://gamersocialclub.ca/2026/09/21/well-dweller-all-workshop-token-locations-for-the-fully-stocked-achievement-trophy-guide/","type":"guide","accessedAt":"2026-11-15"},
+    "inn-collectibles":{"name":"Gamer Guides — All Trinket Locations","url":"https://www.gamerguides.com/well-dweller/checklists/trinkets-locations","type":"guide","accessedAt":"2026-11-15"},
+    "inn-slots":{"name":"Gamer Social Club — 100% Collectibles Walkthrough","url":"https://gamersocialclub.ca/2026/09/22/well-dweller-100-collectibles-achievement-trophy-walkthrough/","type":"guide","accessedAt":"2026-11-15"},
+    "inn-route":{"name":"Into Indie Games — Webdrench Inn","url":"https://intoindiegames.com/walkthroughs/well-dweller-walkthrough-part-10-golden-feathers-midnight-drench-burial-vault-webdrench-inn/","type":"guide","accessedAt":"2026-11-15"},
     "postgame":{"name":"Gamer Guides — Post Game Route","url":"https://www.gamerguides.com/well-dweller/routes/post-game-guide-and-how-to-unlock-the-true-ending","type":"guide","accessedAt":"2026-11-15"},
     "house":{"name":"QuestDuo — The Deep and Dollmaker's House","url":"https://questduo.com/well-dweller/the-deep-the-dollmakers-house-walkthrough/","type":"guide","accessedAt":"2026-10-13"},
     "vault":{"name":"QuestDuo — Burial Vault","url":"https://questduo.com/well-dweller/burial-vault-walkthrough/","type":"guide","accessedAt":"2026-10-13"},
@@ -13,7 +18,7 @@
     "ending":{"name":"Gamer Social Club — Together at Last","url":"https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-together-at-last-achievement-trophy/","type":"guide","accessedAt":"2026-10-13"}
   },
   "areas":[
-    {"id":"dollmakers-house","sources":["house","pages"],"boss":"dollmaker","next":["burial-vault","webdrench-inn"],
+    {"id":"dollmakers-house","sources":["house","pages","inn-collectibles","vault-tokens"],"boss":"dollmaker","next":["burial-vault","webdrench-inn"],
       "zh":{"goal":"解救 Magda，取得墙壁弹射，开放后续探索。","before":"先检查无限攀爬与悬停，并在沿途帐篷整理油瓶和饰物。","nodes":["沼泽西端","第二帐篷","镜子战","Magda / 墙壁弹射"],"steps":[
         {"title":"进入房屋","text":"从码头船坞的 Barge 处拿到无限攀爬后回沼泽，向左借气泡过水。对岸高台有工坊代币。继续向左，从尽头下落，经过像 Glimmer 姐妹的玩偶，就到了玩偶师之家。"},
         {"title":"从帐篷下到大锅","text":"和玩偶师对话后向左，从尽头下到帐篷。继续下行，沿途敲铃升起临时平台。清掉大锅旁刷出的敌人，再走右侧敲铃下落。"},
@@ -23,7 +28,7 @@
         {"title":"从两侧开启拉杆","text":"在第二处帐篷存档，从旁边的第一块平台落下，沿下方通道向右走到墓穴一侧，拨动第一道拉杆。然后折返玩偶师之家，从左边下落，沿路搭升降机上到另一侧。走到尽头，用弹弓借力够到上方，再用火柴击中第二道拉杆。通路打开后继续向前进入镜子战。"},
         {"title":"处理玩偶师之镜","text":"进入镜子战。分身阶段控制会反向，先观察受攻击的半边，再决定移动。详细要点见下方首领入口。"},
         {"title":"取得新能力","text":"胜利后找 Magda，进入能力巢穴，完成墙壁弹射教学。"}
-      ],"check":["离开前确认墙壁弹射已取得。","遇到单侧拉杆无法打开的支路，记下位置，从另一侧回访。"]},
+      ],"check":["玩偶师故事第 5、6、8 页都在玩偶师之家，对应书页图文第 16、17、19 项。第 5 页需要悬停和攀爬。第 6 页带弹弓、无限攀爬和悬停，从右侧平台投出火柴再悬停过去。第 8 页无需额外能力。","鸟形纽扣：在敲铃移动方块的机关房，查机关下方的通道。带上攀爬和悬停。装备后，低血量时可获得更多货币。","工坊代币第 26 项藏在暗道，带弹弓和无限攀爬，从暗道攀入取代币。它和完成计时挑战后直走领取的代币是两处拾取。","离开前确认墙壁弹射已取得。","遇到单侧拉杆无法打开的支路，记下位置，从另一侧回访。"]},
       "en":{"goal":"Rescue Magda and unlock Wall Sling for later exploration.","before":"Check Endless Climb and Hover, then review healing and trinkets at a tent.","nodes":["Western Bog","Second tent","Mirror battle","Magda / Wall Sling"],"steps":[
         {"title":"Enter the house","text":"After Barge grants Endless Climb at the shipyard, return to the Bog and bounce left across the water. Look for a Workshop Token on the far ledge. Continue left, drop at the end and pass the doll resembling Glimmer’s sister to enter the house."},
         {"title":"Descend from the tent to the cauldron","text":"Speak to the Dollmaker, go left and drop to the tent. Descend using bells to raise temporary platforms. Clear the enemies by the cauldron, then head right and ring the bell to drop down."},
@@ -33,39 +38,41 @@
         {"title":"Reach the levers from both sides","text":"Save at the second tent, drop from the first platform nearby and follow the lower passage right to the vault-side lever. Return to the Dollmaker’s House, drop on the left and take the elevator up to the opposite side. At the end of the route, use Slingshot to reach the upper lever and strike it with the matchstick. Continue through the opened passage to the mirror fight."},
         {"title":"Face the mirror","text":"During the split phase, controls mirror each other. Watch the attacked half before moving; use the boss notes below."},
         {"title":"Learn the ability","text":"After victory, find Magda and complete the Wall Sling nest tutorial."}
-      ],"check":["Confirm Wall Sling before leaving.","Mark one-sided lever routes and return from their other side."]}
+      ],"check":["Dollmaker story pages 5, 6 and 8 are all in the house (illustrated entries 16, 17 and 19). Bring Hover and Climb for page 5. For page 6, bring Slingshot, Endless Climb and Hover, then throw the matchstick from the right ledge and hover across. Page 8 needs no extra ability.","Bird-Shaped Button: Check the passage below the moving-block bell puzzle and bring Climb and Hover. Equipping it boosts currency gains at low health.","Workshop Token 26 is in a hidden passage. Bring Slingshot and Endless Climb and climb through the passage to reach it. The token beyond the time trial is a separate pickup.","Confirm Wall Sling before leaving.","Mark one-sided lever routes and return from their other side."]}
     },
-    {"id":"burial-vault","sources":["vault","grave"],"boss":"gravedigger","next":["webdrench-inn","queens-castle"],
+    {"id":"burial-vault","sources":["vault","grave","vault-tokens"],"boss":"gravedigger","next":["webdrench-inn","queens-castle"],
       "zh":{"goal":"护送 Irma 参加聚会，并取得这一支路的金色羽毛。","before":"带上墙壁弹射，准备在墓室西侧持续探索。","nodes":["午夜雨境","Irma / 帐篷","掘墓者","聚会 / 金色羽毛"],"steps":[
         {"title":"从雨境进入","text":"沿午夜雨境下层支路进入墓室；入区后先向左寻找 Irma。"},
         {"title":"接上护送任务","text":"与 Irma 对话后到附近帐篷存档。帐篷上方支路可查看生锈罗盘。"},
         {"title":"打开回返通道","text":"从第一处帐篷上平台后转左，走到底落下，再向右清理大锅旁的敌人。折返几步跳进坑，向左下行后转右穿过箭陷阱，在挡板右侧操作拉杆。绕到另一侧下落，走到底解除石障，再回前一段沿左墙爬上去，向右开启下水道捷径。"},
         {"title":"前往西侧帐篷","text":"继续向左穿过上层陷阱，到第二帐篷休整，再从左侧进入掘墓者场地。"},
         {"title":"完成聚会","text":"胜利后继续向左进入聚会屋，完成护送并领取金色羽毛。"}
-      ],"check":["击败首领后还要继续到聚会屋。","可从下方任务入口核对护送目标。"]},
+      ],"check":["生锈罗盘：从接到 Irma 后遇到的第一处帐篷出发，沿上方的陷阱平台一路攀到顶，再向左拾取。装备后，含有收集品的房间会出现提示。","工坊代币第 23 项：落到伸缩尖刺前，再立刻跳开或攀开。等尖刺开始回缩时进去拾取。","工坊代币第 24、25 项都在暗道。第 24 项带悬停和无限攀爬；第 25 项还要带墙壁弹射，暗道内另有挡板要打破。序号对应本页工坊代币参考里的房间地图。","击败首领后还要继续到聚会屋。","可从下方任务入口核对护送目标。"]},
       "en":{"goal":"Escort Irma to the party and collect this branch's Golden Feather.","before":"Bring Wall Sling and prepare to explore west through the vault.","nodes":["Midnight Drench","Irma / tent","Gravedigger","Party / feather"],"steps":[
         {"title":"Enter from the rain","text":"Follow the lower Midnight Drench branch into the vault; look left for Irma."},
         {"title":"Start the escort","text":"Talk to Irma and save nearby. Check above the tent for Rusted Compass."},
         {"title":"Open the return route","text":"Climb the platforms above the first tent and take the left branch. Drop at the end and go right to clear enemies by the cauldron. Backtrack to the pit, drop left and turn right through the arrow traps. Activate the lever right of the blockade, then descend from the opposite side and remove the barrier at the end. Return to the previous area, climb the left wall and head right to activate the Drains shortcut."},
         {"title":"Reach the western tent","text":"Cross upper traps leftward to the second tent, then enter Gravedigger's arena to its left."},
         {"title":"Finish at the party","text":"After victory, continue left into the party house for the escort reward and feather."}
-      ],"check":["Continue to the party house after the boss.","Use the related quest below to check the escort objective."]}
+      ],"check":["Rusted Compass: From the first tent after meeting Irma, climb all the way up through the trap platforms and head left for the pickup. Equip it to get a signal in rooms with collectibles.","Workshop Token 23: Drop in front of the retracting spikes and immediately jump or climb clear. Move in for the token as the spikes start to retract.","Workshop Tokens 24 and 25 are in hidden passages. Bring Hover and Endless Climb for 24. For 25, also bring Wall Sling and break the barrier inside. The numbers match the room maps in the Workshop Token reference on this page.","Continue to the party house after the boss.","Use the related quest below to check the escort objective."]}
     },
-    {"id":"webdrench-inn","sources":["castle","inn"],"next":["midnight-drench","queens-castle"],
+    {"id":"webdrench-inn","sources":["inn-route","inn","inn-collectibles","inn-slots"],"next":["midnight-drench","queens-castle"],
       "zh":{"goal":"通过旅店机关并逃离店主，取得金色羽毛。","before":"在追逐前存档，并确认能使用滑行、悬停与墙壁弹射。","nodes":["旅店帐篷","拉杆与钟","访客簿","午夜雨境 / 羽毛"],"steps":[
-        {"title":"探索与开路","text":"借泡泡和钟声机关向上探索，操作沿途拉杆；虫翅饰物所在支路也有开路拉杆。"},
-        {"title":"接近访客簿","text":"到后段帐篷存档，再向下与店主互动，触发签名场景。"},
+        {"title":"从午夜暴雨进旅店","text":"用弹弓越过通往旅店的尖刺坑，沿通道往右看见旅店后进门，先在第一处帐篷存档。"},
+        {"title":"敲铃换位，到第二处帐篷","text":"向右借蛛网团弹上高处，在店主面前敲铃。继续向右清战斗房，从顶部出去。右路封住时，走左边两块平台，跳向带刺的平台时敲铃，让尖刺换到身后。继续向上，用蛛网团够到右侧铃铛，敲完过缺口到左侧，沿平台上行并从左侧出口到第二处帐篷。"},
+        {"title":"从第二处帐篷到访客簿","text":"借帐篷旁的蛛网团进上层房，从顶部绕到右侧下落，出右门清下一场战斗。再次见到店主并听到签名要求后，继续向右敲铃过机关，在另一侧下落。沿地图西侧一路下行到最后一处帐篷，存档后从右侧下去找店主，触发签名与追逐。"},
         {"title":"向左逃离","text":"追逐开始后一路向左。遇到挡板用火柴打碎，遇到可破坏地板就在空中下劈。看到铃铛先敲铃切换平台，再跳到安全的一侧。遇到小团蛛网，按借力提示弹出去；高处用蹬墙跳和攀爬接续，跨缺口时用悬停调整落点。"},
         {"title":"检查出口","text":"最后一次长滑行会把你带回午夜雨境，并解锁 Late Night Guest 成就。出旅店后向左领取金色羽毛。"}
-      ],"check":["羽毛总数未到七根时，先回金色羽毛目录核对其他支路。"]},
+      ],"check":["虫翅：借蛛网团连续弹射绕过尖刺，从上方落下拾取。装备后可延长悬停。在饰物清单的虫翅条目可打开房间地图。","余烬瓶：用弹弓远距离敲铃切换带刺平台，再用攀爬和悬停过平台。装备后焰瓶破碎前会迸出余烬。","高处饰物槽：实机清单第 101 项从下方腾空取得。第 102 项在拿到腾空前也能借蛛网团上去。编号对应实机图文的房间截图。","羽毛总数未到七根时，先回金色羽毛目录核对其他支路。"]},
       "en":{"goal":"Clear the inn mechanisms and escape for a Golden Feather.","before":"Save before the chase and check Slide, Hover and Wall Sling.","nodes":["Inn tent","Levers / bells","Guest book","Rain / feather"],"steps":[
-        {"title":"Explore and open paths","text":"Use bubbles, bells and levers; the Insect Wing branch also opens a route."},
-        {"title":"Approach the guest book","text":"Save at the later tent, then descend to the signing encounter."},
+        {"title":"Enter from Midnight Drench","text":"Use Slingshot to cross the spike pit on the approach, follow the passage right into the inn, and save at the first tent."},
+        {"title":"Switch the spikes and reach the second tent","text":"Go right, launch up from the web balls and ring the bell at the Innkeeper. Clear the room on the right and take its top exit. At the blocked right path, jump between the two platforms on the left and strike the bell in midair to shift the spikes behind you. Continue up, launch to the bell on the right, ring it, cross left and climb to the left exit for the second tent."},
+        {"title":"From the second tent to the guest book","text":"Launch into the upper room from the web ball near the tent. Climb to the top, drop on the right and exit right to the next fight. After the Innkeeper asks you to sign, continue right, ring the bell to cross and drop on the far side. Keep descending on the west side to the last tent. Save, drop to the right and speak to the Innkeeper to start the signing scene and chase."},
         {"title":"Escape left","text":"Keep moving left once the chase starts. Break barriers with the matchstick and use a downward attack on breakable floors. Strike bells to switch platforms before jumping across. Use the launch prompt at small web balls, wall-jump and climb to gain height, and Hover to adjust your landing across gaps."},
         {"title":"Check the exit","text":"The final long slide puts you back in Midnight Drench and unlocks Late Night Guest. Head left from the exit to collect the Golden Feather."}
-      ],"check":["If you still lack seven feathers, check the feather index for other branches."]}
+      ],"check":["Insect Wing: Chain web launches around the spikes, then drop in from above. Equipping it extends Hover. Open its entry in the trinket checklist to see the room on the map.","Ember Vial: Use Slingshot to strike the bell from a distance and flip the spiked platforms, then cross with Climb and Hover. The trinket makes Flaming Vessels emit embers before shattering.","High trinket slots: Use Soar from below for illustrated entry 101. Web balls can also get you to entry 102 before you learn Soar. These numbers match the room screenshots in the collectible walkthrough.","If you still lack seven feathers, check the feather index for other branches."]}
     },
-    {"id":"queens-castle","sources":["castle","siblings","queen","ending","postgame"],"boss":"the-queen","next":[],
+    {"id":"queens-castle","sources":["castle","siblings","queen","ending","postgame","castle-collectibles","pages","vault-tokens"],"boss":"the-queen","next":[],
       "zh":{"goal":"解救 Ilda 的兄弟姐妹，前往女王寝室并完成主线。","before":"确认七根金色羽毛齐全，回沼泽的城堡入口。","nodes":["七根羽毛","Ilda 的任务","三对救援","女王战"],"steps":[
         {"title":"入城存档","text":"向入口出示羽毛，继续上行与 Ilda 对话，找到城堡帐篷。"},
         {"title":"银色玩偶右侧的牢笼","text":"到封住的竖坑时，敲左侧转轮打开落口。下到底向右挑战银色玩偶。战后继续向右，敲牢笼旁的拉杆救人。"},
@@ -76,7 +83,7 @@
         {"title":"应对女王","text":"前段处理地面危险，后段转移到升起的平台。招式应对见下方女王攻略。"},
         {"title":"完成庆祝剧情","text":"女王战后恢复操作时，和现场的角色逐个交谈，完成庆祝剧情。"},
         {"title":"回寝室拿女王金币","text":"回到战场上方原先封住的通道，与锁门旁的拾荒者对话，再敲天花板上的拉杆。进寝室从桌上拿金币，之后可在帐篷以折扣价购买。想继续走真结局，可从下方通关后攻略查腾空与五枚灵魂碎片。"}
-      ],"check":["兄弟姐妹不是一处目标，要确认三对均已救出。","若尚未取得 Soar，先查看能力页的开放条件。"]},
+      ],"check":["《女巫的交易》第 9 页：从女王城堡右侧帐篷往左两间，再往下一间、往左一间。带上无限攀爬和悬停。这一页是全书页图文第 23 项。","工坊代币：从女王城堡左侧帐篷往上两间。代币在房间中央，用无限攀爬和悬停绕到它上方，再往下落去拿。对应工坊代币图文第 27 项。","兄弟姐妹不是一处目标，要确认三对均已救出。","若尚未取得 Soar，先查看能力页的开放条件。"]},
       "en":{"goal":"Rescue Ilda's siblings and reach the Queen's Chamber.","before":"Bring seven Golden Feathers to the Bog castle entrance.","nodes":["Seven feathers","Ilda's task","Three rescues","Queen battle"],"steps":[
         {"title":"Enter and save","text":"Present the feathers, ascend to Ilda and find the castle tent."},
         {"title":"Cage beyond Silver Doll","text":"Strike the wheel left of the blocked shaft to open it. Drop to the bottom and go right to fight Silver Doll. After winning, continue right and hit the lever beside the cage."},
@@ -87,7 +94,7 @@
         {"title":"Face the Queen","text":"Handle floor hazards, then raised platforms; consult the boss guide below."},
         {"title":"Finish the celebration","text":"Once you regain control after the Queen fight, speak to everyone present to finish the celebration."},
         {"title":"Return for the Queen’s Coin","text":"Return to the formerly blocked passage above the arena. Speak to Looter by the locked door and strike the ceiling lever. Collect the coin from the table inside for Save Tent discounts. Use the postgame guide below for Soar and the five Spirit Fragments."}
-      ],"check":["Confirm all three sibling pairs.","Check Soar's ability page if it remains locked."]}
+      ],"check":["The Witch’s Bargain page 9: From the right-hand Queen’s Castle tent, go left two rooms, down one and left one. Bring Endless Climb and Hover. This is entry 23 in the illustrated story-page guide.","Workshop Token: From the left-hand Queen’s Castle tent, go up two rooms. The token sits in the center of the room. Use Endless Climb and Hover to get above it, then drop down to collect it. See illustrated Workshop Token entry 27.","Confirm all three sibling pairs.","Check Soar's ability page if it remains locked."]}
     }
   ]
 }
