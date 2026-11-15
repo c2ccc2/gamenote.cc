@@ -188,20 +188,62 @@ for(const e of bosses)page('bosses/'+e.slug+'/',name(e),e.nameEn+' 已确认的�
 const referenceSources=item=>[...new Set([...item.effectSources,...item.locationSources])].map(id=>{const s=abilityReference.sources[id];return link(s.name,s.url)}).join('<br>');
 const referenceNotes=e=>{
  const item=abilityReference.entries.find(item=>item.id===e.id);if(!item)return '';
- return (!item.locationSources.length?heading('获取方式')+'<p>'+esc(item.acquisition)+'</p>':'')+heading('参考来源')+'<p>'+referenceSources(item)+'</p>';
+ const next=e.id==='soar'?list([
+  ['饰物',base+'collectibles/trinkets/'],
+  ['神秘标记',base+'collectibles/key-items/mysterious-markings/'],
+  ['灵魂碎片',base+'collectibles/spirit-fragments/']
+ ]):'';
+ return (!item.locationSources.length?heading('获取方式')+'<p>'+esc(item.acquisition)+'</p>':'')+next+heading('参考来源')+'<p>'+referenceSources(item)+'</p>';
 };
 page('abilities/','能力 / 系统目录','Well Dweller 移动、核心能力与推进解锁资料。',abilityGroups.map(([group,title])=>heading(title,group)+table(title,['名称','作用','获取方式 / 地点','资料状态','参考来源'],abilityReference.entries.filter(item=>item.group===group).map(item=>[{html:link(name(referenceRecord(item)),base+referenceRoute(item))},item.effect,item.acquisition,item.locationPending?'作用已核对 · 位置待确认':'网页资料已核对',{html:referenceSources(item)}]))).join('')+heading('相关资料','items')+list([['关键物品',base+'collectibles/key-items/']]));
 for(const e of abilities)page('abilities/'+e.slug+'/',name(e),e.nameEn+' 已确认能力资料。',facts(e)+referenceNotes(e)+heading('相关攻略')+list([...(abilityReference.entries.find(item=>item.id===e.id)?.area?[[name(areas.find(a=>a.id===abilityReference.entries.find(item=>item.id===e.id).area)),base+'walkthrough/'+abilityReference.entries.find(item=>item.id===e.id).area+'/']]:[]),['能力 / 系统目录',base+'abilities/']]),{parent:['能力 / 系统','abilities'],entity:e});
 function countLabel(e){const value=publicValue(e,'count');return value===null?'—':'当前资料记录：'+value}
 page('collectibles/','收集分类','Well Dweller 收集分类与已确认资料。',table('收集分类',['名称','数量资料','状态'],collectibles.map(e=>[linkedName(e,'collectibles'),countLabel(e),status(e)])));
 for(const e of collectibles)page('collectibles/'+e.slug+'/',name(e),e.nameEn+' 已确认收集资料。',facts(e)+(e.slug==='key-items'?catalogue(keyItems,'collectibles/key-items'):'')+heading('相关攻略')+list([['收集目录',base+'collectibles/']]),{parent:['收集分类','collectibles'],entity:e});
-for(const e of keyItems)page('collectibles/key-items/'+e.slug+'/',name(e),e.nameEn+' 已确认物品资料。',facts(e)+referenceNotes(e)+heading('相关攻略')+list([['Key Items',base+'collectibles/key-items/'],...(abilityReference.entries.some(item=>item.id===e.id)?[['推进 / 功能解锁',base+'abilities/#progression']]:[])]),{parent:['Key Items','collectibles/key-items'],entity:e});
+for(const e of keyItems){
+ const related=[['Key Items',base+'collectibles/key-items/']];
+ if(abilityReference.entries.some(item=>item.id===e.id))related.push(['推进 / 功能解锁',base+'abilities/#progression']);
+ if(e.id==='mysterious-markings')related.push(['腾空',base+'abilities/soar/'],['灵魂碎片',base+'collectibles/spirit-fragments/']);
+ page('collectibles/key-items/'+e.slug+'/',name(e),e.nameEn+' 已确认物品资料。',facts(e)+referenceNotes(e)+heading('相关攻略')+list(related),{parent:['Key Items','collectibles/key-items'],entity:e});
+}
 page('quests/','任务目录','Well Dweller 任务目录与已确认步骤。',catalogue(quests,'quests'));
 for(const e of quests)page('quests/'+e.slug+'/',name(e),e.nameEn+' 已确认任务资料。',facts(e)+heading('相关攻略')+list([['任务目录',base+'quests/']]),{parent:['任务','quests'],entity:e});
 page('achievements/','成就一览','黯井微光 41 项 Steam 官方中文版成就名称与说明。',
  '<p>Steam 成就共 41 项。</p>'+
  table('Steam 中文成就',['成就名称','官方说明'],achievements.map(e=>[linkedName(e,'achievements'),publicValue(e,'description','')]))+'<p>'+link('Steam 官方中文版成就列表','https://steamcommunity.com/stats/3699590/achievements/?l=schinese')+'</p>');
-for(const e of achievements)page('achievements/'+e.slug+'/',name(e),publicValue(e,'description','Steam 成就资料。'),facts(e)+heading('相关攻略')+list([['成就目录',base+'achievements/']]),{parent:['成就','achievements'],entity:e});
+const achievementBosses={
+ 'dark-garden':'the-groundskeeper',
+ 'buggy-business':'the-swarm',
+ 'down-the-drain':'the-lady-of-the-drains',
+ 'stormy-night':'shrine-of-the-seven-sons',
+ 'song-of-stars':'starsinger',
+ 'digging-deep':'gravedigger',
+ 'sharp-and-shiny':'silver-doll',
+ 'endgame':'the-queen',
+};
+for(const e of achievements){
+ const related=[['成就目录',base+'achievements/']];
+ const bossSlug=achievementBosses[e.id];
+ if(bossSlug)related.unshift(['查看完整首领打法',base+'bosses/'+bossSlug+'/']);
+ if(e.id==='littlest-bird')related.unshift(['墓谷救援流程',base+'quests/graven-valley-rescue/']);
+ if(e.id==='into-the-deep')related.unshift(['水上载具',base+'abilities/water-vessel/']);
+ if(e.id==='double-trouble')related.unshift(['深海流程',base+'walkthrough/the-deep/']);
+ if(e.id==='at-the-dollmakers-house')related.unshift(['玩偶师之家流程',base+'walkthrough/dollmakers-house/']);
+ if(['first-purchase','amateur-collector','veteran-collector','expert-collector'].includes(e.id))related.unshift(['饰物位置清单',base+'collectibles/trinkets/']);
+ if(['ten-slots','50-slots'].includes(e.id))related.unshift(['饰物槽位置清单',base+'collectibles/trinket-slots/']);
+ if(['in-the-workshop','fully-stocked'].includes(e.id))related.unshift(['工坊代币位置清单',base+'collectibles/workshop-tokens/']);
+ if(e.id==='kings-hat')related.unshift(['秋日森林流程',base+'walkthrough/autumn-forest/']);
+ if(e.id==='splendid-feast')related.unshift(['森林之王',base+'bosses/forest-king/']);
+ if(e.id==='late-night-guest')related.unshift(['蛛雨旅店流程',base+'walkthrough/webdrench-inn/']);
+ if(e.id==='snatched-up')related.unshift(['井底流程',base+'walkthrough/the-well/']);
+ if(e.id==='a-warm-fire')related.unshift(['沼泽流程',base+'walkthrough/the-bog/']);
+ if(e.id==='taking-a-break')related.unshift(['排水道流程',base+'walkthrough/the-drains/']);
+ if(e.id==='stitched-back-together')related.unshift(['拾荒者部件清单',base+'collectibles/looter-parts/']);
+ if(['once-upon-a-time','above-the-kingdom','the-tattered-doll','the-first-born-daughter'].includes(e.id))related.unshift(['故事书页位置清单',base+'collectibles/story-pages/']);
+ if(['lonely-soul','halfway-there','complete-flock'].includes(e.id))related.unshift(['灵魂位置清单',base+'collectibles/spirits/']);
+ if(e.id==='flying-high')related.unshift(['腾空',base+'abilities/soar/'],['饰物',base+'collectibles/trinkets/']);
+ page('achievements/'+e.slug+'/',name(e),publicValue(e,'description','Steam 成就资料。'),facts(e)+heading('相关攻略')+list(related),{parent:['成就','achievements'],entity:e});
+}
 page('challenges/','挑战目录','Well Dweller Time Trials 与解谜资料入口。',list([['计时挑战',base+'challenges/time-trials/'],['谜题解法',base+'challenges/puzzle-solutions/']]));
 page('challenges/time-trials/','计时挑战','Well Dweller 计时挑战目录。',catalogue(challenges,'challenges/time-trials'));
 const trialRewards={

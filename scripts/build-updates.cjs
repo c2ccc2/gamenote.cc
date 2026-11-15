@@ -8,7 +8,7 @@ for(const en of [false,true]){
  for(const update of data.updates){
   if(seen.has(update.slug))throw Error('Duplicate update slug');seen.add(update.slug);
   const url=routes.updateUrl(update.slug,en),game=data.games.find(game=>game.id===update.game),project=game?(en?game.title:game.titleZh):'GAME NOTE';
-  const localized=url=>en&&/^\/(games|catalog|news)\//.test(url || '')?'/en'+url:url;
+  const localized=url=>en&&(/^\/(games|catalog|news)\//.test(url || '')||(/^\/notes\//.test(url || '')&&fs.existsSync(path.join(root,'en',url,'index.html'))))?'/en'+url:url;
   const related=update.relatedUrl==='/updates/'?prefix+'updates/':localized(update.relatedUrl);
   const detailBody=`<p>${escape(update.description)}</p>`+(update.details||[]).map(section=>`<section><h2>${escape(section.title)}</h2><p>${escape(section.text)}</p>${section.url?`<p><a href="${escape(localized(section.url))}" target="_blank" rel="noopener noreferrer">${en?'Open related section':'查看相关栏目'} →</a></p>`:''}</section>`).join('');
   const crumbs=[{label:'GAME NOTE',href:prefix},{label:'Updates',href:prefix+'updates/'},{label:update.title,href:url,current:true}];

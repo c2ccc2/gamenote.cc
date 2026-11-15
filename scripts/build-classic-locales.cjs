@@ -21,6 +21,17 @@ dictionary.set('击败女王后先到寝室拿金币。集齐 32 件饰物打开
 dictionary.set('女王金币','The Queen’s Coin');
 dictionary.set('奖励收集攻略','Reward collection guide');
 dictionary.set('查看对应收集清单','Open the related collection checklist');
+dictionary.set('灵魂位置清单','Spirit location checklist');
+dictionary.set('故事书页位置清单','Story page location checklist');
+dictionary.set('饰物槽位置清单','Trinket slot location checklist');
+dictionary.set('饰物位置清单','Trinket location checklist');
+dictionary.set('查看完整首领打法','Read the full boss guide');
+for(const [zh,en] of Object.entries({'墓谷救援流程':'Graven Valley rescue walkthrough','深海流程':'The Deep walkthrough','玩偶师之家流程':'Dollmaker’s House walkthrough'}))dictionary.set(zh,en);
+dictionary.set('工坊代币位置清单','Workshop Token location checklist');
+dictionary.set('秋日森林流程','Autumn Forest walkthrough');
+dictionary.set('蛛雨旅店流程','Webdrench Inn walkthrough');
+for(const [zh,en] of Object.entries({'井底流程':'The Well walkthrough','沼泽流程':'The Bog walkthrough','排水道流程':'The Drains walkthrough','拾荒者部件清单':'Looter parts checklist'}))dictionary.set(zh,en);
+dictionary.set('成就目录','Achievement index');
 dictionary.set('通关后五处腾空入口与辨认地标。','Five postgame Soar entrances and their landmarks.');
 dictionary.set('通关后在女王寝室解锁腾空，再到能力蛋所在鸟巢的上方拿神秘标记。地图标出的五处入口可按下列地标查找。','After the ending, unlock Soar in the Queen’s chambers and collect Mysterious Markings above the Ability Egg nest. Use these landmarks to find the five entrances marked on the map.');
 dictionary.set('腾空入口','Soar entrances');
@@ -123,7 +134,11 @@ for(const file of all){
  en('.classic-footer').html('<a href="/en/">Back to GAME NOTE</a> · Reviewed notes are published individually; the guide is still in progress.');
  en('figure').each((_,node)=>{const fig=en(node),img=fig.find('img'),record=imageRecords.find(i=>i.src===img.attr('src'));if(!record){fig.find('figcaption').each((_,caption)=>en(caption).text(translate(en(caption).text())));return;}const caption=translate(record.caption);img.attr('alt',caption);fig.find('figcaption').text(caption+(record.type==='video-frame'?' · Creator: 好吃的香草雪球':''))});
  const achievement=data.achievements.find(e=>route===base+'achievements/'+e.slug+'/');
- if(achievement){en('h1').text(achievement.nameEn);en('.classic-main > article').html(`<p>${escape(achievement.descriptionEn)}</p><p><a href="https://steamcommunity.com/stats/3699590/achievements/?l=english">Steam English achievement list</a></p><h2 class="classic-heading">Related guides</h2><ul class="classic-links"><li><a href="/en${base}achievements/">Achievement index</a></li></ul>`)}
+ if(achievement){
+  en('h1').text(achievement.nameEn);
+  const hasGuide=confirmed(achievement.fields.referenceChecklist)||confirmed(achievement.fields.referenceStrategy);
+  if(!hasGuide)en('.classic-main > article').html(`<p>${escape(achievement.descriptionEn)}</p><p><a href="https://steamcommunity.com/stats/3699590/achievements/?l=english">Steam English achievement list</a></p><h2 class="classic-heading">Related guides</h2><ul class="classic-links"><li><a href="/en${base}achievements/">Achievement index</a></li></ul>`);
+ }
  if(route===base+'achievements/')en('.classic-main > article').html('<p>Well Dweller has 41 Steam achievements. The names and descriptions below use the official English Steam text.</p><div class="classic-table-wrap" tabindex="0" role="region" aria-label="Achievements"><table class="classic-table"><caption>Steam achievements</caption><thead><tr><th scope="col">Achievement</th><th scope="col">Official description</th></tr></thead><tbody>'+data.achievements.map(e=>`<tr><td><a href="/en${base}achievements/${e.slug}/">${escape(e.nameEn)}</a></td><td>${escape(e.descriptionEn)}</td></tr>`).join('')+'</tbody></table></div>');
  const dest=path.join(root,'en',route,'index.html');fs.mkdirSync(path.dirname(dest),{recursive:true});writeFile(dest,en.html()+'\n');
  if(!/noindex/.test(en('meta[name=robots]').attr('content')||''))urls.push('/en'+route);

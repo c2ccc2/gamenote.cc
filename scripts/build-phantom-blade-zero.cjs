@@ -63,6 +63,23 @@ for(const en of [false,true]){
   equipment:[...opening.equipment,...entries.filter(([id])=>weaponIds.has(id))]
  };
  const label=p=>p[en?2:1];
+ const questGroups=[
+  ['checkpoints','推进检查','Progression checks','missable-quests','ending-checkpoints'],
+  ['valley','悲泣溪谷','Weeping Creek Valley','flesh-lily-item','apprentice-healer','festering-secret','four-fierce-axes'],
+  ['forest','血色森林','Crimson Forest','healers-mercy','baishan-secrets','purge-the-sect','honor-among-thieves','use-it-against-them','heart-of-the-fist'],
+  ['village','陆家村','Village of Lu','journey-home','young-master-lan','young-mistress','puppet-wooden-heart','cui-rescue','dahuang','leave-none-alive','heart-of-the-lake'],
+  ['town','庞镇','Pangzhen','star-performer','remnant-spark-cube','mothers-heart','sword-and-way','brother-once-more','kin-against-kin','dont-forget-me','sha-chi-powered-boat','four-snake-houses'],
+  ['camp','正道大营','Mandate Encampment','daughter-of-dark-sect','undying-heroic-spirit','xue-admirer'],
+  ['lake','梅谷湖','Meigu Lake','allure-of-vanity','illusory-pipa'],
+  ['mountain','枷笼山','Mountain of Imprisonment','bai-xue','broad-saber','heros-lament'],
+  ['estate','戏梦山庄','Mirage Estate','three-memories'],
+  ['revisits','跨区收集与回访','Cross-region collections and revisits','severed-mindseal','red-house','quick-hand-treasures','heart-of-the-banyan','quick-hand-hideouts','bloodline-awakening']
+ ];
+ const questEntries=new Map(content['side-quests'].map(quest=>[quest[0],quest]));
+ const groupedQuestIds=questGroups.flatMap(group=>group.slice(3));
+ if(new Set(groupedQuestIds).size!==groupedQuestIds.length||groupedQuestIds.length!==questEntries.size||groupedQuestIds.some(id=>!questEntries.has(id))){
+  throw Error('Each side quest must appear in exactly one directory group.');
+ }
  const routes=pages.flatMap(page=>[[page],...content[page[0]].map(entry=>[page,entry])]);
  for(const [page,entry] of [[null],...routes]){
   const category=page?page[0]+'/':'';
@@ -74,7 +91,11 @@ for(const en of [false,true]){
   const menuId=key=>'pbz-menu-'+key;
   const links=pages.map(p=>{
    const key=p[0],href=base+key+'/',id=menuId(key),title=label(p);
-   const children=content[key].map(child=>`<a href="${href+child[0]}/"${child===entry?' aria-current="page"':''}>${label(child)}</a>`).join('');
+   const childLink=child=>`<a href="${href+child[0]}/"${child===entry?' aria-current="page"':''}>${label(child)}</a>`;
+   const children=key==='side-quests'?questGroups.map((group)=>{
+    const quests=group.slice(3).map(id=>questEntries.get(id));
+    return `<details${quests.includes(entry)?' open':''}><summary>${label(group)}</summary>${quests.map(childLink).join('')}</details>`;
+   }).join(''):content[key].map(childLink).join('');
    return `<section class="classic-nav-group"><div class="classic-nav-group-heading"><h2><a href="${href}"${p===page&&!entry?' aria-current="page"':''}>${title}</a></h2><button class="classic-group-toggle" type="button" aria-expanded="true" aria-controls="${id}" aria-label="${en?'Collapse ':'收起'}${title}">−</button></div><div class="classic-nav-group-items" id="${id}">${children}</div></section>`;
   }).join('');
   const directory=`<details open><summary>${directoryLabel}</summary><nav class="classic-nav" aria-label="${directoryLabel}"><div class="classic-nav-home"><a href="${base}"${page?'':' aria-current="page"'}>${en?'Guide home':'专题首页'}</a><button class="classic-collapse-all" type="button" aria-expanded="true" aria-controls="${pages.map(([key])=>menuId(key)).join(' ')}">${collapseLabel}</button></div>${links}</nav></details>`;
@@ -85,7 +106,10 @@ for(const en of [false,true]){
   }).join('')}</div>`;
   const items=page?content[page[0]]:[];
   const chapter=page?.[0]==='walkthrough'?`<section class="pbz-info"><h2 class="classic-heading">${en?'Story chapters':'剧情章节'}</h2><p><a href="${base}walkthrough/against-the-flow/#against-the-flow">${en?'Against the Flow — Weeping Creek Valley':'逆流而上 · 悲泣溪谷'}</a></p><p>${en?'This chapter title is confirmed by the onscreen title card. Further chapter boundaries are being checked against the recordings.':'实录出现「逆流而上」章节题字。后续章节名称与起止位置正在逐段核对。'}</p></section>`:'';
-  const index=page?chapter+`<nav class="pbz-grid" aria-label="${label(page)}">${items.map(item=>`<a id="${item[0]}" href="${base+category+item[0]}/">${label(item)} →</a>`).join('')}</nav>`:'';
+  const indexGrid=(items,title)=>`<nav class="pbz-grid" aria-label="${title}">${items.map(item=>`<a id="${item[0]}" href="${base+category+item[0]}/">${label(item)} →</a>`).join('')}</nav>`;
+  const index=page?.[0]==='side-quests'
+   ?questGroups.map(group=>`<section id="quests-${group[0]}"><h2 class="classic-heading">${label(group)}</h2>${indexGrid(group.slice(3).map(id=>questEntries.get(id)),label(group))}</section>`).join('')
+   :page?chapter+indexGrid(items,label(page)):'';
   const renderContent=([,,,steps,source])=>steps.map(renderStep).join('')+(source?`<p><a href="${source}">${(source.startsWith('/')||source.startsWith('../'))?(en?'Open the area walkthrough':'查看区域图文流程'):(en?'Walkthrough reference':'攻略资料来源')} ↗</a></p>`:'');
   const brief=page?.[0]==='walkthrough'&&entry?areaBriefs[entry[0]]:null;
   const briefLabels=en?['Progression goal','Bosses','Drops','Side quests and clues','Items and services']:['推进目标','首领','掉落物品','支线与线索','道具与服务'];
