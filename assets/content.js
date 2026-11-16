@@ -75,13 +75,47 @@ window.GAMENOTE_CONTENT = {
   ],
   updates: [
     {
+      slug: 'well-dweller-guide-progress-2026-11-17', date: '2026-11-17', game: 'an-jing-wei-guang', type: 'Site',
+      title: '《黯井微光》攻略进度：计时挑战与收集查漏',
+      relatedUrl: '/games/an-jing-wei-guang/#guide-progress',
+      description: '10 场计时挑战已整理入口、跑法和领奖步骤，23 张故事书页可按书名与页码查找，并补充了工坊代币、饰物槽和首领战准备。',
+      details: [
+        { title: '计时挑战', text: '每场写明从哪个帐篷或地标出发、赛道怎么跑、过关后去哪领。目录可按灵魂、饰物槽、鱼钩和工坊代币查漏。', url: '/games/an-jing-wei-guang/challenges/time-trials/#reward-cleanup' },
+        { title: '故事书页', text: '三本书的 23 张书页均可按游戏内页码查到所在区域、回收所需能力和对应图文。区域流程页与书册成就也可跳转到对应清单。', url: '/games/an-jing-wei-guang/collectibles/story-pages/#page-index' },
+        { title: '代币、饰物槽与回访', text: '工坊代币清单补上水疗馆、玩偶师之家、埋葬墓穴和女王城堡的回访路线。排水道、墓谷、瞭望塔与午夜暴雨的区域攻略补充了饰物槽的机关走法和能力要求。', url: '/games/an-jing-wei-guang/collectibles/workshop-tokens/#token-cleanup' },
+        { title: '首领战准备', text: '系统页补充开战前的补给与饰物搭配，说明银勺、融化蜡烛和蓝色蝴蝶结各在什么情况下发挥作用。', url: '/games/an-jing-wei-guang/systems/#boss-preparation' }
+      ],
+      en: {
+        title: 'Well Dweller guide progress — Time trials and collectible cleanup',
+        description: 'All ten time trials now have directions, course tips and reward steps. All 23 story pages are indexed by book and page, with additional routes for Workshop Tokens and trinket slots plus boss-fight preparation tips.',
+        details: [
+          { title: 'Time trials', text: 'Each guide gives a starting tent or landmark, course tips and directions to the reward. The index links to trials by reward: spirits, trinket slots, Fish Hook or Workshop Tokens.', url: '/games/an-jing-wei-guang/challenges/time-trials/#reward-cleanup' },
+          { title: 'Story pages', text: 'Look up all 23 pages by their in-game number and book to find the area, required abilities and illustrated reference. Area walkthroughs and book achievements link to the relevant lists.', url: '/games/an-jing-wei-guang/collectibles/story-pages/#page-index' },
+          { title: 'Tokens, slots and revisits', text: 'The Workshop Token checklist now covers revisits to the Spa, Dollmaker’s House, Burial Vault and Queen’s Castle. The Drains, Graven Valley, Lookout Tower and Midnight Drench walkthroughs explain slot puzzles and the abilities to bring.', url: '/games/an-jing-wei-guang/collectibles/workshop-tokens/#token-cleanup' },
+          { title: 'Preparing for bosses', text: 'The systems page covers supplies before a fight and when Silver Spoon, Melted Candle and Blue Bow help.', url: '/games/an-jing-wei-guang/systems/#boss-preparation' }
+        ]
+      }
+    },
+    {
       slug: 'phantom-blade-zero-guide-complete', date: '2026-11-15', game: 'phantom-blade-zero', type: 'Site',
       title: '《影之刃零》攻略已完成',
       relatedUrl: '/games/phantom-blade-zero/',
       description: '专题已整理主线流程、支线任务、首领打法、兵器、重点收集与真结局路线。',
+      details: [
+        {title: "主线从悲泣溪谷走到断魂山", text: "在「逆流而上」从钟旁沿倒木过沟，爬梯上崖，再顺铁链和墙跑路线找到垂绳。下绳后先和玉儿交谈接血肉花委托。想先拿 Sanguine Twin，可走瀑布上方的岔路。", url: "/games/phantom-blade-zero/walkthrough/against-the-flow/"},
+        {title: "推进首领前先查支线时限", text: "澎猛战后回据点接玉儿的采药委托，把三种药草交齐再打荆野。击败新娘阿花后，记得到花田供桌前拿血肉花并交给玉儿，建议在白赤练战前完成交付。", url: "/games/phantom-blade-zero/side-quests/missable-quests/"},
+        {title: "首领打法与兵器来源", text: "首领图鉴可按遭遇查进场路线和招式应对。想补溪谷兵器，Sanguine Reach 在据点铁匠右侧，残钢和巨凶斧分别对应残钢与澎猛的掉落。", url: "/games/phantom-blade-zero/bosses/"},
+        {title: "重点收集与真结局检查点", text: "进入戏梦山庄前，可以在庞镇青蛇屋蛇门留独立存档，顺手核对前段紫标任务。进山庄后完成第五处龙柱挑战，到断魂山 The Last Chance 的钟时核对 Bloodline Awakening。龙柱还没打齐，可以在进冰洞前回访。部分支线的确切失效点仍待逐项确认。", url: "/games/phantom-blade-zero/side-quests/ending-checkpoints/"},
+      ],
       en: {
         title: 'Phantom Blade Zero guide complete',
-        description: 'The guide covers the main walkthrough, side quests, boss strategies, weapons, key collectibles and the true ending route.'
+        description: 'The guide covers the main walkthrough, side quests, boss strategies, weapons, key collectibles and the true ending route.',
+        details: [
+          {title: "From Weeping Creek Valley to Soulbreak Mountain", text: "In Against the Flow, cross the log by the bell, climb the ladder and follow the chains and wall-run route to the rope. Speak to Yu’er below to start the Flesh Lily quest. Take the branch above the waterfall if you want Sanguine Twin first.", url: "/games/phantom-blade-zero/walkthrough/against-the-flow/"},
+          {title: "Check side quests before major fights", text: "After Peng Meng, return to camp for Yu’er’s Apprentice Healer quest and turn in all three herbs before fighting Jing Ye. After Bride Ahua, collect the Flesh Lily at the altar and give it to Yu’er, preferably before fighting Bai Chilian.", url: "/games/phantom-blade-zero/side-quests/missable-quests/"},
+          {title: "Boss strategies and weapon locations", text: "Use the boss archive to check arena approaches and attack responses. In the valley, look to the right of the camp blacksmith for Sanguine Reach. Jagged Steel and Dread Axe come from Jagged Steel and Peng Meng respectively.", url: "/games/phantom-blade-zero/bosses/"},
+          {title: "Key collectibles and true ending checkpoints", text: "Before entering Dream Manor, keep a separate save at the Green Snake House gate in Pang Town and check earlier purple-marker quests. Complete the fifth dragon pillar challenge in the manor and check Bloodline Awakening at The Last Chance bell in Soulbreak Mountain. Revisit unfinished pillars before entering the ice cave. Exact cutoffs for some quests still need confirmation.", url: "/games/phantom-blade-zero/side-quests/ending-checkpoints/"},
+        ]
       }
     },
     {

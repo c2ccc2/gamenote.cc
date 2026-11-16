@@ -1,6 +1,31 @@
 {
   "updatedAt": "2026-10-13",
   "sources": {
+    "trial-statue-locations": {"name":"Game Checklists · Well Dweller Time Trial Locations","url":"https://game-checklists.com/well-dweller/time-trials-checklist/","type":"guide","accessedAt":"2026-11-16"},
+    "castle-fights": {
+      "name": "Into Indie Games — Queen’s Castle & Ending",
+      "url": "https://intoindiegames.com/walkthroughs/well-dweller-walkthrough-part-11-queens-castle-ending/",
+      "type": "guide",
+      "accessedAt": "2026-11-16"
+    },
+    "groundskeeper": {
+      "name": "Gamer Social Club — The Groundskeeper Boss Guide",
+      "url": "https://gamersocialclub.ca/2026/09/21/well-dweller-defeat-the-groundskeeper-boss-guide/",
+      "type": "guide",
+      "accessedAt": "2026-11-16"
+    },
+    "bog-castle-gate": {
+      "name": "Into Indie Games — Exploring the Bog",
+      "url": "https://intoindiegames.com/walkthroughs/well-dweller-walkthrough-part-2-exploring-the-bog/",
+      "type": "guide",
+      "accessedAt": "2026-11-16"
+    },
+    "spirit-room-routes": {
+      "name": "Game Checklists — All Spirits",
+      "url": "https://game-checklists.com/well-dweller/spirits-checklist/",
+      "type": "guide",
+      "accessedAt": "2026-11-15"
+    },
     "forest-collectibles": {
       "name": "Game Checklists — Autumn Forest",
       "url": "https://game-checklists.com/well-dweller/autumn-forest-checklist/",
@@ -358,6 +383,27 @@
   },
   "entries": [
     {
+      "group": "bosses",
+      "id": "the-groundskeeper",
+      "fields": {
+        "referenceStrategy": {
+          "sources": [
+            "groundskeeper"
+          ],
+          "zh": [
+            "园丁撒出种子时，先看种子落点。耙子紧接着从两侧飞来时，等它靠近再滑行穿过，落地种子还在时也要留意下一把耙子。",
+            "看到园丁带着环绕的叶片来回走，等他接近再滑过。半血后叶片变成两圈，种子和耙子也更密，留出滑行冷却时间。",
+            "园丁砸地后会放出贴地冲击波。不要在起手时就滑，等冲击波临近再穿过，结束后靠近用火柴打几下，然后退开。"
+          ],
+          "en": [
+            "Watch where the seeds will land. When rakes follow from the sides, wait for them to get close before sliding through. Watch for the next rake while seeds are still falling.",
+            "When the Groundskeeper walks back and forth with leaves around him, slide through as he gets close. Below half health the leaves form two rings and the seeds and rakes get denser. Leave time for the slide to recover.",
+            "After the ground slam, wait until the shockwave is close before sliding through. Step in for a few matchstick hits after the attack, then back away."
+          ]
+        }
+      }
+    },
+    {
       "group": "areas",
       "id": "night-garden",
       "fields": {
@@ -414,13 +460,17 @@
             "发夹：从沼泽右侧帐篷往左一间、向下两间。按出现顺序踩气泡，完成后进入打开的门拿发夹。装备后，8 秒内不攻击，下一击伤害翻倍。",
             "布片：从右侧帐篷往左三间，再向上、向右各一间。踩完依次出现的气泡，等门打开再进去拾取。装备后会小幅提高空中攻击伤害。",
             "饰物槽：从左侧帐篷往上一间，打破左墙。向左用弹弓发射火柴，借火柴弹进气泡，够到饰物槽。",
-            "工坊代币：学会悬停后，从上方帐篷往左一间，借气泡弹到高处，再悬停到左侧墙边拾取。"
+            "工坊代币：学会悬停后，从上方帐篷往左一间，借气泡弹到高处，再悬停到左侧墙边拾取。",
+            "左侧帐篷的灵魂：按右、下、左各走一间找计时挑战石像。完成挑战后走进打开的奖励房，打碎里面的灵魂石像。",
+            "上方帐篷的灵魂：学会悬停后，往左两间、往上两间，进入战斗房。清完敌人再打碎石像。两处灵魂都送回夜之庭园下层帐篷左侧的鸟巢。"
           ],
           "en": [
             "Hair Pin: From the right-hand Bog tent, go left one room and down two. Bounce on the bubbles in the order they appear, then collect Hair Pin beyond the door. With it equipped, your next attack deals double damage after eight seconds without attacking.",
             "Scrap of Fabric: From the right-hand tent, go left three rooms, then up one and right one. Finish the bubble sequence and collect it beyond the door. Equipping it slightly increases aerial attack damage.",
             "Trinket slot: From the left-hand tent, go up one room and break the left wall. Fire the matchstick left with Slingshot, then bounce off it into a bubble to reach the slot.",
-            "Workshop Token: After learning Hover, go left one room from the upper tent. Bounce high on the bubbles, then hover toward the left wall for the token."
+            "Workshop Token: After learning Hover, go left one room from the upper tent. Bounce high on the bubbles, then hover toward the left wall for the token.",
+            "Left tent spirit: Go right, down and left, one room each, to the time trial statue. Finish the trial, enter the opened reward room and break the spirit statue inside.",
+            "Upper tent spirit: After learning Hover, go left two rooms and up two to the combat room. Defeat the enemies before breaking the statue. Return both spirits to the nest left of the lower Night Garden tent."
           ]
         }
       }
@@ -431,18 +481,23 @@
       "fields": {
         "referenceChecklist": {
           "sources": [
-            "drains-collectibles",
-            "trinket-locations"
+        "drains-collectibles",
+        "trinket-locations",
+        "slot-locations"
           ],
           "zh": [
             "排水道灵魂：从中央帐篷向右进气流房，按住跳跃乘风升到顶部，再落到左侧平台，打碎灵魂石像。",
             "融化蜡烛：从排水道中央帐篷一直向右，约五间后到有气流和尖刺的房间。用乘风通过，蜡烛在路线末端。装备后，每次治疗完成会获得短暂无敌。",
-            "鱼钩：从中央帐篷向左两间，再向上进计时挑战房。带上悬停和无限攀爬回访会更容易。通过计时后继续进开启的奖励房拾取，装备后低血量时会加快焰瓶补充。"
+            "鱼钩：从中央帐篷向左两间，再向上进计时挑战房。带上悬停和无限攀爬回访会更容易。通过计时后继续进开启的奖励房拾取，装备后低血量时会加快焰瓶补充。",
+            "隐藏饰物槽：回访前在帐篷装备玻璃眼，借它辨认隐藏入口。进入暗道后用御风和悬停抵达饰物槽，对照下方参考的槽位图文第 53 项定位。",
+            "回访顺序：拿到御风后，可从中央帐篷先走右侧的灵魂与蜡烛路线。之后带悬停回收隐藏饰物槽，拿到无限攀爬后再从帐篷走左侧，挑战鱼钩计时房。"
           ],
           "en": [
             "Drains spirit: Go right from the central tent into the wind shaft. Hold jump to ride the updraft to the top, then land on the platform to the left and break the spirit statue.",
             "Melted Candle: Go right from the central Drains tent until you reach the windy spike room, about five rooms away. Use Wind Ride to cross and collect the candle at the end. Equipping it briefly makes you invulnerable after healing.",
-            "Fish Hook: From the central tent, go left two rooms and up to the time trial. Hover and Endless Climb make the return easier. Finish the trial and enter the unlocked reward room to collect it. Equipping it speeds up Flaming Vessel refills at low health."
+            "Fish Hook: From the central tent, go left two rooms and up to the time trial. Hover and Endless Climb make the return easier. Finish the trial and enter the unlocked reward room to collect it. Equipping it speeds up Flaming Vessel refills at low health.",
+            "Hidden trinket slot: Equip Glass Eye at a tent before returning so you can spot the hidden entrance. Use Wind Ride and Hover inside to reach the slot. See entry 53 in the linked slot guide for the room location.",
+            "Suggested return order: Once you have Wind Ride, take the right branch from the central tent for the spirit and candle. Return with Hover for the hidden slot, then take the left branch to the Fish Hook trial once you have Endless Climb."
           ]
         }
       }
@@ -452,14 +507,18 @@
       "id": "graven-valley",
       "fields": {
         "referenceChecklist": {
-          "sources": ["graven-collectibles", "trinket-locations"],
+          "sources": ["graven-collectibles", "trinket-locations", "slot-locations"],
           "zh": [
+            "铃铛机关的饰物槽：学会攀爬和弹弓后回访。先对照槽位图文第 20 项找到射击点，攀上去把火柴射向远处的铃铛，再沿开启的通路拾取。",
+            "计时挑战的饰物槽：带弹弓和无限攀爬回访。起跑先射出火柴，跑过平台后借火柴向上弹跳。末段等移动刺球之间出现空隙再过。计时过关后，用无限攀爬走完奖励路线，拾取第 74 项。",
             "墓谷灵魂：从墓谷帐篷往右三间，再往下一间。到房间上层后向左找暗墙，跳进去打碎灵魂石像。",
             "破铃：从墓谷帐篷往左四间，无需额外能力。装备后，焰瓶投空时可补回一瓶。",
             "裂纹弹珠：从帐篷向右两间，再向上、向左、向上各一间。到有临时挡板的机关房后攀到左上角，用弹弓敲铃，趁通路开放时过去拾取。",
             "臼齿：东北角的竖井要从两侧开门。以帐篷为起点，一侧走上两间、右三间，另一侧走右三间、上两间。分别操作拉杆，再进入中间通道拾取。"
           ],
           "en": [
+            "Bell puzzle trinket slot: Return with Climb and Slingshot. Use illustrated slot entry 20 to find the firing position, climb up and shoot the matchstick at the distant bell, then follow the opened route to the slot.",
+            "Time trial trinket slot: Return with Slingshot and Endless Climb. Fire the matchstick at the start, sprint across the platforms and bounce off it to reach the upper path. Near the finish, wait for a gap between the moving spike balls. After clearing the trial, use Endless Climb on the reward route to reach slot entry 74.",
             "Graven Valley spirit: From the tent, go right three rooms and down one. On the upper part of the room, jump left into the hidden wall and break the spirit statue.",
             "Broken Bell: Go four rooms left from the Graven Valley tent. No extra ability is needed. When equipped, it restores a Flaming Vessel after a missed throw.",
             "Cracked Marble: From the tent, go right twice, then up, left and up. In the room with temporary barriers, climb to the upper-left corner and use Slingshot to ring the bell. Cross while the route is open.",
@@ -473,13 +532,15 @@
       "id": "lookout-tower",
       "fields": {
         "referenceChecklist": {
-          "sources": ["tower-collectibles", "spirits"],
+          "sources": ["tower-collectibles", "spirits", "slot-locations"],
           "zh": [
+            "窄缝后的饰物槽：带上悬停、攀爬和弹弓，对照槽位图文第 35 项找窄缝。先把火柴射到缝隙另一侧，利用火柴落脚并向上弹跳，拿到槽位。",
             "气泡房的灵魂：从瞭望塔下层帐篷往下再往右，进入气泡挑战房。用悬停调整落点，完成机关后打碎石像。",
             "尖刺岔路的灵魂：先拿齐三枚飞行时长升级。从下层帐篷往左，向上三间到尖刺岔路，再沿右侧通道一直走到底，找到第二处灵魂石像。",
             "同一处尖刺岔路往左可补拿工坊代币。右侧灵魂救出后，回夜之庭园下层帐篷左侧的鸟巢交付。"
           ],
           "en": [
+            "Trinket slot beyond the narrow gap: Bring Hover, Climb and Slingshot. Find the gap using illustrated slot entry 35, shoot the matchstick through it, then land on the matchstick and bounce up to the slot.",
             "Bubble-room spirit: From the lower Lookout Tower tent, go down and right into the bubble challenge room. Use Hover to adjust your landings, then break the statue after clearing the puzzle.",
             "Spike-fork spirit: Collect all three flight-duration upgrades first. Go left from the lower tent, climb three rooms to the spiked fork and follow the right-hand passage to its end for the second spirit statue.",
             "Take the left branch at the same spike fork for a Workshop Token. After freeing the spirits, return them to the nest left of Night Garden’s lower tent."
@@ -528,16 +589,20 @@
       "id": "autumn-forest",
       "fields": {
         "referenceChecklist": {
-          "sources": ["forest-collectibles", "spirits"],
+          "sources": ["forest-collectibles", "spirits", "slot-locations", "trinket-locations"],
           "zh": [
             "摩天轮旁的灵魂：从秋日森林左侧帐篷向右两间，借摩天轮向上两间，再向左到计时挑战石像。通过计时后进奖励房，击碎灵魂石像。",
             "蘑菇机关后的灵魂：从右侧帐篷往下，再往左。解开蘑菇房后进入下一间，用弹弓让火柴借蘑菇反弹，再用它作落脚点。带上攀爬和悬停，过机关后打碎石像。",
-            "两处救出的灵魂都交到夜之庭园下层帐篷左侧的鸟巢。"
+            "两处救出的灵魂都交到夜之庭园下层帐篷左侧的鸟巢。",
+            "帐篷射靶：带弹弓参加小游戏。瞄准金色靶可拿饰物槽（槽位图文第 42 项），击中窄浅蓝靶可拿蓝色蝴蝶结。装备蝴蝶结后留一瓶油，受到致命伤时会自动消耗它来治疗。",
+            "玩偶头：带攀爬走石球机关支路，抢在石球之前爬到顶部，再向上击球点亮石柱，拾取饰物。装备后能增加攻击距离。"
           ],
           "en": [
             "Ferris wheel spirit: Go right two rooms from the left Autumn Forest tent, use the Ferris wheel to go up two rooms, then head left to the time trial statue. Finish the trial, enter the reward room and break the spirit statue.",
             "Mushroom puzzle spirit: From the right tent, go down and left. Solve the mushroom room and enter the next one. Use Slingshot to bounce the matchstick off the mushrooms and use it as a foothold. Bring Climb and Hover, then break the statue beyond the puzzle.",
-            "Return both freed spirits to the nest left of the lower Night Garden tent."
+            "Return both freed spirits to the nest left of the lower Night Garden tent.",
+            "Tent target game: Bring Slingshot. Hit the gold target for a trinket slot (illustrated slot entry 42) and the narrow light-blue target for Blue Bow. Keep an oil vial in reserve while wearing the bow so it can spend the vial to heal you when you take a lethal hit.",
+            "Doll’s Head: Bring Climb to the orb puzzle branch. Reach the top ahead of the orb, then strike it upward to light the pillar and collect the trinket. It increases attack reach when equipped."
           ]
         },
         "referenceRoute": {
@@ -691,13 +756,19 @@
       "id": "midnight-drench",
       "fields": {
         "referenceChecklist": {
-          "sources": ["midnight-collectibles", "trinket-locations", "pages"],
+          "sources": ["midnight-collectibles", "trinket-locations", "pages", "spirit-room-routes", "slot-locations"],
           "zh": [
+            "气泡路线的饰物槽：带弹弓回访，对照槽位图文第 22 项找到这条路线。先向最远的气泡射出火柴，再沿其余气泡依次弹跳过去，抵达槽位。",
+            "从干涸城堡回访的灵魂：从干涸城堡中央帐篷往左三间、往下两间，再往左两间。这条路线的石像归在午夜暴雨。",
+            "计时挑战的灵魂：从午夜暴雨上方帐篷向右两间，沿蛛雨旅店方向找到挑战石像。通过计时后进奖励房，击碎里面的灵魂石像。",
             "蜘蛛网：从击败排水道女士后的通道进入午夜暴雨，向下一间、向右两间，到气泡机关房。先用弹弓把火柴向右射过气泡，只踩最后出现、位于饰物下方的气泡，借它弹上去。装备后可用弹弓发射焰瓶。",
             "斜屋顶书页：从午夜暴雨上方帐篷稍向右再向上，继续向右两间到斜屋顶。越过屋顶后检查最右端的暗墙，进暗道沿墙向上拾取。",
             "东侧书页：从干涸城堡中央帐篷向右找升柱，在柱子降下时借弹弓跳到柱顶，再从右侧竖井上去。下一间从右边进入午夜暴雨东侧，遇到第一处向上的通道就上去，借气泡和悬停过缺口。两张书页都属于《女巫的交易》，可用全书页图文第 9、10 项核对房间。"
           ],
           "en": [
+            "Bubble route trinket slot: Return with Slingshot and use illustrated slot entry 22 to locate the route. Fire the matchstick at the farthest bubble first, then bounce across the remaining bubbles in order to reach the slot.",
+            "Spirit from the castle approach: From the central Desiccated Castle tent, go left three rooms, down two and left two. The statue on this route is in Midnight Drench.",
+            "Time trial spirit: Go right two rooms from the upper Midnight Drench tent toward Webdrench Inn. Finish the trial, enter the reward room and break the spirit statue.",
             "Spider’s Web: Enter Midnight Drench from the passage beyond the Lady of the Drains, then go down one room and right two rooms to the bubble puzzle. Fire the matchstick right through the bubbles, then bounce only on the final bubble beneath the trinket. Equipping it lets you launch Flaming Vessels with Slingshot.",
             "Slanted rooftop page: Go slightly right and up from the upper Midnight Drench tent, then right two rooms to the slanted rooftops. Cross them and check the hidden wall at the far right. Wall-jump up inside the passage to collect the page.",
             "Eastern page: Go right from the central Desiccated Castle tent to the moving pillar. Use Slingshot to reach its top while it is lowered, then take the right-hand shaft up. Leave the next room to the right for eastern Midnight Drench. Take the first passage up and cross using bubbles and Hover. Both pages belong to The Witch’s Bargain; compare room maps in illustrated entries 9 and 10."
@@ -811,15 +882,18 @@
       "fields": {
         "referenceStrategy": {
           "sources": [
-            "starsinger"
+            "starsinger",
+            "tower-ascent"
           ],
           "zh": [
-            "黑羽圈出现时用滑行穿过空隙；处理弹幕时仍要留意砸地起手。",
-            "后半段攻击更密集，保持移动，并在安全间隙使用火焰容器。"
+            "星歌者沿场地横跑时会放出飞羽，先看飞羽走向。卷成羽轮冲过来时，等它接近再滑行穿过，躲开后回身反击。",
+            "附身头颅后，红色大弹会分裂成小弹。先横移避开大弹，再看小弹散开的方向，留出落脚空间。看到头颅起跳砸地，跳过沿地面传播的冲击波。",
+            "头颅变红后，招式衔接更紧。每轮先躲完再还击，距离较远时趁收招投焰瓶。击败后向右进下一间拿金色羽毛。"
           ],
           "en": [
-            "Slide through gaps in feather rings and watch for ground slams while reading projectiles.",
-            "Later patterns intensify; keep moving and use Flaming Vessels in safe openings."
+            "Watch the feathers as Starsinger runs across the arena. When the feather wheel rushes toward you, wait until it is close, slide through and turn back to counter.",
+            "Once Starsinger possesses the head, the large red shots split into smaller ones. Move sideways away from the main shot, then watch where the smaller shots spread. Jump over the ground shockwave when the head leaps and slams down.",
+            "When the head turns red, attacks come closer together. Finish dodging before countering. Use a Flaming Vessel from a distance during recovery. Go right to the next room for the Golden Feather after winning."
           ]
         },
         "relatedAreas": {
@@ -841,15 +915,18 @@
       "fields": {
         "referenceStrategy": {
           "sources": [
-            "forest"
+            "forest",
+            "forest-gate"
           ],
           "zh": [
-            "场地狭窄，主要危险来自环境；向上叶片出现时利用侧墙与悬停。",
-            "落石产生尖刺时，可借石块避开地面。战后继续向右检查羽毛。"
+            "开场地面长出尖刺时，借两侧蘑菇弹起，悬停穿过移动尖刺之间的空隙。先看清落脚点，再靠近中央的森林之王输出。",
+            "石块砸下时先避开落点，再跳到石块上躲开地面尖刺。叶片横向飞来时，从石块上起跳越过。地刺退去、首领开始落黑色泪滴时，沿平台滑行避开落点。",
+            "叶片从下方升起时，借侧墙攀高，再悬停调整位置。后段只剩一面墙可以借力，看到叶片升起就先往那侧靠。战后向右进下一间，找伊尔达并拾取金色羽毛。"
           ],
           "en": [
-            "In the narrow arena, use side walls and Hover against rising leaves.",
-            "Use fallen rocks to avoid floor spikes, then check right for the feather after the fight."
+            "When floor spikes appear at the start, bounce on the mushrooms and use Hover to cross between the moving spikes. Check your landing before moving in to attack the Forest King in the center.",
+            "Avoid the falling rock, then jump onto it to stay clear of floor spikes. Jump from the rock over leaves moving across the arena. When floor spikes recede and black tears start falling, slide along the platform to dodge their landing spots.",
+            "When leaves rise from below, climb a side wall and use Hover to adjust. Late in the fight only one wall remains, so move toward it as the leaves rise. After winning, go right to speak to Ilda and pick up the Golden Feather."
           ]
         },
         "relatedAreas": {
@@ -871,15 +948,20 @@
       "fields": {
         "referenceStrategy": {
           "sources": [
-            "shrine"
+            "shrine",
+            "shrine-route"
           ],
           "zh": [
-            "中央光束与地面电流可结合侧墙攀爬、悬停处理。",
-            "弹跳电球会追踪位置；粉色光柱预告地面骨臂，尽早离开预告位置。"
+            "弹跳电球会追踪你，触地时还会放出冲击波。保持横向移动，看到球落地再跳过沿地面扩散的电波。",
+            "地面出现粉色光柱时，先离开标记处。骨臂会从那里伸出并横扫，同时留意下落的小电球，等落点空出来再靠近。",
+            "看到神龛蓄力准备放中央光束时，先往侧边移。电流会沿地面和墙面传播，可借侧墙起跳，再用悬停等电流过去。",
+            "场内铺出电线时，先移到线与线之间的空隙，等放电结束再回去打。战后向左取金色羽毛。"
           ],
           "en": [
-            "Combine side-wall climbing and Hover against central beams and floor electricity.",
-            "Keep moving from tracking electric balls; leave pink warning columns before bone arms emerge."
+            "The bouncing orb tracks you and sends out a shockwave when it touches down. Keep moving sideways and jump over the wave as the orb lands.",
+            "Leave pink warning columns before bone arms emerge and sweep across the floor. Watch where the small electric orbs fall and move in once the landing area clears.",
+            "When the Shrine charges its central beam, move to the side. Electricity travels along the floor and walls. Use a wall jump and Hover to stay clear until it passes.",
+            "When wires appear across the arena, move into a gap between them and wait for the discharge before attacking again. Go left for the Golden Feather after the fight."
           ]
         },
         "relatedAreas": {
@@ -906,14 +988,16 @@
           ],
           "zh": [
             "在埋葬墓穴第二处帐篷休整，从帐篷向左进入掘墓人战场。",
-            "掘墓人砸铲后可能扬起碎骨，也可能沿地面冒出一排持续较久的骨刺。看到骨刺时跳起悬停，等尖刺消退再落地。",
-            "骨球会向五个方向散开，然后沿场地飞回。第一次躲开后留出第二次跳跃或滑行的空间。等掘墓人收招时靠近打几下火柴，再拉开距离。",
+            "看到铲子砸地，先看碎骨飞向哪里，再选落脚点。若地面冒出一排骨刺，跳起悬停，等尖刺消退再落地。骨刺持续较久，和首领隔得远时优先悬停，避免滑行结束后仍停在骨刺里。",
+            "骨球会向五个方向散开，再沿场地飞回。跳过第一轮后，先留出落脚空间看回程，再决定跳还是滑。等掘墓人收招、骨球也离开身边后，贴近用火柴打几下就退开。",
+            "如果常在回旋骨球时掉血，可在战前帐篷装备蓝色蝴蝶结，并留一瓶油。受到致命伤时，它会消耗油瓶自动治疗。蓝色蝴蝶结可从秋日森林射靶小游戏的窄浅蓝靶取得。",
             "胜利后继续向左到聚会屋，把 Irma 送到 Squinton 的生日聚会，完成剧情后领取金色羽毛。"
           ],
           "en": [
             "Rest at the second Burial Vault tent and go left to enter the Gravedigger arena.",
-            "The shovel slam can scatter bones or send a line of lingering spikes across the floor. Jump and hover over the spikes until they subside.",
-            "Bone balls spread in five directions and then return. Leave room for a second jump or slide. When the Gravedigger finishes an attack, move in for a short matchstick combo and back away.",
+            "When the shovel hits the floor, watch where the loose bones fly before choosing a landing spot. If a line of spikes rises, jump and Hover until it clears. The spikes linger, so use Hover at a distance to avoid ending a slide inside them.",
+            "Bone balls spread in five directions and then return. After dodging the outgoing volley, leave room to land and watch the return path before jumping or sliding again. Move in for a short matchstick combo once the Gravedigger recovers and the bone balls have cleared your position.",
+            "If returning bone balls keep catching you, equip Blue Bow at the tent and keep an oil vial in reserve. It spends the vial to heal you when you would otherwise die. Hit the narrow light-blue target in the Autumn Forest minigame to earn it.",
             "After victory, continue left to the party house. Escort Irma to Squinton’s birthday party and finish the scene to collect the Golden Feather."
           ]
         },
@@ -936,18 +1020,21 @@
       "fields": {
         "referenceStrategy": {
           "sources": [
-            "full"
+            "full",
+            "dollmaker-approach"
           ],
           "zh": [
             "多镜下落时找眼睛朝上的镜子，移动到其下方安全区。",
-            "镜子贴地往返时会向外射出玻璃碎片。可以攀到墙上一小段，用无限攀爬稳住位置，同时留意飞来的碎片。碎片绕着镜子转时，等空隙再跳过。",
-            "约打到一半会进入分身阶段。右边的本体按正常方向移动，左边的倒影反向移动。镜子每次只在一侧出现，优先看它在哪边；两侧都落下能量球时，先看落球更密的一侧。",
+            "镜子贴地往返时会向外射出碎片。用无限攀爬拉开高度，但碎片扫向你所在的墙时要换位。碎片绕镜子旋转时，等外圈出现空隙再跳过去，靠近后用火柴反击。",
+            "约半血时屏幕分成两半。右边的本体按正常方向移动，左边的倒影反向移动。镜子每次只在一侧出现，先确认它在哪边。需要向右避开左屏的危险时，按左，让左边的倒影往右走。",
+            "两侧同时落下能量球时，先盯落球更密的一侧。躲开当前一轮后再看另一边的位置，等有空档再靠近镜子出手。",
             "击败镜子后往西找 Magda，完成救援并核对成就。进入能力巢穴完成教学，取得墙壁弹射。"
           ],
           "en": [
             "During falling mirrors, shelter beneath the mirror with the upward-looking eye.",
-            "When the mirror skims back and forth, it fires glass shards. Climb partway up a wall and use Endless Climb to hold your position while watching for shards. When shards orbit the mirror, wait for a gap before jumping past them.",
-            "Around halfway through, the right-hand Glimmer moves normally while the reflection on the left moves in the opposite direction. The mirror appears on one side at a time. When energy balls fall on both sides, prioritise the denser pattern.",
+            "The mirror fires shards as it skims across the floor. Use Endless Climb to gain height and move off the wall if shards sweep toward it. When shards orbit the mirror, jump through a gap in the outer ring and use the matchstick to counter up close.",
+            "At about half health the screen splits. Glimmer on the right moves normally, and the reflection on the left moves in the opposite direction. Check which half the mirror appears in. If the reflection needs to dodge right, press left.",
+            "When energy balls fall on both sides, watch the denser pattern first. Check the other side once the volley passes, then move in to attack the mirror during an opening.",
             "After the fight, head west to rescue Magda and check for the achievement. Complete the ability nest tutorial to learn Wall Sling."
           ]
         },
@@ -979,6 +1066,19 @@
             "《女巫的交易》（9 页）：按书内顺序查夜之庭园（图文 1）、干涸城堡（5）、墓谷（6）、干涸城堡（8）、午夜暴雨（9、10）、猎人小屋（20）、干涸城堡（21）、女王城堡（23）。第 4 页要等干涸城堡的躲避女王段落结束后回收。",
             "《玩偶师》（8 页）：依次查猎人小屋（图文 2）、沼泽（3）、秋日森林（13）、沼泽（15）、玩偶师之家（16、17）、埋葬墓穴（18）、玩偶师之家（19）。秋日森林那页在森林之王战后，进金羽毛房间查伊尔达右侧暗道。",
             "《瞭望塔》（6 页）：依次查夜之庭园（图文 4）、墓谷（7）、瞭望塔（11、12）、深海（14）、沼泽（22）。深海那页可在解锁潜水载具、进入深海后拾取。",
+            "《女巫的交易》第 5 页（图文 9）：从午夜暴雨上方帐篷稍向右再向上，然后往右两间到斜屋顶。越过屋顶后，从最右端的暗墙进入，沿墙向上拾取。",
+            "《女巫的交易》第 6 页（图文 10）：从干涸城堡中央帐篷向右找升柱。等柱子降下来，用弹弓跳上柱顶，经右侧竖井向上。下一间向右进入午夜暴雨东侧，走第一处向上的通道，借气泡和悬停越过缺口。",
+            "《玩偶师》第 5、6、8 页（图文 16、17、19）：都在玩偶师之家。第 5 页用悬停和攀爬。第 6 页带弹弓、无限攀爬和悬停，从右侧平台射出火柴后悬停过去。第 8 页可按房间图直接回收。",
+            "《女巫的交易》第 9 页（图文 23）：从女王城堡右侧帐篷向左两间，再向下一间、向左一间。回访时带无限攀爬与悬停。",
+            "《女巫的交易》第 4 页（图文 8）：完成干涸城堡的躲避女王段落后，带弹弓、攀爬回访。按图文第 8 项的截图找房间。",
+            "《女巫的交易》第 8 页（图文 21）：在干涸城堡先用弹弓触发地板机关，再沿右侧升柱上升。等升柱与左侧横伸的尖刺柱齐平，把火柴作为中途落脚点，借它跳到对面。",
+            "《瞭望塔》第 5 页（图文 14）：从码头帐篷往左登上潜水载具，沿第二道闸门路线潜到底，再从另一侧上浮。去第二根拉杆的途中检查书页。",
+            "《玩偶师》第 3 页（图文 13）：击败森林之王后进金色羽毛房，在伊尔达右侧找暗道。",
+            "《玩偶师》第 1 页（图文 2）：在猎人小屋找到会上升的尖刺方块，从上方站到方块顶面，随它升到暗道里的书页。",
+            "《女巫的交易》第 3 页（图文 6）：带攀爬和弹弓回墓谷。对照图文标出的射击站位，用弹弓把火柴射向铃铛，再去拿书页。",
+            "《玩偶师》第 4 页（图文 15）：带弹弓和攀爬回沼泽。在帐篷左侧的房间站上最左边最高的台阶，把火柴射向右侧书页所在的墙。",
+            "《玩偶师》第 7 页（图文 18）：在埋葬墓穴对照房间图找暗道。进暗道后，拾取书页无需额外能力。",
+            "《瞭望塔》第 6 页（图文 22）：带无限攀爬回沼泽，从第一处帐篷往右，检查通往排水道的长隧道。",
             "括号内是参考图文的全局编号，按编号可以找到对应房间截图。"
           ],
           "en": [
@@ -987,6 +1087,19 @@
             "The Witch’s Bargain (9 pages), in book order: Night Garden (walkthrough 1), Desiccated Castle (5), Graven Valley (6), Desiccated Castle (8), Midnight Drench (9–10), Hunter’s Cabin (20), Desiccated Castle (21), Queen’s Castle (23). Page 4 is available after the Queen evasion sequence.",
             "The Dollmaker (8 pages): Hunter’s Cabin (walkthrough 2), the Bog (3), Autumn Forest (13), the Bog (15), Dollmaker’s House (16–17), Burial Vault (18), Dollmaker’s House (19). After the Forest King, check the hidden passage to Ilda’s right in the Golden Feather room.",
             "The Lookout Tower (6 pages): Night Garden (walkthrough 4), Graven Valley (7), Lookout Tower (11–12), the Deep (14), the Bog (22). The Deep page is available once you unlock the submarine and enter the region.",
+            "The Witch’s Bargain, page 5 (entry 9): From the upper Midnight Drench tent, go slightly right and up, then go right two rooms to the slanted rooftops. Cross them, enter the hidden wall at the far right and climb to the page.",
+            "The Witch’s Bargain, page 6 (entry 10): Head right from the central Desiccated Castle tent to the moving pillar. Use Slingshot to reach the top while the pillar is lowered, then take the right-hand shaft up. Exit right into eastern Midnight Drench, take the first passage up, and cross the gap with bubbles and Hover.",
+            "The Dollmaker, pages 5, 6 and 8 (entries 16, 17 and 19): All three are in the Dollmaker’s House. Use Hover and Climb for page 5. Bring Slingshot, Endless Climb and Hover for page 6, and fire the matchstick from the right platform before hovering across. Use the room map to find page 8.",
+            "The Witch’s Bargain, page 9 (entry 23): From the right-hand Queen’s Castle tent, go left two rooms, down one and left one. Bring Endless Climb and Hover.",
+            "The Witch’s Bargain, page 4 (entry 8): Finish evading the Queen in Desiccated Castle, then return with Slingshot and Climb. Use the room screenshot in entry 8 to locate the page.",
+            "The Witch’s Bargain, page 8 (entry 21): In Desiccated Castle, trigger the floor mechanism with Slingshot and ride the right-hand pillar up. When it lines up with the spikes jutting out from the left, use the matchstick as a foothold to jump across.",
+            "The Lookout Tower, page 5 (entry 14): Board the submersible left of the Docks tent and follow the second gate route to the bottom, then surface on the far side. Look for the page on the way to the second lever.",
+            "The Dollmaker, page 3 (entry 13): After defeating the Forest King, enter the Golden Feather room and check the hidden passage to Ilda’s right.",
+            "The Dollmaker, page 1 (entry 2): In Hunter’s Cabin, get onto the top of the moving spike block and ride it up to the hidden passage with the page.",
+            "The Witch’s Bargain, page 3 (entry 6): Bring Climb and Slingshot to Graven Valley. Use the illustrated firing position to shoot the matchstick at the bell, then collect the page.",
+            "The Dollmaker, page 4 (entry 15): Bring Slingshot and Climb to the Bog. In the room left of the tent, stand on the highest step at the left and fire the matchstick toward the wall with the page on the right.",
+            "The Dollmaker, page 7 (entry 18): Use the Burial Vault room map to locate the hidden passage. Once inside, picking up the page takes no extra ability.",
+            "The Lookout Tower, page 6 (entry 22): Return to the Bog with Endless Climb. Go right from the first tent and check the long tunnel leading to the Drains.",
             "Numbers in parentheses match the illustrated walkthrough’s global order. Use them to find the room screenshots."
           ]
         }
@@ -1018,22 +1131,24 @@
         "referenceChecklist": {
           "sources": [
             "looter",
-            "route"
+            "route",
+            "vault",
+            "forest-gate"
           ],
           "zh": [
             "接任务：救出针儿和刺儿后，回码头船坞找 Barge 学无限攀爬。到码头第一个帐篷的上一层，找第二处帐篷旁可进入的旧靴子。进靴子和低语者谈话拿金门钥匙，之后按地图上的金锁标记找四扇门。",
-            "腿：用钥匙打开墓谷的金门，沿门后通路走到尽头拾取。",
-            "手臂：打开干涸城堡的金门，穿过门后区域，到尽头找零件。",
-            "躯干：打开下水道的金门后往东走，沿支路找到躯干。",
-            "头：打开沼泽的金门，沿门后区域向上攀，到最高处拾取。",
+            "腿（墓谷）：从帐篷往右，借弹弓向上，到顶层打开金门。敲吊铃放出临时平台，趁平台收回前到上方敲拉杆。继续上攀并清掉守路敌人，从上层往左。再用弹弓远距离敲铃，过第二组临时平台，在对面拿腿。",
+            "手臂（干涸城堡）：从帐篷往左，经过摆动平台和移动气泡，打开金门。用弹弓打齿轮，乘升起的平台过到对面，从左侧下落。沿路清怪，到尽头再下落，向左敲拉杆。折回下落后往右穿过粉色尖刺区，用悬停或弹弓上到高处，击败持蜡烛的敌人后向前拾取。",
+            "躯干（排水道）：从排水道帐篷往东找金门，门后还有一处帐篷。存档后往右，借气流和悬停穿过带刺墙面。后面几段也要在气流中调整高度，沿同一条通道走到尽头拾取。",
+            "头（沼泽）：金门在女王城堡入口西侧。过尖刺后击败两名敌人，从左上出口离开。借气泡升到顶，再向右到下一间操作开关，从上方越过挡板。继续爬高，避开尖刺缓慢下落，走左门。向左走时可以先下去开回程捷径，再返回上方平台，借气泡到顶部出口，进入房间拿头部。",
             "交付：四件齐全后跟地图的新目标回码头旧靴子，与低语者交谈并拼好拾荒者，领取一根金色羽毛，同时解锁对应成就。"
           ],
           "en": [
             "Start: After rescuing Thimble and Thistle, learn Endless Climb from Barge at the Docks shipyard. Go one level above the first Docks tent and enter the old boot beside the second tent. Speak to Whisper for the Golden Gate Key, then follow the four gold padlock markers on the map.",
-            "Legs: Open the Golden Gate in Graven Valley and follow the passage to its end.",
-            "Arms: Open the Golden Gate in Desiccated Castle and look for the part at the end of the area beyond it.",
-            "Body: Open the Golden Gate in the Drains, then follow the eastern branch to the part.",
-            "Head: Open the Golden Gate in the Bog and climb to the top of the area beyond it.",
+            "Legs (Graven Valley): Head right from the tent and use Slingshot to climb to the Golden Gate. Ring the hanging bell beyond it and cross the temporary platforms to strike the upper lever before they retract. Climb past the enemies and head left from the upper platform. Use Slingshot to ring the second bell and cross the next set of temporary platforms to the legs.",
+            "Arms (Desiccated Castle): Head left from the tent, cross the swinging platforms and moving bubbles, and open the Golden Gate. Hit the gear with Slingshot and ride the rising platform across. Drop on the left, clear the enemies, then drop again at the end and go left to the lever. Backtrack and drop to the right through the pink spikes. Use Hover or Slingshot to reach the upper platform, defeat the candle enemy and collect the arms ahead.",
+            "Torso (The Drains): Find the Golden Gate east of the Drains tent. Save at the tent just beyond the gate, then go right and use the air currents and Hover to cross the spike walls. Adjust your height in the currents along the next sections and follow the passage to the pickup.",
+            "Head (The Bog): Open the Golden Gate west of the Queen’s Castle entrance. Cross the spikes, defeat the two enemies and take the upper-left exit. Bounce up on the bubbles, go right to the next room and hit the switch to pass above the barrier. Climb high, then descend carefully past the spikes and exit left. The downward branch opens a shortcut. Return to the upper platform and use the bubbles to reach the top exit and the head.",
             "Hand-in: Once you have all four parts, follow the new map objective back to the old boot at the Docks. Speak to Whisper and reassemble Looter to receive a Golden Feather and unlock the achievement."
           ]
         }
@@ -1228,13 +1343,19 @@
       "fields": {
         "referenceRoute": {
           "sources": [
-            "full"
+            "full",
+            "bog-castle-gate",
+            "shrine-route"
           ],
           "zh": [
-            "收齐七根金色羽毛后，回沼泽的城堡入口。"
+            "收齐七根金色羽毛后，传送到沼泽上方帐篷。往左走到可破坏墙，打碎面前和头顶的挡板，再继续往左借气泡升到上方出口。",
+            "下一间先向左，沿气泡升到顶层，再向右经过飞虫，从它后面的出口继续走。到沼泽北侧的城堡入口，与大门互动。",
+            "开门后沿山路往上，途中会遇到伊尔达。继续攀到顶层，走左侧出口，向守卫出示七根金色羽毛，再往左正式进入女王城堡。"
           ],
           "en": [
-            "Return to the Bog castle entrance with all seven Golden Feathers."
+            "With all seven Golden Feathers, travel to the upper Bog tent. Head left to the breakable wall, smash the barriers in front of and above you, then continue left and bounce up to the top exit.",
+            "Go left in the next room and ride the bubbles to the top. Turn right past the flying insect and take the exit beyond it. Continue to the castle gate in the north of the Bog and interact with it.",
+            "Climb the mountain path beyond the gate, passing Ilda on the way. At the top, take the left exit and show the seven Golden Feathers to the guard. Continue left to enter Queen’s Castle."
           ]
         },
         "relatedAreas": {
@@ -1256,15 +1377,18 @@
       "fields": {
         "referenceStrategy": {
           "sources": [
-            "lida"
+            "lida",
+            "graven-ticket"
           ],
           "zh": [
-            "取得处刑门票后进入遭遇。追踪刀刃出现时留意滑行冷却。",
-            "后半段场地收窄，观察三把下落刀刃之间的空隙；战后左侧寻找 Egbert。"
+            "在墓谷会场出示门票，等囚犯进场后，走到左侧打断绳子触发莉达战。",
+            "前半段跳过贴地冲击波。追踪刀刃接近时再滑行，等莉达收招后打几下就退开。距离太远时可以投火柴。",
+            "约半血时桌子升起，地面被尖刺覆盖，跳上桌面。看到刀刃从上方落下，先移到缝隙。连续落刀时再滑行，给下一次闪避留出冷却时间。战后向左找艾格伯特。"
           ],
           "en": [
-            "Enter after obtaining the execution ticket; track homing blades and your slide cooldown.",
-            "As the arena narrows, use gaps between falling cleavers. Find Egbert to the left afterwards."
+            "Show the ticket at the Graven Valley ceremony. Once the prisoners arrive, go left and strike the rope to trigger Lida’s fight.",
+            "Jump over the ground shockwaves in the first phase. Wait until homing blades approach before sliding. Get a few hits in after Lida’s attack and back away. Throw the matchstick when she is out of melee range.",
+            "At about half health a table rises and spikes cover the floor. Jump onto the table, then move into gaps between falling cleavers. Use your slide for the blade rain and leave time for it to recover. After the fight, head left for Egbert."
           ]
         },
         "relatedAreas": {
@@ -1286,17 +1410,20 @@
       "fields": {
         "referenceStrategy": {
           "sources": [
-            "creature"
+            "creature",
+            "docks-vessel"
           ],
           "zh": [
-            "先在码头集齐三块门石，按地图标记通过开启的大门。击败深海怪物后即可使用潜水载具进入深海。",
-            "首领会持鱼剑横穿场地，也会放出空中弹射物和沿地传播的冲击波。横冲时用跳跃或滑行换位；冲击波贴地过来时跳起悬停，等它从脚下过去再落地。",
-            "空中弹射物出现时先看落点，留出落地空间。等首领结束冲刺或挥剑，再贴近还击或投出火焰容器。胜利后解锁 Into the Deep 成就。"
+            "在码头集齐三块门石，跟随地图标记穿过大门进入战场。",
+            "首领持鱼剑横冲时，先用跳跃或滑行换位。看到它跃起后重砸地面，留出起跳空间，等贴地冲击波临近再跳起悬停，让冲击波从脚下过去。",
+            "空中弹射物出现时，先看落点再决定往哪边躲。趁它冲刺、挥剑或砸地收招时打几下，距离较远时可投焰瓶。",
+            "战胜首领并救出船员后，继续到篝火听完与 Barge 的对话。取得水上载具使用权后，再到码头水边登船，前往深海。"
           ],
           "en": [
-            "Collect all three Gate Stones in the Docks and follow the map marker through the opened gate. Defeating the Creature unlocks access to the submarine and the Deep.",
-            "The boss charges across the arena with its swordfish blade and sends out airborne projectiles and ground shockwaves. Jump or slide to reposition during a charge. For a ground wave, jump and Hover until it passes beneath you.",
-            "Watch where airborne projectiles are headed before choosing a landing spot. Wait for a charge or swing to end before closing in or throwing a Flaming Vessel. Victory unlocks Into the Deep."
+            "Collect the three Docks gate stones and follow the map marker through the gate into the arena.",
+            "Jump or slide out of the Creature’s swordfish charge. When it leaps and slams down, leave room to jump. Wait for the ground shockwave to approach, then jump and Hover until it passes below you.",
+            "Check where airborne projectiles will land before moving. Attack briefly after a charge, swing or slam ends. Use a Flaming Vessel if you are too far away.",
+            "After defeating the Creature and rescuing the crew member, go to the campfire and finish the conversation with Barge. Once you have vessel access, board at the Docks to reach the Deep."
           ]
         },
         "relatedAreas": {
@@ -1318,19 +1445,20 @@
       "fields": {
         "referenceStrategy": {
           "sources": [
-            "colony"
+            "colony",
+            "dollmaker-approach"
           ],
           "zh": [
-            "击败码头的深海怪物后，乘潜水载具前往深渊。用巨型骷髅辨认入口。",
-            "前半段由多个敌人轮番攻击。移动时同时看空中的弹射物和贴地冲击波。跳过冲击波前先找安全落点，等弹道露出空隙再攻击。",
-            "约打到一半时，最终形态会落入场内，一边跳动一边发射追踪尖刺。先持续换位摆脱追踪，再趁它落地时反击。",
+            "用鱼雷打开深海两道水下闸门后，从巨型骷髅进入通道。在深海帐篷存档，再向右进战场。",
+            "前半段同时留意空中弹射物和贴地冲击波。先看好落点再跳过冲击波。首领消失时留意场地另一侧，它会从那边重新出现。等它完成攻击后，再靠近打几下火柴。",
+            "约半血时，更大的形态落入场内，跳动时会发射追踪尖刺。先横向换位把尖刺带离落脚点，再趁首领落地收招反击。",
             "若使用火焰容器，可在存档帐篷以标价 250 购入瓶盖。装备后瓶子触地会弹跳，适合首领频繁换位时使用。",
             "战后救出 Thistle 和 Thimble，解锁 Double Trouble。看完兄弟姐妹团聚剧情，回码头船坞找 Barge，领取无限攀爬。拿到后可持续攀墙，无需担心攀爬体力耗尽。"
           ],
           "en": [
-            "After defeating the Creature at the Docks, take the submarine to the Depths. Look for the giant skull that marks the entrance.",
-            "Several enemies attack during the first half. Track airborne projectiles and ground shockwaves at the same time. Pick a clear landing spot before jumping over a wave, then attack when the projectiles leave an opening.",
-            "Around halfway through, the final form drops into the arena. It jumps around and fires homing spikes. Keep moving until the spikes pass, then punish a landing.",
+            "Use Torpedo to open both underwater gates, then enter the passage at the giant skull. Save at the Deep tent and go right into the arena.",
+            "Watch airborne projectiles and ground shockwaves together. Pick a clear landing before jumping over a wave. When the boss disappears, watch the opposite side for its return. Move in for a few matchstick strikes after it finishes attacking.",
+            "At about half health, a larger form drops into the arena and fires homing spikes as it jumps. Move sideways to draw the spikes away from your landing spot, then counter as the boss lands and recovers.",
             "If you use Flaming Vessels, Bottle Cap costs 250 at the Save Tent before discounts. It lets bottles bounce, which helps when the boss keeps moving.",
             "Victory rescues Thistle and Thimble and unlocks Double Trouble. Finish the reunion sequence, then speak to Barge at the Docks shipyard for Endless Climb, which removes the climbing stamina limit."
           ]
@@ -1354,17 +1482,20 @@
       "fields": {
         "referenceStrategy": {
           "sources": [
-            "silver"
+            "silver",
+            "castle-fights"
           ],
           "zh": [
             "进场：在女王城堡找到封住的竖坑，敲左侧转轮打开落口。下到底部后右转进入战场。",
-            "跳砸和火球：银色玩偶起跳后会在落地时掀起尖刺或碎片。先离开落点，再跳起避开贴地危险。远处还有火球，等弹道露出空隙后再靠近。",
+            "跳砸：看银色玩偶往哪里落，先横移离开落点。还在冲击范围边缘时，等它落地再起跳避开贴地危险，随后趁它停顿贴近反击。",
+            "连续火轮：先看第一只从哪边来，留在有空隙的一侧。跳过第一只后先看下一只的位置，再决定悬停还是落地滑行。等整轮火轮过去再贴近。",
             "带刺滚轮：滚轮先散向两边，再朝中央滚回。可用悬停拖过前一只，落地后接滑行躲下一只。若已靠近侧墙，可攀墙等滚轮过去。",
             "反击和战后：等跳砸或滚轮攻势结束，再贴近打几下。胜利后向右走，敲牢笼旁的拉杆，救出一对伊尔达的兄弟姐妹。"
           ],
           "en": [
             "Approach: Strike the wheel left of the blocked shaft in the Queen’s Castle. Drop to the bottom and turn right to enter the arena.",
-            "Leaps and fireballs: The Silver Doll’s landing sends up spikes or shards. Move away from the landing point, then jump over the ground hazards. Wait for an opening between fireballs before closing in.",
+            "Jump slam: Watch where Silver Doll is about to land and move sideways. If you are still near the edge of the impact area, jump as the doll lands to clear the ground hazard. Move in to counter during the pause afterward.",
+            "Flame-wheel volley: Watch which side the first wheel comes from and move toward a gap. After jumping the first wheel, check the next one before choosing to Hover or land and slide. Wait out the volley before closing in.",
             "Spiked wheels: The wheels spread to the sides, then roll back toward the middle. Hover over one and slide after landing to avoid the next, or cling to a side wall until they pass.",
             "Punish and rescue: Move in for a short attack once the jump or wheel sequence ends. After victory, go right and strike the cage lever to free one pair of Ilda’s siblings."
           ]
@@ -1388,17 +1519,22 @@
       "fields": {
         "referenceStrategy": {
           "sources": [
-            "queen"
+            "queen",
+            "castle-fights"
           ],
           "zh": [
             "进入王城前先集齐七根金羽毛。进城后击败银色玩偶，并找到伊尔达的兄弟姐妹，再前往女王战。",
             "前半段看到地刺冒出时，用悬停跨过去。金剑或带刺的大方块逼近时，用跳跃接滑行换位。遇到环绕的大火球，用滑行穿过，并为下一次闪避留出冷却时间。",
-            "战斗中段刺墙收拢、地面长出尖刺时，立刻转移到升起的平台。留意头顶落剑和圆锯，平台被封住时先悬停调整。看到带碎箭标记的平台，把火柴投向标记，再借火柴弹跳过去。"
+            "地刺铺满场地时，立刻跳上升起的移动立柱。换位前先看下一根柱顶有没有落剑或圆锯。落点被封住时先悬停调整，等相邻柱顶空出来再落脚。",
+            "看到平台带碎箭标记时，把火柴投向标记，借它弹到下一处落脚点。站稳后再输出，女王离得远就投焰瓶。",
+            "战斗末段被关进吊笼后，等剧情继续。恢复操作后与现场角色交谈，完成庆祝剧情即可继续通关后的探索。"
           ],
           "en": [
             "Collect the seven golden feathers to enter the Queen’s Castle. Defeat Silver Doll and find Ilda’s siblings before proceeding to the Queen.",
             "In the first half, hover over rising floor spikes. Use a jump and slide to reposition around golden swords or large spiked blocks. Slide through the orbiting fireballs and allow time for the slide to recharge.",
-            "When the spike walls close in and the floor sprouts spikes, move onto the raised platforms. Watch for falling swords and saws, and use Hover when a landing is blocked. Aim the matchstick at the splintered-arrow marker, then bounce off it to cross."
+            "When spikes cover the floor, jump onto a rising moving pillar. Before switching, check the next pillar top for falling swords or saws. If the landing is blocked, use Hover to adjust until a nearby pillar clears.",
+            "When a platform has a splintered-arrow marker, throw the matchstick at it and bounce to the next foothold. Attack after landing safely, or throw a Flaming Vessel when the Queen is out of reach.",
+            "When you are caught in the hanging cage near the end, wait for the scene to continue. Once you regain control, talk to everyone present to finish the celebration and continue into the postgame."
           ]
         },
         "relatedAreas": {
@@ -1423,12 +1559,14 @@
             "swarm"
           ],
           "zh": [
-            "虫群在上方时向上攻击；侧面虫墙出现时借泡泡越过。",
-            "出现头骨后可攻击头骨，但需额外躲避砸地产生的冲击波。"
+            "虫群聚在头顶时用火柴向上打。虫群飘得太高时，可投焰瓶继续输出。侧面虫墙出现后，先看气泡的位置，借它弹过虫墙再回身。",
+            "虫群抓起头骨后，头骨也能打。它沿地逼近时用滑行穿过，砸地放出贴地冲击波时跳过去，等攻击结束再贴近打几下。",
+            "剩约四分之一血量时，两侧会有单只小虫贴地飞进来。优先看哪一侧先到，地面能通过就滑行，冲击波也靠近时就跳过，留出安全的落点。"
           ],
           "en": [
-            "Attack upward when the swarm is overhead; use bubbles to clear insect walls.",
-            "Once the skull appears, attack it while avoiding its added ground-slam shockwave."
+            "Strike upward while the swarm is overhead. If it floats out of matchstick range, use a Flaming Vessel. When an insect wall appears, spot the bubble first and bounce over the wall before turning back.",
+            "When the swarm grabs the skull, you can hit the skull too. Slide through it as it moves along the floor and jump over the ground-slam shockwave. Move in for a few hits after the attack ends.",
+            "At roughly a quarter health, individual bugs fly in at ground level from the sides. Watch which one reaches you first. Slide if the floor is clear, or jump over it if a shockwave is also approaching, leaving space to land safely."
           ]
         },
         "relatedAreas": {
@@ -1453,12 +1591,14 @@
             "lady"
           ],
           "zh": [
-            "三处电梯部件齐全后，从中央帐篷旁电梯进入。敌人在上方时向上攻击，先处理生成的小怪。",
-            "敌人消失、场地滚动时专注躲避下方尖球，留意滑行冷却。"
+            "收齐三件升降机部件后，从中央帐篷左侧乘升降机下行。排水道女士出现在头顶，用向上攻击或跳打够到她。她投出刺球或被旋转的尖刺围住时，先落回平台，等尖刺离开再打。",
+            "召出小怪时先清小怪。它砸地会放出沿平台传播的冲击波，看到起手就准备跳过，落地后再处理小怪。",
+            "首领离场、画面向上滚动时，视线放到平台下方，看到尖球靠近再滑行躲开。两次滑行之间留出冷却时间。等她重新出现在上方、身边尖刺散开，再跳打或向上还击。"
           ],
           "en": [
-            "Enter via the central-tent elevator with all three parts. Attack upward and clear summoned enemies first.",
-            "When the boss disappears and the arena scrolls, focus on lower spike balls and your slide cooldown."
+            "Collect all three elevator parts, then descend on the lift left of the central tent. Use upward strikes or jump attacks when the Lady appears overhead. If she throws spike balls or surrounds herself with spinning spikes, land on the platform and wait for a clear opening.",
+            "Clear summoned enemies first. Their ground slam sends a shockwave along the platform, so be ready to jump over it and deal with the summon on landing.",
+            "When the Lady leaves and the screen scrolls upward, watch below the platform. Slide as spike balls approach and leave time for the slide to recover. When she returns overhead and the spikes clear, resume upward strikes or jump attacks."
           ]
         },
         "relatedAreas": {
@@ -1515,13 +1655,19 @@
       "fields": {
         "referenceRoute": {
           "sources": [
-            "colony"
+            "colony",
+            "docks-vessel",
+            "dollmaker-approach"
           ],
           "zh": [
-            "深入深渊并击败 The Colony，救出 Thistle 和 Thimble，解锁 Double Trouble。团聚剧情结束后，回码头船坞找 Barge 领取无限攀爬。"
+            "码头：找齐三块门石，进入大门击败深海生物并救出船员。继续到篝火，等船员与 Barge 的对话结束，取得水上载具使用权。",
+            "深海：从码头帐篷右侧登船下潜取得鱼雷，开第一道水下闸门。再回帐篷从左侧登船，打通另一侧水道，击中第二根拉杆。两道门都开后，进入巨型骷髅下方的通路。",
+            "救援：在深海帐篷存档，向右挑战 The Colony。击败后完成针儿和刺儿的救援及团聚剧情，解锁 Double Trouble。再回码头船坞找 Barge 领取无限攀爬。"
           ],
           "en": [
-            "Defeat the Colony in the Depths to rescue Thistle and Thimble and unlock Double Trouble. After the reunion, speak to Barge at the Docks shipyard for Endless Climb."
+            "The Docks: Collect all three gate stones, open the gate, defeat the Creature from the Deep and rescue the crew member. Continue to the campfire and finish the conversation with Barge to gain access to the vessels.",
+            "The Deep: Board the vessel to the right of the Docks tent, dive for Torpedo and open the first underwater gate. Return to the tent and board on the left. Clear the other passage and hit the second lever. With both gates open, enter the passage at the giant skull.",
+            "Rescue: Save at the Deep tent and go right to fight The Colony. Finish the rescue and reunion of Thimble and Thistle for Double Trouble. Return to Barge at the Docks shipyard for Endless Climb."
           ]
         },
         "relatedAreas": {
@@ -1749,13 +1895,18 @@
       "fields": {
         "referenceRoute": {
           "sources": [
-            "trials"
+            "trials",
+            "trial-statue-locations"
           ],
           "zh": [
-            "用弹弓把火柴打到障碍前方，借火柴弹跳越过去。遇到低处的尖刺障碍时接滑行，过了就继续跑。完成后获得饰物槽。"
+            "从夜之庭园起始帐篷往左一间。在长墙中段用弹弓架起火柴，借它向上弹跳，再攀墙到挑战石像。",
+            "用弹弓把火柴打到障碍前方，借火柴弹跳越过去。遇到低处的尖刺障碍时接滑行，过了就继续跑。",
+            "计时通过后，进开启的奖励房拾取饰物槽。"
           ],
           "en": [
-            "Use Slingshot to place the matchstick ahead of obstacles and bounce over them. Slide past low spike hazards and keep running. Reward: a trinket slot."
+            "Go one room left from the Night Garden starting tent. Plant the matchstick midway up the long wall with Slingshot, bounce off it and climb to the trial statue.",
+            "Use Slingshot to place the matchstick ahead of obstacles and bounce over them. Slide past low spike hazards and keep running.",
+            "After clearing the trial, enter the unlocked reward room and pick up the trinket slot."
           ]
         }
       }
@@ -1766,13 +1917,18 @@
       "fields": {
         "referenceRoute": {
           "sources": [
-            "trials"
+            "trials",
+            "trial-statue-locations"
           ],
           "zh": [
-            "带上攀爬，从竖向赛道一路贴墙上爬。需要换边时用蹬墙跳接到另一面墙，继续往顶端走。奖励是饰物槽。"
+            "从干涸城堡上方帐篷往下，向右两间，再下一间，随后沿左侧通路走到底找挑战石像。",
+            "带上攀爬，从竖向赛道一路贴墙上爬。需要换边时用蹬墙跳接到另一面墙，继续往顶端走。",
+            "到达终点后进开启的奖励房，拾取饰物槽。"
           ],
           "en": [
-            "Bring Climb and follow the vertical course upward. Wall-jump across when you need to switch sides and climb to the finish. Reward: a trinket slot."
+            "From the upper Desiccated Castle tent, go down, right two rooms and down one more room. Follow the left branch to its end to find the trial statue.",
+            "Bring Climb and follow the vertical course upward. Wall-jump across when you need to switch sides and climb to the finish.",
+            "At the finish, enter the unlocked reward room and pick up the trinket slot."
           ]
         }
       }
@@ -1783,13 +1939,18 @@
       "fields": {
         "referenceRoute": {
           "sources": [
-            "trials"
+            "trials",
+            "midnight-collectibles"
           ],
           "zh": [
-            "带上攀爬和悬停。这场向上计时，沿墙爬升，需要换边就蹬墙跳，遇到气泡就借它向上弹。完成后救出一个灵魂。"
+            "从午夜暴雨上方帐篷向右走两间，沿蛛雨旅店方向找到挑战石像。",
+            "带上攀爬和悬停。沿墙爬升，需要换边就蹬墙跳，遇到气泡就借它向上弹。",
+            "过关后进奖励房，击碎灵魂石像。回夜之庭园下层帐篷左侧的鸟巢交付。"
           ],
           "en": [
-            "Bring Climb and Hover for this vertical trial. Wall-jump to switch sides and bounce on bubbles to gain height. Reward: a spirit."
+            "From the upper Midnight Drench tent, go right two rooms toward Webdrench Inn to find the trial statue.",
+            "Bring Climb and Hover. Climb the walls, wall-jump to switch sides, and bounce on bubbles to gain height.",
+            "After clearing the trial, enter the reward room and break the spirit statue. Return the spirit to the nest left of Night Garden’s lower tent."
           ]
         }
       }
@@ -1800,13 +1961,18 @@
       "fields": {
         "referenceRoute": {
           "sources": [
-            "trials"
+            "trials",
+            "cabin-collectibles"
           ],
           "zh": [
-            "带上攀爬、悬停和弹弓。赛道交替出现横向跑跳与上升段，平路保持奔跑，上升段留意需要借力的位置。完成后救出一个灵魂。"
+            "从猎人小屋中央帐篷往右三间，再往上三间，到挑战石像。",
+            "带上攀爬、悬停和弹弓。赛道交替出现横向跑跳与上升段，平路保持奔跑，上升段留意需要借力的位置。",
+            "过关后进入奖励房，打碎灵魂石像，再回夜之庭园下层帐篷左侧的鸟巢交付。"
           ],
           "en": [
-            "Bring Climb, Hover and Slingshot. The course alternates between horizontal runs and climbs. Keep your speed on flat stretches and look for the next way up at each climb. Reward: a spirit."
+            "From the central Hunter’s Cabin tent, go right three rooms and up three rooms to the trial statue.",
+            "Bring Climb, Hover and Slingshot. The course alternates between horizontal runs and climbs. Keep your speed on flat stretches and look for the next way up at each climb.",
+            "After clearing the trial, enter the reward room and break the spirit statue. Return the spirit to the nest left of Night Garden’s lower tent."
           ]
         }
       }
@@ -1817,13 +1983,18 @@
       "fields": {
         "referenceRoute": {
           "sources": [
-            "trials"
+            "trials",
+            "forest-collectibles"
           ],
           "zh": [
-            "带上悬停和攀爬。在下落平台上看准旋转刺球的空隙，必要时稍停，趁平台还没掉远就悬停跨过去。完成后救出一个灵魂。"
+            "从秋日森林左侧帐篷往右两间，借摩天轮向上两间，再往左找挑战石像。",
+            "带上悬停和攀爬。在下落平台上看准旋转刺球的空隙，必要时稍停，趁平台还没掉远就悬停跨过去。",
+            "过关后进入奖励房，打碎灵魂石像，再回夜之庭园下层帐篷左侧的鸟巢交付。"
           ],
           "en": [
-            "Bring Hover and Climb. On the falling platforms, briefly wait for a gap in the rotating spike balls if needed, then hover across before the platform drops too far. Reward: a spirit."
+            "From the left Autumn Forest tent, go right two rooms, ride the Ferris wheel up two rooms, then head left to the trial statue.",
+            "Bring Hover and Climb. On the falling platforms, briefly wait for a gap in the rotating spike balls if needed, then hover across before the platform drops too far.",
+            "After clearing the trial, enter the reward room and break the spirit statue. Return the spirit to the nest left of Night Garden’s lower tent."
           ]
         }
       }
@@ -1834,13 +2005,18 @@
       "fields": {
         "referenceRoute": {
           "sources": [
-            "trials"
+            "trials",
+            "trial-statue-locations"
           ],
           "zh": [
-            "挑战内无需额外能力。从高处一路往下，记住下一层缺口的位置，落地后用滑行快速接上下一段。完成后获得饰物槽。"
+            "从码头右侧帐篷向上走五间，再向左进入挑战石像所在的房间。",
+            "挑战内无需额外能力。从高处一路往下，记住下一层缺口的位置，落地后用滑行快速接上下一段。",
+            "计时通过后，进开启的奖励房拾取饰物槽。"
           ],
           "en": [
-            "No extra ability is needed in the trial. Descend quickly, remember where each drop is and slide after landing to reach the next one. Reward: a trinket slot."
+            "From the right-hand Docks tent, go up five rooms, then turn left into the room with the trial statue.",
+            "No extra ability is needed in the trial. Descend quickly, remember where each drop is and slide after landing to reach the next one.",
+            "After clearing the trial, enter the unlocked reward room and pick up the trinket slot."
           ]
         }
       }
@@ -1851,13 +2027,18 @@
       "fields": {
         "referenceRoute": {
           "sources": [
-            "trials"
+            "trials",
+            "bog-collectibles"
           ],
           "zh": [
-            "挑战内无需额外能力。跑过平地时保持速度，遇到缺口就跳，低矮障碍用滑行通过。时间余量较少，完成后救出一个灵魂。"
+            "从沼泽左侧帐篷出发，依次向右、向下、向左各走一间，找到挑战石像。",
+            "挑战内无需额外能力。跑过平地时保持速度，遇到缺口就跳，低矮障碍用滑行通过。时间余量较少，",
+            "过关后进入奖励房，打碎灵魂石像，再回夜之庭园下层帐篷左侧的鸟巢交付。"
           ],
           "en": [
-            "No extra ability is needed in the trial. Keep running on flat ground, jump gaps and slide through low obstacles. Time is tight. Reward: a spirit."
+            "From the left Bog tent, go one room right, one down and one left to find the trial statue.",
+            "No extra ability is needed in the trial. Keep running on flat ground, jump gaps and slide through low obstacles. Time is tight.",
+            "After clearing the trial, enter the reward room and break the spirit statue. Return the spirit to the nest left of Night Garden’s lower tent."
           ]
         }
       }
@@ -1868,13 +2049,18 @@
       "fields": {
         "referenceRoute": {
           "sources": [
-            "trials"
+            "trials",
+            "dollmaker-approach"
           ],
           "zh": [
-            "挑战内无需额外能力。起步后踩气泡连续向上弹，够到上方通道后立刻横向通过。完成后获得工坊代币。"
+            "从屋内第一处帐篷往下，敲铃展开临时平台。清完坩埚房的敌人，向右敲铃下落。继续从右侧下去，再敲铃移出平台，借平台攀上去打第一根拉杆。继续向右打第二根，挑战就在右侧。",
+            "进入赛道后连续踩气泡向上弹，到达上方通道就横向通过。",
+            "过关后直走领取工坊代币。继续主线时折返到计时装置旁，从那里往下走。"
           ],
           "en": [
-            "No extra ability is needed in the trial. Chain bubble bounces to gain height, then cross as soon as you reach the upper path. Reward: a Workshop Token."
+            "Go down from the first tent and ring the bell to extend the temporary platforms. Clear the cauldron room, then ring the bell on the right and drop. Keep descending on the right, ring the next bell and climb the platform to strike the first lever. Head right to strike the second lever and enter the trial.",
+            "Chain bubble bounces to gain height, then cross as soon as you reach the upper path.",
+            "After clearing the trial, go straight ahead for the Workshop Token. To continue the main route, backtrack to the trial device and drop beside it."
           ]
         }
       }
@@ -1886,13 +2072,16 @@
         "referenceRoute": {
           "sources": [
             "trials",
+            "trial-statue-locations",
             "slot-locations"
           ],
           "zh": [
+            "从墓谷帐篷往左三间，再依次往上、往左、往上各一间，到挑战石像。",
             "起跑时先用弹弓射出火柴，再跑过前方平台。抵达插着火柴的位置后，借火柴弹跳上高处。",
             "末段遇到移动刺球，可稍等间隙再通过。完成挑战后，奖励路线需要无限攀爬，可领取饰物槽。参考全收集图文第 74 项。"
           ],
           "en": [
+            "From the Graven Valley tent, go left three rooms, then up one, left one and up one to reach the trial statue.",
             "Fire the matchstick as the timer starts, then sprint across the platforms. Bounce off the planted matchstick to reach the upper path.",
             "Near the finish, wait briefly for a gap between moving spike balls. The reward route requires Endless Climb and leads to a trinket slot. See entry 74 in the collectible walkthrough."
           ]
@@ -1905,15 +2094,18 @@
       "fields": {
         "referenceRoute": {
           "sources": [
-            "trials"
+            "trials",
+            "trinket-locations"
           ],
           "zh": [
-            "带上无限攀爬和悬停。这是一条向上的路线，贴墙往上爬，需要换边时从一侧墙跳到另一侧，接着向上。",
-            "完成挑战后获得鱼钩饰物，低血量时可加快火焰容器补充。"
+            "从排水道中央帐篷向左走两间，再往上进入计时挑战房。",
+            "建议带上无限攀爬和悬停。贴墙往上爬，需要换边时蹬墙跳到对面，再继续向上。",
+            "过关后走进开启的奖励房拾取鱼钩。装备后，低血量时焰瓶补充更快。"
           ],
           "en": [
-            "Bring Endless Climb and Hover. Climb the vertical route, wall-jumping across to the opposite wall when you need to switch sides.",
-            "Finish the trial to earn Fish Hook, which speeds Flaming Vessel refill at low health."
+            "From the central Drains tent, go left two rooms, then up into the time trial room.",
+            "Endless Climb and Hover are recommended. Climb the vertical route, wall-jumping across to the opposite wall when you need to switch sides.",
+            "After clearing the trial, enter the unlocked reward room to pick up Fish Hook. Equipping it speeds up Flaming Vessel refills at low health."
           ]
         }
       }
@@ -1923,14 +2115,16 @@
       "id": "desiccated-castle",
       "fields": {
         "referenceChecklist": {
-          "sources": ["castle-hover", "trinket-locations", "pages"],
+          "sources": ["castle-hover", "trinket-locations", "pages", "spirit-room-routes"],
           "zh": [
+            "暗墙后的灵魂：从干涸城堡上方帐篷往右再往上。看到墙内的石像后，在它正下方找暗墙，用弹弓把火柴变成落脚点，借力跳进暗道并打碎石像。",
             "银勺：站在机关房东侧出口旁的平台，用弹弓打西侧齿轮，收起挡住上层的活动平台。再把火柴射到下方草地平台，踩火柴向上弹，贴墙攀到银勺处。装备后，开始治疗时会短暂出现护盾。",
             "烧焦鞋带：从东侧操作拉杆打开塔楼的门，再沿中央竖井蹬墙上攀拾取。装备后，全速奔跑会留下余烬。",
             "《女巫的交易》第 4 页：打完躲避女王段落后再回收，带弹弓和攀爬，对照全书页图文第 8 项的房间图。",
             "《女巫的交易》第 8 页：用弹弓触发地板机关，沿右侧升柱上升。升到与左侧横伸的尖刺柱齐平时，把火柴用作落脚点，再跳过去。对应全书页图文第 21 项。"
           ],
           "en": [
+            "Spirit behind the hidden wall: From the upper Desiccated Castle tent, go right and then up. Look for the illusory wall directly below the statue, use Slingshot to create a matchstick foothold and bounce up into the passage to break the statue.",
             "Silver Spoon: From the platform by the east exit of the puzzle room, use Slingshot to hit the gear on the west side and retract the platform blocking the upper route. Fire the matchstick into the grassy platform below, bounce up and climb the wall to the Spoon. Equipping it briefly shields you when you start healing.",
             "Burnt Shoelace: Open the tower doors with the lever to the east, then wall-jump up the central shaft to collect it. Equipping it leaves a trail of embers when you run at full speed.",
             "The Witch’s Bargain page 4: Return after completing the Queen evasion sequence. Bring Slingshot and Climb and use the room map in illustrated story-page entry 8.",
@@ -1997,16 +2191,16 @@
       "id": "the-docks",
       "fields": {
         "referenceChecklist": {
-          "sources": ["docks-collectibles", "trinket-locations"],
+          "sources": ["docks-collectibles", "trinket-locations", "spirit-room-routes"],
           "zh": [
             "缠线钉：从码头右侧帐篷向上两间，再往右过气泡机关，继续向上。带上攀爬和悬停。装备后，敌人被击败时会产生小爆炸。",
             "邮票：从同一处帐篷向上五间，再向左到计时挑战石像。继续向左一间后下落，在尖刺房用弹弓把火柴变成落脚点，配合攀爬和悬停过去。装备后，无伤连续击败敌人可获得更多货币。",
-            "回访时可顺路补收集：从右侧帐篷向上三间，在房间左端的平台查灵魂石像。经过计时挑战石像时，也可完成挑战并进入奖励房领取饰物槽。"
+            "码头的两处灵魂：从右侧帐篷向上三间，检查房间左端的平台。另一处从左下帐篷出发，依次往右、右上、右走，在房间中央找暗墙，向下穿入找到石像。经过计时挑战石像时，也可完成挑战并进入奖励房领取饰物槽。"
           ],
           "en": [
             "Nails with Twine: From the right-hand Docks tent, go up two rooms, head right through the bubble puzzle and continue upward. Bring Climb and Hover. With it equipped, defeated enemies produce a small explosion.",
             "Postage Stamp: From the same tent, go up five rooms and left to the time trial statue. Go left one more room and drop down. Use Slingshot to place the matchstick as a foothold across the spikes, with Climb and Hover. Equipping it boosts currency from consecutive kills without taking damage.",
-            "For nearby pickups, go up three rooms from the right-hand tent and check the far-left platform for a spirit statue. At the time trial statue, complete the challenge and enter the reward room for a trinket slot."
+            "Both Docks spirits: From the right-hand tent, go up three rooms and check the far-left platform. For the other statue, go right, up-right and right from the lower-left tent, then drop through the hidden wall near the center. Complete the time trial and enter its reward room if you also need the trinket slot."
           ]
         },
         "referencePuzzle": {
@@ -2114,7 +2308,7 @@
             "午夜暴雨（第 22 项）：需要弹弓。先把火柴射向最远的气泡，再沿其余气泡依次弹跳过去。",
             "瞭望塔（图文第 35 项）：需要悬停、攀爬和弹弓。把火柴从窄缝射到另一侧，借它当落脚点，再弹跳上去拿槽位。",
             "下水道（第 53 项）：装备玻璃眼可帮助辨认隐藏入口，进暗道拾取需要御风和悬停。",
-            "墓谷计时挑战（第 74 项）：起跑时先射出火柴，再跑过前方平台。抵达火柴时借它向上弹跳。末段遇到移动刺球，可稍停等空隙再通过。完成挑战后领取饰物槽。",
+            "墓谷计时挑战（第 74 项）：起跑时先射出火柴，再跑过前方平台。抵达火柴时借它向上弹跳。末段遇到移动刺球，可稍停等空隙再通过。完成挑战后，用无限攀爬通过奖励路线，领取饰物槽。",
             "埋葬墓穴（第 78、80 项）：第 78 项藏在暗道内，无需额外能力。第 80 项需要无限攀爬和悬停。按编号对照各自的房间地图。",
             "参考图文的编号包含商店购入和地图拾取，可用来定位截图。"
           ],
@@ -2127,7 +2321,7 @@
             "Midnight Drench (entry 22): Use Slingshot to fire the matchstick toward the farthest bubble, then bounce across the remaining bubbles.",
             "Lookout Tower (entry 35): Bring Hover, Climb and Slingshot. Fire the matchstick through the gap to create a foothold on the far side, then bounce up to the slot.",
             "The Drains (entry 53): Glass Eye can help reveal the hidden entrance. Bring Wind Ride and Hover to reach the slot.",
-            "Graven Valley time trial (entry 74): Fire the matchstick as the timer starts, then sprint over the platforms. Bounce off it to gain height. Near the finish, pause briefly for an opening between the moving spike balls if needed. Finish the trial to earn the slot.",
+            "Graven Valley time trial (entry 74): Fire the matchstick as the timer starts, then sprint over the platforms. Bounce off it to gain height. Near the finish, pause briefly for an opening between the moving spike balls if needed. After finishing the trial, use Endless Climb on the reward route to reach the slot.",
             "Burial Vault (entries 78 and 80): Entry 78 is in a hidden passage and needs no extra ability. Entry 80 requires Endless Climb and Hover. Use the matching room map for each.",
             "The walkthrough numbers both shop purchases and map pickups. Use those numbers to find the corresponding screenshots."
           ]
@@ -2143,12 +2337,14 @@
             "bouncing"
           ],
           "zh": [
-            "先在 Looter 商店购买并装备瓶盖饰物，再找帐篷附近的平坦空间练习。",
-            "向上抛瓶，保持在瓶子下方，用火柴连续向上击打十次；失败后回帐篷补充再试。"
+            "先在帐篷的拾荒者商店花 250 货币购买瓶盖并装备。可到午夜暴雨的帐篷附近找一块平地，选头顶留有空间的位置练习。",
+            "把焰瓶朝正上方投出，站在它下方。每次等瓶子落回火柴的攻击范围，再向上击打把它弹回去。用同一只焰瓶接满 10 次。",
+            "瓶子偏向一侧时，先小步移到它下方再出手。碰墙或落地后没碎还能继续接，但反弹方向更难控制。碎了就换一瓶，库存用完可回帐篷补充。"
           ],
           "en": [
-            "Buy and equip Bottle Cap, then practise on flat ground near a tent.",
-            "Throw upward and stay underneath, hitting upward ten times; refill at the tent between attempts."
+            "Buy Bottle Cap for 250 currency at Looter’s tent shop and equip it. For a practice spot, look for flat ground with room overhead near a Midnight Drench tent.",
+            "Throw a Flaming Vessel straight up and stay underneath. Wait until it falls within matchstick range, then strike upward to send it back up. Land ten hits on the same vessel.",
+            "If the vessel drifts, take a short step beneath it before swinging. You can recover after a wall or floor bounce if it survives, though the rebound is harder to control. Start with a fresh vessel if it breaks, and refill at the tent when you run out."
           ]
         }
       }
@@ -2159,15 +2355,18 @@
       "fields": {
         "referenceStrategy": {
           "sources": [
-            "hide"
+            "hide",
+            "castle-hover"
           ],
           "zh": [
-            "发生在干涸城堡的女王搜寻段落。避开探照光束，利用房间遮挡分段移动。",
-            "被发现会回到检查点；通过整段并触发 Looter 被抓的剧情后解锁。"
+            "从干涸城堡的帐篷向右，在缺口下落，沿通道找到戴上金耳环的拾荒者。对话过后开始潜行。",
+            "躲在墙后等光束扫向另一侧，再跑到下一处遮挡。遇到封路时先爬上平台，敲拉杆开门。被照到会回检查点，可以重新等光束扫开。",
+            "继续追上拾荒者，看到他被带走的剧情就会解锁成就。之后可继续往右、在尽头下落，沿下层路线去找悬停能力蛋。"
           ],
           "en": [
-            "This occurs during the Queen’s search in Desiccated Castle. Avoid the searchlight and move between cover.",
-            "Detection returns you to a checkpoint; finish the sequence and Looter’s capture scene to unlock it."
+            "Go right from the Desiccated Castle tent and drop through the gap. Follow the passage to Looter as he puts on the golden earring. The stealth sequence starts after the conversation.",
+            "Wait behind a wall until the beam sweeps away, then run to the next cover. At the blocked passage, climb the platforms and strike the lever. If the beam catches you, wait for the next opening after restarting at the checkpoint.",
+            "Follow Looter until the capture scene unlocks the achievement. Then go right, drop at the far end and take the lower route toward the Hover Ability Egg."
           ]
         }
       }
@@ -2179,15 +2378,20 @@
         "referenceChecklist": {
           "sources": [
             "full",
-            "community-route"
+            "community-route",
+            "trinket-locations"
           ],
           "zh": [
             "目标为收齐 32 件饰物，商店出售的饰物也计入。",
-            "收尾时检查旅店的虫翅与余烬瓶，以及归还灵魂获得的饰物。"
+            "先查帐篷商店的六件：瓶盖、骷髅钥匙扣、玻璃眼、生锈顶针、风化硬币和银戒指。若已经击败女王，可以先拿女王金币，再回来补买。",
+            "再查鸟巢的三件奖励：归还 2、12、20 个灵魂时，分别取得小女巫雕像、珍珠饰品和带线回形针。凑齐石像后记得回夜之庭园交付。",
+            "最后按名称核对地图拾取。蛛雨旅店的虫翅要借蛛网团绕过尖刺，从上方落下。余烬瓶要用弹弓敲铃切换平台。排水道的鱼钩则在计时挑战的奖励房里。"
           ],
           "en": [
             "Collect all 32 trinkets, including those sold in the shop.",
-            "For cleanup, check Insect Wing and Ember Vial in the inn, plus spirit-return trinket rewards."
+            "Check the six tent shop trinkets first: Bottle Cap, Skull Keychain, Glass Eye, Rusted Thimble, Weathered Coin and Silver Ring. If the Queen is defeated, collect her coin before buying the remaining items.",
+            "Next check the three nest rewards: Tiny Witch Sculpture at 2 returns, Pearl Jewelry at 12 and Paper Clip with String at 20. Bring the rescued spirits back to Night Garden to claim them.",
+            "Finally, compare map pickups by name. For Insect Wing in Webdrench Inn, launch from web to web around the spikes and drop in from above. For Ember Vial, use Slingshot to ring the bell and flip the platforms. Fish Hook is in the Drains time trial reward room."
           ]
         }
       }
@@ -2198,15 +2402,18 @@
       "fields": {
         "referenceChecklist": {
           "sources": [
-            "full"
+            "full",
+            "workshop"
           ],
           "zh": [
-            "条件是把所有可升级饰物升到最高级，不是单纯收齐工坊代币。",
-            "逐件检查工坊菜单，预留货币和代币；没有升级选项的饰物无需额外处理。"
+            "击败排水道女士后，留意「进入帐篷」旁的红色感叹号。进帐篷找 Willow 领取首枚工坊代币，再打开工坊菜单。",
+            "收齐饰物后，在帐篷里逐件把可升级饰物升到最高级。每次升级要花代币和货币。参考实机路线，升满共需要 26 枚代币，地图与任务奖励合计可拿 27 枚。",
+            "如果代币有剩但成就没解锁，先检查工坊菜单里还有哪些饰物未升满。缺代币时，优先查水疗馆浴池上方、玩偶师之家计时挑战奖励房和埋葬墓穴暗道。"
           ],
           "en": [
-            "Max out every upgradeable trinket; collecting Workshop Tokens alone is insufficient.",
-            "Check each workshop entry and reserve currency and tokens; trinkets without upgrades need no further work."
+            "After defeating the Lady of the Drains, look for a red exclamation mark beside the tent entry prompt. Speak to Willow inside for your first Workshop Token, then open the workshop menu.",
+            "Collect the trinkets and max out every upgradeable one at a tent. Upgrades cost tokens and currency. The recorded route uses 26 of the 27 available tokens.",
+            "If the achievement is still locked and you have tokens left, check the workshop for trinkets that still have upgrades available. If you are short on tokens, check above the spa baths, the Dollmaker’s House trial reward room and the hidden passages in Burial Vault."
           ]
         }
       }
@@ -2896,12 +3103,16 @@
             "queen-postgame"
           ],
           "zh": [
-            "击败女王后，集齐 32 件饰物开寝室西门，学会腾空并拿到神秘标记。归还 20 个灵魂的饰物奖励也计入这 32 件。",
-            "按神秘标记拿齐五枚灵魂碎片。收齐后打开地图，跟随新增目标回夜之庭园原来交还灵魂的鸟巢，观看最后的团聚过场并核对 Together at Last 成就。"
+            "寝室外门打不开：先完成女王战后的庆祝剧情，再回战场上方。在门边找拾荒者对话，然后敲天花板上的拉杆。",
+            "寝室西门打不开：核对 32 件饰物。归还 20 个灵魂后领到的带线回形针也计入。还需要补买饰物时，可先拿寝室桌上的女王金币。",
+            "学会腾空后地图仍没有碎片标记：回能力蛋所在的鸟巢，从鸟巢往上腾空进入高处房间，拾取神秘标记，地图会显示五处入口。",
+            "五枚碎片齐全后，打开地图找新增目标。回夜之庭园下层帐篷左边、平时交还灵魂的鸟巢，观看团聚过场并核对成就。"
           ],
           "en": [
-            "After defeating the Queen, collect all 32 trinkets, open the western chamber door, learn Soar and pick up Mysterious Markings. The trinket awarded for returning all 20 spirits counts toward the 32.",
-            "Collect all five Spirit Fragments. Follow the new map objective back to the original spirit nest in Night Garden, watch the reunion cutscene and check for Together at Last."
+            "Outer chamber door still closed: Finish the celebration after the Queen fight, then return above the arena. Talk to Looter by the door and strike the ceiling lever.",
+            "Western chamber door still closed: Check all 32 trinkets, including Paper Clip with String for returning all 20 spirits. Pick up the Queen’s Coin from the table before buying any remaining trinkets.",
+            "No fragment markers after learning Soar: Return to the Ability Egg nest, soar into the room above it and pick up Mysterious Markings. This reveals the five entrances on the map.",
+            "Once you have all five fragments, open the map and follow the new objective. Return to the original spirit nest left of the lower Night Garden tent, watch the reunion and check for the achievement."
           ]
         }
       }

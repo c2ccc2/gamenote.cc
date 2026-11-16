@@ -1,10 +1,20 @@
 // Static paired pages: human-authored text translations, not runtime machine translation.
 const writeFile = require('./lib/write-file.cjs');
-const fs=require('node:fs'),path=require('node:path'),cheerio=require('cheerio');
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),cheerio=require('cheerio');
 const {loadClassicData,confirmed,approvedImage}=require('./lib/classic-data.cjs');
 const root=path.resolve(__dirname,'..'),base='/games/an-jing-wei-guang/',origin='https://gamenote.cc',data=loadClassicData(root);
 const labels=require('../content/games/an-jing-wei-guang/labels-zh.json'),ui=require('../content/games/an-jing-wei-guang/ui-en.json'),video=require('../content/games/an-jing-wei-guang/video-en.json');
 const dictionary=new Map(Object.entries(ui)),untranslated=new Set();
+const siteContext={window:{GAMENOTE_ROUTES:require('../assets/routes.js')}};
+vm.runInNewContext(fs.readFileSync(path.join(root,'assets/content.js'),'utf8'),siteContext);
+dictionary.set('攻略更新','Guide updates');
+for(const update of siteContext.window.GAMENOTE_CONTENT.updates.filter(u=>u.game==='an-jing-wei-guang'&&u.en)){
+ dictionary.set(update.title,update.en.title);
+ dictionary.set(update.description,update.en.description);
+ update.details?.forEach((section,index)=>dictionary.set(section.title,update.en.details[index].title));
+}
+dictionary.set(data.abilities.length+' 项能力可查用途与获取路线',data.abilities.length+' abilities with uses and acquisition routes');
+dictionary.set('20 个灵魂、23 张书页、27 枚工坊代币及 32 件饰物均有查漏表','Checklists for 20 spirits, 23 story pages, 27 Workshop Tokens and 32 trinkets');
 for(const item of require('../content/games/an-jing-wei-guang/reference-refresh.json').entries)for(const field of Object.values(item.fields))field.zh.forEach((text,index)=>dictionary.set(text,field.en[index]));
 for(const area of require('../content/games/an-jing-wei-guang/late-walkthrough.json').areas){
  for(const key of ['goal','before'])dictionary.set(area.zh[key],area.en[key]);
@@ -12,6 +22,46 @@ for(const area of require('../content/games/an-jing-wei-guang/late-walkthrough.j
  area.zh.steps.forEach((step,index)=>{dictionary.set(step.title,area.en.steps[index].title);dictionary.set(step.text,area.en.steps[index].text)});
  for(const id of area.next){const record=data.areas.find(record=>record.id===id);dictionary.set('后续区域：'+(labels[record.nameEn]||record.nameEn),'Next area: '+record.nameEn)}
 }
+for(const [zh,en] of Object.entries({
+ '能力准备':'Movement setup',
+ '按书内页码查找':'Find a page by book',
+ '书内页码':'Page in book',
+ '拾取准备':'What to bring',
+ '无需额外能力':'No extra ability',
+ '弹弓、悬停（干涸城堡路线）':'Slingshot and Hover (Desiccated Castle route)',
+ '潜水载具':'Submersible',
+ '弹弓、无限攀爬、悬停':'Slingshot, Endless Climb and Hover',
+ '无限攀爬、悬停':'Endless Climb and Hover',
+ '拾取准备按本攻略的回收路线标注。区域入口仍需满足主线推进条件。':'These requirements follow the collection routes in this guide. Area entrances still depend on story progression.',
+ '本区故事书页':'Story pages in this area',
+ '书名':'Book',
+ '图文编号':'Illustrated guide entry',
+ '《女巫的交易》':'The Witch’s Bargain',
+ '《玩偶师》':'The Dollmaker',
+ '《瞭望塔》':'The Lookout Tower',
+ '先在游戏的 Pages 菜单确认缺页，再按书名和页码找区域。点击图文编号可打开对应的房间截图条目。':'Check the in-game Pages menu, then use the book title and page number to find the area. Select the illustrated guide entry to open the corresponding room screenshots.',
+ '工坊代币回访路线':'Workshop Token cleanup routes',
+ '容易漏掉的工坊代币':'Easy-to-miss Workshop Tokens',
+ '区域或任务':'Area or quest',
+ '怎么拿':'How to collect',
+ '水疗馆':'Spa',
+ '玩偶师之家计时挑战':'Dollmaker’s House time trial',
+ '听到 Willow 开设水疗馆的消息后，从夜之庭园灵魂鸟巢附近的帐篷往左进水疗馆，检查浴池上方。':'After Willow announces the spa, head left from the tent near the Night Garden spirit nest to enter it. Check above the baths.',
+ '过关后直走进奖励房拿代币。回到计时装置旁往下，接回主线。':'After clearing the trial, go straight into the reward room for the token. Return to the trial device and drop beside it to resume the main route.',
+ '回访暗道时带上悬停和无限攀爬。遇到需要在墙上架火柴的支路，再用墙壁弹射，并检查暗道里的挡板。':'Bring Hover and Endless Climb for the hidden passages. Use Wall Sling where you need a foothold on a wall, and check for a barrier inside the passage.',
+ '从左侧帐篷往上两间，用无限攀爬和悬停绕到房间中央的代币上方，再落下拾取。':'Go up two rooms from the left tent. Use Endless Climb and Hover to get above the token in the center of the room, then drop onto it.',
+ '按奖励查漏':'Find missing trial rewards',
+ '计时挑战奖励去向':'Time trials by reward',
+ '补灵魂时，过关后进奖励房打碎石像，再回夜之庭园下层帐篷左侧的鸟巢交付。':'For spirit rewards, enter the reward room and break the statue after clearing the trial. Return the spirit to the nest left of the lower Night Garden tent.',
+ '鱼钩':'Fish Hook',
+ '弹弓、攀爬':'Slingshot and Climb',
+ '攀爬、悬停':'Climb and Hover',
+ '弹弓、攀爬、悬停':'Slingshot, Climb and Hover',
+ '赛道内用基础移动':'Basic movement on the course',
+ '赛道内用基础移动和气泡':'Basic movement and bubbles on the course',
+ '赛道用弹弓，领奖用无限攀爬':'Slingshot for the course, Endless Climb for the reward',
+ '推荐无限攀爬、悬停':'Endless Climb and Hover recommended'
+}))dictionary.set(zh,en);
 for(const [zh,en] of Object.entries({'按节点推进':'Follow the Checkpoints','本段目标':'Goal','入区准备':'Before Entering','路线节点示意':'Route checkpoints','GAME NOTE 原创节点示意 · 不代表实际房间地图':'Original GAME NOTE checkpoint diagram · not a room map','离开前检查':'Before Leaving','后续攻略':'Related guides','首领战要点':'Boss battle notes','护送任务':'Escort quest','兄弟姐妹任务':'Sibling quest'}))dictionary.set(zh,en);
 for(const [zh,en] of Object.entries({'参考推进路线':'Reference Route','参考战斗要点':'Battle Notes','收集核对要点':'Collection Notes','参考区域定位':'Regional Orientation'}))dictionary.set(zh,en);
 dictionary.set('攻略整理进度','Guide Progress');
@@ -99,6 +149,8 @@ dictionary.set('码头计时挑战','The Docks time trial');
 dictionary.set('排水道计时挑战','The Drains time trial');
 dictionary.set('猎人小屋计时挑战','Hunter’s Cabin time trial');
 dictionary.set('秋日森林计时挑战','Autumn Forest time trial');
+dictionary.set('本区计时挑战','Time trial in this area');
+dictionary.set('沼泽计时挑战','The Bog time trial');
 dictionary.set('查看完整首领打法','Read the full boss guide');
 for(const [zh,en] of Object.entries({'墓谷救援流程':'Graven Valley rescue walkthrough','深海流程':'The Deep walkthrough','玩偶师之家流程':'Dollmaker’s House walkthrough'}))dictionary.set(zh,en);
 dictionary.set('工坊代币位置清单','Workshop Token location checklist');
@@ -168,7 +220,7 @@ for(const item of require('../content/games/an-jing-wei-guang/ability-reference.
 for(const [zh,en] of Object.entries(require('../content/games/an-jing-wei-guang/details-en.json')))dictionary.set(zh,en);
 const p1=require('../content/games/an-jing-wei-guang/p1-en.json');
 for(const [id,texts] of Object.entries(p1)){const blocks=data.areas.find(a=>a.id===id).fields.guide.value;if(blocks.length!==texts.length)throw Error('P1 translation count mismatch');blocks.forEach((b,index)=>dictionary.set(b.text,texts[index]))}
-for(const e of data.achievements)dictionary.set(e.description,e.descriptionEn);
+for(const e of data.achievements)if(!dictionary.has(e.description))dictionary.set(e.description,e.descriptionEn);
 for(const [english,chinese] of Object.entries(labels))dictionary.set(chinese,english);
 for(const records of Object.values(data).filter(Array.isArray))for(const record of records){if(confirmed(record.fields.nameZh)&&record.nameEn)dictionary.set(record.fields.nameZh.value,record.nameEn)}
 for(let part=2;part<=7;part++){
@@ -211,6 +263,7 @@ for(const file of all){
  if(achievement){
   en('h1').text(achievement.nameEn);
   const hasGuide=confirmed(achievement.fields.referenceChecklist)||confirmed(achievement.fields.referenceStrategy);
+  if(hasGuide)en('.classic-main > article > p').first().text(achievement.descriptionEn);
   if(!hasGuide)en('.classic-main > article').html(`<p>${escape(achievement.descriptionEn)}</p><p><a href="https://steamcommunity.com/stats/3699590/achievements/?l=english">Steam English achievement list</a></p><h2 class="classic-heading">Related guides</h2><ul class="classic-links"><li><a href="/en${base}achievements/">Achievement index</a></li></ul>`);
  }
  if(route===base+'achievements/')en('.classic-main > article').html('<p>Well Dweller has 41 Steam achievements. The names and descriptions below use the official English Steam text.</p><div class="classic-table-wrap" tabindex="0" role="region" aria-label="Achievements"><table class="classic-table"><caption>Steam achievements</caption><thead><tr><th scope="col">Achievement</th><th scope="col">Official description</th></tr></thead><tbody>'+data.achievements.map(e=>`<tr><td><a href="/en${base}achievements/${e.slug}/">${escape(e.nameEn)}</a></td><td>${escape(e.descriptionEn)}</td></tr>`).join('')+'</tbody></table></div>');
