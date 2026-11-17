@@ -75,6 +75,28 @@ window.GAMENOTE_CONTENT = {
   ],
   updates: [
     {
+      slug: 'well-dweller-walkthrough-follow-up-2026-11-17', date: '2026-11-17', game: 'an-jing-wei-guang', type: 'Site',
+      title: '《黯井微光》攻略更新：后段路线图与收尾查漏',
+      relatedUrl: '/games/an-jing-wei-guang/',
+      description: '七个后段区域加入路线示意图，六条任务可从目录直达关键步骤，并补齐战后推进、收集跳转和旧版本问题的排查说明。',
+      details: [
+        { title: '后段路线图与实录对照', text: '午夜暴雨、瞭望塔、秋日森林、玩偶师之家、埋葬墓穴、女王城堡和蛛雨旅店都有中英文路线示意图。七个区域、13 场首领、6 条任务和 10 场计时挑战增加了原作者实录索引和时间点。七区实机截图及逐段核验仍待补充。', url: '/games/an-jing-wei-guang/walkthrough/' },
+        { title: '任务与真结局', text: '六条任务从目录直达关键步骤，补充升降机部件、失踪船员、墓谷救援和城堡三处牢笼的查找入口。真结局路线串起女王寝室、腾空、神秘标记与五处灵魂碎片，并标明码头 100 个闪光物挑战的走法。', url: '/games/an-jing-wei-guang/secrets/#endings' },
+        { title: '收集查漏', text: '拾荒者零件可按部位跳转，七根金色羽毛的清单可直达战后领取步骤。饰物与工坊代币的图文编号可点击，另可按鸟巢奖励和商店原价核对饰物。', url: '/games/an-jing-wei-guang/collectibles/trinkets/#all-trinkets' },
+        { title: '辅助设置与版本提示', text: '补上计时挑战重试和加时设置、长按治疗、帐篷传送补焰瓶，以及旅店追逐、旧版本灵魂奖励漏发等问题的处理方式。', url: '/games/an-jing-wei-guang/challenges/time-trials/#trial-controls' }
+      ],
+      en: {
+        title: 'Well Dweller guide update — Later routes and completion checks',
+        description: 'Seven later areas now have route diagrams, all six quests link to their key steps, and boss follow-ups, collectible links and patch notes have been expanded.',
+        details: [
+          { title: 'Later routes and gameplay recordings', text: 'Seven later areas now have route diagrams in both languages. Those seven areas, all 13 boss fights, six quests and ten time trials link to the original gameplay index and timestamps. In-guide gameplay screenshots for those areas and step-by-step verification are still pending.', url: '/games/an-jing-wei-guang/walkthrough/' },
+          { title: 'Quests and the true ending', text: 'The quest index links to key steps for the six quests, including the lift parts, missing sailors, Graven Valley rescue and castle cages. The true-ending guide connects the Queen’s chambers, Soar, Mysterious Markings and all five Spirit Fragment entrances, with tips for the Docks challenge to collect 100 lights.', url: '/games/an-jing-wei-guang/secrets/#endings' },
+          { title: 'Collectible cleanup', text: 'Jump to individual Looter parts or the post-boss Golden Feather pickups. Trinket and Workshop Token numbers link to illustrated references, and the trinket list includes nest rewards and original shop prices.', url: '/games/an-jing-wei-guang/collectibles/trinkets/#all-trinkets' },
+          { title: 'Assist settings and patch notes', text: 'Added trial restart and extra-time instructions, hold-to-heal settings, Flaming Vessel refills on tent travel, and notes on Innkeeper checkpoints and missing spirit rewards on older builds.', url: '/games/an-jing-wei-guang/challenges/time-trials/#trial-controls' }
+        ]
+      }
+    },
+    {
       slug: 'well-dweller-guide-progress-2026-11-17', date: '2026-11-17', game: 'an-jing-wei-guang', type: 'Site',
       title: '《黯井微光》攻略进度：计时挑战与收集查漏',
       relatedUrl: '/games/an-jing-wei-guang/#guide-progress',

@@ -9,16 +9,16 @@ const bossFollowUps=[
  ["the-groundskeeper","园丁","从战场右侧进入猎人小屋，找拾荒者解锁焰瓶，再往深处拿弹弓。","Leave the arena to the right for Hunter’s Cabin. Speak to Looter for the Flaming Vessel, then continue deeper for Slingshot.","walkthrough/hunters-cabin/"],
  ["the-swarm","虫群","战场右侧下落，在下层鸟巢学攀爬。","Drop to the right of the arena and learn Climb at the lower nest.","abilities/climb/"],
  ["the-lady-of-the-drains","排水道女士","继续到后续房间拿金色羽毛。帐篷入口出现红色感叹号时，进去找 Willow 领首枚工坊代币。","Continue to the next room for the Golden Feather. When a red exclamation mark appears at a tent, speak to Willow inside for the first Workshop Token.","achievements/in-the-workshop/"],
- ["lida-the-terrible","莉达","往左进相邻房间，和艾格伯特交谈完成救援。再从他身后的地板下落，可前往午夜暴雨。","Go to the next room on the left and speak to Egbert to complete the rescue. Drop through the floor beyond him to reach Midnight Drench.","quests/graven-valley-rescue/"],
+ ["lida-the-terrible","莉达","往左进相邻房间，和艾格伯特交谈完成救援。再从他身后的地板下落，可前往午夜暴雨。","Go to the next room on the left and speak to Egbert to complete the rescue. Drop through the floor beyond him to reach Midnight Drench.","quests/graven-valley-rescue/#rescue-exit"],
  ["shrine-of-the-seven-sons","七子神龛","向左拾取金色羽毛，再开通往干涸城堡的捷径。","Go left for the Golden Feather, then open the shortcut to Desiccated Castle.","walkthrough/midnight-drench/"],
  ["starsinger","星歌者","向右进相邻房间拾取金色羽毛。","Pick up the Golden Feather in the next room to the right.","collectibles/golden-feathers/"],
- ["forest-king","森林之王","向右进羽毛房和伊尔达交谈，顺手查她右侧暗道里的书页。","Go right to the feather room, speak to Ilda and check the hidden passage to the right for a story page.","walkthrough/autumn-forest/"],
- ["creature-from-the-deep","深海生物","继续到篝火，听完船员与 Barge 的对话后解锁水上载具。","Continue to the campfire and finish the conversation with Barge to unlock water vessels.","abilities/water-vessel/"],
+ ["forest-king","森林之王","向右进下一间，和伊尔达交谈并拾取金色羽毛。离开前查她右侧暗道里的书页。","Go right into the next room, speak to Ilda and collect the Golden Feather. Before leaving, check the hidden passage on her right for a story page.","walkthrough/autumn-forest/#area-story-pages"],
+ ["creature-from-the-deep","深海生物","继续到篝火，听完船员与 Barge 的对话后解锁水上载具，再回码头水边登船。","Continue to the campfire and finish the conversation with Barge to unlock water vessels, then return to the water to board.","quests/missing-sailors/#sailor-checkpoints"],
  ["the-colony","The Colony","完成双胞胎救援与团聚，回码头船坞找 Barge 学无限攀爬。","Finish the twins’ rescue and reunion, then return to Barge at the Docks shipyard for Endless Climb.","abilities/endless-climb/"],
  ["dollmaker","玩偶师之镜","向西救出玛格达，再进能力巢穴学墙壁弹射。","Go west to rescue Magda, then enter the ability nest to learn Wall Sling.","abilities/wall-sling/"],
- ["gravedigger","掘墓者","继续往左送 Irma 去生日聚会，完成剧情再领金色羽毛。","Continue left with Irma to the birthday party and finish the scene to receive the Golden Feather.","quests/a-ride-to-the-party/"],
- ["silver-doll","银色玩偶","继续向右，敲牢笼旁的拉杆救出一对兄弟姐妹。再按救援任务核对另外两处牢笼。","Keep going right and strike the lever beside the cage to free one sibling pair. Use the rescue guide to check the other two cages.","quests/the-queens-chamber/"],
- ["the-queen","女王","与现场角色交谈完成庆祝剧情。回战场上方找拾荒者，敲天花板拉杆进寝室，拿桌上的女王金币。","Speak to everyone present to finish the celebration. Return above the arena, speak to Looter and strike the ceiling lever. Pick up the Queen’s Coin from the table inside.","collectibles/key-items/the-queens-coin/"],
+ ["gravedigger","掘墓者","继续往左送 Irma 去生日聚会，完成剧情再领金色羽毛。","Continue left with Irma to the birthday party and finish the scene to receive the Golden Feather.","quests/a-ride-to-the-party/#escort-party"],
+ ["silver-doll","银色玩偶","继续向右，敲牢笼旁的拉杆救出一对兄弟姐妹。再按救援任务核对另外两处牢笼。","Keep going right and strike the lever beside the cage to free one sibling pair. Use the rescue guide to check the other two cages.","quests/the-queens-chamber/#cage-silver-doll"],
+ ["the-queen","女王","与现场角色交谈完成庆祝剧情。回战场上方找拾荒者，敲天花板拉杆进寝室，先拿桌上的女王金币。想继续真结局，再收齐 32 件饰物打开寝室西门。","Speak to everyone present to finish the celebration. Return above the arena, speak to Looter and strike the ceiling lever. Pick up the Queen’s Coin. For the true ending, collect all 32 trinkets to open the western door.","collectibles/key-items/the-queens-coin/"],
 ];
 const questOverview=[
  ["repair-the-elevator","修理升降机","排水道中央帐篷旁的故障升降机。","学会乘风并收齐三件部件后，下行挑战排水道女士。","Broken lift beside the central Drains tent.","Learn Wind Ride and collect three parts to reach the Lady of the Drains."],
@@ -39,7 +39,7 @@ const achievementCleanup=[
 const collectionChecks=[
  ["饰物","Trinkets","核对 32 件。商店商品与灵魂交付奖励也计入。","Check all 32, including shop purchases and spirit rewards.","collectibles/trinkets/#all-trinkets"],
  ["灵魂","Spirits","救出 20 个后，回夜之庭园鸟巢交付。","Rescue all 20 and return them to the Night Garden nest.","collectibles/spirits/#spirits-by-area"],
- ["书页","Story pages","按三本书核对 9、8、6 页。","Check the three books for 9, 8 and 6 pages.","collectibles/story-pages/#story-pages-by-book"],
+ ["书页","Story pages","按三本书核对 9、8、6 页。","Check the three books for 9, 8 and 6 pages.","collectibles/story-pages/#page-index"],
  ["工坊代币","Workshop Tokens","按区域查 27 枚的位置。升满成就要回帐篷逐件升级。","Check all 27 locations by area. Apply the upgrades at a tent for Fully Stocked.","collectibles/workshop-tokens/#tokens-by-area"],
  ["饰物槽","Trinket slots","漏项可先查计时奖励房、商店和需要后期能力的位置。","Check trial reward rooms, shops and pickups gated by late-game abilities.","collectibles/trinket-slots/#slot-cleanup"],
  ["计时挑战","Time trials","核对十场挑战的奖励是否已领取。","Check whether you claimed the rewards from all ten trials.","challenges/time-trials/"],
@@ -103,11 +103,6 @@ const tokenGroups=[
  ["queens-castle",[[27,"EH"]]],
 ];
 const tokenAbilities={S:['弹弓','Slingshot'],C:['攀爬','Climb'],H:['悬停','Hover'],W:['乘风','Wind Ride'],E:['无限攀爬','Endless Climb'],L:['墙壁弹射','Wall Sling']};
-const storyPageGroups=[
- ["《女巫的交易》","The Witch’s Bargain",[["night-garden",1],["desiccated-castle",5],["graven-valley",6],["desiccated-castle",8],["midnight-drench",9],["midnight-drench",10],["hunters-cabin",20],["desiccated-castle",21],["queens-castle",23]]],
- ["《玩偶师》","The Dollmaker",[["hunters-cabin",2],["the-bog",3],["autumn-forest",13],["the-bog",15],["dollmakers-house",16],["dollmakers-house",17],["burial-vault",18],["dollmakers-house",19]]],
- ["《瞭望塔》","The Lookout Tower",[["night-garden",4],["graven-valley",7],["lookout-tower",11],["lookout-tower",12],["the-deep",14],["the-bog",22]]],
-];
 const sharedContext={window:{GAMENOTE_ROUTES:require('../assets/routes.js')}};
 vm.runInNewContext(fs.readFileSync(path.join(root,'assets/content.js'),'utf8'),sharedContext);
 const shared=sharedContext.window.GAMENOTE_CONTENT;
@@ -148,7 +143,8 @@ for(const file of files){
    if(followUp){
     const [,,stepsZh,stepsEn,route]=followUp;
     const steps=en?stepsEn:stepsZh;
-    const section=`<section data-editorial id="after-victory"><h2 class="classic-heading">${en?'After victory':'战后下一步'}</h2><p>${esc(steps)}</p><ul class="classic-links"><li><a href="${prefix+base+route}">${en?'Open the next guide':'查看后续攻略'}</a></li><li><a href="${prefix+base+'bosses/#boss-follow-ups'}">${en?'All boss follow-ups':'首领战后推进速查'}</a></li></ul></section>`;
+    const postgame=record.slug==='the-queen'?`<li><a href="${prefix+base+'secrets/#endings'}">${en?'Continue to the true ending':'继续真结局路线'}</a></li>`:'';
+    const section=`<section data-editorial id="after-victory"><h2 class="classic-heading">${en?'After victory':'战后下一步'}</h2><p>${esc(steps)}</p><ul class="classic-links"><li><a href="${prefix+base+route}">${en?'Open the next guide':'查看后续攻略'}</a></li>${postgame}<li><a href="${prefix+base+'bosses/#boss-follow-ups'}">${en?'All boss follow-ups':'首领战后推进速查'}</a></li></ul></section>`;
     const related=article.children('h2').filter((_,node)=>/^(?:相关攻略|Related guides)$/i.test($(node).text().trim())).first();
     if(related.length)related.before(section);
     else article.append(section);
@@ -163,10 +159,15 @@ for(const file of files){
    article.prepend(`<section data-editorial id="boss-follow-ups"><h2 class="classic-heading">${en?'What to do after a boss fight':'首领战后推进速查'}</h2><div class="classic-table-wrap"><table class="classic-table"><thead><tr>${headers.map(label=>'<th scope="col">'+label+'</th>').join('')}</tr></thead><tbody>${rows}</tbody></table></div></section>`);
   }
   if(current===base+'quests/'){
+   const routeAnchors={
+    'repair-the-elevator':'elevator-parts','graven-valley-rescue':'graven-rescue-route',
+    'missing-sailors':'sailor-checkpoints','a-ride-to-the-party':'escort-route',
+    'the-castle-gate':'castle-gate-checkpoints','the-queens-chamber':'castle-cages'
+   };
    const headers=en?['Quest guide','Where to start','What it leads to']:['任务攻略','起点','后续推进'];
    const rows=questOverview.map(([slug,name,start,goal,startEn,goalEn])=>{
     const quest=data.quests.find(item=>item.slug===slug);
-    return `<tr><th scope="row"><a href="${prefix+base+'quests/'+quest.slug+'/'}">${esc(en?quest.nameEn:name)}</a></th><td>${esc(en?startEn:start)}</td><td>${esc(en?goalEn:goal)}</td></tr>`;
+    return `<tr><th scope="row"><a href="${prefix+base+'quests/'+quest.slug+'/#'+routeAnchors[slug]}">${esc(en?quest.nameEn:name)}</a></th><td>${esc(en?startEn:start)}</td><td>${esc(en?goalEn:goal)}</td></tr>`;
    }).join('');
    article.prepend(`<section data-editorial id="quest-overview"><h2 class="classic-heading">${en?'Quest starting points and next steps':'任务起点与后续推进'}</h2><div class="classic-table-wrap"><table class="classic-table"><thead><tr>${headers.map(label=>'<th scope="col">'+label+'</th>').join('')}</tr></thead><tbody>${rows}</tbody></table></div></section>`);
   }
@@ -229,50 +230,67 @@ for(const file of files){
    article.prepend(`<section data-editorial id="slot-cleanup"><h2 class="classic-heading">${en?'Trinket slot cleanup routes':'饰物槽查漏路线'}</h2><p>${en?'The entry numbers match the room screenshots in the illustrated guide.':'下列编号对应实机图文中的房间截图。'} <a href="https://gamersocialclub.ca/2026/09/22/well-dweller-100-collectibles-achievement-trophy-walkthrough/">${en?'Open the illustrated guide':'查看全收集实机图文'}</a></p><ul>${list}</ul></section>`);
   }
   if(current===base+'collectibles/trinkets/'){
+   const illustrated='https://gamersocialclub.ca/2026/09/21/well-dweller-all-trinket-locations-for-the-expert-collector-achievement-trophy-guide/';
+   const pickupRoutes={
+    'Blue Bow':'walkthrough/autumn-forest/',
+    'Doll’s Head':'challenges/puzzle-solutions/#autumn-forest',
+    'Fish Hook':'challenges/time-trials/time-trial-the-drains/',
+    'Paper Clip with String':'collectibles/spirits/#missing-spirit-reward'
+   };
    const rows=trinketEntries.map(([zh,english,location],index)=>{
     const amount=Number(location);
     const area=data.areas.find(item=>item.id===location);
     const label=area?(en?area.nameEn:area.nameZh||area.nameEn):amount<=20?(en?`Return ${amount} spirits`:`归还 ${amount} 个灵魂`):(en?`Looter’s shop · ${amount}`:`拾荒者商店 · ${amount} 货币`);
-    const route=area?'walkthrough/'+area.slug+'/':amount<=20?'collectibles/spirits/':'';
+    const route=pickupRoutes[english]||(area?'walkthrough/'+area.slug+'/':amount<=20?'collectibles/spirits/#spirits-by-area':'');
     const target=route?`<a href="${prefix+base+route}">${esc(label)}</a>`:esc(label);
-    return `<tr><th scope="row">${index+1}</th><td>${esc(en?english:zh+'（'+english+'）')}</td><td>${target}</td></tr>`;
+    const number=index+1;
+    const reference=number===22?'https://game-checklists.com/well-dweller/trinkets-checklist/#:~:text=Pearl%20Jewelery':illustrated+'#:~:text='+encodeURIComponent('Trinket '+number+' / 32: Location');
+    return `<tr id="trinket-${number}"><th scope="row"><a href="${esc(reference)}">${number}</a></th><td>${esc(en?english:zh+'（'+english+'）')}</td><td>${target}</td></tr>`;
    }).join('');
    const labels=en?['Illustrated guide entry','Trinket','How to get it']:['图文编号','饰物','获取方式'];
    article.prepend(`<section data-editorial id="all-trinkets"><h2 class="classic-heading">${en?'All 32 trinkets':'32 件饰物查漏表'}</h2><p>${en?'Check room pickups, spirit rewards and shop purchases together. Shop prices shown are before discounts.':'按名称核对地图拾取、灵魂奖励和商店购入。表内商店价格为原价。'} <a href="https://gamersocialclub.ca/2026/09/21/well-dweller-all-trinket-locations-for-the-expert-collector-achievement-trophy-guide/">${en?'Open the illustrated guide':'查看饰物实机图文'}</a></p><div class="classic-table-wrap"><table class="classic-table"><thead><tr>${labels.map(label=>'<th scope="col">'+label+'</th>').join('')}</tr></thead><tbody>${rows}</tbody></table></div></section>`);
+   const nonRoomItems=trinketEntries.map(([zh,english,location],i)=>({name:en?english:zh,amount:Number(location),number:i+1}))
+    .filter(item=>Number.isFinite(item.amount)).sort((a,b)=>a.amount-b.amount);
+   const rewards=nonRoomItems.filter(item=>item.amount<=20);
+   const shop=nonRoomItems.filter(item=>item.amount>20);
+   const names=items=>items.map(({name,amount,number})=>`<li><a href="#trinket-${number}">${esc(name)}</a> · ${amount}</li>`).join('');
+   const shopTotal=shop.reduce((sum,item)=>sum+item.amount,0);
+   article.find('#all-trinkets > p').after(`<h3 id="trinket-spirit-rewards">${en?'Spirit rewards by number returned':'按归还数量查鸟巢奖励'}</h3><ul>${names(rewards)}</ul><h3 id="trinket-shop-purchases">${en?'Shop trinkets by original price':'按原价查商店饰物'}</h3><ul>${names(shop)}</ul><p>${en?`All six cost ${shopTotal} before discounts. If you are buying the rest after the ending, pick up the Queen’s Coin first.`:`六件原价合计 ${shopTotal} 货币。通关后补买，可以先拿女王金币享折扣。`} <a href="${prefix+base+'collectibles/key-items/the-queens-coin/'}">${en?'Queen’s Coin route':'女王金币获取路线'}</a></p>`);
   }
   if(current===base+'collectibles/workshop-tokens/'){
+   const illustratedTokens='https://gamersocialclub.ca/2026/09/21/well-dweller-all-workshop-token-locations-for-the-fully-stocked-achievement-trophy-guide/';
    const rows=tokenGroups.flatMap(([id,entries])=>{
     const area=data.areas.find(item=>item.id===id);
     const label=en?area.nameEn:area.nameZh||area.nameEn;
     return entries.map(([number,codes])=>{
      const abilities=codes?codes.split('/').map(group=>[...group].map(code=>tokenAbilities[code][en?1:0]).join(en?', ':'、')).join(en?' or ':'或'):(en?'None':'无');
      const location=number===1?(en?'Tent after Lady of the Drains':'击败排水道女士后的帐篷'):label;
-     return `<tr><th scope="row">${number}</th><td><a href="${prefix+base+'walkthrough/'+area.slug+'/'}">${esc(location)}</a></td><td>${esc(abilities)}</td></tr>`;
+     const reference=illustratedTokens+'#:~:text='+encodeURIComponent('Workshop Token '+number+' / 27: Location');
+     return `<tr id="workshop-token-${number}"><th scope="row"><a href="${esc(reference)}">${number}</a></th><td><a href="${prefix+base+'walkthrough/'+area.slug+'/'}">${esc(location)}</a></td><td>${esc(abilities)}</td></tr>`;
     });
    }).join('');
    const headers=en?['Illustrated guide entry','Area','Abilities']:['图文编号','所在区域','所需能力'];
    article.prepend(`<section data-editorial id="tokens-by-area"><h2 class="classic-heading">${en?'All 27 Workshop Tokens by area':'按区域核对 27 枚工坊代币'}</h2><p>${en?'The first token comes from Willow at a tent. Use the numbered entries to find room screenshots in the illustrated guide.':'首枚由帐篷里的 Willow 交付。其他代币可按表中编号在实机图文里找房间截图。'} <a href="https://gamersocialclub.ca/2026/09/21/well-dweller-all-workshop-token-locations-for-the-fully-stocked-achievement-trophy-guide/">${en?'Open the illustrated guide':'查看代币实机图文'}</a></p><div class="classic-table-wrap"><table class="classic-table"><thead><tr>${headers.map(label=>'<th scope="col">'+label+'</th>').join('')}</tr></thead><tbody>${rows}</tbody></table></div></section>`);
   }
-  if(current===base+'collectibles/story-pages/'){
-   const tables=storyPageGroups.map(([zh,english,entries])=>{
-    const rows=entries.map(([id,reference],index)=>{
-     const area=data.areas.find(item=>item.id===id);
-     const name=en?area.nameEn:area.nameZh||area.nameEn;
-     return `<tr><th scope="row">${index+1}</th><td><a href="${prefix+base+'walkthrough/'+area.slug+'/'}">${esc(name)}</a></td><td>${reference}</td></tr>`;
-    }).join('');
-    return `<div class="classic-table-wrap"><table class="classic-table"><caption>${esc(en?english:zh)}</caption><thead><tr><th scope="col">${en?'Page in book':'书内页码'}</th><th scope="col">${en?'Area':'所在区域'}</th><th scope="col">${en?'Illustrated guide entry':'图文编号'}</th></tr></thead><tbody>${rows}</tbody></table></div>`;
-   }).join('');
-   article.prepend(`<section data-editorial id="story-pages-by-book"><h2 class="classic-heading">${en?'All 23 pages by book':'按书核对 23 张书页'}</h2><p>${en?'Match the page number in your Pages menu, then use the illustrated guide entry to find the room screenshot.':'先在游戏菜单确认缺的是哪一本、哪一页，再按右栏的图文编号找房间截图。'} <a href="https://gamersocialclub.ca/2026/09/21/well-dweller-all-story-page-locations-guide/">${en?'Open the illustrated guide':'查看书页实机图文'}</a></p>${tables}</section>`);
-  }
   if(current===base+'collectibles/spirits/'){
    const regions=data.areas.filter(area=>spiritLocations[area.id]?.length);
    const total=regions.reduce((sum,area)=>sum+spiritLocations[area.id].length,0);
+   const milestoneLinks=trinketEntries.map(([zh,english,location],i)=>({name:en?english:zh,count:Number(location),number:i+1}))
+    .filter(item=>item.count>0&&item.count<=total)
+    .map(({name,count,number})=>`<li>${en?`Return ${count} spirits`:`归还 ${count} 个灵魂`} · <a href="${prefix+base+'collectibles/trinkets/#trinket-'+number}">${esc(name)}</a></li>`).join('');
    const routes=regions.map(area=>{
     const birds=spiritLocations[area.id];
     const name=en?area.nameEn:area.nameZh||area.nameEn;
     return `<h3><a href="${prefix+base+'walkthrough/'+area.slug+'/#area-spirits'}">${esc(name)}</a>（${birds.length}）</h3><ol>${birds.map(pair=>'<li>'+esc(pair[en?1:0])+'</li>').join('')}</ol>`;
    }).join('');
-   article.prepend(`<section data-editorial id="spirits-by-area"><h2 class="classic-heading">${en?'All '+total+' spirits by area':'按区域核对 '+total+' 个灵魂'}</h2><p>${en?'After breaking the statues, return the spirits to the nest west of the lower Night Garden tent.':'打碎石像后，回夜之庭园下层帐篷左侧的鸟巢交付。'}</p>${routes}</section>`);
+   const trialLinks=['hunters-cabin','the-bog','midnight-drench','autumn-forest'].map(id=>{
+    const area=regions.find(item=>item.id===id);
+    const name=en?area.nameEn:area.nameZh||area.nameEn;
+    return `<li><a href="${prefix+base+'challenges/time-trials/time-trial-'+area.slug+'/'}">${esc(name)}</a></li>`;
+   }).join('');
+   article.prepend(`<section data-editorial id="spirits-by-area"><h2 class="classic-heading">${en?'All '+total+' spirits by area':'按区域核对 '+total+' 个灵魂'}</h2><p>${en?'After breaking the statues, return the spirits to the nest west of the lower Night Garden tent.':'打碎石像后，回夜之庭园下层帐篷左侧的鸟巢交付。'}</p><h3 id="trial-spirits">${en?'Four spirits in time trial reward rooms':'计时挑战奖励房里的四个灵魂'}</h3><p>${en?'After completing each trial, enter the reward room and break the spirit statue.':'过关后进入奖励房，打碎里面的灵魂石像。'}</p><ul>${trialLinks}</ul>${routes}</section>`);
+   article.find('#trial-spirits').before(`<h3 id="missing-spirit-reward">${en?'Missing the spirit reward?':'交齐灵魂后没拿到奖励？'}</h3><ol><li>${en?'Check that all 20 spirits have been returned to the nest. If the return count is short, go back to the nest and wait to collect the reward before leaving.':'先确认 20 个灵魂都已交给鸟巢。交付数不足时，回鸟巢交付，等领到奖励再离开。'}</li><li>${en?'If you returned all 20 on an older build and Paper Clip with String is still missing, update the game and load the same save. The October 2 Steam patch says loading the updated build should restore missing spirit rewards to your inventory.':'如果旧版本已交齐 20 个但背包仍缺带线回形针，先更新游戏，再读入原存档。Steam 的 10 月 2 日补丁说明，更新后读档应会把漏发的灵魂奖励补到背包。'}</li></ol><p><a href="https://steamcommunity.com/app/3699590/allnews/#:~:text=A%20second%20patch%20has%20been%20released">${en?'October 2 patch notes':'10 月 2 日补丁说明'}</a></p>`);
+   article.find('#missing-spirit-reward').before(`<h3 id="spirit-reward-milestones">${en?'Nest reward milestones':'鸟巢交付奖励'}</h3><ul>${milestoneLinks}</ul>`);
   }
   if(['walkthrough','bosses'].includes(parts[0]))article.find('p').each((_,n)=>{const p=$(n);if(!p.find('a').length){const value=clean(p.text(),en);if(value)p.text(value);else p.remove()}});
   article.find('.classic-image-block').each((_,n)=>{const block=$(n),copy=publicCopy.get(block.find('img').attr('src'));if(copy){if(!block.children('p').length)block.append('<p></p>');block.children('p').text(copy[en?1:0])}});

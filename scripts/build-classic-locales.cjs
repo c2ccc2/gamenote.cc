@@ -5,6 +5,27 @@ const {loadClassicData,confirmed,approvedImage}=require('./lib/classic-data.cjs'
 const root=path.resolve(__dirname,'..'),base='/games/an-jing-wei-guang/',origin='https://gamenote.cc',data=loadClassicData(root);
 const labels=require('../content/games/an-jing-wei-guang/labels-zh.json'),ui=require('../content/games/an-jing-wei-guang/ui-en.json'),video=require('../content/games/an-jing-wei-guang/video-en.json');
 const dictionary=new Map(Object.entries(ui)),untranslated=new Set();
+dictionary.set('实录对照','Gameplay recordings');
+for(const [zh,en] of Object.entries({
+ '拾荒者四件零件':'Looter’s four parts',
+ '通往拾荒者零件的金门':'Golden Gate to Looter’s part',
+ '金门钥匙在码头旧靴子里向低语者领取。进入本区金门后，按下方路线回收零件。':'Get the Golden Gate Key from Whisper inside the old boot at the Docks. Open this area’s Golden Gate and follow the linked route to the part.',
+ '接任务与金门钥匙':'Start the quest and get the Golden Gate Key',
+ '腿 · 墓谷':'Legs · Graven Valley',
+ '手臂 · 干涸城堡':'Arms · Desiccated Castle',
+ '躯干 · 排水道':'Torso · The Drains',
+ '头 · 沼泽':'Head · The Bog',
+ '回码头交付':'Return to the Docks to hand in the parts'
+}))dictionary.set(zh,en);
+dictionary.set('交齐灵魂后没拿到奖励？','Missing the spirit reward?');
+dictionary.set('重试与辅助计时','Restarting and extra time');
+dictionary.set('失误后，按住画面左下角提示的按键即可重试。Xbox 布局长按 Y，其他控制方式以屏幕提示为准。','After a mistake, hold the input shown in the bottom-left corner to restart. Hold Y with the Xbox layout, and follow the on-screen prompt for other controls.');
+dictionary.set('想先练路线，可以在游戏玩法设置里增加计时挑战的时间。若旧版本里镜头跟不上角色，先更新游戏。Steam 首个补丁修复了宽镜头设置下部分挑战无法跟随的问题。','To practise the route, add time to trials in the gameplay settings. If the camera falls behind on an older build, update the game. The first Steam patch fixed a tracking issue in some trials at wide zoom settings.');
+dictionary.set('重试按键与计时设置','Restart controls and time settings');
+dictionary.set('Steam 更新说明','Steam patch notes');
+dictionary.set('来源：GabeAndTheGoat。打开索引后，按分集和时间点查看原作者录像。','Source: GabeAndTheGoat. Open the index and use the episode and timestamp to find the original recording.');
+for(let episode=1;episode<=10;episode++)dictionary.set('第 '+episode+' 集','Episode '+episode);
+for(const clips of Object.values(require('./lib/classic-recording-chapters.cjs').areas))for(const [,,title,zh] of clips)dictionary.set(zh,title);
 const siteContext={window:{GAMENOTE_ROUTES:require('../assets/routes.js')}};
 vm.runInNewContext(fs.readFileSync(path.join(root,'assets/content.js'),'utf8'),siteContext);
 dictionary.set('攻略更新','Guide updates');
@@ -60,7 +81,7 @@ for(const [zh,en] of Object.entries({
  '赛道内用基础移动':'Basic movement on the course',
  '赛道内用基础移动和气泡':'Basic movement and bubbles on the course',
  '赛道用弹弓，领奖用无限攀爬':'Slingshot for the course, Endless Climb for the reward',
- '推荐无限攀爬、悬停':'Endless Climb and Hover recommended'
+ '可用弹弓和攀爬，回访推荐无限攀爬和悬停':'Slingshot and Climb work early. Endless Climb and Hover are recommended on a return visit.'
 }))dictionary.set(zh,en);
 for(const [zh,en] of Object.entries({'按节点推进':'Follow the Checkpoints','本段目标':'Goal','入区准备':'Before Entering','路线节点示意':'Route checkpoints','GAME NOTE 原创节点示意 · 不代表实际房间地图':'Original GAME NOTE checkpoint diagram · not a room map','离开前检查':'Before Leaving','后续攻略':'Related guides','首领战要点':'Boss battle notes','护送任务':'Escort quest','兄弟姐妹任务':'Sibling quest'}))dictionary.set(zh,en);
 for(const [zh,en] of Object.entries({'参考推进路线':'Reference Route','参考战斗要点':'Battle Notes','收集核对要点':'Collection Notes','参考区域定位':'Regional Orientation'}))dictionary.set(zh,en);
@@ -70,6 +91,55 @@ dictionary.set('通关后的探索','Postgame Exploration');
 for(const [zh,en] of Object.entries({'十场计时挑战':'All ten time trials','挑战攻略':'Trial guide','奖励类型':'Reward type','按区域打开挑战攻略，完成后继续进入奖励房拾取。补收集时，可以按右栏的奖励类型查漏。':'Open a trial guide by area. After finishing, enter the reward room to collect the prize. Use the reward column to check for missing collectibles.'}))dictionary.set(zh,en);
 for(const [zh,en] of Object.entries({'互动地图站点':'Interactive map stop','收齐后，回平时交还灵魂的鸟巢触发团聚结局。':'After collecting all five, return to the spirit nest where you normally hand in spirits to trigger the reunion ending.','打开真结局互动地图':'Open the interactive true ending map','五处腾空入口地图':'Map of the five Soar entrances','团聚结局成就':'Together at Last achievement'}))dictionary.set(zh,en);
 dictionary.set('三件升降机部件路线','Route to all three elevator parts');
+
+for(const [zh,en] of Object.entries({
+ '墓谷救援路线':'Graven Valley rescue route',
+ '会场入口找报幕人':'Meet the announcer at the entrance',
+ '走右侧下层找售票人':'Take the lower right route to the ticket seller',
+ '出示门票，打断绳子':'Show the ticket and cut the rope',
+ '战后找艾格伯特，从身后下落':'Find Egbert after the fight and drop behind him'
+}))dictionary.set(zh,en);
+for(const [zh,en] of Object.entries({
+ '伊尔玛护送路线':'Irma’s escort route',
+ '从午夜暴雨入墓穴，找到伊尔玛':'Enter from Midnight Drench and find Irma',
+ '清坩埚房，打开下层通道':'Clear the cauldron room and open the lower passage',
+ '沿箭矢平台到第二处帐篷':'Follow the arrow platforms to the second tent',
+ '掘墓者战后向左去聚会':'Head left to the party after the Gravedigger'
+}))dictionary.set(zh,en);
+for(const [zh,en] of Object.entries({
+ '女王城堡三处牢笼':'Three cages in Queen’s Castle',
+ '入城与第一处帐篷':'Entering the castle and reaching the first tent',
+ '银色玩偶战场右侧':'Right of the Silver Doll arena',
+ '第一处帐篷左侧':'Left of the first tent',
+ '第二处帐篷上方':'Above the second tent',
+ '救齐后返回伊尔达':'Return to Ilda after all three rescues',
+ '从吊笼前往女王战':'From the hanging cage to the Queen'
+}))dictionary.set(zh,en);
+for(const [zh,en] of Object.entries({
+ '从沼泽到女王城堡大门':'From the Bog to Queen’s Castle',
+ '羽毛不足七根时，先核对领取点。七子神龛战后向左拿，掘墓者战后去参加聚会，逃出蛛雨旅店后回到午夜暴雨再向左拿。':'If you have fewer than seven feathers, check the reward locations. Head left after the Shrine, attend the party after the Gravedigger, and head left in Midnight Drench after escaping Webdrench Inn.',
+ '七根齐全后传送到沼泽上方帐篷。向左打碎面前和头顶的挡板，借气泡到上层出口。下一间先往左借气泡升顶，再向右经过飞虫，到北侧城堡大门互动。':'With all seven, travel to the upper Bog tent. Head left, break the barriers ahead and overhead, then bounce to the upper exit. In the next room, go left and bounce to the top. Go right past the flying insect and interact with the north gate.',
+ '开门后沿山路上行，经过伊尔达，到顶层走左侧出口。向守卫出示羽毛后继续往左，进入女王城堡。':'Follow the mountain path past Ilda. At the top, take the left exit, show the feathers to the guard, and continue left into Queen’s Castle.'
+}))dictionary.set(zh,en);
+for(const [zh,en] of Object.entries({
+ '失踪船员卡点排查':'Missing Sailors troubleshooting',
+ '按当前进度查下一步':'Find your next step',
+ '当前卡点':'Where you are stuck',
+ '下一步':'Next step',
+ '打完深海生物，仍不能登船':'Defeated the Creature, still cannot board',
+ '沿战后路线到篝火，听完船员与巴吉的对话，再回水边登船。':'Continue to the campfire and finish the conversation between the crew member and Barge. Then return to the water to board.',
+ '只打开了一道水下闸门':'Only one underwater gate is open',
+ '回码头帐篷，改从另一侧登船。右侧路线取得鱼雷并开第一道门，左侧路线通往第二根拉杆。':'Return to the Docks tent and board from the other side. The right route leads to Torpedo and the first gate. The left route leads to the second lever.',
+ '两道闸门都开了，没见到船员':'Both gates are open, but the sailors are still missing',
+ '走巨型骷髅下方的通道。在深海帐篷存档，继续向右打虫群聚合体。':'Take the passage below the giant skull, save at the Deep tent, and go right to fight The Colony.',
+ '救出针儿和刺儿，仍爬不上长墙':'Rescued Thimble and Thistle, still cannot scale long walls',
+ '看完团聚剧情后，回码头船坞找巴吉领取无限攀爬。':'Finish the reunion scene, then return to Barge at the Docks shipyard for Endless Climb.'
+}))dictionary.set(zh,en);
+dictionary.set('先学御风','Learn Wind Ride first');
+dictionary.set('右上 · 金门上方','Upper right · Above the Golden Gate');
+dictionary.set('左下 · 气泡与长缺口','Lower left · Bubble and long gap');
+dictionary.set('中央帐篷上方 · 蜡烛风道','Above the central tent · Candle-lit shaft');
+dictionary.set('集齐后返回升降机','Return to the lift with all three parts');
 dictionary.set('码头门石与载具路线','Docks gate stones and vessel access');
 dictionary.set('鱼雷与两道水下闸门','Torpedo and the two underwater gates');
 for(const [zh,en] of Object.entries({'按机关查找':'Find a puzzle','机关':'Puzzle','四处石球与石柱机关':'Four orb-and-pillar puzzles','三块门石与水上载具':'Three gate stones and vessel access','敲铃平台、拉杆与计时挑战':'Bell platforms, levers and the time trial'}))dictionary.set(zh,en);
@@ -91,6 +161,8 @@ dictionary.set('躲避女王成就','Hide and Seek achievement');
 for(const [zh,en] of Object.entries({'女王城堡地图':'Queen’s Castle map','银色玩偶打法':'Silver Doll boss guide','女王打法':'The Queen boss guide'}))dictionary.set(zh,en);
 for(const [zh,en] of Object.entries({'码头地图':'The Docks map','墓谷地图':'Graven Valley map','干涸城堡地图':'Desiccated Castle map','排水道地图':'The Drains map','沼泽地图':'The Bog map','把拾荒者重新拼起来':'Stitched Back Together'}))dictionary.set(zh,en);
 dictionary.set("七根金色羽毛领取点","Where to claim all seven Golden Feathers");
+dictionary.set('击败星歌者后，向右进入相邻房间拾取。','After defeating Starsinger, pick up the feather in the next room to the right.');
+dictionary.set('滑出旅店回到午夜暴雨后，继续往左拾取金色羽毛。','After sliding out of the inn into Midnight Drench, continue left to pick up the Golden Feather.');
 dictionary.set("地点或任务","Location or quest");
 dictionary.set("如何领取","How to claim it");
 dictionary.set("七根齐全后回沼泽的城堡入口。瞭望塔增加飞行时长的羽毛单独计算。","With all seven feathers, return to the castle entrance in the Bog. The Lookout Tower’s flight-duration upgrades are counted separately.");
@@ -137,7 +209,12 @@ dictionary.set("按区域救出剩下的灵魂，回夜之庭园鸟巢交齐 20 
 dictionary.set("收齐 32 件饰物后开女王寝室西门，学会腾空并拿神秘标记。回访时可以顺路拿此前上不去的槽位。","Collect all 32 trinkets to open the western chamber door, learn Soar and pick up Mysterious Markings. Revisit high slots you can now reach.");
 dictionary.set("学会腾空后按标记找齐五枚灵魂碎片，再回鸟巢触发团聚结局。","Follow the markings to find all five Spirit Fragments after learning Soar, then return to the nest for the reunion ending.");
 dictionary.set("补其余收集时，先在菜单按三本故事核对 23 页，再按工坊菜单检查哪些饰物还没升满。","For remaining collectibles, check the 23 pages across all three books, then use the workshop menu to identify trinkets that still need upgrades.");
-dictionary.set('击败女王后先到寝室拿金币。集齐 32 件饰物打开寝室西门，学会腾空，再拿神秘标记。找到五枚灵魂碎片后，回夜之庭园的灵魂鸟巢触发真结局。','After defeating the Queen, collect the coin in her chambers. Gather all 32 trinkets to open the western door, learn Soar and collect Mysterious Markings. Return to the Night Garden spirit nest with all five Spirit Fragments for the true ending.');
+for(const [zh,en] of Object.entries({
+ '完成女王战后的庆祝剧情，回到战场上方，和寝室门边的拾荒者对话，再敲天花板拉杆。进寝室后可拿桌上的女王金币，补买饰物时可用折扣。':'Finish the celebration after the Queen fight and return above the arena. Speak to Looter by the chamber door, then strike the ceiling lever. Pick up the Queen’s Coin from the table for a discount on any trinkets you still need to buy.',
+ '凑齐 32 件饰物再开寝室西门。检查 20 个灵魂是否都已交给夜之庭园的鸟巢，并领取计入总数的带线回形针。':'Collect all 32 trinkets to open the western door. Return all 20 spirits to the Night Garden nest and claim Paper Clip with String, which counts toward the total.',
+ '学会腾空后，从能力蛋所在的鸟巢往上飞，到高处房间拿神秘标记，地图才会显示五处灵魂碎片入口。':'After learning Soar, fly up from the Ability Egg nest and collect Mysterious Markings in the room above. This reveals the five Spirit Fragment entrances on the map.',
+ '集齐五枚碎片后，回夜之庭园下层帐篷左边的鸟巢观看团聚过场，核对真结局成就。':'With all five fragments, return to the nest left of Night Garden’s lower tent, watch the reunion and check for the true-ending achievement.'
+}))dictionary.set(zh,en);
 dictionary.set('女王金币','The Queen’s Coin');
 dictionary.set('奖励收集攻略','Reward collection guide');
 dictionary.set('查看对应收集清单','Open the related collection checklist');
@@ -182,6 +259,21 @@ dictionary.set('计时挑战房西侧的房间。向上腾空进入平台跳跃�
 dictionary.set('低语者小屋旁的帐篷向东，到桥上腾空。','Head east from the tent near Whisper’s hut and Soar from the bridge.');
 dictionary.set('东南角帐篷右侧的鸟巢。站在巢上腾空进入隐藏塔。','Soar from the nest to the right of the southeastern tent to enter the hidden tower.');
 dictionary.set('五枚灵魂碎片路线','All five Spirit Fragment routes');
+dictionary.set('本区灵魂碎片入口','Spirit Fragment entrance in this area');
+dictionary.set('学会腾空后','After learning Soar');
+dictionary.set('先回女王寝室西门内的能力蛋鸟巢。站在巢里砸地，立刻按住跳跃穿过上方竖井，进入上层房间拿神秘标记。','Return to the Ability Egg nest beyond the west door of the Queen’s chambers. Slam the ground in the nest, then immediately hold Jump to rise through the shaft and collect Mysterious Markings in the room above.');
+dictionary.set('打开地图核对五处碎片标记。每处都从地标附近向上腾空进隐藏区。收齐后，回夜之庭园下层帐篷左侧的鸟巢。','Open the map to check the five fragment markers. At each landmark, use Soar to reach the hidden area above. With all five fragments, return to the nest left of the lower Night Garden tent.');
+for(const [zh,en] of Object.entries({
+ '进入后怎么走':'Route after entering',
+ '干涸城堡':'Desiccated Castle',
+ '沿暗道走到底拾取。':'Follow the hidden passage to the end and collect the fragment.',
+ '清完敌人，沿上方通道取碎片。':'Clear the enemies and take the upper passage to the fragment.',
+ '通过平台跳跃路段，在终点拾取。':'Clear the platforming section and collect the fragment at the end.',
+ '登上顶部平台后跳下，左右移动收齐 100 个闪光物。漏捡时可按左下角提示重试。':'Leap from the top platform and move left and right to collect all 100 lights. If you miss one, follow the bottom-left prompt to retry.',
+ '继续往上爬，在塔顶取碎片。':'Climb to the top of the tower for the fragment.',
+ '集齐五枚后，回下层帐篷左侧的鸟巢。':'With all five fragments, return to the nest left of the lower tent.',
+ '在鸟巢观看团聚过场。':'Watch the reunion at the nest.'
+}))dictionary.set(zh,en);
 dictionary.set('通关后地图参考','Postgame route map');
 dictionary.set('沼泽帐篷捷径、下水道机关门与女王寝室的开门方法。','How to open the Bog tent shortcut, the Drains switch door and the Queen’s chambers.');
 dictionary.set('帐篷右侧的路被挡住时，先往左越过平台。进入有气泡的房间，借气泡升到顶层，向右经过飞虫，从右侧出口下落。到了路障另一边，打一下开关就能开通回帐篷的捷径。','When the path right of the tent is blocked, go left across the platforms. Ride the bubbles to the top, pass the fly on the right and drop from the right exit. Hit the switch on the far side of the blockade to open the shortcut.');

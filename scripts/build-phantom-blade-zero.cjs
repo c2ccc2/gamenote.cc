@@ -3,6 +3,19 @@ const write=require('./lib/write-file.cjs');
 const opening=require('./lib/phantom-blade-zero-opening.cjs');
 const regions=require('./lib/phantom-blade-zero-regions.cjs');
 const areaBriefs=require('./lib/phantom-blade-zero-area-briefs.cjs');
+const pickupTiming=require('./lib/phantom-blade-zero-pickup-timing.cjs');
+// Describe pickups and landmarks by their appearance when a Chinese in-game name is unverified.
+const chineseAreaTerms=[
+ ['Lady’s Rift','山崖下的存档钟'],['Sanguine Twin','双持武器'],['Broken Puppet Valley','断偶所在的谷地'],
+ ['Rustblade Pavilion','残钢战后的存档钟'],['Outpost Courtyard','据点庭院'],['Outpost','据点'],
+ ['Blackstone Shard','黑石碎片'],['Peng Meng','澎猛'],['Valley Sha-Chi Tower 1st Floor','溪谷杀气塔一层'],
+ ['Hua','阿花'],['铁匠 Forge','铁匠'],['Yu’er','玉儿'],['Crimson Forest','血色森林'],['Thieves Camp','飞贼营地'],
+ ['Scarlet Wraithblade','可生成减速花的刀'],['Gu Wanyue','顾晚月'],[' Wolfjaw',''],
+ ['Heartpiercer','白蛇屋守卫'],['Perfect Vessel Pond','红灯石阶下的水边'],['Lei Dang','独臂虎'],['Tiger Cannon','虎炮'],
+ ['Violet Blossom','虚空交付的紫色花朵'],['The Last Chance','冰洞前的存档钟'],['Soulrend Cliff','断魂山崖'],
+ ['Final Battle 结局卡和 With Heart and Blood 成就','真结局卡和对应的成就提示'],
+ [' Phantom of The Old House',''],['单手剑 Aureate','金色单手剑'],['Broken Lóng Body','真龙之躯的残骸'],['Radiant Heart','发光的心形道具']
+];
 const areaGroups=[
  ['against-the-flow','悲泣溪谷','Weeping Creek Valley','flesh-lily','tower-to-waterfall','late-57','red-house-revisit'],
  ['forest-entry','血色森林','Crimson Forest','hanging-cage','bandit-camp','cliffside-lodge','mirror-forest','mirror-deep','forest-tower-revisit','three-faced-puppet'],
@@ -42,7 +55,7 @@ const official='https://pbz.s-game.com/en-US/';
 const systems='https://blog.playstation.com/2026/08/17/phantom-blade-zero-state-of-play-dives-deep-into-combat-and-the-wulin-world/';
 const combat='https://blog.playstation.com/2026/10/28/phantom-blade-zero-how-boss-weapons-transform-combat-and-exploration/';
 const pages=[
- ['walkthrough','主线流程','Main walkthrough','下方已整理山谷至煞气塔的首段路线。探索时先与沿途人物交谈，再记下未开的岔路；官方确认部分支线会开启新的故事路径。当前尚未确认具体任务的错过条件。','The first route from the valley to the tower is covered below. Talk to characters along the way and note unopened branches. The developer confirms some side quests open new story paths; individual missable conditions are pending.',systems],
+ ['walkthrough','主线流程','Main walkthrough','按区域查看推进路线与收集时机。每个区域列出初次能拿的物品、容易错过的步骤，以及取得道具或推进剧情后可回访的地点。','Browse each area for the main route, first-visit pickups, missable steps and reasons to return after obtaining an item or advancing the story.',systems],
  ['side-quests','支线任务','Side quests','按任务查找所需道具、交付位置和后续步骤。','Find quest items, hand-in locations and follow-up steps.',null],
  ['bosses','首领图鉴','Boss archive','查看已整理的首领进场路线、招式应对与战后去向。','Find arena routes, attack responses and what to do after each fight.',combat],
  ['equipment','兵器与配装','Weapons & builds','先给两把主武器安排不同用途：一把练习短连段，一把用于切换后接续攻势。副武器有使用限制，留给明确的输出或控场机会。Scarlet Wraithblade 的连段可生成减速敌人的花。','Give the two main weapons distinct roles: practise short strings with one and continue pressure after swapping to the other. Save limited-use Phantom Edges for deliberate openings. Scarlet Wraithblade combos can create flowers that slow enemies.',combat],
@@ -100,23 +113,25 @@ for(const en of [false,true]){
   }).join('');
   const directory=`<details open><summary>${directoryLabel}</summary><nav class="classic-nav" aria-label="${directoryLabel}"><div class="classic-nav-home"><a href="${base}"${page?'':' aria-current="page"'}>${en?'Guide home':'专题首页'}</a><button class="classic-collapse-all" type="button" aria-expanded="true" aria-controls="${pages.map(([key])=>menuId(key)).join(' ')}">${collapseLabel}</button></div>${links}</nav></details>`;
   const clean=value=>value.replace(/&(?:amp;)?#(?:x20|32);/gi,' ');
-  const renderStep=([zh,english,frames=[]])=>`<div class="pbz-step"><p>${clean(en?english:zh)}</p>${frames.map(([file,zhCaption,enCaption])=>{
-    const caption=en?enCaption:zhCaption;
+  const areaText=value=>en||page?.[0]!=='walkthrough'?value:chineseAreaTerms.reduce((text,[term,translation])=>text.replaceAll(term,translation),value);
+  const renderStep=([zh,english,frames=[]])=>`<div class="pbz-step"><p>${clean(areaText(en?english:zh))}</p>${frames.map(([file,zhCaption,enCaption])=>{
+    const caption=areaText(en?enCaption:zhCaption);
     return `<figure><img src="/assets/phantom-blade-zero/${file}.webp" alt="${caption}" width="960" height="540" loading="lazy" style="max-width:100%;height:auto"></figure>`;
   }).join('')}</div>`;
   const items=page?content[page[0]]:[];
   const chapter=page?.[0]==='walkthrough'?`<section class="pbz-info"><h2 class="classic-heading">${en?'Story chapters':'剧情章节'}</h2><p><a href="${base}walkthrough/against-the-flow/#against-the-flow">${en?'Against the Flow — Weeping Creek Valley':'逆流而上 · 悲泣溪谷'}</a></p><p>${en?'This chapter title is confirmed by the onscreen title card. Further chapter boundaries are being checked against the recordings.':'实录出现「逆流而上」章节题字。后续章节名称与起止位置正在逐段核对。'}</p></section>`:'';
   const indexGrid=(items,title)=>`<nav class="pbz-grid" aria-label="${title}">${items.map(item=>`<a id="${item[0]}" href="${base+category+item[0]}/">${label(item)} →</a>`).join('')}</nav>`;
+  const timingIndex=page?.[0]==='walkthrough'&&!entry?`<section id="pickup-timing-index"><h2 class="classic-heading">${en?'Collection timing by area':'各区域收集时机'}</h2><ul class="pbz-timing-links">${items.filter(([id])=>pickupTiming[id]).map(item=>`<li><a href="${base}walkthrough/${item[0]}/#pickup-timing">${label(item)}</a></li>`).join('')}</ul></section>`:'';
   const index=page?.[0]==='side-quests'
    ?questGroups.map(group=>`<section id="quests-${group[0]}"><h2 class="classic-heading">${label(group)}</h2>${indexGrid(group.slice(3).map(id=>questEntries.get(id)),label(group))}</section>`).join('')
-   :page?chapter+indexGrid(items,label(page)):'';
+   :page?chapter+indexGrid(items,label(page))+timingIndex:'';
   const renderContent=([,,,steps,source])=>steps.map(renderStep).join('')+(source?`<p><a href="${source}">${(source.startsWith('/')||source.startsWith('../'))?(en?'Open the area walkthrough':'查看区域图文流程'):(en?'Walkthrough reference':'攻略资料来源')} ↗</a></p>`:'');
   const brief=page?.[0]==='walkthrough'&&entry?areaBriefs[entry[0]]:null;
-  const briefLabels=en?['Progression goal','Bosses','Drops','Side quests and clues','Items and services']:['推进目标','首领','掉落物品','支线与线索','道具与服务'];
-  const overview=brief?`<section class="pbz-info"><h2 class="classic-heading">${en?'Area at a glance':'区域攻略速览'}</h2><dl class="pbz-facts">${briefLabels.map((title,i)=>`<div><dt>${title}</dt><dd>${brief[i]?.[en?1:0]??(en?'Pending verification':'待核对')}</dd></div>`).join('')}</dl></section>`:'';
+  const briefLabels=en?['Progression goal','Bosses','Drops','Side content','Items and services']:['推进目标','首领','掉落与奖励','支线与探索','道具与服务'];
+  const overview=brief?`<section class="pbz-area-summary"><h2 class="classic-heading">${en?'Area highlights':'本区域要点'}</h2><dl>${briefLabels.map((title,i)=>{const text=brief[i]?.[en?1:0];return text?`<dt>${title}</dt><dd>${areaText(text)}</dd>`:''}).join('')}</dl></section>`:'';
   const renderBossLinks=section=>{
    const bosses=opening.bosses.filter(([id])=>bossSections[id]===section);
-   return bosses.length?`<nav class="pbz-grid" aria-label="${en?'Boss guides':'首领打法'}">${bosses.map(boss=>`<a href="${base}bosses/${boss[0]}/">${label(boss)} →</a>`).join('')}</nav>`:'';
+   return bosses.length?`<nav class="pbz-grid" aria-label="${en?'Boss guides':'首领打法'}">${bosses.map(boss=>`<a href="${base}bosses/${boss[0]}/">${areaText(label(boss))} →</a>`).join('')}</nav>`:'';
   };
   const bossSection=page?.[0]==='bosses'&&entry?bossSections[entry[0]]:null;
   const areaLink=bossSection?`<p><a href="${base}walkthrough/${movedAreas.get(bossSection)||bossSection}/#${bossSection}">${en?'Open the area walkthrough':'查看区域图文流程'} ↗</a></p>`:'';
@@ -164,6 +179,13 @@ for(const en of [false,true]){
    }).join('')}</nav>`:'';
   };
   const cutoffLink=page?.[0]==='walkthrough'&&entry?`<p><a href="${base}side-quests/missable-quests/">${en?'Check missable quests before advancing':'推进前查看支线错过条件'} →</a></p>`:'';
+  const timing=page?.[0]==='walkthrough'&&entry&&pickupTiming[entry[0]];
+  const renderTiming=timing?`<section id="pickup-timing" class="pbz-area-summary"><h2 class="classic-heading">${en?'Collection timing':'收集时机'}</h2><dl>${[
+   ['first','首次可收集','First visit'],
+   ['miss','容易错过 · 推进前检查','Missable steps and checkpoints'],
+   ['ability','拿到新能力或道具后回访','Return with an ability or item'],
+   ['story','剧情推进后回访','Return after story progress']
+  ].filter(([key])=>timing[key]?.length).map(([key,zh,english])=>`<dt>${en?english:zh}</dt><dd><ul>${timing[key].map(([textZh,textEn,route])=>`<li>${areaText(en?textEn:textZh)} <a href="${route.startsWith('#')?route:base+route}">${en?'Route':'查看路线'} →</a></li>`).join('')}</ul></dd>`).join('')}</dl></section>`:'';
   const checkpoints={
    'cage-late-fight':['交还账簿前，留意会影响白雪支线的对话选项。','The dialogue choice when returning the ledger determines whether Bai Xue’s tale opens.'],
    'hanging-cage':['挑战荆野前，把三种药草带回悲泣溪谷据点交给玉儿。击败荆野后，未完成的采药支线会失败。','Return all three herbs to Yu’er at the valley outpost before defeating Jing Ye. An unfinished Apprentice Healer tale fails after the fight.'],
@@ -210,9 +232,9 @@ for(const en of [false,true]){
     ]
    };
    const routeLink=(relatedGuides[id]||[]).map(guide=>` <a href="${base}side-quests/${guide[0]}/">${label(guide)} →</a>`).join('');
-   return `<aside class="pbz-info"><p>${en?english:zh}</p><p><a href="${base}side-quests/${target}/">${en?'View quest requirements':'查看任务条件'} →</a>${routeLink}</p></aside>`;
+   return `<aside class="pbz-info"><p>${areaText(en?english:zh)}</p><p><a href="${base}side-quests/${target}/">${en?'View quest requirements':'查看任务条件'} →</a>${routeLink}</p></aside>`;
   };
-  const detail=entry?overview+cutoffLink+(entry[5]?entry[5].map(section=>`<section id="${section[0]}"><h2 class="classic-heading">${label(section)}</h2>${renderCheckpoint(section[0])}${renderBossLinks(section[0])}${renderContent(section)}${renderPickupLinks(section[0])}</section>`).join(''):areaLink+renderContent(entry[4]?.startsWith('../../walkthrough/')?[...entry.slice(0,4),null]:entry)+rewardLink+memoryLink+questBossLinks+questLink+tigerCannonLink):'';
+  const detail=entry?overview+renderTiming+cutoffLink+(entry[5]?entry[5].map(section=>`<section id="${section[0]}"><h2 class="classic-heading">${label(section)}</h2>${renderCheckpoint(section[0])}${renderBossLinks(section[0])}${renderContent(section)}${renderPickupLinks(section[0])}</section>`).join(''):areaLink+renderContent(entry[4]?.startsWith('../../walkthrough/')?[...entry.slice(0,4),null]:entry)+rewardLink+memoryLink+questBossLinks+questLink+tigerCannonLink):'';
   const position=items.indexOf(entry);
   const adjacent=entry?`<nav class="pbz-grid" aria-label="${en?'Adjacent entries':'相邻条目'}">${[items[position-1],items[position+1]].map((item,i)=>item?`<a href="${base+category+item[0]}/">${i===0?'← ':''}${label(item)}${i===1?' →':''}</a>`:'').join('')}</nav>`:'';
   const facts=en?[['Developer','S-Game'],['Genre','Wuxia action'],['Platforms','PS5 / PC'],['Release','29 October 2026']]:[['开发商','灵游坊（S-Game）'],['类型','武侠动作'],['平台','PS5 / PC'],['发售日期','2026 年 10 月 29 日']];

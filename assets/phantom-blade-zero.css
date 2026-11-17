@@ -30,3 +30,9 @@
 .pbz-facts div {background:#e9e8dc;border-left:2px solid #798574;padding:.65rem .8rem}
 .pbz-facts dt {font-size:.85rem;color:#4d594e}
 .pbz-facts dd {margin:.2rem 0 0;font-weight:700}
+.pbz-area-summary dl {margin:0 0 1.5rem}
+.pbz-area-summary dt {font-weight:700;color:#374c43;margin-top:.85rem}
+.pbz-area-summary dd {margin:.25rem 0 0}
+.pbz-area-summary dd ul {margin:.35rem 0 1rem;padding-inline-start:1.4rem}
+.pbz-area-summary dd li + li {margin-top:.35rem}
+.pbz-timing-links {display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;padding-inline-start:1.4rem}

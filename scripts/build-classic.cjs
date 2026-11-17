@@ -19,6 +19,11 @@ const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const href=v=>{if(!/^(\/|https:\/\/|#)/.test(v)||v.startsWith('//'))throw Error('Invalid URL '+v);return esc(v)};
 const link=(t,u)=>`<a href="${href(u)}">${esc(t)}</a>`;
 const heading=(t,id='')=>`<h2 class="classic-heading"${id?` id="${esc(id)}"`:''}>${esc(t)}</h2>`;
+const recordings=require('./lib/classic-recording-chapters.cjs');
+const recordingSource='https://steamcommunity.com/sharedfiles/filedetails/?id=3806257027';
+const recordingChapters=clips=>clips?.length?heading('实录对照','recording-chapters')+
+ '<p>来源：GabeAndTheGoat。打开索引后，按分集和时间点查看原作者录像。</p><ul class="classic-links">'+
+ clips.map(([episode,time,title,zh,separator=' - '])=>'<li><span>第 '+esc(episode)+' 集</span> · '+link(time,recordingSource+'#:~:text='+encodeURIComponent(time+separator+title))+' · <span>'+esc(zh||title)+'</span></li>').join('')+'</ul>':'';
 const notice=t=>`<p class="classic-notice">${esc(t)}</p>`;
 const table=(t,h,rows)=>`<div class="classic-table-wrap" tabindex="0" role="region" aria-label="${esc(t)}"><table class="classic-table"><caption>${esc(t)}</caption><thead><tr>${h.map(v=>`<th scope="col">${esc(v)}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(v=>`<td>${v&&typeof v==='object'&&v.html?v.html:esc(v)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 const list=items=>`<ul class="classic-links">${items.map(([t,u])=>`<li>→ ${link(t,u)}</li>`).join('')}</ul>`;
@@ -101,6 +106,14 @@ function valueText(value,key){
  return esc(readerText(value));
 }
 fieldTitles.referencePuzzle='机关解法';
+const looterPartCheckpoints=[
+ ['接任务与金门钥匙','looter-start'],
+ ['腿 · 墓谷','looter-legs','graven-valley'],
+ ['手臂 · 干涸城堡','looter-arms','desiccated-castle'],
+ ['躯干 · 排水道','looter-torso','the-drains'],
+ ['头 · 沼泽','looter-head','the-bog'],
+ ['回码头交付','looter-hand-in']
+];
 function facts(e,{map=false}={}){
  if(!canPublish(e))return '<p class="classic-subtitle">当前保留名称目录；相关事实仍在核验。</p>';
  if(map){
@@ -136,6 +149,51 @@ function facts(e,{map=false}={}){
   if(e.id==='the-docks'&&key==='referencePuzzle'){
    out+=heading('码头门石与载具路线','gate-stones')+'<ol>'+field.value.map(step=>'<li>'+esc(step)+'</li>').join('')+'</ol>'+
     list([['码头地图',base+'maps/the-docks/'],['深海生物打法',base+'bosses/creature-from-the-deep/'],['水上载具',base+'abilities/water-vessel/']]);
+   continue;
+  }
+  if(e.id==='the-queens-chamber'&&key==='referenceRoute'){
+   const checkpoints=[
+    ['入城与第一处帐篷','castle-first-tent'],
+    ['银色玩偶战场右侧','cage-silver-doll'],
+    ['第一处帐篷左侧','cage-first-tent'],
+    ['第二处帐篷上方','cage-second-tent'],
+    ['救齐后返回伊尔达','return-to-ilda'],
+    ['从吊笼前往女王战','reach-the-queen']
+   ];
+   out+=heading('女王城堡三处牢笼','castle-cages')+
+    list(checkpoints.slice(1,4).map(([label,id])=>[label,'#'+id]))+
+    '<dl>'+checkpoints.map(([label,id],index)=>'<dt id="'+id+'"><strong>'+esc(label)+'</strong></dt><dd>'+esc(field.value[index])+'</dd>').join('')+'</dl>';
+   continue;
+  }
+  if(e.id==='a-ride-to-the-party'&&key==='referenceRoute'){
+   const checkpoints=[
+    ['从午夜暴雨入墓穴，找到伊尔玛','escort-start'],
+    ['清坩埚房，打开下层通道','escort-lever'],
+    ['沿箭矢平台到第二处帐篷','escort-second-tent'],
+    ['掘墓者战后向左去聚会','escort-party']
+   ];
+   out+=heading('伊尔玛护送路线','escort-route')+
+    list(checkpoints.map(([label,id])=>[label,'#'+id]))+
+    '<dl>'+checkpoints.map(([label,id],index)=>'<dt id="'+id+'"><strong>'+esc(label)+'</strong></dt><dd>'+esc(field.value[index])+'</dd>').join('')+'</dl>';
+   continue;
+  }
+  if(e.id==='graven-valley-rescue'&&key==='referenceRoute'){
+   const checkpoints=[
+    ['会场入口找报幕人','rescue-announcer'],
+    ['走右侧下层找售票人','rescue-ticket'],
+    ['出示门票，打断绳子','rescue-lida'],
+    ['战后找艾格伯特，从身后下落','rescue-exit']
+   ];
+   out+=heading('墓谷救援路线','graven-rescue-route')+
+    list(checkpoints.map(([label,id])=>[label,'#'+id]))+
+    '<dl>'+checkpoints.map(([label,id],index)=>'<dt id="'+id+'"><strong>'+esc(label)+'</strong></dt><dd>'+esc(field.value[index])+'</dd>').join('')+'</dl>';
+   continue;
+  }
+  if(e.id==='looter-parts'&&key==='referenceChecklist'){
+   out+=heading('拾荒者四件零件','looter-parts-route')+
+    list(looterPartCheckpoints.slice(1,5).map(([label,id])=>[label,'#'+id]))+
+    '<dl>'+looterPartCheckpoints.map(([label,id],index)=>'<dt id="'+id+'"><strong>'+esc(label)+'</strong></dt><dd>'+esc(field.value[index])+'</dd>').join('')+'</dl>'+
+    field.value.slice(looterPartCheckpoints.length).map(step=>'<p>'+esc(step)+'</p>').join('');
    continue;
   }
   out+=heading(fieldTitles[key]||key)+(['referenceRoute','referenceStrategy','referenceChecklist'].includes(key)?'<ul class="classic-links">'+field.value.map(item=>'<li>'+valueText(item,key)+'</li>').join('')+'</ul>':'<p>'+valueText(field.value,key)+'</p>');
@@ -200,6 +258,7 @@ const storyPageMovement=[
  '攀爬','潜水载具','弹弓、攀爬','攀爬、悬停','弹弓、无限攀爬、悬停','无需额外能力',
  '无需额外能力','攀爬','弹弓、攀爬','无限攀爬','无限攀爬、悬停'
 ];
+const fragmentAreas=['dollmakers-house','night-garden','autumn-forest','the-docks','desiccated-castle'];
 for(const [index,e] of areas.entries()){
  const adjacent=area=>area&&{title:name(area),route:'walkthrough/'+area.slug+'/'};
  const storyPages=storyPageBooks.flatMap(([title,id,pages])=>pages.map(([slug,guideNumber],index)=>({slug,guideNumber,pageNumber:index+1,title,id})).filter(item=>item.slug===e.slug));
@@ -208,20 +267,25 @@ for(const [index,e] of areas.entries()){
    {html:link(title,base+'collectibles/story-pages/#'+id)},pageNumber,storyPageMovement[guideNumber-1],{html:storyPageGuideLink(guideNumber)}
   ])):'';
  const related=[['区域地图',base+'maps/'+e.slug+'/'],['流程目录',base+'walkthrough/']];
+ const looterPart=looterPartCheckpoints.find(([, , area])=>area===e.slug);
+ const looterRoute=looterPart?heading('通往拾荒者零件的金门','area-looter-part')+
+  '<p>金门钥匙在码头旧靴子里向低语者领取。进入本区金门后，按下方路线回收零件。</p>'+
+  list([[looterPart[0],base+'collectibles/looter-parts/#'+looterPart[1]]]):'';
+ if(fragmentAreas.includes(e.slug))related.push(['本区灵魂碎片入口',base+'maps/hidden-paths/#fragment-'+e.slug]);
  if(e.slug==='the-deep')related.unshift(['饰物槽位置清单',base+'collectibles/trinket-slots/'],['故事书页位置清单',base+'collectibles/story-pages/']);
- if(e.slug==='the-drains')related.unshift(['饰物位置清单',base+'collectibles/trinkets/'],['排水道计时挑战',base+'challenges/time-trials/time-trial-the-drains/']);
+ if(e.slug==='the-drains')related.unshift(['三件升降机部件路线',base+'quests/repair-the-elevator/#elevator-parts'],['饰物位置清单',base+'collectibles/trinkets/'],['排水道计时挑战',base+'challenges/time-trials/time-trial-the-drains/']);
  if(e.slug==='hunters-cabin')related.unshift(['猎人小屋计时挑战',base+'challenges/time-trials/time-trial-hunters-cabin/'],['灵魂位置清单',base+'collectibles/spirits/']);
  if(e.slug==='night-garden')related.unshift(['灵魂位置清单',base+'collectibles/spirits/']);
  if(e.slug==='the-bog')related.unshift(['灵魂位置清单',base+'collectibles/spirits/'],['沼泽计时挑战',base+'challenges/time-trials/time-trial-the-bog/']);
  if(['the-drains','graven-valley','desiccated-castle','midnight-drench'].includes(e.slug))related.push(['灵魂位置清单',base+'collectibles/spirits/']);
  if(e.slug==='midnight-drench')related.push(['本区计时挑战',base+'challenges/time-trials/time-trial-midnight-drench/']);
- if(e.slug==='graven-valley')related.unshift(['饰物位置清单',base+'collectibles/trinkets/'],['本区计时挑战',base+'challenges/time-trials/time-trial-graven-valley/']);
+ if(e.slug==='graven-valley')related.unshift(['墓谷救援流程',base+'quests/graven-valley-rescue/#graven-rescue-route'],['饰物位置清单',base+'collectibles/trinkets/'],['本区计时挑战',base+'challenges/time-trials/time-trial-graven-valley/']);
  if(e.slug==='desiccated-castle')related.unshift(['饰物位置清单',base+'collectibles/trinkets/'],['故事书页位置清单',base+'collectibles/story-pages/']);
  if(e.slug==='the-docks')related.unshift(['饰物位置清单',base+'collectibles/trinkets/'],['码头计时挑战',base+'challenges/time-trials/time-trial-the-docks/']);
  if(e.slug==='midnight-drench')related.unshift(['七子神龛打法',base+'bosses/shrine-of-the-seven-sons/'],['悬停',base+'abilities/hover/'],['墓谷救援流程',base+'quests/graven-valley-rescue/'],['干涸城堡流程',base+'walkthrough/desiccated-castle/'],['饰物位置清单',base+'collectibles/trinkets/'],['故事书页位置清单',base+'collectibles/story-pages/']);
  if(e.slug==='lookout-tower')related.unshift(['星歌者打法',base+'bosses/starsinger/'],['七根金色羽毛位置',base+'collectibles/golden-feathers/'],['灵魂位置清单',base+'collectibles/spirits/'],['工坊代币位置清单',base+'collectibles/workshop-tokens/']);
  if(e.slug==='autumn-forest')related.unshift(['四处石球与石柱机关',base+'challenges/puzzle-solutions/#autumn-forest'],['森林之王',base+'bosses/forest-king/'],['猎人小屋地图',base+'maps/hunters-cabin/'],['夜之庭园地图',base+'maps/night-garden/'],['悬停',base+'abilities/hover/'],['灵魂位置清单',base+'collectibles/spirits/'],['秋日森林计时挑战',base+'challenges/time-trials/time-trial-autumn-forest/']);
- page('walkthrough/'+e.slug+'/',name(e),e.nameEn+' 已确认区域资料与流程记录。',facts(e)+storyPageRoutes+heading('相关攻略')+list(related),{parent:['流程攻略','walkthrough'],previous:adjacent(areas[index-1]),next:adjacent(areas[index+1]),entity:e});
+ page('walkthrough/'+e.slug+'/',name(e),e.nameEn+' 已确认区域资料与流程记录。',lateGuide.diagram(e.id)+facts(e)+storyPageRoutes+looterRoute+recordingChapters(recordings.areas[e.id])+heading('相关攻略')+list(related),{parent:['流程攻略','walkthrough'],previous:adjacent(areas[index-1]),next:adjacent(areas[index+1]),entity:e});
  page('maps/'+e.slug+'/',name(e)+' · 地图',e.nameEn+' 已确认区域节点；截图不等同于完整地图。',facts(e,{map:true})+'<details class="classic-map-structure"><summary>查看区域结构示意</summary>'+worldMap.markup(e)+'</details>'+heading('相关攻略')+list([['世界结构示意图',base+'maps/world/'],['区域流程',base+'walkthrough/'+e.slug+'/'],['区域地图目录',base+'maps/']]),{parent:['区域地图','maps'],entity:e});
 }
 page('maps/','地图目录','Well Dweller 区域地图参考目录。','<p>地图章节提供局部地图与地标定位；完整路线步骤仍在流程攻略中阅读。</p>'+list([['世界结构示意图',base+'maps/world/']])+heading('已补充区域')+table('可用地图资料',['区域','现有内容'],areas.filter(a=>regionalMapNotes.some(n=>n.id===a.id)).map(a=>[linkedName(a,'maps'),a.images.some(i=>approvedImage(i)&&/地图|区域图/.test(i.caption))?'局部地图与地标定位':'地标定位与区域结构视图']))+heading('后续区域')+catalogue(areas.filter(a=>!regionalMapNotes.some(n=>n.id===a.id)),'maps'));
@@ -240,15 +304,17 @@ page('maps/hidden-paths/','隐藏通道','通关后五处腾空入口与辨认�
   ['玩偶师之家：工坊代币地图','https://gamersocialclub.ca/2026/09/22/well-dweller-100-collectibles-achievement-trophy-walkthrough/#:~:text=Workshop%20Token%2026%20%2F%2027'],
   ['收集实机图文','https://gamersocialclub.ca/2026/09/22/well-dweller-100-collectibles-achievement-trophy-walkthrough/']
  ])+
- heading('通关后的探索')+'<p>通关后在女王寝室解锁腾空，再到能力蛋所在鸟巢的上方拿神秘标记。地图标出的五处入口可按下列地标查找。</p>'+
- table('腾空入口',['区域','入口地标','互动地图站点'],[
-  ['玩偶师之家','dollmakers-house','最高一层通道的中央房间。向上腾空进入隐藏区。',8],
-  ['夜之庭园','night-garden','与沼泽相接的最西侧房间。腾空进入上方战斗房。',9],
-  ['秋日森林','autumn-forest','计时挑战房西侧的房间。向上腾空进入平台跳跃路线。',10],
-  ['码头','the-docks','低语者小屋旁的帐篷向东，到桥上腾空。',11],
-  ['干涸城堡','desiccated-castle','东南角帐篷右侧的鸟巢。站在巢上腾空进入隐藏塔。',12],
-  ['夜之庭园','night-garden','收齐后，回平时交还灵魂的鸟巢触发团聚结局。',13]
- ].map(([label,slug,landmark,stop])=>[{html:link(label,base+'maps/'+slug+'/')},landmark,String(stop)]))+
+ heading('通关后的探索','fragment-entrances')+'<p>通关后在女王寝室解锁腾空，再到能力蛋所在鸟巢的上方拿神秘标记。地图标出的五处入口可按下列地标查找。</p>'+
+ table('腾空入口',['区域','入口地标','进入后怎么走','互动地图站点'],[
+  ['玩偶师之家','dollmakers-house','最高一层通道的中央房间。向上腾空进入隐藏区。','沿暗道走到底拾取。',8],
+  ['夜之庭园','night-garden','与沼泽相接的最西侧房间。腾空进入上方战斗房。','清完敌人，沿上方通道取碎片。',9],
+  ['秋日森林','autumn-forest','计时挑战房西侧的房间。向上腾空进入平台跳跃路线。','通过平台跳跃路段，在终点拾取。',10],
+  ['码头','the-docks','低语者小屋旁的帐篷向东，到桥上腾空。','登上顶部平台后跳下，左右移动收齐 100 个闪光物。漏捡时可按左下角提示重试。',11],
+  ['干涸城堡','desiccated-castle','东南角帐篷右侧的鸟巢。站在巢上腾空进入隐藏塔。','继续往上爬，在塔顶取碎片。',12],
+  ['夜之庭园','night-garden','集齐五枚后，回下层帐篷左侧的鸟巢。','在鸟巢观看团聚过场。',13]
+ ].map(([label,slug,landmark,steps,stop])=>[
+  {html:(stop<13?'<span id="fragment-'+slug+'"></span>':'')+link(label,base+'maps/'+slug+'/')},landmark,steps,String(stop)
+ ]))+
  list([['五枚灵魂碎片路线',base+'collectibles/spirit-fragments/'],['打开真结局互动地图','https://www.gamerguides.com/well-dweller/maps/the-kingdom?route=post-game-guide-and-how-to-unlock-the-true-ending']]),{parent:['地图','maps']});
 page('maps/locked-doors/','反锁门','沼泽帐篷捷径、下水道机关门与女王寝室的开门方法。',
  heading('沼泽')+'<p>帐篷右侧的路被挡住时，先往左越过平台。进入有气泡的房间，借气泡升到顶层，向右经过飞虫，从右侧出口下落。到了路障另一边，打一下开关就能开通回帐篷的捷径。</p>'+
@@ -260,13 +326,16 @@ page('maps/breakable-walls/','可破坏墙壁','沼泽的两处可破坏墙壁�
  '<p>从存档帐篷向左越过平台，看到前方的可破坏墙壁时，同时检查头顶。打破面前的墙和上方的表面，再继续向左。</p>'+
  list([['沼泽流程',base+'walkthrough/the-bog/'],['沼泽破墙实机路线','https://intoindiegames.com/walkthroughs/well-dweller-walkthrough-part-2-exploring-the-bog/']]),{parent:['地图','maps']});
 page('bosses/','Boss / encounter 目录','Well Dweller 首领与遭遇目录。',catalogue(bosses,'bosses'));
-for(const e of bosses)page('bosses/'+e.slug+'/',name(e),e.nameEn+' 已确认的遭遇资料。',facts(e)+(e.aliases?'<p class="classic-subtitle">名称存在来源差异：'+esc(e.aliases.join(' / '))+'</p>':'')+heading('相关攻略')+list([...(publicValue(e,'area')&&refs.has(publicValue(e,'area'))?[refs.get(publicValue(e,'area'))]:[]),['Boss 目录',base+'bosses/']]),{parent:['Boss / encounter','bosses'],entity:e});
+for(const e of bosses)page('bosses/'+e.slug+'/',name(e),e.nameEn+' 已确认的遭遇资料。',facts(e)+recordingChapters([recordings.bosses[e.id]])+(e.aliases?'<p class="classic-subtitle">名称存在来源差异：'+esc(e.aliases.join(' / '))+'</p>':'')+heading('相关攻略')+list([...(publicValue(e,'area')&&refs.has(publicValue(e,'area'))?[refs.get(publicValue(e,'area'))]:[]),['Boss 目录',base+'bosses/']]),{parent:['Boss / encounter','bosses'],entity:e});
 const referenceSources=item=>[...new Set([...item.effectSources,...item.locationSources])].map(id=>{const s=abilityReference.sources[id];return link(s.name,s.url)}).join('<br>');
 const referenceNotes=e=>{
  const item=abilityReference.entries.find(item=>item.id===e.id);if(!item)return '';
- const next=e.id==='soar'?list([
-  ['饰物',base+'collectibles/trinkets/'],
+ const next=e.id==='soar'?heading('学会腾空后','after-soar')+
+ '<p>先回女王寝室西门内的能力蛋鸟巢。站在巢里砸地，立刻按住跳跃穿过上方竖井，进入上层房间拿神秘标记。</p>'+
+ '<p>打开地图核对五处碎片标记。每处都从地标附近向上腾空进隐藏区。收齐后，回夜之庭园下层帐篷左侧的鸟巢。</p>'+list([
+  ['饰物',base+'collectibles/trinkets/#all-trinkets'],
   ['神秘标记',base+'collectibles/key-items/mysterious-markings/'],
+  ['五处腾空入口地图',base+'maps/hidden-paths/#fragment-entrances'],
   ['灵魂碎片',base+'collectibles/spirit-fragments/']
  ]):'';
  return (!item.locationSources.length?heading('获取方式')+'<p>'+esc(item.acquisition)+'</p>':'')+next+heading('参考来源')+'<p>'+referenceSources(item)+'</p>';
@@ -297,28 +366,28 @@ page('collectibles/','收集分类','Well Dweller 收集分类与已确认资料
  list([['故事书页位置清单',base+'collectibles/story-pages/'],['工坊代币位置清单',base+'collectibles/workshop-tokens/'],['饰物槽位置清单',base+'collectibles/trinket-slots/']])+
  table('收集分类',['名称','数量资料','状态'],collectibles.map(e=>[linkedName(e,'collectibles'),countLabel(e),status(e)])));
 const goldenFeatherRoutes=[
- ["排水道", "修好升降机，在底层击败排水道女士，再到后续房间拾取。", "walkthrough/the-drains/"],
- ["午夜暴雨", "击败七子神龛后继续往西，进后续房间拾取。", "bosses/shrine-of-the-seven-sons/"],
+ ["排水道", "修好升降机，在底层击败排水道女士，再到后续房间拾取。", "bosses/the-lady-of-the-drains/#after-victory"],
+ ["午夜暴雨", "击败七子神龛后继续往西，进后续房间拾取。", "bosses/shrine-of-the-seven-sons/#after-victory"],
  ["拾荒者零件", "找齐四件零件，回接任务的地方交给低语者，完成修复后领取。", "collectibles/looter-parts/"],
- ["瞭望塔", "登顶击败星歌者后，沿战后路线领取金色羽毛。", "bosses/starsinger/"],
- ["秋日森林", "击败东北侧的森林之王后，继续向东进下一间拾取。", "bosses/forest-king/"],
- ["埋葬墓穴", "击败掘墓者后从左侧离场，到 Squinton 的住处参加聚会，完成剧情再领取。", "quests/a-ride-to-the-party/"],
- ["蛛雨旅店", "完成旅店老板追逐，在末段滑出旅店回到午夜暴雨时获得。", "achievements/late-night-guest/"],
+ ["瞭望塔", "击败星歌者后，向右进入相邻房间拾取。", "bosses/starsinger/#after-victory"],
+ ["秋日森林", "击败东北侧的森林之王后，继续向东进下一间拾取。", "bosses/forest-king/#after-victory"],
+ ["埋葬墓穴", "击败掘墓者后从左侧离场，到 Squinton 的住处参加聚会，完成剧情再领取。", "quests/a-ride-to-the-party/#escort-party"],
+ ["蛛雨旅店", "滑出旅店回到午夜暴雨后，继续往左拾取金色羽毛。", "walkthrough/webdrench-inn/#route-step-5"],
 ];
 for(const e of collectibles){
  const featherChecklist=e.slug==='golden-feathers'?
-  table('七根金色羽毛领取点',['地点或任务','如何领取'],goldenFeatherRoutes.map(([label,steps,route])=>[{html:link(label,base+route)},steps]))+
+  '<section id="feather-pickups">'+table('七根金色羽毛领取点',['地点或任务','如何领取'],goldenFeatherRoutes.map(([label,steps,route])=>[{html:link(label,base+route)},steps]))+'</section>'+
   '<p>七根齐全后回沼泽的城堡入口。瞭望塔增加飞行时长的羽毛单独计算。</p>'+
-  list([['前往女王城堡',base+'walkthrough/queens-castle/']]):'';
+  list([['从沼泽到女王城堡大门',base+'quests/the-castle-gate/#castle-gate-checkpoints'],['前往女王城堡',base+'walkthrough/queens-castle/']]):'';
  const related=[['收集目录',base+'collectibles/']];
- const storyPageIndex=e.slug==='story-pages'?heading('按书内页码查找','page-index')+
+ const storyPageIndex=e.slug==='story-pages'?'<section id="story-pages-by-book">'+heading('按书内页码查找','page-index')+
   '<p>先在游戏的 Pages 菜单确认缺页，再按书名和页码找区域。点击图文编号可打开对应的房间截图条目。</p>'+
   list(storyPageBooks.map(([title,id])=>[title,'#'+id]))+
   '<p>拾取准备按本攻略的回收路线标注。区域入口仍需满足主线推进条件。</p>'+
   storyPageBooks.map(([title,id,pages,achievement])=>heading(title,id)+table(title,['书内页码','区域流程','拾取准备','图文编号'],pages.map(([slug,guideNumber],index)=>[
    index+1,{html:link(name(areas.find(area=>area.slug===slug)),base+'walkthrough/'+slug+'/')},
    storyPageMovement[guideNumber-1],{html:storyPageGuideLink(guideNumber)}
-  ]))+list([[name(achievements.find(item=>item.id===achievement)),base+'achievements/'+achievement+'/']])).join(''):'';
+  ]))+list([[name(achievements.find(item=>item.id===achievement)),base+'achievements/'+achievement+'/']])).join('')+'</section>':'';
  const workshopCleanup=e.slug==='workshop-tokens'?heading('工坊代币回访路线','token-cleanup')+
   table('容易漏掉的工坊代币',['区域或任务','怎么拿'],[
    ['水疗馆','achievements/taking-a-break/','听到 Willow 开设水疗馆的消息后，从夜之庭园灵魂鸟巢附近的帐篷往左进水疗馆，检查浴池上方。'],
@@ -326,7 +395,9 @@ for(const e of collectibles){
    ['埋葬墓穴','walkthrough/burial-vault/','回访暗道时带上悬停和无限攀爬。遇到需要在墙上架火柴的支路，再用墙壁弹射，并检查暗道里的挡板。'],
    ['女王城堡','walkthrough/queens-castle/','从左侧帐篷往上两间，用无限攀爬和悬停绕到房间中央的代币上方，再落下拾取。']
   ].map(([label,route,steps])=>[{html:link(label,base+route)},steps])):'';
- if(e.slug==='spirit-fragments')related.unshift(['五处腾空入口地图',base+'maps/hidden-paths/'],['团聚结局成就',base+'achievements/together-at-last/']);
+ if(e.slug==='spirit-fragments')related.unshift(['五处腾空入口地图',base+'maps/hidden-paths/#fragment-entrances'],...fragmentAreas.map(slug=>[
+  name(areas.find(area=>area.slug===slug)),base+'maps/hidden-paths/#fragment-'+slug
+ ]),['团聚结局成就',base+'achievements/together-at-last/']);
  if(e.slug==='looter-parts'){
   related.unshift(['无限攀爬',base+'abilities/endless-climb/'],['码头地图',base+'maps/the-docks/'],
    ['墓谷地图',base+'maps/graven-valley/'],['干涸城堡地图',base+'maps/desiccated-castle/'],
@@ -338,27 +409,52 @@ for(const e of collectibles){
 for(const e of keyItems){
  const related=[['Key Items',base+'collectibles/key-items/']];
  if(abilityReference.entries.some(item=>item.id===e.id))related.push(['推进 / 功能解锁',base+'abilities/#progression']);
- if(e.id==='golden-gate-key')related.unshift(['无限攀爬',base+'abilities/endless-climb/'],['拾荒者部件清单',base+'collectibles/looter-parts/']);
- if(e.id==='mysterious-markings')related.push(['腾空',base+'abilities/soar/'],['灵魂碎片',base+'collectibles/spirit-fragments/']);
+ if(e.id==='golden-gate-key')related.unshift(['无限攀爬',base+'abilities/endless-climb/'],['拾荒者部件清单',base+'collectibles/looter-parts/#looter-parts-route']);
+ if(e.id==='mysterious-markings')related.push(['腾空',base+'abilities/soar/#after-soar'],['五处腾空入口地图',base+'maps/hidden-paths/#fragment-entrances'],['灵魂碎片',base+'collectibles/spirit-fragments/']);
+ if(e.id==='the-queens-coin')related.push(['饰物位置清单',base+'collectibles/trinkets/#all-trinkets'],['通关后的探索',base+'secrets/#endings']);
  page('collectibles/key-items/'+e.slug+'/',name(e),e.nameEn+' 已确认物品资料。',facts(e)+referenceNotes(e)+heading('相关攻略')+list(related),{parent:['Key Items','collectibles/key-items'],entity:e});
 }
-page('quests/','任务目录','Well Dweller 任务目录与已确认步骤。',catalogue(quests,'quests'));
+page('quests/','任务目录','Well Dweller 任务目录与已确认步骤。','');
 const elevatorPartsChecklist=collectibles.find(e=>e.slug==='elevator-parts')?.fields.referenceChecklist;
 for(const e of quests){
  const related=[['任务目录',base+'quests/']];
  let route='';
- if(e.slug==='missing-sailors')related.unshift(['码头门石与载具路线',base+'walkthrough/the-docks/#gate-stones'],['鱼雷与两道水下闸门',base+'walkthrough/the-deep/#underwater-gates'],['无限攀爬',base+'abilities/endless-climb/']);
- if(e.slug==='the-castle-gate')related.unshift(['七根金色羽毛位置',base+'collectibles/golden-feathers/'],['沼泽地图',base+'maps/the-bog/'],['前往女王城堡',base+'walkthrough/queens-castle/']);
+ if(e.slug==='missing-sailors'){
+  route=heading('失踪船员卡点排查','sailor-checkpoints')+
+   table('按当前进度查下一步',['当前卡点','下一步'],[
+    ['打完深海生物，仍不能登船','沿战后路线到篝火，听完船员与巴吉的对话，再回水边登船。','walkthrough/the-docks/#gate-stones'],
+    ['只打开了一道水下闸门','回码头帐篷，改从另一侧登船。右侧路线取得鱼雷并开第一道门，左侧路线通往第二根拉杆。','walkthrough/the-deep/#underwater-gates'],
+    ['两道闸门都开了，没见到船员','走巨型骷髅下方的通道。在深海帐篷存档，继续向右打虫群聚合体。','bosses/the-colony/'],
+    ['救出针儿和刺儿，仍爬不上长墙','看完团聚剧情后，回码头船坞找巴吉领取无限攀爬。','abilities/endless-climb/']
+   ].map(([label,steps,target])=>[{html:link(label,base+target)},steps]));
+  related.unshift(['码头门石与载具路线',base+'walkthrough/the-docks/#gate-stones'],['鱼雷与两道水下闸门',base+'walkthrough/the-deep/#underwater-gates'],['无限攀爬',base+'abilities/endless-climb/']);
+ }
+ if(e.slug==='the-castle-gate'){
+  route=heading('从沼泽到女王城堡大门','castle-gate-checkpoints')+
+   '<ol><li>羽毛不足七根时，先核对领取点。七子神龛战后向左拿，掘墓者战后去参加聚会，逃出蛛雨旅店后回到午夜暴雨再向左拿。</li>'+
+   '<li>七根齐全后传送到沼泽上方帐篷。向左打碎面前和头顶的挡板，借气泡到上层出口。下一间先往左借气泡升顶，再向右经过飞虫，到北侧城堡大门互动。</li>'+
+   '<li>开门后沿山路上行，经过伊尔达，到顶层走左侧出口。向守卫出示羽毛后继续往左，进入女王城堡。</li></ol>';
+  related.unshift(['七根金色羽毛位置',base+'collectibles/golden-feathers/'],['沼泽地图',base+'maps/the-bog/'],['前往女王城堡',base+'walkthrough/queens-castle/']);
+ }
  if(e.slug==='graven-valley-rescue')related.unshift(['墓谷地图',base+'maps/graven-valley/'],['莉达打法',base+'bosses/lida-the-terrible/'],['午夜暴雨流程',base+'walkthrough/midnight-drench/']);
  if(e.slug==='the-queens-chamber')related.unshift(['女王城堡地图',base+'maps/queens-castle/'],['银色玩偶打法',base+'bosses/silver-doll/'],['女王打法',base+'bosses/the-queen/']);
  if(e.slug==='a-ride-to-the-party')related.unshift(['埋葬墓穴地图',base+'maps/burial-vault/'],['掘墓者打法',base+'bosses/gravedigger/'],['七根金色羽毛位置',base+'collectibles/golden-feathers/']);
  if(e.slug==='repair-the-elevator'){
   if(confirmed(elevatorPartsChecklist)){
-   route=heading('三件升降机部件路线','elevator-parts')+'<ol>'+elevatorPartsChecklist.value.map(step=>'<li>'+esc(step)+'</li>').join('')+'</ol>';
+   const checkpoints=[
+    ['先学御风','elevator-wind-ride'],
+    ['右上 · 金门上方','elevator-upper-right'],
+    ['左下 · 气泡与长缺口','elevator-lower-left'],
+    ['中央帐篷上方 · 蜡烛风道','elevator-above-tent'],
+    ['集齐后返回升降机','elevator-return']
+   ];
+   route=heading('三件升降机部件路线','elevator-parts')+
+    list(checkpoints.slice(1,4).map(([label,id])=>[label,'#'+id]))+
+    '<dl>'+checkpoints.map(([label,id],index)=>'<dt id="'+id+'"><strong>'+esc(label)+'</strong></dt><dd>'+esc(elevatorPartsChecklist.value[index])+'</dd>').join('')+'</dl>';
   }
   related.unshift(['排水道地图',base+'maps/the-drains/'],['排水道女士打法',base+'bosses/the-lady-of-the-drains/']);
  }
- page('quests/'+e.slug+'/',name(e),e.nameEn+' 已确认任务资料。',facts(e)+route+heading('相关攻略')+list(related),{parent:['任务','quests'],entity:e});
+ page('quests/'+e.slug+'/',name(e),e.nameEn+' 已确认任务资料。',facts(e)+route+recordingChapters([recordings.quests[e.id]])+heading('相关攻略')+list(related),{parent:['任务','quests'],entity:e});
 }
 page('achievements/','成就一览','黯井微光 41 项 Steam 官方中文版成就名称与说明。',
  '<p>Steam 成就共 41 项。</p>'+
@@ -377,7 +473,7 @@ for(const e of achievements){
  const related=[['成就目录',base+'achievements/']];
  const bossSlug=achievementBosses[e.id];
  if(bossSlug)related.unshift(['查看完整首领打法',base+'bosses/'+bossSlug+'/']);
- if(e.id==='littlest-bird')related.unshift(['墓谷救援流程',base+'quests/graven-valley-rescue/']);
+ if(e.id==='littlest-bird')related.unshift(['墓谷救援流程',base+'quests/graven-valley-rescue/#rescue-exit']);
  if(e.id==='into-the-deep')related.unshift(['水上载具',base+'abilities/water-vessel/']);
  if(e.id==='double-trouble')related.unshift(['深海流程',base+'walkthrough/the-deep/']);
  if(e.id==='at-the-dollmakers-house')related.unshift(['玩偶师之家流程',base+'walkthrough/dollmakers-house/']);
@@ -387,6 +483,7 @@ for(const e of achievements){
  if(['ten-slots','50-slots'].includes(e.id))related.unshift(['饰物槽位置清单',base+'collectibles/trinket-slots/']);
  if(['in-the-workshop','fully-stocked'].includes(e.id))related.unshift(['工坊代币位置清单',base+'collectibles/workshop-tokens/']);
  if(e.id==='fully-stocked')related.unshift(['饰物位置清单',base+'collectibles/trinkets/']);
+ if(e.id==='fully-stocked')related.unshift(['工坊代币回访路线',base+'collectibles/workshop-tokens/#token-cleanup']);
  if(e.id==='bouncing-bottles')related.unshift(['午夜暴雨流程',base+'walkthrough/midnight-drench/'],['饰物位置清单',base+'collectibles/trinkets/']);
  if(e.id==='hide-and-seek')related.unshift(['干涸城堡流程',base+'walkthrough/desiccated-castle/#hover-route'],['悬停',base+'abilities/hover/']);
  if(e.id==='kings-hat')related.unshift(['秋日森林流程',base+'walkthrough/autumn-forest/']);
@@ -395,11 +492,12 @@ for(const e of achievements){
  if(e.id==='snatched-up')related.unshift(['井底流程',base+'walkthrough/the-well/']);
  if(e.id==='a-warm-fire')related.unshift(['沼泽流程',base+'walkthrough/the-bog/']);
  if(e.id==='taking-a-break')related.unshift(['排水道流程',base+'walkthrough/the-drains/']);
- if(e.id==='stitched-back-together')related.unshift(['拾荒者部件清单',base+'collectibles/looter-parts/']);
+ if(e.id==='stitched-back-together')related.unshift(['拾荒者部件清单',base+'collectibles/looter-parts/#looter-parts-route']);
  const storyBook=storyPageBooks.find(([, , , achievement])=>achievement===e.id);
  if(storyBook)related.unshift([storyBook[0],base+'collectibles/story-pages/#'+storyBook[1]]);
  if(e.id==='once-upon-a-time')related.unshift(['故事书页位置清单',base+'collectibles/story-pages/#page-index']);
  if(['lonely-soul','halfway-there','complete-flock'].includes(e.id))related.unshift(['灵魂位置清单',base+'collectibles/spirits/']);
+ if(['complete-flock','together-at-last'].includes(e.id))related.push(['交齐灵魂后没拿到奖励？',base+'collectibles/spirits/#missing-spirit-reward']);
  if(e.id==='flying-high')related.unshift(['腾空',base+'abilities/soar/'],['饰物',base+'collectibles/trinkets/']);
  page('achievements/'+e.slug+'/',name(e),publicValue(e,'description','Steam 成就资料。'),facts(e)+heading('相关攻略')+list(related),{parent:['成就','achievements'],entity:e});
 }
@@ -414,10 +512,14 @@ const trialDetails={
  'the-bog':{reward:'spirits',movement:'赛道内用基础移动'},
  'dollmakers-house':{reward:'workshop-tokens',movement:'赛道内用基础移动和气泡'},
  'graven-valley':{reward:'trinket-slots',movement:'赛道用弹弓，领奖用无限攀爬'},
- 'the-drains':{reward:'trinkets',movement:'推荐无限攀爬、悬停'}
+ 'the-drains':{reward:'trinkets',movement:'可用弹弓和攀爬，回访推荐无限攀爬和悬停'}
 };
 page('challenges/time-trials/','计时挑战','Well Dweller 计时挑战目录。',
  '<p>按区域打开挑战攻略，完成后继续进入奖励房拾取。补收集时，可以按右栏的奖励类型查漏。</p>'+
+ heading('重试与辅助计时','trial-controls')+
+ '<p>失误后，按住画面左下角提示的按键即可重试。Xbox 布局长按 Y，其他控制方式以屏幕提示为准。</p>'+
+ '<p>想先练路线，可以在游戏玩法设置里增加计时挑战的时间。若旧版本里镜头跟不上角色，先更新游戏。Steam 首个补丁修复了宽镜头设置下部分挑战无法跟随的问题。</p>'+
+ list([['重试按键与计时设置','https://welldwellergame.wiki/guides/time-trials'],['Steam 更新说明','https://steamcommunity.com/app/3699590/allnews/']])+
  table('十场计时挑战',['挑战攻略','区域地图','能力准备','奖励类型'],challenges.map(e=>{
   const areaSlug=e.slug.replace(/^time-trial-/,'');
   const detail=trialDetails[areaSlug];
@@ -438,9 +540,9 @@ page('challenges/time-trials/','计时挑战','Well Dweller 计时挑战目录�
 for(const e of challenges){
  const areaSlug=e.slug.replace(/^time-trial-/,'');
  const {reward}=trialDetails[areaSlug];
- const related=heading('相关攻略')+list([['区域地图',base+'maps/'+areaSlug+'/'],['区域流程',base+'walkthrough/'+areaSlug+'/'],
+ const related=heading('相关攻略')+list([['重试与辅助计时',base+'challenges/time-trials/#trial-controls'],['区域地图',base+'maps/'+areaSlug+'/'],['区域流程',base+'walkthrough/'+areaSlug+'/'],
   ...(reward?[['查看对应收集清单',base+'collectibles/'+reward+'/']]:[])]);
- page('challenges/time-trials/'+e.slug+'/',name(e)+' · Time Trial','已确认计时挑战资料。',facts(e)+related,{parent:['计时挑战','challenges/time-trials'],entity:e});
+ page('challenges/time-trials/'+e.slug+'/',name(e)+' · Time Trial','已确认计时挑战资料。',facts(e)+recordingChapters([recordings.trials[areaSlug]])+related,{parent:['计时挑战','challenges/time-trials'],entity:e});
 }
 const puzzleAreas=areas.filter(e=>confirmed(e.fields.referencePuzzle));
 const puzzleTopics={
@@ -464,7 +566,14 @@ page('systems/','系统说明','Well Dweller 游戏基础资料与系统目录�
  heading('系统目录')+list(systemsReference.map(section=>[section.title,base+'systems/#'+section.id]))+
  systemsReference.map(section=>heading(section.title,section.id)+'<p>'+esc(section.text)+'</p><p>'+link(section.relatedLabel,base+section.related)+' · '+link('参考资料',section.source)+'</p>').join('')+
  heading('相关目录')+list([['能力与获取方式',base+'abilities/'],['收集目录',base+'collectibles/']]));
-page('secrets/','隐藏内容','Well Dweller 通关后的能力与灵魂碎片探索入口。',heading('通关后的探索','endings')+'<p>击败女王后先到寝室拿金币。集齐 32 件饰物打开寝室西门，学会腾空，再拿神秘标记。找到五枚灵魂碎片后，回夜之庭园的灵魂鸟巢触发真结局。</p>'+list([['女王',base+'bosses/the-queen/'],['女王金币',base+'collectibles/key-items/the-queens-coin/'],['腾空',base+'abilities/soar/'],['神秘标记',base+'collectibles/key-items/mysterious-markings/'],['灵魂碎片',base+'collectibles/spirit-fragments/'],['灵魂',base+'collectibles/spirits/']])+'<p>'+link('通关后参考','https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-together-at-last-achievement-trophy/')+'</p>');
+page('secrets/','隐藏内容','Well Dweller 通关后的能力与灵魂碎片探索入口。',
+ heading('通关后的探索','endings')+
+ '<ol><li>完成女王战后的庆祝剧情，回到战场上方，和寝室门边的拾荒者对话，再敲天花板拉杆。进寝室后可拿桌上的女王金币，补买饰物时可用折扣。</li>'+
+ '<li>凑齐 32 件饰物再开寝室西门。检查 20 个灵魂是否都已交给夜之庭园的鸟巢，并领取计入总数的带线回形针。</li>'+
+ '<li>学会腾空后，从能力蛋所在的鸟巢往上飞，到高处房间拿神秘标记，地图才会显示五处灵魂碎片入口。</li>'+
+ '<li>集齐五枚碎片后，回夜之庭园下层帐篷左边的鸟巢观看团聚过场，核对真结局成就。</li></ol>'+
+ list([['女王',base+'bosses/the-queen/'],['女王金币',base+'collectibles/key-items/the-queens-coin/'],['饰物位置清单',base+'collectibles/trinkets/#all-trinkets'],['灵魂位置清单',base+'collectibles/spirits/#spirits-by-area'],['腾空',base+'abilities/soar/'],['神秘标记',base+'collectibles/key-items/mysterious-markings/'],['灵魂碎片',base+'collectibles/spirit-fragments/'],['团聚结局成就',base+'achievements/together-at-last/']])+
+ '<p>'+link('通关后参考','https://gamersocialclub.ca/2026/09/21/well-dweller-unlock-the-together-at-last-achievement-trophy/')+'</p>');
 page('updates/','更新记录','Well Dweller 攻略整理的真实更新记录。',updateList(updates.length),{status:'in-progress'});
 // Keep previously linked addresses usable without publishing archived research content.
 const aliases={'walkthrough/chapter-01/':'walkthrough/','walkthrough/chapter-02/':'walkthrough/the-bog/','walkthrough/chapter-03/':'walkthrough/the-drains/','walkthrough/chapter-04/':'walkthrough/graven-valley/','walkthrough/chapter-05/':'walkthrough/','walkthrough/chapter-06/':'walkthrough/the-docks/','walkthrough/chapter-07/':'walkthrough/the-deep/','walkthrough/final/':'walkthrough/','bosses/boss-01/':'bosses/the-groundskeeper/','bosses/boss-02/':'bosses/','bosses/boss-03/':'bosses/','bosses/boss-04/':'bosses/','maps/area-map/':'maps/','maps/hidden-area/':'maps/hidden-paths/'};

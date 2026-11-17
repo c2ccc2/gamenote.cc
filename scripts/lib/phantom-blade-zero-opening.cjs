@@ -170,7 +170,7 @@ cageSteps.push(
 module.exports.walkthrough.push(...[
   [
     "mirror-deep",
-    "镜林深处：白赤练的蓝花",
+    "镜林深处：白赤练",
     "Deep Mirror Forest: Bai Chilian",
     [
       [
@@ -184,6 +184,10 @@ module.exports.walkthrough.push(...[
             "11的游戏世界 · P16 06:00"
           ]
         ]
+      ],
+      [
+        "血色森林终点：在丝线巨树的钟休整，穿过蓝花地，在雾门前完成还没交付的限时支线。进雾门挑战白赤练，胜后领取双刃。",
+        "Forest finale: Rest at the Threadbound Great Tree bell and cross the blue flower field. Finish any timed quest hand-ins before entering the mist. Defeat Bai Chilian to obtain the paired blades."
       ]
     ],
     null

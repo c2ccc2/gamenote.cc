@@ -3,13 +3,13 @@ module.exports={
   ['从溪谷推进到杀气塔，再前往大瀑布。','Reach Sha-Chi Tower, then continue to the waterfall.'],
   ['残钢、澎猛、新娘阿花、追命','Jagged Steel, Peng Meng, Hua, the Pursuer'],
   ['澎猛掉落巨凶斧；阿花掉落 Scarlet Wraithblade。','Peng Meng drops the Dread Axe; Hua drops Scarlet Wraithblade.'],
-  ['玉儿委托：在阿花花田的供桌前取得血肉花，再交给玉儿。','Yu’er: retrieve the Flesh Lily at the altar in Hua’s field and return it.'],
+  ['血肉花','Flesh Lily'],
   ['血肉花、瀑布岔路的 Sanguine Twin、红房子的超合金镰头','Flesh Lily; Sanguine Twin on the waterfall detour; alloy sickle head in the Red House']
  ],
  'forest-entry':[
   ['从红叶林经挂笼小道、飞贼营地和悬崖山舍推进到镜林深处。','Proceed from the red-leaf forest through Hanging Cage Path, Bandit Camp and the lodge to Deep Mirror Forest.'],
-  ['花千笑、荆野、铁狂','Hua Qianxiao, Jing Ye, Tie Kuang'],
-  null,
+  ['花千笑、荆野、铁狂、白赤练（镜林深处）','Hua Qianxiao, Jing Ye, Tie Kuang, Bai Chilian (Deep Mirror Forest)'],
+  ['白赤练掉落双刃。','Bai Chilian drops the paired blades.'],
   ['查看镜林崖边与树根旁的蓝花，分别听取铁鬼和虚空的对话。','Check the cliffside and tree-root blue flowers for Tie Gui’s and the apparition’s dialogue.'],
   ['挂笼小道灰箱：黑石碎片。临岩平台红金箱：斩骑符。','Grey chest on Hanging Cage Path: Blackstone Fragment. Cliffside red-and-gold chest: anti-cavalry charm.']
  ],
@@ -30,8 +30,8 @@ module.exports={
  'orthodox-camp':[
   ['从大营经乱葬岗、战场遗迹、三高塔和幽禁之地推进到校场。','Go from camp through the Mass Graves, Battlefield Ruins, Three Towers and confinement area to the Training Ground.'],
   ['经过幽禁之地的乌冷霜后可继续去校场找玉璧。推进白山派支线时，先检查乌冷霜战后的花丛遗体。','Continue from Wu Lengshuang’s confinement area to Yubi in the training grounds. For the Baishan quest, inspect the body among the flowers after Wu Lengshuang first.'],
-  null,
-  ['大营窗边可听墨玑子对话，三高塔和校场也有蓝花对话点。','Check the camp window for Mo Jizi’s dialogue and blue flowers at the Three Towers and Training Ground.'],
+  ['白山派支线完成战前调查后，玉璧战后可领支线铸魂材料。','Completing the Baishan investigation before fighting Yubi unlocks a quest tempering material after the fight.'],
+  ['白山派支线','Secrets of the Baishan Sect'],
   ['校场蓝花旁的红金宝箱内有悲鸣药。幻术琵琶背板在校场深处火盆房间的桌上，可在玉璧战前拾取。','The red-and-gold chest beside the training ground flower contains medicine. Pick up the pipa backplate from the table in the brazier room before fighting Yubi if desired.']
  ],
  'plum-lake':[
@@ -45,14 +45,15 @@ module.exports={
   ['沿岩壁木棚的移动提示找上层，再检查通向横伸大树的岩缝。','Use the traversal marker at the cliffside shelter and check the cleft leading toward the spreading tree.'],
   ['枷笼山深处会遇到荒行子。锯轮抬高时先留出侧闪空间，等它落下再靠近。','Huang Xingzi waits deeper in the mountain. Leave room to dodge sideways when the saw rises, then close in after it lands.'],
   ['击败荒行子取得血滴子。战后可在同一场地用它开启隐藏通道，沿通道向下探索。','Defeat Huang Xingzi for Blood Droplet. Use it in the same arena to open a hidden passage and descend.'],
-  null,null
+  ['横松下与虚空交谈','Talk to Inanis beneath the spreading pine'],
+  ['听完横松下的对话可取得虚空华扇。','Finish the conversation by the pine to obtain Inanis’s fan.']
  ],
  'late-58':[
   ['沿临崖木坡上行，离开火盆后循雪地露出的木板继续。','Climb the cliffside ramp and follow the exposed planks beyond the brazier.'],
   ['风雪刀客，战场上方有横跨的绳索。','Snowstorm Swordsman, on the snowfield beneath the ropes.'],
   ['风雪刀客掉落白影，命中可累积冰冻。','The Snowstorm Swordsman drops Baiying, which builds up freeze on hit.'],
-  null,
-  null
+  ['风雪刀客的记忆之花','Snowstorm Swordsman memories'],
+  ['码头可拾取熟练药师记忆，覆雪大船旁可拾取「至高尊者法旨」。','Find pharmacist memories at the jetty and the edict beside the snow-covered ship.']
  ],
  'late-60':[
   ['沿红灯石阶入庄，经过水灯岸边，在白烛堂击败囚锋，收集记忆后从双扇木门进入院落。','Enter by the red-lit stairs, pass the lantern shore, defeat Qiufeng in the candlelit hall, then take the double doors to the courtyard.'],
@@ -66,6 +67,6 @@ module.exports={
   ['力者与锯者在前段。山顶依次挑战梦差、圣母娘娘，能否继续挑战左殇取决于结局分支。','The paired fight comes earlier. At the summit, face the Herald and then the Holy Mother. The ending branch determines whether Zuo Shang follows.'],
   ['梦差掉落人偶铃铸魂材料，圣母娘娘掉落双持扇与对应铸魂材料。','The Herald drops the Puppeteer’s Bell tempering material. The Holy Mother drops her paired fan and its tempering material.'],
   ['进入最终冰洞前，确认湖心仪式后已与虚空交谈、领取 Violet Blossom，并完成五处龙柱挑战。两项齐全可进入真结局。','Before entering the final ice cave, speak to Inanis after the lake ritual, receive Violet Blossom and confirm all five pillar trials are complete. Both requirements unlock the true ending route.'],
-  null
+  ['真结局后回幻境领取金色单手剑、对应铸魂材料与剧情道具。','After the true ending, return to the Realm of Mirage for the sword, its tempering material and the story item.']
  ]
 };

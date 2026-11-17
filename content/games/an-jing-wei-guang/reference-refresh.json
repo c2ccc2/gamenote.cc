@@ -1,6 +1,18 @@
 {
   "updatedAt": "2026-10-13",
   "sources": {
+    "launch-patch": {
+      "name": "Steam · 9 月 26 日补丁 / September 26 patch",
+      "url": "https://steamcommunity.com/app/3699590/allnews/#:~:text=The%20first%20update%20is%20here",
+      "type": "official",
+      "accessedAt": "2026-11-17"
+    },
+    "october-patch": {
+      "name": "Steam · 10 月 2 日补丁 / October 2 patch",
+      "url": "https://steamcommunity.com/app/3699590/allnews/",
+      "type": "official",
+      "accessedAt": "2026-11-17"
+    },
     "trial-statue-locations": {"name":"Game Checklists · Well Dweller Time Trial Locations","url":"https://game-checklists.com/well-dweller/time-trials-checklist/","type":"guide","accessedAt":"2026-11-16"},
     "castle-fights": {
       "name": "Into Indie Games — Queen’s Castle & Ending",
@@ -644,10 +656,12 @@
         },
         "referencePuzzle": {
           "sources": [
-            "orb-puzzles"
+            "orb-puzzles",
+            "october-patch"
           ],
           "zh": [
             "机关规则：同一轮让石球碰到全部石柱；落地、撞墙或离开画面会重置。",
+            "如果石球嵌在平台里面，先检查游戏是否已更新。Steam 10 月 2 日补丁修复了秋日森林的这项卡球问题。",
             "双柱房：向左或右击球，让它在两根石柱间反弹。参考视频 00:00。",
             "三柱房：把球向右打向地柱，趁球弹起跳过地柱，到右侧第一层平台。球下落时向左打向墙柱，留在平台等球反弹回来。球到顶柱正下方时向上打。参考视频 00:16。",
             "第三处：站在石球右侧，把球向左打到斜蘑菇上。球反弹下落时，借房间中央的蘑菇跳起，在空中把球向右打，瞄准右侧弹性物的左上部。参考视频 00:34。",
@@ -656,6 +670,7 @@
           ],
           "en": [
             "Hit every pillar in one attempt; floor, wall or off-screen contact resets the orb.",
+            "If the orb gets stuck inside a platform, check for updates. The October 2 Steam patch fixed this Autumn Forest issue.",
             "Two-pillar room: send the orb sideways so it rebounds between both pillars. Reference video: 00:00.",
             "Three-pillar room: hit the orb right toward the floor pillar, then jump over it onto the first ledge on the right. Hit the falling orb left toward the wall pillar and stay on the ledge. When it returns beneath the ceiling pillar, strike upward. Reference video: 00:16.",
             "Third room: stand to the right of the orb and hit it left into the slanted mushroom. As the orb drops, bounce off the middle mushroom and strike right in midair, aiming at the upper-left of the right bumper. Reference video: 00:34.",
@@ -1133,7 +1148,8 @@
             "looter",
             "route",
             "vault",
-            "forest-gate"
+            "forest-gate",
+            "october-patch"
           ],
           "zh": [
             "接任务：救出针儿和刺儿后，回码头船坞找 Barge 学无限攀爬。到码头第一个帐篷的上一层，找第二处帐篷旁可进入的旧靴子。进靴子和低语者谈话拿金门钥匙，之后按地图上的金锁标记找四扇门。",
@@ -1141,7 +1157,8 @@
             "手臂（干涸城堡）：从帐篷往左，经过摆动平台和移动气泡，打开金门。用弹弓打齿轮，乘升起的平台过到对面，从左侧下落。沿路清怪，到尽头再下落，向左敲拉杆。折回下落后往右穿过粉色尖刺区，用悬停或弹弓上到高处，击败持蜡烛的敌人后向前拾取。",
             "躯干（排水道）：从排水道帐篷往东找金门，门后还有一处帐篷。存档后往右，借气流和悬停穿过带刺墙面。后面几段也要在气流中调整高度，沿同一条通道走到尽头拾取。",
             "头（沼泽）：金门在女王城堡入口西侧。过尖刺后击败两名敌人，从左上出口离开。借气泡升到顶，再向右到下一间操作开关，从上方越过挡板。继续爬高，避开尖刺缓慢下落，走左门。向左走时可以先下去开回程捷径，再返回上方平台，借气泡到顶部出口，进入房间拿头部。",
-            "交付：四件齐全后跟地图的新目标回码头旧靴子，与低语者交谈并拼好拾荒者，领取一根金色羽毛，同时解锁对应成就。"
+            "交付：四件齐全后跟地图的新目标回码头旧靴子，与低语者交谈并拼好拾荒者。等交付剧情结束，确认金色羽毛入手并解锁成就，再离开。",
+            "旧版本如果直接跳过了拼装剧情，先更新游戏。Steam 10 月 2 日补丁移除了会跳过这段剧情的调试逻辑。"
           ],
           "en": [
             "Start: After rescuing Thimble and Thistle, learn Endless Climb from Barge at the Docks shipyard. Go one level above the first Docks tent and enter the old boot beside the second tent. Speak to Whisper for the Golden Gate Key, then follow the four gold padlock markers on the map.",
@@ -1149,7 +1166,8 @@
             "Arms (Desiccated Castle): Head left from the tent, cross the swinging platforms and moving bubbles, and open the Golden Gate. Hit the gear with Slingshot and ride the rising platform across. Drop on the left, clear the enemies, then drop again at the end and go left to the lever. Backtrack and drop to the right through the pink spikes. Use Hover or Slingshot to reach the upper platform, defeat the candle enemy and collect the arms ahead.",
             "Torso (The Drains): Find the Golden Gate east of the Drains tent. Save at the tent just beyond the gate, then go right and use the air currents and Hover to cross the spike walls. Adjust your height in the currents along the next sections and follow the passage to the pickup.",
             "Head (The Bog): Open the Golden Gate west of the Queen’s Castle entrance. Cross the spikes, defeat the two enemies and take the upper-left exit. Bounce up on the bubbles, go right to the next room and hit the switch to pass above the barrier. Climb high, then descend carefully past the spikes and exit left. The downward branch opens a shortcut. Return to the upper platform and use the bubbles to reach the top exit and the head.",
-            "Hand-in: Once you have all four parts, follow the new map objective back to the old boot at the Docks. Speak to Whisper and reassemble Looter to receive a Golden Feather and unlock the achievement."
+            "Hand-in: Once you have all four parts, follow the new map objective back to the old boot at the Docks. Speak to Whisper and reassemble Looter. Before leaving, finish the scene and check for the Golden Feather and achievement.",
+            "If the reassembly scene was skipped on an older build, update the game. The October 2 Steam patch removed leftover debug logic that could skip this scene."
           ]
         }
       }
@@ -1588,17 +1606,23 @@
       "fields": {
         "referenceStrategy": {
           "sources": [
-            "lady"
+            "lady",
+            "workshop",
+            "launch-patch"
           ],
           "zh": [
             "收齐三件升降机部件后，从中央帐篷左侧乘升降机下行。排水道女士出现在头顶，用向上攻击或跳打够到她。她投出刺球或被旋转的尖刺围住时，先落回平台，等尖刺离开再打。",
             "召出小怪时先清小怪。它砸地会放出沿平台传播的冲击波，看到起手就准备跳过，落地后再处理小怪。",
-            "首领离场、画面向上滚动时，视线放到平台下方，看到尖球靠近再滑行躲开。两次滑行之间留出冷却时间。等她重新出现在上方、身边尖刺散开，再跳打或向上还击。"
+            "首领离场、画面向上滚动时，视线放到平台下方，看到尖球靠近再滑行躲开。两次滑行之间留出冷却时间。等她重新出现在上方、身边尖刺散开，再跳打或向上还击。",
+            "战后继续下层路线，去后续房间拿金色羽毛，并确认排水道底部的青蛙已救出。帐篷入口出现红色感叹号时，进去与 Willow 交谈，领取工坊代币并查看工坊菜单。",
+            "如果旧版本里打完首领但还没救青蛙，存档帐篷可能显示异常。Steam 9 月 26 日补丁已修复这个显示问题。"
           ],
           "en": [
             "Collect all three elevator parts, then descend on the lift left of the central tent. Use upward strikes or jump attacks when the Lady appears overhead. If she throws spike balls or surrounds herself with spinning spikes, land on the platform and wait for a clear opening.",
             "Clear summoned enemies first. Their ground slam sends a shockwave along the platform, so be ready to jump over it and deal with the summon on landing.",
-            "When the Lady leaves and the screen scrolls upward, watch below the platform. Slide as spike balls approach and leave time for the slide to recover. When she returns overhead and the spikes clear, resume upward strikes or jump attacks."
+            "When the Lady leaves and the screen scrolls upward, watch below the platform. Slide as spike balls approach and leave time for the slide to recover. When she returns overhead and the spikes clear, resume upward strikes or jump attacks.",
+            "After the fight, follow the lower route into the next room for the Golden Feather and make sure the frogs at the bottom of the Drains have been rescued. When a red exclamation mark appears at a tent entrance, go inside and speak to Willow for a Workshop Token, then check the workshop menu.",
+            "On older builds, the save tent could display incorrectly after the fight if the frogs had not been rescued. The September 26 Steam patch fixed this display issue."
           ]
         },
         "relatedAreas": {
@@ -1770,8 +1794,8 @@
           "zh": [
             "资料清单记录 27 枚。工坊代币配合货币，用于帐篷工坊升级可升级饰物。",
             "图标为带锤子的铜色五边形；先核对饰物是否已达到最高等级。",
-            "解锁工坊（来源地图第 4 项）：到下水道底部救出 Willow 的朋友，回自己的帐篷查看工坊，并拾取帐篷内的代币。",
-            "柱子机关（来源地图第 6 项）：用弹弓把火柴射进柱子左侧，升起柱子后，借火柴够到上方代币。",
+            "解锁工坊：排水道首领战后救出青蛙，帐篷入口出现红色感叹号时，进去找 Willow 领首枚代币（图文第 1 项）。",
+            "柱子机关（图文第 5 项）：用弹弓把火柴射进柱子左侧，升起柱子后，借火柴够到上方代币。",
             "气泡台阶（来源地图第 7 项）：站在中央，用弹弓打破气泡，每打破一个就登上一阶，直到顶端。",
             "平台下方（来源地图第 9 项）：沿平台逐层往下落，检查底部的小暗室，代币就在里面。以上编号可在参考清单点开对应房间地图。",
             "1：攀住笼子侧面，让笼子落下，露出通路。",
@@ -1788,8 +1812,8 @@
           "en": [
             "The reference checklist records 27 tokens. Spend tokens and currency at the tent workshop on upgradeable trinkets.",
             "Look for bronze pentagons with a hammer; check each trinket's upgrade level.",
-            "Workshop unlock (map entry 4): Rescue Willow’s friends at the bottom of the Drains. Return to your tent for the workshop and pick up the token inside.",
-            "Pillar mechanism (map entry 6): Fire the matchstick into the left side of the pillar. Raise the pillar, then use the matchstick to reach the token above.",
+            "Workshop unlock: Rescue the frogs after the Drains boss. When the red exclamation mark appears at a tent, speak to Willow inside for the first token (illustrated entry 1).",
+            "Pillar mechanism (illustrated entry 5): Fire the matchstick into the left side of the pillar. Raise the pillar, then use the matchstick to reach the token above.",
             "Bubble steps (map entry 7): Stand in the middle and pop the bubbles with Slingshot. Move up one step after each shot until you reach the top.",
             "Below the platforms (map entry 9): Drop from platform to platform and check the small hidden space at the bottom. Use the numbered entries in the linked checklist to open the room maps.",
             "1: Climb the side of the cage to drop it and open the path.",
@@ -2100,11 +2124,13 @@
           "zh": [
             "从排水道中央帐篷向左走两间，再往上进入计时挑战房。",
             "建议带上无限攀爬和悬停。贴墙往上爬，需要换边时蹬墙跳到对面，再继续向上。",
+            "想提前拿鱼钩，可以用攀爬和弹弓过关。沿长墙上升时，把火柴射到需要借力的位置，踩火柴继续向上。实录第 2 集 33:29 展示了早期跑法。",
             "过关后走进开启的奖励房拾取鱼钩。装备后，低血量时焰瓶补充更快。"
           ],
           "en": [
             "From the central Drains tent, go left two rooms, then up into the time trial room.",
             "Endless Climb and Hover are recommended. Climb the vertical route, wall-jumping across to the opposite wall when you need to switch sides.",
+            "For an early Fish Hook, use Climb and Slingshot. On the long walls, place the matchstick where you need a boost and bounce from it to keep climbing. Episode 2 at 33:29 shows the early route.",
             "After clearing the trial, enter the unlocked reward room to pick up Fish Hook. Equipping it speeds up Flaming Vessel refills at low health."
           ]
         }
@@ -2191,16 +2217,20 @@
       "id": "the-docks",
       "fields": {
         "referenceChecklist": {
-          "sources": ["docks-collectibles", "trinket-locations", "spirit-room-routes"],
+          "sources": ["docks-collectibles", "trinket-locations", "spirit-room-routes", "ending"],
           "zh": [
             "缠线钉：从码头右侧帐篷向上两间，再往右过气泡机关，继续向上。带上攀爬和悬停。装备后，敌人被击败时会产生小爆炸。",
             "邮票：从同一处帐篷向上五间，再向左到计时挑战石像。继续向左一间后下落，在尖刺房用弹弓把火柴变成落脚点，配合攀爬和悬停过去。装备后，无伤连续击败敌人可获得更多货币。",
-            "码头的两处灵魂：从右侧帐篷向上三间，检查房间左端的平台。另一处从左下帐篷出发，依次往右、右上、右走，在房间中央找暗墙，向下穿入找到石像。经过计时挑战石像时，也可完成挑战并进入奖励房领取饰物槽。"
+            "码头的两处灵魂：从右侧帐篷向上三间，检查房间左端的平台。另一处从左下帐篷出发，依次往右、右上、右走，在房间中央找暗墙，向下穿入找到石像。经过计时挑战石像时，也可完成挑战并进入奖励房领取饰物槽。",
+            "通关后回访灵魂碎片：学会腾空并拿到神秘标记后，从低语者小屋旁的帐篷往东，在桥上腾空。爬到隐藏区顶部平台再跳下，途中收齐 100 个闪光物。",
+            "下落时让角色保持在画面偏下，左右对准下一组闪光物。漏过一个时，利用上方空间补捡。赶不及时可按左下角提示重试，也可以先跑到底看完剩余排列。"
           ],
           "en": [
             "Nails with Twine: From the right-hand Docks tent, go up two rooms, head right through the bubble puzzle and continue upward. Bring Climb and Hover. With it equipped, defeated enemies produce a small explosion.",
             "Postage Stamp: From the same tent, go up five rooms and left to the time trial statue. Go left one more room and drop down. Use Slingshot to place the matchstick as a foothold across the spikes, with Climb and Hover. Equipping it boosts currency from consecutive kills without taking damage.",
-            "Both Docks spirits: From the right-hand tent, go up three rooms and check the far-left platform. For the other statue, go right, up-right and right from the lower-left tent, then drop through the hidden wall near the center. Complete the time trial and enter its reward room if you also need the trinket slot."
+            "Both Docks spirits: From the right-hand tent, go up three rooms and check the far-left platform. For the other statue, go right, up-right and right from the lower-left tent, then drop through the hidden wall near the center. Complete the time trial and enter its reward room if you also need the trinket slot.",
+            "Postgame Spirit Fragment: After learning Soar and collecting Mysterious Markings, go east from the tent by Whisper’s hut and soar from the bridge. Climb to the top platform, jump off and collect all 100 lights on the way down.",
+            "Keep Glimmer low on the screen as you fall and move sideways to line up with the next group of lights. If you pass one, use the space above to recover it. Follow the bottom-left retry prompt if it gets away, or finish the attempt to see the remaining pattern."
           ]
         },
         "referencePuzzle": {
@@ -2887,15 +2917,18 @@
       "fields": {
         "referenceChecklist": {
           "sources": [
-            "ilda-camp"
+            "ilda-camp",
+            "october-patch"
           ],
           "zh": [
             "从沼泽帐篷往左再往上，借气泡弹跳上去。清完敌人往右，击败下一房的巨型飞虫后继续向右。",
-            "到冒泡的水池，将火柴投向墙面。先踩气泡弹到火柴上，再借火柴弹到上层平台。进下一间找伊尔达，露营过场结束、第二天醒来时解锁成就。"
+            "到冒泡的水池，将火柴投向墙面。先踩气泡弹到火柴上，再借火柴弹到上层平台。进下一间找伊尔达，露营过场结束、第二天醒来时解锁成就。",
+            "如果旧版本曾在沼泽篝火过场中退出或传送，导致成就没跳出，更新游戏后读入原存档。Steam 10 月 2 日补丁说明，这种情况下读档应会重新触发成就。"
           ],
           "en": [
             "Go left and up from the Bog tent, bouncing up on the bubbles. Clear the enemies, go right, defeat the large flying insect in the next room and continue right.",
-            "At the bubbling pool, throw the matchstick into the wall. Bounce from a bubble to the matchstick, then up to the ledge. Meet Ilda in the next room and finish the campsite scene. The achievement unlocks when you wake up."
+            "At the bubbling pool, throw the matchstick into the wall. Bounce from a bubble to the matchstick, then up to the ledge. Meet Ilda in the next room and finish the campsite scene. The achievement unlocks when you wake up.",
+            "If you left or teleported away during the Bog campfire scene on an older build and missed the achievement, update the game and load the same save. The October 2 Steam patch says this should trigger the achievement again."
           ]
         }
       }
@@ -2906,17 +2939,20 @@
       "fields": {
         "referenceChecklist": {
           "sources": [
-            "willow-spa"
+            "willow-spa",
+            "october-patch"
           ],
           "zh": [
             "先在排水道学会乘风。从断梯帐篷右侧的风道房继续向右，乘风向右上方走，再下到岔路，选右上出口，找到正在泡澡的青蛙 Willow 并交谈。",
             "继续推进并回帐篷找 Willow。实机记录在躲避女王后回干涸城堡帐篷触发对话。听到开设水疗馆的消息后，地图会标出新目标。",
-            "回夜之庭园靠近灵魂交付处的帐篷，一路向左进入水疗馆，即可解锁成就。"
+            "回夜之庭园靠近灵魂交付处的帐篷，一路向左进入水疗馆，即可解锁成就。",
+            "进馆后可下水恢复生命。旧版本如果泡水不回血，先更新游戏。Steam 10 月 2 日补丁修复了这项问题。"
           ],
           "en": [
             "Learn Wind Ride in the Drains. From the wind-and-spikes room east of the broken elevator tent, go another room to the right. Ride the wind up and right, descend to the fork, then take the upper-right exit and speak to Willow while he bathes.",
             "Keep progressing and check tents for Willow. The recorded run found him at the Desiccated Castle tent after evading the Queen. His spa announcement adds a map objective.",
-            "Return to the Night Garden tent near the spirit nest and head left until you enter the spa. Entering unlocks the achievement."
+            "Return to the Night Garden tent near the spirit nest and head left until you enter the spa. Entering unlocks the achievement.",
+            "Step into the spa water to recover health. If it does not heal you on an older build, update the game. The October 2 Steam patch fixed this issue."
           ]
         }
       }
@@ -2927,15 +2963,18 @@
       "fields": {
         "referenceChecklist": {
           "sources": [
-            "looter"
+            "looter",
+            "october-patch"
           ],
           "zh": [
             "和靴子里的 Whisper 交谈取得金钥匙，按地图金锁标记开门。墓谷找腿、干涸城堡找手臂、排水道找躯干、沼泽找头。",
-            "收齐四件后，地图会标出交付地点。回到接任务的位置拼好拾荒者，领取金色羽毛并解锁成就。"
+            "收齐四件后，地图会标出交付地点。回到码头的旧靴子拼好拾荒者，领取金色羽毛并核对成就。",
+            "如果旧版本跳过了拼装剧情，先更新游戏。Steam 10 月 2 日补丁已移除导致剧情跳过的调试逻辑。"
           ],
           "en": [
             "Speak to Whisper inside the boot for the Golden Key. Follow the gold padlock markers to recover the legs in Graven Valley, arms in Desiccated Castle, torso in the Drains and head in the Bog.",
-            "Once all four parts are collected, follow the new map marker back to the quest start and reassemble Looter. This unlocks the achievement and awards a Golden Feather."
+            "Once all four parts are collected, follow the new map marker back to the old boot at the Docks and reassemble Looter. Check for the Golden Feather and achievement.",
+            "If the reassembly scene was skipped on an older build, update the game. The October 2 Steam patch removed the leftover debug logic that skipped the scene."
           ]
         }
       }
