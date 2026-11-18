@@ -35,4 +35,13 @@
 .pbz-area-summary dd {margin:.25rem 0 0}
 .pbz-area-summary dd ul {margin:.35rem 0 1rem;padding-inline-start:1.4rem}
 .pbz-area-summary dd li + li {margin-top:.35rem}
+.pbz-summary {margin:1.5rem 0 2rem;border-block:1px solid #b7baaa;padding:1rem 0}
+.pbz-summary .classic-heading {text-align:left;margin:0 0 .8rem;font-size:1.35rem}
+.pbz-summary dl {margin:0}
+.pbz-summary-row {display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:1rem;padding:.65rem .4rem;border-bottom:1px solid #d9dace}
+.pbz-summary-row:last-child {border-bottom:0}
+.pbz-summary-row dt,.pbz-summary-row dd {margin:0;font-size:1rem;line-height:1.7}
+.pbz-summary-footer {display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin-top:.8rem}
+.pbz-summary-note {font-size:.85rem;color:#62685e;margin:.7rem 0 0}
+@media(max-width:600px){.pbz-summary-row{grid-template-columns:5.5rem minmax(0,1fr);gap:.6rem}}
 .pbz-timing-links {display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;padding-inline-start:1.4rem}

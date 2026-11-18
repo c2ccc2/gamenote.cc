@@ -18,7 +18,7 @@ module.exports={
   ['拙壁守在村口。收齐六段萤火记忆后，可从幽蓝萤火之庙后门进峡谷挑战荡秽。','Zhuo Bi guards the village entrance. Collect all six Firefly memories to reach Danghui through the canyon behind the Temple of Blue Fireflies.'],
   ['荡秽掉落人偶铃和幻术琵琶的琴头。','Danghui drops the Puppeteer’s Bell and the Illusory Pipa Head.'],
   ['幸存者小院的钟旁进屋可接大黄的委托；也可把幽蓝萤火之庙歌伎人偶的信交给院里的紫衣人。','Accept Dahuang’s tale inside the house near the Survivors’ Courtyard bell. Deliver the Songstress Puppet’s letter from the Temple of Blue Fireflies to the man in purple.'],
-  ['红漆案桌提供饰品打磨；飞贼密道红光门旁可查看蓝花。','Accessory polishing at the red workbench; blue flower beside the red-lit doorway in the Bandit Passage.']
+  ['飞贼藏宝地窖的红布台可拿黑石。红漆案桌提供饰品打磨。荡秽战后可拿人偶铃和琵琶琴头；兰大少委托结算可拿碧血云天。','Collect Blackstone from the red-cloth altar in the thieves’ cellar. The red workbench offers accessory polishing. Danghui awards the bell and pipa head; Lan’s quest awards an accessory.']
  ],
  'pang-town':[
   ['从红灯外廊进入市集与后街，经过祠堂一带前往码头。杀气塔和大殿另有回访路线。','From the lantern balcony, follow the market and backstreets past the ancestral hall toward the docks. The tower and hall have return routes.'],

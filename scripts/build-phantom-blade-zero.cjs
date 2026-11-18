@@ -4,8 +4,11 @@ const opening=require('./lib/phantom-blade-zero-opening.cjs');
 const regions=require('./lib/phantom-blade-zero-regions.cjs');
 const areaBriefs=require('./lib/phantom-blade-zero-area-briefs.cjs');
 const pickupTiming=require('./lib/phantom-blade-zero-pickup-timing.cjs');
+const materialCounts=require('./lib/phantom-blade-zero-material-counts.cjs');
+const areaLoot=require('./lib/phantom-blade-zero-area-loot.cjs');
 // Describe pickups and landmarks by their appearance when a Chinese in-game name is unverified.
 const chineseAreaTerms=[
+ ['The Journey Home','归家委托'],['Young Master Lan','兰大少'],
  ['Lady’s Rift','山崖下的存档钟'],['Sanguine Twin','双持武器'],['Broken Puppet Valley','断偶所在的谷地'],
  ['Rustblade Pavilion','残钢战后的存档钟'],['Outpost Courtyard','据点庭院'],['Outpost','据点'],
  ['Blackstone Shard','黑石碎片'],['Peng Meng','澎猛'],['Valley Sha-Chi Tower 1st Floor','溪谷杀气塔一层'],
@@ -125,10 +128,63 @@ for(const en of [false,true]){
   const index=page?.[0]==='side-quests'
    ?questGroups.map(group=>`<section id="quests-${group[0]}"><h2 class="classic-heading">${label(group)}</h2>${indexGrid(group.slice(3).map(id=>questEntries.get(id)),label(group))}</section>`).join('')
    :page?chapter+indexGrid(items,label(page))+timingIndex:'';
-  const renderContent=([,,,steps,source])=>steps.map(renderStep).join('')+(source?`<p><a href="${source}">${(source.startsWith('/')||source.startsWith('../'))?(en?'Open the area walkthrough':'查看区域图文流程'):(en?'Walkthrough reference':'攻略资料来源')} ↗</a></p>`:'');
+  const renderLuCheck=(index)=>{
+   const [title,steps]=require('./lib/phantom-blade-zero-lu-checklist.cjs')[en?'en':'zh'][index];
+   return '<section id="lu-checklist-'+index+'"><h2 class="classic-heading">'+title+'</h2><ol>'+steps.map(text=>'<li>'+text+'</li>').join('')+'</ol></section>';
+  };
+  const luMaterials=[
+   ['圣母像山洞外围。','如果刚打完拙壁，先打开村口战场里的宝箱，拿 1 枚黑石碎片。','If you just defeated Zhuo Bi, open the arena chest at the village entrance for one Blackstone Shard.','https://www.18183.com/gonglue/202611/f8861g18.html'],
+   ['三人偶水井。','下河往右，清掉宝箱前的敌人，再回去找哭泣的人交谈，拿 1 枚杀气琥珀碎片。','Go down to the river and turn right. Clear the enemies in front of the chest, then return to the crying person and talk to them for one Amber Shard.','https://www.gamersky.com/handbook/202610/2238132_2.shtml'],
+   ['大廊桥。','到廊桥下层的神龛后清敌，调查树下的棺材，拿 1 枚黑石碎片。过桥后在岔路右转，进屋下梯，到外侧悬崖拿 1 枚杀气琥珀碎片。','Clear the enemies past the shrine on the lower level and inspect the coffin beneath the tree for one Blackstone Shard. After crossing the bridge, take the right fork, enter the house and go down the ladder to the outer cliff for one Amber Shard.'],
+   ['飞贼密道。','在密道入口击败碧海大师残躯后，打开右侧紫色宝箱，拿 1 枚黑石碎片。','Defeat the remnant at the passage entrance and open the purple chest on the right for one Blackstone Shard.'],
+   ['人偶试验场。','打开通往庞镇的通道后，进入尽头房间，调查桌上的紫光，拿 1 枚黑石碎片。','After opening the passage to Pang Town, enter the room at the end and inspect the purple glow on the table for one Blackstone Shard.']
+  ];
+  const renderLuMaterials=(id,step)=>{
+   if(entry?.[0]!=='lu-village'||id!=='lu-village-route') return '';
+   const material=luMaterials.find(([start])=>step.startsWith(start));
+   if(!material) return '';
+   const [,zh,english,reference]=material;
+   const anchor=material===luMaterials[0]?' id="lu-material-locations"':'';
+   const source=reference?` <a href="${reference}">${en?'Location reference':'位置参考'} ↗</a>`:'';
+   return `<p${anchor}>${en?english:zh}${source}</p>`;
+  };
+  const luRouteHeadings=[
+   ['圣母像山洞外围。','从村口出发，经山洞外围到湖岸','From the village entrance to the lakeside'],
+   ['三人偶水井。','搜水井与大廊桥，再走飞贼密道','Search the well and covered bridge, then take the bandit passage'],
+   ['梯田。','上梯田，先办小院和萤火之庙的支线','Climb the terraces and check the courtyard and temple quests'],
+   ['人偶试验场。','穿过人偶试验场，到湖畔挑战沐小葵','Cross the testing ground and fight Mu Xiaokui'],
+   ['飞贼藏宝地窖。','可选探索：飞贼藏宝地窖','Optional exploration: the bandit treasure cellar']
+  ];
+  const renderContent=([id,,,steps,source])=>steps.map(step=>{
+   const luRoute=entry?.[0]==='lu-village'&&id==='lu-village-route';
+   const heading=luRoute&&luRouteHeadings.find(([start])=>step[0].startsWith(start));
+   const bossPosition=luRoute&&step[0].startsWith('湖畔。');
+   const cellar=luRoute&&step[0].startsWith('飞贼藏宝地窖。');
+   return (heading?`<h3>${heading[en?2:1]}</h3>`:'')+
+    (bossPosition?renderLuCheck(0):'')+renderStep(step)+renderLuMaterials(id,step[0])+
+    (bossPosition?renderLuCheck(1):'')+(cellar?renderAreaPickups(id):'');
+  }).join('')+(source?'<p><a href="'+source+'">'+((source.startsWith('/')||source.startsWith('../'))?(en?'Open the area walkthrough':'查看区域图文流程'):(en?'Walkthrough reference':'攻略资料来源'))+' ↗</a></p>':'');
   const brief=page?.[0]==='walkthrough'&&entry?areaBriefs[entry[0]]:null;
-  const briefLabels=en?['Progression goal','Bosses','Drops','Side content','Items and services']:['推进目标','首领','掉落与奖励','支线与探索','道具与服务'];
-  const overview=brief?`<section class="pbz-area-summary"><h2 class="classic-heading">${en?'Area highlights':'本区域要点'}</h2><dl>${briefLabels.map((title,i)=>{const text=brief[i]?.[en?1:0];return text?`<dt>${title}</dt><dd>${areaText(text)}</dd>`:''}).join('')}</dl></section>`:'';
+  const counts=entry&&materialCounts[entry[0]];
+  const areaPickups=entry?curated.filter(item=>item[5]===entry[0]):[];
+  const summaryRow=(title,text)=>text?'<div class="pbz-summary-row"><dt>'+title+'</dt><dd>'+areaText(text)+'</dd></div>':'';
+  const materialText=counts?(counts[0]===null?(en?'No separate count published':'未单列数量'):(en?'Blackstone Shards '+counts[0]+' · Amber Shards '+counts[1]:'黑石碎片 '+counts[0]+' 枚 · 杀气琥珀碎片 '+counts[1]+' 枚')):'';
+  const lootText=entry&&areaLoot[entry[0]]?areaLoot[entry[0]].map(pair=>pair[en?1:0]).join(en?'; ':'；'):'';
+  const overview=brief?'<section class="pbz-area-summary pbz-summary"><h2 class="classic-heading">'+(en?'Area highlights':'本区域要点')+'</h2><dl>'+
+   summaryRow(en?'Goal':'推进目标',brief[0]?.[en?1:0])+
+   summaryRow(en?'Bosses':'首领',brief[1]?.[en?1:0])+
+   summaryRow(en?'Materials':'收集数量',materialText)+
+   summaryRow(en?'Items':'可收集物品',lootText)+
+   summaryRow(en?'Rewards':'战后奖励',brief[2]?.[en?1:0])+
+   summaryRow(en?'Side content':'支线与探索',brief[3]?.[en?1:0])+'</dl><details class="pbz-summary-extra" open><summary>'+(en?'Items and services details':'道具与服务补充')+'</summary><p>'+areaText(brief[4]?.[en?1:0]||'')+'</p></details>'+
+   '<footer class="pbz-summary-footer">'+(areaPickups.length?'<a href="#area-pickup-details">'+(en?'Item locations':'物品位置')+' →</a>':'')+
+   (entry[0]==='lu-village'?'<a href="#lu-material-locations">'+(en?'Material locations':'黑石与琥珀位置')+' →</a>':'')+'</footer>'+
+   (counts?.[2]?'<p class="pbz-summary-note">'+(en?(entry[0]==='lu-village'?'One amber shard is on an adjoining route.':counts[0]===null?'The Snow Mountain extension has no separate material count.':'Combined count for Pang Town and Dreamplay Manor.'):counts[2])+'</p>':'')+'</section>':'';
+  const firstPickupSection=entry?.[5]?.find(section=>areaPickups.some(item=>item[6]===section[0]))?.[0];
+  const renderAreaPickups=section=>{
+   const pickups=areaPickups.filter(item=>item[6]===section);
+   return pickups.length?`<ul${section===firstPickupSection?' id="area-pickup-details"':''}>${pickups.map(item=>`<li><strong>${areaText(label(item))}</strong> · ${areaText(item[en?4:3])}</li>`).join('')}</ul>`:'';
+  };
   const renderBossLinks=section=>{
    const bosses=opening.bosses.filter(([id])=>bossSections[id]===section);
    return bosses.length?`<nav class="pbz-grid" aria-label="${en?'Boss guides':'首领打法'}">${bosses.map(boss=>`<a href="${base}bosses/${boss[0]}/">${areaText(label(boss))} →</a>`).join('')}</nav>`:'';
@@ -189,8 +245,8 @@ for(const en of [false,true]){
   const checkpoints={
    'cage-late-fight':['交还账簿前，留意会影响白雪支线的对话选项。','The dialogue choice when returning the ledger determines whether Bai Xue’s tale opens.'],
    'hanging-cage':['挑战荆野前，把三种药草带回悲泣溪谷据点交给玉儿。击败荆野后，未完成的采药支线会失败。','Return all three herbs to Yu’er at the valley outpost before defeating Jing Ye. An unfinished Apprentice Healer tale fails after the fight.'],
-   'mirror-deep':['挑战白赤练前，先完成据点和飞贼营地的限时支线，并在大桥找兰兰接取白山派支线。','Before Bai Chilian, finish the timed outpost and camp tales and accept Secrets of the Baishan Sect from Lanlan on the bridge.'],
-   'lu-village-route':['进庞镇前，先回报 The Journey Home 的开路委托，并完成 Young Master Lan 开路后的对话。','Before entering Pangzhen, report back for The Journey Home and speak to Young Master Lan after opening his route.'],
+   'mirror-deep':['挑战白赤练前，先回悲泣溪谷领取坚岩护腕和浑源静脉仪，再完成据点与飞贼营地的限时支线，并在大桥找兰兰接白山派支线。','Before Bai Chilian, return to the valley for the two timed accessories, finish the outpost and camp tales and accept the Baishan quest from Lanlan.'],
+   'lu-village-route':['从村口一路走到湖畔。离开陆家村前要做两次检查：开打沐小葵前处理限时委托，打完后先拿码头和树下宝箱的物品，再回村找兰大少和老根头复命。','Head from the village entrance to the lakeshore. Finish the timed quest steps before fighting Mu Xiaokui, collect the dock and tree-side loot afterward, then return to report to Lan and the old man.'],
    'orthodox-camp-route':['白山派支线需先击败乌冷霜并调查花丛遗体，再挑战玉璧。首次遇见红衣女子时，击败她会使其支线失败。','For the Baishan tale, defeat Wu Lengshuang and inspect the body among the flowers before Yubi. Defeating Red on your first encounter fails her tale.'],
    'pang-town-route':['进入戏梦山庄前，建议先核对湖心秘密及其前置任务。到断魂山最终冰洞前，再核对湖心仪式后的虚空对话与五处龙柱挑战。','Before entering Mirage Estate, check Secrets at the Heart of the Lake and its prerequisites. Before the final ice cave on Mount Soulrend, verify the post-ritual Inanis conversation and all five pillar trials.','ending-checkpoints'],
    'soulbreak-finale':['进入断魂山终局冰洞前，确认五处龙柱挑战完成，并在湖心仪式后与虚空交谈、领取 Violet Blossom。','Before entering the final ice cave on Mount Soulrend, confirm all five pillar trials are complete and you received Violet Blossom from Inanis after the lake ritual.','ending-checkpoints']
@@ -212,6 +268,8 @@ for(const en of [false,true]){
     ],
     'hanging-cage':[['apprentice-healer','玉儿采药路线','Apprentice Healer route']],
     'mirror-deep':[
+     ['../walkthrough/against-the-flow/#against-the-flow','坚岩护腕领取路线','Bracer pickup route'],
+     ['../walkthrough/against-the-flow/#tower-to-waterfall','浑源静脉仪领取路线','Timing accessory pickup route'],
      ['healers-mercy','四名飞贼的救治路线','Route to the four wounded thieves'],
      ['baishan-secrets','白山派支线接取路线','Baishan tale and where to accept it'],
      ['purge-the-sect','羽弓交付路线','Feather Bow hand-in'],
@@ -234,7 +292,8 @@ for(const en of [false,true]){
    const routeLink=(relatedGuides[id]||[]).map(guide=>` <a href="${base}side-quests/${guide[0]}/">${label(guide)} →</a>`).join('');
    return `<aside class="pbz-info"><p>${areaText(en?english:zh)}</p><p><a href="${base}side-quests/${target}/">${en?'View quest requirements':'查看任务条件'} →</a>${routeLink}</p></aside>`;
   };
-  const detail=entry?overview+renderTiming+cutoffLink+(entry[5]?entry[5].map(section=>`<section id="${section[0]}"><h2 class="classic-heading">${label(section)}</h2>${renderCheckpoint(section[0])}${renderBossLinks(section[0])}${renderContent(section)}${renderPickupLinks(section[0])}</section>`).join(''):areaLink+renderContent(entry[4]?.startsWith('../../walkthrough/')?[...entry.slice(0,4),null]:entry)+rewardLink+memoryLink+questBossLinks+questLink+tigerCannonLink):'';
+
+  const detail=entry?overview+renderTiming+cutoffLink+(entry[5]?entry[5].map(section=>`<section id="${section[0]}"><h2 class="classic-heading">${label(section)}</h2>${renderCheckpoint(section[0])}${renderBossLinks(section[0])}${renderContent(section)}${section[0]==='lu-village-route'?'':renderAreaPickups(section[0])}${renderPickupLinks(section[0])}</section>`).join(''):areaLink+renderContent(entry[4]?.startsWith('../../walkthrough/')?[...entry.slice(0,4),null]:entry)+rewardLink+memoryLink+questBossLinks+questLink+tigerCannonLink):'';
   const position=items.indexOf(entry);
   const adjacent=entry?`<nav class="pbz-grid" aria-label="${en?'Adjacent entries':'相邻条目'}">${[items[position-1],items[position+1]].map((item,i)=>item?`<a href="${base+category+item[0]}/">${i===0?'← ':''}${label(item)}${i===1?' →':''}</a>`:'').join('')}</nav>`:'';
   const facts=en?[['Developer','S-Game'],['Genre','Wuxia action'],['Platforms','PS5 / PC'],['Release','29 October 2026']]:[['开发商','灵游坊（S-Game）'],['类型','武侠动作'],['平台','PS5 / PC'],['发售日期','2026 年 10 月 29 日']];

@@ -2,6 +2,7 @@ const fs=require('node:fs'),path=require('node:path');
 const writeFile=require('./lib/write-file.cjs');
 const g=require('./lib/astlibra-guide.cjs');
 const edits=require('../content/games/astlibra-revision/reader-copy.cjs');
+const routePickups=require('../content/games/astlibra-revision/pickups.cjs');
 const root=path.resolve(__dirname,'..'),base=g.base,origin='https://gamenote.cc',updated='2026-10-22';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const json=v=>JSON.stringify(v).replaceAll('<','\\u003c');
@@ -46,33 +47,93 @@ function block(b,title,table=false){
  return `<p ${trace}>${esc(text)}</p>`;
 }
 function table(headers,rows){return `<div class="classic-table-wrap"><table class="classic-table"><thead><tr>${headers.map(h=>`<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.map(row=>`<tr>${row.map((v,i)=>i?`<td>${v}</td>`:`<th scope="row">${v}</th>`).join('')}</tr>`).join('')}</tbody></table></div>`;}
+const arenaPlaythrough='https://steamcommunity.com/sharedfiles/filedetails/?id=3310300881';
+const arenaTips={
+ 'cup-2':['双皇连','近战跟不上时，可用成长盘解锁的魔杖，调高魔导力，按住上方向攻击，让弹道更平，拉开距离边走边打。','Arioth 的实玩记录',arenaPlaythrough],
+ 'cup-4':['摧毁的美学','这是限时清理可破坏物的挑战。大锅共三口，最左侧还有一口。沿途清掉水草，并检查左侧岩石。近战站在锅侧避开蒸汽，用升空攻击接下劈；走凭依路线可在锅旁用独角兽。','高级合成配方挑战实测','https://steamcommunity.com/app/1718570/discussions/0/3766732279427641498/']
+};
+function arenaIntro(){
+ return `<section class="khazan-route-section" id="arena-preparation"><h2 class="classic-heading">什么时候回斗技场</h2><p>第二章推进到酒馆接下运送委托后，先去斗技场看看。以后每章有自由活动时，可先推进酒馆剧情，等出现确认出发的对话再去查新杯赛。拿到增加饰品槽的道具后，记得在道具菜单使用。</p><p>${link('杯赛开放时机实玩记录 ↗',arenaPlaythrough)}</p>${links([
+  {title:'布里帝恩杯 · 双皇连：额外饰品槽',href:'#cup-2'},
+  {title:'艾里泽斯杯 · 摧毁的美学：高级合成配方',href:'#cup-4'},
+  {title:'阿克拉希诺杯 · 增产计划：额外饰品槽',href:'#cup-5'},
+  {title:'阿涅斯塔杯 · 拦路虎：面包房配方',href:'#cup-7'}
+ ])}</section>`;
+}
 function sectionBody(s,page){
  if(s.table==='gem-effects')return block(s.blocks[0],s.title)+table(['元件宝石','强化效果'],s.blocks.slice(2).map(b=>b.text.split('➡').map(esc)));
  if(s.table==='transforms')return block(s.blocks[0],s.title)+table(['强化等级与原技能','变化后技能'],s.blocks.slice(1).map(b=>b.text.split('➡').map(esc)));
  if(s.table==='medals')return table(['兑换次序','奖励'],s.blocks.map(b=>{const m=b.text.match(/^(\d+)、(.+)$/);if(!m)throw Error('Invalid medal reward');return [m[1],esc(m[2])];}));
- if(s.table==='arrows')return table(s.headers,s.blocks.map(b=>b.text.split('➡').map(esc)));
+ if(s.table==='arrows'){
+  const tip=page.id==='arena'?arenaTips[s.id]:null;
+  return table(s.headers,s.blocks.map(b=>b.text.split('➡').map(esc)))+(tip?`<h3>${esc(tip[0])}打法</h3><p>${esc(tip[1])}</p><p>${link(tip[2]+' ↗',tip[3])}</p>`:'');
+ }
  if(s.table==='recipes'){
   // Reader corrections preserve the archived source; recipes are not reversible.
 
   let html='',rows=[];const flush=()=>{if(rows.length){html+=table(['材料组合','合成结果'],rows);rows=[];}};
   for(const b of s.blocks){const text=readerText(b);if(text.includes('=')){const [materials,result]=text.split('=');const uncertain=/铁矿石\+冶炼套件=银锭|冶炼套件\+铁定=炸弹/.test(text);rows.push([esc(materials),esc(result)+(uncertain?'<small class="astlibra-source-note">原资料此行存在名称疑点，请以游戏内配方为准。</small>':'')]);}else{flush();html+=`<h3>${esc(headingText(text))}</h3>`;}}flush();return html+'<p class="astlibra-source-note">已校正：铁矿石＋冶炼套件＝铁锭；冶炼套件＋铁锭＝炸弹（炼金术配方）。合成与分解不一定互为逆过程。核对：<a href="https://w.atwiki.jp/astlibra/pages/74.html" target="_blank" rel="noopener noreferrer">Revision 道具资料</a>，2026-10-22。</p>';
  }
- return s.blocks.map((b,i)=>block(b,s.title+(page.imageTable?` · 图表 ${i+1}`:''),page.imageTable)).join('');
+ const reminders=g.reminders.filter(r=>r.route===page.category+'/'+page.id);
+ const encounters=g.encounters.filter(r=>r.route===page.category+'/'+page.id);
+ const gems=page.category==='postgame'?g.gems.filter(r=>r.route==='postgame/'+page.id):[];
+ return s.blocks.map((b,i)=>{
+  const tips=reminders.filter(r=>r.doc===b.doc&&r.block===b.index);
+  const combat=encounters.filter(r=>r.doc===b.doc&&r.block===b.index);
+  const gem=gems.find(r=>r.doc===b.doc&&r.image===b.index);
+  const gemNote=gem?`<aside class="astlibra-reminder" id="route-gem-${gem.id}"><p><strong>${esc(gem.name)}元件</strong> · ${esc(gem.location)}</p><p>${esc(gem.condition)}</p></aside>`:'';
+  return tips.map(r=>`<aside class="astlibra-reminder" id="route-tip-${r.id}"><p><strong>${esc(r.title)}</strong> · ${esc(r.action)}</p>${r.choice?`<details class="astlibra-spoiler"><summary>展开具体选项与影响（剧透）</summary><p>${esc(r.choice)}</p></details>`:''}</aside>`).join('')+
+   gemNote+combat.map(r=>`<aside class="astlibra-reminder" id="route-combat-${r.id}"><p><strong>${esc(r.name)}</strong> · ${esc(r.tip)}</p><p>${link('查看战前准备与招式应对 →',base+'bosses/tactics/#'+r.id)}</p></aside>`).join('')+
+   block(b,s.title+(page.imageTable?` · 图表 ${i+1}`:''),page.imageTable);
+ }).join('');
 }
 function toc(sections){return `<nav class="khazan-flow-nav" aria-label="本页目录"><ol>${sections.map(s=>`<li>${link(s.title,'#'+s.id)}</li>`).join('')}</ol></nav>`;}
+function chapterCollectibles(collection){
+ const groups=[['medal','小徽章'],['libra','天平挂盘'],['technique','奥义卷轴']].map(([kind,title])=>({
+  title,records:collection.records.filter(p=>p.category===kind)
+ })).filter(group=>group.records.length);
+ if(!groups.length)return '';
+ const counts=groups.map(({title,records})=>title+' '+records.length+' 处').join(' · ');
+ return `<details class="astlibra-reminder" id="chapter-collectibles"><summary>本章重点收集 · ${esc(counts)}</summary><ul>${groups.flatMap(({records})=>records.map(p=>`<li>${link(p.title+'（位置 '+String(p.number).padStart(2,'0')+'）',collection.href+'#'+p.id)} · ${esc(p.description)}</li>`)).join('')}</ul><p>${link('查看本区地图与全部 '+collection.records.length+' 条位置记录 →',collection.href)}</p></details>`;
+}
+const hiddenCombat=require('../content/games/astlibra-revision/hidden-combat.cjs');
+const hiddenDetours={
+ 'chapter-3/prepare':[['loretta','出发前去花环门右侧的房屋，用哥布林石板开门，再调查壁画。']],
+ 'chapter-3/boomerang':[['geraldin','抵达火山剧情起点后，往左一景、再往下一景，打破右下方的岩石。']],
+ 'chapter-5/mist':[['al-khamis','留意魔王城外向下的岔路，进入昏暗的积水区域后继续下行。']],
+ 'chapter-6/prepare':[['unknown-creature','自由活动时可从主城服装店左侧的井下去，向左进洞，再沿岩浆区域向右下走。想先提升装备，可以等第八章再回来。']],
+ 'chapter-6/ruins':[['beatrice','刚进入伊利西昂内部时，向左跳跃并冲刺找隐藏门，进门后继续前进。']],
+ 'chapter-7/karon':[['adolphus','到贤者塔后，跳近一层中间的隐藏梯子。二层往左再爬一架梯子，三层往右对守卫使用安眠药。入内打破魔法阵两侧的烛台，进入挑战。']]
+};
 function detailBody(page){
  const aliases=g.aliases[page.id]||{};
  const body=page.sections.map((s,i)=>{
   const cost=s.cost===undefined?'':`<span class="astlibra-cost">魔导水晶 ${s.cost}</span>`;
-  const content=sectionBody(s,page);
+  const pickups=page.category==='walkthrough'?routePickups.filter(p=>p.chapter===page.id&&p.step===s.id):[];
+  const pickupNotes=pickups.length?`<ul>${pickups.map(p=>`<li id="route-pickup-${p.id}"><strong>${esc(p.name)}</strong> · ${esc(p.location)}${p.condition?` <details><summary>查看选项与条件</summary><p>${esc(p.condition)}${p.reference?' '+link('玩家实测 ↗',p.reference):''}</p></details>`:''}</li>`).join('')}</ul>`:'';
+  const detours=page.category==='walkthrough'?hiddenDetours[page.id+'/'+s.id]||[]:[];
+  const detourNotes=detours.map(([id,entrance])=>{
+   const boss=g.bosses.find(p=>p.id===id);
+   return `<aside class="astlibra-reminder" id="route-hidden-${id}"><p><strong>可选探索 · ${esc(boss.title.split('：')[0])}</strong></p><p>${esc(entrance)}</p><p>胜利奖励：${esc(hiddenCombat[id].rewards.join('、'))} · ${link('查看打法与奖励详情 →',boss.href+'#combat-plan')}</p></aside>`;
+  }).join('');
+  const content=pickupNotes+detourNotes+sectionBody(s,page);
   const alias=Object.entries(aliases).filter(([a,target])=>target===s.id&&a!==s.id).map(([a])=>`<span id="${a}" class="khazan-legacy-anchor"></span>`).join('');
   return `<section class="khazan-route-section" id="${s.id}">${alias}<h2 class="classic-heading"><span class="khazan-step-number">${String(i+1).padStart(2,'0')}</span>${esc(page.imageTable?'资料图表':s.title)}${cost}</h2>${s.spoiler?`<details class="astlibra-spoiler"><summary>展开剧情选择提示</summary>${content}</details>`:content}</section>`;
  }).join('');
  const collection=g.collections.find(c=>c.id===page.id),isRoute=['walkthrough','postgame'].includes(page.category);
- const related=isRoute?`<section><h2 class="classic-heading">相关查询</h2>${links([{title:'对应区域地图与宝箱',href:collection?.href||base+'collectibles/postscript/'},{title:'补给与合成配方',href:base+'systems/crafting/'},{title:'嘉隆技能查询',href:base+'skills/'}])}</section>`:'';
+ const endingLinks=page.category!=='postgame'?[]:({
+  gaia:[{title:'阿努莉斯的爱情交付与结局变化',href:base+'postgame/love/#events'}],
+  love:[
+   {title:'第四章：给小黑喂药',href:base+'walkthrough/chapter-4/#route-pickup-kuro-medicine-choice'},
+   {title:'第五章：小白的追加战',href:base+'walkthrough/chapter-5/#route-pickup-shiro-hidden-fight'},
+   {title:'盖亚迷宫：宝箱与补给',href:base+'postgame/gaia/#maze'},
+   {title:'盖亚最终首领打法',href:base+'postgame/gaia/#final-boss'}
+  ]
+ }[page.id]||[]);
+ const related=isRoute?`<section><h2 class="classic-heading">相关查询</h2>${links([...endingLinks,{title:'对应区域地图与宝箱',href:collection?.href||base+'collectibles/postscript/'},{title:'补给与合成配方',href:base+'systems/crafting/'},{title:'嘉隆技能查询',href:base+'skills/'}])}</section>`:'';
  const siblings=group(page.category).pages.filter(p=>!p.redirect&&!p.indexType),index=siblings.indexOf(page),previous=siblings[index-1],next=siblings[index+1];
  const systemLinks=page.category==='systems'?`<h2 class="classic-heading">相关查询</h2>${links([{title:'地图宝箱与小徽章位置',href:base+'collectibles/'},{title:'装备与道具资料',href:base+'equipment/'},{title:'新章流程',href:base+'postgame/'}])}`:'';
- return `${page.sections.length>1?toc(page.sections):''}${body}${page.category==='bosses'?medium.hidden(page.id):''}${related}${systemLinks}${references(page.sources)}<nav class="classic-pager" aria-label="前后篇">${previous?link('← '+(previous.label||previous.title),previous.href):''}${link('返回目录',base+page.category+'/')}${next?link((next.label||next.title)+' →',next.href):''}</nav>`;
+ return `${page.id==='arena'?arenaIntro():''}${page.category==='walkthrough'&&collection?chapterCollectibles(collection):''}${page.sections.length>1?toc(page.sections):''}${body}${page.category==='bosses'?medium.hidden(page.id):''}${related}${systemLinks}${references(page.sources)}<nav class="classic-pager" aria-label="前后篇">${previous?link('← '+(previous.label||previous.title),previous.href):''}${link('返回目录',base+page.category+'/')}${next?link((next.label||next.title)+' →',next.href):''}</nav>`;
 }
 function chestRows(records,detail=false){
  return `<div class="classic-table-wrap"><table class="classic-table astlibra-chests"><thead><tr><th scope="col">编号</th><th scope="col">宝箱与条件</th><th scope="col">位置图</th></tr></thead><tbody>${records.map(p=>{
@@ -85,7 +146,7 @@ function lookupForm(placeholder,phases=false){return `<form class="khazan-collec
 function gemIndexBody(){
  const rows=g.gems.map(r=>{
   const asset=g.data.assets[r.imageSrc];
-  return `<tr id="gem-${r.id}" data-lookup-row data-lookup-text="${esc([r.name,r.region,r.location,r.condition].join(' '))}"><th scope="row">${esc(r.name)}</th><td><strong>${esc(r.region)}</strong><p>${esc(r.location)}</p><p class="astlibra-source-note">${esc(r.condition)}</p></td><td><a href="${r.imageSrc}" target="_blank" rel="noopener noreferrer"><img class="astlibra-index-preview" src="${r.imageSrc}" width="${asset.width}" height="${asset.height}" alt="${esc(r.name+'元件宝石位置')}" loading="lazy">放大位置图</a><p>${link('对应流程 →',r.href)}</p></td></tr>`;
+  return `<tr id="gem-${r.id}" data-lookup-row data-lookup-text="${esc([r.name,r.region,r.location,r.condition].join(' '))}"><th scope="row">${esc(r.name)}</th><td><strong>${esc(r.region)}</strong><p>${esc(r.location)}</p><p class="astlibra-source-note">${esc(r.condition)}</p></td><td><a href="${r.imageSrc}" target="_blank" rel="noopener noreferrer"><img class="astlibra-index-preview" src="${r.imageSrc}" width="${asset.width}" height="${asset.height}" alt="${esc(r.name+'元件宝石位置')}" loading="lazy">放大位置图</a><p>${link('对应流程 →',base+r.route+'/#route-gem-'+r.id)}</p></td></tr>`;
  }).join('');
  return `<p>元件宝石以地面闪光点为主，与宝箱列表分开查询。火山区域编号对应流程页中的地图。</p><section data-astlibra-lookup-scope>${lookupForm('例如：嘉隆蜕变、火山、伊利西昂')}<div class="classic-table-wrap"><table class="classic-table astlibra-reference-table"><thead><tr><th scope="col">元件宝石</th><th scope="col">区域、位置与条件</th><th scope="col">截图与流程</th></tr></thead><tbody>${rows}</tbody></table></div></section><h2 class="classic-heading">元件强化与变化</h2>${links([g.systems.find(p=>p.id==='equipment-upgrades'),{title:'新章图文流程',href:base+'postgame/'}])}${references(['flow-lower'])}`;
 }

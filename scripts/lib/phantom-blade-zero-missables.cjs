@@ -43,10 +43,13 @@ module.exports.push(
   ['进庞镇后，从 Pong of Fading Song 存档点转身走右侧道路，烧掉挡路枝条。沿路走到老人家，开门调查屋内的遗体。','In Pangzhen, turn around at the Pong of Fading Song bell and take the right path. Burn the branches blocking the route, follow it to the house and inspect the body inside.'],
   ['调查后回陆家村藏身处向老人报告，确认任务结算。进入庞镇前的回报是保守检查点，资料对确切失效位置有分歧。','Report back at the village hideout after inspecting the body. Use the entrance to Pangzhen as a conservative checkpoint for the earlier conversation; reports differ on the exact cutoff.']
  ],luQuestSource],
- ['young-master-lan','Young Master Lan：开路回报与宅邸钥匙','Young Master Lan: opening the route and getting the key',[
-  ['在陆家村到 Young Master Lan 藏身处的钟旁接任务。打开通往庞镇的锁门后，折返与他对话，再穿过通道。','Accept the tale at the Young Master Lan Hideout bell. After opening the locked route out of the village, return to him for another conversation before taking the passage.'],
+ ['young-master-lan','兰大少：对话选择、复命与宅邸钥匙','Young Master Lan: dialogue, reporting back and the manor key',[
+  ['在陆家村兰公子藏身处的钟旁接任务。初次对话选「感兴趣」可直接接取；选「不感兴趣」会结束这次对话，可以再次交谈接取。','Accept the tale beside the bell at Lan’s hideout. Choose Interested to accept immediately. If you choose Not interested, speak to him again to accept.'],
+  ['谈分成时，「就这么定了」和「三成太少」会改变当下台词，后续任务走向和奖励相同。按你提供的任务说明，这些对话选择不影响结局。','The two responses about the share change the dialogue but lead to the same quest and reward. The supplied quest notes state that these choices do not affect the ending.'],
+  ['打开通往庞镇的密道后，先回兰公子藏身处复命，告诉他路已通，再进入庞镇继续探索。','After opening the passage to Pang Town, return to Lan’s hideout and report that the route is open before exploring Pang Town.'],
   ['进庞镇后，从八卦阁路口沿正前方道路走，触发与他的过场，取得宅邸钥匙。','In Pangzhen, follow the road ahead from the Pavilion of Knowledge Crossroads to trigger the cutscene and receive the manor key.'],
-  ['在任意钟休整后，回到刚才对话的位置，清理出现的敌人，再和他交谈。用钥匙进宅邸，完成后续过场。','Rest at a bell and return to the meeting spot. Clear the enemies and speak with him again, then enter the manor with the key to finish the sequence.']
+  ['在任意钟休整刷新场景后，回兰宅门口清理人偶敌人，再与他交谈，用钥匙进宅邸完成过场。核对饰品「碧血云天」和「浪子侠心」成就提示。','Rest at any bell to refresh the scene, return to the manor entrance and clear the puppets. Speak to Lan and enter with the key to finish the scene. Check for the quest accessory and achievement.'],
+  ['按你提供的饰品说明：1 秒内连续命中两次后，接下来 2 秒伤害提高 15%，冷却 5 秒。适合用快速连击触发。','According to the supplied item notes, landing two hits within one second grants 15% more damage for two seconds, with a five-second cooldown. Fast attack strings can trigger it.']
  ],luQuestSource]
 );
 

@@ -318,8 +318,8 @@ for (const [after,id,zh,english,steps] of [
   [
     "lu-village",
     "lu-village-route",
-    "陆家村周边：山洞、水井与人偶试验场",
-    "Around Lu Village",
+    "陆家村主线：从村口到湖畔",
+    "Lu Village walkthrough: from the entrance to the lakeshore",
     [
       [
         "圣母像山洞外围。沿竹林里长满青苔的石阶上行，先以两侧挂灯的木门为地标。",
@@ -346,8 +346,8 @@ for (const [after,id,zh,english,steps] of [
         ]
       ],
       [
-        "三人偶水井。在红线棚和红烛旁找白色人偶，靠近听完这段对话再查井周围。",
-        "Three-Puppet Well. Find the white puppet beside the red cords and candles and listen before exploring the well area.",
+        "三人偶水井。先找红线棚和红烛旁的白色人偶，听完对话。准备搜集琥珀时，从水井附近下到河边，走下方支路；搜完再继续去大廊桥。",
+        "Three-Puppet Well. Listen to the white puppet beside the red cords and candles. For the amber, take the lower branch down to the river before continuing to the covered bridge.",
         [
           [
             "route-20",
@@ -394,8 +394,8 @@ for (const [after,id,zh,english,steps] of [
         ]
       ],
       [
-        "幸存者小院。进院后沿木屋外墙找坐在矮墙旁、穿紫灰衣的人，走近交谈。",
-        "Survivors’ Courtyard. Follow the outside wall to the seated figure in grey-purple clothes and speak with them.",
+        "幸存者小院。进院后先到钟旁的屋里接大黄的委托。手上如果已有歌伎人偶的信，沿木屋外墙找矮墙旁的紫衣人交信。第一次经过时还没拿到信，可以等查过幽蓝萤火之庙再回来。",
+        "Survivors’ Courtyard. Enter the house by the bell to accept Dahuang’s request. If you have the puppet performer’s letter, follow the wall to the person in purple and hand it over. Otherwise, return after checking the temple.",
         [
           [
             "route-24",
@@ -406,8 +406,8 @@ for (const [after,id,zh,english,steps] of [
         ]
       ],
       [
-        "幽蓝萤火之庙。在蓝光照亮的岩壁旁找树根下的光点，先靠近查看，再往洞内推进。",
-        "Temple of Blue Fireflies. Check the glow beneath the roots beside the blue-lit rock wall before proceeding deeper.",
+        "幽蓝萤火之庙。沿蓝光岩壁走，先调查树根下的光点。想继续萤火记忆支线，就从钟旁进挂蓝灯笼的屋子，查进门右手家具上的蓝花。收齐六段记忆后，可从庙后门进峡谷挑战荡秽；要先走主线，可以继续去人偶试验场。",
+        "Temple of Blue Fireflies. Check the glow beneath the roots by the blue-lit wall. For the memory quest, enter the house with blue lanterns by the bell and inspect the flower on the furniture just to the right. With all six memories, take the rear exit into the canyon to fight Danghui. For the main route, continue to the testing ground.",
         [
           [
             "route-25",
@@ -430,8 +430,8 @@ for (const [after,id,zh,english,steps] of [
         ]
       ],
       [
-        "湖畔。夕阳照着的芦苇地是交战场地。用斜伸的树和远处屋顶定位，把交手位置留在开阔处。",
-        "Lakeshore. The reed field at sunset is the arena. Orient by the leaning tree and distant roof and keep the fight in open ground.",
+        "湖畔。斜树和远处屋顶之间的芦苇地是沐小葵的战场。进场前做完上面的检查，交手时尽量留在开阔处，等巨凶斧有明确的蓄力窗口再出手。打完先按下方顺序搜码头和树下，最后才坐电梯。",
+        "Lakeshore. The reed field between the leaning tree and the distant roof is Mu Xiaokui’s arena. Finish the checklist before entering, fight in the open, and save charged axe attacks for clear openings. After the fight, search the dock and the area under the tree before taking the lift.",
         [
           [
             "route-27",
@@ -1907,3 +1907,11 @@ module.exports.equipment.push(
   ['铸魂 · 将 Broken Lóng Body 和 5,000 Remnant Dust 交给庞镇地下酒馆的三师姐，解锁 The Grand Design。剑气爆发后，下一次对应的幻武召唤会得到强化。','Soul Tempering · Bring Broken Lóng Body and 5,000 Remnant Dust to Myst in Pangzhen to unlock The Grand Design. A Sword Energy Burst empowers the next Grand Design summon.']
  ],'https://allthings.how/phantom-blade-zero-broken-long-body/']
 );
+module.exports.walkthrough.find(entry=>entry[0]==='against-the-flow')[3].push([
+ '坚岩护腕 · 击败澎猛后回驿站，进老弓手旁小屋，与吓破胆的正道弟子对话。再传送到「斧老大关押处」，进钟旁小门，调查坟包领取。先完成对话才能出现交互提示。效果为未破防时减伤 15%。按提供的路线提示，要在白赤练战前拿到。',
+ 'After Peng Meng, speak to the frightened disciple in the house beside the old archer. Return to the detention bell, enter the side door and inspect the grave. Talking first enables the pickup. The bracer reduces damage by 15% while your guard is intact. Collect it before Bai Chilian according to the supplied route.'
+]);
+module.exports.walkthrough.find(entry=>entry[0]==='tower-to-waterfall')[3].push([
+ '浑源静脉仪（浑源经脉仪）· 击败追命取得追命锁镰后，从「溪谷煞气塔顶」用锁镰到对面平台拿营地外门钥匙。传送到「溪谷平原入口」，开钟旁锁门，沿路到「溪谷煞气塔底」，与钟旁煞气炉互动领取。效果为完美格挡与闪避判定窗口提高 15%。按提供的路线提示，要在白赤练战前拿到。',
+ 'After obtaining the Pursuer chain sickle, cross from the valley tower summit to collect the camp outer-gate key. Use it beside the valley plain entrance bell, then continue to the tower bottom and interact with the furnace by the bell. The accessory increases perfect-block and dodge timing windows by 15%. Collect it before Bai Chilian according to the supplied route.'
+]);
