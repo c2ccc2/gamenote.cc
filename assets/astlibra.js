@@ -5,6 +5,7 @@
     const search = form.querySelector('[data-lookup-search]');
     const phase = form.querySelector('[data-lookup-phase]');
     const rows = [...scope.querySelectorAll('[data-lookup-row]')];
+    const cups = scope.querySelectorAll('[data-arena-search] > section[id^="cup-"]');
     const category = form.querySelector('[data-lookup-category]');
     const sort = form.querySelector('[data-lookup-sort]');
     const status = scope.querySelector('[data-lookup-status]');
@@ -25,6 +26,7 @@
         });
         sorted.forEach(row => row.parentElement.append(row));
       }
+      cups.forEach(cup => { cup.hidden = !cup.querySelector('[data-lookup-row]:not([hidden])'); });
       status.textContent = `显示 ${rows.filter(row => !row.hidden).length} / ${rows.length} 条记录。`;
     };
     form.addEventListener('submit', event => { event.preventDefault(); apply(); });
@@ -38,7 +40,7 @@
       let id;
       try { id = decodeURIComponent(hash.slice(1)); } catch { return; }
       const target = document.getElementById(id);
-      if (!target || !rows.includes(target) || !target.hidden) return;
+      if (!target || (!rows.includes(target) && !Array.from(cups).includes(target)) || !target.hidden) return;
       search.value = '';
       if (phase) phase.value = 'all';
       if (category) category.value = 'all';

@@ -1880,7 +1880,7 @@ module.exports.bosses.push(
  ],'https://allthings.how/phantom-blade-zero-wu-xuan-boss-fight/'],
  ['gu-wanyue','Gu Wanyue：积水广场与红烛井','Gu Wanyue, the Wailing Wraith',[
   ['入口 · 从庞镇 Pond of Fading Song 的钟向西北进积水广场，沿散落的纸钱走向红烛围着的井，靠近即可触发战斗。','Approach · Head northwest from the Pond of Fading Song bell into the flooded square. Follow the scattered paper offerings to the candle-ringed well to start the fight.'],
-  ['长袖横扫的范围比她的站位看起来更远，看到她抬袖就留出闪避空间。双袖在身前交叉成 X 时向侧面让开，再从侧面打一小段。','Her sleeve sweep reaches well beyond her body. Leave room to dodge as she raises a sleeve. When both sleeves cross in an X, step out to the side and counter briefly.'],
+  ['长袖横扫的范围比她的站位看起来更远，看到她抬袖就留出闪避空间。双袖在身前斜向交叉 时向侧面让开，再从侧面打一小段。','Her sleeve sweep reaches well beyond her body. Leave room to dodge as she raises a sleeve. When both sleeves cross in an X, step out to the side and counter briefly.'],
   ['她跃起旋转时先盯落点，等落地再接近。红光攻击用闪避，蓝光攻击可以招架。战后核对 Fanatic’s Fragment: Fixation。','Track her landing when she leaps and spins, then close in after she lands. Dodge red flashes and parry blue ones. Check for Fanatic’s Fragment: Fixation after victory.']
  ],'https://allthings.how/phantom-blade-zero-gu-wanyue-boss-fight/']
 );

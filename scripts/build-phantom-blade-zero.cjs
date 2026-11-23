@@ -6,6 +6,16 @@ const areaBriefs=require('./lib/phantom-blade-zero-area-briefs.cjs');
 const pickupTiming=require('./lib/phantom-blade-zero-pickup-timing.cjs');
 const materialCounts=require('./lib/phantom-blade-zero-material-counts.cjs');
 const areaLoot=require('./lib/phantom-blade-zero-area-loot.cjs');
+// Use descriptive Chinese labels where the in-game localization is unconfirmed.
+const chineseQuestTerms=Object.entries({
+ 'Abyssal Bell':'深渊铃','All Return to Dust':'万物归尘','Aureate':'金色单手剑','Blood Feast':'血宴','Border Poems':'边塞诗','Cell Key':'牢房钥匙','Dark Sigil Burst':'暗纹爆发','Dread Axe':'巨凶斧','Fanatic’s Obsession':'狂信者的执念','Fixation':'执念','Forge':'锻造','Full-Power Strike':'全力一击','Ghostfire Wreath':'鬼火环','Herald’s Lingering Threads':'梦差残丝','Hidden Passage to Pangzhen':'通往庞镇的密道','Jagged Steel':'残钢','Leng Tu':'冷茶','One-Armed Tiger':'独臂虎','Phantom of The Old House':'老宅幻影','Remnant Dust':'残尘','Remnant Spark':'余火','Rift of Bones':'白骨裂隙','Sanguine Reach':'血色长锋','Serpent’s Memory':'蛇之记忆','Sundering Dual Axes':'破裂双斧','The Fanatic’s Broken Blade':'狂信者的断刃','The Fanatic’s Drunken Sword':'狂信者的醉剑','The Grand Design':'宏图','The Lady’s Crown':'夫人的冠饰','The Lady’s Fan':'夫人的扇子','Valley Sha-Chi Tower 1st Floor':'溪谷杀气塔一层','Wolfjaw':'狼颚',
+ 'Lóng’s Roar':'龙之咆哮','Honor Among Thieves：飞贼营地三道问答':'飞贼营地三道问答',
+ 'Festering Secret':'据点秘事','Honor Among Thieves':'飞贼营地问答','A Healer’s Mercy':'救治受伤飞贼','A Puppet’s Wooden Heart':'人偶木心','A Severed Mindseal':'杀气塔原石','Allure of Vanity':'虚荣诱惑','Apprentice Healer':'玉儿采药','Annihilation':'歼灭','Attachment':'执念',
+ 'Backstreet Archway':'后街拱门','Baishan Headband':'白山派头巾','Beneath the Well':'井下','Bi Feng':'毕锋','Blackwater Crew Deck':'黑水帮船甲板','Blemish Goldweed':'带斑金草','Blood Oath Dagger':'血誓匕首','Blood-Stopper Vine':'止血藤','Bloodline Awakening':'龙脉觉醒','Broken Puppet Pit Entrance':'断偶坑入口','Broken Vessel':'破损容器','Cavern Passage':'洞穴通道','Commander’s Platform':'指挥台','Congealeaf':'凝血叶','Core':'核心','Crimson Manor':'红衣女子的宅邸','Cui':'小翠',
+ 'Daughter of the Dark Sect':'红衣女子支线','Deep in the Valley':'溪谷深处','Dovecote':'鸽舍','Dusk':'暮色','Engine Giant Remains':'机关巨人残骸','Fanatic’s Fragment':'狂信者碎片','Fiend Saws':'妖锯','Final Battle':'最终决战','Fish Fragment':'鱼形碎片','Fist Fragment':'拳形碎片','Flaming Mane':'烈焰鬃毛','Forbidden Arts Beneath the Lake':'湖底禁术','Forbidden Path':'禁道','Frozen Lake Dock':'冰湖码头','Gentle Thief':'温和的飞贼','Grief-Stricken Jin':'悲恸的荆野','Hanging Cage Cavern':'挂笼洞窟','Heel Reinforcement Part':'足跟强化部件','Hero’s Courage':'侠士之勇',
+ 'Illusion of Inanis':'虚空幻象','Illusory Pipa':'幻术琵琶','Inanis’ Radiant Fan':'虚空的光扇','Ink Cut':'墨斩','Iron Butcher’s Camp':'铁屠营地','Kui Yanyan':'魁炎炎','Kuye Temple Sutra':'苦叶寺经文','Ledger of Atonement':'赎罪账簿','Longevity Tonic':'延寿药','Loong Emblem':'龙纹徽记','Lu Sanquian':'陆三千','Master Healer’s Memory':'医师记忆','Meigu Songhouse Dock':'梅谷乐坊码头','Merciful Dew':'慈悲露','Nimble Thief':'妙手小张','Nirvana':'涅槃','Outlaw Trap':'飞贼陷阱','Parting Mists':'拨开迷雾','Path of the Baishan’s Fall':'白山派覆灭之路','Perfect Vessel Estate':'人偶宅邸','Phantom Illusionist Ruins':'幻术师遗迹','Pillars of Kunlun':'昆仑龙柱','Pond of Fading Song':'余音池','Pong of Fading Song':'余音池',
+ 'Puppet Cell':'人偶牢房','Purge the Sect':'清剿教派','Remnant Spark Cube':'余火方块','Ritual Cauldron Fragment III':'祭鼎碎片三','Rogue Box':'飞贼匣','Rootless Dew':'无根露','Secrets at the Heart of the Lake':'湖心秘密','Secrets of the Baishan Sect':'白山派秘事','Sha-Chi Headscarf':'杀气头巾','Sha-Chi Powered Boat':'杀气驱动船','Shaded Bamboo Path':'竹荫小径','Shell':'外壳','Shrine Outer Gate':'神龛外门','Silent Wrap':'静默缠布','Snow and Blood':'雪与血','Sunset Path':'落日小径','Temple of Blue Fireflies':'幽蓝萤火之庙','The Herald’s Illusion':'使者幻象','The Lady Grounds':'夫人所在的场地','The Lady’s Cave':'夫人洞窟','The Lady’s Shrine':'夫人神龛','The Last Mandate Encampment':'末令营地','This won’t absolve you of your sins':'这不能洗清你的罪孽','Tianxuan Bronze Sword':'天玄铜剑','Training Grounds Depths':'训练场深处','Transcension Cores':'超脱核心','Twin Fish Pendant':'双鱼佩','Ultimate Talisman':'终极护符','Weeping Mistgate':'悲雾门','Whence the Weeping':'悲泣缘由','Whiteshadow':'白影','Whiteshadow’s Fall':'白影的陨落','Wu Xuan':'武玄','Yan Qiansui':'燕千岁','Young Mistress':'大小姐','Zhang’s Hideout':'小张藏身处'
+});
 // Describe pickups and landmarks by their appearance when a Chinese in-game name is unverified.
 const chineseAreaTerms=[
  ['The Journey Home','归家委托'],['Young Master Lan','兰大少'],
@@ -13,12 +23,17 @@ const chineseAreaTerms=[
  ['Rustblade Pavilion','残钢战后的存档钟'],['Outpost Courtyard','据点庭院'],['Outpost','据点'],
  ['Blackstone Shard','黑石碎片'],['Peng Meng','澎猛'],['Valley Sha-Chi Tower 1st Floor','溪谷杀气塔一层'],
  ['Hua','阿花'],['铁匠 Forge','铁匠'],['Yu’er','玉儿'],['Crimson Forest','血色森林'],['Thieves Camp','飞贼营地'],
- ['Scarlet Wraithblade','可生成减速花的刀'],['Gu Wanyue','顾晚月'],[' Wolfjaw',''],
+ ['Scarlet Wraithblade','可生成减速花的刀'],['Gu Wanyue','顾晚月'],
  ['Heartpiercer','白蛇屋守卫'],['Perfect Vessel Pond','红灯石阶下的水边'],['Lei Dang','独臂虎'],['Tiger Cannon','虎炮'],
  ['Violet Blossom','虚空交付的紫色花朵'],['The Last Chance','冰洞前的存档钟'],['Soulrend Cliff','断魂山崖'],
  ['Final Battle 结局卡和 With Heart and Blood 成就','真结局卡和对应的成就提示'],
  [' Phantom of The Old House',''],['单手剑 Aureate','金色单手剑'],['Broken Lóng Body','真龙之躯的残骸'],['Radiant Heart','发光的心形道具']
 ];
+const questTerms=[...chineseQuestTerms,...chineseAreaTerms].sort((a,b)=>b[0].length-a[0].length);
+const localizeQuest=text=>questTerms.reduce((value,[term,translation])=>{
+ const pattern=term.replace(/[.*+?^$${}()|[\]\\]/g,'\\$&').replaceAll('’',"[’']\\s*");
+ return value.replace(new RegExp('(?<![A-Za-z])'+pattern+'(?![A-Za-z])','g'),translation);
+},text).replace(/\b([AB]) P(\d+)/g,(_,series,n)=>'实录'+(series==='A'?'一':'二')+'第 '+n+' 集').replace(/\bP(\d+)/g,'第 $1 集');
 const areaGroups=[
  ['against-the-flow','悲泣溪谷','Weeping Creek Valley','flesh-lily','tower-to-waterfall','late-57','red-house-revisit'],
  ['forest-entry','血色森林','Crimson Forest','hanging-cage','bandit-camp','cliffside-lodge','mirror-forest','mirror-deep','forest-tower-revisit','three-faced-puppet'],
@@ -61,7 +76,7 @@ const pages=[
  ['walkthrough','主线流程','Main walkthrough','按区域查看推进路线与收集时机。每个区域列出初次能拿的物品、容易错过的步骤，以及取得道具或推进剧情后可回访的地点。','Browse each area for the main route, first-visit pickups, missable steps and reasons to return after obtaining an item or advancing the story.',systems],
  ['side-quests','支线任务','Side quests','按任务查找所需道具、交付位置和后续步骤。','Find quest items, hand-in locations and follow-up steps.',null],
  ['bosses','首领图鉴','Boss archive','查看已整理的首领进场路线、招式应对与战后去向。','Find arena routes, attack responses and what to do after each fight.',combat],
- ['equipment','兵器与配装','Weapons & builds','先给两把主武器安排不同用途：一把练习短连段，一把用于切换后接续攻势。副武器有使用限制，留给明确的输出或控场机会。Scarlet Wraithblade 的连段可生成减速敌人的花。','Give the two main weapons distinct roles: practise short strings with one and continue pressure after swapping to the other. Save limited-use Phantom Edges for deliberate openings. Scarlet Wraithblade combos can create flowers that slow enemies.',combat],
+ ['equipment','兵器与配装','Weapons & builds','先给两把主武器安排不同用途：一把练习短连段，一把用于切换后接续攻势。副武器有使用限制，留给明确的输出或控场机会。阿花掉落的刀可通过连段生成减速敌人的花。','Give the two main weapons distinct roles: practise short strings with one and continue pressure after swapping to the other. Save limited-use Phantom Edges for deliberate openings. Scarlet Wraithblade combos can create flowers that slow enemies.',combat],
  ['collectibles','探索与收集','Exploration & collectibles','下方已整理山谷前段的固定拾取。回访时分别记录未开的岔路、未完成的对话和当前无法抵达的位置；后续按区域补入地标、前置条件和路线截图。','Early valley pickups are listed below. For return visits, record unopened branches, unfinished conversations and unreachable spots separately. Future entries will include landmarks, prerequisites and route images.',systems],
  ['systems','攻防入门','Combat fundamentals','先练“短连段 → 防御或闪避 → 换武器”。持续格挡会消耗煞气，耗尽后容易失衡；精准招架和成功闪避后的反击可压制对手。切换主武器可以回补自身煞气，别等到防御崩溃才换。','Practise a short combo, defend or dodge, then swap weapons. Blocking drains Sha-Chi and running out leaves you exposed. Timed parries and dodge counters pressure the opponent. Swapping main weapons replenishes Sha-Chi, so practise it before your guard breaks.',combat]
 ];
@@ -78,7 +93,7 @@ for(const en of [false,true]){
   collectibles:[...entries,...opening.collectibles],
   equipment:[...opening.equipment,...entries.filter(([id])=>weaponIds.has(id))]
  };
- const label=p=>p[en?2:1];
+ const label=p=>en?p[2]:localizeQuest(p[1]);
  const questGroups=[
   ['checkpoints','推进检查','Progression checks','missable-quests','ending-checkpoints'],
   ['valley','悲泣溪谷','Weeping Creek Valley','flesh-lily-item','apprentice-healer','festering-secret','four-fierce-axes'],
@@ -116,7 +131,7 @@ for(const en of [false,true]){
   }).join('');
   const directory=`<details open><summary>${directoryLabel}</summary><nav class="classic-nav" aria-label="${directoryLabel}"><div class="classic-nav-home"><a href="${base}"${page?'':' aria-current="page"'}>${en?'Guide home':'专题首页'}</a><button class="classic-collapse-all" type="button" aria-expanded="true" aria-controls="${pages.map(([key])=>menuId(key)).join(' ')}">${collapseLabel}</button></div>${links}</nav></details>`;
   const clean=value=>value.replace(/&(?:amp;)?#(?:x20|32);/gi,' ');
-  const areaText=value=>en||page?.[0]!=='walkthrough'?value:chineseAreaTerms.reduce((text,[term,translation])=>text.replaceAll(term,translation),value);
+  const areaText=value=>en?value:localizeQuest(value).replace(/(^|第\s*)(VI|IV|III|II|V|I)(?=\s*[·段])/g,(_,prefix,n)=>prefix.trim()+({I:'一',II:'二',III:'三',IV:'四',V:'五',VI:'六'}[n]));
   const renderStep=([zh,english,frames=[]])=>`<div class="pbz-step"><p>${clean(areaText(en?english:zh))}</p>${frames.map(([file,zhCaption,enCaption])=>{
     const caption=areaText(en?enCaption:zhCaption);
     return `<figure><img src="/assets/phantom-blade-zero/${file}.webp" alt="${caption}" width="960" height="540" loading="lazy" style="max-width:100%;height:auto"></figure>`;
@@ -199,12 +214,12 @@ for(const en of [false,true]){
   const reward=['bosses','side-quests'].includes(page?.[0])&&entry?content.equipment.find(([id])=>id===rewardEquipment[entry[0]]):null;
   const rewardLink=reward?`<p><a href="${base}equipment/${reward[0]}/">${label(reward)} →</a></p>`:'';
   const memoryLink=page?.[0]==='bosses'&&['lei-dang','heartpiercer'].includes(entry?.[0])
-   ?`<p><a href="${base}collectibles/leng-tu-memories/">${en?'All six Leng Tu memories':'查看 Leng Tu 的六段记忆'} →</a></p>`
+   ?`<p><a href="${base}collectibles/leng-tu-memories/">${en?'All six Leng Tu memories':'查看冷茶的六段记忆'} →</a></p>`
    :'';
   const tigerCannonLink=page?.[0]==='equipment'&&entry?.[0]==='wolfjaw'
-   ?`<p><a href="${base}equipment/tiger-cannon/">${en?'Tiger Cannon acquisition and wall breaking':'查看 Tiger Cannon 的获取与破墙方法'} →</a></p>`
+   ?`<p><a href="${base}equipment/tiger-cannon/">${en?'Tiger Cannon acquisition and wall breaking':'查看虎炮的获取与破墙方法'} →</a></p>`
    :page?.[0]==='equipment'&&entry?.[0]==='tiger-cannon'
-    ?`<p><a href="${base}bosses/lei-dang/">${en?'Lei Dang boss guide':'查看 Lei Dang 两阶段打法'} →</a></p>`
+    ?`<p><a href="${base}bosses/lei-dang/">${en?'Lei Dang boss guide':'查看独臂虎两阶段打法'} →</a></p>`
     :'';
   const linkedQuest=page?.[0]==='side-quests'&&entry
    ?content['side-quests'].find(([id])=>id===({'illusory-pipa':'allure-of-vanity','allure-of-vanity':'illusory-pipa'})[entry[0]])
@@ -300,7 +315,7 @@ for(const en of [false,true]){
   const intro=en?'With sixty-six days left to live, Soul fights his way through a dark martial arts world to uncover the conspiracy pursuing him. Combat combines close-range weapon swaps with parries and dodge counters.':'只剩六十六天可活的「魂」，在杀机四伏的江湖中追查幕后阴谋。战斗以近身交锋为主，可在两把主武器之间切换，衔接招架和闪避反击。';
   const body=page?`<section><h2 class="classic-heading">${en?'Field notes':'攻略笔记'}</h2><p>${lead}</p>${page[5]?`<p><a href="${page[5]}">${en?'Source and demonstration':'资料与演示'} ↗</a></p>`:''}</section>`:`<div class="pbz-landscape"><img class="pbz-cover" src="/assets/catalog/phantom-blade-zero.jpg" alt="${title}" width="460" height="215"></div><section class="pbz-info" aria-labelledby="game-info"><h2 id="game-info" class="classic-heading">${en?'Game overview':'游戏信息'}</h2><p>${intro}</p><dl class="pbz-facts">${facts.map(([key,value])=>`<div><dt>${key}</dt><dd>${value}</dd></div>`).join('')}</dl><p><a href="${en?'/en':''}/catalog/${slug}/" target="_blank" rel="noopener">${en?'Game profile':'查看游戏图鉴'} ↗</a> · <a href="https://store.steampowered.com/app/4115450/" target="_blank" rel="noopener">${en?'Steam Store':'Steam 商店'} ↗</a> · <a href="${official}" target="_blank" rel="noopener">${en?'Official site':'游戏官网'} ↗</a></p></section><h2 class="classic-heading">${en?'Guide sections':'攻略入口'}</h2><p>${lead}</p><div class="pbz-grid">${pages.map(p=>`<a href="${base+p[0]}/">${label(p)} →</a>`).join('')}</div>`;
   const language=`<details class="language-menu"><summary aria-label="${en?'Choose language':'选择语言'}"><span aria-hidden="true">◎</span> ${en?'English':'简体中文'} <span class="language-chevron" aria-hidden="true"></span></summary><div class="language-menu-options"><a href="${en?alt:url}" lang="zh-CN" hreflang="zh-CN"${en?'':' aria-current="page"'}>简体中文</a><a href="${en?url:alt}" lang="en" hreflang="en"${en?' aria-current="page"':''}>English</a></div></details>`;
-  const regional=!entry&&page?.[0]==='walkthrough'?`<details class="pbz-info"><summary>${en?'Recording index by region':'参考资料：按区域查看实录分集'}</summary><p>${en?'A: 67-part run by 友利奈绪大魔王. B: high-difficulty series by 11的游戏世界 (55 files). Episode references below come from the recording titles; verified gameplay notes are listed separately.':'A 为友利奈绪大魔王的 67 集实录，B 为 11的游戏世界的最高难度系列（55 个文件）。下方分集索引依据视频标题整理，已核对画面的路线见正文。'}</p><nav class="pbz-grid" aria-label="${en?'Regions':'区域目录'}">${regions.map(([id,zh,eng])=>'<a href="#region-'+id+'">'+(en?eng:zh)+'</a>').join('')}</nav>${regions.map(([id,zh,eng,z,e,a,b])=>'<section id="region-'+id+'"><h3>'+(en?eng:zh)+'</h3><p>'+(en?e:z)+'</p><p>A: P'+a+(b?' · B: P'+b:'')+'</p></section>').join('')}</details>`:'';
+  const regional=!entry&&page?.[0]==='walkthrough'?`<details class="pbz-info"><summary>${en?'Recording index by region':'参考资料：按区域查看实录分集'}</summary><p>${en?'A: 67-part run by 友利奈绪大魔王. B: high-difficulty series by 11的游戏世界 (55 files). Episode references below come from the recording titles; verified gameplay notes are listed separately.':'实录一为友利奈绪大魔王的 67 集实录，实录二为 11的游戏世界的最高难度系列（55 个文件）。下方分集索引依据视频标题整理，已核对画面的路线见正文。'}</p><nav class="pbz-grid" aria-label="${en?'Regions':'区域目录'}">${regions.map(([id,zh,eng])=>'<a href="#region-'+id+'">'+(en?eng:zh)+'</a>').join('')}</nav>${regions.map(([id,zh,eng,z,e,a,b])=>'<section id="region-'+id+'"><h3>'+(en?eng:zh)+'</h3><p>'+(en?e:localizeQuest(z))+'</p><p>'+(en?'A: P'+a+(b?' · B: P'+b:''):'实录一：第 '+a+' 集'+(b?' · 实录二：第 '+b+' 集':''))+'</p></section>').join('')}</details>`:'';
   const html=`<!doctype html><html lang="${en?'en':'zh-CN'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${heading} | GAME NOTE</title><meta name="description" content="${lead}"><link rel="canonical" href="https://gamenote.cc${url}"><link rel="alternate" hreflang="${en?'zh-CN':'en'}" href="https://gamenote.cc${alt}"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/assets/classic.css"><link rel="stylesheet" href="/assets/classic-menu.css"><link rel="stylesheet" href="/assets/classic-language.css"><link rel="stylesheet" href="/assets/phantom-blade-zero.css"><script src="/assets/classic.js" defer></script></head><body class="classic pbz${page?'':' pbz-home'}" data-theme="classic"><div class="classic-shell"><aside class="classic-sidebar"><a class="classic-brand" href="${en?'/en/':'/'}">GAME NOTE CLASSIC</a>${directory}</aside><main class="classic-main" id="main"><header><nav class="classic-language-switch" aria-label="${en?'Language':'语言'}">${language}</nav><p class="pbz-seal">${en?'WULIN ARCHIVE':'武林卷宗'}</p>${entry?`<p><a href="${base+category}">← ${label(page)}</a></p>`:''}<h1>${heading}</h1></header><article data-pagefind-body>${entry?detail+adjacent:body+index+regional}</article></main></div></body></html>\n`;
   fs.mkdirSync('.'+url,{recursive:true});write('.'+url+'index.html',html);
  }

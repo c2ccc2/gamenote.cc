@@ -14,7 +14,7 @@ missables.push(
 );
 
 module.exports.push(['ending-checkpoints','真结局推进检查','True ending checkpoints',[
- ['进入戏梦山庄前，在庞镇青蛇屋的蛇门旁留独立存档。PowerPyx 的实玩路线把这里作为前段紫标任务的检查点。也有实玩记录在进山庄后补做部分步骤并达成真结局，因此各任务是否在此立即失效仍需逐项确认。','Keep a separate save at the Green Serpent House door. PowerPyx uses this as the checkpoint for the earlier purple quests. Another playthrough completed some steps after entering and still reached the true ending, so individual cutoffs need checking.'],
+ ['进入戏梦山庄前，在庞镇青蛇屋的蛇门旁留独立存档。所附实玩攻略把这里作为前段紫标任务的检查点。也有实玩记录在进山庄后补做部分步骤并达成真结局，因此各任务是否在此立即失效仍需逐项确认。','Keep a separate save at the Green Serpent House door. PowerPyx uses this as the checkpoint for the earlier purple quests. Another playthrough completed some steps after entering and still reached the true ending, so individual cutoffs need checking.'],
  ['若按实玩路线在蛇门前集中补任务，可对照这份回访清单：Deep in the Valley、Illusion of Inanis、Sha-Chi Powered Boat、Allure of Vanity、Illusory Pipa、Pillars of Kunlun、Whence the Weeping、The Herald’s Illusion、Crimson Manor、Secrets at the Heart of the Lake。','For a cleanup pass before the serpent door, use this walkthrough checklist: Deep in the Valley, Illusion of Inanis, Sha-Chi Powered Boat, Allure of Vanity, Illusory Pipa, Pillars of Kunlun, Whence the Weeping, The Herald’s Illusion, Crimson Manor and Secrets at the Heart of the Lake.'],
  ['进入戏梦山庄后，完成第五处龙柱挑战。抵达断魂山 The Last Chance 的钟时，核对 Bloodline Awakening 已完成。若龙柱未打齐，在进入冰洞前回访。','After entering the estate, clear the fifth pillar trial. At The Last Chance bell on Mount Soulrend, verify that Bloodline Awakening is complete. Return for any missing trials before entering the ice cave.'],
  ['湖心秘密要查到最后一步：仪式结束后在幻境与虚空交谈，确认收到 Violet Blossom。进入冰洞前，在 The Last Chance 的钟旁留独立存档。即使条件齐全也会收到推进提示。','For Secrets at the Heart of the Lake, verify the final step: speak to Inanis in the Realm of Mirage after the ritual and receive Violet Blossom. Keep a separate save at The Last Chance bell before entering the ice cave. The warning still appears with both requirements met.'],
@@ -243,13 +243,13 @@ module.exports.push(['bloodline-awakening','五处龙柱挑战与真结局检查
 ],luQuestSource]);
 
 module.exports.push(['heart-of-the-lake','湖心秘密：面具、水晶眼与九十九号人偶','Secrets at the Heart of the Lake',[
- ['萤火记忆 I · 拙壁战后走左侧出口，进入挂蓝灯笼的院子，在孩子们附近调查蓝花。任一朵都能触发任务，之后可在日志里追踪紫标目标。','Petal I · Leave Zhuo Bi’s arena through the left exit and inspect the blue flower near the children in the lantern courtyard. Any petal starts the quest. Track the purple objective in the journal.'],
- ['萤火记忆 II · 从三人偶水井旁的钟出发，找俯瞰溪流的落脚处，跳到桥下，沿溪走到底，清掉附近敌人后调查蓝花。','Petal II · From the Well of the Three Puppets bell, find the ledge above the stream. Drop below the bridge, follow the water to the end and clear the enemies by the flower.'],
- ['萤火记忆 III · 从大廊桥旁的钟走进右手边的房子，下到开阔地。穿过聚集的村民，在屋前神龛旁调查蓝花。','Petal III · At the Covered Bridge bell, enter the house on the right and descend to the open ground. Look past the villagers for the flower beside the shrine in front of the house.'],
- ['萤火记忆 IV · 从巨型机关残骸旁的钟进前方房屋，从地板缺口下到底层。出门后向左，越过横木，到尽头找蓝花。','Petal IV · At the Engine Giant Remains bell, enter the house ahead and drop through the floor opening to the bottom. Go outside, head left over the log and look for the flower at the end.'],
- ['萤火记忆 V · 红线解除后过大廊桥，经过倒木，在通往下一段台阶前右转。进屋顺梯子下去，出门沿下层走到崖边，调查蓝花。','Petal V · Once the red threads clear, cross the Covered Bridge and pass the fallen log. Turn right before the next stairs, climb down the ladder inside the house and follow the lower path to the cliff edge.'],
- ['萤火记忆 VI · 从 Temple of Blue Fireflies 的钟进挂蓝灯笼的屋子，蓝花在进门右手边的家具上。收齐六段后，生命上限增加 10%。','Petal VI · From the Temple of Blue Fireflies bell, enter the house with blue lanterns. The flower sits on the furniture to your right. Collecting all six increases maximum HP by 10%.'],
- ['收齐后回到第 VI 段记忆所在的屋子，从后门进入原本被雾封住的峡谷。走到 Broken Puppet Pit Entrance 的钟，从旁边木台跳下挑战 Dusk。胜利后取得人偶铃和幻琵琶的琴头。','After collecting all six, return to the house for petal VI and exit through the rear door into the canyon. Follow it to the Broken Puppet Pit Entrance bell and drop from the wooden platform beside it to fight Dusk. He drops the Puppeteer’s Bell and the Illusory Pipa Head.'],
+ ['萤火记忆一 · 拙壁战后走左侧出口，进入挂蓝灯笼的院子，在孩子们附近调查蓝花。任一朵都能触发任务，之后可在日志里追踪紫标目标。','Petal I · Leave Zhuo Bi’s arena through the left exit and inspect the blue flower near the children in the lantern courtyard. Any petal starts the quest. Track the purple objective in the journal.'],
+ ['萤火记忆二 · 从三人偶水井旁的钟出发，找俯瞰溪流的落脚处，跳到桥下，沿溪走到底，清掉附近敌人后调查蓝花。','Petal II · From the Well of the Three Puppets bell, find the ledge above the stream. Drop below the bridge, follow the water to the end and clear the enemies by the flower.'],
+ ['萤火记忆三 · 从大廊桥旁的钟走进右手边的房子，下到开阔地。穿过聚集的村民，在屋前神龛旁调查蓝花。','Petal III · At the Covered Bridge bell, enter the house on the right and descend to the open ground. Look past the villagers for the flower beside the shrine in front of the house.'],
+ ['萤火记忆四 · 从巨型机关残骸旁的钟进前方房屋，从地板缺口下到底层。出门后向左，越过横木，到尽头找蓝花。','Petal IV · At the Engine Giant Remains bell, enter the house ahead and drop through the floor opening to the bottom. Go outside, head left over the log and look for the flower at the end.'],
+ ['萤火记忆五 · 红线解除后过大廊桥，经过倒木，在通往下一段台阶前右转。进屋顺梯子下去，出门沿下层走到崖边，调查蓝花。','Petal V · Once the red threads clear, cross the Covered Bridge and pass the fallen log. Turn right before the next stairs, climb down the ladder inside the house and follow the lower path to the cliff edge.'],
+ ['萤火记忆六 · 从幽蓝萤火之庙的钟进挂蓝灯笼的屋子，蓝花在进门右手边的家具上。收齐六段后，生命上限增加 10%。','Petal VI · From the Temple of Blue Fireflies bell, enter the house with blue lanterns. The flower sits on the furniture to your right. Collecting all six increases maximum HP by 10%.'],
+ ['收齐后回到第六段记忆所在的屋子，从后门进入原本被雾封住的峡谷。走到断偶坑入口的钟，从旁边木台跳下挑战荡秽。胜利后取得人偶铃和幻术琵琶的琴头。','After collecting all six, return to the house for petal VI and exit through the rear door into the canyon. Follow it to the Broken Puppet Pit Entrance bell and drop from the wooden platform beside it to fight Dusk. He drops the Puppeteer’s Bell and the Illusory Pipa Head.'],
  ['炎茹面具 · 从陆家村梯田的钟走到浅水边，调查挂灯笼的树下那具红色稻草人，进入战斗。','Yanru’s mask · From the Terraces bell in the Village of Lu, look in the shallow pond for the red scarecrow under the lantern tree. Interact to start the fight.'],
  ['蛊鹤面具 · 从梅谷村东码头上岸，沿村里主路走到底，调查黄叶树旁的绿色稻草人。','Guhe’s mask · Land at Meigu Village East Dock and follow the village’s main road to the green scarecrow by a yellow-leafed tree.'],
  ['雷婷面具 · 在庞镇用 Flaming Mane 烧掉 Pond of Fading Song 钟旁的荆棘，穿过棚屋区并爬梯到根老头家旁的钟，再沿水边下坡找带符的稻草人。','Lei Ting’s mask · Burn the brambles by Pangzhen’s Pond of Fading Song bell with Flaming Mane. Cross the slums, climb the ladder to Old Man Gen’s House bell, then follow the water downhill to the talisman scarecrow.'],
@@ -269,7 +269,7 @@ module.exports.push(['heart-of-the-lake','湖心秘密：面具、水晶眼与�
 ],'https://kungfupunk.com/quests/secrets-at-the-heart-of-the-lake']);
 
 module.exports.push(['illusory-pipa','幻术琵琶：三个零件与梅谷湖雾门','Illusory Pipa: three parts and the Spectral Gate',[
- ['琴头 · 陆家村先收齐萤火的六段记忆。回幽蓝萤火之庙，从后门穿过散去的雾，沿峡谷走到 Broken Puppet Pit Entrance 的钟，从旁边木台下到坑里。击败荡秽后核对琴头和人偶铃。','Head · Collect all six Firefly memories in the Village of Lu. Leave through the rear of the Temple of Blue Fireflies, follow the canyon to the Broken Puppet Pit Entrance bell and drop from the adjacent platform. Defeat Dusk and check for the head and the Puppeteer’s Bell.'],
+ ['琴头 · 陆家村先收齐萤火的六段记忆。回幽蓝萤火之庙，从后门穿过散去的雾，沿峡谷走到断偶坑入口的钟，从旁边木台下到坑里。击败荡秽后核对琴头和人偶铃。','Head · Collect all six Firefly memories in the Village of Lu. Leave through the rear of the Temple of Blue Fireflies, follow the canyon to the Broken Puppet Pit Entrance bell and drop from the adjacent platform. Defeat Dusk and check for the head and the Puppeteer’s Bell.'],
  ['背板 · 到正道大营校场深处，从 Training Grounds Depths 的钟附近找摆着火盆的房间，调查桌上的背板。实机记录可在击败校场的玉璧前直接拾取。','Backplate · From the Training Grounds Depths bell in the Mandate Encampment, look for a room with a lit brazier and inspect the table. The backplate can be picked up before defeating Yubi in the training grounds.'],
  ['琴弦 · 从庞镇搭修好的杀气动力船前往梅谷湖。收集沉没戏楼周围的记忆花，回查庞镇码头方向的两处。戏楼雾散后，从 Meigu Songhouse Dock 上岸，击败琴女 Yan Qiansui 取得琴弦。','Strings · Take the repaired Sha-Chi Powered Boat from Pangzhen to Meigu Lake. Collect the memory flowers around the sunken opera house, including two toward the Pangzhen docks. When the mist lifts, land at Meigu Songhouse Dock and defeat Yan Qiansui, the Zither Maiden.'],
  ['修复 · 带琴头、背板、琴弦回庞镇地下酒馆，和三师姐交谈，选择修复幻术琵琶。','Repair · Take the head, backplate and strings to Myst in Pangzhen’s underground tavern and choose the dialogue option to restore the pipa.'],
@@ -278,12 +278,12 @@ module.exports.push(['illusory-pipa','幻术琵琶：三个零件与梅谷湖雾
 
 module.exports.push(['allure-of-vanity','沉没戏楼：六段记忆与琴弦','Allure of Vanity: six memories and the pipa strings',[
  ['先用修好的杀气动力船进入梅谷湖，以 Meigu Songhouse Dock 的钟为参照。开船贴近水面蓝花，出现提示后直接在船上调查。任取一朵即可开始追踪，六朵可以按任意顺序拾取。','Enter Meigu Lake on the repaired Sha-Chi Powered Boat and use the Meigu Songhouse Dock bell as your reference. Pull up beside a blue flower until the interaction prompt appears. Any flower starts the quest, and you can collect them in any order.'],
- ['记忆 I · 在离钟约 200 米的开阔水面找荷叶群。远处仍能看到高耸的残塔。','Memory I · Look among the lily pads in open water about 200 m from the bell, with the tall ruined tower still in view.'],
- ['记忆 II · 在离钟约 255 米的岸边浅湾找旧木桩和船骸碎木，蓝花就在这一带。','Memory II · Search the shallow cove about 255 m from the bell, near old posts and pieces of wrecked timber.'],
- ['记忆 III · 在离钟约 100 米的蕨草岩礁背面。绕到面向开阔湖面的一侧再靠近，船就不会卡在岩边。','Memory III · Look behind the fern-covered rock islet about 100 m from the bell. Approach from open water to avoid wedging the boat against the rocks.'],
- ['记忆 IV · 到离钟约 110 米的残塔下方，搜塔脚附近长着荷叶的浅水区。','Memory IV · Search the lily shallows beneath the ruined tower, about 110 m from the bell.'],
- ['记忆 V · 在离钟约 230 米的岩礁旁找蓝花，地标是系着红带的坐姿石像。','Memory V · Look alongside the rocky islet about 230 m from the bell, marked by a seated stone statue with a red ribbon.'],
- ['记忆 VI · 在离钟约 195 米的开阔水面找漂浮原木，蓝花就在原木之间。','Memory VI · Search among the floating logs in open water about 195 m from the bell.'],
+ ['记忆一 · 在离钟约 200 米的开阔水面找荷叶群。远处仍能看到高耸的残塔。','Memory I · Look among the lily pads in open water about 200 m from the bell, with the tall ruined tower still in view.'],
+ ['记忆二 · 在离钟约 255 米的岸边浅湾找旧木桩和船骸碎木，蓝花就在这一带。','Memory II · Search the shallow cove about 255 m from the bell, near old posts and pieces of wrecked timber.'],
+ ['记忆三 · 在离钟约 100 米的蕨草岩礁背面。绕到面向开阔湖面的一侧再靠近，船就不会卡在岩边。','Memory III · Look behind the fern-covered rock islet about 100 m from the bell. Approach from open water to avoid wedging the boat against the rocks.'],
+ ['记忆四 · 到离钟约 110 米的残塔下方，搜塔脚附近长着荷叶的浅水区。','Memory IV · Search the lily shallows beneath the ruined tower, about 110 m from the bell.'],
+ ['记忆五 · 在离钟约 230 米的岩礁旁找蓝花，地标是系着红带的坐姿石像。','Memory V · Look alongside the rocky islet about 230 m from the bell, marked by a seated stone statue with a red ribbon.'],
+ ['记忆六 · 在离钟约 195 米的开阔水面找漂浮原木，蓝花就在原木之间。','Memory VI · Search among the floating logs in open water about 195 m from the bell.'],
  ['收齐六段后，生命上限增加 10%，任务目标会切换为寻找琴女。回 Meigu Songhouse Dock 上岸，前往码头旁的岛上挑战 Yan Qiansui。击败她才完成任务，战后核对幻术琵琶琴弦和 Fanatic’s Fragment: Attachment。','Collect all six to gain 10% maximum HP and advance the objective to finding the Zither Maiden. Land at Meigu Songhouse Dock and fight Yan Qiansui on the adjacent island. Defeat her to finish the quest and check for the Illusory Pipa Strings and Fanatic’s Fragment: Attachment.']
 ],'https://allthings.how/phantom-blade-zero-allure-of-vanity/']);
 

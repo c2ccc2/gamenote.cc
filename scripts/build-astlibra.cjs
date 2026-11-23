@@ -66,12 +66,20 @@ function sectionBody(s,page){
  if(s.table==='medals')return table(['兑换次序','奖励'],s.blocks.map(b=>{const m=b.text.match(/^(\d+)、(.+)$/);if(!m)throw Error('Invalid medal reward');return [m[1],esc(m[2])];}));
  if(s.table==='arrows'){
   const tip=page.id==='arena'?arenaTips[s.id]:null;
-  return table(s.headers,s.blocks.map(b=>b.text.split('➡').map(esc)))+(tip?`<h3>${esc(tip[0])}打法</h3><p>${esc(tip[1])}</p><p>${link(tip[2]+' ↗',tip[3])}</p>`:'');
+  const rows=s.blocks.map(b=>b.text.split('➡').map(esc));
+  const rewards=table(s.headers,rows);
+  let index=0;
+  const searchable=page.id==='arena'?rewards.replaceAll('<tr><th scope="row">',()=>`<tr data-lookup-row data-lookup-text="${esc(s.title)} ${rows[index++].join(' ')}"><th scope="row">`):rewards;
+  return searchable+(tip?`<h3>${esc(tip[0])}打法</h3><p>${esc(tip[1])}</p><p>${link(tip[2]+' ↗',tip[3])}</p>`:'');
  }
  if(s.table==='recipes'){
   // Reader corrections preserve the archived source; recipes are not reversible.
 
-  let html='',rows=[];const flush=()=>{if(rows.length){html+=table(['材料组合','合成结果'],rows);rows=[];}};
+  const unlocks={
+   basic:`<aside class="astlibra-reminder" id="recipe-unlocks"><p><strong>先拿配方</strong></p><ul><li>初始合成配方：第一章把木柴捆与松脂带回道具屋，和店主对话。 ${link('查看火把材料路线 →',base+'walkthrough/chapter-1/#torch')}</li><li>高级合成配方：在艾里泽斯杯完成「摧毁的美学」。 ${link('查看挑战打法 →',base+'systems/arena/#cup-4')}</li><li>面包房配方：在阿涅斯塔杯完成「拦路虎」。 ${link('查看杯赛奖励 →',base+'systems/arena/#cup-7')}</li></ul></aside>`,
+   alchemy:`<p>炼金配方从小徽章兑换奖励取得。 ${link('查看小徽章兑换顺序 →',base+'systems/medals/#rewards')}</p>`
+  };
+  let html=unlocks[s.id]||'',rows=[];const flush=()=>{if(rows.length){html+=table(['材料组合','合成结果'],rows);rows=[];}};
   for(const b of s.blocks){const text=readerText(b);if(text.includes('=')){const [materials,result]=text.split('=');const uncertain=/铁矿石\+冶炼套件=银锭|冶炼套件\+铁定=炸弹/.test(text);rows.push([esc(materials),esc(result)+(uncertain?'<small class="astlibra-source-note">原资料此行存在名称疑点，请以游戏内配方为准。</small>':'')]);}else{flush();html+=`<h3>${esc(headingText(text))}</h3>`;}}flush();return html+'<p class="astlibra-source-note">已校正：铁矿石＋冶炼套件＝铁锭；冶炼套件＋铁锭＝炸弹（炼金术配方）。合成与分解不一定互为逆过程。核对：<a href="https://w.atwiki.jp/astlibra/pages/74.html" target="_blank" rel="noopener noreferrer">Revision 道具资料</a>，2026-10-22。</p>';
  }
  const reminders=g.reminders.filter(r=>r.route===page.category+'/'+page.id);
@@ -105,6 +113,11 @@ const hiddenDetours={
  'chapter-6/ruins':[['beatrice','刚进入伊利西昂内部时，向左跳跃并冲刺找隐藏门，进门后继续前进。']],
  'chapter-7/karon':[['adolphus','到贤者塔后，跳近一层中间的隐藏梯子。二层往左再爬一架梯子，三层往右对守卫使用安眠药。入内打破魔法阵两侧的烛台，进入挑战。']]
 };
+const arenaDetours={
+ 'chapter-2/guild':['cup-2','接下运送委托后，先去斗技场查看布里帝恩杯。「双皇连」通关奖励增加一个饰品槽，领奖后要在道具菜单使用。'],
+ 'chapter-4/prepare':['cup-4','和弥露确认出发前，可以先打艾里泽斯杯的「摧毁的美学」，拿高级合成配方。杯赛页有三口大锅和沿途可破坏物的清场提示。'],
+ 'chapter-6/prepare':['cup-4','本章开头自由活动时，如果还没拿高级合成配方，先去打艾里泽斯杯的「摧毁的美学」，再去酒馆推进剧情。']
+};
 function detailBody(page){
  const aliases=g.aliases[page.id]||{};
  const body=page.sections.map((s,i)=>{
@@ -116,7 +129,9 @@ function detailBody(page){
    const boss=g.bosses.find(p=>p.id===id);
    return `<aside class="astlibra-reminder" id="route-hidden-${id}"><p><strong>可选探索 · ${esc(boss.title.split('：')[0])}</strong></p><p>${esc(entrance)}</p><p>胜利奖励：${esc(hiddenCombat[id].rewards.join('、'))} · ${link('查看打法与奖励详情 →',boss.href+'#combat-plan')}</p></aside>`;
   }).join('');
-  const content=pickupNotes+detourNotes+sectionBody(s,page);
+  const arena=page.category==='walkthrough'?arenaDetours[page.id+'/'+s.id]:null;
+  const arenaNote=arena?`<aside class="astlibra-reminder"><p><strong>出发前 · 斗技场</strong> · ${esc(arena[1])}</p><p>${link('查看杯赛奖励与打法 →',base+'systems/arena/#'+arena[0])}</p></aside>`:'';
+  const content=pickupNotes+detourNotes+arenaNote+sectionBody(s,page);
   const alias=Object.entries(aliases).filter(([a,target])=>target===s.id&&a!==s.id).map(([a])=>`<span id="${a}" class="khazan-legacy-anchor"></span>`).join('');
   return `<section class="khazan-route-section" id="${s.id}">${alias}<h2 class="classic-heading"><span class="khazan-step-number">${String(i+1).padStart(2,'0')}</span>${esc(page.imageTable?'资料图表':s.title)}${cost}</h2>${s.spoiler?`<details class="astlibra-spoiler"><summary>展开剧情选择提示</summary>${content}</details>`:content}</section>`;
  }).join('');
@@ -133,7 +148,8 @@ function detailBody(page){
  const related=isRoute?`<section><h2 class="classic-heading">相关查询</h2>${links([...endingLinks,{title:'对应区域地图与宝箱',href:collection?.href||base+'collectibles/postscript/'},{title:'补给与合成配方',href:base+'systems/crafting/'},{title:'嘉隆技能查询',href:base+'skills/'}])}</section>`:'';
  const siblings=group(page.category).pages.filter(p=>!p.redirect&&!p.indexType),index=siblings.indexOf(page),previous=siblings[index-1],next=siblings[index+1];
  const systemLinks=page.category==='systems'?`<h2 class="classic-heading">相关查询</h2>${links([{title:'地图宝箱与小徽章位置',href:base+'collectibles/'},{title:'装备与道具资料',href:base+'equipment/'},{title:'新章流程',href:base+'postgame/'}])}`:'';
- return `${page.id==='arena'?arenaIntro():''}${page.category==='walkthrough'&&collection?chapterCollectibles(collection):''}${page.sections.length>1?toc(page.sections):''}${body}${page.category==='bosses'?medium.hidden(page.id):''}${related}${systemLinks}${references(page.sources)}<nav class="classic-pager" aria-label="前后篇">${previous?link('← '+(previous.label||previous.title),previous.href):''}${link('返回目录',base+page.category+'/')}${next?link((next.label||next.title)+' →',next.href):''}</nav>`;
+ const guideBody=page.id==='arena'?`<div data-astlibra-lookup-scope data-arena-search>${lookupForm('例如：双皇连、高级合成配方、东京杯')}${body}</div>`:body;
+ return `${page.id==='arena'?arenaIntro():''}${page.category==='walkthrough'&&collection?chapterCollectibles(collection):''}${page.sections.length>1?toc(page.sections):''}${guideBody}${page.category==='bosses'?medium.hidden(page.id):''}${related}${systemLinks}${references(page.sources)}<nav class="classic-pager" aria-label="前后篇">${previous?link('← '+(previous.label||previous.title),previous.href):''}${link('返回目录',base+page.category+'/')}${next?link((next.label||next.title)+' →',next.href):''}</nav>`;
 }
 function chestRows(records,detail=false){
  return `<div class="classic-table-wrap"><table class="classic-table astlibra-chests"><thead><tr><th scope="col">编号</th><th scope="col">宝箱与条件</th><th scope="col">位置图</th></tr></thead><tbody>${records.map(p=>{
