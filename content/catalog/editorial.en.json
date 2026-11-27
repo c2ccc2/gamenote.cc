@@ -381,10 +381,12 @@
   "phantom-blade-zero": {
     "summary": "A dark wuxia action RPG built around fast weapon swaps, defense and exploration.",
     "review": "First impressions from official demonstrations; hands-on review pending. Weapon switching during combat is the system we most want to explore.",
-    "fit": "Players who enjoy timing-based defense and experimenting with weapons.",
-    "caution": "Route and difficulty notes are still being verified.",
-    "hours": "To be verified",
-    "replayStatus": "To be verified",
-    "replay": "Replay and carryover rules are pending verification."
+    "fit": "Best for players who enjoy dark wuxia, learning parry and dodge timing, and experimenting with weapon combinations. Action-game newcomers can start on a lower difficulty and learn defense before branching out into new setups.",
+    "caution": "If you mainly want the story, follow the main route first. For full completion or Platinum, check time-sensitive side quests before leaving each region and budget time for revisits and hidden bosses.",
+    "hours": "About 25–30 hours",
+    "replayStatus": "New Game Plus",
+    "replay": "Take late-game weapons into a second run and try new combos and builds against early bosses. The story is available on the first run, and Liang says the Platinum trophy can be earned in one playthrough on any difficulty. The optional 66 Days mode adds a limited number of retries.",
+    "hoursNote": "Creative director Soulframe Liang’s first-clear estimate for experienced players. Repeated boss attempts, side quests and full collection can add time.",
+    "replaySource": "https://www.dualshockers.com/phantom-blade-zero-interview/"
   }
 }
