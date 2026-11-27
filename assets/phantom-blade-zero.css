@@ -21,7 +21,6 @@
 .pbz .pbz-cover {max-width:100%;border-radius:6px}
 .pbz .pbz-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:480px){.pbz .pbz-grid{grid-template-columns:minmax(0,1fr)}}
-.pbz-home .classic-main {background:#f6f2e7 url("/assets/phantom-blade-zero-ink.svg") center top / 100% auto no-repeat}
 .pbz-landscape {background:url("/assets/phantom-blade-zero-ink.svg") center / cover;border:1px solid #8b9382;min-height:clamp(12rem,30vw,23rem);display:flex;align-items:flex-end;padding:clamp(.8rem,3vw,2rem)}
 .pbz-landscape .pbz-cover {width:min(56%,460px);height:auto;box-shadow:0 .35rem 1rem #26352d55}
 .pbz-info {margin:1.5rem 0 2rem;padding:clamp(1rem,3vw,2rem);border:1px solid #aeb2a5;border-top:3px solid #8e3025;background:#faf7ed}

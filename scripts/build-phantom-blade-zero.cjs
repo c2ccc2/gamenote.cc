@@ -1,3 +1,5 @@
+const guideHomeBanner=require('./lib/guide-home-banner.cjs');
+const mapCollection=require('./lib/phantom-blade-zero-map-collection.cjs');
 const fs=require('node:fs');
 const write=require('./lib/write-file.cjs');
 const opening=require('./lib/phantom-blade-zero-opening.cjs');
@@ -13,7 +15,7 @@ const chineseQuestTerms=Object.entries({
  'Festering Secret':'据点秘事','Honor Among Thieves':'飞贼营地问答','A Healer’s Mercy':'救治受伤飞贼','A Puppet’s Wooden Heart':'人偶木心','A Severed Mindseal':'杀气塔原石','Allure of Vanity':'虚荣诱惑','Apprentice Healer':'玉儿采药','Annihilation':'歼灭','Attachment':'执念',
  'Backstreet Archway':'后街拱门','Baishan Headband':'白山派头巾','Beneath the Well':'井下','Bi Feng':'毕锋','Blackwater Crew Deck':'黑水帮船甲板','Blemish Goldweed':'带斑金草','Blood Oath Dagger':'血誓匕首','Blood-Stopper Vine':'止血藤','Bloodline Awakening':'龙脉觉醒','Broken Puppet Pit Entrance':'断偶坑入口','Broken Vessel':'破损容器','Cavern Passage':'洞穴通道','Commander’s Platform':'指挥台','Congealeaf':'凝血叶','Core':'核心','Crimson Manor':'红衣女子的宅邸','Cui':'小翠',
  'Daughter of the Dark Sect':'红衣女子支线','Deep in the Valley':'溪谷深处','Dovecote':'鸽舍','Dusk':'暮色','Engine Giant Remains':'机关巨人残骸','Fanatic’s Fragment':'狂信者碎片','Fiend Saws':'妖锯','Final Battle':'最终决战','Fish Fragment':'鱼形碎片','Fist Fragment':'拳形碎片','Flaming Mane':'烈焰鬃毛','Forbidden Arts Beneath the Lake':'湖底禁术','Forbidden Path':'禁道','Frozen Lake Dock':'冰湖码头','Gentle Thief':'温和的飞贼','Grief-Stricken Jin':'悲恸的荆野','Hanging Cage Cavern':'挂笼洞窟','Heel Reinforcement Part':'足跟强化部件','Hero’s Courage':'侠士之勇',
- 'Illusion of Inanis':'虚空幻象','Illusory Pipa':'幻术琵琶','Inanis’ Radiant Fan':'虚空的光扇','Ink Cut':'墨斩','Iron Butcher’s Camp':'铁屠营地','Kui Yanyan':'魁炎炎','Kuye Temple Sutra':'苦叶寺经文','Ledger of Atonement':'赎罪账簿','Longevity Tonic':'延寿药','Loong Emblem':'龙纹徽记','Lu Sanquian':'陆三千','Master Healer’s Memory':'医师记忆','Meigu Songhouse Dock':'梅谷乐坊码头','Merciful Dew':'慈悲露','Nimble Thief':'妙手小张','Nirvana':'涅槃','Outlaw Trap':'飞贼陷阱','Parting Mists':'拨开迷雾','Path of the Baishan’s Fall':'白山派覆灭之路','Perfect Vessel Estate':'人偶宅邸','Phantom Illusionist Ruins':'幻术师遗迹','Pillars of Kunlun':'昆仑龙柱','Pond of Fading Song':'余音池','Pong of Fading Song':'余音池',
+ 'Illusion of Inanis':'虚空幻象','Illusory Pipa':'幻术琵琶','Inanis’ Radiant Fan':'虚空的光扇','Ink Cut':'墨斩','Iron Butcher’s Camp':'铁屠营地','Kui Yanyan':'魁炎炎','Kuye Temple Sutra':'苦叶寺经文','Ledger of Atonement':'赎罪账簿','Longevity Tonic':'延寿药','Loong Emblem':'龙纹徽记','Lu Sanquian':'陆三千','Master Healer’s Memory':'医师记忆','Meigu Songhouse Dock':'梅谷乐坊码头','Merciful Dew':'慈悲露','Nimble Thief':'妙手小张','Nirvana':'涅槃','Outlaw Trap':'飞贼陷阱','Parting Mists':'拨开迷雾','Path of the Baishan’s Fall':'白山派覆灭之路','Perfect Vessel Estate':'人偶宅邸','Phantom Illusionist Ruins':'幻术师遗址','Pillars of Kunlun':'昆仑龙柱','Pond of Fading Song':'余音池','Pong of Fading Song':'余音池',
  'Puppet Cell':'人偶牢房','Purge the Sect':'清剿教派','Remnant Spark Cube':'余火方块','Ritual Cauldron Fragment III':'祭鼎碎片三','Rogue Box':'飞贼匣','Rootless Dew':'无根露','Secrets at the Heart of the Lake':'湖心秘密','Secrets of the Baishan Sect':'白山派秘事','Sha-Chi Headscarf':'杀气头巾','Sha-Chi Powered Boat':'杀气驱动船','Shaded Bamboo Path':'竹荫小径','Shell':'外壳','Shrine Outer Gate':'神龛外门','Silent Wrap':'静默缠布','Snow and Blood':'雪与血','Sunset Path':'落日小径','Temple of Blue Fireflies':'幽蓝萤火之庙','The Herald’s Illusion':'使者幻象','The Lady Grounds':'夫人所在的场地','The Lady’s Cave':'夫人洞窟','The Lady’s Shrine':'夫人神龛','The Last Mandate Encampment':'末令营地','This won’t absolve you of your sins':'这不能洗清你的罪孽','Tianxuan Bronze Sword':'天玄铜剑','Training Grounds Depths':'训练场深处','Transcension Cores':'超脱核心','Twin Fish Pendant':'双鱼佩','Ultimate Talisman':'终极护符','Weeping Mistgate':'悲雾门','Whence the Weeping':'悲泣缘由','Whiteshadow':'白影','Whiteshadow’s Fall':'白影的陨落','Wu Xuan':'武玄','Yan Qiansui':'燕千岁','Young Mistress':'大小姐','Zhang’s Hideout':'小张藏身处'
 });
 // Describe pickups and landmarks by their appearance when a Chinese in-game name is unverified.
@@ -42,7 +44,7 @@ const areaGroups=[
  ['orthodox-camp','正道大营','Orthodox Camp','orthodox-camp-route'],
  ['plum-lake','梅谷湖与水域','Plum Valley Lake and waterways','water-gang','water-gang-route'],
  ['late-55','枷笼山','Cage Mountain','late-56','cage-late-fight'],
- ['late-58','雪山','Snow Mountain','late-59','snow-swordsman'],
+ ['late-58','幻术师遗址','Phantom Illusionist Ruins','late-59','snow-swordsman'],
  ['late-60','戏梦山庄','Dreamplay Manor','late-61','yuding','late-62','late-63','manor-memories'],
  ['late-66','断魂山','Soulbreak Mountain','soulbreak-pair','late-67','soulbreak-finale','zuo-shang']
 ];
@@ -120,7 +122,8 @@ for(const en of [false,true]){
   const directoryLabel=en?'Guide index':'攻略目录';
   const collapseLabel=en?'Collapse all':'全部收起';
   const menuId=key=>'pbz-menu-'+key;
-  const links=pages.map(p=>{
+  const menuPages=pages.filter(([key])=>key!=='systems');
+  const links=menuPages.map(p=>{
    const key=p[0],href=base+key+'/',id=menuId(key),title=label(p);
    const childLink=child=>`<a href="${href+child[0]}/"${child===entry?' aria-current="page"':''}>${label(child)}</a>`;
    const children=key==='side-quests'?questGroups.map((group)=>{
@@ -129,7 +132,7 @@ for(const en of [false,true]){
    }).join(''):content[key].map(childLink).join('');
    return `<section class="classic-nav-group"><div class="classic-nav-group-heading"><h2><a href="${href}"${p===page&&!entry?' aria-current="page"':''}>${title}</a></h2><button class="classic-group-toggle" type="button" aria-expanded="true" aria-controls="${id}" aria-label="${en?'Collapse ':'收起'}${title}">−</button></div><div class="classic-nav-group-items" id="${id}">${children}</div></section>`;
   }).join('');
-  const directory=`<details open><summary>${directoryLabel}</summary><nav class="classic-nav" aria-label="${directoryLabel}"><div class="classic-nav-home"><a href="${base}"${page?'':' aria-current="page"'}>${en?'Guide home':'专题首页'}</a><button class="classic-collapse-all" type="button" aria-expanded="true" aria-controls="${pages.map(([key])=>menuId(key)).join(' ')}">${collapseLabel}</button></div>${links}</nav></details>`;
+  const directory=`<details open><summary>${directoryLabel}</summary><nav class="classic-nav" aria-label="${directoryLabel}"><div class="classic-nav-home"><a href="${base}"${page?'':' aria-current="page"'}>${en?'Guide home':'专题首页'}</a><button class="classic-collapse-all" type="button" aria-expanded="true" aria-controls="${menuPages.map(([key])=>menuId(key)).join(' ')}">${collapseLabel}</button></div>${links}</nav></details>`;
   const clean=value=>value.replace(/&(?:amp;)?#(?:x20|32);/gi,' ');
   const areaText=value=>en?value:localizeQuest(value).replace(/(^|第\s*)(VI|IV|III|II|V|I)(?=\s*[·段])/g,(_,prefix,n)=>prefix.trim()+({I:'一',II:'二',III:'三',IV:'四',V:'五',VI:'六'}[n]));
   const renderStep=([zh,english,frames=[]])=>`<div class="pbz-step"><p>${clean(areaText(en?english:zh))}</p>${frames.map(([file,zhCaption,enCaption])=>{
@@ -191,11 +194,25 @@ for(const en of [false,true]){
    summaryRow(en?'Materials':'收集数量',materialText)+
    summaryRow(en?'Items':'可收集物品',lootText)+
    summaryRow(en?'Rewards':'战后奖励',brief[2]?.[en?1:0])+
-   summaryRow(en?'Side content':'支线与探索',brief[3]?.[en?1:0])+'</dl><details class="pbz-summary-extra" open><summary>'+(en?'Items and services details':'道具与服务补充')+'</summary><p>'+areaText(brief[4]?.[en?1:0]||'')+'</p></details>'+
-   '<footer class="pbz-summary-footer">'+(areaPickups.length?'<a href="#area-pickup-details">'+(en?'Item locations':'物品位置')+' →</a>':'')+
-   (entry[0]==='lu-village'?'<a href="#lu-material-locations">'+(en?'Material locations':'黑石与琥珀位置')+' →</a>':'')+'</footer>'+
+   summaryRow(en?'Side content':'支线与探索',brief[3]?.[en?1:0])+'</dl>'+
    (counts?.[2]?'<p class="pbz-summary-note">'+(en?(entry[0]==='lu-village'?'One amber shard is on an adjoining route.':counts[0]===null?'The Snow Mountain extension has no separate material count.':'Combined count for Pang Town and Dreamplay Manor.'):counts[2])+'</p>':'')+'</section>':'';
   const firstPickupSection=entry?.[5]?.find(section=>areaPickups.some(item=>item[6]===section[0]))?.[0];
+  const collectionTarget=page?.[0]==='walkthrough'&&entry?mapCollection.regions[entry[0]]:null;
+  const renderMapCollection=()=>{
+   if(!collectionTarget)return '';
+   const [sourceSlug,counts,zhNote,englishNote]=collectionTarget;
+   const otherPangArea=entry[0]==='pang-town'?'late-60':entry[0]==='late-60'?'pang-town':null;
+   const details=en?{}:mapCollection.details[entry[0]]||{};
+   const itemsMarkup=items=>`<ul>${items.map(item=>`<li>${item}</li>`).join('')}</ul>`;
+   const weaponProgress=!en&&counts&&counts[1]>0&&details[1]?.length!==counts[1]?' <small>（下方仅列已整理的部分兵器）</small>':'';
+   const list=counts?`<ul${en?'':' id="map-collection-details"'}>${mapCollection.categories.map(([zh,english],i)=>`<li>${en?english:zh} <strong>${counts[i]}</strong>${otherPangArea?` <small> / ${en?'shared map total':'地图合计'} ${mapCollection.sharedPangTown[i]}</small>`:''}${i===1?weaponProgress:''}${details[i]?itemsMarkup(details[i]):''}</li>`).join('')}</ul>`:'';
+   const related=otherPangArea?`<p>${en?'Both areas contribute to the same map total.':'庞镇与戏梦山庄共用地图进度。'} <a href="${base}walkthrough/${otherPangArea}/#map-collection">${en?'Check the other half':'查看另一半的清单'} →</a></p>`:entry[0]==='late-58'?`<p><a href="${base}walkthrough/plum-lake/#map-collection">${en?'Meigu Lake map totals':'梅谷湖地图收集合计'} →</a></p>`:'';
+   const timingLink=pickupTiming[entry[0]]?` <a href="#pickup-timing">${en?'Collection timing':'首次收集与回访条件'} →</a>`:'';
+   const note=en?englishNote:zhNote;
+   const itemDetails=!counts&&!en?`<div id="map-collection-details">${Object.entries(details).map(([category,items])=>`<h3>${mapCollection.categories[category][0]}</h3>${itemsMarkup(items)}`).join('')}</div>`:'';
+   const sourceLink=en?`<p><a href="${mapCollection.source(sourceSlug)}" target="_blank" rel="noopener noreferrer">Source walkthrough with item locations ↗</a></p>`:'';
+   return `<section id="map-collection" class="pbz-area-summary"><h2 class="classic-heading">${en?'100% map collection checklist':'地图 100% 收集核对清单'}</h2><p>${en?'Use these route counts to check for gaps. Confirm the final percentage in the game map.':'按下列分类数量查漏。已核对的明细列在对应数量下方，最终完成度以游戏内地图为准。'}${timingLink}</p>${related}${list}${note?`<p>${note}</p>`:''}${itemDetails}${sourceLink}</section>`;
+  };
   const renderAreaPickups=section=>{
    const pickups=areaPickups.filter(item=>item[6]===section);
    return pickups.length?`<ul${section===firstPickupSection?' id="area-pickup-details"':''}>${pickups.map(item=>`<li><strong>${areaText(label(item))}</strong> · ${areaText(item[en?4:3])}</li>`).join('')}</ul>`:'';
@@ -283,8 +300,8 @@ for(const en of [false,true]){
     ],
     'hanging-cage':[['apprentice-healer','玉儿采药路线','Apprentice Healer route']],
     'mirror-deep':[
-     ['../walkthrough/against-the-flow/#against-the-flow','坚岩护腕领取路线','Bracer pickup route'],
-     ['../walkthrough/against-the-flow/#tower-to-waterfall','浑源静脉仪领取路线','Timing accessory pickup route'],
+     ['walkthrough/against-the-flow/#against-the-flow','坚岩护腕领取路线','Bracer pickup route'],
+     ['walkthrough/against-the-flow/#tower-to-waterfall','浑源静脉仪领取路线','Timing accessory pickup route'],
      ['healers-mercy','四名飞贼的救治路线','Route to the four wounded thieves'],
      ['baishan-secrets','白山派支线接取路线','Baishan tale and where to accept it'],
      ['purge-the-sect','羽弓交付路线','Feather Bow hand-in'],
@@ -304,16 +321,16 @@ for(const en of [false,true]){
      ['puppet-wooden-heart','人偶木心送信路线','A Puppet’s Wooden Heart route']
     ]
    };
-   const routeLink=(relatedGuides[id]||[]).map(guide=>` <a href="${base}side-quests/${guide[0]}/">${label(guide)} →</a>`).join('');
+   const routeLink=(relatedGuides[id]||[]).map(guide=>` <a href="${base}${guide[0].startsWith('walkthrough/')?guide[0]:'side-quests/'+guide[0]+'/'}">${label(guide)} →</a>`).join('');
    return `<aside class="pbz-info"><p>${areaText(en?english:zh)}</p><p><a href="${base}side-quests/${target}/">${en?'View quest requirements':'查看任务条件'} →</a>${routeLink}</p></aside>`;
   };
 
-  const detail=entry?overview+renderTiming+cutoffLink+(entry[5]?entry[5].map(section=>`<section id="${section[0]}"><h2 class="classic-heading">${label(section)}</h2>${renderCheckpoint(section[0])}${renderBossLinks(section[0])}${renderContent(section)}${section[0]==='lu-village-route'?'':renderAreaPickups(section[0])}${renderPickupLinks(section[0])}</section>`).join(''):areaLink+renderContent(entry[4]?.startsWith('../../walkthrough/')?[...entry.slice(0,4),null]:entry)+rewardLink+memoryLink+questBossLinks+questLink+tigerCannonLink):'';
+  const detail=entry?overview+renderMapCollection()+renderTiming+cutoffLink+(entry[5]?entry[5].map(section=>`<section id="${section[0]}"><h2 class="classic-heading">${label(section)}</h2>${renderCheckpoint(section[0])}${renderBossLinks(section[0])}${renderContent(section)}${section[0]==='lu-village-route'?'':renderAreaPickups(section[0])}${renderPickupLinks(section[0])}</section>`).join(''):areaLink+renderContent(entry[4]?.startsWith('../../walkthrough/')?[...entry.slice(0,4),null]:entry)+rewardLink+memoryLink+questBossLinks+questLink+tigerCannonLink):'';
   const position=items.indexOf(entry);
   const adjacent=entry?`<nav class="pbz-grid" aria-label="${en?'Adjacent entries':'相邻条目'}">${[items[position-1],items[position+1]].map((item,i)=>item?`<a href="${base+category+item[0]}/">${i===0?'← ':''}${label(item)}${i===1?' →':''}</a>`:'').join('')}</nav>`:'';
   const facts=en?[['Developer','S-Game'],['Genre','Wuxia action'],['Platforms','PS5 / PC'],['Release','29 October 2026']]:[['开发商','灵游坊（S-Game）'],['类型','武侠动作'],['平台','PS5 / PC'],['发售日期','2026 年 10 月 29 日']];
   const intro=en?'With sixty-six days left to live, Soul fights his way through a dark martial arts world to uncover the conspiracy pursuing him. Combat combines close-range weapon swaps with parries and dodge counters.':'只剩六十六天可活的「魂」，在杀机四伏的江湖中追查幕后阴谋。战斗以近身交锋为主，可在两把主武器之间切换，衔接招架和闪避反击。';
-  const body=page?`<section><h2 class="classic-heading">${en?'Field notes':'攻略笔记'}</h2><p>${lead}</p>${page[5]?`<p><a href="${page[5]}">${en?'Source and demonstration':'资料与演示'} ↗</a></p>`:''}</section>`:`<div class="pbz-landscape"><img class="pbz-cover" src="/assets/catalog/phantom-blade-zero.jpg" alt="${title}" width="460" height="215"></div><section class="pbz-info" aria-labelledby="game-info"><h2 id="game-info" class="classic-heading">${en?'Game overview':'游戏信息'}</h2><p>${intro}</p><dl class="pbz-facts">${facts.map(([key,value])=>`<div><dt>${key}</dt><dd>${value}</dd></div>`).join('')}</dl><p><a href="${en?'/en':''}/catalog/${slug}/" target="_blank" rel="noopener">${en?'Game profile':'查看游戏图鉴'} ↗</a> · <a href="https://store.steampowered.com/app/4115450/" target="_blank" rel="noopener">${en?'Steam Store':'Steam 商店'} ↗</a> · <a href="${official}" target="_blank" rel="noopener">${en?'Official site':'游戏官网'} ↗</a></p></section><h2 class="classic-heading">${en?'Guide sections':'攻略入口'}</h2><p>${lead}</p><div class="pbz-grid">${pages.map(p=>`<a href="${base+p[0]}/">${label(p)} →</a>`).join('')}</div>`;
+  const body=page?`<section><h2 class="classic-heading">${en?'Field notes':'攻略笔记'}</h2><p>${lead}</p>${page[5]?`<p><a href="${page[5]}">${en?'Source and demonstration':'资料与演示'} ↗</a></p>`:''}</section>`:`<div class="pbz-landscape"><img class="pbz-cover" src="/assets/catalog/phantom-blade-zero.jpg" alt="${title}" width="460" height="215"></div><section class="pbz-info" aria-labelledby="game-info"><h2 id="game-info" class="classic-heading">${en?'Game overview':'游戏信息'}</h2><p>${intro}</p><dl class="pbz-facts">${facts.map(([key,value])=>`<div><dt>${key}</dt><dd>${value}</dd></div>`).join('')}</dl><p><a href="${en?'/en':''}/catalog/${slug}/" target="_blank" rel="noopener">${en?'Game profile':'查看游戏图鉴'} ↗</a> · <a href="https://store.steampowered.com/app/4115450/" target="_blank" rel="noopener">${en?'Steam Store':'Steam 商店'} ↗</a> · <a href="${official}" target="_blank" rel="noopener">${en?'Official site':'游戏官网'} ↗</a></p></section><h2 class="classic-heading">${en?'Guide sections':'攻略入口'}</h2><p>${lead}</p><div class="pbz-grid">${pages.map(p=>`<a href="${base+p[0]}/">${label(p)} →</a>`).join('')}</div>${en?'':guideHomeBanner}`;
   const language=`<details class="language-menu"><summary aria-label="${en?'Choose language':'选择语言'}"><span aria-hidden="true">◎</span> ${en?'English':'简体中文'} <span class="language-chevron" aria-hidden="true"></span></summary><div class="language-menu-options"><a href="${en?alt:url}" lang="zh-CN" hreflang="zh-CN"${en?'':' aria-current="page"'}>简体中文</a><a href="${en?url:alt}" lang="en" hreflang="en"${en?' aria-current="page"':''}>English</a></div></details>`;
   const regional=!entry&&page?.[0]==='walkthrough'?`<details class="pbz-info"><summary>${en?'Recording index by region':'参考资料：按区域查看实录分集'}</summary><p>${en?'A: 67-part run by 友利奈绪大魔王. B: high-difficulty series by 11的游戏世界 (55 files). Episode references below come from the recording titles; verified gameplay notes are listed separately.':'实录一为友利奈绪大魔王的 67 集实录，实录二为 11的游戏世界的最高难度系列（55 个文件）。下方分集索引依据视频标题整理，已核对画面的路线见正文。'}</p><nav class="pbz-grid" aria-label="${en?'Regions':'区域目录'}">${regions.map(([id,zh,eng])=>'<a href="#region-'+id+'">'+(en?eng:zh)+'</a>').join('')}</nav>${regions.map(([id,zh,eng,z,e,a,b])=>'<section id="region-'+id+'"><h3>'+(en?eng:zh)+'</h3><p>'+(en?e:localizeQuest(z))+'</p><p>'+(en?'A: P'+a+(b?' · B: P'+b:''):'实录一：第 '+a+' 集'+(b?' · 实录二：第 '+b+' 集':''))+'</p></section>').join('')}</details>`:'';
   const html=`<!doctype html><html lang="${en?'en':'zh-CN'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${heading} | GAME NOTE</title><meta name="description" content="${lead}"><link rel="canonical" href="https://gamenote.cc${url}"><link rel="alternate" hreflang="${en?'zh-CN':'en'}" href="https://gamenote.cc${alt}"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/assets/classic.css"><link rel="stylesheet" href="/assets/classic-menu.css"><link rel="stylesheet" href="/assets/classic-language.css"><link rel="stylesheet" href="/assets/phantom-blade-zero.css"><script src="/assets/classic.js" defer></script></head><body class="classic pbz${page?'':' pbz-home'}" data-theme="classic"><div class="classic-shell"><aside class="classic-sidebar"><a class="classic-brand" href="${en?'/en/':'/'}">GAME NOTE CLASSIC</a>${directory}</aside><main class="classic-main" id="main"><header><nav class="classic-language-switch" aria-label="${en?'Language':'语言'}">${language}</nav><p class="pbz-seal">${en?'WULIN ARCHIVE':'武林卷宗'}</p>${entry?`<p><a href="${base+category}">← ${label(page)}</a></p>`:''}<h1>${heading}</h1></header><article data-pagefind-body>${entry?detail+adjacent:body+index+regional}</article></main></div></body></html>\n`;

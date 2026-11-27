@@ -3,8 +3,8 @@ const root=path.resolve(__dirname,'..'),origin='https://gamenote.cc',base='games
 const read=p=>cheerio.load(fs.readFileSync(path.join(root,p,'index.html'),'utf8'));
 const sitemap=cheerio.load(fs.readFileSync(path.join(root,'sitemap.xml'),'utf8'),{xmlMode:true}),urls=sitemap('loc').toArray().map(n=>sitemap(n).text());
 assert.equal(urls.length,new Set(urls).size,'Sitemap must contain no duplicate URLs');
-assert.equal(urls.filter(u=>u===origin+'/en/updates/').length,1);
-for(const url of urls){const $=read(url.slice(origin.length));assert.doesNotMatch($('meta[name=robots]').attr('content')||'',/noindex/i);assert.equal($('link[rel=canonical]').attr('href'),url)}
+assert.equal(urls.filter(u=>u===origin+'/en/updates.html').length,1);
+for(const url of urls){const $=cheerio.load(fs.readFileSync(path.join(root,new URL(url).pathname === '/' ? 'index.html' : new URL(url).pathname),'utf8'));assert.doesNotMatch($('meta[name=robots]').attr('content')||'',/noindex/i);assert.equal($('link[rel=canonical]').attr('href'),url)}
 const summaries=require('../content/games/an-jing-wei-guang/region-summaries.json');
 const classicData=require('./lib/classic-data.cjs').loadClassicData(root);
 for(const crop of require('../content/games/an-jing-wei-guang/map-crops.json'))for(const en of [false,true]){
@@ -26,7 +26,7 @@ for(const prefix of ['', 'en/']){
   const copy=page('.classic-main > article').text();
   assert.doesNotMatch(copy,en?/return (?:them|the spirit) to (?:the|a) nest/i:/找到之后还要归还|回到巢穴归还|仅找到鸟灵还不等于已经归还/);
  }
- assert.doesNotMatch(queen('meta[name=robots]').attr('content')||'',/noindex/);assert.ok(urls.includes(origin+'/'+prefix+base+'bosses/the-queen/'));
+ assert.doesNotMatch(queen('meta[name=robots]').attr('content')||'',/noindex/);assert.ok(urls.includes(origin+'/'+prefix+base+'bosses/the-queen.html'));
  assert.ok(queen('.classic-main > article').text().length>150);assert.equal(queen('.article-references').length,1);
  assert.ok(queen('a[href="/'+prefix+base+'achievements/endgame/"]').length);
  for(const [id,summary] of Object.entries(summaries)){

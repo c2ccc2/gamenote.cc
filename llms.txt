@@ -10,27 +10,27 @@ Follow the language links on each page to read the matching translation.
 ## Guide Archive
 
 - [GAME NOTE](https://gamenote.cc/): Chinese homepage with the game archive, recent guide updates and original editorial notes.
-- [English Homepage](https://gamenote.cc/en/): English entry point with corresponding guide, update and editorial-note links.
-- [Game Archive](https://gamenote.cc/games/): Directory of Islets, ENDER LILIES and the ongoing Well Dweller guide project.
+- [English Homepage](https://gamenote.cc/en.html): English entry point with corresponding guide, update and editorial-note links.
+- [Game Archive](https://gamenote.cc/games.html): Directory of Islets, ENDER LILIES and the ongoing Well Dweller guide project.
 - [Islets Guide](https://islets.gamenote.cc/): Separate existing guide site for Islets, covering exploration, abilities, bosses and collectible reference material.
 - [ENDER LILIES Guide](https://ender-lilies.gamenote.cc/): Separate existing guide site for ENDER LILIES; it has not been migrated into the main directory.
 
 ## Well Dweller / 黯井微光
 
-- [Game Introduction](https://gamenote.cc/games/an-jing-wei-guang/): Game information, Steam store reference and entry points to the ongoing guide sections.
-- [Walkthrough Index](https://gamenote.cc/games/an-jing-wei-guang/walkthrough/): Area-based illustrated walkthrough directory; available chapters contain practical route instructions and credited screenshots.
-- [The Bog](https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-bog/): Entrance shafts, Ilda conversations, trinket-slot pickups, climbing practice and return visits near the tent.
-- [Map Index](https://gamenote.cc/games/an-jing-wei-guang/maps/): Partial map references and regional landmark identification, separate from step-by-step walkthrough instructions.
-- [World Structure Diagram](https://gamenote.cc/games/an-jing-wei-guang/maps/world/): Original editorial diagram of region entries; placement is not geographical and arrows represent reviewed route sequence, not surveyed corridors.
-- [Ability Reference](https://gamenote.cc/games/an-jing-wei-guang/abilities/): Movement/core abilities and progression/utility unlocks, with effects, acquisition references and unresolved location details distinguished.
-- [System Explanations](https://gamenote.cc/games/an-jing-wei-guang/systems/): Save tents, oil supplies, trinket upgrades, map reading and shops, kept separate from ability descriptions.
-- [Achievements](https://gamenote.cc/games/an-jing-wei-guang/achievements/): All 41 Steam achievement names and descriptions in Chinese, paired with official English text on the English version.
+- [Game Introduction](https://gamenote.cc/games/an-jing-wei-guang.html): Game information, Steam store reference and entry points to the ongoing guide sections.
+- [Walkthrough Index](https://gamenote.cc/games/an-jing-wei-guang/walkthrough.html): Area-based illustrated walkthrough directory; available chapters contain practical route instructions and credited screenshots.
+- [The Bog](https://gamenote.cc/games/an-jing-wei-guang/walkthrough/the-bog.html): Entrance shafts, Ilda conversations, trinket-slot pickups, climbing practice and return visits near the tent.
+- [Map Index](https://gamenote.cc/games/an-jing-wei-guang/maps.html): Partial map references and regional landmark identification, separate from step-by-step walkthrough instructions.
+- [World Structure Diagram](https://gamenote.cc/games/an-jing-wei-guang/maps/world.html): Original editorial diagram of region entries; placement is not geographical and arrows represent reviewed route sequence, not surveyed corridors.
+- [Ability Reference](https://gamenote.cc/games/an-jing-wei-guang/abilities.html): Movement/core abilities and progression/utility unlocks, with effects, acquisition references and unresolved location details distinguished.
+- [System Explanations](https://gamenote.cc/games/an-jing-wei-guang/systems.html): Save tents, oil supplies, trinket upgrades, map reading and shops, kept separate from ability descriptions.
+- [Achievements](https://gamenote.cc/games/an-jing-wei-guang/achievements.html): All 41 Steam achievement names and descriptions in Chinese, paired with official English text on the English version.
 
 ## Optional
 
-- [Editorial Notes](https://gamenote.cc/notes/): Original notes about organising routes, maps and practical guide information, rather than additional walkthrough chapters.
-- [Update History](https://gamenote.cc/updates/): Dated guide and site updates with individual detail pages and related content links.
-- [About GAME NOTE](https://gamenote.cc/about/): Guide-editor responsibilities, research methods, original-video credits and correction procedures.
+- [Editorial Notes](https://gamenote.cc/notes.html): Original notes about organising routes, maps and practical guide information, rather than additional walkthrough chapters.
+- [Update History](https://gamenote.cc/updates.html): Dated guide and site updates with individual detail pages and related content links.
+- [About GAME NOTE](https://gamenote.cc/about.html): Guide-editor responsibilities, research methods, original-video credits and correction procedures.
 - [Contact and Corrections](https://gamenote.cc/contact.html): Feedback instructions and repository links for guide corrections and content suggestions.
 
 ## Source and Coverage Notes

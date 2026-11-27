@@ -113,7 +113,7 @@ for(let part=2;part<=7;part++){
  items.forEach((item,i)=>publicCopy.set(base+'images/p'+part+'/frame-'+String(item.sec).padStart(4,'0')+'.webp',videoCopy[part][i]));
 }
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const all=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?all(path.join(dir,e.name)):e.name.endsWith('.html')?[path.join(dir,e.name)]:[]);
+const all=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?all(path.join(dir,e.name)):e.name==='index.html'?[path.join(dir,e.name)]:[]);
 const files=[path.join(root,'index.html'),...['catalog','news','games','notes','updates','about','en','search'].flatMap(d=>all(path.join(root,d)))];
 function clean(text,en){
  if(en){
@@ -397,7 +397,7 @@ for(const file of files){
   }
  }
  if(current==='/')$('head').append(`<script type="application/ld+json" data-site-schema>${JSON.stringify({'@context':'https://schema.org','@type':'WebSite',name:'GAME NOTE',url:origin+url,inLanguage:en?'en':'zh-CN',publisher:{'@type':'Organization',name:'GAME NOTE',url:origin}})}</script>`);
- const canonical=$('link[rel=canonical]').attr('href');if(!/noindex/i.test($('meta[name=robots]').attr('content')||'')&&canonical===origin+url&&current!=='/search/')indexable.push(origin+url);
+ const canonical=$('link[rel=canonical]').attr('href');if(!/noindex/i.test($('meta[name=robots]').attr('content')||'')&&(canonical===origin+url||url!=='/'&&canonical===origin+url.slice(0,-1)+'.html')&&current!=='/search/')indexable.push(origin+url);
  if(!process.argv.includes('--khazan')||file.replaceAll('\\','/').includes('/games/the-first-berserker-khazan/'))writeFile(file,$.html()+'\n');
 }
 const urls=[...new Set(indexable)].sort();

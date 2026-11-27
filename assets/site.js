@@ -44,13 +44,23 @@
     return `<article class="update-item"><time datetime="${update.date}">${formatDate(update.date)}</time><div><span class="update-project">${game ? (en?game.title:game.titleZh) : 'GAME NOTE'}</span><a href="${(en?'/en':'')+update.url}" target="_blank" rel="noopener noreferrer">${update.title}</a><p>${update.description}</p></div><span class="update-type">${type}</span></article>`;
   }
 
-  document.querySelectorAll('[data-site-header]').forEach(node => node.outerHTML = header());
+  const staticPage = document.body.hasAttribute('data-static-page');
+  if (!staticPage) document.querySelectorAll('[data-site-header]').forEach(node => node.outerHTML = header());
   const menuButton = document.querySelector('.menu-toggle');
   const menu = document.querySelector('#site-menu');
   const closeMenu = () => { menu?.classList.remove('is-open'); menuButton?.setAttribute('aria-expanded', 'false'); };
   menuButton?.addEventListener('click', () => { const open = menu.classList.toggle('is-open'); menuButton.setAttribute('aria-expanded', String(open)); });
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && menu?.classList.contains('is-open')) { closeMenu(); menuButton?.focus(); } });
   matchMedia('(max-width:680px)').addEventListener('change', closeMenu);
+  if (staticPage) {
+    const category = new URLSearchParams(location.search).get('category');
+    if (category) {
+      document.querySelectorAll('[data-notes] [data-note-category]').forEach(card => {
+        card.hidden = card.dataset.noteCategory !== category;
+      });
+    }
+    return;
+  }
   document.querySelectorAll('[data-site-footer]').forEach(node => node.outerHTML = footer());
   document.querySelectorAll('[data-games]').forEach(node => {
     const filter = node.dataset.games;

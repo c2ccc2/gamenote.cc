@@ -5,6 +5,9 @@ if(path.dirname(output)!==root||path.basename(output)!=='pagefind')throw Error('
 if(fs.existsSync(output)){if(fs.lstatSync(output).isSymbolicLink())throw Error('Search output must not be a symlink');fs.rmSync(output,{recursive:true})}
 const packageRoot=path.join(root,'node_modules','pagefind'),pkg=JSON.parse(fs.readFileSync(path.join(packageRoot,'package.json'),'utf8'));
 const bin=typeof pkg.bin==='string'?pkg.bin:pkg.bin.pagefind;
-const result=spawnSync(process.execPath,[path.join(packageRoot,bin),'--site','.', '--glob','{index.html,catalog/**/*.html,news/**/*.html,games/**/*.html,notes/**/*.html,updates/**/*.html,about/**/*.html,en/**/*.html}'],{cwd:root,stdio:'inherit'});
+const pageName = '{[!i]*,i[!n]*,in[!d]*,ind[!e]*,inde[!x]*,index?*}.html';
+// Index the explicit URLs and homepage, excluding compatibility directory indexes.
+const publishedPages = `{index.html,en.html,{catalog,news,games,notes,updates,about,search}.html,{catalog,news,games,notes,updates,about,search,en}/**/${pageName}}`;
+const result=spawnSync(process.execPath,[path.join(packageRoot,bin),'--site','.', '--glob',publishedPages],{cwd:root,stdio:'inherit'});
 if(result.status!==0)process.exit(result.status||1);
 if(!fs.existsSync(path.join(output,'pagefind.js')))throw Error('Missing production search bundle');

@@ -9,7 +9,7 @@ assert.equal(g.docs['flow-upper'].blocks.filter(b=>b.kind==='image').length+g.do
 for(const route of routes){
  const file=path.join(root,route.slice(1),'index.html'),html=fs.readFileSync(file,'utf8'),$=cheerio.load(html);
  assert.equal($('h1').length,1,route);
- assert.equal($('link[rel=canonical]').attr('href'),'https://gamenote.cc'+route);
+ assert.equal($('link[rel=canonical]').attr('href'),'https://gamenote.cc'+(fs.existsSync(path.join(root,route.slice(1,-1)+'.html'))?route.slice(0,-1)+'.html':route));
  assert.equal($('meta[name=robots][content*=noindex]').length,0,route);
  assert.equal($('[data-breadcrumb-schema]').length,1,route);
  assert.equal($('a[aria-current=page]').length,1,'Sidebar current page: '+route);

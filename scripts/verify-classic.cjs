@@ -42,7 +42,7 @@ const partial=structuredClone(data.bosses[0]);partial.confidence='C';partial.ver
 assert.equal(canPublish(partial),true,'Page-level name confidence does not veto independently verified facts');
 const invalid=structuredClone(partial);invalid.fields.observation.verificationStatus='unverified';assert.throws(()=>validateEntity(invalid,'invalid'));
 const nostamp=structuredClone(partial);nostamp.fields.observation.videoSources=[];assert.throws(()=>validateEntity(nostamp,'nostamp'));
-const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8'),urls=[...sitemap.matchAll(/<loc>https:\/\/gamenote\.cc(\/games\/an-jing-wei-guang\/[^<]*)<\/loc>/g)].map(m=>m[1]);
+const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8'),urls=[...sitemap.matchAll(/<loc>https:\/\/gamenote\.cc(\/games\/an-jing-wei-guang\/[^<]*)<\/loc>/g)].map(m=>m[1].replace(/\.html$/, '/'));
 assert.ok(urls.length>=45);let links=0;
 for(const url of urls){
  const html=fs.readFileSync(path.join(root,url,'index.html'),'utf8'),$=cheerio.load(html);
